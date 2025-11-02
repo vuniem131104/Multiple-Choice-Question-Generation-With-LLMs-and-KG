@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong đồ thị có hướng có trọng số, thuật toán nào thường được sử dụng để tìm đường đi ngắn nhất từ một đỉnh đến tất cả các đỉnh còn lại?",
+      "answer": "Thuật toán Dijkstra",
+      "distractors": [
+        "Thuật toán Bellman-Ford",
+        "Thuật toán Prim",
+        "Thuật toán Floyd-Warshall"
+      ],
+      "explanation": "Câu trả lời đúng là \"Thuật toán Dijkstra\" vì đây là thuật toán được thiết kế đặc biệt để tìm đường đi ngắn nhất từ một đỉnh đến tất cả các đỉnh còn lại trong đồ thị có trọng số không âm. Thuật toán này hoạt động bằng cách sử dụng một cấu trúc dữ liệu ưu tiên (heap) để liên tục mở rộng các đỉnh gần nhất chưa được xử lý, đảm bảo rằng mỗi đỉnh được xử lý với chi phí thấp nhất có thể.\n\nGiải thích về các yếu tố gây nhiễu:\n\n- **Thuật toán Bellman-Ford**: Mặc dù thuật toán này cũng tìm đường đi ngắn nhất từ một đỉnh đến tất cả các đỉnh còn lại, nó có thể xử lý đồ thị có trọng số âm. Tuy nhiên, nó không hiệu quả bằng Dijkstra trong trường hợp không có trọng số âm, vì Bellman-Ford có độ phức tạp thời gian cao hơn.\n\n- **Thuật toán Prim**: Thuật toán này không tìm đường đi ngắn nhất mà thay vào đó được sử dụng để tìm cây khung nhỏ nhất trong một đồ thị có trọng số. Do đó, nó không phù hợp với yêu cầu của câu hỏi.\n\n- **Thuật toán Floyd-Warshall**: Thuật toán này tìm đường đi ngắn nhất giữa tất cả các cặp đỉnh trong đồ thị, không chỉ từ một đỉnh đến tất cả các đỉnh khác. Mặc dù nó có thể được sử dụng cho đồ thị có trọng số, nhưng không phải là thuật toán tối ưu cho trường hợp chỉ tìm đường đi ngắn nhất từ một đỉnh duy nhất.\n\nTóm lại, thuật toán Dijkstra là lựa chọn chính xác nhất cho việc tìm đường đi ngắn nhất từ một đỉnh đến tất cả các đỉnh còn lại trong đồ thị có trọng số không âm, trong khi các thuật toán khác có mục đích hoặc điều kiện sử dụng khác nhau.",
+      "topic": {
+        "name": "Đường đi ngắn nhất trong đồ thị có trọng số",
+        "description": "Chủ đề này khám phá khái niệm đường đi ngắn nhất trong đồ thị có hướng có trọng số, bao gồm các ứng dụng thực tế như định tuyến bản đồ và lập kế hoạch giao thông. Học sinh sẽ được kiểm tra khả năng xác định các thuật toán phù hợp và ứng dụng của chúng trong thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong bài toán đường đi ngắn nhất, thuật toán nào thường được sử dụng để tìm đường đi ngắn nhất trên đồ thị có trọng số dương?",
+      "answer": "Thuật toán Dijkstra",
+      "distractors": [
+        "Thuật toán Bellman-Ford",
+        "Thuật toán Prim",
+        "Thuật toán A*"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Thuật toán Dijkstra\" vì đây là thuật toán được thiết kế đặc biệt để tìm đường đi ngắn nhất trên đồ thị có trọng số dương. Thuật toán này hoạt động bằng cách khởi tạo một đỉnh nguồn và dần dần mở rộng ra các đỉnh lân cận, cập nhật khoảng cách ngắn nhất đến từng đỉnh cho đến khi tất cả các đỉnh được xử lý. Điều này đảm bảo rằng khi một đỉnh được chọn, khoảng cách đến nó là ngắn nhất có thể.\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n\n- **Thuật toán Bellman-Ford**: Mặc dù thuật toán này cũng tìm đường đi ngắn nhất, nó có thể xử lý đồ thị có trọng số âm. Tuy nhiên, nó không hiệu quả bằng thuật toán Dijkstra trên đồ thị có trọng số dương, vì Bellman-Ford có độ phức tạp thời gian cao hơn.\n\n- **Thuật toán Prim**: Thuật toán này không phải là thuật toán tìm đường đi ngắn nhất mà là thuật toán tìm cây khung nhỏ nhất (Minimum Spanning Tree). Nó không tập trung vào việc tìm đường đi ngắn nhất giữa hai đỉnh mà chỉ tìm cách kết nối tất cả các đỉnh với tổng trọng số nhỏ nhất.\n\n- **Thuật toán A***: Mặc dù A* là một thuật toán tìm đường đi ngắn nhất, nó sử dụng một hàm ước lượng để tối ưu hóa quá trình tìm kiếm. A* có thể hoạt động trên đồ thị có trọng số dương, nhưng nó không phải là thuật toán cơ bản nhất cho bài toán này như Dijkstra, mà thường được sử dụng trong các tình huống cần tìm đường đi trong không gian lớn hơn, như trong trò chơi hoặc bản đồ.\n\nTóm lại, thuật toán Dijkstra là lựa chọn chính xác nhất cho bài toán tìm đường đi ngắn nhất trên đồ thị có trọng số dương, trong khi các tùy chọn khác không phù hợp với yêu cầu của câu hỏi.",
+      "topic": {
+        "name": "Biến thể của bài toán đường đi ngắn nhất",
+        "description": "Chủ đề này tập trung vào các biến thể của bài toán tìm đường đi ngắn nhất, phân tích các loại trọng số cạnh và các điều kiện yêu cầu. Học sinh sẽ được kiểm tra khả năng phân loại và áp dụng các thuật toán tìm đường dựa trên các điều kiện khác nhau.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi áp dụng phương pháp thư giãn cạnh để cập nhật đường đi ngắn hơn trong một đồ thị, bạn nên làm gì khi phát hiện một cạnh có đường đi mới ngắn hơn từ đỉnh A đến đỉnh B?",
+      "answer": "Cập nhật giá trị đường đi ngắn nhất từ đỉnh A đến đỉnh B.",
+      "distractors": [
+        "Giữ nguyên giá trị đường đi ngắn nhất từ đỉnh A đến đỉnh B.",
+        "Xóa bỏ tất cả các cạnh liên quan đến đỉnh A.",
+        "Cập nhật giá trị đường đi ngắn nhất từ đỉnh B đến đỉnh A."
+      ],
+      "explanation": "Câu trả lời đúng là \"Cập nhật giá trị đường đi ngắn nhất từ đỉnh A đến đỉnh B\" vì phương pháp thư giãn cạnh yêu cầu chúng ta kiểm tra và cập nhật giá trị đường đi ngắn nhất khi phát hiện một cạnh mới có thể tạo ra đường đi ngắn hơn. Khi phát hiện ra rằng có một đường đi mới từ đỉnh A đến đỉnh B ngắn hơn, điều này có nghĩa là giá trị hiện tại không còn chính xác nữa và cần được cập nhật để phản ánh đúng thông tin mới.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giữ nguyên giá trị đường đi ngắn nhất từ đỉnh A đến đỉnh B**: Tùy chọn này sai vì nếu có một cạnh mới tạo ra đường đi ngắn hơn, việc giữ nguyên giá trị cũ sẽ dẫn đến thông tin sai lệch về đường đi ngắn nhất. Phương pháp thư giãn cạnh chính xác yêu cầu cập nhật giá trị này.\n\n- **Xóa bỏ tất cả các cạnh liên quan đến đỉnh A**: Tùy chọn này cũng sai vì việc xóa bỏ các cạnh không giải quyết được vấn đề về việc cập nhật đường đi ngắn nhất. Thay vào đó, chúng ta cần xem xét và cập nhật các giá trị liên quan đến các cạnh mà đỉnh A tham gia, không phải xóa bỏ chúng.\n\n- **Cập nhật giá trị đường đi ngắn nhất từ đỉnh B đến đỉnh A**: Tùy chọn này không chính xác vì phương pháp thư giãn cạnh tập trung vào việc cập nhật đường đi từ đỉnh A đến đỉnh B. Việc cập nhật từ B đến A không phải là mục tiêu trong tình huống này, trừ khi có thông tin cụ thể về đường đi từ B đến A, điều này không được đề cập trong câu hỏi.\n\nTóm lại, câu trả lời đúng là cần thiết để đảm bảo rằng thông tin về đường đi ngắn nhất luôn chính xác và cập nhật, trong khi các yếu tố gây nhiễu đều không đáp ứng yêu cầu này.",
+      "topic": {
+        "name": "Phương pháp thư giãn cạnh",
+        "description": "Chủ đề này giới thiệu phương pháp thư giãn cạnh trong việc xác định đường đi ngắn nhất, bao gồm công thức và ví dụ cụ thể. Học sinh sẽ được kiểm tra khả năng áp dụng công thức này trong các tình huống thực tế để cập nhật đường đi ngắn hơn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Thuật toán Dijkstra được sử dụng để giải quyết bài toán nào trong lý thuyết đồ thị?",
+      "answer": "Tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh còn lại.",
+      "distractors": [
+        "Tìm đường đi ngắn nhất giữa hai đỉnh trong đồ thị.",
+        "Tìm tất cả các chu trình trong đồ thị có trọng số.",
+        "Tìm đường đi dài nhất từ một đỉnh đến tất cả các đỉnh còn lại."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh còn lại\" vì thuật toán Dijkstra được thiết kế đặc biệt để giải quyết bài toán này trong đồ thị có trọng số không âm. Thuật toán hoạt động bằng cách bắt đầu từ một đỉnh nguồn, sau đó dần dần mở rộng ra các đỉnh khác, cập nhật khoảng cách ngắn nhất đến từng đỉnh cho đến khi tất cả các đỉnh đã được xử lý. Điều này cho phép tìm ra đường đi ngắn nhất từ đỉnh nguồn đến tất cả các đỉnh còn lại trong đồ thị.\n\nCác yếu tố gây nhiễu:\n\n1. **Tìm đường đi ngắn nhất giữa hai đỉnh trong đồ thị**: Mặc dù thuật toán Dijkstra có thể được sử dụng để tìm đường đi ngắn nhất giữa hai đỉnh, nhưng mục tiêu chính của nó là tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác. Do đó, đây không phải là mô tả chính xác về chức năng của thuật toán.\n\n2. **Tìm tất cả các chu trình trong đồ thị có trọng số**: Thuật toán Dijkstra không được thiết kế để tìm chu trình trong đồ thị. Nó chỉ tập trung vào việc tính toán khoảng cách ngắn nhất từ một đỉnh đến các đỉnh khác, không liên quan đến việc xác định chu trình.\n\n3. **Tìm đường đi dài nhất từ một đỉnh đến tất cả các đỉnh còn lại**: Thuật toán Dijkstra không thể được sử dụng để tìm đường đi dài nhất, vì nó chỉ tìm kiếm đường đi ngắn nhất. Hơn nữa, trong nhiều trường hợp, bài toán tìm đường đi dài nhất có thể không có giải pháp rõ ràng hoặc có thể không khả thi trong đồ thị có trọng số không âm.\n\nTóm lại, câu trả lời đúng phản ánh chính xác chức năng của thuật toán Dijkstra, trong khi các yếu tố gây nhiễu không phù hợp với mục đích và cách thức hoạt động của thuật toán này.",
+      "topic": {
+        "name": "Thuật toán Dijkstra trong đồ thị có trọng số",
+        "description": "Chủ đề này tập trung vào thuật toán Dijkstra và cách nó được sử dụng để tìm đường đi ngắn nhất. Học sinh sẽ được kiểm tra khả năng mô tả cơ chế làm việc của thuật toán và cách thức áp dụng nó trong các nhiệm vụ thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "API đồ thị có trọng số thường được sử dụng để làm gì trong quản lý đồ thị?",
+      "answer": "Quản lý các đỉnh và cạnh cùng với trọng số của chúng.",
+      "distractors": [
+        "Quản lý chỉ các đỉnh mà không cần đến trọng số.",
+        "Quản lý các cạnh mà không cần đến đỉnh.",
+        "Quản lý các trọng số mà không cần đến đồ thị."
+      ],
+      "explanation": "Câu trả lời đúng \"Quản lý các đỉnh và cạnh cùng với trọng số của chúng.\" là chính xác vì API đồ thị có trọng số được thiết kế để xử lý cả đỉnh (nodes) và cạnh (edges) trong một đồ thị, đồng thời lưu trữ và quản lý trọng số (weights) của các cạnh. Trọng số này thường đại diện cho chi phí, khoảng cách hoặc bất kỳ giá trị nào liên quan đến việc di chuyển từ đỉnh này sang đỉnh khác, do đó việc quản lý đồng thời cả ba yếu tố này là rất quan trọng trong các ứng dụng thực tế như tìm đường đi ngắn nhất.\n\nCác yếu tố gây nhiễu:\n- \"Quản lý chỉ các đỉnh mà không cần đến trọng số.\" là sai vì trong một API đồ thị có trọng số, trọng số là một phần quan trọng để xác định mối quan hệ giữa các đỉnh thông qua các cạnh. Chỉ quản lý đỉnh mà không có trọng số sẽ không phản ánh đúng cấu trúc của đồ thị có trọng số.\n- \"Quản lý các cạnh mà không cần đến đỉnh.\" cũng không chính xác vì các cạnh không thể tồn tại độc lập mà không có đỉnh. Mỗi cạnh kết nối hai đỉnh, do đó việc quản lý các cạnh mà không đề cập đến đỉnh là không hợp lý trong ngữ cảnh của đồ thị.\n- \"Quản lý các trọng số mà không cần đến đồ thị.\" là sai vì trọng số chỉ có ý nghĩa trong bối cảnh của một đồ thị. Trọng số cần phải được gán cho các cạnh trong đồ thị để có thể sử dụng chúng một cách hiệu quả, vì vậy việc chỉ quản lý trọng số mà không có đồ thị là không thể thực hiện được.\n\nTóm lại, câu trả lời đúng phản ánh đầy đủ chức năng của API đồ thị có trọng số, trong khi các yếu tố gây nhiễu đều thiếu sót trong việc hiểu rõ mối quan hệ giữa đỉnh, cạnh và trọng số.",
+      "topic": {
+        "name": "API đồ thị có trọng số và cách sử dụng",
+        "description": "Chủ đề này đánh giá hiểu biết của học sinh về API đồ thị có trọng số. Học sinh sẽ được kiểm tra khả năng xác định các phương thức cần thiết và ứng dụng thực tế của API trong việc quản lý đồ thị có trọng số.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi so sánh thuật toán Dijkstra và Bellman-Ford, điểm khác biệt chính nào là quan trọng nhất trong việc áp dụng cho đồ thị có trọng số âm?",
+      "answer": "Thuật toán Bellman-Ford có thể xử lý đồ thị có trọng số âm trong khi thuật toán Dijkstra không thể.",
+      "distractors": [
+        "Thuật toán Dijkstra có thể xử lý đồ thị có trọng số âm nhưng không hiệu quả.",
+        "Cả hai thuật toán đều không thể xử lý đồ thị có trọng số âm.",
+        "Thuật toán Bellman-Ford chỉ hoạt động trên đồ thị không có trọng số."
+      ],
+      "explanation": "Câu trả lời đúng là \"Thuật toán Bellman-Ford có thể xử lý đồ thị có trọng số âm trong khi thuật toán Dijkstra không thể\" vì thuật toán Bellman-Ford được thiết kế để tìm đường đi ngắn nhất từ một đỉnh đến tất cả các đỉnh khác trong đồ thị, bao gồm cả đồ thị có trọng số âm. Nó thực hiện điều này bằng cách lặp lại quá trình cập nhật khoảng cách tối thiểu cho các đỉnh trong số lần lặp tối đa là số đỉnh trừ đi một. Ngược lại, thuật toán Dijkstra không thể xử lý trọng số âm vì nó dựa vào nguyên tắc \"tìm kiếm tham lam\", trong đó nó giả định rằng một khi một đỉnh đã được đánh dấu là có khoảng cách ngắn nhất, nó sẽ không thay đổi, điều này không đúng khi có trọng số âm.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Thuật toán Dijkstra có thể xử lý đồ thị có trọng số âm nhưng không hiệu quả**: Đây là sai vì thuật toán Dijkstra không thể xử lý đồ thị có trọng số âm. Nếu có trọng số âm, thuật toán sẽ cho ra kết quả sai lệch, không chỉ không hiệu quả mà còn không chính xác.\n- **Cả hai thuật toán đều không thể xử lý đồ thị có trọng số âm**: Điều này cũng sai vì thuật toán Bellman-Ford có khả năng xử lý đồ thị có trọng số âm, trong khi Dijkstra thì không. Do đó, khẳng định này hoàn toàn không chính xác.\n- **Thuật toán Bellman-Ford chỉ hoạt động trên đồ thị không có trọng số**: Đây là một hiểu lầm lớn. Thuật toán Bellman-Ford không chỉ hoạt động trên đồ thị không có trọng số mà còn có thể xử lý đồ thị có trọng số âm, điều này làm cho nó trở thành một lựa chọn tốt hơn cho các trường hợp có trọng số âm so với Dijkstra.",
+      "topic": {
+        "name": "So sánh thuật toán Dijkstra và Bellman-Ford",
+        "description": "Chủ đề này phân tích sự khác biệt giữa hai thuật toán Dijkstra và Bellman-Ford trong việc tìm đường đi ngắn nhất, bao gồm các trường hợp sử dụng cụ thể của chúng. Học sinh sẽ được kiểm tra khả năng so sánh và phân tích ưu nhược điểm của hai thuật toán này.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Thuật toán nào có thể được sử dụng để phát hiện chênh lệch giá trong đồ thị bằng cách tìm kiếm chu trình âm?",
+      "answer": "Thuật toán Bellman-Ford",
+      "distractors": [
+        "Thuật toán Dijkstra",
+        "Thuật toán Prim",
+        "Thuật toán Floyd-Warshall"
+      ],
+      "explanation": "Thuật toán Bellman-Ford là câu trả lời đúng vì nó có khả năng phát hiện chu trình âm trong đồ thị có trọng số. Khi áp dụng thuật toán này, nếu có chu trình âm, nó sẽ cho phép phát hiện ra rằng có thể giảm giá trị tổng trọng số của đường đi, từ đó giúp phát hiện chênh lệch giá. Bellman-Ford hoạt động bằng cách lặp lại việc cập nhật trọng số của các đỉnh cho đến khi không còn thay đổi, và nếu có sự thay đổi sau số lần lặp tối đa (số đỉnh - 1), điều đó chứng tỏ có chu trình âm.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Thuật toán Dijkstra**: Thuật toán này không thể phát hiện chu trình âm. Nó chỉ hoạt động chính xác với đồ thị có trọng số không âm, vì nó giả định rằng một khi một đỉnh được xử lý, nó sẽ không cần phải được xử lý lại, điều này không đúng trong trường hợp có chu trình âm.\n\n- **Thuật toán Prim**: Đây là thuật toán được sử dụng để tìm cây khung nhỏ nhất trong đồ thị, không liên quan đến việc phát hiện chu trình âm hay chênh lệch giá. Nó không xem xét trọng số âm và không có khả năng phát hiện chu trình.\n\n- **Thuật toán Floyd-Warshall**: Mặc dù thuật toán này có thể phát hiện chu trình âm, nhưng nó chủ yếu được sử dụng để tìm đường đi ngắn nhất giữa tất cả các cặp đỉnh trong đồ thị. Nó không phải là thuật toán tối ưu cho việc phát hiện chênh lệch giá như Bellman-Ford, vì nó không tập trung vào việc xử lý từng đỉnh một cách tuần tự như Bellman-Ford.\n\nTóm lại, Bellman-Ford là lựa chọn chính xác cho việc phát hiện chênh lệch giá thông qua chu trình âm, trong khi các thuật toán khác không phù hợp với yêu cầu này.",
+      "topic": {
+        "name": "Ứng dụng phát hiện chênh lệch giá trong đồ thị",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc áp dụng các khái niệm về chu trình âm để phát hiện chênh lệch giá trong đồ thị. Học sinh sẽ được đánh giá về khả năng giải quyết bài toán thông qua việc sử dụng trọng số cạnh và thuật toán Bellman-Ford.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi áp dụng thuật toán sắp xếp tô pô để tìm đường đi ngắn nhất trong đồ thị có hướng không chu trình (DAG), bước đầu tiên chúng ta cần thực hiện là gì?",
+      "answer": "Sắp xếp các đỉnh của đồ thị theo thứ tự tô pô.",
+      "distractors": [
+        "Tính toán độ dài đường đi giữa các đỉnh trước khi sắp xếp.",
+        "Sắp xếp các đỉnh theo thứ tự giảm dần của trọng số.",
+        "Tìm các chu trình trong đồ thị để loại bỏ chúng."
+      ],
+      "explanation": "Câu trả lời đúng là \"Sắp xếp các đỉnh của đồ thị theo thứ tự tô pô\" vì trong một đồ thị có hướng không chu trình (DAG), việc sắp xếp tô pô là bước đầu tiên cần thiết để xác định thứ tự mà các đỉnh có thể được xử lý. Sắp xếp tô pô đảm bảo rằng mỗi đỉnh được xử lý trước tất cả các đỉnh mà nó có hướng đi đến, từ đó giúp chúng ta dễ dàng tính toán độ dài đường đi ngắn nhất từ một đỉnh nguồn đến các đỉnh khác trong đồ thị.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Tính toán độ dài đường đi giữa các đỉnh trước khi sắp xếp**: Đây là sai lầm vì việc tính toán độ dài đường đi chỉ có thể thực hiện sau khi đã có thứ tự xử lý các đỉnh. Nếu không sắp xếp tô pô trước, chúng ta không thể đảm bảo rằng các đỉnh được xử lý theo đúng thứ tự cần thiết.\n  \n- **Sắp xếp các đỉnh theo thứ tự giảm dần của trọng số**: Tùy chọn này không chính xác vì thuật toán sắp xếp tô pô không dựa trên trọng số của các đỉnh mà chỉ dựa vào mối quan hệ hướng giữa chúng. Trọng số chỉ ảnh hưởng đến việc tính toán đường đi ngắn nhất sau khi đã có thứ tự tô pô.\n\n- **Tìm các chu trình trong đồ thị để loại bỏ chúng**: Đây là không cần thiết trong trường hợp của DAG, vì định nghĩa của DAG là không có chu trình. Việc tìm chu trình chỉ cần thiết trong các đồ thị có chu trình, không phải trong DAG, nơi mà chúng ta đã biết rằng không có chu trình tồn tại.\n\nTóm lại, bước đầu tiên trong việc tìm đường đi ngắn nhất trong một DAG là sắp xếp các đỉnh theo thứ tự tô pô, và các yếu tố gây nhiễu đều không chính xác vì chúng không phù hợp với quy trình cần thiết trong thuật toán này.",
+      "topic": {
+        "name": "Kết nối đường đi ngắn nhất và thuật toán sắp xếp tô pô",
+        "description": "Chủ đề này tích hợp khái niệm từ tuần hiện tại về đường đi ngắn nhất với thuật toán sắp xếp tô pô, kiểm tra khả năng của học sinh trong việc áp dụng kiến thức từ tuần trước vào bài toán hiện tại. Học sinh sẽ phân tích cách sử dụng thuật toán sắp xếp tô pô để tìm đường đi ngắn nhất trong DAG.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    }
+  ]
+}

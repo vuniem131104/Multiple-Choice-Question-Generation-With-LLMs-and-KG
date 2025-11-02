@@ -1,0 +1,92 @@
+{
+    "questions": [
+        {
+            "question": "Đặc điểm nào sau đây KHÔNG phải là đặc điểm chính của Học tăng cường dựa trên chính sách?",
+            "answer": "Tham số hóa trực tiếp hàm giá trị Q(s, a).",
+            "distractors": [
+                "Tham số hóa trực tiếp chính sách πθ(s, a) = P[a | s, θ].",
+                "Mục tiêu là tối ưu hóa các tham số θ của chính sách.",
+                "Thường được sử dụng trong các không gian hành động liên tục.",
+                "Khác biệt với các phương pháp dựa trên giá trị ở chỗ không cần ước lượng hàm giá trị để chọn hành động."
+            ],
+            "explanation": "Học tăng cường dựa trên chính sách (Policy-based Reinforcement Learning) tập trung vào việc tham số hóa và tối ưu hóa trực tiếp chính sách πθ(s, a). Các phương pháp dựa trên giá trị (Value-based methods) mới là những phương pháp tham số hóa hàm giá trị Q(s, a)."
+        },
+        {
+            "question": "Công thức cơ bản để cập nhật tham số chính sách θ trong các thuật toán Đạo hàm chính sách là gì?",
+            "answer": "Δθ = α∇θJ(θ)",
+            "distractors": [
+                "Δθ = α(R - V(s))∇θlogπθ(s, a)",
+                "Δθ = α[r + γmaxa'Q(s', a') - Q(s, a)]",
+                "Δθ = α(Gt - V(st))∇θlogπθ(st, at)",
+                "Δθ = α∇θV(s)"
+            ],
+            "explanation": "Công thức cơ bản để thực hiện các bước cập nhật tham số chính sách trong các thuật toán Đạo hàm chính sách là Δθ = α∇θJ(θ), trong đó α là tốc độ học và ∇θJ(θ) là đạo hàm của hàm mục tiêu J(θ) theo tham số chính sách θ."
+        },
+        {
+            "question": "Ưu điểm nào sau đây là một trong những ưu điểm chính của Học tăng cường dựa trên chính sách so với các phương pháp dựa trên giá trị?",
+            "answer": "Khả năng hội tụ tốt hơn và hiệu quả trong không gian hành động liên tục.",
+            "distractors": [
+                "Đảm bảo tìm thấy chính sách tối ưu toàn cục một cách nhanh chóng.",
+                "Luôn yêu cầu ít dữ liệu hơn để học.",
+                "Dễ dàng xử lý các vấn đề có không gian trạng thái rời rạc lớn.",
+                "Không bao giờ bị mắc kẹt trong các cực tiểu cục bộ."
+            ],
+            "explanation": "Học tăng cường dựa trên chính sách có ưu điểm là khả năng hội tụ tốt hơn trong một số trường hợp và đặc biệt hiệu quả trong các không gian hành động liên tục, nơi việc chọn hành động dựa trên hàm giá trị có thể trở nên phức tạp."
+        },
+        {
+            "question": "Trong môi trường episodic, hàm mục tiêu chính sách J(θ) thường được định lượng bằng cách nào?",
+            "answer": "J1(θ) = Vπθ(s1), là giá trị khởi đầu của trạng thái ban đầu s1.",
+            "distractors": [
+                "J(θ) = Σt=0^T r(st, at), tổng phần thưởng trong một tập.",
+                "J(θ) = Qπθ(s, a), giá trị hành động trung bình.",
+                "J(θ) = E[Σt=0^∞ γt rt+1 | s0 ~ p(s)]",
+                "J(θ) = maxa Qπθ(s, a)"
+            ],
+            "explanation": "Trong các môi trường episodic, chất lượng của một chính sách thường được định lượng bằng hàm mục tiêu giá trị khởi đầu J1(θ) = Vπθ(s1), tức là giá trị kỳ vọng của trạng thái ban đầu s1 dưới chính sách πθ."
+        },
+        {
+            "question": "Khi áp dụng Định lý đạo hàm chính sách, phần thưởng tức thời rt+1 thường được thay thế bằng đại lượng nào để tính toán đạo hàm chính sách?",
+            "answer": "Giá trị hành động dài hạn Qπ(st, at).",
+            "distractors": [
+                "Giá trị trạng thái Vπ(st).",
+                "Lợi nhuận (return) Gt.",
+                "Lỗi thời gian khác biệt (TD error) δt.",
+                "Hàm lợi thế Aπ(st, at)."
+            ],
+            "explanation": "Định lý đạo hàm chính sách cho phép thay thế phần thưởng tức thời bằng giá trị hành động dài hạn Qπ(st, at) để tính toán đạo hàm chính sách. Điều này liên kết khái niệm Q-value với việc tính toán đạo hàm chính sách, cho phép sử dụng thông tin về phần thưởng tương lai."
+        },
+        {
+            "question": "Thuật toán REINFORCE cập nhật tham số chính sách bằng cách sử dụng đại lượng nào để ước tính đạo hàm chính sách?",
+            "answer": "Lợi nhuận (return) Gt thu được từ toàn bộ một tập.",
+            "distractors": [
+                "Phần thưởng tức thời rt+1.",
+                "Lỗi TD (Temporal Difference error) δt.",
+                "Ước lượng hàm giá trị V(s).",
+                "Ước lượng hàm giá trị hành động Q(s, a)."
+            ],
+            "explanation": "Thuật toán REINFORCE (Đạo hàm chính sách Monte-Carlo) sử dụng lợi nhuận (return) Gt, tức là tổng phần thưởng chiết khấu từ thời điểm t đến cuối tập, để ước tính đạo hàm chính sách một cách không thiên vị. Đây là một phương pháp Monte-Carlo vì nó chờ đến cuối tập để có được lợi nhuận thực tế."
+        },
+        {
+            "question": "Trong khung Actor-Critic, vai trò chính của Critic là gì?",
+            "answer": "Ước tính hàm giá trị hành động Qw(s, a) hoặc hàm giá trị trạng thái Vw(s) để giảm phương sai trong việc ước tính đạo hàm chính sách của Actor.",
+            "distractors": [
+                "Trực tiếp chọn hành động tối ưu cho Actor.",
+                "Tham số hóa chính sách πθ(s, a).",
+                "Tạo ra các tập dữ liệu mới cho Actor học.",
+                "Chỉ đơn thuần là một bộ nhớ lưu trữ các kinh nghiệm."
+            ],
+            "explanation": "Trong kiến trúc Actor-Critic, Critic có nhiệm vụ ước tính hàm giá trị (thường là Q-value hoặc V-value). Ước lượng này được sử dụng để cung cấp một tín hiệu phản hồi cho Actor, giúp Actor cập nhật chính sách của mình một cách hiệu quả hơn bằng cách giảm phương sai của đạo hàm chính sách."
+        },
+        {
+            "question": "Làm thế nào để lỗi TD (Temporal Difference error) δπθ được sử dụng để giảm phương sai của đạo hàm chính sách trong các khung Actor-Critic?",
+            "answer": "Lỗi TD δπθ được sử dụng làm ước tính không thiên vị cho Hàm lợi thế Aπθ(s, a), giúp giảm phương sai đáng kể trong đạo hàm chính sách.",
+            "distractors": [
+                "Lỗi TD δπθ được sử dụng để trực tiếp cập nhật tham số chính sách θ.",
+                "Lỗi TD δπθ được sử dụng để thay thế hoàn toàn hàm mục tiêu J(θ).",
+                "Lỗi TD δπθ chỉ được sử dụng để cập nhật hàm giá trị của Critic, không ảnh hưởng đến Actor.",
+                "Lỗi TD δπθ giúp tăng phương sai để khám phá không gian hành động tốt hơn."
+            ],
+            "explanation": "Trong các khung Actor-Critic, lỗi TD δπθ (δπθ = rt+1 + γVπθ(st+1) - Vπθ(st)) được sử dụng làm ước tính không thiên vị cho Hàm lợi thế Aπθ(s, a). Việc sử dụng Hàm lợi thế thay vì lợi nhuận thô giúp giảm đáng kể phương sai của đạo hàm chính sách, dẫn đến việc học ổn định và hiệu quả hơn, đặc biệt khi kết hợp với xấp xỉ hàm."
+        }
+    ]
+}

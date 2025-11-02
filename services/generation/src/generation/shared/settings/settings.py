@@ -9,22 +9,18 @@ from pathlib import Path
 from lite_llm import LiteLLMSetting
 from storage.minio import MinioSetting
 from .quiz_settings import QuizGenerationSetting
-from .exam_settings import ExamGenerationSetting
+from .vector_database import VectorDatabaseSetting
 from .quiz_validator import QuizValidatorSetting
-from .parser import ParserSetting
 
 load_dotenv()
 
 
 class Settings(BaseSettings):
 
-    parser: ParserSetting
-    quiz: QuizGenerationSetting
-    exam: ExamGenerationSetting
     litellm: LiteLLMSetting
     minio: MinioSetting
-    
-    quiz_validator: QuizValidatorSetting
+    quiz: QuizGenerationSetting
+    vector_database: VectorDatabaseSetting 
 
     class Config:
         env_nested_delimiter = '__'

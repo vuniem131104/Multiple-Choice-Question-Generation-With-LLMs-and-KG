@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Mạng Nơ-ron Tích chập (CNN) chủ yếu được áp dụng trong lĩnh vực nào?",
+      "answer": "Phân loại hình ảnh",
+      "distractors": [
+        "Nhận diện giọng nói",
+        "Dự đoán thời tiết",
+        "Phát hiện gian lận trong giao dịch"
+      ],
+      "explanation": "Câu trả lời đúng là \"Phân loại hình ảnh\" vì Mạng Nơ-ron Tích chập (CNN) được thiết kế đặc biệt để xử lý và phân tích dữ liệu hình ảnh. CNN sử dụng các lớp tích chập để phát hiện các đặc trưng trong hình ảnh, giúp phân loại và nhận diện các đối tượng một cách hiệu quả. Các ứng dụng của CNN trong phân loại hình ảnh đã được chứng minh qua nhiều nghiên cứu và thực tiễn, như trong nhận diện khuôn mặt, phân loại động vật, và nhiều lĩnh vực khác liên quan đến hình ảnh.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Nhận diện giọng nói**: Mặc dù có một số mô hình học sâu có thể áp dụng cho nhận diện giọng nói, nhưng chúng thường sử dụng các kiến trúc khác như Mạng Nơ-ron Tích chập 1D hoặc RNN (Mạng Nơ-ron Hồi tiếp) thay vì CNN, vì giọng nói là tín hiệu thời gian và không phải là dữ liệu hình ảnh.\n\n- **Dự đoán thời tiết**: Dự đoán thời tiết thường dựa vào các mô hình thống kê và mô phỏng khí hậu phức tạp, không phải là một ứng dụng chính của CNN. CNN không được thiết kế để xử lý dữ liệu thời gian hoặc không gian như trong dự đoán thời tiết.\n\n- **Phát hiện gian lận trong giao dịch**: Mặc dù CNN có thể được áp dụng trong một số trường hợp liên quan đến hình ảnh (như phân tích hình ảnh của chứng minh thư), nhưng phát hiện gian lận trong giao dịch chủ yếu dựa vào phân tích dữ liệu số và mô hình học máy khác, như cây quyết định hoặc hồi quy logistic, chứ không phải là CNN.\n\nTóm lại, CNN chủ yếu được sử dụng trong phân loại hình ảnh, trong khi các yếu tố gây nhiễu khác không phù hợp với chức năng và ứng dụng chính của CNN.",
+      "topic": {
+        "name": "Khái niệm và ứng dụng của CNN",
+        "description": "Chủ đề này tập trung vào việc hiểu Mạng Nơ-ron Tích chập (CNN), bao gồm cấu trúc, chức năng của các lớp trong CNN và các ứng dụng thực tế như phân loại hình ảnh. Học sinh sẽ được đánh giá về khả năng xác định các thành phần của CNN và ứng dụng của chúng trong các bài toán phân loại.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Sự khác biệt chính giữa gộp tối đa (Max pooling) và gộp trung bình (Average pooling) là gì?",
+      "answer": "Gộp tối đa lấy giá trị lớn nhất trong khu vực được xem xét, trong khi gộp trung bình tính giá trị trung bình của các phần tử trong khu vực đó.",
+      "distractors": [
+        "Gộp tối đa lấy giá trị trung bình trong khu vực được xem xét.",
+        "Gộp trung bình chỉ lấy giá trị lớn nhất trong khu vực đó.",
+        "Gộp tối đa và gộp trung bình đều tính toán tổng các phần tử trong khu vực."
+      ],
+      "explanation": "Câu trả lời đúng là \"Gộp tối đa lấy giá trị lớn nhất trong khu vực được xem xét, trong khi gộp trung bình tính giá trị trung bình của các phần tử trong khu vực đó.\" Điều này chính xác vì gộp tối đa (Max pooling) hoạt động bằng cách chọn giá trị lớn nhất từ một vùng cụ thể của đầu vào, giúp giữ lại các đặc trưng nổi bật nhất, trong khi gộp trung bình (Average pooling) tính toán giá trị trung bình của tất cả các phần tử trong vùng đó, giúp làm mượt dữ liệu và giảm thiểu nhiễu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Gộp tối đa lấy giá trị trung bình trong khu vực được xem xét**: Sai vì gộp tối đa không tính giá trị trung bình mà chỉ chọn giá trị lớn nhất trong vùng.\n- **Gộp trung bình chỉ lấy giá trị lớn nhất trong khu vực đó**: Sai vì gộp trung bình không chỉ lấy giá trị lớn nhất mà tính toán giá trị trung bình của tất cả các phần tử trong vùng.\n- **Gộp tối đa và gộp trung bình đều tính toán tổng các phần tử trong khu vực**: Sai vì gộp tối đa không tính tổng mà chỉ chọn giá trị lớn nhất, trong khi gộp trung bình tính giá trị trung bình chứ không phải tổng. \n\nTóm lại, sự khác biệt giữa gộp tối đa và gộp trung bình nằm ở cách thức mà chúng xử lý các giá trị trong vùng được xem xét.",
+      "topic": {
+        "name": "Các lớp gộp trong CNN",
+        "description": "Chủ đề này khám phá các lớp gộp (Pooling Layers) trong Mạng Nơ-ron Tích chập (CNN). Học sinh sẽ học về sự khác biệt giữa gộp tối đa (Max pooling) và gộp trung bình (Average pooling), cách chúng ảnh hưởng đến kích thước đầu ra và khả năng học của mô hình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Gradient biến mất trong huấn luyện mạng nơ-ron thường xảy ra do nguyên nhân nào sau đây?",
+      "answer": "Các trọng số của mô hình có giá trị quá nhỏ.",
+      "distractors": [
+        "Các trọng số của mô hình có giá trị quá lớn.",
+        "Mạng nơ-ron không đủ lớp để học.",
+        "Dữ liệu huấn luyện không đủ đa dạng."
+      ],
+      "explanation": "Gradient biến mất trong huấn luyện mạng nơ-ron thường xảy ra khi các trọng số của mô hình có giá trị quá nhỏ. Khi trọng số quá nhỏ, các giá trị đầu vào được nhân với trọng số sẽ dẫn đến các giá trị đầu ra gần bằng 0. Điều này làm cho gradient (đạo hàm) của hàm mất mát cũng trở nên rất nhỏ, khiến cho quá trình cập nhật trọng số diễn ra chậm chạp hoặc gần như dừng lại. Kết quả là, mạng nơ-ron không thể học được các đặc trưng phức tạp từ dữ liệu, dẫn đến hiệu suất kém.\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n1. **Các trọng số của mô hình có giá trị quá lớn**: Điều này không phải là nguyên nhân của gradient biến mất mà có thể dẫn đến gradient bùng nổ. Khi trọng số quá lớn, các giá trị đầu ra có thể trở nên rất lớn, dẫn đến gradient cũng lớn và có thể gây ra sự không ổn định trong quá trình huấn luyện. Do đó, tùy chọn này là sai.\n\n2. **Mạng nơ-ron không đủ lớp để học**: Mặc dù một mạng nơ-ron có quá ít lớp có thể không học được các đặc trưng phức tạp, nhưng điều này không trực tiếp gây ra gradient biến mất. Gradient biến mất chủ yếu liên quan đến giá trị của trọng số và cách mà các giá trị được truyền qua các lớp. Một mạng nơ-ron có ít lớp vẫn có thể gặp vấn đề gradient biến mất nếu trọng số quá nhỏ. Vì vậy, tùy chọn này cũng là sai.\n\n3. **Dữ liệu huấn luyện không đủ đa dạng**: Dữ liệu không đủ đa dạng có thể dẫn đến việc mô hình không học được các đặc trưng cần thiết, nhưng nó không phải là nguyên nhân trực tiếp gây ra gradient biến mất. Vấn đề này liên quan đến khả năng của mô hình trong việc tổng quát hóa từ dữ liệu, không phải là vấn đề về gradient. Do đó, tùy chọn này cũng không chính xác.\n\nTóm lại, câu trả lời đúng là \"Các trọng số của mô hình có giá trị quá nhỏ\" vì nó trực tiếp ảnh hưởng đến quá trình cập nhật trọng số và khả năng học của mạng nơ-ron, trong khi các yếu tố gây nhiễu khác không liên quan trực tiếp đến vấn đề gradient biến mất.",
+      "topic": {
+        "name": "Vấn đề gradient biến mất/bùng nổ",
+        "description": "Chủ đề này bàn về các vấn đề liên quan đến gradient trong việc huấn luyện mạng nơ-ron, bao gồm gradient biến mất và gradient bùng nổ. Học sinh sẽ cần hiểu được nguyên nhân của những vấn đề này và cách chúng ảnh hưởng đến khả năng học tập của mô hình, cũng như cách khắc phục chúng.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "LSTM (Bộ nhớ dài-ngắn hạn) sử dụng các cổng kiểm soát nào để điều chỉnh thông tin nhớ và quên trong quá trình huấn luyện nhằm giảm thiểu vấn đề gradient biến mất trong RNN?",
+      "answer": "Các cổng vào, cổng quên và cổng đầu ra.",
+      "distractors": [
+        "Các cổng đầu vào và cổng đầu ra chỉ điều chỉnh thông tin mà không có cổng quên.",
+        "LSTM chỉ sử dụng một cổng duy nhất để kiểm soát thông tin nhớ và quên.",
+        "Các cổng kiểm soát trong LSTM không ảnh hưởng đến vấn đề gradient biến mất."
+      ],
+      "explanation": "Câu trả lời đúng là \"Các cổng vào, cổng quên và cổng đầu ra\" vì LSTM sử dụng ba loại cổng này để điều chỉnh thông tin trong quá trình huấn luyện. Cổng vào quyết định thông tin nào sẽ được thêm vào trạng thái bộ nhớ, cổng quên xác định thông tin nào sẽ bị loại bỏ khỏi bộ nhớ, và cổng đầu ra kiểm soát thông tin nào sẽ được xuất ra từ LSTM. Sự kết hợp của ba cổng này giúp LSTM duy trì thông tin quan trọng trong thời gian dài và giảm thiểu vấn đề gradient biến mất, cho phép mạng học hiệu quả hơn.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Các cổng đầu vào và cổng đầu ra chỉ điều chỉnh thông tin mà không có cổng quên**: Sai, vì cổng quên là rất quan trọng trong việc quyết định thông tin nào cần được loại bỏ, do đó không thể chỉ có cổng đầu vào và cổng đầu ra.\n- **LSTM chỉ sử dụng một cổng duy nhất để kiểm soát thông tin nhớ và quên**: Sai, vì LSTM sử dụng ba cổng khác nhau (cổng vào, cổng quên và cổng đầu ra) để thực hiện các chức năng khác nhau trong việc quản lý thông tin.\n- **Các cổng kiểm soát trong LSTM không ảnh hưởng đến vấn đề gradient biến mất**: Sai, vì chính các cổng này giúp điều chỉnh thông tin một cách hiệu quả, từ đó giảm thiểu vấn đề gradient biến mất, cho phép mạng học tốt hơn qua các bước thời gian dài.",
+      "topic": {
+        "name": "Giải pháp cho vấn đề gradient biến mất: LSTM",
+        "description": "Chủ đề này sẽ thảo luận về Bộ nhớ dài-ngắn hạn (LSTM) như một giải pháp cho vấn đề gradient biến mất trong RNN. Học sinh sẽ được đánh giá về cách thức hoạt động của LSTM và cách nó tối ưu hóa quy trình huấn luyện qua các cổng kiểm soát.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mạng Nơ-ron Hồi quy (RNN) chủ yếu được sử dụng để xử lý loại dữ liệu nào?",
+      "answer": "Dữ liệu tuần tự",
+      "distractors": [
+        "Dữ liệu tĩnh",
+        "Dữ liệu hình ảnh",
+        "Dữ liệu đa chiều"
+      ],
+      "explanation": "Câu trả lời đúng là \"Dữ liệu tuần tự\" vì Mạng Nơ-ron Hồi quy (RNN) được thiết kế đặc biệt để xử lý và phân tích dữ liệu có thứ tự, nơi mà thông tin trong các bước thời gian trước đó có thể ảnh hưởng đến thông tin trong các bước thời gian tiếp theo. Ví dụ, trong phân tích ngữ nghĩa của một câu, từ trước có thể ảnh hưởng đến cách hiểu từ sau. RNN có khả năng ghi nhớ thông tin từ các bước trước đó thông qua các trạng thái ẩn, giúp chúng xử lý các chuỗi dữ liệu như văn bản, âm thanh hoặc tín hiệu thời gian.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Dữ liệu tĩnh**: Dữ liệu tĩnh không có thứ tự thời gian, ví dụ như hình ảnh hoặc bảng số liệu. RNN không phù hợp cho loại dữ liệu này vì chúng không cần đến khả năng ghi nhớ thông tin từ các bước trước đó.\n\n- **Dữ liệu hình ảnh**: Dữ liệu hình ảnh thường được xử lý bằng các mạng nơ-ron tích chập (CNN) thay vì RNN. Hình ảnh không có tính chất tuần tự mà là một ma trận pixel, do đó RNN không phải là lựa chọn tối ưu cho việc phân tích hình ảnh.\n\n- **Dữ liệu đa chiều**: Dữ liệu đa chiều có thể bao gồm nhiều loại thông tin nhưng không nhất thiết phải có thứ tự. RNN không được thiết kế để xử lý dữ liệu đa chiều mà không có cấu trúc tuần tự rõ ràng, vì vậy chúng không thể tận dụng được khả năng ghi nhớ của mình trong trường hợp này.\n\nTóm lại, RNN là công cụ lý tưởng cho dữ liệu tuần tự, trong khi các tùy chọn khác không phù hợp với đặc điểm và chức năng của RNN.",
+      "topic": {
+        "name": "Khái niệm cơ bản về RNN",
+        "description": "Chủ đề này tập trung vào việc tìm hiểu về Mạng Nơ-ron Hồi quy (RNN) và cách chúng xử lý dữ liệu tuần tự. Học sinh sẽ được yêu cầu mô tả chức năng của RNN và đưa ra ví dụ về ứng dụng thực tế của chúng như phân tích cảm xúc.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong ứng dụng chú thích hình ảnh, công nghệ nào được sử dụng để kết hợp CNN và RNN nhằm cải thiện khả năng phân tích và diễn giải dữ liệu hình ảnh?",
+      "answer": "CNN và RNN kết hợp",
+      "distractors": [
+        "Sử dụng chỉ RNN để phân tích dữ liệu hình ảnh",
+        "Kết hợp CNN với mạng nơ-ron đơn giản để xử lý hình ảnh",
+        "Chỉ cần sử dụng CNN mà không cần RNN trong chú thích hình ảnh"
+      ],
+      "explanation": "Câu trả lời đúng là \"CNN và RNN kết hợp\" vì sự kết hợp này tận dụng ưu điểm của cả hai loại mạng nơ-ron. CNN (Mạng Nơ-ron Tích chập) rất hiệu quả trong việc trích xuất đặc trưng từ hình ảnh, trong khi RNN (Mạng Nơ-ron Tái phát) có khả năng xử lý dữ liệu tuần tự, giúp diễn giải các đặc trưng hình ảnh theo ngữ cảnh. Khi kết hợp, CNN có thể phân tích hình ảnh để tạo ra các đặc trưng, và RNN có thể sử dụng các đặc trưng này để tạo ra chú thích có ngữ nghĩa, cải thiện khả năng phân tích và diễn giải dữ liệu hình ảnh.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Sử dụng chỉ RNN để phân tích dữ liệu hình ảnh**: Sai vì RNN không được thiết kế để xử lý hình ảnh trực tiếp. Nó thiếu khả năng trích xuất đặc trưng từ hình ảnh như CNN, do đó không thể đạt được hiệu quả cao trong việc phân tích hình ảnh.\n- **Kết hợp CNN với mạng nơ-ron đơn giản để xử lý hình ảnh**: Sai vì mạng nơ-ron đơn giản không đủ khả năng để diễn giải các đặc trưng hình ảnh một cách hiệu quả như RNN. Việc kết hợp này sẽ không tận dụng được khả năng xử lý tuần tự của RNN, dẫn đến việc thiếu ngữ cảnh trong chú thích.\n- **Chỉ cần sử dụng CNN mà không cần RNN trong chú thích hình ảnh**: Sai vì mặc dù CNN có thể tạo ra các đặc trưng hình ảnh, nhưng nó không thể tạo ra chú thích có ngữ nghĩa mà không có sự hỗ trợ của RNN. RNN là cần thiết để xử lý và diễn giải các đặc trưng này thành câu chú thích có ngữ nghĩa.\n\nTóm lại, sự kết hợp giữa CNN và RNN là cần thiết để tối ưu hóa khả năng phân tích và diễn giải dữ liệu hình ảnh trong ứng dụng chú thích hình ảnh.",
+      "topic": {
+        "name": "Kết hợp CNN và RNN trong ứng dụng thực tế",
+        "description": "Chủ đề này sẽ tích hợp kiến thức từ tuần 8 về CNN và kiến thức từ tuần 7 về RNN, đánh giá khả năng của học sinh trong việc xác định cách mà CNN và RNN có thể được sử dụng cùng nhau trong các ứng dụng như chú thích hình ảnh. Học sinh sẽ khám phá được ưu điểm của sự kết hợp này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Kỹ thuật nào được sử dụng để ngăn chặn overfitting bằng cách kiểm soát số lượng neuron hoạt động trong một lớp của mô hình học sâu?",
+      "answer": "Dropout",
+      "distractors": [
+        "Batch Normalization",
+        "Lớp Fully Connected",
+        "Regularization"
+      ],
+      "explanation": "Câu trả lời đúng là \"Dropout\" vì đây là một kỹ thuật phổ biến trong học sâu được sử dụng để ngăn chặn overfitting bằng cách ngẫu nhiên loại bỏ một số neuron trong quá trình huấn luyện. Điều này giúp mô hình không phụ thuộc quá nhiều vào bất kỳ neuron nào, từ đó cải thiện khả năng tổng quát của mô hình khi áp dụng vào dữ liệu mới.\n\nCác yếu tố gây nhiễu:\n\n- **Batch Normalization**: Kỹ thuật này chủ yếu được sử dụng để cải thiện tốc độ huấn luyện và ổn định của mô hình bằng cách chuẩn hóa đầu vào của mỗi lớp. Mặc dù nó có thể giúp giảm thiểu overfitting một cách gián tiếp, nhưng không kiểm soát số lượng neuron hoạt động như Dropout.\n\n- **Lớp Fully Connected**: Đây là một loại lớp trong mạng nơ-ron mà tất cả các neuron của lớp này đều kết nối với tất cả các neuron của lớp trước đó. Lớp này không phải là một kỹ thuật giảm thiểu overfitting mà chỉ là một cấu trúc của mô hình. Nó không có chức năng kiểm soát số lượng neuron hoạt động.\n\n- **Regularization**: Đây là một khái niệm rộng hơn bao gồm nhiều kỹ thuật khác nhau như L1 và L2 regularization, nhằm giảm thiểu overfitting bằng cách thêm một hình phạt vào hàm mất mát. Tuy nhiên, nó không trực tiếp kiểm soát số lượng neuron hoạt động trong một lớp như Dropout làm.\n\nTóm lại, \"Dropout\" là câu trả lời đúng vì nó trực tiếp kiểm soát số lượng neuron hoạt động để ngăn chặn overfitting, trong khi các yếu tố gây nhiễu khác không thực hiện chức năng này một cách trực tiếp.",
+      "topic": {
+        "name": "Các kỹ thuật giảm thiểu overfitting",
+        "description": "Chủ đề này sẽ cung cấp tổng quan về các phương pháp giảm thiểu overfitting, như Dropout và Batch Normalization. Học sinh sẽ cần hiểu các kỹ thuật này và ứng dụng của chúng trong việc cải thiện hiệu suất của mô hình học sâu.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong bối cảnh học sâu, khi nào là thời điểm thích hợp để dừng lại quá trình huấn luyện theo phương pháp Early Stopping nhằm tối ưu hóa mô hình và tránh overfitting?",
+      "answer": "Khi hiệu suất trên tập kiểm tra không cải thiện trong một số epochs liên tiếp.",
+      "distractors": [
+        "Khi hiệu suất trên tập huấn luyện bắt đầu giảm xuống.",
+        "Khi mô hình đạt được độ chính xác tối đa trên tập huấn luyện.",
+        "Khi có sự thay đổi lớn trong dữ liệu đầu vào của mô hình."
+      ],
+      "explanation": "Câu trả lời đúng là \"Khi hiệu suất trên tập kiểm tra không cải thiện trong một số epochs liên tiếp\" vì đây là dấu hiệu cho thấy mô hình đã đạt đến giới hạn khả năng học của nó trên dữ liệu kiểm tra. Khi hiệu suất không cải thiện, điều này có thể chỉ ra rằng mô hình đang bắt đầu học các đặc điểm không cần thiết từ dữ liệu huấn luyện, dẫn đến hiện tượng overfitting. Early Stopping giúp ngăn chặn điều này bằng cách dừng huấn luyện trước khi mô hình trở nên quá phức tạp và không còn khả năng tổng quát tốt trên dữ liệu mới.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Khi hiệu suất trên tập huấn luyện bắt đầu giảm xuống**: Đây không phải là thời điểm chính xác để dừng huấn luyện, vì hiệu suất trên tập huấn luyện có thể giảm do mô hình đang học các đặc điểm phức tạp hơn. Điều quan trọng là phải theo dõi hiệu suất trên tập kiểm tra, không chỉ tập huấn luyện.\n  \n- **Khi mô hình đạt được độ chính xác tối đa trên tập huấn luyện**: Độ chính xác tối đa trên tập huấn luyện không đảm bảo rằng mô hình sẽ hoạt động tốt trên dữ liệu chưa thấy. Mô hình có thể đạt được độ chính xác cao nhưng vẫn có thể bị overfitting, vì vậy cần phải kiểm tra hiệu suất trên tập kiểm tra để xác định thời điểm dừng huấn luyện.\n\n- **Khi có sự thay đổi lớn trong dữ liệu đầu vào của mô hình**: Sự thay đổi trong dữ liệu đầu vào không phải là lý do để dừng huấn luyện. Thay vào đó, điều này có thể yêu cầu điều chỉnh mô hình hoặc huấn luyện lại với dữ liệu mới. Early Stopping chỉ liên quan đến việc theo dõi hiệu suất trên tập kiểm tra trong quá trình huấn luyện, không phải là phản ứng với sự thay đổi trong dữ liệu đầu vào. \n\nTóm lại, việc dừng huấn luyện dựa trên hiệu suất trên tập kiểm tra là cách tiếp cận chính xác để tối ưu hóa mô hình và tránh overfitting.",
+      "topic": {
+        "name": "Early Stopping và Cross-Validation",
+        "description": "Chủ đề này tích hợp các khái niệm từ tuần 5 và tuần 8 để cùng xem xét các kỹ thuật bảo vệ nhân mẫu như Early Stopping và Cross-Validation. Học sinh sẽ được đánh giá về khả năng áp dụng các kỹ thuật này để tối ưu hóa mô hình và tránh overfitting trong học sâu.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    }
+  ]
+}

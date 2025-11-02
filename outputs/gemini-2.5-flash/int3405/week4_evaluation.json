@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm cơ bản của Perceptron",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better in terms of relevance and clarity, as it directly focuses on the geometric aspect of Perceptron, which is central to the topic. The distractors in the pipeline question are more plausible and aligned with common misconceptions compared to the baseline question. Both questions are appropriate for the Bloom level and difficulty, but the pipeline question edges out overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Mục tiêu tối ưu hóa của SVM biên cứng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better in terms of clarity and distractor plausibility. The distractors in the pipeline question are more nuanced and avoid overly simplistic errors. Both questions are relevant and appropriate for the Bloom level, but the pipeline question provides a more precise framing of the topic."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Chức năng và ý nghĩa của Kernel Trick",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant and aligned with the topic description, focusing on the mathematical aspect of Kernel Trick. The distractors are slightly more plausible and avoid overly simplistic errors. Both questions are clear and appropriate for the Bloom level, but the pipeline question is more precise overall."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Phương pháp 'Một-chống-phần còn lại' trong SVM",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better in terms of clarity and distractor plausibility. The distractors in the pipeline question are more aligned with common misconceptions and avoid overly simplistic errors. Both questions are relevant and appropriate for the Bloom level, but the pipeline question edges out overall."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Bài toán tối ưu hóa SVM biên cứng",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is better in terms of relevance and clarity, as it directly addresses the optimization problem and its mathematical formulation. The distractors are more plausible and aligned with the topic description. Both questions are appropriate for the Bloom level and difficulty, but the baseline question is more precise overall."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh SVM biên cứng và biên mềm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant and aligned with the topic description, focusing on the mechanisms of slack variables and the regularization parameter C. The distractors are slightly more plausible and avoid overly simplistic errors. Both questions are clear and appropriate for the Bloom level, but the pipeline question is more precise overall."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "So sánh các phương pháp tối ưu hóa trong Học máy",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is better in terms of relevance and clarity, as it directly addresses the optimization methods and their applications. The distractors are more plausible and aligned with the topic description. Both questions are appropriate for the Bloom level and difficulty, but the baseline question is more precise overall."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Ứng dụng Kernel Trick giải quyết vấn đề chiều dữ liệu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant and aligned with the topic description, focusing on the mathematical aspect of Kernel Trick and its application to high-dimensional spaces. The distractors are slightly more plausible and avoid overly simplistic errors. Both questions are clear and appropriate for the Bloom level, but the pipeline question is more precise overall."
+        }
+    ]
+}

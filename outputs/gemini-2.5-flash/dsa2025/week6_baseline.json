@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Đặc điểm cấu trúc nào sau đây là ĐÚNG đối với một Cây tìm kiếm nhị phân (BST) hợp lệ?",
+            "answer": "Với mỗi nút, tất cả các khóa trong cây con bên trái của nó nhỏ hơn khóa của nút đó, và tất cả các khóa trong cây con bên phải của nó lớn hơn khóa của nút đó.",
+            "distractors": [
+                "Với mỗi nút, tất cả các khóa trong cây con bên trái của nó lớn hơn khóa của nút đó, và tất cả các khóa trong cây con bên phải của nó nhỏ hơn khóa của nút đó.",
+                "Với mỗi nút, số lượng nút trong cây con bên trái và cây con bên phải phải bằng nhau.",
+                "Các nút lá của cây phải nằm trên cùng một cấp độ."
+            ],
+            "explanation": "Định nghĩa cơ bản của một BST là duy trì thứ tự đối xứng: khóa của mọi nút con bên trái phải nhỏ hơn khóa của nút cha, và khóa của mọi nút con bên phải phải lớn hơn khóa của nút cha. Các lựa chọn khác mô tả các cấu trúc cây khác hoặc không phải là đặc điểm bắt buộc của BST."
+        },
+        {
+            "question": "Khi thực hiện thao tác tìm kiếm (get) một khóa trong BST, thuật toán sẽ dừng lại trong trường hợp nào?",
+            "answer": "Khi tìm thấy khóa cần tìm hoặc khi đến một nút rỗng (null) mà không tìm thấy khóa.",
+            "distractors": [
+                "Khi duyệt hết tất cả các nút trong cây.",
+                "Khi khóa cần tìm nhỏ hơn khóa của nút gốc.",
+                "Khi khóa cần tìm lớn hơn khóa của nút gốc."
+            ],
+            "explanation": "Thuật toán tìm kiếm trong BST hoạt động bằng cách so sánh khóa cần tìm với khóa của nút hiện tại. Nếu bằng nhau, tìm kiếm thành công và dừng lại. Nếu khóa cần tìm nhỏ hơn, thuật toán tiếp tục tìm kiếm trong cây con bên trái. Nếu lớn hơn, tiếp tục trong cây con bên phải. Quá trình này dừng lại khi tìm thấy khóa hoặc khi đạt đến một nút rỗng (null), cho thấy khóa không tồn tại trong cây."
+        },
+        {
+            "question": "Khi chèn một cặp khóa-giá trị mới vào BST bằng thao tác `put()`, điều gì sẽ xảy ra nếu khóa đã tồn tại trong cây?",
+            "answer": "Giá trị liên kết với khóa đó sẽ được cập nhật bằng giá trị mới.",
+            "distractors": [
+                "Một nút mới với khóa trùng lặp sẽ được thêm vào cây con bên phải của nút hiện có.",
+                "Thao tác chèn sẽ bị hủy bỏ và trả về lỗi.",
+                "Cây sẽ tự động cân bằng lại để chứa khóa trùng lặp."
+            ],
+            "explanation": "Trong triển khai BST tiêu chuẩn, mỗi khóa là duy nhất. Nếu thao tác `put()` được gọi với một khóa đã tồn tại, nó sẽ không thêm một nút mới mà thay vào đó sẽ cập nhật giá trị (value) liên kết với khóa hiện có. Điều này đảm bảo tính duy nhất của khóa trong BST."
+        },
+        {
+            "question": "Tại sao việc sử dụng Generics với ràng buộc `Comparable` cho khóa là cần thiết khi triển khai BST trong Java?",
+            "answer": "Để cho phép BST lưu trữ các kiểu dữ liệu khóa khác nhau và đảm bảo rằng các khóa có thể được so sánh với nhau để duy trì thứ tự của cây.",
+            "distractors": [
+                "Để tăng tốc độ truy cập dữ liệu trong BST.",
+                "Để tự động cân bằng cây khi có sự thay đổi về cấu trúc.",
+                "Để chỉ cho phép các khóa là kiểu dữ liệu nguyên thủy (primitive types)."
+            ],
+            "explanation": "BST dựa vào việc so sánh các khóa để quyết định vị trí của chúng trong cây. Bằng cách sử dụng Generics với ràng buộc `Comparable<Key>`, chúng ta đảm bảo rằng bất kỳ kiểu dữ liệu nào được sử dụng làm khóa đều phải triển khai giao diện `Comparable`, cho phép chúng ta gọi phương thức `compareTo()` để so sánh các khóa một cách an toàn và duy trì thuộc tính thứ tự của BST. Điều này cũng giúp BST linh hoạt hơn, có thể làm việc với nhiều kiểu dữ liệu khác nhau."
+        },
+        {
+            "question": "Nếu N khóa riêng biệt được chèn vào một BST rỗng theo thứ tự ngẫu nhiên, số phép so sánh dự kiến cho một thao tác tìm kiếm hoặc chèn là bao nhiêu?",
+            "answer": "~ 2 ln N",
+            "distractors": [
+                "~ N",
+                "~ log N",
+                "~ N log N"
+            ],
+            "explanation": "Trong trường hợp trung bình, khi N khóa được chèn vào BST theo thứ tự ngẫu nhiên, chiều cao của cây sẽ xấp xỉ logarit. Số phép so sánh dự kiến cho các thao tác tìm kiếm hoặc chèn trong trường hợp này là ~ 2 ln N (tương đương ~ 1.39 log₂ N). Đây là một kết quả quan trọng trong phân tích hiệu suất của BST ngẫu nhiên."
+        },
+        {
+            "question": "Khi duyệt một Cây tìm kiếm nhị phân (BST) theo thứ tự Inorder (duyệt trái - gốc - phải), kết quả thu được là gì?",
+            "answer": "Các khóa của cây được liệt kê theo thứ tự tăng dần.",
+            "distractors": [
+                "Các khóa của cây được liệt kê theo thứ tự giảm dần.",
+                "Các khóa của cây được liệt kê theo thứ tự chèn vào.",
+                "Các khóa của cây được liệt kê theo thứ tự ngẫu nhiên."
+            ],
+            "explanation": "Duyệt cây theo thứ tự Inorder (trái - gốc - phải) là một đặc điểm quan trọng của BST. Do tính chất thứ tự của BST (khóa trái < khóa gốc < khóa phải), khi duyệt theo cách này, chúng ta sẽ luôn thu được các khóa được sắp xếp theo thứ tự tăng dần. Đây là một cách hiệu quả để trích xuất các phần tử đã sắp xếp từ BST."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản nhất giữa Heap nhị phân (Binary Heap) và Cây tìm kiếm nhị phân (BST) là gì?",
+            "answer": "Heap nhị phân duy trì thuộc tính Heap (nút cha lớn hơn/nhỏ hơn tất cả các con), trong khi BST duy trì thuộc tính thứ tự tìm kiếm (khóa trái < khóa cha < khóa phải).",
+            "distractors": [
+                "Heap nhị phân luôn là cây nhị phân đầy đủ, còn BST thì không.",
+                "Heap nhị phân chỉ hỗ trợ thao tác tìm kiếm, còn BST hỗ trợ chèn và xóa.",
+                "Heap nhị phân được sử dụng để sắp xếp, còn BST được sử dụng để lưu trữ dữ liệu không có thứ tự."
+            ],
+            "explanation": "Sự khác biệt cốt lõi nằm ở nguyên tắc duy trì thứ tự. Heap nhị phân (min-heap hoặc max-heap) đảm bảo rằng nút cha luôn có giá trị nhỏ hơn hoặc lớn hơn tất cả các nút con của nó, nhưng không có mối quan hệ thứ tự cụ thể giữa các nút con. Ngược lại, BST duy trì một thứ tự nghiêm ngặt: tất cả các khóa trong cây con bên trái nhỏ hơn khóa của nút cha, và tất cả các khóa trong cây con bên phải lớn hơn khóa của nút cha. Mục đích sử dụng và các thao tác hiệu quả của chúng cũng khác nhau đáng kể."
+        },
+        {
+            "question": "Tại sao thuật toán xóa Hibbard trong BST có thể dẫn đến hiệu suất kém (ví dụ: ~√N mỗi thao tác) và được so sánh với trường hợp xấu nhất của Quicksort?",
+            "answer": "Hibbard deletion có xu hướng tạo ra các cây không cân bằng, nơi các nút bị xóa có thể để lại các 'lỗ hổng' làm cho cây trở nên 'gầy' và dài, tương tự như cách Quicksort hoạt động kém khi chọn pivot không tốt.",
+            "distractors": [
+                "Hibbard deletion luôn yêu cầu duyệt toàn bộ cây để tìm nút kế nhiệm.",
+                "Hibbard deletion chỉ hoạt động hiệu quả với các cây cân bằng hoàn hảo.",
+                "Hibbard deletion sử dụng quá nhiều bộ nhớ, làm chậm quá trình xóa."
+            ],
+            "explanation": "Hibbard deletion, đặc biệt khi xóa các nút có hai con, thay thế nút bị xóa bằng nút kế nhiệm (successor) hoặc tiền nhiệm (predecessor). Nếu việc xóa được thực hiện lặp đi lặp lại, nó có xu hướng tạo ra các cây không cân bằng, nơi một bên của cây trở nên 'gầy' và dài hơn đáng kể so với bên kia. Điều này dẫn đến chiều cao cây tăng lên, làm cho các thao tác tìm kiếm, chèn và xóa tiếp theo mất thời gian hơn, có thể đạt đến O(N) trong trường hợp xấu nhất hoặc O(√N) trong trường hợp trung bình khi xóa ngẫu nhiên. Tình trạng này tương tự như trường hợp xấu nhất của Quicksort, nơi việc chọn pivot không tốt dẫn đến các phân vùng không cân bằng và hiệu suất giảm xuống O(N²)."
+        }
+    ]
+}

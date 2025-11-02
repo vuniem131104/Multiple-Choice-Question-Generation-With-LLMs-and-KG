@@ -56,27 +56,17 @@ services:
       - minio_data:/data
     command: server /data --console-address ":9001"
 
-  file-upload:
-    build:
-      context: .
-      dockerfile: ./docker/Dockerfile.file_upload
+  vectordb:
+    image: chromadb/chroma
+    volumes:
+      - ./chroma_database:/data
     ports:
       - "8000:8000"
     networks:
-      - educational-chatbot
-    volumes:
-      - type: bind
-        source: ./services/file_upload
-        target: /app/services/file_upload
-    depends_on:
-      - minio
-    environment:
-      - MINIO__ENDPOINT=${MINIO__ENDPOINT}
-      - MINIO__ACCESS_KEY=${MINIO__ACCESS_KEY}
-      - MINIO__SECRET_KEY=${MINIO__SECRET_KEY}
-      - MINIO__SECURE=${MINIO__SECURE}
+      - educational-chatbot 
 
   generation:
+    container_name: quiz_generation
     build:
       context: . 
       dockerfile: ./docker/Dockerfile.generation 
@@ -90,6 +80,8 @@ services:
         target: /app/services/generation 
     depends_on:
       - litellm_service
+      - minio
+      - vectordb
     environment:
       - MINIO__ENDPOINT=${MINIO__ENDPOINT}
       - MINIO__ACCESS_KEY=${MINIO__ACCESS_KEY}
@@ -97,48 +89,78 @@ services:
       - MINIO__SECURE=${MINIO__SECURE}
       - LITELLM__URL=${LITELLM__URL}
       - LITELLM__TOKEN=${LITELLM__TOKEN}
+      - VECTOR_DATABASE__HOST=${VECTOR_DATABASE__HOST}
+      - VECTOR_DATABASE__PORT=${VECTOR_DATABASE__PORT}
 
-  neo4j:
-    image: neo4j:5.22.0-bullseye
+  auth:
+    container_name: auth_service
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.auth
     ports:
-      - 17474:7474
-      - 17687:7687
-    volumes:
-      - ./data/neo4j:/data
-      - ./logs/neo4j:/logs
-      - ./conf/neo4j:/conf
-      - ./plugins/neo4j:/plugins
-    environment:
-      - NEO4J_AUTH=${NEO4J__USERNAME}/${NEO4J__PASSWORD}
-      - NEO4J_PLUGINS=["graph-data-science", "apoc"]
-      - NEO4J_dbms_memory_heap_initial__size=3g
-      - NEO4J_dbms_memory_heap_max__size=3g
-      - NEO4J_dbms_memory_pagecache_size=1g
-      - NEO4J_dbms_memory_transaction_total_max=1g
-      - NEO4J_db_transaction_timeout=60s
-      - NEO4J_db_transaction_concurrent_maximum=20
-      - NEO4J_db_transaction_bookmark__ready__timeout=10s
-    deploy:
-      resources:
-        limits:
-          memory: 6G
-        reservations:
-          memory: 2G
-    restart: always
+      - "3001:3001"
     networks:
       - educational-chatbot
+    volumes:
+      - type: bind
+        source: ./services/auth
+        target: /app/services/auth
+    depends_on:
+      - postgres
+    environment:
+      - POSTGRES__HOST=postgres
+      - POSTGRES__PORT=5432
+      - POSTGRES__USER=${POSTGRES__USER}
+      - POSTGRES__PASSWORD=${POSTGRES__PASSWORD}
+      - POSTGRES__DB=${POSTGRES__DB}
+
+
+
+  # neo4j:
+  #   image: neo4j:5.22.0-bullseye
+  #   ports:
+  #     - 17474:7474
+  #     - 17687:7687
+  #   volumes:
+  #     - ./data/neo4j:/data
+  #     - ./logs/neo4j:/logs
+  #     - ./conf/neo4j:/conf
+  #     - ./plugins/neo4j:/plugins
+  #   environment:
+  #     - NEO4J_AUTH=${NEO4J__USERNAME}/${NEO4J__PASSWORD}
+  #     - NEO4J_PLUGINS=["graph-data-science", "apoc"]
+  #     - NEO4J_dbms_memory_heap_initial__size=3g
+  #     - NEO4J_dbms_memory_heap_max__size=3g
+  #     - NEO4J_dbms_memory_pagecache_size=1g
+  #     - NEO4J_dbms_memory_transaction_total_max=1g
+  #     - NEO4J_db_transaction_timeout=60s
+  #     - NEO4J_db_transaction_concurrent_maximum=20
+  #     - NEO4J_db_transaction_bookmark__ready__timeout=10s
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         memory: 6G
+  #       reservations:
+  #         memory: 2G
+  #   restart: always
+  #   networks:
+  #     - educational-chatbot
 
   postgres:
     image: postgres:17.0-alpine
     restart: always
     ports:
       - 15432:5432
+    networks:
+      - educational-chatbot
     environment:
       - POSTGRES_USER=${POSTGRES__USER}
       - POSTGRES_PASSWORD=${POSTGRES__PASSWORD}
       - POSTGRES_DB=${POSTGRES__DB}
     volumes:
-      - ./data/pg_history:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
       
 volumes:
   minio_data:
+  postgres_data:

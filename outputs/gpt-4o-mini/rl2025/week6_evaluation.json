@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Học tăng cường dựa trên chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it directly addresses a specific aspect of policy-based reinforcement learning (parameterization of policy) as described in the topic, making it more relevant and aligned with the 'Nhớ' Bloom level. The distractors are also more plausible and related to the core concept. The Baseline question is too broad ('What is policy-based reinforcement learning?') for a 'Nhớ' level question when the topic description implies understanding specific concepts and applications. Its distractors are also less plausible."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Ưu và nhược điểm của Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it specifically asks about an advantage of policy-based reinforcement learning related to 'nâng cao hiệu suất của các chính sách ngẫu nhiên', which directly aligns with the topic description's focus on 'đánh giá sự ưu việt và tác động của chúng đến hiệu suất của các chính sách ngẫu nhiên'. The Baseline question is too general, asking about an advantage of reinforcement learning in general, not specifically policy-based, and its distractors are less specific and plausible."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Phương trình đạo hàm chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks for a specific formula ('công thức nào thường được sử dụng để tính toán đạo hàm của chính sách') which is more aligned with the 'Áp dụng' Bloom level and the topic's focus on understanding formulas and their application. The Baseline question is a bit too general ('Phương trình đạo hàm chính sách được sử dụng để làm gì?'), leaning more towards 'Hiểu' than 'Áp dụng'. The Pipeline's distractors are also more closely related to the concept of derivatives in this context."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Xấp xỉ hàm tương thích và đạo hàm chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it directly addresses 'how compatible value function approximation affects policy performance', requiring a deeper 'Phân tích' (Analyze) level understanding. The correct answer provides a clear explanation of the mechanism. The Baseline question is too simplistic ('It helps improve accuracy and performance'), which is more of a 'Hiểu' (Understand) level answer, and its distractors are too obviously wrong, reducing plausibility."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Quy trình Quyền lợi tối ưu Bellman",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks for a specific factor ('yếu tố nào nhất định phải được xem xét') in evaluating policy effectiveness within the Bellman Optimality Principle, which aligns well with the 'Đánh giá' (Evaluate) Bloom level. The Baseline question is a basic definition ('Nguyên lý Quy trình Quyền lợi tối ưu Bellman là gì?'), which is more 'Nhớ' or 'Hiểu' level, not 'Đánh giá'. The distractors in the Baseline are also very weak."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Hàm mục tiêu của chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it asks for a detailed explanation of what the policy's objective function determines ('xác định điều gì trong quá trình đánh giá chất lượng của chính sách?'), requiring a 'Phân tích' (Analyze) level understanding of its role. The correct answer is precise. The Baseline question is a simple 'what is it used for?' which is more 'Hiểu' (Understand) level, and its distractors are not very plausible."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Đạo hàm chính sách Monte-Carlo (REINFORCE)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it specifically asks which derivative REINFORCE uses ('sử dụng đạo hàm nào để cập nhật tham số'), which is a direct application of knowledge as per the 'Áp dụng' (Apply) Bloom level. The Baseline question is a bit more general ('có vai trò gì?'), leaning towards 'Hiểu' (Understand). The Pipeline's distractors are also more relevant to different types of derivatives or related concepts, making them more plausible."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Đạo hàm chính sách tự nhiên và ứng dụng của nó",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it asks about the specific relationship that natural policy gradient helps evaluate ('mối quan hệ nào trong quá trình học'), requiring a 'Đánh giá' (Evaluate) level understanding of its purpose and impact. The correct answer clearly defines this relationship. The Baseline question is too general ('có điểm gì đặc biệt?'), and its correct answer is a generic benefit ('cải thiện tốc độ hội tụ') rather than a deep analytical insight, making it more 'Hiểu' (Understand) level. The distractors in the Baseline are also weak."
+        }
+    ]
+}

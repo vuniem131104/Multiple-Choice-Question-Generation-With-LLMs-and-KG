@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm cơ bản về Phân tích Cụm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better overall due to its direct focus on the classification of cluster analysis as unsupervised learning, which aligns perfectly with the topic and Bloom level. The baseline question is relevant but slightly less focused on the foundational concept of unsupervised learning."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Các phép đo khoảng cách trong phân cụm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better as it directly tests the definition of Manhattan Distance, which is a core concept in the topic. The baseline question is relevant but focuses on a more specific use case of Cosine Similarity, which may not be as foundational for understanding clustering distance measures."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Ý tưởng chính của thuật toán K-Means",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question provides a more comprehensive explanation of the core idea of K-Means, including both the assignment of points and the iterative update of cluster centers. The pipeline question is relevant but less detailed, focusing only on the requirement for specifying K."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Các loại phân cụm",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is better as it explicitly ties the example of DBSCAN to the concept of density-based clustering, making it more pedagogically valuable. The pipeline question is relevant but less specific in its connection to real-world examples."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh K-Means và HAC",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better as it directly addresses the suitability of HAC for situations where K is not predefined, which aligns well with the topic's focus on comparing the two algorithms. The baseline question is relevant but less focused on the practical implications of the comparison."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Phương pháp Elbow tìm K tối ưu trong K-Means",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better as it provides a specific scenario for applying the Elbow method, which enhances understanding of the concept. The baseline question is relevant but more general, lacking the practical application aspect."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Phân biệt học có giám sát và không giám sát",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better as it emphasizes the necessity of output labels in supervised learning, which is a fundamental distinction. The baseline question is relevant but less focused on the core difference between the two learning types."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Hệ số Silhouette và Đánh giá mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better as it provides a comparative evaluation of models based on Silhouette scores, which aligns well with the topic's focus on model assessment. The baseline question is relevant but focuses on individual data points rather than overall model evaluation."
+        }
+    ]
+}

@@ -180,7 +180,7 @@ if __name__ == "__main__":
         max_token_per_chunk=1000,
         min_token_per_chunk=500,
     ))
-    with open("/home/vuiem/KLTN/test/parser/Lecture2_General Concepts for ML_parser.txt", "r") as file:
+    with open("/home/lehoangvu/KLTN/test/parser/Lecture2_General Concepts for ML_parser.txt", "r") as file:
         contents = file.read()
         input_data = ChunkerInput(contents=contents, file_name="Lecture2_General Concepts for ML.pdf")
 

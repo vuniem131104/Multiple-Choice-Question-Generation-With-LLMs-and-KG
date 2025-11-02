@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Mô hình Perceptron là gì?",
+            "answer": "Một mô hình học máy đơn giản dùng để phân loại dữ liệu.",
+            "distractors": [
+                "Một loại mạng nơ-ron phức tạp",
+                "Một thuật toán tối ưu hóa",
+                "Một phương pháp hồi quy tuyến tính"
+            ],
+            "explanation": "Mô hình Perceptron là một trong những mô hình học máy cơ bản nhất, được sử dụng để phân loại dữ liệu thành hai lớp. Nó hoạt động bằng cách tìm kiếm một siêu phẳng phân tách dữ liệu."
+        },
+        {
+            "question": "Trong mô hình Perceptron, trọng số được cập nhật như thế nào?",
+            "answer": "Bằng cách sử dụng quy tắc cập nhật trọng số dựa trên lỗi phân loại.",
+            "distractors": [
+                "Bằng cách giữ nguyên trọng số",
+                "Bằng cách tăng trọng số ngẫu nhiên",
+                "Bằng cách giảm trọng số theo thời gian"
+            ],
+            "explanation": "Trọng số trong mô hình Perceptron được cập nhật dựa trên quy tắc học, nơi trọng số được điều chỉnh theo hướng giảm thiểu lỗi phân loại."
+        },
+        {
+            "question": "Giới hạn số lần cập nhật trong thuật toán Perceptron là gì?",
+            "answer": "Số lần cập nhật phụ thuộc vào số lượng mẫu và độ chính xác mong muốn.",
+            "distractors": [
+                "Luôn luôn là 100 lần",
+                "Không có giới hạn nào",
+                "Chỉ phụ thuộc vào số lượng lớp"
+            ],
+            "explanation": "Số lần cập nhật trong thuật toán Perceptron không cố định mà phụ thuộc vào số lượng mẫu và độ chính xác mong muốn của mô hình."
+        },
+        {
+            "question": "SVM tìm siêu phẳng phân tách như thế nào?",
+            "answer": "Bằng cách tối đa hóa biên độ giữa các lớp dữ liệu.",
+            "distractors": [
+                "Bằng cách giảm thiểu độ lệch",
+                "Bằng cách sử dụng trọng số ngẫu nhiên",
+                "Bằng cách phân chia dữ liệu thành nhiều lớp"
+            ],
+            "explanation": "SVM tìm siêu phẳng phân tách bằng cách tối đa hóa biên độ giữa các lớp dữ liệu, nhằm đảm bảo rằng các điểm dữ liệu được phân loại chính xác."
+        },
+        {
+            "question": "Biên độ mềm trong SVM là gì?",
+            "answer": "Một phương pháp cho phép một số điểm dữ liệu nằm sai bên siêu phẳng phân tách.",
+            "distractors": [
+                "Một cách để tăng độ chính xác của mô hình",
+                "Một thuật toán phân loại khác",
+                "Một loại hàm kernel"
+            ],
+            "explanation": "Biên độ mềm cho phép một số điểm dữ liệu nằm sai bên siêu phẳng phân tách, giúp mô hình linh hoạt hơn trong việc xử lý dữ liệu không thể phân tách hoàn hảo."
+        },
+        {
+            "question": "Bài toán quy hoạch bậc hai trong SVM liên quan đến điều gì?",
+            "answer": "Tối ưu hóa hàm mục tiêu với các ràng buộc.",
+            "distractors": [
+                "Giải quyết các phương trình vi phân",
+                "Tìm kiếm các điểm cực trị của hàm số",
+                "Phân loại dữ liệu thành nhiều lớp"
+            ],
+            "explanation": "Bài toán quy hoạch bậc hai trong SVM liên quan đến việc tối ưu hóa hàm mục tiêu với các ràng buộc, nhằm tìm ra siêu phẳng phân tách tốt nhất."
+        },
+        {
+            "question": "Hàm kernel trong SVM có tác dụng gì?",
+            "answer": "Chuyển đổi không gian đặc trưng để phân loại dữ liệu phi tuyến tính.",
+            "distractors": [
+                "Giảm số lượng biến trong dữ liệu",
+                "Tăng tốc độ tính toán của mô hình",
+                "Giúp mô hình học từ dữ liệu không có nhãn"
+            ],
+            "explanation": "Hàm kernel trong SVM giúp chuyển đổi không gian đặc trưng, cho phép mô hình phân loại dữ liệu phi tuyến tính một cách hiệu quả."
+        },
+        {
+            "question": "Phương pháp One-vs-Rest trong phân loại đa lớp là gì?",
+            "answer": "Một phương pháp phân loại từng lớp một so với tất cả các lớp còn lại.",
+            "distractors": [
+                "Một phương pháp phân loại đồng thời tất cả các lớp",
+                "Một cách để giảm số lượng lớp",
+                "Một thuật toán hồi quy"
+            ],
+            "explanation": "Phương pháp One-vs-Rest phân loại từng lớp một so với tất cả các lớp còn lại, giúp mở rộng mô hình SVM cho phân loại đa lớp."
+        }
+    ]
+}

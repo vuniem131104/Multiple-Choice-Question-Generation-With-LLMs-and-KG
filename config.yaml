@@ -82,9 +82,9 @@ model_list:
       api_key: os.environ/LLAMA_API_KEY
       rpm: 20
 
-  - model_name: gpt-4o
+  - model_name: gpt-4o-mini
     litellm_params:
-      model: azure/gpt-4o
+      model: azure/gpt-4o-mini
       api_base: os.environ/AZURE_WESTUS_API_BASE
       api_key: os.environ/AZURE_WESTUS_API_KEY
       api_version: os.environ/AZURE_WESTUS_API_VERSION
@@ -96,9 +96,9 @@ model_list:
       api_key: os.environ/AZURE_WESTUS_API_KEY
       api_version: os.environ/AZURE_SUNAI_API_VERSION
 
-  - model_name: gpt-4.1-mini
+  - model_name: gpt-4o-mini
     litellm_params:
-      model: azure/gpt-4.1-mini
+      model: azure/gpt-4o-mini
       api_base: os.environ/AZURE_SWEDEN_API_BASE
       api_key: os.environ/AZURE_SWEDEN_API_KEY
       api_version: os.environ/AZURE_SWEDEN_API_VERSION

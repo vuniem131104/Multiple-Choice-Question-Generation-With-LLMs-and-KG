@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Đặc điểm của Học tăng cường dựa trên chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it directly asks for a key characteristic, leading to a more focused answer. The distractors are plausible and directly related to the concept of policy parameterization. The Baseline question uses a 'NOT' format, which can be more confusing for a 'Remember' Bloom level, and one distractor ('Khác biệt với các phương pháp dựa trên giá trị ở chỗ không cần ước lượng hàm giá trị để chọn hành động') is quite long and complex for a simple recall question, making it less clear and slightly less plausible as a simple distractor."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Công thức cập nhật đạo hàm chính sách cơ bản",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior due to its clarity and highly plausible distractors. It focuses precisely on the basic update formula. The Baseline question's distractors are overly complex, introducing elements from other algorithms (TD error, Q-learning, REINFORCE specific terms) that are not relevant to the 'basic update formula' and make the question harder than 'Remember' level, thus reducing distractor plausibility and clarity for the stated topic."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Ưu điểm của Học tăng cường dựa trên chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because it asks for 'one of the significant advantages', which is a straightforward 'Understand' level question. The distractors are simple and plausible. The Baseline question's correct answer combines two advantages, which is fine, but some distractors are absolute statements ('Luôn yêu cầu ít dữ liệu hơn', 'Không bao giờ bị mắc kẹt') which are easily identifiable as false, reducing their plausibility. The Pipeline's distractors are more subtly incorrect."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Mục tiêu hàm chính sách trong môi trường episodic",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.75,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is clearer and more direct in its phrasing, asking 'bằng cách sử dụng khái niệm gì?'. The distractors are well-chosen and distinct. The Baseline question's correct answer is a bit verbose, and some distractors include complex mathematical notations that might be overwhelming for a 'Understand' level question, making them less effective as distractors and reducing overall clarity."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Ứng dụng của Định lý đạo hàm chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more precise in its wording, asking 'đại lượng nào được thay thế'. The distractors are distinct concepts related to RL, making them plausible. The Baseline question's distractors, while related, include 'Lỗi thời gian khác biệt (TD error) δt' and 'Hàm lợi thế Aπ(st, at)' which are more advanced concepts that might confuse students at an 'Apply' level if they haven't fully grasped the core substitution. The Pipeline's distractors are more fundamental, making the question better aligned with the 'Apply' level by focusing on the direct substitution."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Cơ chế cập nhật của thuật toán REINFORCE",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.75,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses 'how' REINFORCE ensures unbiased updates, which aligns well with the 'Analyze' Bloom level. The correct answer clearly explains the mechanism. The distractors are plausible but incorrect explanations. The Baseline question is more of a 'Remember' or 'Understand' level question, asking 'bằng cách sử dụng đại lượng nào', rather than 'how' it ensures unbiasedness. Its distractors are also less nuanced, making the correct answer stand out more easily."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Vai trò của Critic trong Actor-Critic",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more focused on the 'purpose' of the Critic's estimation in relation to the Actor's policy gradient, which is a deeper 'Analyze' level understanding. The distractors are well-crafted to represent common misunderstandings of the Critic's role. The Baseline question is also good but slightly broader, asking for the 'main role' which could be answered with a more general statement. The Pipeline's question forces a more specific analytical understanding of the interaction between Actor and Critic."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tối ưu hóa đạo hàm chính sách bằng hàm lợi thế và lỗi TD",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.75,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it directly asks for the 'đóng góp chính nào vào sự ổn định và hiệu suất', requiring an evaluative judgment, which aligns perfectly with the 'Evaluate' Bloom level. The correct answer highlights the key benefit (variance reduction). The distractors are plausible but incorrect evaluations of the primary contribution. The Baseline question, while relevant, asks 'Làm thế nào để lỗi TD... được sử dụng để giảm phương sai', which is more of an 'Analyze' or 'Understand' level question rather than 'Evaluate'. Its distractors are also less evaluative in nature."
+        }
+    ]
+}

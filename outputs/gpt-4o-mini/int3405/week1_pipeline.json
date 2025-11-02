@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Học có giám sát là gì trong học máy?",
+      "answer": "Một phương pháp học máy sử dụng dữ liệu đã được gán nhãn để huấn luyện mô hình dự đoán.",
+      "distractors": [
+        "Một phương pháp học máy không sử dụng dữ liệu để huấn luyện mô hình.",
+        "Một phương pháp học máy chỉ sử dụng dữ liệu không gán nhãn.",
+        "Một phương pháp học máy mà mô hình tự học mà không cần dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Một phương pháp học máy sử dụng dữ liệu đã được gán nhãn để huấn luyện mô hình dự đoán\" là chính xác vì học có giám sát yêu cầu dữ liệu đầu vào phải được gán nhãn, tức là mỗi mẫu dữ liệu đều có thông tin về kết quả mong đợi. Điều này cho phép mô hình học từ các ví dụ cụ thể và cải thiện khả năng dự đoán cho các dữ liệu chưa thấy.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Một phương pháp học máy không sử dụng dữ liệu để huấn luyện mô hình**: Tùy chọn này sai vì học có giám sát hoàn toàn dựa vào việc sử dụng dữ liệu để huấn luyện. Nếu không có dữ liệu, mô hình không thể học được gì.\n\n- **Một phương pháp học máy chỉ sử dụng dữ liệu không gán nhãn**: Tùy chọn này cũng sai vì học có giám sát đặc trưng bởi việc sử dụng dữ liệu đã được gán nhãn. Dữ liệu không gán nhãn thường được sử dụng trong học không giám sát, không phải học có giám sát.\n\n- **Một phương pháp học máy mà mô hình tự học mà không cần dữ liệu**: Tùy chọn này không chính xác vì mọi phương pháp học máy, bao gồm cả học có giám sát, đều cần dữ liệu để huấn luyện. Mô hình không thể tự học mà không có dữ liệu đầu vào để phân tích và rút ra kết luận.\n\nTóm lại, câu trả lời đúng nêu rõ bản chất của học có giám sát, trong khi các yếu tố gây nhiễu đều sai vì không phản ánh đúng cách thức hoạt động của phương pháp này.",
+      "topic": {
+        "name": "Học có giám sát trong học máy",
+        "description": "Chủ đề này nêu rõ khái niệm học có giám sát, một phương pháp học máy trong đó dữ liệu đã được gán nhãn được sử dụng để huấn luyện mô hình dự đoán. Học sinh nên hiểu các thành phần như dữ liệu huấn luyện và hàm mục tiêu có thể được kiểm tra qua các câu hỏi MCQ.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mô hình hồi quy tuyến tính với một biến được sử dụng để làm gì?",
+      "answer": "Dự đoán giá trị đầu ra dựa trên giá trị đầu vào duy nhất.",
+      "distractors": [
+        "Dự đoán giá trị đầu ra dựa trên nhiều giá trị đầu vào khác nhau.",
+        "Xác định mối quan hệ giữa hai biến độc lập.",
+        "Tính toán giá trị trung bình của một biến đầu vào."
+      ],
+      "explanation": "Câu trả lời đúng \"Dự đoán giá trị đầu ra dựa trên giá trị đầu vào duy nhất\" là chính xác vì mô hình hồi quy tuyến tính với một biến được thiết kế để tìm ra mối quan hệ giữa một biến độc lập (đầu vào) và một biến phụ thuộc (đầu ra). Mô hình này sử dụng một phương trình tuyến tính để dự đoán giá trị của biến phụ thuộc dựa trên giá trị của biến độc lập duy nhất, cho phép chúng ta hiểu và dự đoán kết quả dựa trên một yếu tố cụ thể.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Dự đoán giá trị đầu ra dựa trên nhiều giá trị đầu vào khác nhau**: Điều này sai vì mô hình hồi quy tuyến tính với một biến chỉ sử dụng một biến độc lập để dự đoán giá trị đầu ra. Nếu có nhiều biến đầu vào, chúng ta sẽ cần sử dụng hồi quy tuyến tính đa biến, không phải hồi quy tuyến tính với một biến.\n\n- **Xác định mối quan hệ giữa hai biến độc lập**: Đây cũng là một sự nhầm lẫn, vì hồi quy tuyến tính với một biến chỉ tập trung vào mối quan hệ giữa một biến độc lập và một biến phụ thuộc. Mối quan hệ giữa hai biến độc lập không phải là mục tiêu của mô hình này.\n\n- **Tính toán giá trị trung bình của một biến đầu vào**: Tùy chọn này không chính xác vì hồi quy tuyến tính không chỉ đơn thuần là tính toán giá trị trung bình. Thay vào đó, nó tìm ra một phương trình để dự đoán giá trị đầu ra dựa trên biến đầu vào, không phải chỉ là một phép tính trung bình. \n\nTóm lại, câu trả lời đúng phản ánh chính xác chức năng của mô hình hồi quy tuyến tính với một biến, trong khi các yếu tố gây nhiễu đều không phù hợp với định nghĩa và ứng dụng của mô hình này.",
+      "topic": {
+        "name": "Hồi quy tuyến tính với một biến",
+        "description": "Chủ đề này giải thích về hồi quy tuyến tính với một biến, nơi học sinh cần nắm vững cách thức mô hình này dự đoán một giá trị đầu ra dựa trên giá trị đầu vào duy nhất. Câu hỏi có thể bao gồm mô hình biểu diễn và ứng dụng thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Hàm chi phí trong học máy thường được sử dụng để đo lường điều gì?",
+      "answer": "Sai số giữa giá trị dự đoán và giá trị thực",
+      "distractors": [
+        "Sai số giữa các giá trị dự đoán của các mô hình khác nhau",
+        "Sai số giữa giá trị dự đoán và giá trị trung bình",
+        "Sai số giữa giá trị thực và giá trị dự đoán của mô hình tốt nhất"
+      ],
+      "explanation": "Câu trả lời đúng là \"Sai số giữa giá trị dự đoán và giá trị thực\" vì hàm chi phí trong học máy được thiết kế để đo lường mức độ sai lệch giữa các giá trị mà mô hình dự đoán và các giá trị thực tế mà nó cố gắng dự đoán. Mục tiêu của việc tối ưu hóa hàm chi phí là giảm thiểu sai số này, từ đó cải thiện độ chính xác của mô hình.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sai số giữa các giá trị dự đoán của các mô hình khác nhau**: Đây không phải là mục tiêu của hàm chi phí, mà là một cách để so sánh hiệu suất của các mô hình khác nhau. Hàm chi phí tập trung vào sai số của một mô hình cụ thể so với giá trị thực, không phải so sánh giữa các mô hình.\n\n- **Sai số giữa giá trị dự đoán và giá trị trung bình**: Sai số này không phản ánh độ chính xác của mô hình đối với dữ liệu thực tế. Hàm chi phí không đo lường sự khác biệt giữa dự đoán và giá trị trung bình, mà là giữa dự đoán và giá trị thực tế mà mô hình cần đạt được.\n\n- **Sai số giữa giá trị thực và giá trị dự đoán của mô hình tốt nhất**: Mặc dù mô hình tốt nhất có thể có sai số thấp nhất, hàm chi phí không đo lường sai số của một mô hình so với mô hình tốt nhất mà chỉ tập trung vào sai số của chính mô hình đó so với giá trị thực. Mục tiêu là tối ưu hóa cho mô hình hiện tại, không phải so sánh với mô hình khác.\n\nTóm lại, hàm chi phí chủ yếu đo lường sai số giữa giá trị dự đoán và giá trị thực, trong khi các yếu tố gây nhiễu khác không phản ánh đúng mục đích của hàm chi phí trong học máy.",
+      "topic": {
+        "name": "Hàm chi phí và tối ưu hóa",
+        "description": "Chủ đề này tập trung vào hàm chi phí trong học máy, bao gồm cách tính toán và ý nghĩa của cấu trúc sai lệch trong dự đoán. Đây là một khái niệm cốt lõi trong việc đánh giá hiệu quả của mô hình và có thể được kiểm tra thông qua các câu hỏi về công thức và ứng dụng.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.66,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong quy trình tối ưu hóa hồi quy tuyến tính bằng thuật toán Gradient Descent, tốc độ học có vai trò gì trong việc điều chỉnh các tham số mô hình?",
+      "answer": "Tốc độ học xác định mức độ điều chỉnh của các tham số sau mỗi bước lặp.",
+      "distractors": [
+        "Tốc độ học không ảnh hưởng đến việc điều chỉnh tham số trong mô hình.",
+        "Tốc độ học chỉ quyết định số lần lặp lại của thuật toán.",
+        "Tốc độ học xác định hướng đi của các tham số trong mỗi bước lặp."
+      ],
+      "explanation": "Trong quy trình tối ưu hóa hồi quy tuyến tính bằng thuật toán Gradient Descent, câu trả lời đúng \"Tốc độ học xác định mức độ điều chỉnh của các tham số sau mỗi bước lặp.\" là chính xác vì tốc độ học (learning rate) là một tham số quan trọng quyết định kích thước của bước điều chỉnh mà thuật toán thực hiện trong mỗi lần lặp. Nếu tốc độ học quá cao, mô hình có thể không hội tụ và có thể bỏ qua điểm tối ưu. Ngược lại, nếu tốc độ học quá thấp, quá trình tối ưu hóa sẽ diễn ra chậm và có thể mất nhiều thời gian để đạt được kết quả.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Tốc độ học không ảnh hưởng đến việc điều chỉnh tham số trong mô hình.**: Sai, vì tốc độ học chính là yếu tố quyết định mức độ điều chỉnh của các tham số. Nếu không có tốc độ học, thuật toán sẽ không biết nên điều chỉnh các tham số như thế nào.\n  \n- **Tốc độ học chỉ quyết định số lần lặp lại của thuật toán.**: Sai, tốc độ học không quyết định số lần lặp mà là kích thước bước điều chỉnh trong mỗi lần lặp. Số lần lặp phụ thuộc vào điều kiện dừng của thuật toán, không phải tốc độ học.\n\n- **Tốc độ học xác định hướng đi của các tham số trong mỗi bước lặp.**: Sai, hướng đi của các tham số được xác định bởi gradient (đạo hàm) của hàm mất mát, không phải tốc độ học. Tốc độ học chỉ ảnh hưởng đến mức độ điều chỉnh, không phải hướng đi. \n\nTóm lại, tốc độ học là yếu tố quyết định mức độ điều chỉnh tham số, trong khi các yếu tố gây nhiễu đều không chính xác vì không phản ánh đúng vai trò của tốc độ học trong thuật toán Gradient Descent.",
+      "topic": {
+        "name": "Thuật toán Gradient Descent",
+        "description": "Chủ đề này cho thấy cách Gradient Descent được sử dụng để tối ưu hóa các tham số trong hồi quy tuyến tính. Học sinh nên giải thích quy trình và vai trò của tốc độ học, đồng thời áp dụng hiểu biết vào các bài tập thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mô hình hồi quy tuyến tính đa biến sử dụng công thức nào để dự đoán biến phụ thuộc dựa trên các biến độc lập?",
+      "answer": "Y = b0 + b1X1 + b2X2 + ... + bnXn",
+      "distractors": [
+        "Y = b0 + b1X1 + b2X2 + b3X3",
+        "Y = b0 + b1X1 + b2X2 + b3X3 + b4X4 + ...",
+        "Y = b0 + b1X1 + b2X2 + b3X3 + b4X4 + b5X5"
+      ],
+      "explanation": "Câu trả lời đúng \"Y = b0 + b1X1 + b2X2 + ... + bnXn\" là công thức chuẩn của mô hình hồi quy tuyến tính đa biến, trong đó Y là biến phụ thuộc, b0 là hằng số (intercept), b1, b2, ..., bn là các hệ số hồi quy tương ứng với các biến độc lập X1, X2, ..., Xn. Công thức này cho phép dự đoán giá trị của Y dựa trên sự kết hợp tuyến tính của nhiều biến độc lập, phản ánh mối quan hệ giữa chúng.\n\nCác yếu tố gây nhiễu:\n- **Y = b0 + b1X1 + b2X2 + b3X3**: Mặc dù công thức này có vẻ đúng, nhưng nó chỉ sử dụng ba biến độc lập (X1, X2, X3) mà không bao gồm khả năng mở rộng cho nhiều biến hơn. Mô hình hồi quy tuyến tính đa biến có thể có bất kỳ số lượng biến độc lập nào, không giới hạn ở ba biến.\n  \n- **Y = b0 + b1X1 + b2X2 + b3X3 + b4X4 + ...**: Tương tự như trên, công thức này cũng đúng trong một số trường hợp, nhưng không thể hiện tính tổng quát của mô hình hồi quy tuyến tính đa biến. Nó chỉ dừng lại ở một số lượng biến nhất định mà không chỉ ra rằng có thể có nhiều biến hơn nữa, do đó không phản ánh đầy đủ công thức tổng quát.\n\n- **Y = b0 + b1X1 + b2X2 + b3X3 + b4X4 + b5X5**: Công thức này cũng chỉ ra một mô hình hồi quy với năm biến độc lập, nhưng như các yếu tố trước, nó không thể hiện tính tổng quát của mô hình hồi quy tuyến tính đa biến. Mô hình này có thể có nhiều biến hơn nữa, và không giới hạn ở năm biến.\n\nTóm lại, câu trả lời đúng là công thức tổng quát cho mô hình hồi quy tuyến tính đa biến, trong khi các yếu tố gây nhiễu chỉ là các trường hợp cụ thể không phản ánh đầy đủ tính linh hoạt của mô hình.",
+      "topic": {
+        "name": "Hồi quy tuyến tính đa biến",
+        "description": "Chủ đề này mở rộng khái niệm hồi quy tuyến tính bằng cách sử dụng nhiều biến đầu vào. Học sinh sẽ cần nắm rõ công thức mô hình và ứng dụng thực tế liên quan đến nhiều đặc trưng đầu vào.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.62,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi so sánh phương pháp giải quyết phương trình chuẩn trong hồi quy với Gradient Descent, phương pháp nào thường mang lại độ chính xác cao hơn?",
+      "answer": "Phương pháp giải quyết phương trình chuẩn",
+      "distractors": [
+        "Phương pháp Gradient Descent thường cho kết quả chính xác hơn trong hồi quy.",
+        "Phương pháp giải quyết phương trình chuẩn chỉ áp dụng cho hồi quy phi tuyến.",
+        "Phương pháp Gradient Descent là lựa chọn tốt nhất cho mọi loại mô hình hồi quy."
+      ],
+      "explanation": "Câu trả lời đúng là \"Phương pháp giải quyết phương trình chuẩn\" vì phương pháp này cung cấp một cách tiếp cận chính xác để tìm các tham số của mô hình hồi quy tuyến tính thông qua công thức toán học cụ thể. Phương pháp này tính toán trực tiếp các hệ số hồi quy bằng cách sử dụng ma trận, đảm bảo rằng các tham số được tối ưu hóa một cách chính xác nhất có thể, dẫn đến độ chính xác cao hơn so với các phương pháp khác như Gradient Descent, đặc biệt trong các bài toán hồi quy tuyến tính.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phương pháp Gradient Descent thường cho kết quả chính xác hơn trong hồi quy**: Điều này không đúng vì Gradient Descent là một phương pháp tối ưu hóa lặp đi lặp lại và có thể không hội tụ đến giá trị chính xác nếu không được điều chỉnh đúng cách (ví dụ, chọn tốc độ học không phù hợp). Trong khi đó, phương pháp giải quyết phương trình chuẩn cho kết quả chính xác ngay lập tức cho hồi quy tuyến tính.\n\n- **Phương pháp giải quyết phương trình chuẩn chỉ áp dụng cho hồi quy phi tuyến**: Đây là một sự hiểu lầm. Phương pháp giải quyết phương trình chuẩn chủ yếu được áp dụng cho hồi quy tuyến tính. Đối với hồi quy phi tuyến, các phương pháp khác như hồi quy phi tuyến hoặc hồi quy logistic thường được sử dụng.\n\n- **Phương pháp Gradient Descent là lựa chọn tốt nhất cho mọi loại mô hình hồi quy**: Điều này không chính xác vì không phải lúc nào Gradient Descent cũng là lựa chọn tốt nhất. Đối với các mô hình hồi quy tuyến tính, phương pháp giải quyết phương trình chuẩn thường mang lại kết quả chính xác hơn và nhanh hơn. Gradient Descent có thể hữu ích cho các mô hình phức tạp hơn hoặc khi dữ liệu lớn, nhưng không phải là lựa chọn tối ưu cho tất cả các tình huống.\n\nTóm lại, phương pháp giải quyết phương trình chuẩn là lựa chọn chính xác hơn cho hồi quy tuyến tính, trong khi các yếu tố gây nhiễu đều chứa những hiểu lầm về cách thức hoạt động và ứng dụng của các phương pháp hồi quy khác nhau.",
+      "topic": {
+        "name": "Phương trình chuẩn trong hồi quy",
+        "description": "Chủ đề này khám phá phương trình chuẩn và cách giải quyết nó để tìm các tham số của mô hình hồi quy tuyến tính. Học sinh sẽ học cách áp dụng phương pháp này và so sánh với Gradient Descent, kiểm tra sự hiểu biết qua các câu hỏi ứng dụng.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong hồi quy tuyến tính, sự khác biệt chính giữa phương pháp Gradient Descent và Phương trình chuẩn là gì?",
+      "answer": "Gradient Descent là phương pháp tối ưu hóa số, trong khi Phương trình chuẩn cung cấp giải pháp phân tích trực tiếp và thường đơn giản hơn trong nhiều trường hợp.",
+      "distractors": [
+        "Gradient Descent là phương pháp tối ưu hóa số, không thể áp dụng cho hồi quy phi tuyến tính.",
+        "Phương trình chuẩn có thể được tính toán trực tiếp mà không cần tối ưu hóa trong các trường hợp bình thường.",
+        "Gradient Descent không đảm bảo luôn cho kết quả chính xác hơn so với Phương trình chuẩn và kết quả phụ thuộc vào dữ liệu đầu vào và phương pháp được sử dụng."
+      ],
+      "explanation": "Câu trả lời đúng là \"Gradient Descent là phương pháp tối ưu hóa số, trong khi Phương trình chuẩn cung cấp giải pháp phân tích trực tiếp và thường đơn giản hơn trong nhiều trường hợp.\" Điều này đúng vì Gradient Descent cần thực hiện nhiều bước lặp để tìm ra tham số tối ưu, trong khi Phương trình chuẩn (phương pháp bình phương tối thiểu) cho phép tính toán tham số hồi quy một cách tức thời từ một công thức mà không yêu cầu bước lặp lại. Mặc dù Gradient Descent có thể được áp dụng cho các bài toán hồi quy khác nhau bao gồm cả phi tuyến tính, Phương trình chuẩn thường là cách tiếp cận hiệu quả hơn khi áp dụng cho hồi quy tuyến tính.",
+      "topic": {
+        "name": "So sánh các phương pháp hồi quy",
+        "description": "Chủ đề này phân tích sự khác biệt giữa Gradient Descent và Phương trình chuẩn, cung cấp cơ hội cho học sinh để đánh giá hiệu quả của từng phương pháp trong các tình huống khác nhau. Câu hỏi sẽ yêu cầu học sinh áp dụng kiến thức đã học từ các tuần trước và tuần này.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mối liên hệ giữa hồi quy tuyến tính và hàm chi phí trong học máy có giám sát là gì?",
+      "answer": "Hàm chi phí đo độ chính xác và tối ưu hóa các tham số của mô hình hồi quy tuyến tính.",
+      "distractors": [
+        "Hàm chi phí chỉ đo độ phức tạp của mô hình hồi quy tuyến tính.",
+        "Hồi quy tuyến tính không phải là một phương pháp trong học máy có giám sát.",
+        "Hàm chi phí không liên quan đến việc tối ưu hóa mô hình hồi quy tuyến tính."
+      ],
+      "explanation": "Câu trả lời đúng \"Hàm chi phí đo độ chính xác và tối ưu hóa các tham số của mô hình hồi quy tuyến tính\" chính xác hơn vì hàm chi phí không chỉ đánh giá độ chính xác của dự đoán mà còn được sử dụng để tối ưu hóa các tham số của mô hình, giúp giảm thiểu sai số giữa giá trị thực tế và giá trị dự đoán. Yếu tố gây nhiễu đầu tiên sai vì hàm chi phí không chỉ đo lường độ phức tạp mà còn phản ánh độ chính xác của dự đoán. Yếu tố thứ hai sai khi nói rằng hồi quy tuyến tính không phải là một phương pháp trong học máy có giám sát, vì thực tế hồi quy tuyến tính là một trong những kỹ thuật cơ bản trong lĩnh vực này. Yếu tố thứ ba là không chính xác vì hàm chi phí có vai trò quan trọng trong việc điều chỉnh tham số mô hình.",
+      "topic": {
+        "name": "Tích hợp khái niệm hồi quy",
+        "description": "Chủ đề này tích hợp các khái niệm từ tuần này về hồi quy với các đề tài học tập trước đó. Học sinh sẽ cần hiểu các mối liên hệ giữa hồi quy tuyến tính và các khái niệm khác như học máy có giám sát và hàm chi phí, kiểm tra khả năng tổng hợp kiến thức của họ.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.61,
+        "bloom_taxonomy_level": "Tạo"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    }
+  ]
+}

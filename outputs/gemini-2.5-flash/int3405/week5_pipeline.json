@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong Học máy, lỗi thực tế (True Error hay Risk) được định nghĩa là gì?",
+      "answer": "Lỗi thực tế là giá trị kỳ vọng của hàm mất mát đối với toàn bộ phân phối dữ liệu khả dĩ chưa nhìn thấy.",
+      "distractors": [
+        "Lỗi thực tế là lỗi mà mô hình mắc phải trên tập dữ liệu huấn luyện.",
+        "Lỗi thực tế là tổng của tất cả các lỗi dự đoán trên một tập dữ liệu thử nghiệm cụ thể.",
+        "Lỗi thực tế là độ lệch chuẩn của các dự đoán của mô hình so với giá trị thực."
+      ],
+      "explanation": "Lỗi thực tế (True Error hay Risk) trong Học máy được định nghĩa là giá trị kỳ vọng của hàm mất mát đối với toàn bộ phân phối dữ liệu khả dĩ chưa nhìn thấy. Điều này có nghĩa là nó đo lường hiệu suất trung bình của mô hình trên tất cả các điểm dữ liệu có thể có trong tương lai, không chỉ những điểm đã được quan sát. Nó là một thước đo lý thuyết về hiệu suất tổng quát của mô hình.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Lỗi thực tế là lỗi mà mô hình mắc phải trên tập dữ liệu huấn luyện.** Đây là định nghĩa của lỗi huấn luyện (training error) hoặc lỗi thực nghiệm (empirical error), không phải lỗi thực tế. Lỗi huấn luyện thường thấp hơn lỗi thực tế vì mô hình đã được tối ưu hóa để phù hợp với dữ liệu này.\n*   **Lỗi thực tế là tổng của tất cả các lỗi dự đoán trên một tập dữ liệu thử nghiệm cụ thể.** Đây là định nghĩa của lỗi thử nghiệm (test error) hoặc lỗi thực nghiệm trên tập thử nghiệm. Mặc dù lỗi thử nghiệm là một ước tính của lỗi thực tế, nó chỉ là tổng lỗi trên một tập con hữu hạn và cụ thể của dữ liệu, không phải giá trị kỳ vọng trên toàn bộ phân phối dữ liệu chưa nhìn thấy.\n*   **Lỗi thực tế là độ lệch chuẩn của các dự đoán của mô hình so với giá trị thực.** Độ lệch chuẩn đo lường sự phân tán hoặc biến động của các dự đoán, không phải lỗi trung bình hoặc kỳ vọng của hàm mất mát. Mặc dù sự biến động có thể liên quan đến hiệu suất, nó không phải là định nghĩa trực tiếp của lỗi thực tế.",
+      "topic": {
+        "name": "Định nghĩa Lỗi Thực tế và Lỗi Thực nghiệm",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc nhận biết định nghĩa chính xác về lỗi thực tế (True Error/Risk) so với lỗi thực nghiệm (Empirical Error/Risk), bao gồm những gì mỗi loại lỗi đánh giá trong Học máy. Nó tập trung vào việc hiểu các khái niệm cơ bản về đánh giá mô hình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một mô hình học máy đạt hiệu suất rất cao trên tập huấn luyện nhưng lại có hiệu suất kém khi được kiểm tra trên dữ liệu mới, chưa từng thấy. Hiện tượng này được gọi là gì?",
+      "answer": "Quá khớp",
+      "distractors": [
+        "Dưới khớp",
+        "Học không giám sát",
+        "Phân loại sai"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Quá khớp**. Quá khớp (Overfitting) xảy ra khi một mô hình học máy học quá chi tiết hoặc \"ghi nhớ\" dữ liệu huấn luyện, bao gồm cả nhiễu, thay vì học các mẫu tổng quát. Điều này dẫn đến hiệu suất rất cao trên tập huấn luyện nhưng lại kém khi gặp dữ liệu mới, chưa từng thấy, vì mô hình không thể khái quát hóa tốt.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Dưới khớp (Underfitting)**: Dưới khớp là tình trạng ngược lại, khi mô hình quá đơn giản và không học đủ các mẫu từ dữ liệu huấn luyện. Điều này dẫn đến hiệu suất kém ngay cả trên tập huấn luyện và cũng kém trên dữ liệu mới.\n*   **Học không giám sát (Unsupervised Learning)**: Học không giám sát là một loại hình học máy xử lý dữ liệu không có nhãn. Nó không mô tả hành vi hiệu suất của mô hình trên tập huấn luyện và dữ liệu mới, mà là một phương pháp học.\n*   **Phân loại sai (Misclassification)**: Phân loại sai là một lỗi cụ thể khi mô hình dự đoán sai nhãn của một điểm dữ liệu. Mặc dù quá khớp có thể dẫn đến nhiều trường hợp phân loại sai trên dữ liệu mới, nhưng bản thân \"phân loại sai\" không phải là tên của hiện tượng mô hình hoạt động tốt trên dữ liệu huấn luyện nhưng kém trên dữ liệu mới.\n",
+      "topic": {
+        "name": "Nhận biết các ví dụ về Quá khớp và Dưới khớp",
+        "description": "Chủ đề này đánh giá khả năng của học sinh trong việc phân biệt các tình huống quá khớp (Overfitting) và dưới khớp (Underfitting) của mô hình dựa trên hành vi trên tập huấn luyện và dữ liệu mới. Các ví dụ về mô hình hồi quy hoặc phân loại cụ thể có thể được sử dụng để minh họa.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Kỹ thuật lựa chọn đặc trưng không giám sát được sử dụng để tối ưu hóa mô hình bằng cách loại bỏ loại đặc trưng nào?",
+      "answer": "Các đặc trưng không đầy đủ, có tính đa cộng tuyến cao hoặc có phương sai gần bằng 0.",
+      "distractors": [
+        "Các đặc trưng có mối tương quan cao với biến mục tiêu.",
+        "Các đặc trưng có giá trị bị thiếu ngẫu nhiên hoặc không đáng kể.",
+        "Các đặc trưng không liên quan đến kết quả dự đoán của mô hình."
+      ],
+      "explanation": "Kỹ thuật lựa chọn đặc trưng không giám sát được sử dụng để tối ưu hóa mô hình bằng cách loại bỏ các đặc trưng không đầy đủ, có tính đa cộng tuyến cao hoặc có phương sai gần bằng 0.\n\n**Tại sao câu trả lời đúng là đúng:**\nCác kỹ thuật lựa chọn đặc trưng không giám sát tập trung vào việc phân tích các đặc trưng dựa trên các thuộc tính nội tại của chúng mà không cần đến biến mục tiêu.\n*   **Đặc trưng không đầy đủ (incomplete features)**: Các đặc trưng có nhiều giá trị bị thiếu có thể gây ra vấn đề cho mô hình và thường được loại bỏ.\n*   **Đặc trưng có tính đa cộng tuyến cao (highly multicollinear features)**: Khi hai hoặc nhiều đặc trưng có mối tương quan rất cao với nhau, chúng cung cấp thông tin tương tự, dẫn đến dư thừa và có thể gây ra sự không ổn định trong mô hình (ví dụ: trong hồi quy tuyến tính). Việc loại bỏ một trong số chúng giúp giảm độ phức tạp mà không làm mất thông tin quan trọng.\n*   **Đặc trưng có phương sai gần bằng 0 (near-zero variance features)**: Các đặc trưng này có rất ít sự thay đổi trong các giá trị của chúng, nghĩa là chúng cung cấp rất ít hoặc không có thông tin phân biệt cho mô hình. Việc loại bỏ chúng giúp giảm nhiễu và cải thiện hiệu suất.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **Các đặc trưng có mối tương quan cao với biến mục tiêu**: Đây là một đặc điểm mong muốn trong lựa chọn đặc trưng có giám sát, vì nó cho thấy đặc trưng đó có khả năng dự đoán tốt. Các kỹ thuật không giám sát không sử dụng thông tin về biến mục tiêu.\n*   **Các đặc trưng có giá trị bị thiếu ngẫu nhiên hoặc không đáng kể**: Mặc dù các giá trị bị thiếu là một vấn đề, nhưng việc phân loại chúng là \"ngẫu nhiên\" hay \"không đáng kể\" không phải là tiêu chí chính để loại bỏ trong lựa chọn đặc trưng không giám sát. Trọng tâm là số lượng giá trị bị thiếu (không đầy đủ) hơn là bản chất của sự thiếu hụt.\n*   **Các đặc trưng không liên quan đến kết quả dự đoán của mô hình**: Khái niệm \"không liên quan đến kết quả dự đoán\" ngụ ý một mối quan hệ với biến mục tiêu, điều này thuộc về lựa chọn đặc trưng có giám sát. Các kỹ thuật không giám sát không đánh giá mức độ liên quan của đặc trưng với kết quả dự đoán.",
+      "topic": {
+        "name": "Các Phương pháp Lựa chọn Đặc trưng Không giám sát",
+        "description": "Chủ đề này tập trung vào các kỹ thuật lựa chọn đặc trưng không giám sát, yêu cầu học sinh xác định các phương pháp phù hợp để loại bỏ các đặc trưng không đầy đủ, có tính đa cộng tuyến cao hoặc có phương sai gần bằng 0 để tối ưu hóa mô hình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Điểm đặc trưng nào của L1 regularization (Lasso) khiến nó hiệu quả trong việc lựa chọn đặc trưng (feature selection) so với L2 regularization (Ridge)?",
+      "answer": "L1 regularization có khả năng đặt một số hệ số của các đặc trưng về bằng 0.",
+      "distractors": [
+        "L1 regularization giảm thiểu các hệ số nhưng không bao giờ đặt chúng về 0 hoàn toàn.",
+        "L1 regularization ưu tiên các đặc trưng có giá trị tuyệt đối lớn hơn, loại bỏ các đặc trưng yếu.",
+        "L1 regularization làm cho mô hình đơn giản hơn bằng cách giảm độ phức tạp của hàm mất mát."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao \"L1 regularization có khả năng đặt một số hệ số của các đặc trưng về bằng 0\" là đúng:**\n\nL1 regularization (Lasso) thêm một hình phạt vào tổng giá trị tuyệt đối của các hệ số vào hàm mất mát. Đặc điểm hình học của hình phạt L1 (một hình vuông xoay trong không gian 2D, hoặc một hình bát diện trong không gian nhiều chiều hơn) có các \"góc nhọn\" tại các trục. Khi quá trình tối ưu hóa tìm kiếm điểm cực tiểu của hàm mất mát kết hợp với hình phạt L1, các hệ số có xu hướng bị đẩy về 0, đặc biệt là đối với các đặc trưng ít quan trọng. Điều này dẫn đến việc một số hệ số trở thành 0 hoàn toàn, loại bỏ các đặc trưng tương ứng khỏi mô hình và thực hiện việc lựa chọn đặc trưng một cách hiệu quả.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **\"L1 regularization giảm thiểu các hệ số nhưng không bao giờ đặt chúng về 0 hoàn toàn.\"** Phát biểu này sai vì khả năng đặt các hệ số về 0 chính là điểm khác biệt cốt lõi và là lý do chính khiến L1 regularization hiệu quả trong việc lựa chọn đặc trưng. L2 regularization (Ridge) mới là loại giảm thiểu các hệ số nhưng hiếm khi đặt chúng về 0 hoàn toàn.\n*   **\"L1 regularization ưu tiên các đặc trưng có giá trị tuyệt đối lớn hơn, loại bỏ các đặc trưng yếu.\"** Phát biểu này không chính xác. L1 regularization không ưu tiên các đặc trưng có giá trị tuyệt đối lớn hơn. Thay vào đó, nó có xu hướng đẩy các hệ số của các đặc trưng ít quan trọng về 0, bất kể giá trị tuyệt đối ban đầu của chúng. Mục tiêu là đơn giản hóa mô hình bằng cách loại bỏ các đặc trưng không cần thiết, chứ không phải ưu tiên các đặc trưng \"mạnh\" hơn.\n*   **\"L1 regularization làm cho mô hình đơn giản hơn bằng cách giảm độ phức tạp của hàm mất mát.\"** Phát biểu này sai. L1 regularization làm cho mô hình đơn giản hơn bằng cách giảm số lượng đặc trưng được sử dụng (thông qua việc đặt hệ số về 0), từ đó giảm độ phức tạp của mô hình, chứ không phải giảm độ phức tạp của hàm mất mát. Thực tế, nó thêm một thành phần vào hàm mất mát, làm cho hàm mất mát phức tạp hơn về mặt toán học để tối ưu hóa, nhưng kết quả là một mô hình đơn giản hơn.",
+      "topic": {
+        "name": "So sánh L1 và L2 Regularization (Liên tuần: Tuần 1, Tuần 2, Tuần 5)",
+        "description": "Chủ đề này kiểm tra sự hiểu biết của học sinh về Điều chuẩn L1 (Lasso) và L2 (Ridge), bao gồm cách chúng ảnh hưởng đến các tham số mô hình trong hồi quy tuyến tính (Tuần 1) và hồi quy logistic (Tuần 2), đồng thời phân biệt được ứng dụng và công thức cơ bản của mỗi loại. Nó kết nối khái niệm tối ưu hóa với các mô hình cụ thể.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nhà khoa học dữ liệu huấn luyện một mô hình học máy mà đạt được độ chính xác gần như hoàn hảo trên tập dữ liệu huấn luyện nhưng lại có hiệu suất kém đáng kể trên tập dữ liệu kiểm thử độc lập. Dựa trên khái niệm về độ phức tạp của mô hình, hiện tượng này có khả năng được giải thích bởi yếu tố nào liên quan đến mô hình?",
+      "answer": "Mô hình bị quá khớp (overfitting)",
+      "distractors": [
+        "Mô hình bị thiếu khớp (underfitting)",
+        "Mô hình có độ phức tạp thấp",
+        "Mô hình có độ chính xác cao"
+      ],
+      "explanation": "Hiện tượng mô hình đạt độ chính xác gần như hoàn hảo trên tập huấn luyện nhưng lại có hiệu suất kém trên tập kiểm thử độc lập chính là dấu hiệu kinh điển của **quá khớp (overfitting)**. Quá khớp xảy ra khi mô hình quá phức tạp, học quá kỹ các nhiễu và chi tiết cụ thể của dữ liệu huấn luyện, bao gồm cả các mẫu ngẫu nhiên không đại diện cho dữ liệu tổng thể. Do đó, mô hình không thể tổng quát hóa tốt cho dữ liệu mới, chưa từng thấy (tập kiểm thử).\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Mô hình bị thiếu khớp (underfitting)**: Thiếu khớp xảy ra khi mô hình quá đơn giản, không đủ phức tạp để nắm bắt các mẫu cơ bản trong dữ liệu, dẫn đến hiệu suất kém trên cả tập huấn luyện và tập kiểm thử. Trong trường hợp này, mô hình có độ chính xác cao trên tập huấn luyện, loại trừ khả năng thiếu khớp.\n*   **Mô hình có độ phức tạp thấp**: Một mô hình có độ phức tạp thấp thường dẫn đến thiếu khớp, chứ không phải quá khớp. Nếu mô hình có độ phức tạp thấp, nó sẽ không thể đạt được độ chính xác gần như hoàn hảo trên tập huấn luyện.\n*   **Mô hình có độ chính xác cao**: Mặc dù mô hình có độ chính xác cao trên tập huấn luyện, nhưng việc nó có hiệu suất kém trên tập kiểm thử cho thấy độ chính xác cao này là do quá khớp, chứ không phải là một đặc điểm mong muốn của mô hình tổng quát hóa tốt. \"Độ chính xác cao\" tự nó không giải thích được sự chênh lệch hiệu suất giữa hai tập dữ liệu.\n",
+      "topic": {
+        "name": "Ảnh hưởng của Độ phức tạp Mô hình đến Lỗi (Liên tuần: Tuần 3, Tuần 4, Tuần 5)",
+        "description": "Chủ đề này đánh giá cách độ phức tạp của mô hình (ví dụ: độ sâu của cây quyết định từ Tuần 3, kernel trong SVM từ Tuần 4) ảnh hưởng đến lỗi thực nghiệm và lỗi thực tế, đặc biệt là mối quan hệ dẫn đến quá khớp, như được giải thích trong khái niệm độ phức tạp của mô hình của Tuần 5.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong phân tích rủi ro, lỗi ước tính (estimation error) chủ yếu phát sinh từ nguồn nào?",
+      "answer": "Dữ liệu huấn luyện hữu hạn",
+      "distractors": [
+        "Giới hạn của lớp mô hình",
+        "Độ phức tạp của thuật toán",
+        "Thiếu sự đa dạng trong tập dữ liệu"
+      ],
+      "explanation": "Lỗi ước tính (estimation error) chủ yếu phát sinh từ **dữ liệu huấn luyện hữu hạn**. Khi chúng ta có một lượng dữ liệu hạn chế để huấn luyện mô hình, mô hình có thể không học được đầy đủ các mẫu và mối quan hệ tiềm ẩn trong dữ liệu thực tế, dẫn đến sự khác biệt giữa hiệu suất của mô hình trên tập huấn luyện và hiệu suất thực tế trên dữ liệu chưa thấy. Đây là bản chất của lỗi ước tính.\n\nCác yếu tố gây nhiễu khác không phải là nguồn chính của lỗi ước tính:\n*   **Giới hạn của lớp mô hình** là nguyên nhân chính của lỗi xấp xỉ (approximation error), không phải lỗi ước tính. Lỗi xấp xỉ xảy ra khi lớp mô hình được chọn không đủ linh hoạt hoặc không phù hợp để biểu diễn mối quan hệ thực sự trong dữ liệu, bất kể lượng dữ liệu huấn luyện.\n*   **Độ phức tạp của thuật toán** có thể ảnh hưởng đến thời gian tính toán và khả năng tìm ra giải pháp tối ưu, nhưng bản thân nó không phải là nguồn gốc trực tiếp của lỗi ước tính. Một thuật toán phức tạp có thể vẫn gặp lỗi ước tính nếu dữ liệu huấn luyện không đủ.\n*   **Thiếu sự đa dạng trong tập dữ liệu** là một vấn đề liên quan đến chất lượng dữ liệu, có thể làm trầm trọng thêm lỗi ước tính, nhưng nguyên nhân gốc rễ của lỗi ước tính vẫn là số lượng dữ liệu huấn luyện hữu hạn. Nếu dữ liệu huấn luyện không đa dạng, mô hình sẽ không thể khái quát hóa tốt, nhưng vấn đề cơ bản vẫn là sự hạn chế của thông tin mà mô hình có thể học được từ tập dữ liệu đó.\n",
+      "topic": {
+        "name": "Xác định Lỗi Ước tính và Lỗi Xấp xỉ",
+        "description": "Chủ đề này tập trung vào khái niệm phân tích rủi ro bằng cách yêu cầu học sinh xác định các thành phần của lỗi tổng thể: lỗi ước tính gây ra bởi dữ liệu huấn luyện hữu hạn và lỗi xấp xỉ gây ra bởi giới hạn của lớp mô hình. Học sinh cần hiểu nguồn gốc của từng loại lỗi.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi một mô hình đang gặp tình trạng quá khớp (overfitting) với phương sai cao và độ lệch thấp, việc giảm độ phức tạp của mô hình thường ảnh hưởng đến độ lệch và phương sai của nó như thế nào?",
+      "answer": "Độ lệch tăng và phương sai giảm.",
+      "distractors": [
+        "Độ lệch giảm và phương sai tăng.",
+        "Cả độ lệch và phương sai đều giảm.",
+        "Cả độ lệch và phương sai đều tăng."
+      ],
+      "explanation": "Khi một mô hình đang gặp tình trạng quá khớp (overfitting) với phương sai cao và độ lệch thấp, điều đó có nghĩa là mô hình quá phức tạp và đã học quá nhiều nhiễu từ dữ liệu huấn luyện, dẫn đến hiệu suất kém trên dữ liệu mới. Để giảm quá khớp, chúng ta cần giảm độ phức tạp của mô hình.\n\n**Tại sao \"Độ lệch tăng và phương sai giảm\" là đúng:**\nGiảm độ phức tạp của mô hình (ví dụ: giảm số lượng tính năng, sử dụng mô hình đơn giản hơn, tăng cường điều hòa) sẽ làm cho mô hình ít nhạy cảm hơn với các biến động nhỏ trong dữ liệu huấn luyện. Điều này trực tiếp dẫn đến **giảm phương sai** vì mô hình sẽ ít thay đổi hơn khi được huấn luyện trên các tập dữ liệu khác nhau. Tuy nhiên, một mô hình đơn giản hơn có thể không nắm bắt được tất cả các mối quan hệ cơ bản trong dữ liệu, dẫn đến **tăng độ lệch** (lỗi hệ thống) vì mô hình đưa ra các giả định đơn giản hóa hơn. Đây chính là sự đánh đổi giữa độ lệch và phương sai.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Độ lệch giảm và phương sai tăng:** Tùy chọn này mô tả điều ngược lại của những gì xảy ra khi giảm độ phức tạp của mô hình. Giảm độ lệch và tăng phương sai thường là kết quả của việc tăng độ phức tạp của mô hình, điều này sẽ làm trầm trọng thêm tình trạng quá khớp.\n*   **Cả độ lệch và phương sai đều giảm:** Mặc dù mục tiêu cuối cùng là giảm cả độ lệch và phương sai để đạt được điểm tối ưu, nhưng việc giảm độ phức tạp của mô hình không đồng thời làm giảm cả hai. Giảm độ phức tạp sẽ làm tăng độ lệch trong khi giảm phương sai.\n*   **Cả độ lệch và phương sai đều tăng:** Tùy chọn này không phù hợp với bất kỳ chiến lược điều chỉnh mô hình thông thường nào. Việc tăng cả độ lệch và phương sai sẽ cho thấy một mô hình kém hiệu quả hơn nhiều, điều này không phải là kết quả của việc giảm độ phức tạp để giải quyết quá khớp.\n",
+      "topic": {
+        "name": "Hiểu Biểu đồ Đánh đổi Độ lệch - Phương sai",
+        "description": "Chủ đề này đánh giá khả năng của học sinh trong việc giải thích biểu đồ đánh đổi Bias-Variance, kết nối độ lệch cao/phương sai thấp với dưới khớp và độ lệch thấp/phương sai cao với quá khớp. Câu hỏi có thể yêu cầu xác định điểm tối ưu và các chiến lược giảm thiểu mỗi loại lỗi.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nhà khoa học dữ liệu đang xây dựng một mô hình Hồi quy Logistic để phân loại khách hàng tiềm năng. Mô hình này đạt độ chính xác rất cao trên dữ liệu huấn luyện nhưng hiệu suất giảm đáng kể trên dữ liệu kiểm tra chưa từng thấy, chỉ ra hiện tượng quá khớp nghiêm trọng. Ngoài ra, việc phân tích cho thấy nhiều đặc trưng có mức độ tương quan cao với nhau và một số đặc trưng dường như không đóng góp đáng kể vào dự đoán. Kỹ thuật điều chuẩn nào trong các kỹ thuật sau đây phù hợp nhất để giải quyết đồng thời vấn đề quá khớp, giảm thiểu các đặc trưng dư thừa và xử lý mối tương quan này?",
+      "answer": "Điều chuẩn L1 (Lasso Regression)",
+      "distractors": [
+        "Điều chuẩn L2 (Ridge Regression)",
+        "Giảm chiều dữ liệu bằng PCA (Phân tích thành phần chính)",
+        "Sử dụng thuật toán Random Forest"
+      ],
+      "explanation": "**Giải thích:**\n\n**Điều chuẩn L1 (Lasso Regression) là câu trả lời đúng** vì nó giải quyết hiệu quả cả ba vấn đề được nêu trong kịch bản: quá khớp, các đặc trưng dư thừa và mối tương quan giữa các đặc trưng. Điều chuẩn L1 thêm một hình phạt vào tổng giá trị tuyệt đối của các hệ số của mô hình. Hình phạt này có xu hướng đẩy các hệ số của các đặc trưng ít quan trọng về 0, dẫn đến việc lựa chọn đặc trưng tự động. Bằng cách loại bỏ các đặc trưng không đóng góp đáng kể hoặc có mối tương quan cao với các đặc trưng khác, Lasso giúp giảm độ phức tạp của mô hình, từ đó giảm quá khớp và xử lý các đặc trưng dư thừa.\n\n**Các yếu tố gây nhiễu không chính xác:**\n\n*   **Điều chuẩn L2 (Ridge Regression)** không phải là lựa chọn phù hợp nhất. Mặc dù điều chuẩn L2 (Ridge Regression) giúp giảm quá khớp bằng cách thêm một hình phạt vào tổng bình phương của các hệ số, nó có xu hướng thu nhỏ tất cả các hệ số về 0 nhưng hiếm khi đặt chúng chính xác bằng 0. Điều này có nghĩa là nó không thực hiện lựa chọn đặc trưng và do đó không giải quyết được vấn đề các đặc trưng dư thừa hoặc loại bỏ các đặc trưng có mối tương quan cao một cách hiệu quả như L1.\n\n*   **Giảm chiều dữ liệu bằng PCA (Phân tích thành phần chính)** không phải là giải pháp tối ưu. PCA là một kỹ thuật giảm chiều dữ liệu biến đổi các đặc trưng ban đầu thành một tập hợp các thành phần chính không tương quan. Mặc dù nó có thể giúp giảm quá khớp và xử lý mối tương quan, nó không loại bỏ các đặc trưng ban đầu mà thay vào đó tạo ra các đặc trưng mới (thành phần chính) là sự kết hợp tuyến tính của các đặc trưng ban đầu. Điều này có thể làm giảm khả năng diễn giải của mô hình và không trực tiếp giải quyết vấn đề các đặc trưng dư thừa theo nghĩa loại bỏ chúng.\n\n*   **Sử dụng thuật toán Random Forest** không phải là kỹ thuật điều chuẩn mà là một thuật toán học máy ensemble. Mặc dù Random Forest thường có khả năng chống quá khớp tốt hơn so với các mô hình đơn lẻ và có thể xử lý các đặc trưng tương quan ở một mức độ nào đó, nó không phải là một kỹ thuật điều chuẩn được thiết kế để thu nhỏ hoặc loại bỏ các hệ số đặc trưng như L1 hoặc L2. Việc chuyển đổi sang một thuật toán khác không trực tiếp giải quyết vấn đề quá khớp và các đặc trưng dư thừa thông qua điều chuẩn.",
+      "topic": {
+        "name": "Áp dụng Điều chuẩn để giải quyết Quá khớp (Liên tuần: Tuần 1, Tuần 2, Tuần 5)",
+        "description": "Chủ đề này đòi hỏi học sinh phải áp dụng kiến thức về điều chuẩn (Tuần 5) để giải quyết vấn đề quá khớp trong các mô hình như Hồi quy tuyến tính (Tuần 1) hoặc Hồi quy Logistic (Tuần 2). Nó kiểm tra khả năng lựa chọn và giải thích kỹ thuật điều chuẩn phù hợp trong các tình huống cụ thể.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.45,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    }
+  ]
+}

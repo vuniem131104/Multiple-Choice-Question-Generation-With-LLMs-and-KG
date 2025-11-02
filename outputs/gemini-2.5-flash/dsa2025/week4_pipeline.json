@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Ba bước chính của thuật toán Quicksort được thực hiện theo trình tự thường là gì?",
+      "answer": "Xáo trộn, phân vùng và sắp xếp đệ quy.",
+      "distractors": [
+        "Phân vùng, sắp xếp đệ quy và hợp nhất.",
+        "Xáo trộn, sắp xếp và hợp nhất.",
+        "Sắp xếp, phân vùng và hợp nhất đệ quy."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Xáo trộn, phân vùng và sắp xếp đệ quy.** vì đây là ba bước chính được thực hiện theo trình tự trong thuật toán Quicksort.\n\n1.  **Xáo trộn (Shuffle)**: Bước này thường được thực hiện đầu tiên để đảm bảo hiệu suất trung bình của Quicksort. Bằng cách xáo trộn mảng, chúng ta giảm thiểu khả năng gặp phải trường hợp xấu nhất (ví dụ: mảng đã được sắp xếp hoặc sắp xếp ngược), nơi Quicksort có thể có độ phức tạp thời gian O(n^2).\n2.  **Phân vùng (Partition)**: Đây là bước cốt lõi của Quicksort. Một phần tử chốt (pivot) được chọn, và mảng được sắp xếp lại sao cho tất cả các phần tử nhỏ hơn phần tử chốt nằm ở bên trái nó, và tất cả các phần tử lớn hơn nằm ở bên phải nó. Sau bước này, phần tử chốt nằm ở vị trí cuối cùng của nó trong mảng đã sắp xếp.\n3.  **Sắp xếp đệ quy (Recursively sort)**: Sau khi phân vùng, Quicksort được gọi đệ quy trên các mảng con ở bên trái và bên phải của phần tử chốt cho đến khi toàn bộ mảng được sắp xếp.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Phân vùng, sắp xếp đệ quy và hợp nhất**: Tùy chọn này sai vì Quicksort không sử dụng bước \"hợp nhất\" (merge). Hợp nhất là một bước đặc trưng của thuật toán Mergesort, nơi các mảng con đã sắp xếp được kết hợp lại. Quicksort sắp xếp \"tại chỗ\" thông qua phân vùng và sắp xếp đệ quy.\n*   **Xáo trộn, sắp xếp và hợp nhất**: Tùy chọn này sai vì nó thiếu bước \"phân vùng\" quan trọng, là trái tim của thuật toán Quicksort. Ngoài ra, nó cũng bao gồm \"hợp nhất\", vốn không phải là một phần của Quicksort.\n*   **Sắp xếp, phân vùng và hợp nhất đệ quy**: Tùy chọn này sai vì nó bắt đầu bằng \"sắp xếp\" chung chung mà không rõ ràng, và quan trọng hơn, nó thiếu bước \"xáo trộn\" ban đầu thường được khuyến nghị. Hơn nữa, nó cũng bao gồm \"hợp nhất đệ quy\", vốn không phải là một bước trong Quicksort.",
+      "topic": {
+        "name": "Các bước chính của Quicksort",
+        "description": "Chủ đề này kiểm tra khả năng nhớ các bước cơ bản của thuật toán Quicksort: xáo trộn, phân vùng và sắp xếp đệ quy. MCQ sẽ tập trung vào trình tự và mục đích của từng bước.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Thuộc tính nào sau đây thường không được coi là một đặc điểm của thuật toán Quicksort?",
+      "answer": "Tính ổn định.",
+      "distractors": [
+        "Tính tại chỗ (in-place).",
+        "Hiệu quả về không gian.",
+        "Độ phức tạp thời gian trung bình là O(n log n)."
+      ],
+      "explanation": "Thuộc tính không được coi là đặc điểm của thuật toán Quicksort là **Tính ổn định**.\n\n*   **Tại sao \"Tính ổn định\" là đúng:**\n    Thuật toán Quicksort không phải là một thuật toán sắp xếp ổn định. Tính ổn định có nghĩa là nếu có hai phần tử có giá trị bằng nhau, thứ tự tương đối của chúng trong mảng đầu vào sẽ được giữ nguyên trong mảng đầu ra. Quicksort thường hoán đổi các phần tử dựa trên giá trị của chúng so với phần tử chốt (pivot), và trong quá trình này, thứ tự tương đối của các phần tử bằng nhau có thể bị thay đổi.\n\n*   **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **Tính tại chỗ (in-place):** Quicksort là một thuật toán sắp xếp tại chỗ. Mặc dù nó sử dụng một ngăn xếp (stack) cho các lời gọi đệ quy, nhưng không gian phụ cần thiết cho ngăn xếp này thường được coi là không gian phụ tối thiểu (logarithmic) và không yêu cầu một mảng phụ lớn để lưu trữ dữ liệu.\n    *   **Hiệu quả về không gian:** Quicksort được coi là hiệu quả về không gian vì nó là một thuật toán tại chỗ. Không gian phụ cần thiết chủ yếu là cho ngăn xếp đệ quy, có độ phức tạp trung bình là O(log n) và trong trường hợp xấu nhất là O(n) (mặc dù có thể được tối ưu hóa thành O(log n) bằng cách luôn xử lý phần nhỏ hơn trước).\n    *   **Độ phức tạp thời gian trung bình là O(n log n):** Đây là một đặc điểm nổi bật của Quicksort. Trong trường hợp trung bình, Quicksort có độ phức tạp thời gian là O(n log n), khiến nó trở thành một trong những thuật toán sắp xếp nhanh nhất.",
+      "topic": {
+        "name": "Thuộc tính của Quicksort",
+        "description": "Kiểm tra sự hiểu biết về các thuộc tính quan trọng của Quicksort như tính tại chỗ (in-place), yêu cầu không gian phụ và tính ổn định. Sinh viên cần phân biệt Quicksort với các thuật toán khác dựa trên các thuộc tính này (bao gồm kiến thức từ Tuần 3 về tính ổn định).",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Mục đích chính của quá trình phân vùng (partition) trong thuật toán Quicksort là gì?",
+      "answer": "Đặt phần tử chốt (pivot) vào vị trí cuối cùng chính xác của nó trong mảng đã sắp xếp.",
+      "distractors": [
+        "Sắp xếp toàn bộ mảng thành thứ tự tăng dần hoặc giảm dần.",
+        "Chia mảng thành hai nửa có kích thước bằng nhau.",
+        "Đảm bảo tất cả các phần tử nhỏ hơn chốt nằm ở bên trái và lớn hơn chốt nằm ở bên phải."
+      ],
+      "explanation": "Mục đích chính của quá trình phân vùng trong thuật toán Quicksort là **đặt phần tử chốt (pivot) vào vị trí cuối cùng chính xác của nó trong mảng đã sắp xếp**. Quá trình phân vùng hoạt động bằng cách sắp xếp lại các phần tử trong một mảng con sao cho tất cả các phần tử nhỏ hơn phần tử chốt được đặt trước nó, và tất cả các phần tử lớn hơn phần tử chốt được đặt sau nó. Khi quá trình này hoàn tất, phần tử chốt nằm ở vị trí mà nó sẽ ở trong mảng đã sắp xếp cuối cùng, và nó sẽ không cần phải di chuyển nữa. Sau đó, Quicksort đệ quy sắp xếp các mảng con ở bên trái và bên phải của phần tử chốt.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Sắp xếp toàn bộ mảng thành thứ tự tăng dần hoặc giảm dần.** Đây là mục tiêu cuối cùng của toàn bộ thuật toán Quicksort, chứ không phải chỉ riêng quá trình phân vùng. Quá trình phân vùng chỉ là một bước trong việc đạt được mục tiêu đó.\n*   **Chia mảng thành hai nửa có kích thước bằng nhau.** Mặc dù việc chia mảng thành hai nửa có kích thước gần bằng nhau là lý tưởng để đạt được hiệu suất tốt nhất (tránh trường hợp xấu nhất), nhưng đây không phải là mục đích chính của quá trình phân vùng. Mục tiêu chính là đặt chốt vào đúng vị trí, và kích thước của hai mảng con được tạo ra phụ thuộc vào giá trị của chốt và các phần tử khác.\n*   **Đảm bảo tất cả các phần tử nhỏ hơn chốt nằm ở bên trái và lớn hơn chốt nằm ở bên phải.** Đây là một phần quan trọng của cách quá trình phân vùng hoạt động để đạt được mục tiêu chính, nhưng nó không phải là mục đích cuối cùng. Việc sắp xếp các phần tử xung quanh chốt theo cách này là phương tiện để đặt chốt vào vị trí cuối cùng chính xác của nó.\n",
+      "topic": {
+        "name": "Mục đích phân vùng Quicksort",
+        "description": "Chủ đề này đánh giá sự hiểu biết về quá trình phân vùng trong Quicksort, bao gồm cách các con trỏ 'i' và 'j' di chuyển và mục tiêu cuối cùng của việc đặt phần tử chốt vào đúng vị trí cuối cùng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong số các thuật toán sắp xếp đã học bao gồm Insertion Sort, Mergesort và Quicksort, thuật toán nào được coi là không ổn định?",
+      "answer": "Quicksort",
+      "distractors": [
+        "Insertion Sort",
+        "Mergesort",
+        "Cả Insertion Sort và Mergesort"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Quicksort** vì Quicksort được biết đến là một thuật toán sắp xếp không ổn định. Tính ổn định của một thuật toán sắp xếp đề cập đến việc nó có duy trì thứ tự tương đối của các phần tử bằng nhau trong mảng gốc hay không. Quicksort thường hoán đổi các phần tử dựa trên một phần tử chốt (pivot), và trong quá trình này, thứ tự tương đối của các phần tử bằng nhau có thể bị thay đổi.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Insertion Sort** là một thuật toán sắp xếp ổn định. Nó sắp xếp các phần tử bằng cách chèn từng phần tử vào vị trí đúng của nó trong phần đã sắp xếp của mảng, và quá trình này không làm thay đổi thứ tự tương đối của các phần tử bằng nhau.\n*   **Mergesort** cũng là một thuật toán sắp xếp ổn định. Nó hoạt động bằng cách chia mảng thành các nửa nhỏ hơn, sắp xếp chúng và sau đó hợp nhất chúng lại. Trong quá trình hợp nhất, nếu có hai phần tử bằng nhau, thuật toán sẽ ưu tiên phần tử xuất hiện trước trong mảng gốc, do đó duy trì tính ổn định.\n*   **Cả Insertion Sort và Mergesort** là sai vì cả hai thuật toán này đều ổn định, không phải không ổn định.",
+      "topic": {
+        "name": "So sánh tính ổn định thuật toán sắp xếp",
+        "description": "Chủ đề liên tuần này yêu cầu so sánh tính ổn định của các thuật toán sắp xếp đã học: Insertion Sort (Tuần 2), Mergesort (Tuần 3) và Quicksort (Tuần 4). MCQ sẽ yêu cầu xác định thuật toán nào là ổn định và không ổn định.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Cho mảng `A = [10, 80, 30, 90, 40, 50, 70]`. Sử dụng cơ chế phân vùng Lomuto của Quicksort với phần tử chốt (pivot) là phần tử cuối cùng (`70`). Giả sử con trỏ `i` bắt đầu từ `startIndex - 1` (tức là `-1` nếu `startIndex = 0`) và con trỏ `j` duyệt từ `startIndex` đến `endIndex - 1`. Trạng thái của mảng sau khi quá trình phân vùng hoàn tất và phần tử chốt đã được đặt vào vị trí cuối cùng của nó là gì?",
+      "answer": "[10, 30, 40, 50, 70, 90, 80]",
+      "distractors": [
+        "[10, 30, 40, 50, 70, 80, 90]",
+        "[10, 30, 40, 50, 90, 80, 70]",
+        "[10, 80, 30, 40, 50, 70, 90]"
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao [10, 30, 40, 50, 70, 90, 80] là câu trả lời đúng:**\n\nCơ chế phân vùng Lomuto hoạt động như sau:\n1. Chọn phần tử cuối cùng làm chốt (pivot): `70`.\n2. Khởi tạo con trỏ `i = -1` (vì `startIndex = 0`).\n3. Duyệt con trỏ `j` từ `0` đến `endIndex - 1` (tức là `0` đến `5`).\n4. Nếu `A[j]` nhỏ hơn hoặc bằng chốt (`70`):\n   a. Tăng `i` lên `1`.\n   b. Hoán đổi `A[i]` và `A[j]`.\n\nHãy theo dõi từng bước:\n- Mảng ban đầu: `[10, 80, 30, 90, 40, 50, 70]` (chốt là `70`)\n- `i = -1`\n\n1. `j = 0`, `A[0] = 10`. `10 <= 70` là đúng.\n   - `i` tăng lên `0`.\n   - Hoán đổi `A[0]` và `A[0]` (không thay đổi): `[10, 80, 30, 90, 40, 50, 70]`\n2. `j = 1`, `A[1] = 80`. `80 <= 70` là sai.\n   - Mảng không đổi.\n3. `j = 2`, `A[2] = 30`. `30 <= 70` là đúng.\n   - `i` tăng lên `1`.\n   - Hoán đổi `A[1]` (`80`) và `A[2]` (`30`): `[10, 30, 80, 90, 40, 50, 70]`\n4. `j = 3`, `A[3] = 90`. `90 <= 70` là sai.\n   - Mảng không đổi.\n5. `j = 4`, `A[4] = 40`. `40 <= 70` là đúng.\n   - `i` tăng lên `2`.\n   - Hoán đổi `A[2]` (`80`) và `A[4]` (`40`): `[10, 30, 40, 90, 80, 50, 70]`\n6. `j = 5`, `A[5] = 50`. `50 <= 70` là đúng.\n   - `i` tăng lên `3`.\n   - Hoán đổi `A[3]` (`90`) và `A[5]` (`50`): `[10, 30, 40, 50, 80, 90, 70]`\n\nSau khi vòng lặp `j` kết thúc, hoán đổi phần tử chốt (`A[endIndex]`) với `A[i + 1]`.\n- `i = 3`, vậy `i + 1 = 4`.\n- Hoán đổi `A[4]` (`80`) và `A[6]` (`70`): `[10, 30, 40, 50, 70, 90, 80]`\n\nĐây là trạng thái cuối cùng của mảng sau khi phân vùng.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n-   **[10, 30, 40, 50, 70, 80, 90]**: Tùy chọn này sai vì nó sắp xếp hoàn toàn các phần tử lớn hơn chốt (`80` và `90`). Cơ chế phân vùng Lomuto chỉ đảm bảo rằng tất cả các phần tử nhỏ hơn hoặc bằng chốt nằm ở bên trái chốt, và tất cả các phần tử lớn hơn chốt nằm ở bên phải chốt. Nó không đảm bảo thứ tự của các phần tử trong hai phân vùng đó. Trong trường hợp này, `90` và `80` không được sắp xếp theo thứ tự tăng dần.\n\n-   **[10, 30, 40, 50, 90, 80, 70]**: Tùy chọn này sai vì phần tử chốt (`70`) vẫn nằm ở vị trí cuối cùng của mảng ban đầu. Bước cuối cùng của phân vùng Lomuto là hoán đổi phần tử chốt với phần tử tại vị trí `i + 1` để đặt chốt vào vị trí cuối cùng của nó, nơi tất cả các phần tử bên trái nhỏ hơn hoặc bằng nó và tất cả các phần tử bên phải lớn hơn nó.\n\n-   **[10, 80, 30, 40, 50, 70, 90]**: Tùy chọn này sai vì nó không phản ánh đúng quá trình hoán đổi. Ví dụ, `80` vẫn nằm ở vị trí thứ hai, trong khi nó lớn hơn chốt (`70`) và đáng lẽ phải được hoán đổi sang bên phải của chốt. Mảng này không phải là kết quả của quá trình phân vùng Lomuto chính xác.",
+      "topic": {
+        "name": "Ứng dụng cơ chế phân vùng Quicksort",
+        "description": "Chủ đề này kiểm tra khả năng áp dụng cơ chế phân vùng Quicksort với các con trỏ 'i' và 'j' để xác định trạng thái của mảng sau một chu kỳ hoán đổi hoặc vị trí cuối cùng của phần tử chốt. Học sinh cần hiểu chi tiết cách các con trỏ hoạt động và hoán đổi diễn ra.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Kỹ thuật lựa chọn phần tử chốt Median-of-3 được áp dụng trong Quicksort nhằm cải thiện khả năng hoạt động của thuật toán. Phân tích lợi ích chính của phương pháp này so với việc chỉ chọn một phần tử ngẫu nhiên làm chốt?",
+      "answer": "Kỹ thuật này tăng khả năng chọn chốt gần giá trị trung bình, giúp phân chia mảng con cân bằng hơn và cải thiện đáng kể hiệu suất trung bình của Quicksort.",
+      "distractors": [
+        "Kỹ thuật này đảm bảo phần tử chốt luôn là giá trị nhỏ nhất hoặc lớn nhất trong mảng con, giúp giảm số lần so sánh.",
+        "Nó loại bỏ hoàn toàn trường hợp xấu nhất của Quicksort bằng cách đảm bảo các phân vùng luôn có kích thước bằng nhau.",
+        "Việc này chỉ đơn thuần là một phương pháp ngẫu nhiên hóa khác, không có tác động đáng kể đến hiệu suất trung bình mà chỉ làm tăng độ phức tạp."
+      ],
+      "explanation": "Giải thích:\n\nKỹ thuật lựa chọn phần tử chốt Median-of-3 (trung vị của 3) trong Quicksort là một phương pháp hiệu quả để cải thiện hiệu suất của thuật toán.\n\n**Tại sao \"Kỹ thuật này tăng khả năng chọn chốt gần giá trị trung bình, giúp phân chia mảng con cân bằng hơn và cải thiện đáng kể hiệu suất trung bình của Quicksort\" là đúng:**\nLợi ích chính của Median-of-3 là nó tăng xác suất chọn một phần tử chốt (pivot) gần với giá trị trung vị thực sự của mảng con. Thay vì chọn ngẫu nhiên một phần tử (có thể là giá trị cực đoan), kỹ thuật này chọn ba phần tử (thường là phần tử đầu, giữa và cuối của mảng con), sau đó chọn phần tử có giá trị trung vị trong ba phần tử đó làm chốt. Điều này giúp các phân vùng (partition) được tạo ra cân bằng hơn, tức là hai mảng con sau khi phân vùng có kích thước gần bằng nhau. Khi các phân vùng cân bằng, độ sâu của cây đệ quy giảm, dẫn đến số phép so sánh và hoán đổi trung bình giảm, từ đó cải thiện đáng kể hiệu suất trung bình của Quicksort, đưa nó gần hơn với độ phức tạp $O(N \\log N)$.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **\"Kỹ thuật này đảm bảo phần tử chốt luôn là giá trị nhỏ nhất hoặc lớn nhất trong mảng con, giúp giảm số lần so sánh.\"**\n    Tuyên bố này sai vì Median-of-3 làm điều ngược lại. Mục tiêu của nó là tránh chọn các giá trị cực đoan (nhỏ nhất hoặc lớn nhất) làm chốt, vì những giá trị này dẫn đến các phân vùng không cân bằng và làm suy giảm hiệu suất. Việc chọn chốt là giá trị nhỏ nhất hoặc lớn nhất sẽ dẫn đến trường hợp xấu nhất hoặc gần xấu nhất, không phải cải thiện.\n\n*   **\"Nó loại bỏ hoàn toàn trường hợp xấu nhất của Quicksort bằng cách đảm bảo các phân vùng luôn có kích thước bằng nhau.\"**\n    Tuyên bố này không chính xác. Median-of-3 giúp *giảm khả năng* xảy ra trường hợp xấu nhất và cải thiện sự cân bằng của các phân vùng, nhưng nó không thể *loại bỏ hoàn toàn* trường hợp xấu nhất. Trường hợp xấu nhất vẫn có thể xảy ra nếu ba phần tử được chọn để tìm trung vị đều là các giá trị cực đoan hoặc nếu dữ liệu được sắp xếp theo một cách đặc biệt. Hơn nữa, nó không đảm bảo các phân vùng luôn có kích thước bằng nhau; nó chỉ tăng khả năng chúng cân bằng hơn.\n\n*   **\"Việc này chỉ đơn thuần là một phương pháp ngẫu nhiên hóa khác, không có tác động đáng kể đến hiệu suất trung bình mà chỉ làm tăng độ phức tạp.\"**\n    Tuyên bố này sai. Median-of-3 không chỉ là một phương pháp ngẫu nhiên hóa khác; nó là một chiến lược có tính toán để chọn chốt tốt hơn. Nó có tác động đáng kể và tích cực đến hiệu suất trung bình của Quicksort bằng cách tạo ra các phân vùng cân bằng hơn. Mặc dù có một chút tăng độ phức tạp nhỏ trong việc chọn chốt (so với chọn ngẫu nhiên một phần tử), lợi ích về hiệu suất tổng thể của thuật toán (giảm số lần đệ quy và so sánh) vượt xa chi phí nhỏ này.",
+      "topic": {
+        "name": "Kỹ thuật cải tiến Quicksort",
+        "description": "Chủ đề này tập trung vào các kỹ thuật cải tiến thực tế cho Quicksort, như sử dụng Insertion Sort cho mảng con nhỏ (kết nối với Tuần 2) và lựa chọn phần tử chốt (Median-of-3). MCQ có thể hỏi về lý do hoặc lợi ích của các cải tiến này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trường hợp hiệu suất nào của Quicksort được đặc trưng bởi số lượng phép so sánh xấp xỉ ~1.39 N lg N, với N là số lượng phần tử?",
+      "answer": "Trường hợp trung bình.",
+      "distractors": [
+        "Trường hợp xấu nhất.",
+        "Trường hợp tốt nhất.",
+        "Trường hợp ngẫu nhiên."
+      ],
+      "explanation": "Giải thích:\n\n**Trường hợp trung bình** là câu trả lời đúng vì hiệu suất của Quicksort trong trường hợp trung bình được đặc trưng bởi số lượng phép so sánh xấp xỉ ~1.39 N lg N. Con số 1.39 này xuất phát từ phân tích toán học về kỳ vọng số phép so sánh khi các phần tử được chọn làm chốt (pivot) một cách ngẫu nhiên hoặc khi dữ liệu đầu vào có phân bố ngẫu nhiên, dẫn đến việc phân chia mảng không hoàn hảo nhưng cân bằng theo thời gian.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Trường hợp xấu nhất** của Quicksort xảy ra khi việc chọn chốt luôn dẫn đến một phân vùng cực kỳ mất cân bằng (ví dụ: chốt luôn là phần tử nhỏ nhất hoặc lớn nhất). Trong trường hợp này, độ phức tạp về số phép so sánh là O(N²), không phải ~1.39 N lg N.\n*   **Trường hợp tốt nhất** của Quicksort xảy ra khi mỗi lần chọn chốt luôn chia mảng thành hai nửa gần bằng nhau. Trong trường hợp này, độ phức tạp về số phép so sánh là O(N lg N), cụ thể hơn là xấp xỉ N lg N (hoặc 1.0 N lg N), không phải ~1.39 N lg N.\n*   **Trường hợp ngẫu nhiên** không phải là một thuật ngữ tiêu chuẩn để mô tả một kịch bản hiệu suất cụ thể với một số lượng so sánh định lượng như vậy trong phân tích độ phức tạp của thuật toán. \"Trường hợp trung bình\" đã bao hàm ý nghĩa của việc dữ liệu đầu vào hoặc việc chọn chốt là ngẫu nhiên.\n",
+      "topic": {
+        "name": "Phân tích trường hợp hiệu suất Quicksort",
+        "description": "Đánh giá sự hiểu biết về hiệu suất của Quicksort trong các trường hợp tốt nhất, xấu nhất và trung bình, bao gồm số lượng so sánh trong mỗi trường hợp (~N lg N, ~½ N², ~1.39 N lg N). MCQ yêu cầu phân biệt các kịch bản này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Một hệ thống ngân hàng cần sắp xếp dữ liệu giao dịch tài khoản khổng lồ hàng ngày. Yêu cầu cốt lõi là đảm bảo thời gian chạy hiệu quả O(N log N) trong mọi trường hợp xấu nhất, đồng thời duy trì tính ổn định của thứ tự các giao dịch có cùng giá trị. Mặc dù bộ nhớ phụ trợ là một cân nhắc, nhưng tính toàn vẹn dữ liệu và hiệu suất dự đoán được là ưu tiên hàng đầu. Thuật toán sắp xếp nào là lựa chọn tối ưu nhất cho kịch bản này?",
+      "answer": "Mergesort",
+      "distractors": [
+        "Quicksort",
+        "Heapsort",
+        "Bubblesort"
+      ],
+      "explanation": "**Giải thích:**\n\n**Mergesort là lựa chọn tối ưu nhất** vì nó đảm bảo thời gian chạy hiệu quả O(N log N) trong mọi trường hợp xấu nhất, đáp ứng yêu cầu cốt lõi về hiệu suất dự đoán được. Hơn nữa, Mergesort là một thuật toán sắp xếp ổn định, có nghĩa là nó duy trì thứ tự tương đối của các phần tử có giá trị bằng nhau, điều này rất quan trọng đối với tính toàn vẹn dữ liệu trong hệ thống ngân hàng khi sắp xếp các giao dịch có cùng giá trị.\n\n**Các yếu tố gây nhiễu không chính xác:**\n\n*   **Quicksort** không phải là lựa chọn tối ưu vì mặc dù nó có thời gian chạy trung bình là O(N log N), nhưng trong trường hợp xấu nhất, hiệu suất của nó có thể giảm xuống O(N^2). Điều này vi phạm yêu cầu về hiệu suất dự đoán được trong mọi trường hợp xấu nhất của hệ thống ngân hàng. Ngoài ra, Quicksort thường không ổn định, có thể làm thay đổi thứ tự của các giao dịch có cùng giá trị.\n*   **Heapsort** có thời gian chạy O(N log N) trong mọi trường hợp xấu nhất, nhưng nó không phải là một thuật toán sắp xếp ổn định. Việc không duy trì thứ tự tương đối của các phần tử có giá trị bằng nhau khiến nó không phù hợp với yêu cầu về tính toàn vẹn dữ liệu trong kịch bản này.\n*   **Bubblesort** là một thuật toán sắp xếp đơn giản nhưng cực kỳ kém hiệu quả với thời gian chạy O(N^2) trong cả trường hợp trung bình và xấu nhất. Hiệu suất này hoàn toàn không đáp ứng được yêu cầu về thời gian chạy hiệu quả O(N log N) cho dữ liệu giao dịch khổng lồ của hệ thống ngân hàng.",
+      "topic": {
+        "name": "So sánh Quicksort và Mergesort",
+        "description": "Chủ đề liên tuần này yêu cầu phân tích và so sánh hiệu suất, không gian yêu cầu và tính ổn định giữa Mergesort (Tuần 3) và Quicksort (Tuần 4). MCQ có thể đưa ra các tình huống và yêu cầu chọn thuật toán phù hợp nhất dựa trên các tiêu chí đã học.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    }
+  ]
+}

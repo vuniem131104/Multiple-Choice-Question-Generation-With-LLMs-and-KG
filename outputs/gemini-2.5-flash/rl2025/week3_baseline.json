@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Học tăng cường không mô hình là gì?",
+            "answer": "Là phương pháp học không yêu cầu mô hình của môi trường.",
+            "distractors": [
+                "Là phương pháp học yêu cầu mô hình của môi trường.",
+                "Là phương pháp học dựa trên dữ liệu có nhãn.",
+                "Là phương pháp học không sử dụng phần thưởng."
+            ],
+            "explanation": "Học tăng cường không mô hình không yêu cầu mô hình của môi trường, thay vào đó nó học trực tiếp từ kinh nghiệm thông qua tương tác với môi trường."
+        },
+        {
+            "question": "Đặc điểm nào sau đây là đúng về Học Monte-Carlo?",
+            "answer": "Học từ kinh nghiệm hoàn chỉnh.",
+            "distractors": [
+                "Yêu cầu mô hình của môi trường.",
+                "Chỉ áp dụng cho MDP liên tục.",
+                "Không sử dụng phần thưởng."
+            ],
+            "explanation": "Học Monte-Carlo học từ kinh nghiệm hoàn chỉnh, tức là nó sử dụng toàn bộ tập hợp các trạng thái và phần thưởng để cập nhật giá trị."
+        },
+        {
+            "question": "Sự khác biệt chính giữa đánh giá chính sách MC 'lần đầu tiên' và 'mọi lần' là gì?",
+            "answer": "Cách sử dụng lợi nhuận từ các lượt ghé thăm trạng thái.",
+            "distractors": [
+                "Cách tính phần thưởng.",
+                "Cách xác định trạng thái ban đầu.",
+                "Cách áp dụng chính sách."
+            ],
+            "explanation": "Đánh giá chính sách MC 'lần đầu tiên' chỉ sử dụng lợi nhuận từ lần ghé thăm đầu tiên của trạng thái, trong khi 'mọi lần' sử dụng lợi nhuận từ tất cả các lần ghé thăm."
+        },
+        {
+            "question": "Công thức cập nhật tăng dần Monte-Carlo sử dụng tốc độ học (alpha) có ưu điểm gì?",
+            "answer": "Cho phép cập nhật giá trị nhanh hơn và linh hoạt hơn.",
+            "distractors": [
+                "Giảm độ chính xác của ước tính.",
+                "Chỉ áp dụng cho MDP liên tục.",
+                "Không yêu cầu kinh nghiệm hoàn chỉnh."
+            ],
+            "explanation": "Sử dụng tốc độ học (alpha) giúp cập nhật giá trị nhanh hơn và linh hoạt hơn, đặc biệt khi dữ liệu mới có thể thay đổi giá trị ước tính."
+        },
+        {
+            "question": "Học TD khác với Học Monte-Carlo ở điểm nào?",
+            "answer": "Học TD sử dụng bootstrapping để cập nhật giá trị.",
+            "distractors": [
+                "Học TD yêu cầu mô hình của môi trường.",
+                "Học TD không sử dụng phần thưởng.",
+                "Học TD chỉ áp dụng cho MDP liên tục."
+            ],
+            "explanation": "Học TD sử dụng bootstrapping, tức là cập nhật giá trị dựa trên các ước tính giá trị khác thay vì chờ đợi toàn bộ phần thưởng."
+        },
+        {
+            "question": "Lợi nhuận n-bước trong TD cân bằng giữa điều gì?",
+            "answer": "Nhìn xa của Monte-Carlo và khởi tạo của TD.",
+            "distractors": [
+                "Tính chính xác và tốc độ.",
+                "Phần thưởng và hình phạt.",
+                "Trạng thái ban đầu và trạng thái cuối cùng."
+            ],
+            "explanation": "Lợi nhuận n-bước trong TD kết hợp ưu điểm của Monte-Carlo (nhìn xa) và TD (khởi tạo), giúp cải thiện hiệu quả học tập."
+        },
+        {
+            "question": "Nguyên lý bootstrapping trong TD và DP có điểm chung nào?",
+            "answer": "Cập nhật ước tính dựa trên các ước tính khác.",
+            "distractors": [
+                "Yêu cầu mô hình của môi trường.",
+                "Chỉ áp dụng cho MDP liên tục.",
+                "Không sử dụng phần thưởng."
+            ],
+            "explanation": "Cả TD và DP đều sử dụng bootstrapping, tức là cập nhật giá trị dựa trên các ước tính giá trị khác thay vì chờ đợi toàn bộ phần thưởng."
+        },
+        {
+            "question": "Dấu vết đủ điều kiện trong TD(λ) giúp giải quyết vấn đề gì?",
+            "answer": "Phân bổ tín dụng cho các trạng thái trước đó.",
+            "distractors": [
+                "Tăng tốc độ học.",
+                "Giảm độ chính xác của ước tính.",
+                "Loại bỏ trạng thái không cần thiết."
+            ],
+            "explanation": "Dấu vết đủ điều kiện giúp phân bổ tín dụng cho các trạng thái trước đó, cải thiện hiệu quả học tập và giải quyết vấn đề phân bổ tín dụng."
+        }
+    ]
+}

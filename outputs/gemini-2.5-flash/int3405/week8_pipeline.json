@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Lớp nào trong kiến trúc Mạng nơ-ron tích chập (CNN) chịu trách nhiệm tạo ra các bản đồ đặc trưng bằng cách kết nối với trường tiếp nhận cục bộ?",
+      "answer": "Lớp tích chập",
+      "distractors": [
+        "Lớp gộp (Pooling layer)",
+        "Lớp kết nối đầy đủ (Fully connected layer)",
+        "Lớp kích hoạt (Activation layer)"
+      ],
+      "explanation": "**Giải thích:**\n\n**Lớp tích chập** là câu trả lời đúng vì đây là lớp cốt lõi trong CNN chịu trách nhiệm tạo ra các bản đồ đặc trưng. Lớp này thực hiện phép tích chập bằng cách trượt một bộ lọc (kernel) qua trường tiếp nhận cục bộ của đầu vào, tính toán tích vô hướng giữa bộ lọc và vùng đầu vào tương ứng để tạo ra một giá trị trong bản đồ đặc trưng. Quá trình này giúp phát hiện các đặc trưng cục bộ như cạnh, góc, hoặc kết cấu.\n\nCác tùy chọn khác không chính xác vì:\n\n*   **Lớp gộp (Pooling layer)**: Lớp gộp được sử dụng để giảm kích thước không gian của bản đồ đặc trưng, giảm số lượng tham số và tính toán, đồng thời giúp mạng trở nên bất biến hơn đối với các biến đổi nhỏ trong đầu vào. Nó không chịu trách nhiệm tạo ra các bản đồ đặc trưng ban đầu.\n*   **Lớp kết nối đầy đủ (Fully connected layer)**: Lớp kết nối đầy đủ thường nằm ở cuối kiến trúc CNN, sau các lớp tích chập và gộp. Nó chịu trách nhiệm phân loại hoặc hồi quy dựa trên các đặc trưng đã được trích xuất, kết nối mọi nơ-ron với mọi nơ-ron trong lớp trước đó, nhưng không tạo ra các bản đồ đặc trưng cục bộ.\n*   **Lớp kích hoạt (Activation layer)**: Lớp kích hoạt (ví dụ: ReLU, Sigmoid, Tanh) áp dụng một hàm phi tuyến tính cho đầu ra của các lớp khác (thường là lớp tích chập hoặc lớp kết nối đầy đủ). Mục đích của nó là đưa tính phi tuyến tính vào mạng, cho phép mạng học các mối quan hệ phức tạp hơn, nhưng bản thân nó không tạo ra các bản đồ đặc trưng.",
+      "topic": {
+        "name": "Kiến trúc Cơ bản của CNN",
+        "description": "Chủ đề này kiểm tra hiểu biết về cấu trúc cơ bản của Mạng nơ-ron tích chập (CNN), đặc điểm của các lớp ẩn được kết nối với trường tiếp nhận cục bộ và cách CNN xử lý đầu vào có kích thước cố định. Học sinh cần nhớ các khái niệm cốt lõi của CNN để tạo bản đồ đặc trưng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mục đích chính của các lớp gộp (Pooling Layers) trong mạng nơ-ron tích chập là gì?",
+      "answer": "Giảm chiều dữ liệu trong bản đồ đặc trưng và giữ lại thông tin quan trọng.",
+      "distractors": [
+        "Tăng cường độ sâu của mạng bằng cách thêm nhiều lớp hơn.",
+        "Áp dụng các hàm kích hoạt phi tuyến tính cho bản đồ đặc trưng.",
+        "Thực hiện chuẩn hóa dữ liệu để tăng tốc độ huấn luyện."
+      ],
+      "explanation": "Mục đích chính của các lớp gộp (Pooling Layers) trong mạng nơ-ron tích chập là **giảm chiều dữ liệu trong bản đồ đặc trưng và giữ lại thông tin quan trọng**. Các lớp gộp, như Max Pooling hoặc Average Pooling, hoạt động bằng cách lấy một giá trị đại diện (ví dụ: giá trị lớn nhất hoặc trung bình) từ một vùng nhỏ của bản đồ đặc trưng. Quá trình này giúp giảm kích thước không gian của bản đồ đặc trưng, từ đó giảm số lượng tham số và tính toán trong mạng, giúp kiểm soát hiện tượng quá khớp (overfitting) và làm cho mạng hiệu quả hơn. Đồng thời, việc chọn giá trị đại diện giúp giữ lại các đặc trưng quan trọng nhất.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Tăng cường độ sâu của mạng bằng cách thêm nhiều lớp hơn.** Mặc dù việc thêm các lớp gộp có thể làm tăng số lượng lớp tổng thể trong mạng, mục đích chính của chúng không phải là tăng độ sâu mà là giảm chiều dữ liệu. Độ sâu của mạng thường được tăng cường bằng cách thêm các lớp tích chập hoặc các lớp khác có chức năng học các đặc trưng phức tạp hơn.\n*   **Áp dụng các hàm kích hoạt phi tuyến tính cho bản đồ đặc trưng.** Việc áp dụng các hàm kích hoạt phi tuyến tính (như ReLU, Sigmoid, Tanh) là chức năng của các lớp kích hoạt (activation layers), thường được đặt sau các lớp tích chập, chứ không phải là chức năng của các lớp gộp. Các hàm kích hoạt giúp mạng học các mối quan hệ phi tuyến tính trong dữ liệu.\n*   **Thực hiện chuẩn hóa dữ liệu để tăng tốc độ huấn luyện.** Chuẩn hóa dữ liệu (ví dụ: Batch Normalization) là một kỹ thuật được sử dụng để ổn định và tăng tốc độ huấn luyện mạng bằng cách chuẩn hóa đầu vào của mỗi lớp. Đây là một chức năng riêng biệt và không phải là mục đích của các lớp gộp.",
+      "topic": {
+        "name": "Chức năng của Lớp Gộp (Pooling Layers)",
+        "description": "Chủ đề này tập trung vào các loại lớp gộp (Pooling Layers) chính, bao gồm Max Pooling và Average Pooling. Học sinh cần hiểu cách mỗi loại lớp gộp hoạt động để giảm chiều dữ liệu trong bản đồ đặc trưng và vai trò của chúng trong việc giữ lại thông tin quan trọng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong kiến trúc LSTM, cổng nào chịu trách nhiệm quyết định thông tin nào sẽ được loại bỏ khỏi trạng thái ô nhớ (cell state)?",
+      "answer": "Cổng quên (Forget Gate)",
+      "distractors": [
+        "Cổng đầu vào (Input Gate)",
+        "Cổng đầu ra (Output Gate)",
+        "Cổng trạng thái ô nhớ (Cell State Gate)"
+      ],
+      "explanation": "Cổng quên (Forget Gate) là câu trả lời đúng vì nó sử dụng một hàm sigmoid để quyết định những thông tin nào từ trạng thái ô nhớ trước đó cần được giữ lại hoặc loại bỏ. Giá trị đầu ra của cổng quên (từ 0 đến 1) được nhân với trạng thái ô nhớ trước đó, với 0 có nghĩa là loại bỏ hoàn toàn và 1 có nghĩa là giữ lại hoàn toàn.\n\n- **Cổng đầu vào (Input Gate)** là sai vì cổng này chịu trách nhiệm quyết định thông tin mới nào sẽ được thêm vào trạng thái ô nhớ, chứ không phải loại bỏ thông tin.\n- **Cổng đầu ra (Output Gate)** là sai vì cổng này kiểm soát thông tin nào từ trạng thái ô nhớ sẽ được sử dụng để tạo ra đầu ra của LSTM tại bước thời gian hiện tại.\n- **Cổng trạng thái ô nhớ (Cell State Gate)** là sai vì đây không phải là một cổng riêng biệt trong kiến trúc LSTM tiêu chuẩn. Trạng thái ô nhớ (cell state) là nơi thông tin được lưu trữ, và các cổng khác tương tác với nó.",
+      "topic": {
+        "name": "Cổng trong Bộ nhớ dài-ngắn hạn (LSTM)",
+        "description": "Chủ đề này đánh giá sự hiểu biết về các thành phần cốt lõi của LSTM, đặc biệt là chức năng của ba cổng chính: Cổng đầu vào (Input Gate), Cổng đầu ra (Output Gate) và Cổng quên (Forget Gate). Học sinh cần biết cách mỗi cổng kiểm soát luồng thông tin trong ô nhớ của LSTM.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Điểm khác biệt cơ bản nào làm cho Mạng nơ-ron tích chập (CNN) kém hiệu quả hơn Mạng nơ-ron hồi quy (RNN) khi mô hình hóa các phụ thuộc dài hạn trong dữ liệu tuần tự?",
+      "answer": "CNN không có khả năng duy trì trạng thái hoặc ghi nhớ thông tin từ các bước thời gian trước đó.",
+      "distractors": [
+        "CNN yêu cầu nhiều tham số hơn RNN, làm cho việc huấn luyện các chuỗi dài trở nên khó khăn.",
+        "CNN chỉ có thể xử lý các đầu vào có kích thước cố định, không phù hợp với dữ liệu tuần tự có độ dài thay đổi.",
+        "CNN sử dụng các bộ lọc có kích thước cố định, giới hạn khả năng nắm bắt các phụ thuộc ở các khoảng cách khác nhau."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **CNN không có khả năng duy trì trạng thái hoặc ghi nhớ thông tin từ các bước thời gian trước đó.** là chính xác vì đây là điểm khác biệt kiến trúc cơ bản nhất giữa CNN và RNN khi xử lý dữ liệu tuần tự. RNN được thiết kế đặc biệt với các vòng lặp hồi tiếp, cho phép chúng truyền thông tin (trạng thái ẩn) từ bước thời gian này sang bước thời gian tiếp theo. Khả năng \"ghi nhớ\" này là điều cần thiết để nắm bắt các phụ thuộc dài hạn trong chuỗi. Ngược lại, CNN xử lý đầu vào theo cách cục bộ và song song; mỗi lớp tích chập áp dụng các bộ lọc trên một cửa sổ cố định của đầu vào mà không có cơ chế tích hợp để duy trì trạng thái hoặc thông tin từ các phần trước đó của chuỗi. Điều này khiến CNN gặp khó khăn trong việc hiểu ngữ cảnh hoặc các mối quan hệ kéo dài qua nhiều bước thời gian.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **CNN yêu cầu nhiều tham số hơn RNN, làm cho việc huấn luyện các chuỗi dài trở nên khó khăn.** Điều này không phải lúc nào cũng đúng. Số lượng tham số trong cả CNN và RNN phụ thuộc rất nhiều vào kiến trúc cụ thể (ví dụ: số lượng lớp, kích thước bộ lọc, kích thước trạng thái ẩn). Một CNN sâu với nhiều bộ lọc có thể có nhiều tham số hơn một RNN đơn giản, nhưng một RNN phức tạp (ví dụ: LSTM hoặc GRU với nhiều lớp và kích thước trạng thái lớn) cũng có thể có rất nhiều tham số. Hơn nữa, vấn đề chính của CNN với chuỗi dài không phải là số lượng tham số mà là thiếu khả năng duy trì trạng thái.\n*   **CNN chỉ có thể xử lý các đầu vào có kích thước cố định, không phù hợp với dữ liệu tuần tự có độ dài thay đổi.** Mặc dù CNN thường được áp dụng cho các đầu vào có kích thước cố định (ví dụ: hình ảnh), chúng có thể được điều chỉnh để xử lý dữ liệu tuần tự có độ dài thay đổi thông qua các kỹ thuật như đệm (padding) hoặc gộp toàn cục (global pooling). Tuy nhiên, ngay cả khi được điều chỉnh, vấn đề cơ bản về việc thiếu khả năng duy trì trạng thái vẫn tồn tại, khiến chúng kém hiệu quả hơn RNN trong việc mô hình hóa các phụ thuộc dài hạn.\n*   **CNN sử dụng các bộ lọc có kích thước cố định, giới hạn khả năng nắm bắt các phụ thuộc ở các khoảng cách khác nhau.** Mặc dù các bộ lọc trong CNN có kích thước cố định, nhưng bằng cách xếp chồng nhiều lớp tích chập, CNN có thể tăng trường tiếp nhận (receptive field) của chúng, cho phép chúng nắm bắt các phụ thuộc ở các khoảng cách lớn hơn trong dữ liệu. Tuy nhiên, điều này vẫn khác với khả năng duy trì trạng thái theo thời gian của RNN và không giải quyết được vấn đề cơ bản về việc thiếu bộ nhớ tuần tự.",
+      "topic": {
+        "name": "So sánh CNN và RNN",
+        "description": "Chủ đề này yêu cầu học sinh phân biệt sự khác biệt cơ bản giữa Mạng nơ-ron tích chập (CNN) và Mạng nơ-ron hồi quy (RNN). Cụ thể, tập trung vào cách chúng xử lý các loại dữ liệu khác nhau (không gian vs tuần tự) và những hạn chế của CNN khi mô hình hóa chuỗi. Chủ đề này tích hợp các khái niệm cơ bản về kiến trúc mạng từ tuần 8.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Vấn đề gradient biến mất trong RNN ảnh hưởng đến khả năng học các phụ thuộc dài hạn của mạng như thế nào?",
+      "answer": "Nó làm cho các gradient truyền ngược trở nên quá nhỏ, khiến các trọng số ở các lớp trước không được cập nhật đáng kể.",
+      "distractors": [
+        "Nó làm cho các gradient truyền ngược trở nên quá lớn, dẫn đến việc cập nhật trọng số không ổn định và mạng không hội tụ.",
+        "Nó khiến mạng chỉ học được các phụ thuộc ngắn hạn, bỏ qua hoàn toàn các thông tin từ các bước thời gian xa hơn.",
+        "Nó làm tăng tốc độ học của mạng, nhưng lại khiến mạng dễ bị quá khớp với dữ liệu huấn luyện."
+      ],
+      "explanation": "Vấn đề gradient biến mất trong RNN xảy ra khi các gradient truyền ngược trở nên quá nhỏ khi chúng lan truyền qua nhiều bước thời gian (hoặc lớp) trong mạng. Điều này là do việc nhân các gradient nhỏ (thường là do đạo hàm của các hàm kích hoạt như sigmoid hoặc tanh) lặp đi lặp lại. Khi các gradient trở nên cực kỳ nhỏ, chúng không cung cấp đủ tín hiệu để cập nhật đáng kể các trọng số của các lớp (hoặc các bước thời gian) sớm hơn trong chuỗi. Kết quả là, mạng gặp khó khăn trong việc học và ghi nhớ thông tin từ các bước thời gian xa hơn, làm giảm khả năng nắm bắt các phụ thuộc dài hạn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó làm cho các gradient truyền ngược trở nên quá lớn, dẫn đến việc cập nhật trọng số không ổn định và mạng không hội tụ.** Đây là mô tả của vấn đề gradient bùng nổ (exploding gradient), không phải gradient biến mất. Gradient bùng nổ dẫn đến các cập nhật trọng số quá lớn, gây ra sự không ổn định.\n*   **Nó khiến mạng chỉ học được các phụ thuộc ngắn hạn, bỏ qua hoàn toàn các thông tin từ các bước thời gian xa hơn.** Mặc dù đây là hệ quả của vấn đề gradient biến mất, nhưng nó không giải thích cơ chế *tại sao* điều đó xảy ra. Câu trả lời đúng giải thích nguyên nhân gốc rễ (gradient quá nhỏ) dẫn đến hệ quả này.\n*   **Nó làm tăng tốc độ học của mạng, nhưng lại khiến mạng dễ bị quá khớp với dữ liệu huấn luyện.** Vấn đề gradient biến mất thực tế làm chậm hoặc ngăn cản quá trình học, đặc biệt là đối với các phụ thuộc dài hạn, chứ không làm tăng tốc độ học. Nó cũng không trực tiếp gây ra quá khớp; quá khớp thường liên quan đến việc mạng quá phức tạp hoặc dữ liệu huấn luyện không đủ đa dạng.",
+      "topic": {
+        "name": "Vấn đề Gradient biến mất trong RNN",
+        "description": "Chủ đề này kiểm tra kiến thức về Vấn đề gradient biến mất (Vanishing Gradient Problem) trong RNN, nguyên nhân (quy tắc chuỗi và hàm kích hoạt Sigmoid) và tác động của nó đối với quá trình huấn luyện mạng nơ-ron sâu. Học sinh cần giải thích tại sao vấn đề này làm việc học các phụ thuộc dài hạn trở nên khó khăn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một người huấn luyện mô hình học sâu nhận thấy độ lỗi trên tập huấn luyện tiếp tục giảm, trong khi độ lỗi trên tập kiểm tra bắt đầu tăng lên sau một số epoch nhất định. Kỹ thuật nào nên được áp dụng để ngăn chặn mô hình học quá mức dữ liệu huấn luyện và cải thiện khả năng tổng quát hóa?",
+      "answer": "Early Stopping",
+      "distractors": [
+        "Batch Normalization",
+        "Tăng cường dữ liệu (Data Augmentation)",
+        "Giảm tốc độ học (Learning Rate Decay)"
+      ],
+      "explanation": "**Giải thích:**\n\n**Early Stopping** là câu trả lời đúng vì nó trực tiếp giải quyết vấn đề được mô tả: độ lỗi trên tập huấn luyện giảm trong khi độ lỗi trên tập kiểm tra tăng, đây là dấu hiệu kinh điển của overfitting. Early Stopping hoạt động bằng cách theo dõi hiệu suất của mô hình trên một tập kiểm tra (hoặc tập validation) trong quá trình huấn luyện và dừng quá trình huấn tạo khi hiệu suất trên tập kiểm tra bắt đầu xấu đi, ngay cả khi hiệu suất trên tập huấn luyện vẫn đang cải thiện. Điều này giúp ngăn mô hình học quá mức các nhiễu và đặc điểm cụ thể của tập huấn luyện, từ đó cải thiện khả năng tổng quát hóa của mô hình đối với dữ liệu mới, chưa từng thấy.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Batch Normalization** là một kỹ thuật giúp ổn định quá trình huấn luyện bằng cách chuẩn hóa các đầu vào của mỗi lớp, giảm sự thay đổi covariate nội bộ và cho phép sử dụng tốc độ học cao hơn. Mặc dù nó có thể gián tiếp giúp giảm overfitting bằng cách làm cho quá trình huấn luyện ổn định hơn, nhưng mục đích chính của nó không phải là trực tiếp ngăn chặn overfitting khi nó đã bắt đầu xảy ra như Early Stopping. Nó không giải quyết trực tiếp việc độ lỗi trên tập kiểm tra tăng lên sau một số epoch.\n\n*   **Tăng cường dữ liệu (Data Augmentation)** là một kỹ thuật tạo ra các phiên bản biến đổi của dữ liệu huấn luyện hiện có (ví dụ: xoay, lật, cắt ảnh) để tăng kích thước và sự đa dạng của tập huấn luyện. Điều này giúp mô hình tiếp xúc với nhiều biến thể hơn của dữ liệu, làm cho nó mạnh mẽ hơn và ít bị overfitting hơn. Tuy nhiên, Data Augmentation được áp dụng trước hoặc trong quá trình huấn luyện để mở rộng tập dữ liệu, chứ không phải là một cơ chế để dừng huấn luyện khi overfitting đã được quan sát thấy trong quá trình huấn luyện.\n\n*   **Giảm tốc độ học (Learning Rate Decay)** là một kỹ thuật điều chỉnh tốc độ học giảm dần theo thời gian hoặc theo số epoch. Mục đích chính của nó là giúp mô hình hội tụ tốt hơn đến một cực tiểu toàn cục hoặc cực tiểu cục bộ tốt hơn trong không gian hàm lỗi, đặc biệt là ở các giai đoạn cuối của quá trình huấn luyện. Mặc dù tốc độ học quá cao có thể dẫn đến overfitting, việc giảm tốc độ học không trực tiếp ngăn chặn overfitting khi nó đã bắt đầu xảy ra như Early Stopping. Nó không cung cấp cơ chế để dừng huấn luyện dựa trên hiệu suất trên tập kiểm tra.",
+      "topic": {
+        "name": "Kiểm soát Overfitting trong Học sâu",
+        "description": "Chủ đề này yêu cầu học sinh xác định và giải thích các kỹ thuật được sử dụng để giảm thiểu overfitting trong các mô hình học sâu. Cụ thể, tập trung vào các phương pháp như Dropout, Batch Normalization và Early Stopping nhằm cải thiện khả năng tổng quát hóa của mô hình. Chủ đề này kết nối với khái niệm overfitting và tối ưu hóa mô hình từ Tuần 5.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Ứng dụng"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Tính năng cốt lõi nào của Mạng nơ-ron hồi quy (RNN) giúp chúng xử lý hiệu quả các chuỗi dữ liệu?",
+      "answer": "Khả năng duy trì bộ nhớ về các đầu vào trước đó",
+      "distractors": [
+        "Khả năng xử lý song song các đầu vào độc lập",
+        "Sử dụng các lớp ẩn sâu để trích xuất đặc trưng phức tạp",
+        "Khả năng tự động chọn các hàm kích hoạt tối ưu"
+      ],
+      "explanation": "Giải thích:\n\n**Khả năng duy trì bộ nhớ về các đầu vào trước đó** là câu trả lời đúng vì đây là tính năng định nghĩa của Mạng nơ-ron hồi quy (RNN). RNN được thiết kế đặc biệt để xử lý dữ liệu chuỗi bằng cách sử dụng các kết nối hồi quy, cho phép thông tin từ các bước thời gian trước đó được truyền đến các bước thời gian hiện tại. Điều này tạo ra một \"bộ nhớ\" về các đầu vào trước đó, giúp mô hình hiểu ngữ cảnh và phụ thuộc trong dữ liệu chuỗi, chẳng hạn như ngôn ngữ tự nhiên hoặc chuỗi thời gian.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Khả năng xử lý song song các đầu vào độc lập**: Đây là đặc điểm của các mạng nơ-ron truyền thẳng (feedforward neural networks) hoặc Mạng nơ-ron tích chập (CNN) khi xử lý các đầu vào không phụ thuộc vào nhau. RNN, do bản chất tuần tự và phụ thuộc vào các bước trước đó, thường không xử lý song song các đầu vào độc lập một cách hiệu quả theo cách này.\n*   **Sử dụng các lớp ẩn sâu để trích xuất đặc trưng phức tạp**: Mặc dù RNN có thể có các lớp ẩn sâu (deep hidden layers), nhưng đây không phải là tính năng cốt lõi giúp chúng xử lý hiệu quả dữ liệu chuỗi. Các mạng nơ-ron truyền thẳng cũng có thể có các lớp ẩn sâu. Tính năng cốt lõi của RNN nằm ở cơ chế hồi quy cho phép bộ nhớ.\n*   **Khả năng tự động chọn các hàm kích hoạt tối ưu**: Việc chọn hàm kích hoạt là một phần của thiết kế mô hình và siêu tham số, không phải là một tính năng cốt lõi độc đáo của RNN giúp chúng xử lý dữ liệu chuỗi. Các hàm kích hoạt được chọn bởi người thiết kế hoặc thông qua các kỹ thuật tìm kiếm siêu tham số, không phải là một khả năng tự động của chính mạng.",
+      "topic": {
+        "name": "Khái niệm Mạng nơ-ron hồi quy (RNN)",
+        "description": "Chủ đề này kiểm tra sự hiểu biết về khái niệm cốt lõi của Mạng nơ-ron hồi quy (RNN), khả năng truyền thông tin có chọn lọc qua các bước chuỗi và cho phép bộ nhớ của các đầu vào trước đó ảnh hưởng đến kết quả. Kiến thức từ Tuần 7 về Perceptron và các hàm kích hoạt là hữu ích.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.78,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong quá trình tối ưu hóa các tham số của một mạng nơ-ron tích chập (CNN) sâu bằng Gradient Descent, việc đối mặt với vấn đề gradient biến mất hoặc bùng nổ là một thách thức lớn. Phân tích tác động chính yếu của việc sử dụng hàm kích hoạt ReLU so với sigmoid/tanh đối với hiệu quả của việc lan truyền ngược (backpropagation) trong kịch bản này.",
+      "answer": "ReLU cải thiện luồng gradient bằng cách tránh bão hòa vùng dương và thiết lập đạo hàm bằng 0 cho đầu vào âm.",
+      "distractors": [
+        "ReLU làm tăng khả năng bùng nổ gradient bằng cách không giới hạn giá trị đầu ra dương, gây ra các bước cập nhật trọng số quá lớn.",
+        "ReLU làm chậm quá trình lan truyền ngược do đạo hàm bằng 0 cho các đầu vào âm, dẫn đến nhiều nơ-ron bị 'chết' và không cập nhật trọng số.",
+        "ReLU không có tác động đáng kể đến vấn đề gradient biến mất hoặc bùng nổ, vì các vấn đề này chủ yếu liên quan đến kiến trúc mạng và tốc độ học."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao câu trả lời đúng là đúng:**\n\n*   **ReLU cải thiện luồng gradient bằng cách tránh bão hòa vùng dương và thiết lập đạo hàm bằng 0 cho đầu vào âm.** Hàm kích hoạt ReLU (Rectified Linear Unit) được định nghĩa là $f(x) = \\max(0, x)$. Đối với các giá trị đầu vào dương ($x > 0$), đạo hàm của ReLU là 1. Điều này có nghĩa là gradient được truyền qua mà không bị suy giảm (như trong trường hợp bão hòa của sigmoid/tanh) hoặc bùng nổ, giúp duy trì luồng gradient ổn định. Đối với các giá trị đầu vào âm ($x \\le 0$), đạo hàm của ReLU là 0. Mặc dù điều này có thể dẫn đến các nơ-ron \"chết\" (không cập nhật trọng số), nhưng nó lại giúp giải quyết vấn đề gradient biến mất ở vùng âm, nơi sigmoid và tanh có đạo hàm rất nhỏ, gây ra sự suy giảm gradient nghiêm trọng. Bằng cách tránh vùng bão hòa dương và thiết lập đạo hàm bằng 0 cho đầu vào âm, ReLU giúp giảm thiểu cả vấn đề gradient biến mất và bùng nổ, đặc biệt hiệu quả trong các mạng sâu.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **ReLU làm tăng khả năng bùng nổ gradient bằng cách không giới hạn giá trị đầu ra dương, gây ra các bước cập nhật trọng số quá lớn.** Mặc dù ReLU không giới hạn giá trị đầu ra dương, đạo hàm của nó ở vùng dương luôn là 1. Điều này có nghĩa là nó không tự thân làm tăng gradient mà chỉ truyền gradient nguyên vẹn. Vấn đề bùng nổ gradient thường xảy ra do tích lũy các gradient lớn qua nhiều lớp, không phải do đạo hàm của một hàm kích hoạt cụ thể ở vùng dương. Trên thực tế, việc đạo hàm bằng 1 giúp duy trì luồng gradient ổn định hơn so với các hàm có đạo hàm lớn hơn 1.\n*   **ReLU làm chậm quá trình lan truyền ngược do đạo hàm bằng 0 cho các đầu vào âm, dẫn đến nhiều nơ-ron bị 'chết' và không cập nhật trọng số.** Đúng là đạo hàm bằng 0 cho các đầu vào âm có thể dẫn đến các nơ-ron \"chết\" (dying ReLU), nơi chúng không bao giờ được kích hoạt và không cập nhật trọng số. Tuy nhiên, điều này không làm chậm quá trình lan truyền ngược. Ngược lại, việc tính toán đạo hàm bằng 0 cho các đầu vào âm có thể làm cho quá trình tính toán nhanh hơn một chút vì không cần tính toán phức tạp. Vấn đề chính của \"dying ReLU\" là mất khả năng học của một số nơ-ron, chứ không phải làm chậm quá trình lan truyền ngược.\n*   **ReLU không có tác động đáng kể đến vấn đề gradient biến mất hoặc bùng nổ, vì các vấn đề này chủ yếu liên quan đến kiến trúc mạng và tốc độ học.** Tuyên bố này là sai. Hàm kích hoạt đóng một vai trò cực kỳ quan trọng trong việc kiểm soát luồng gradient. Việc lựa chọn hàm kích hoạt có thể ảnh hưởng đáng kể đến việc gradient có bị biến mất (do đạo hàm quá nhỏ) hay bùng nổ (do đạo hàm quá lớn) khi lan truyền qua các lớp. ReLU đã được chứng minh là một giải pháp hiệu quả để giảm thiểu cả hai vấn đề này so với sigmoid và tanh, đặc biệt trong các mạng sâu, bằng cách duy trì đạo hàm ổn định ở vùng dương. Kiến trúc mạng và tốc độ học cũng quan trọng, nhưng hàm kích hoạt là một yếu tố then chốt.",
+      "topic": {
+        "name": "Ứng dụng của Gradient Descent trong Học sâu",
+        "description": "Chủ đề này tổng hợp kiến thức về Gradient Descent (Tuần 1) và Học sâu để giải thích cách thuật toán này được sử dụng để tối ưu hóa tham số trong mạng nơ-ron tích chập (CNN) hoặc mạng nơ-ron hồi quy (RNN). Học sinh cần trình bày vai trò của Gradient Descent, đồng thời cân nhắc các thách thức như vấn đề gradient biến mất/bùng nổ (Tuần 8).",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.45,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "int3405"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Tối ưu hóa trong kiểm soát không mô hình là gì?",
+            "answer": "Là quá trình tối ưu hóa hàm giá trị của một MDP mà không cần mô hình rõ ràng.",
+            "distractors": [
+                "Là quá trình tối ưu hóa hàm mục tiêu trong lập trình tuyến tính.",
+                "Là phương pháp học từ các mẫu dữ liệu có sẵn.",
+                "Là kỹ thuật phân tích dữ liệu để tìm ra mô hình tốt nhất."
+            ],
+            "explanation": "Đáp án đúng là 'Là quá trình tối ưu hóa hàm giá trị của một MDP mà không cần mô hình rõ ràng.' vì nó phản ánh đúng khái niệm tối ưu hóa trong kiểm soát không mô hình."
+        },
+        {
+            "question": "Học theo chính sách trong Học Tăng cường có nghĩa là gì?",
+            "answer": "Là việc học hỏi từ chính các trải nghiệm của chính sách đang học.",
+            "distractors": [
+                "Là việc áp dụng các chính sách đã biết để tối ưu hóa hành động.",
+                "Là việc học từ các mô hình dự đoán hành động trong tương lai.",
+                "Là việc sử dụng các thuật toán để tìm ra chính sách tốt nhất."
+            ],
+            "explanation": "Đáp án đúng là 'Là việc học hỏi từ chính các trải nghiệm của chính sách đang học.' vì nó mô tả chính xác khái niệm học theo chính sách."
+        },
+        {
+            "question": "Phương pháp ε-Greedy trong thăm dò cho phép học sinh làm gì?",
+            "answer": "Phân tích cách thức chọn lựa hành động tham lam và việc thăm dò hành động ngẫu nhiên.",
+            "distractors": [
+                "Chọn lựa hành động ngẫu nhiên mà không có tiêu chí nào.",
+                "Tối ưu hóa hành động dựa trên các mô hình dự đoán.",
+                "Chỉ thực hiện hành động tham lam mà không thăm dò."
+            ],
+            "explanation": "Đáp án đúng là 'Phân tích cách thức chọn lựa hành động tham lam và việc thăm dò hành động ngẫu nhiên.' vì nó phản ánh đúng bản chất của phương pháp ε-Greedy."
+        },
+        {
+            "question": "Học Q (Q-Learning) là gì?",
+            "answer": "Là một phương pháp kiểm soát ngoài chính sách, cập nhật hàm giá trị Q(S, A).",
+            "distractors": [
+                "Là phương pháp học từ các mô hình dự đoán hành động.",
+                "Là kỹ thuật tối ưu hóa hàm mục tiêu trong lập trình tuyến tính.",
+                "Là phương pháp học từ các mẫu dữ liệu có sẵn."
+            ],
+            "explanation": "Đáp án đúng là 'Là một phương pháp kiểm soát ngoài chính sách, cập nhật hàm giá trị Q(S, A).' vì nó mô tả chính xác khái niệm học Q."
+        },
+        {
+            "question": "Sự khác biệt giữa Học Monte-Carlo và Học TD là gì?",
+            "answer": "Monte-Carlo sử dụng các mẫu hoàn chỉnh, trong khi TD cập nhật giá trị dựa trên các bước trung gian.",
+            "distractors": [
+                "Monte-Carlo nhanh hơn TD trong mọi trường hợp.",
+                "TD không cần mẫu hoàn chỉnh để cập nhật giá trị.",
+                "Monte-Carlo chỉ áp dụng cho các bài toán có mô hình."
+            ],
+            "explanation": "Đáp án đúng là 'Monte-Carlo sử dụng các mẫu hoàn chỉnh, trong khi TD cập nhật giá trị dựa trên các bước trung gian.' vì nó phản ánh đúng sự khác biệt giữa hai phương pháp."
+        },
+        {
+            "question": "Thuật toán Sarsa cập nhật giá trị Q như thế nào?",
+            "answer": "Dựa trên các hành động mà chính sách đang thực hiện.",
+            "distractors": [
+                "Dựa trên các hành động ngẫu nhiên mà không có chính sách.",
+                "Chỉ cập nhật giá trị Q khi đạt được kết quả tốt.",
+                "Dựa trên các mô hình dự đoán hành động trong tương lai."
+            ],
+            "explanation": "Đáp án đúng là 'Dựa trên các hành động mà chính sách đang thực hiện.' vì nó mô tả chính xác cách thức hoạt động của thuật toán Sarsa."
+        },
+        {
+            "question": "Quá trình lặp lại chính sách tổng quát bao gồm những gì?",
+            "answer": "Đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình.",
+            "distractors": [
+                "Chỉ đánh giá chính sách mà không cải thiện.",
+                "Chỉ cải thiện chính sách mà không đánh giá.",
+                "Lặp lại các hành động mà không cần đánh giá."
+            ],
+            "explanation": "Đáp án đúng là 'Đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình.' vì nó phản ánh đúng quá trình lặp lại chính sách."
+        },
+        {
+            "question": "Mối quan hệ giữa Dấu vết đủ điều kiện và học n-Bước là gì?",
+            "answer": "Chúng phù hợp từ cả góc nhìn tiến về phía trước và lùi về phía sau.",
+            "distractors": [
+                "Chúng hoàn toàn không liên quan đến nhau.",
+                "Dấu vết đủ điều kiện chỉ áp dụng cho học n-bước.",
+                "Học n-bước không cần đến Dấu vết đủ điều kiện."
+            ],
+            "explanation": "Đáp án đúng là 'Chúng phù hợp từ cả góc nhìn tiến về phía trước và lùi về phía sau.' vì nó mô tả chính xác mối quan hệ giữa hai khái niệm."
+        }
+    ]
+}

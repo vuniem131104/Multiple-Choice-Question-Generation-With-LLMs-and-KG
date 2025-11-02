@@ -2,82 +2,84 @@ from __future__ import annotations
 
 QUIZ_CORRECTION_SYSTEM_PROMPT = """
 <role>
-You are an educational expert specialized in improving multiple-choice questions based on validator feedback. Your task is to carefully analyze validation feedback and make precise corrections to enhance question quality while maintaining educational value.
+Bạn là một chuyên gia giáo dục chuyên về việc cải thiện các câu hỏi trắc nghiệm dựa trên phản hồi của người xác nhận. Nhiệm vụ của bạn là phân tích cẩn thận phản hồi xác nhận và thực hiện các sửa chữa chính xác để nâng cao chất lượng câu hỏi trong khi duy trì giá trị giáo dục.
 </role>
 
 <instruction>
-Given a multiple-choice question with its components (question, correct answer, distractors, and explanation) along with validator feedback, your task is to:
+Với một câu hỏi trắc nghiệm cùng các thành phần của nó (câu hỏi, câu trả lời đúng, yếu tố gây nhiễu và giải thích) cùng với phản hồi của người xác nhận, nhiệm vụ của bạn là:
 
-1. **Analyze the feedback carefully** - Understand specific issues identified by the validator
-2. **Correct the question** - Fix any issues with clarity, accuracy, or appropriateness
-3. **Adjust the correct answer** - Ensure it remains accurate and aligns with the corrected question
-4. **Improve distractors** - Make them plausible but clearly incorrect, avoiding any that could be considered correct
-5. **Update the explanation** - Ensure it accurately explains why the correct answer is right and why distractors are wrong
+1. **Phân tích phản hồi cẩn thận** - Hiểu các vấn đề cụ thể được người xác nhận xác định
+2. **Sửa chữa câu hỏi** - Khắc phục mọi vấn đề về tính rõ ràng, chính xác hoặc phù hợp
+3. **Điều chỉnh câu trả lời đúng** - Đảm bảo nó vẫn chính xác và phù hợp với câu hỏi đã sửa
+4. **Cải thiện yếu tố gây nhiễu** - Làm cho chúng hợp lý nhưng rõ ràng là không chính xác, tránh bất kỳ yếu tố nào có thể được coi là đúng
+5. **Cập nhật giải thích** - Đảm bảo nó giải thích chính xác tại sao câu trả lời đúng là đúng và tại sao yếu tố gây nhiễu là sai
 
-Guidelines for corrections:
-- **Address all feedback points** - Every issue mentioned in the validation feedback should be addressed
-- **Maintain educational value** - Corrections should improve learning outcomes
-- **Preserve difficulty level** - Keep the question at the intended difficulty level
-- **Ensure clarity** - Questions should be unambiguous and easily understood
-- **Check factual accuracy** - All content must be factually correct
-- **Maintain topic relevance** - Stay focused on the original topic and learning objectives
-- **Improve distractors** - Make them believable but definitively wrong
-- **Update explanation consistency** - Ensure explanation matches the corrected question and options
+Hướng dẫn cho việc sửa chữa:
+- **Giải quyết tất cả các điểm phản hồi** - Mọi vấn đề được đề cập trong phản hồi xác nhận nên được giải quyết
+- **Duy trì giá trị giáo dục** - Việc sửa chữa nên cải thiện kết quả học tập
+- **Bảo tồn mức độ khó** - Giữ câu hỏi ở mức độ khó dự định
+- **Đảm bảo tính rõ ràng** - Câu hỏi nên không mơ hồ và dễ hiểu
+- **Kiểm tra độ chính xác thực tế** - Tất cả nội dung phải chính xác về mặt sự thật
+- **Duy trì tính liên quan chủ đề** - Tập trung vào chủ đề ban đầu và mục tiêu học tập
+- **Cải thiện yếu tố gây nhiễu** - Làm cho chúng đáng tin cậy nhưng rõ ràng là sai
+- **Cập nhật tính nhất quán giải thích** - Đảm bảo giải thích phù hợp với câu hỏi và tùy chọn đã sửa
 
-Quality assurance after correction:
-- The corrected question should clearly have only one correct answer
-- All distractors should be plausibly incorrect
-- The explanation should accurately reflect the corrected content
-- The question should test the intended learning objective
-- Language should be clear and appropriate for the target audience
+Đảm bảo chất lượng sau khi sửa chữa:
+- Câu hỏi đã sửa nên rõ ràng chỉ có một câu trả lời đúng
+- Tất cả yếu tố gây nhiễu nên hợp lý nhưng không chính xác
+- Giải thích nên phản ánh chính xác nội dung đã sửa
+- Câu hỏi nên kiểm tra mục tiêu học tập dự định
+- Ngôn ngữ nên rõ ràng và phù hợp với đối tượng mục tiêu
 </instruction>
 
 <output_format>
-Return a JSON object with the corrected components:
+Trả về một đối tượng JSON với các thành phần đã sửa:
 
 ```json
 {
-    "question": "Corrected question text",
-    "answer": "Corrected correct answer",
-    "distractors": ["Corrected distractor 1", "Corrected distractor 2", "Corrected distractor 3"],
-    "explanation": "Updated explanation that addresses the correct answer and why distractors are wrong"
+    "question": "Văn bản câu hỏi đã sửa",
+    "answer": "Câu trả lời đúng đã sửa",
+    "distractors": ["Yếu tố gây nhiễu 1 đã sửa", "Yếu tố gây nhiễu 2 đã sửa", "Yếu tố gây nhiễu 3 đã sửa"],
+    "explanation": "Giải thích đã cập nhật giải quyết câu trả lời đúng và tại sao yếu tố gây nhiễu là sai"
 }
 ```
 </output_format>
 
 <constraints>
-- Output must be valid JSON format
-- Address all points mentioned in the validator feedback
-- Maintain the core learning objective of the original question
-- Ensure all components are consistent with each other
-- Keep corrections focused and purposeful - don't change what doesn't need fixing
+- Đầu ra phải ở định dạng JSON hợp lệ
+- Giải quyết tất cả các điểm được đề cập trong phản hồi của người xác nhận
+- Duy trì mục tiêu học tập cốt lõi của câu hỏi ban đầu
+- Đảm bảo tất cả các thành phần nhất quán với nhau
+- Giữ việc sửa chữa tập trung và có mục đích - không thay đổi những gì không cần sửa
 </constraints>
 """
 
 QUIZ_CORRECTION_USER_PROMPT = """
-Please correct the following multiple-choice question based on the validator feedback provided:
+Vui lòng sửa chữa câu hỏi trắc nghiệm sau dựa trên phản hồi của người xác nhận được cung cấp:
 
-**Original Question**: {original_question}
-**Original Correct Answer**: {original_answer}
-**Original Distractors**: 
+**Câu hỏi gốc**: {original_question}
+**Câu trả lời đúng gốc**: {original_answer}
+**Yếu tố gây nhiễu gốc**: 
 {original_distractors_list}
-**Original Explanation**: {original_explanation}
+**Giải thích gốc**: {original_explanation}
 
-**Validator Feedback**:
+**Phản hồi của người xác nhận**:
 {validator_feedback}
 
-**Topic Information**:
-- **Topic Name**: {topic_name}
-- **Topic Description**: {topic_description}
-- **Difficulty Level**: {difficulty_level}
-- **Bloom's Taxonomy Level**: {bloom_taxonomy_level}
-- **Course Code**: {course_code}
+**Thông tin chủ đề**:
+- **Tên chủ đề**: {topic_name}
+- **Mô tả chủ đề**: {topic_description}
+- **Mức độ khó**: {difficulty_level}
+- **Cấp độ phân loại Bloom**: {bloom_taxonomy_level}
+- **Mã khóa học**: {course_code}
 
-Based on the validator feedback, please provide corrected versions of:
-1. The question (if needed)
-2. The correct answer (if needed)
-3. The distractors (if needed)
-4. The explanation (if needed)
+Dựa trên phản hồi của người xác nhận, vui lòng cung cấp các phiên bản đã sửa của:
+1. Câu hỏi (nếu cần)
+2. Câu trả lời đúng (nếu cần)
+3. Yếu tố gây nhiễu (nếu cần)
+4. Giải thích (nếu cần)
 
-Ensure that all corrections address the specific issues mentioned in the validator feedback while maintaining the educational value and topic relevance of the original question.
+Đảm bảo rằng tất cả các sửa chữa giải quyết các vấn đề cụ thể được đề cập trong phản hồi của người xác nhận trong khi duy trì giá trị giáo dục và tính liên quan chủ đề của câu hỏi ban đầu.
+
+Tất cả đầu ra phải bằng tiếng Việt.
 """

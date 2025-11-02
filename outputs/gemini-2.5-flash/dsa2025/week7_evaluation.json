@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm và Mục tiêu Hàm băm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better overall due to its concise phrasing and clearer alignment with the Bloom level of 'Remember.' The distractors in the pipeline question are more plausible and pedagogically valuable, while the baseline question has slightly less plausible distractors and a minor clarity issue in its phrasing."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Quy ước mã băm của Java",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its precise phrasing and slightly more plausible distractors. Both questions are relevant and clear, but the pipeline question aligns better with the Bloom level of 'Understand' and has a slightly better difficulty calibration."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Cơ chế của Bảng băm chuỗi riêng biệt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its direct focus on the structure of Separate-Chaining hash tables, which aligns perfectly with the topic and Bloom level. The baseline question, while relevant, introduces a slightly more complex scenario that may not be ideal for the stated difficulty level."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "So sánh Stack và Queue",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its concise focus on the LIFO principle of Stack, which is directly aligned with the topic and Bloom level. The baseline question, while relevant, introduces additional concepts that may slightly detract from its clarity and focus."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Triển khai Mã băm cho Chuỗi bằng Horner",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its clear focus on applying Horner's method to a specific example, which aligns well with the Bloom level of 'Apply.' The baseline question, while relevant, is slightly less clear and introduces distractors that are less plausible."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Phân tích Phân giải xung đột: Chuỗi riêng biệt và Thăm dò tuyến tính",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its precise focus on primary clustering in Linear Probing, which aligns perfectly with the topic and Bloom level of 'Analyze.' The baseline question, while relevant, is slightly less clear and introduces distractors that are less plausible."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ứng dụng của Giả định Băm Đồng nhất",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its clear focus on the Birthday Problem and its implications for collisions, which aligns perfectly with the topic and Bloom level of 'Understand.' The baseline question, while relevant, is slightly less clear and introduces distractors that are less plausible."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "So sánh Bảng băm và Cây tìm kiếm nhị phân",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its comprehensive focus on the trade-offs between Hash Tables and Balanced Binary Search Trees, which aligns perfectly with the topic and Bloom level of 'Evaluate.' The baseline question, while relevant, is slightly less clear and introduces distractors that are less plausible."
+        }
+    ]
+}

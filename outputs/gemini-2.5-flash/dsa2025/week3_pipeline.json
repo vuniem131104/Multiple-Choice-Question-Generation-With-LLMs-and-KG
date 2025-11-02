@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Thuật toán Mergesort hoạt động dựa trên những giai đoạn cốt lõi nào theo nguyên lý 'chia để trị'?",
+      "answer": "Chia mảng thành các nửa nhỏ hơn, sắp xếp đệ quy từng nửa, và sau đó hợp nhất các nửa đã sắp xếp.",
+      "distractors": [
+        "Lặp lại việc tìm phần tử nhỏ nhất và hoán đổi nó vào vị trí đúng cho đến khi mảng được sắp xếp.",
+        "Chia mảng thành các phần tử riêng lẻ, sau đó so sánh và hoán đổi các cặp phần tử liền kề cho đến khi không còn cặp nào cần hoán đổi.",
+        "Chọn một phần tử chốt, phân hoạch mảng xung quanh phần tử chốt đó, và sau đó sắp xếp đệ quy các mảng con."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Chia mảng thành các nửa nhỏ hơn, sắp xếp đệ quy từng nửa, và sau đó hợp nhất các nửa đã sắp xếp.\" vì đây chính xác là ba giai đoạn cốt lõi của thuật toán Mergesort theo nguyên lý 'chia để trị'. Mergesort hoạt động bằng cách chia mảng ban đầu thành hai nửa cho đến khi mỗi nửa chỉ còn một phần tử (giai đoạn chia). Sau đó, nó sắp xếp đệ quy từng nửa này (thực tế là các mảng con đã được chia nhỏ) và cuối cùng hợp nhất các nửa đã sắp xếp lại với nhau theo thứ tự tăng dần (giai đoạn hợp nhất).\n\nCác yếu tố gây nhiễu không chính xác vì:\n- \"Lặp lại việc tìm phần tử nhỏ nhất và hoán đổi nó vào vị trí đúng cho đến khi mảng được sắp xếp.\" mô tả thuật toán Selection Sort, không phải Mergesort. Selection Sort hoạt động bằng cách tìm phần tử nhỏ nhất trong phần chưa sắp xếp và đặt nó vào vị trí đầu tiên của phần đã sắp xếp.\n- \"Chia mảng thành các phần tử riêng lẻ, sau đó so sánh và hoán đổi các cặp phần tử liền kề cho đến khi không còn cặp nào cần hoán đổi.\" mô tả thuật toán Bubble Sort. Bubble Sort lặp đi lặp lại việc đi qua danh sách, so sánh các phần tử liền kề và hoán đổi chúng nếu chúng sai thứ tự.\n- \"Chọn một phần tử chốt, phân hoạch mảng xung quanh phần tử chốt đó, và sau đó sắp xếp đệ quy các mảng con.\" mô tả thuật toán Quicksort. Quicksort hoạt động bằng cách chọn một phần tử làm \"chốt\" và phân hoạch mảng thành hai mảng con: các phần tử nhỏ hơn chốt và các phần tử lớn hơn chốt, sau đó sắp xếp đệ quy các mảng con này.",
+      "topic": {
+        "name": "Nguyên lý hoạt động của Mergesort",
+        "description": "Kiểm tra hiểu biết cơ bản về cách thuật toán Mergesort hoạt động. Chủ đề này tập trung vào các bước cốt lõi của nguyên tắc 'chia để trị', bao gồm việc chia mảng thành các nửa nhỏ hơn, sắp xếp đệ quy từng nửa, và sau đó hợp nhất hai nửa đã sắp xếp lại với nhau để tạo thành một mảng đã sắp xếp hoàn chỉnh.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Đặc điểm nào sau đây định nghĩa một thuật toán sắp xếp là ổn định?",
+      "answer": "Thuật toán bảo toàn thứ tự tương đối của các phần tử có khóa bằng nhau sau khi sắp xếp.",
+      "distractors": [
+        "Thuật toán có độ phức tạp thời gian tốt nhất trong số các thuật toán sắp xếp.",
+        "Thuật toán luôn sắp xếp các phần tử theo thứ tự tăng dần hoặc giảm dần.",
+        "Thuật toán sử dụng một lượng bộ nhớ bổ sung tối thiểu để sắp xếp các phần tử."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **\"Thuật toán bảo toàn thứ tự tương đối của các phần tử có khóa bằng nhau sau khi sắp xếp.\"** vì đây chính xác là định nghĩa của một thuật toán sắp xếp ổn định. Tính ổn định có nghĩa là nếu có hai phần tử có giá trị (khóa) bằng nhau, thì thứ tự xuất hiện ban đầu của chúng trong mảng sẽ được giữ nguyên sau khi sắp xếp. Ví dụ, nếu bạn có một danh sách các đối tượng (ví dụ: học sinh với tên và điểm) và bạn sắp xếp chúng theo điểm, một thuật toán ổn định sẽ đảm bảo rằng nếu hai học sinh có cùng điểm, học sinh nào xuất hiện trước trong danh sách ban đầu sẽ vẫn xuất hiện trước sau khi sắp xếp.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **\"Thuật toán có độ phức tạp thời gian tốt nhất trong số các thuật toán sắp xếp.\"** là sai. Độ phức tạp thời gian (hiệu suất) là một đặc điểm quan trọng của thuật toán sắp xếp, nhưng nó không liên quan trực tiếp đến tính ổn định. Một thuật toán có thể rất nhanh nhưng không ổn định, và ngược lại. Ví dụ, QuickSort thường nhanh nhưng không ổn định, trong khi MergeSort ổn định nhưng có thể không phải lúc nào cũng nhanh nhất trong mọi trường hợp.\n*   **\"Thuật toán luôn sắp xếp các phần tử theo thứ tự tăng dần hoặc giảm dần.\"** là sai. Mọi thuật toán sắp xếp đều có mục tiêu là sắp xếp các phần tử theo một thứ tự nhất định (tăng dần hoặc giảm dần). Đây là chức năng cơ bản của việc sắp xếp, không phải là đặc điểm định nghĩa tính ổn định. Tính ổn định chỉ liên quan đến cách xử lý các phần tử có giá trị bằng nhau.\n*   **\"Thuật toán sử dụng một lượng bộ nhớ bổ sung tối thiểu để sắp xếp các phần tử.\"** là sai. Lượng bộ nhớ bổ sung mà một thuật toán sử dụng được gọi là độ phức tạp không gian. Đây là một yếu tố quan trọng khác khi đánh giá thuật toán, nhưng nó không liên quan đến tính ổn định. Một thuật toán có thể ổn định nhưng yêu cầu nhiều bộ nhớ (ví dụ: MergeSort) hoặc không ổn định và yêu cầu ít bộ nhớ (ví dụ: HeapSort).",
+      "topic": {
+        "name": "Định nghĩa tính ổn định của thuật toán sắp xếp",
+        "description": "Chủ đề này đánh giá khả năng của học sinh trong việc nắm vững định nghĩa về một thuật toán sắp xếp ổn định. Cụ thể, nó kiểm tra xem học sinh có hiểu rằng một thuật toán ổn định là thuật toán bảo toàn thứ tự tương đối của các mục có khóa bằng nhau sau khi sắp xếp hay không, có thể liên hệ với các ví dụ thuật toán ổn định và không ổn định.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Mục đích chính của việc triển khai giao diện Comparable trong Java cho một lớp là gì?",
+      "answer": "Để xác định thứ tự tự nhiên (natural ordering) cho các đối tượng của lớp.",
+      "distractors": [
+        "Để cho phép các đối tượng được so sánh bằng toán tử '==' một cách chính xác.",
+        "Để xác định cách các đối tượng được in ra màn hình (string representation).",
+        "Để cho phép các đối tượng được lưu trữ trong các cấu trúc dữ liệu băm (hash-based data structures)."
+      ],
+      "explanation": "Mục đích chính của việc triển khai giao diện `Comparable` trong Java là **để xác định thứ tự tự nhiên (natural ordering) cho các đối tượng của lớp**. Khi một lớp triển khai `Comparable`, nó phải cung cấp một triển khai cho phương thức `compareTo()`. Phương thức này định nghĩa cách các đối tượng của lớp đó được so sánh với nhau, cho phép chúng được sắp xếp theo một thứ tự mặc định (ví dụ: theo giá trị số, theo thứ tự bảng chữ cái, v.v.) mà không cần chỉ định một `Comparator` riêng biệt. Các phương thức tiện ích như `Collections.sort()` hoặc `Arrays.sort()` có thể sử dụng thứ tự tự nhiên này để sắp xếp các đối tượng.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Để cho phép các đối tượng được so sánh bằng toán tử '==' một cách chính xác.** Toán tử `==` trong Java so sánh các tham chiếu đối tượng (kiểm tra xem hai biến có trỏ đến cùng một đối tượng trong bộ nhớ hay không), không phải nội dung của đối tượng. Để so sánh nội dung của đối tượng, bạn cần ghi đè phương thức `equals()`, không phải triển khai `Comparable`.\n*   **Để xác định cách các đối tượng được in ra màn hình (string representation).** Việc xác định cách một đối tượng được in ra màn hình được thực hiện bằng cách ghi đè phương thức `toString()`, không phải bằng cách triển khai giao diện `Comparable`.\n*   **Để cho phép các đối tượng được lưu trữ trong các cấu trúc dữ liệu băm (hash-based data structures).** Để các đối tượng được lưu trữ và truy xuất chính xác trong các cấu trúc dữ liệu băm như `HashMap` hoặc `HashSet`, bạn cần ghi đè cả phương thức `equals()` và `hashCode()`. Giao diện `Comparable` không liên quan trực tiếp đến hoạt động của các cấu trúc dữ liệu băm.",
+      "topic": {
+        "name": "Mục đích của giao diện Comparable",
+        "description": "Kiểm tra vai trò chính của giao diện 'Comparable' trong Java để xác định 'thứ tự tự nhiên' của các đối tượng. Học sinh cần hiểu khi nào và tại sao một lớp cần triển khai phương thức 'compareTo()' để cho phép các đối tượng của nó được sắp xếp theo một thứ tự mặc định. Chủ đề này kết nối với kiến thức về việc sắp xếp các kiểu dữ liệu từ Tuần 2.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong quá trình thực hiện thao tác hợp nhất tại chỗ (abstract in-place merge) giữa hai mảng con đã sắp xếp, mảng phụ được sử dụng với mục đích chính để làm gì?",
+      "answer": "Sao chép dữ liệu từ mảng gốc sau đó hợp nhất các phần tử trở lại.",
+      "distractors": [
+        "Lưu trữ tạm thời các phần tử đã hợp nhất trước khi ghi lại vào mảng gốc.",
+        "Giúp xác định vị trí các phần tử cần được hoán đổi trong quá trình hợp nhất.",
+        "Đánh dấu các phần tử đã được xử lý để tránh trùng lặp."
+      ],
+      "explanation": "Trong quá trình hợp nhất tại chỗ (in-place merge) giữa hai mảng con đã sắp xếp, mảng phụ (auxiliary array) được sử dụng chủ yếu để **sao chép dữ liệu từ mảng gốc sau đó hợp nhất các phần tử trở lại**. Điều này là cần thiết vì khi hợp nhất hai mảng con đã sắp xếp trong cùng một mảng gốc, chúng ta cần một không gian tạm thời để lưu trữ một trong hai mảng con (thường là mảng con bên trái) để tránh việc ghi đè lên dữ liệu chưa được xử lý. Sau khi sao chép, quá trình hợp nhất sẽ so sánh các phần tử từ mảng phụ và mảng con còn lại trong mảng gốc, sau đó đặt các phần tử đã hợp nhất vào đúng vị trí trong mảng gốc.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Lưu trữ tạm thời các phần tử đã hợp nhất trước khi ghi lại vào mảng gốc** là sai. Mảng phụ không được dùng để lưu trữ các phần tử *đã hợp nhất*. Thay vào đó, nó lưu trữ một phần của dữ liệu *gốc* để giải phóng không gian trong mảng gốc cho quá trình hợp nhất. Các phần tử đã hợp nhất được ghi trực tiếp vào mảng gốc.\n*   **Giúp xác định vị trí các phần tử cần được hoán đổi trong quá trình hợp nhất** là sai. Mảng phụ không có chức năng xác định vị trí hoán đổi. Quá trình hợp nhất dựa trên việc so sánh các phần tử và đặt chúng vào đúng vị trí theo thứ tự, không phải hoán đổi các phần tử đã có sẵn trong mảng gốc.\n*   **Đánh dấu các phần tử đã được xử lý để tránh trùng lặp** là sai. Mảng phụ không được sử dụng để đánh dấu các phần tử đã xử lý hoặc tránh trùng lặp. Mục đích chính của nó là cung cấp không gian lưu trữ tạm thời cho dữ liệu gốc để quá trình hợp nhất có thể diễn ra mà không làm mất dữ liệu.\n",
+      "topic": {
+        "name": "Các bước thực hiện hợp nhất trừu tượng",
+        "description": "Chủ đề này tập trung vào hiểu biết về quy trình thực hiện thao tác hợp nhất tại chỗ (abstract in-place merge) giữa hai mảng con đã sắp xếp. Học sinh cần biết được trình tự các bước chính, bao gồm việc sử dụng mảng phụ để sao chép dữ liệu và sau đó hợp nhất các phần tử trở lại mảng gốc một cách hiệu quả và ổn định.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Với định nghĩa về tính ổn định của thuật toán sắp xếp, yếu tố nào trong cơ chế của Selection Sort khiến nó không phải là thuật toán ổn định, trong khi Insertion Sort thường được xem là ổn định?",
+      "answer": "Selection Sort có thể thực hiện hoán đổi một phần tử nhỏ nhất (từ vị trí xa hơn) với một phần tử ở vị trí hiện tại của vùng chưa sắp xếp, làm thay đổi thứ tự tương đối của các phần tử bằng nhau.",
+      "distractors": [
+        "Selection Sort luôn chọn phần tử nhỏ nhất và đặt nó vào đúng vị trí, điều này không làm thay đổi thứ tự tương đối của các phần tử bằng nhau.",
+        "Selection Sort thực hiện nhiều phép so sánh hơn Insertion Sort, điều này làm cho nó không ổn định hơn.",
+        "Selection Sort không ổn định vì nó sử dụng một mảng phụ để lưu trữ các phần tử đã sắp xếp, làm mất đi thứ tự ban đầu."
+      ],
+      "explanation": "**Giải thích:**\n\n**Tại sao câu trả lời đúng là đúng:**\n\nTính ổn định của thuật toán sắp xếp được định nghĩa là khả năng duy trì thứ tự tương đối của các phần tử có giá trị bằng nhau trong mảng sau khi sắp xếp. Selection Sort không ổn định vì cơ chế hoạt động của nó. Trong mỗi bước, Selection Sort tìm phần tử nhỏ nhất trong phần mảng chưa sắp xếp và hoán đổi nó với phần tử ở vị trí đầu tiên của phần mảng chưa sắp xếp đó. Nếu phần tử nhỏ nhất được tìm thấy nằm ở một vị trí xa hơn và có giá trị bằng với một phần tử khác đã có mặt trước nó trong mảng ban đầu, việc hoán đổi này có thể làm thay đổi thứ tự tương đối của hai phần tử bằng nhau đó. Ví dụ, nếu có hai số 5, 5a và 5b (5a xuất hiện trước 5b), và Selection Sort hoán đổi 5b với một phần tử ở vị trí của 5a, thì 5b sẽ xuất hiện trước 5a, làm mất đi tính ổn định. Ngược lại, Insertion Sort hoạt động bằng cách chèn từng phần tử vào đúng vị trí trong phần mảng đã sắp xếp. Khi chèn, nó chỉ di chuyển các phần tử lớn hơn sang phải để tạo chỗ, và nếu gặp một phần tử bằng nhau, nó sẽ chèn phần tử hiện tại *sau* phần tử bằng nhau đó, do đó duy trì thứ tự tương đối.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Selection Sort luôn chọn phần tử nhỏ nhất và đặt nó vào đúng vị trí, điều này không làm thay đổi thứ tự tương đối của các phần tử bằng nhau.** Phát biểu này không chính xác. Mặc dù Selection Sort luôn chọn phần tử nhỏ nhất và đặt nó vào đúng vị trí, nhưng chính hành động *hoán đổi* để đặt nó vào vị trí đó mới là nguyên nhân gây mất ổn định. Nếu phần tử nhỏ nhất được chọn có giá trị bằng với một phần tử khác đã có mặt trước nó và nằm ở vị trí xa hơn, việc hoán đổi có thể đảo ngược thứ tự tương đối của chúng.\n\n*   **Selection Sort thực hiện nhiều phép so sánh hơn Insertion Sort, điều này làm cho nó không ổn định hơn.** Số lượng phép so sánh không liên quan trực tiếp đến tính ổn định của thuật toán. Tính ổn định được xác định bởi cách thuật toán xử lý các phần tử có giá trị bằng nhau trong quá trình sắp xếp, cụ thể là liệu nó có duy trì thứ tự tương đối của chúng hay không, chứ không phải bởi hiệu suất về số phép so sánh.\n\n*   **Selection Sort không ổn định vì nó sử dụng một mảng phụ để lưu trữ các phần tử đã sắp xếp, làm mất đi thứ tự ban đầu.** Selection Sort là một thuật toán sắp xếp tại chỗ (in-place), nghĩa là nó không sử dụng mảng phụ đáng kể để lưu trữ các phần tử đã sắp xếp. Nó thực hiện sắp xếp trực tiếp trên mảng đầu vào bằng cách hoán đổi các phần tử. Do đó, lý do này không đúng với cơ chế hoạt động của Selection Sort.",
+      "topic": {
+        "name": "So sánh tính ổn định: Insertion Sort và Selection Sort",
+        "description": "Chủ đề này yêu cầu học sinh phân tích và so sánh tính ổn định giữa hai thuật toán sắp xếp cơ bản: Insertion Sort và Selection Sort đã học từ Tuần 2. Học sinh phải áp dụng định nghĩa về tính ổn định từ Tuần 3 để xác định tại sao một thuật toán ổn định và thuật toán kia không ổn định, dựa trên cơ chế hoạt động của chúng.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Dựa trên giới hạn dưới lý thuyết O(N log N) cho các thuật toán sắp xếp dựa trên so sánh, yếu tố nào khiến Mergesort được xem là tối ưu trong mô hình cây quyết định với độ phức tạp trường hợp xấu nhất là O(N log N)?",
+      "answer": "Độ phức tạp trường hợp xấu nhất của Mergesort khớp với giới hạn dưới lý thuyết.",
+      "distractors": [
+        "Mergesort có độ phức tạp trường hợp tốt nhất là O(N log N), điều này làm cho nó hiệu quả.",
+        "Mergesort sử dụng kỹ thuật chia để trị, giúp nó đạt được hiệu suất tối ưu.",
+        "Mergesort là một thuật toán ổn định, đảm bảo thứ tự tương đối của các phần tử bằng nhau."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Độ phức tạp trường hợp xấu nhất của Mergesort khớp với giới hạn dưới lý thuyết.** vì đây là lý do chính khiến Mergesort được coi là tối ưu trong mô hình cây quyết định. Giới hạn dưới lý thuyết O(N log N) cho các thuật toán sắp xếp dựa trên so sánh chỉ ra rằng không có thuật toán sắp xếp dựa trên so sánh nào có thể thực hiện tốt hơn độ phức tạp này trong trường hợp xấu nhất. Mergesort đạt được độ phức tạp O(N log N) ngay cả trong trường hợp xấu nhất, điều đó có nghĩa là nó đạt đến giới hạn hiệu suất tối đa có thể có cho loại thuật toán này.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Mergesort có độ phức tạp trường hợp tốt nhất là O(N log N), điều này làm cho nó hiệu quả.** Mặc dù Mergesort có độ phức tạp trường hợp tốt nhất là O(N log N) và điều này thực sự làm cho nó hiệu quả, nhưng câu hỏi cụ thể hỏi về lý do nó được xem là \"tối ưu\" dựa trên giới hạn dưới lý thuyết và độ phức tạp trường hợp xấu nhất. Việc khớp với giới hạn dưới trong trường hợp xấu nhất mới là yếu tố quyết định sự tối ưu.\n\n*   **Mergesort sử dụng kỹ thuật chia để trị, giúp nó đạt được hiệu suất tối ưu.** Kỹ thuật chia để trị là cách Mergesort hoạt động và là một yếu tố quan trọng giúp nó đạt được hiệu suất cao. Tuy nhiên, bản thân kỹ thuật này không phải là lý do trực tiếp khiến nó được coi là \"tối ưu\" theo định nghĩa của việc khớp với giới hạn dưới lý thuyết. Nhiều thuật toán khác cũng sử dụng chia để trị nhưng không đạt được giới hạn dưới này trong trường hợp xấu nhất (ví dụ: Quicksort).\n\n*   **Mergesort là một thuật toán ổn định, đảm bảo thứ tự tương đối của các phần tử bằng nhau.** Tính ổn định là một đặc tính quan trọng của Mergesort, có nghĩa là nó duy trì thứ tự tương đối của các phần tử có giá trị bằng nhau. Tuy nhiên, tính ổn định không liên quan trực tiếp đến độ phức tạp thời gian hoặc việc đạt được giới hạn dưới lý thuyết O(N log N) cho các thuật toán sắp xếp dựa trên so sánh. Một thuật toán có thể ổn định nhưng không tối ưu về độ phức tạp thời gian, và ngược lại.",
+      "topic": {
+        "name": "Độ phức tạp trường hợp xấu nhất của Mergesort",
+        "description": "Kiểm tra khả năng phân tích độ phức tạp thời gian trường hợp xấu nhất của Mergesort. Học sinh cần hiểu tại sao độ phức tạp của Mergesort là ~N lg N và so sánh nó với giới hạn dưới dựa trên so sánh (~N lg N từ Tuần 3), nhấn mạnh lý do Mergesort được coi là thuật toán tối ưu trong mô hình cây quyết định.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Để sắp xếp một danh sách các đối tượng 'SinhVien' theo tên (tăng dần) và sau đó theo lớp (tăng dần) nếu tên giống nhau, một 'Comparator' cần được triển khai như thế nào?",
+      "answer": "Phương thức 'compare' của 'Comparator' phải so sánh tên trước; nếu tên bằng nhau, thì so sánh lớp.",
+      "distractors": [
+        "Phương thức 'compare' chỉ cần so sánh tên; việc sắp xếp theo lớp sẽ tự động được xử lý.",
+        "Cần triển khai hai 'Comparator' riêng biệt, một cho tên và một cho lớp, sau đó kết hợp chúng.",
+        "Phương thức 'compare' nên so sánh lớp trước, sau đó mới so sánh tên nếu lớp bằng nhau."
+      ],
+      "explanation": "Để sắp xếp một danh sách các đối tượng 'SinhVien' theo tên (tăng dần) và sau đó theo lớp (tăng dần) nếu tên giống nhau, phương thức `compare` của `Comparator` phải so sánh tên trước; nếu tên bằng nhau, thì so sánh lớp. Đây là cách triển khai đúng cho sắp xếp đa tiêu chí. Khi bạn cần sắp xếp theo nhiều tiêu chí, bạn phải định nghĩa logic so sánh trong một `Comparator` duy nhất. Tiêu chí chính (tên) được so sánh trước. Nếu kết quả so sánh cho thấy hai đối tượng bằng nhau theo tiêu chí chính (tên giống nhau), thì tiêu chí phụ (lớp) sẽ được sử dụng để phá vỡ sự ràng buộc.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Phương thức 'compare' chỉ cần so sánh tên; việc sắp xếp theo lớp sẽ tự động được xử lý.** Điều này không đúng. `Comparator` chỉ thực hiện logic so sánh mà bạn định nghĩa. Nếu bạn chỉ so sánh tên, thì khi tên giống nhau, thứ tự của các đối tượng đó sẽ không được đảm bảo theo lớp mà có thể phụ thuộc vào thứ tự ban đầu hoặc các yếu tố khác không mong muốn.\n*   **Cần triển khai hai 'Comparator' riêng biệt, một cho tên và một cho lớp, sau đó kết hợp chúng.** Mặc dù có thể kết hợp các `Comparator` (ví dụ, sử dụng `thenComparing` trong Java 8), nhưng cách tiếp cận cơ bản và hiệu quả nhất cho sắp xếp đa tiêu chí theo yêu cầu này là triển khai một `Comparator` duy nhất xử lý cả hai tiêu chí trong phương thức `compare` của nó. Việc tạo hai `Comparator` riêng biệt và sau đó kết hợp chúng là một cách phức tạp hơn và không phải là câu trả lời trực tiếp nhất cho việc \"triển khai một `Comparator` như thế nào\" trong ngữ cảnh này.\n*   **Phương thức 'compare' nên so sánh lớp trước, sau đó mới so sánh tên nếu lớp bằng nhau.** Điều này sẽ dẫn đến một thứ tự sắp xếp khác với yêu cầu. Yêu cầu là sắp xếp theo tên trước, sau đó mới đến lớp. Nếu so sánh lớp trước, danh sách sẽ được sắp xếp chủ yếu theo lớp, và chỉ khi lớp giống nhau thì mới sắp xếp theo tên, điều này trái ngược với yêu cầu ban đầu.",
+      "topic": {
+        "name": "Ứng dụng giao diện Comparator cho sắp xếp đa tiêu chí",
+        "description": "Chủ đề này đòi hỏi học sinh áp dụng giao diện 'Comparator' từ Tuần 3 để giải quyết vấn đề sắp xếp đối tượng theo nhiều tiêu chí khác nhau (ví dụ: sắp xếp sinh viên theo tên, sau đó theo phần). Kiểm tra khả năng thiết kế và triển khai một 'Comparator' để định nghĩa một thứ tự sắp xếp thay thế cho các đối tượng đã cho.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong bối cảnh thuật toán sắp xếp Radix Sort, để đảm bảo tính ổn định và duy trì thứ tự tương đối của các phần tử có cùng giá trị khóa trong suốt quá trình phân phối các chữ số, cấu trúc dữ liệu cơ bản nào sau đây được kết hợp một cách hiệu quả nhất?",
+      "answer": "Hàng đợi",
+      "distractors": [
+        "Ngăn xếp",
+        "Danh sách liên kết đôi",
+        "Cây tìm kiếm nhị phân"
+      ],
+      "explanation": "Giải thích:\n\n**Hàng đợi** là câu trả lời đúng vì Radix Sort là một thuật toán sắp xếp không so sánh, hoạt động bằng cách phân phối các phần tử vào các \"thùng\" (bucket) dựa trên giá trị của từng chữ số, từ chữ số ít quan trọng nhất đến chữ số quan trọng nhất (hoặc ngược lại). Để đảm bảo tính ổn định của thuật toán (tức là duy trì thứ tự tương đối của các phần tử có cùng giá trị khóa), các phần tử phải được đưa vào và lấy ra khỏi các thùng theo thứ tự chúng được thêm vào. Cấu trúc dữ liệu Hàng đợi (Queue) hoạt động theo nguyên tắc FIFO (First-In, First-Out), hoàn toàn phù hợp với yêu cầu này. Khi các phần tử có cùng giá trị chữ số được đưa vào một thùng, chúng sẽ được lấy ra theo đúng thứ tự đã vào, đảm bảo tính ổn định.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Ngăn xếp (Stack)** hoạt động theo nguyên tắc LIFO (Last-In, First-Out). Nếu sử dụng ngăn xếp làm thùng, các phần tử có cùng giá trị khóa sẽ bị đảo ngược thứ tự khi được lấy ra, phá vỡ tính ổn định của Radix Sort.\n*   **Danh sách liên kết đôi (Doubly Linked List)** có thể được sử dụng để triển khai hàng đợi hoặc ngăn xếp, nhưng bản thân nó không tự động đảm bảo nguyên tắc FIFO. Việc sử dụng danh sách liên kết đôi đòi hỏi phải có logic bổ sung để mô phỏng hành vi của hàng đợi nhằm đảm bảo tính ổn định, do đó nó không phải là cấu trúc dữ liệu cơ bản hiệu quả nhất để trực tiếp đảm bảo tính ổn định trong ngữ cảnh này.\n*   **Cây tìm kiếm nhị phân (Binary Search Tree)** là một cấu trúc dữ liệu được sử dụng để lưu trữ các phần tử theo thứ tự và cho phép tìm kiếm, chèn, xóa hiệu quả. Tuy nhiên, nó không phù hợp để làm thùng trong Radix Sort vì việc chèn các phần tử vào cây sẽ sắp xếp chúng theo giá trị tổng thể chứ không phải theo thứ tự chèn, và việc lấy ra các phần tử từ cây sẽ không duy trì thứ tự tương đối của các phần tử có cùng giá trị khóa, do đó không đảm bảo tính ổn định.",
+      "topic": {
+        "name": "Tổng hợp đặc điểm cấu trúc dữ liệu và độ phức tạp sắp xếp",
+        "description": "Kiểm tra khả năng tổng hợp kiến thức từ các tuần. Học sinh cần kết nối kiến thức về các kiểu dữ liệu cơ bản (Stack, Queue từ Tuần 1) và các phương pháp triển khai của chúng với các thuật toán sắp xếp (Tuần 2, Tuần 3) và khuôn khổ độ phức tạp tính toán (Tuần 3). Chủ đề này nhằm đánh giá cách lựa chọn cấu trúc dữ liệu ảnh hưởng đến hiệu quả của thuật toán sắp xếp hoặc cách một cấu trúc dữ liệu có thể được sử dụng để tối ưu hóa một quá trình sắp xếp cụ thể.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Tổng hợp"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    }
+  ]
+}

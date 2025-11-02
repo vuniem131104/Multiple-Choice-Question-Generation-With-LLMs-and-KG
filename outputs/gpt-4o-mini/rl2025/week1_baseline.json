@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Quy trình Quyết định Markov (MDP) là gì?",
+            "answer": "Một mô hình toán học mô tả quyết định trong môi trường ngẫu nhiên.",
+            "distractors": [
+                "Một loại thuật toán tìm kiếm",
+                "Một phương pháp học máy",
+                "Một kỹ thuật tối ưu hóa"
+            ],
+            "explanation": "MDP là một mô hình toán học giúp mô tả các quyết định trong môi trường có tính ngẫu nhiên, bao gồm các trạng thái, hành động và phần thưởng."
+        },
+        {
+            "question": "Trong một Quy trình Quyết định Markov, yếu tố nào không ảnh hưởng đến quyết định hiện tại?",
+            "answer": "Lịch sử các trạng thái trước đó.",
+            "distractors": [
+                "Trạng thái hiện tại",
+                "Hành động đã thực hiện",
+                "Phần thưởng nhận được"
+            ],
+            "explanation": "Tính chất Markov cho biết rằng tương lai chỉ phụ thuộc vào hiện tại, không bị ảnh hưởng bởi lịch sử."
+        },
+        {
+            "question": "Ma trận Chuyển đổi Trạng thái trong MDP dùng để làm gì?",
+            "answer": "Xác định xác suất chuyển đổi giữa các trạng thái.",
+            "distractors": [
+                "Tính toán phần thưởng tức thì",
+                "Xác định hành động tối ưu",
+                "Mô tả cấu trúc của MDP"
+            ],
+            "explanation": "Ma trận Chuyển đổi Trạng thái cho phép xác định xác suất chuyển đổi từ trạng thái này sang trạng thái khác trong MDP."
+        },
+        {
+            "question": "Phương trình Bellman được sử dụng để làm gì trong Quy trình Phần thưởng Markov?",
+            "answer": "Tính toán giá trị của trạng thái dựa trên phần thưởng và giá trị tương lai.",
+            "distractors": [
+                "Xác định xác suất chuyển đổi",
+                "Tính toán phần thưởng tức thì",
+                "Mô tả hành động tối ưu"
+            ],
+            "explanation": "Phương trình Bellman giúp tính toán giá trị của trạng thái bằng cách kết hợp phần thưởng tức thì và giá trị tương lai."
+        },
+        {
+            "question": "Hàm Giá trị Trạng thái v(s) trong MRP được tính toán dựa trên yếu tố nào?",
+            "answer": "Phần thưởng và yếu tố chiết khấu.",
+            "distractors": [
+                "Xác suất chuyển đổi",
+                "Hành động tối ưu",
+                "Thời gian"
+            ],
+            "explanation": "Hàm Giá trị Trạng thái v(s) được tính toán dựa trên phần thưởng nhận được và yếu tố chiết khấu để xác định giá trị dài hạn."
+        },
+        {
+            "question": "Chính sách tối ưu trong MDP là gì?",
+            "answer": "Chính sách mang lại giá trị tối ưu cho mỗi trạng thái.",
+            "distractors": [
+                "Chính sách ngẫu nhiên",
+                "Chính sách không thay đổi",
+                "Chính sách dựa trên lịch sử"
+            ],
+            "explanation": "Chính sách tối ưu là chính sách mà tại mỗi trạng thái, hành động được chọn sẽ mang lại giá trị tối ưu nhất."
+        },
+        {
+            "question": "Hàm Giá trị Tối ưu trong MDP phụ thuộc vào yếu tố nào?",
+            "answer": "Chính sách được áp dụng.",
+            "distractors": [
+                "Số lượng trạng thái",
+                "Thời gian thực hiện",
+                "Hành động đã thực hiện"
+            ],
+            "explanation": "Hàm Giá trị Tối ưu phụ thuộc vào chính sách được áp dụng, vì chính sách xác định hành động nào sẽ được thực hiện tại mỗi trạng thái."
+        },
+        {
+            "question": "Quy trình Quyết định Markov Ergodic có đặc điểm gì nổi bật?",
+            "answer": "Tính chất lặp lại trong các quy trình quyết định.",
+            "distractors": [
+                "Không có trạng thái nào lặp lại",
+                "Chỉ có một trạng thái duy nhất",
+                "Không có phần thưởng"
+            ],
+            "explanation": "MDP Ergodic có tính chất lặp lại, cho phép mô hình hóa các hiện tượng trong thực tế và đảm bảo rằng mọi trạng thái có thể được truy cập từ bất kỳ trạng thái nào khác."
+        }
+    ]
+}

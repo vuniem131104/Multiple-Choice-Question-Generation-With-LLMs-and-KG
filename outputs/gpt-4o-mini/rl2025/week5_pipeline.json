@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Tính chất nào của quy trình quyết định Markov (MDP) xác định rằng trạng thái hiện tại chỉ phụ thuộc vào trạng thái trước đó và không phụ thuộc vào các trạng thái trước đó nữa?",
+      "answer": "Tính chất Markov",
+      "distractors": [
+        "Tính chất độc lập",
+        "Tính chất hồi tiếp",
+        "Tính chất ngẫu nhiên"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Tính chất Markov\". Tính chất Markov xác định rằng trạng thái hiện tại trong một quy trình quyết định Markov (MDP) chỉ phụ thuộc vào trạng thái trước đó và không phụ thuộc vào các trạng thái trước đó nữa. Điều này có nghĩa là thông tin từ các trạng thái trước không cần thiết để dự đoán trạng thái hiện tại, mà chỉ cần biết trạng thái ngay trước đó.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Tính chất độc lập**: Tính chất độc lập thường đề cập đến việc một biến không bị ảnh hưởng bởi các biến khác. Trong MDP, trạng thái hiện tại không hoàn toàn độc lập với trạng thái trước đó, mà nó phụ thuộc vào trạng thái đó, do đó tùy chọn này không đúng.\n\n- **Tính chất hồi tiếp**: Tính chất hồi tiếp liên quan đến việc một hệ thống có thể quay lại trạng thái trước đó. Trong MDP, không có yêu cầu rằng trạng thái hiện tại phải quay lại trạng thái trước đó, mà chỉ cần nó phụ thuộc vào trạng thái trước. Vì vậy, tùy chọn này cũng không chính xác.\n\n- **Tính chất ngẫu nhiên**: Tính chất ngẫu nhiên liên quan đến sự không chắc chắn trong các kết quả. Mặc dù MDP có yếu tố ngẫu nhiên trong các quyết định và chuyển đổi trạng thái, nhưng điều này không liên quan đến việc trạng thái hiện tại phụ thuộc vào trạng thái trước đó. Do đó, tùy chọn này không đúng.\n\nTóm lại, \"Tính chất Markov\" là câu trả lời chính xác vì nó mô tả đúng cách mà các trạng thái trong MDP tương tác với nhau, trong khi các yếu tố gây nhiễu khác không phản ánh đúng các khái niệm này.",
+      "topic": {
+        "name": "Các khái niệm cơ bản về MDP",
+        "description": "Chủ đề này kiểm tra hiểu biết về các khái niệm cơ bản liên quan đến Quy trình Quyết định Markov (MDP), bao gồm Định nghĩa Tính chất Markov, Ma trận Chuyển đổi Trạng thái và Phương trình Bellman. Học sinh sẽ cần phải hiểu và định nghĩa các thuật ngữ này để trả lời các câu hỏi trắc nghiệm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Chương trình nào có thể được sử dụng để tối ưu hóa trong MDP bằng phương pháp Lập trình động?",
+      "answer": "Đánh giá chính sách lặp",
+      "distractors": [
+        "Lặp giá trị",
+        "Đánh giá chính sách tĩnh",
+        "Tối ưu hóa theo phương pháp ngẫu nhiên"
+      ],
+      "explanation": "Câu trả lời đúng là \"Đánh giá chính sách lặp\" vì đây là một phương pháp trong Lập trình động (DP) được sử dụng để tối ưu hóa trong Mô hình quyết định Markov (MDP). Phương pháp này cho phép chúng ta đánh giá một chính sách cụ thể bằng cách tính toán giá trị của các trạng thái theo chính sách đó, sau đó cập nhật chính sách dựa trên các giá trị đã tính toán. Quá trình này lặp đi lặp lại cho đến khi đạt được sự hội tụ, tức là không còn thay đổi đáng kể trong giá trị của các trạng thái.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Lặp giá trị**: Mặc dù lặp giá trị cũng là một phương pháp trong DP để tối ưu hóa MDP, nhưng nó không phải là phương pháp đánh giá chính sách. Lặp giá trị tập trung vào việc tìm kiếm giá trị tối ưu cho tất cả các trạng thái mà không cần phải đánh giá một chính sách cụ thể trước. Do đó, nó không phù hợp với câu hỏi về việc tối ưu hóa thông qua đánh giá chính sách.\n\n- **Đánh giá chính sách tĩnh**: Tùy chọn này không chính xác vì đánh giá chính sách tĩnh không phải là một phương pháp lặp. Đánh giá chính sách tĩnh thường chỉ thực hiện một lần mà không có quá trình lặp lại để cập nhật giá trị của các trạng thái. Điều này không cho phép tối ưu hóa liên tục như trong phương pháp đánh giá chính sách lặp.\n\n- **Tối ưu hóa theo phương pháp ngẫu nhiên**: Phương pháp này không phải là một kỹ thuật trong Lập trình động để tối ưu hóa MDP. Tối ưu hóa ngẫu nhiên thường liên quan đến các thuật toán ngẫu nhiên và không dựa trên các nguyên tắc của DP. Do đó, nó không liên quan đến việc sử dụng đánh giá chính sách lặp để tối ưu hóa trong MDP.\n\nTóm lại, \"Đánh giá chính sách lặp\" là câu trả lời đúng vì nó là phương pháp lặp đi lặp lại để tối ưu hóa chính sách trong MDP, trong khi các yếu tố gây nhiễu khác không phù hợp với yêu cầu của câu hỏi.",
+      "topic": {
+        "name": "Lập trình động và ứng dụng",
+        "description": "Chủ đề này tập trung vào Lập trình động (DP) như một phương pháp mạnh mẽ cho việc tối ưu hóa trong MDP. Học sinh sẽ được thử nghiệm kiến thức về các thuật toán DP như Đánh giá chính sách lặp và Lặp giá trị, cùng với các công thức toán học liên quan và ứng dụng thực tiễn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Học khác biệt thời gian (TD) khác biệt như thế nào so với các phương pháp học khác trong các ứng dụng thực tiễn?",
+      "answer": "Học khác biệt thời gian tập trung vào cách học dựa trên sự phân chia thời gian và vận dụng kiến thức vào thực tiễn hiệu quả hơn.",
+      "distractors": [
+        "Học khác biệt thời gian không cần áp dụng kiến thức vào thực tiễn.",
+        "Học khác biệt thời gian chỉ tập trung vào lý thuyết mà không chú trọng thực hành.",
+        "Học khác biệt thời gian yêu cầu phải học liên tục mà không có thời gian nghỉ ngơi."
+      ],
+      "explanation": "Câu trả lời đúng \"Học khác biệt thời gian tập trung vào cách học dựa trên sự phân chia thời gian và vận dụng kiến thức vào thực tiễn hiệu quả hơn\" là chính xác vì phương pháp học này nhấn mạnh việc tổ chức thời gian học tập một cách hợp lý, cho phép người học có thời gian để tiếp thu, ôn tập và áp dụng kiến thức vào các tình huống thực tế. Điều này giúp cải thiện khả năng ghi nhớ và ứng dụng kiến thức, từ đó nâng cao hiệu quả học tập.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Học khác biệt thời gian không cần áp dụng kiến thức vào thực tiễn**: Sai, vì một trong những đặc điểm nổi bật của học khác biệt thời gian là việc áp dụng kiến thức vào thực tiễn, giúp người học hiểu rõ hơn và ghi nhớ lâu hơn.\n\n- **Học khác biệt thời gian chỉ tập trung vào lý thuyết mà không chú trọng thực hành**: Sai, phương pháp này không chỉ chú trọng lý thuyết mà còn khuyến khích thực hành thông qua việc phân chia thời gian hợp lý để người học có thể thực hành và áp dụng kiến thức.\n\n- **Học khác biệt thời gian yêu cầu phải học liên tục mà không có thời gian nghỉ ngơi**: Sai, học khác biệt thời gian thực tế khuyến khích việc nghỉ ngơi và phân chia thời gian học để tối ưu hóa khả năng tiếp thu và tránh tình trạng quá tải, điều này trái ngược với yêu cầu học liên tục. \n\nTóm lại, câu trả lời đúng phản ánh đúng bản chất của học khác biệt thời gian, trong khi các yếu tố gây nhiễu đều không chính xác vì không phản ánh đúng các nguyên tắc và lợi ích của phương pháp này.",
+      "topic": {
+        "name": "Học khác biệt thời gian (TD)",
+        "description": "Chủ đề này khai thác các khái niệm liên quan đến Học khác biệt thời gian, bao gồm sự khác biệt giữa MC và TD cũng như các ứng dụng thực tiễn của TD. Học sinh cần phân biệt TD và các phương pháp học khác, cung cấp câu trả lời cho các câu hỏi cụ thể từ nội dung đã học.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong quá trình lặp lại chính sách, hàm giá trị tối ưu của một trạng thái có thể được xác định bằng cách sử dụng công thức nào?",
+      "answer": "V(s) = R(s) + γ * Σ P(s'|s,a) * V(s')",
+      "distractors": [
+        "V(s) = R(s) + γ * V(s')",
+        "V(s) = Σ P(s'|s,a) * R(s')",
+        "V(s) = R(s) + Σ P(s'|s,a) * V(s)"
+      ],
+      "explanation": "Câu trả lời đúng là **V(s) = R(s) + γ * Σ P(s'|s,a) * V(s')** vì đây là công thức chính xác để tính hàm giá trị tối ưu của một trạng thái trong quá trình lặp lại chính sách trong học tăng cường. Trong đó, **R(s)** là phần thưởng nhận được khi ở trạng thái **s**, **γ** là hệ số giảm giá (discount factor) giúp điều chỉnh tầm quan trọng của các phần thưởng trong tương lai, và **Σ P(s'|s,a) * V(s')** là tổng giá trị kỳ vọng của các trạng thái tiếp theo **s'** mà có thể đạt được từ trạng thái hiện tại **s** khi thực hiện hành động **a**.\n\nGiải thích về các yếu tố gây nhiễu:\n\n1. **V(s) = R(s) + γ * V(s')**: Tùy chọn này sai vì nó không tính đến xác suất chuyển trạng thái **P(s'|s,a)**. Công thức này chỉ đơn giản là cộng phần thưởng với giá trị của một trạng thái tiếp theo mà không xem xét khả năng xảy ra của các trạng thái đó, do đó không phản ánh đúng cách mà giá trị tối ưu được xác định.\n\n2. **V(s) = Σ P(s'|s,a) * R(s')**: Tùy chọn này sai vì nó chỉ tính đến phần thưởng của các trạng thái tiếp theo mà không bao gồm phần thưởng hiện tại **R(s)**. Công thức này không phản ánh đầy đủ giá trị của trạng thái hiện tại, dẫn đến việc bỏ qua thông tin quan trọng về phần thưởng ngay tại trạng thái **s**.\n\n3. **V(s) = R(s) + Σ P(s'|s,a) * V(s)**: Tùy chọn này sai vì nó không có hệ số giảm giá **γ** và lại sử dụng giá trị của chính trạng thái **s** thay vì giá trị của các trạng thái tiếp theo **s'**. Điều này dẫn đến việc tính toán không chính xác giá trị tối ưu, vì nó không phản ánh đúng cách mà giá trị của các trạng thái tương lai ảnh hưởng đến giá trị của trạng thái hiện tại.\n\nTóm lại, câu trả lời đúng cung cấp một công thức toàn diện và chính xác cho việc tính toán hàm giá trị tối ưu trong học tăng cường, trong khi các yếu tố gây nhiễu đều thiếu sót hoặc sai lệch trong cách tiếp cận.",
+      "topic": {
+        "name": "Tối ưu hóa hàm giá trị trong Học tăng cường",
+        "description": "Chủ đề này kiểm tra khả năng tối ưu hóa hàm giá trị của một MDP, tập trung vào Lặp lại chính sách và Q-learning. Học sinh sẽ cần sử dụng các công thức liên quan cho các khái niệm kiểm soát không mô hình.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "So sánh hai phương pháp xấp xỉ hàm giá trị chính: xấp xỉ tuyến tính và phi tuyến tính. Phương pháp nào thường được đánh giá là có khả năng nắm bắt các mối quan hệ phức tạp hơn trong quá trình học tăng cường?",
+      "answer": "Xấp xỉ phi tuyến tính.",
+      "distractors": [
+        "Xấp xỉ tuyến tính thường được sử dụng cho các mối quan hệ phức tạp hơn.",
+        "Xấp xỉ phi tuyến tính chỉ phù hợp với các bài toán đơn giản.",
+        "Xấp xỉ tuyến tính có thể nắm bắt tốt hơn các mối quan hệ phi tuyến."
+      ],
+      "explanation": "Câu trả lời đúng là \"Xấp xỉ phi tuyến tính\" vì phương pháp này có khả năng nắm bắt các mối quan hệ phức tạp hơn trong quá trình học tăng cường. Xấp xỉ phi tuyến tính cho phép mô hình hóa các tương tác không tuyến tính giữa các biến, điều này rất quan trọng trong các bài toán mà mối quan hệ giữa các yếu tố không thể được mô tả bằng một đường thẳng đơn giản. Điều này giúp cải thiện độ chính xác của dự đoán và hiệu suất của các thuật toán học.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Xấp xỉ tuyến tính thường được sử dụng cho các mối quan hệ phức tạp hơn**: Sai, vì xấp xỉ tuyến tính chỉ phù hợp với các mối quan hệ có thể được mô tả bằng một đường thẳng. Khi mối quan hệ trở nên phức tạp và phi tuyến, xấp xỉ tuyến tính không thể nắm bắt được đầy đủ các đặc điểm của dữ liệu.\n  \n- **Xấp xỉ phi tuyến tính chỉ phù hợp với các bài toán đơn giản**: Sai, xấp xỉ phi tuyến tính thực sự được thiết kế để xử lý các bài toán phức tạp hơn. Nó có thể mô hình hóa các mối quan hệ phức tạp và không tuyến tính, điều này làm cho nó trở thành một công cụ mạnh mẽ trong học tăng cường.\n\n- **Xấp xỉ tuyến tính có thể nắm bắt tốt hơn các mối quan hệ phi tuyến**: Sai, vì xấp xỉ tuyến tính không thể mô hình hóa các mối quan hệ phi tuyến một cách hiệu quả. Khi mối quan hệ giữa các biến là phi tuyến, xấp xỉ phi tuyến tính sẽ cho kết quả chính xác hơn và phản ánh đúng bản chất của dữ liệu hơn so với xấp xỉ tuyến tính. \n\nTóm lại, xấp xỉ phi tuyến tính là phương pháp phù hợp hơn để nắm bắt các mối quan hệ phức tạp trong học tăng cường, trong khi các yếu tố gây nhiễu đều sai do không phản ánh đúng khả năng của các phương pháp xấp xỉ này.",
+      "topic": {
+        "name": "Xấp xỉ hàm giá trị và ứng dụng",
+        "description": "Chủ đề này sinh ra từ các khái niệm liên quan đến việc xấp xỉ hàm giá trị cho các MDP lớn. Học sinh sẽ được yêu cầu hiểu các phương pháp khác nhau của xấp xỉ hàm, bao gồm xấp xỉ tuyến tính và phi tuyến tính, cũng như cách chúng áp dụng trong học tăng cường.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "So sánh ưu và nhược điểm của Học Monte-Carlo và Học khác biệt thời gian (TD), phương pháp nào cần ít thông tin về môi trường hơn để hoạt động hiệu quả?",
+      "answer": "Học khác biệt thời gian (TD)",
+      "distractors": [
+        "Học Monte-Carlo cần ít thông tin hơn để hoạt động hiệu quả.",
+        "Học TD yêu cầu nhiều thông tin hơn về môi trường để hoạt động tốt.",
+        "Học Monte-Carlo thường hoạt động hiệu quả hơn với ít thông tin môi trường."
+      ],
+      "explanation": "Câu trả lời đúng là \"Học khác biệt thời gian (TD)\" vì phương pháp này có khả năng học từ các trải nghiệm trước đó mà không cần phải biết toàn bộ thông tin về môi trường. Học TD cập nhật giá trị của các trạng thái dựa trên các dự đoán về tương lai, cho phép nó hoạt động hiệu quả ngay cả khi thông tin về môi trường không đầy đủ. Điều này giúp TD có thể học từ các phần nhỏ của thông tin mà không cần phải chờ đợi đến khi có kết quả cuối cùng như trong Học Monte-Carlo.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Học Monte-Carlo cần ít thông tin hơn để hoạt động hiệu quả**: Sai, vì Học Monte-Carlo yêu cầu thông tin đầy đủ về các kết quả cuối cùng để tính toán giá trị trung bình, do đó cần nhiều thông tin hơn về môi trường để hoạt động hiệu quả.\n- **Học TD yêu cầu nhiều thông tin hơn về môi trường để hoạt động tốt**: Sai, Học TD thực sự yêu cầu ít thông tin hơn so với Học Monte-Carlo, vì nó có thể học từ các trải nghiệm trước mà không cần biết toàn bộ thông tin về môi trường.\n- **Học Monte-Carlo thường hoạt động hiệu quả hơn với ít thông tin môi trường**: Sai, Học Monte-Carlo cần thông tin đầy đủ về các kết quả để tính toán, do đó không thể hoạt động hiệu quả với ít thông tin môi trường như Học TD.\n\nTóm lại, Học TD là phương pháp cần ít thông tin hơn để hoạt động hiệu quả so với Học Monte-Carlo.",
+      "topic": {
+        "name": "So sánh Học Monte-Carlo và TD",
+        "description": "Chủ đề này yêu cầu học sinh so sánh ưu và nhược điểm của Học Monte-Carlo và Học khác biệt thời gian (TD). Các câu hỏi sẽ kiểm tra khả năng phân tích và đánh giá giữa hai phương pháp này trong bối cảnh học tăng cường.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong xấp xỉ hàm giá trị hành động, giá trị xấp xỉ thường được sử dụng để làm gì trong học tăng cường?",
+      "answer": "Tối ưu hóa chính sách học.",
+      "distractors": [
+        "Tối ưu hóa giá trị hành động trong môi trường không chắc chắn.",
+        "Tối ưu hóa quy trình học mà không cần giá trị xấp xỉ.",
+        "Tối ưu hóa các tham số của mô hình học."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tối ưu hóa chính sách học\" vì trong học tăng cường, giá trị xấp xỉ được sử dụng để đánh giá và cải thiện chính sách hành động của một tác nhân. Khi có một hàm giá trị hành động xấp xỉ, tác nhân có thể xác định các hành động tốt nhất để thực hiện trong các trạng thái khác nhau, từ đó tối ưu hóa chính sách của mình để đạt được phần thưởng tối đa.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Tối ưu hóa giá trị hành động trong môi trường không chắc chắn**: Mặc dù giá trị hành động có thể được tối ưu hóa trong môi trường không chắc chắn, nhưng mục tiêu chính của việc xấp xỉ hàm giá trị hành động là để cải thiện chính sách học, không phải chỉ đơn thuần là tối ưu hóa giá trị hành động.\n\n- **Tối ưu hóa quy trình học mà không cần giá trị xấp xỉ**: Quy trình học trong học tăng cường thường dựa vào giá trị xấp xỉ để hướng dẫn việc tối ưu hóa chính sách. Nếu không có giá trị xấp xỉ, việc tối ưu hóa chính sách sẽ trở nên khó khăn và kém hiệu quả.\n\n- **Tối ưu hóa các tham số của mô hình học**: Tối ưu hóa tham số của mô hình học là một khía cạnh khác trong học máy, nhưng không liên quan trực tiếp đến việc sử dụng giá trị xấp xỉ để tối ưu hóa chính sách. Giá trị xấp xỉ chủ yếu tập trung vào việc cải thiện hành động trong các trạng thái cụ thể, không phải là tối ưu hóa tham số mô hình.\n\nTóm lại, câu trả lời đúng tập trung vào việc tối ưu hóa chính sách học thông qua giá trị xấp xỉ, trong khi các yếu tố gây nhiễu không chính xác vì chúng không phản ánh đúng vai trò của giá trị xấp xỉ trong học tăng cường.",
+      "topic": {
+        "name": "Ứng dụng Xấp xỉ hàm giá trị hành động",
+        "description": "Chủ đề này kiểm tra khả năng ứng dụng xấp xỉ hàm giá trị hành động trong việc tối ưu hóa chính sách học. Học sinh sẽ gặp các câu hỏi trắc nghiệm yêu cầu giải thích mối liên hệ giữa các giá trị xấp xỉ và thực trong học tăng cường.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Làm thế nào để liên kết giữa Khái niệm Quy trình Quyết định Markov (MDP) và phương pháp Kiểm soát không mô hình trong bối cảnh thực tiễn?",
+      "answer": "Bằng cách áp dụng các thuật toán học tăng cường để tối ưu hóa các quyết định trong điều kiện không chắc chắn.",
+      "distractors": [
+        "Bằng cách sử dụng các phương pháp tối ưu hóa truyền thống để đưa ra quyết định trong môi trường không chắc chắn.",
+        "Thông qua việc áp dụng các mô hình dự đoán để xác định hành động tối ưu trong các tình huống cụ thể.",
+        "Bằng cách sử dụng các thuật toán học máy để phân tích dữ liệu và đưa ra quyết định mà không cần xem xét trạng thái hiện tại."
+      ],
+      "explanation": "Câu trả lời đúng \"Bằng cách áp dụng các thuật toán học tăng cường để tối ưu hóa các quyết định trong điều kiện không chắc chắn\" là chính xác vì các thuật toán học tăng cường (Reinforcement Learning - RL) được thiết kế để giải quyết các vấn đề trong môi trường không chắc chắn, nơi mà các quyết định cần được đưa ra dựa trên các trạng thái hiện tại và phản hồi từ môi trường. MDP cung cấp một khung lý thuyết cho việc mô hình hóa các quyết định trong các tình huống này, cho phép tối ưu hóa hành động thông qua việc học từ kinh nghiệm.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Bằng cách sử dụng các phương pháp tối ưu hóa truyền thống để đưa ra quyết định trong môi trường không chắc chắn**: Các phương pháp tối ưu hóa truyền thống thường không phù hợp với các tình huống không chắc chắn, vì chúng thường giả định rằng các thông tin về môi trường là đầy đủ và chính xác, điều này không đúng trong bối cảnh MDP và kiểm soát không mô hình.\n\n- **Thông qua việc áp dụng các mô hình dự đoán để xác định hành động tối ưu trong các tình huống cụ thể**: Mặc dù mô hình dự đoán có thể hữu ích, nhưng chúng không phải là cốt lõi của kiểm soát không mô hình. Kiểm soát không mô hình tập trung vào việc học từ tương tác với môi trường mà không cần một mô hình chính xác về nó.\n\n- **Bằng cách sử dụng các thuật toán học máy để phân tích dữ liệu và đưa ra quyết định mà không cần xem xét trạng thái hiện tại**: Điều này không chính xác vì trong MDP và học tăng cường, việc xem xét trạng thái hiện tại là rất quan trọng để đưa ra quyết định chính xác. Các quyết định phải dựa trên thông tin về trạng thái hiện tại để tối ưu hóa hành động trong tương lai.",
+      "topic": {
+        "name": "Liên kết MDP với kiểm soát không mô hình",
+        "description": "Chủ đề này kết nối các khái niệm từ MDP và kiểm soát không mô hình từ tuần 4 với các ứng dụng thực tiễn. Học sinh cần hiểu rõ mối quan hệ giữa các khái niệm đã học trong các tuần trước và tuần hiện tại.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Tạo"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    }
+  ]
+}

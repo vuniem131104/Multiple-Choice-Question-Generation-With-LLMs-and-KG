@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Cây tìm kiếm nhị phân (BST) là gì?",
+            "answer": "Một cấu trúc dữ liệu cây mà trong đó mỗi nút có tối đa hai con.",
+            "distractors": [
+                "Một loại danh sách liên kết",
+                "Một cấu trúc dữ liệu tuyến tính",
+                "Một loại cây không có nút con"
+            ],
+            "explanation": "Cây tìm kiếm nhị phân (BST) là một cấu trúc dữ liệu cây mà trong đó mỗi nút có tối đa hai con, với các nút con bên trái có giá trị nhỏ hơn và các nút con bên phải có giá trị lớn hơn."
+        },
+        {
+            "question": "Trong Java, lớp nào thường được sử dụng để biểu diễn một nút trong BST?",
+            "answer": "Lớp Node.",
+            "distractors": [
+                "Lớp Tree",
+                "Lớp Element",
+                "Lớp List"
+            ],
+            "explanation": "Trong Java, lớp Node thường được sử dụng để biểu diễn một nút trong BST, chứa giá trị và tham chiếu đến các nút con."
+        },
+        {
+            "question": "Chi phí trung bình của phép tìm kiếm trong BST là bao nhiêu trong trường hợp tốt nhất?",
+            "answer": "O(log n).",
+            "distractors": [
+                "O(n)",
+                "O(n log n)",
+                "O(1)"
+            ],
+            "explanation": "Chi phí trung bình của phép tìm kiếm trong BST là O(log n) trong trường hợp tốt nhất, khi cây được cân bằng."
+        },
+        {
+            "question": "Khi xóa một nút trong BST, trường hợp nào sau đây không cần phải xử lý?",
+            "answer": "Nút không có con.",
+            "distractors": [
+                "Nút có một con",
+                "Nút có hai con",
+                "Nút là nút gốc"
+            ],
+            "explanation": "Khi xóa một nút không có con, chỉ cần xóa nút đó mà không cần xử lý thêm."
+        },
+        {
+            "question": "Công thức nào sau đây được sử dụng để tính toán độ phức tạp của BST?",
+            "answer": "O(h) với h là chiều cao của cây.",
+            "distractors": [
+                "O(n) với n là số nút",
+                "O(log n) với n là số nút",
+                "O(n^2) với n là số nút"
+            ],
+            "explanation": "Độ phức tạp của các phép toán trong BST thường được tính bằng O(h), trong đó h là chiều cao của cây."
+        },
+        {
+            "question": "So sánh BST và Quicksort, điều nào sau đây là đúng?",
+            "answer": "BST có thể tối ưu hóa việc tìm kiếm hơn Quicksort trong một số trường hợp.",
+            "distractors": [
+                "Quicksort luôn nhanh hơn BST",
+                "BST không thể sắp xếp dữ liệu",
+                "Quicksort không sử dụng cấu trúc cây"
+            ],
+            "explanation": "BST có thể tối ưu hóa việc tìm kiếm hơn Quicksort trong một số trường hợp, đặc biệt khi dữ liệu đã được sắp xếp."
+        },
+        {
+            "question": "Phép toán nào sau đây không phải là phép toán thứ tự trong BST?",
+            "answer": "Thêm nút.",
+            "distractors": [
+                "Tìm giá trị nhỏ nhất",
+                "Tìm giá trị lớn nhất",
+                "Tìm Floor"
+            ],
+            "explanation": "Thêm nút không phải là phép toán thứ tự trong BST, trong khi tìm giá trị nhỏ nhất, lớn nhất và Floor đều là các phép toán thứ tự."
+        },
+        {
+            "question": "Khi duyệt cây theo thứ tự trong BST, thứ tự các khóa sẽ là gì?",
+            "answer": "Tăng dần.",
+            "distractors": [
+                "Giảm dần",
+                "Ngẫu nhiên",
+                "Không xác định"
+            ],
+            "explanation": "Khi duyệt cây theo thứ tự trong BST, thứ tự các khóa sẽ được sắp xếp theo thứ tự tăng dần."
+        }
+    ]
+}

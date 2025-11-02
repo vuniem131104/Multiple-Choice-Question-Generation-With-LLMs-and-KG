@@ -10,16 +10,15 @@ dependencies = []
 members = [
     "libs/lite_llm",
     "libs/postgres_db",
-    "libs/open_search",
-    "services/chatbot",
     "services/rag",
     "libs/base",
     "libs/logger",
     "libs/storage",
-    "services/file_upload",
     "services/generation",
     "libs/graph_db",
     "services/indexing",
+    "services/auth",
+    "services/platform_api",
 ]
 
 [dependency-groups]

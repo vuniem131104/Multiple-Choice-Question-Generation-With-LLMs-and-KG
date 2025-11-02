@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Nhu cầu Xấp xỉ Hàm giá trị",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are good and align well with the topic and expected Bloom level. The Baseline question is slightly better because its correct answer provides a more complete explanation of *why* function approximation is needed (addressing storage and learning speed issues), which aligns better with the 'Hiểu' (Understand) Bloom level. The Pipeline's correct answer is more of a 'Nhớ' (Recall) of the condition rather than the underlying reason."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Khái niệm và nguyên lý Giảm độ dốc",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and directly test the core principle of Gradient Descent at the 'Nhớ' (Recall) Bloom level. The correct answers and distractors are well-formulated and plausible. There is no significant difference in quality between the two."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Công thức Xấp xỉ Hàm giá trị tuyến tính",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions effectively test the recognition of the linear value function approximation formula. The distractors are plausible mathematical manipulations. The Pipeline question's correct answer 'wᵀx(S)' is slightly more standard notation than 'w^T * x(S)' but both are correct. Overall, they are of very similar high quality."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Mục tiêu cập nhật trong MC với Xấp xỉ FA",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are good and correctly identify G_t as the target. However, the Baseline question's correct answer provides a more complete definition of 'Return G_t' (tổng phần thưởng chiết khấu từ thời điểm t đến cuối tập), which enhances its educational value and clarity for the 'Hiểu' (Understand) Bloom level. The distractors in the Baseline are also slightly more plausible and relevant to RL concepts."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh MC và TD với Xấp xỉ Hàm tuyến tính",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior. It directly asks for the *main difference in update targets*, which is a fundamental distinction at the 'Phân tích' (Analyze) level. Its correct answer clearly states G_t vs. TD target. The Pipeline question attempts to ask about bias-variance trade-off, which is also relevant, but its phrasing is a bit more convoluted, and the distractors are not as sharply defined. The Baseline's distractors are also more clearly incorrect but related to RL concepts, making them plausible."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Vai trò của Experience Replay trong DQN",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and effectively test the understanding of Experience Replay's role in DQN. The correct answers are precise, and the distractors are well-constructed, representing common misunderstandings or unrelated concepts. Both questions are equally strong in all criteria."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Cập nhật TD(0) tuyến tính với FA",
+            "pipeline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is significantly better. It directly asks for the update rule, which is a clear 'Áp dụng' (Apply) task. The Pipeline question attempts to ask about the *effect* of large features and TD error on Δw, but its phrasing is somewhat ambiguous, and the distractors are not as clearly distinct or plausible. The Baseline's question is a straightforward application of the formula, which is more appropriate for the stated Bloom level and difficulty."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Điều kiện hội tụ của TD với FA phi tuyến tính",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is slightly better. It clearly identifies the 'deadly triad' (nonlinear function approximation, off-policy learning, and bootstrapping) as the condition for divergence, which is a key analytical point for this topic. The Pipeline question also addresses the topic but uses slightly more abstract language ('yếu tố tương tác nào thường được xác định là nguyên nhân chính') and its distractors are a bit less precise in pinpointing the exact combination of factors. The Baseline's distractors are also more directly related to the core concepts being tested."
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Hàng đợi ưu tiên (Priority Queue) là một kiểu dữ liệu trừu tượng (ADT) hỗ trợ các thao tác cơ bản nào?",
+            "answer": "Chèn một phần tử mới và xóa phần tử có độ ưu tiên cao nhất.",
+            "distractors": [
+                "Chèn một phần tử mới và xóa phần tử được chèn đầu tiên.",
+                "Chèn một phần tử mới và xóa phần tử được chèn cuối cùng.",
+                "Chèn một phần tử mới và tìm kiếm một phần tử bất kỳ."
+            ],
+            "explanation": "Hàng đợi ưu tiên được định nghĩa để hỗ trợ hai thao tác chính: thêm một phần tử vào hàng đợi (INSERT) và loại bỏ phần tử có độ ưu tiên cao nhất (DELETE-MAX hoặc DELETE-MIN tùy thuộc vào cài đặt). Các lựa chọn khác mô tả Queue (FIFO) hoặc Stack (LIFO) hoặc một thao tác không phải là cốt lõi của Priority Queue."
+        },
+        {
+            "question": "Trong biểu diễn Heap nhị phân bằng mảng, nếu một nút cha có chỉ số `k`, thì các nút con của nó sẽ có chỉ số là bao nhiêu (giả sử mảng bắt đầu từ chỉ số 1)?",
+            "answer": "Con trái là `2k` và con phải là `2k + 1`.",
+            "distractors": [
+                "Con trái là `k/2` và con phải là `k/2 + 1`.",
+                "Con trái là `k-1` và con phải là `k+1`.",
+                "Con trái là `2k-1` và con phải là `2k`."
+            ],
+            "explanation": "Trong biểu diễn Heap nhị phân bằng mảng (với chỉ số bắt đầu từ 1), mối quan hệ cha-con được định nghĩa rõ ràng: nút con trái của nút tại chỉ số `k` là `2k`, và nút con phải là `2k + 1`. Nút cha của nút tại chỉ số `k` là `k/2` (lấy phần nguyên)."
+        },
+        {
+            "question": "Hàng đợi ưu tiên (Priority Queue) tổng quát hóa cấu trúc dữ liệu Stack và Queue như thế nào?",
+            "answer": "Hàng đợi ưu tiên có thể mô phỏng cả Stack (LIFO) và Queue (FIFO) bằng cách gán độ ưu tiên thích hợp cho các phần tử.",
+            "distractors": [
+                "Hàng đợi ưu tiên chỉ có thể mô phỏng Stack nhưng không thể mô phỏng Queue.",
+                "Hàng đợi ưu tiên chỉ có thể mô phỏng Queue nhưng không thể mô phỏng Stack.",
+                "Hàng đợi ưu tiên không liên quan đến Stack và Queue vì nó sử dụng nguyên tắc sắp xếp khác."
+            ],
+            "explanation": "Hàng đợi ưu tiên là một cấu trúc dữ liệu tổng quát hơn. Để mô phỏng Stack (LIFO), khi chèn, ta có thể gán độ ưu tiên tăng dần theo thời gian chèn, và khi xóa sẽ lấy phần tử có độ ưu tiên cao nhất (phần tử được chèn gần nhất). Để mô phỏng Queue (FIFO), ta có thể gán độ ưu tiên giảm dần theo thời gian chèn, và khi xóa sẽ lấy phần tử có độ ưu tiên cao nhất (phần tử được chèn sớm nhất)."
+        },
+        {
+            "question": "Trong mô phỏng theo sự kiện (Event-driven simulation), Hàng đợi ưu tiên (Priority Queue) thường được sử dụng để làm gì?",
+            "answer": "Lưu trữ và quản lý các sự kiện sắp tới theo thứ tự thời gian xảy ra.",
+            "distractors": [
+                "Lưu trữ tất cả các đối tượng trong mô phỏng.",
+                "Thực hiện các phép tính toán phức tạp cho mỗi bước thời gian.",
+                "Ghi lại lịch sử của tất cả các sự kiện đã xảy ra."
+            ],
+            "explanation": "Trong mô phỏng theo sự kiện, Hàng đợi ưu tiên được sử dụng để lưu trữ các sự kiện trong tương lai. Mỗi sự kiện có một thời điểm xảy ra (độ ưu tiên), và PQ đảm bảo rằng sự kiện tiếp theo được xử lý luôn là sự kiện có thời điểm xảy ra sớm nhất, giúp mô phỏng tiến triển một cách hiệu quả mà không cần kiểm tra trạng thái liên tục."
+        },
+        {
+            "question": "Khi chèn một phần tử mới vào Heap nhị phân, thao tác nào được sử dụng để duy trì tính chất heap-ordered?",
+            "answer": "Thao tác 'bơi' (swim), di chuyển phần tử mới lên trên cây bằng cách hoán đổi với nút cha nếu nó lớn hơn nút cha.",
+            "distractors": [
+                "Thao tác 'chìm' (sink), di chuyển phần tử mới xuống dưới cây bằng cách hoán đổi với nút con lớn hơn.",
+                "Thao tác 'sắp xếp lại' (reorder), sắp xếp toàn bộ mảng lại từ đầu.",
+                "Thao tác 'xóa' (delete), loại bỏ phần tử mới nếu nó vi phạm tính chất heap."
+            ],
+            "explanation": "Khi chèn một phần tử mới vào cuối mảng (vị trí trống đầu tiên), nó có thể vi phạm tính chất heap-ordered. Để khôi phục, ta sử dụng thao tác 'bơi' (swim): so sánh phần tử mới với nút cha của nó và hoán đổi nếu phần tử mới lớn hơn, lặp lại cho đến khi tính chất heap được khôi phục hoặc phần tử đạt đến gốc."
+        },
+        {
+            "question": "So với Mergesort và Quicksort, Heapsort có ưu điểm và nhược điểm chính nào về hiệu suất?",
+            "answer": "Heapsort đảm bảo độ phức tạp thời gian O(N log N) trong trường hợp xấu nhất và là thuật toán tại chỗ, nhưng kém hiệu quả về bộ nhớ cache hơn Quicksort.",
+            "distractors": [
+                "Heapsort nhanh hơn Quicksort trong mọi trường hợp và sử dụng ít bộ nhớ hơn Mergesort.",
+                "Heapsort là thuật toán ổn định và có độ phức tạp thời gian O(N) trong trường hợp tốt nhất.",
+                "Heapsort yêu cầu không gian phụ trợ O(N) giống như Mergesort nhưng chậm hơn Quicksort."
+            ],
+            "explanation": "Heapsort có độ phức tạp thời gian O(N log N) trong trường hợp xấu nhất, điều này là một ưu điểm so với Quicksort (có thể là O(N^2) trong trường hợp xấu nhất). Nó cũng là thuật toán tại chỗ (in-place), không yêu cầu không gian phụ trợ đáng kể như Mergesort. Tuy nhiên, do cách truy cập dữ liệu không liên tục trong mảng, Heapsort thường kém hiệu quả về bộ nhớ cache hơn Quicksort trong thực tế."
+        },
+        {
+            "question": "Điểm yếu chính của Heapsort so với Quicksort trong thực tế là gì?",
+            "answer": "Heapsort kém hiệu quả về bộ nhớ cache hơn Quicksort do các truy cập dữ liệu không liên tục.",
+            "distractors": [
+                "Heapsort có độ phức tạp thời gian xấu nhất cao hơn Quicksort.",
+                "Heapsort yêu cầu nhiều không gian bộ nhớ phụ trợ hơn Quicksort.",
+                "Heapsort không phải là thuật toán sắp xếp tại chỗ."
+            ],
+            "explanation": "Mặc dù Heapsort có độ phức tạp thời gian O(N log N) trong trường hợp xấu nhất và là thuật toán tại chỗ, điểm yếu chính của nó trong thực tế là hiệu suất bộ nhớ cache. Các thao tác 'swim' và 'sink' liên tục hoán đổi các phần tử ở các vị trí không liền kề trong mảng, dẫn đến nhiều lỗi cache (cache misses) hơn so với Quicksort, nơi các truy cập thường cục bộ hơn."
+        },
+        {
+            "question": "Trong số các thuật toán sắp xếp dựa trên so sánh đã học (Mergesort, Quicksort, Heapsort), thuật toán nào đạt được giới hạn dưới N lg N trong trường hợp xấu nhất và ý nghĩa của điều này là gì?",
+            "answer": "Mergesort và Heapsort đạt được giới hạn dưới N lg N trong trường hợp xấu nhất, cho thấy chúng là các thuật toán tối ưu về mặt lý thuyết cho sắp xếp dựa trên so sánh.",
+            "distractors": [
+                "Chỉ Quicksort đạt được giới hạn dưới N lg N trong trường hợp xấu nhất, chứng tỏ nó là thuật toán nhanh nhất.",
+                "Không có thuật toán nào trong số này đạt được giới hạn dưới N lg N trong trường hợp xấu nhất, vì vậy luôn có thể tìm thấy thuật toán tốt hơn.",
+                "Tất cả các thuật toán này đều có độ phức tạp N lg N trong trường hợp xấu nhất, nhưng chỉ Quicksort là tối ưu trong thực tế."
+            ],
+            "explanation": "Giới hạn dưới lý thuyết cho sắp xếp dựa trên so sánh là N lg N. Mergesort và Heapsort đều đảm bảo độ phức tạp thời gian O(N log N) trong trường hợp xấu nhất, điều này có nghĩa là chúng đạt được giới hạn dưới này và được coi là tối ưu về mặt lý thuyết. Quicksort, mặc dù nhanh trong trường hợp trung bình, có thể có độ phức tạp O(N^2) trong trường hợp xấu nhất, do đó không đạt được giới hạn dưới trong mọi tình huống."
+        }
+    ]
+}

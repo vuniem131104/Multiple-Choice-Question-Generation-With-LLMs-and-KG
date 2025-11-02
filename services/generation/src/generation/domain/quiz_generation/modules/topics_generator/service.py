@@ -75,7 +75,7 @@ class TopicGeneratorService(BaseService):
                     "week_number": inputs.week_number,
                 }
             )
-
+            
             return TopicGeneratorOutput(
                 topics=output.response,
                 week_number=inputs.week_number,

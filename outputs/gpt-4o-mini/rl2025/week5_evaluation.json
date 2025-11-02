@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Các khái niệm cơ bản về MDP",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it provides a more specific and clear definition of the Markov property within the question stem, making it a better test of 'Nhớ' (Recall). The distractors are also more distinct. The Baseline question is a bit too general in its phrasing 'Khái niệm nào sau đây mô tả tính chất', and its distractors are less plausible, especially 'Tính chất tuần hoàn' and 'Tính chất đồng nhất' which are less related to MDPs than the Pipeline's distractors."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Lập trình động và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is relevant to the topic of Dynamic Programming and its application in MDPs, specifically mentioning 'Đánh giá chính sách lặp' which is a DP algorithm. The Baseline question is completely off-topic, asking about 'Ma trận chuyển đổi trạng thái trong MDP' which belongs to basic MDP concepts, not Dynamic Programming algorithms or applications. Therefore, the Baseline question scores 0 across all criteria due to irrelevance."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Học khác biệt thời gian (TD)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question attempts to address the core concept of TD and its practical applications, though the correct answer's phrasing is a bit vague ('vận dụng kiến thức vào thực tiễn hiệu quả hơn'). The distractors are also not very strong. However, the Baseline question is completely irrelevant to the topic of 'Học khác biệt thời gian (TD)', instead asking about 'lập trình động' and 'cải thiện chính sách lặp'. This makes the Baseline question entirely inappropriate for the given topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Tối ưu hóa hàm giá trị trong Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant, directly asking about a formula for value function optimization within policy iteration, which aligns with the topic's focus on 'Lặp lại chính sách'. The distractors are plausible variations of the Bellman equation. The Baseline question is completely off-topic, asking about the difference between TD and Monte-Carlo, which belongs to a different comparison topic. Therefore, the Baseline question scores 0 across all criteria due to irrelevance."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Xấp xỉ hàm giá trị và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly relevant to the topic, directly comparing linear and non-linear value function approximation methods and their ability to handle complexity, aligning with the 'Đánh giá' Bloom level. The distractors are well-formed. The Baseline question is completely irrelevant, asking about Q-learning's main objective, which belongs to the 'Tối ưu hóa hàm giá trị trong Học tăng cường' topic. Thus, the Baseline question receives 0 for all criteria."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh Học Monte-Carlo và TD",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant, directly comparing Monte-Carlo and TD learning based on their information requirements, which is a key aspect of their comparison. The question is clear and the distractors are plausible. The Baseline question is completely off-topic, asking about methods to approximate value functions, which belongs to the 'Xấp xỉ hàm giá trị và ứng dụng' topic. Therefore, the Baseline question scores 0 across all criteria due to irrelevance."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ứng dụng Xấp xỉ hàm giá trị hành động",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.0,
+                "distractor_plausibility": 0.0,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly relevant, asking about the application of approximated action-value functions in policy optimization, directly aligning with the topic and 'Nhớ' Bloom level. The question is clear and the distractors are reasonable. The Baseline question is completely irrelevant, asking about the advantages of TD over Monte-Carlo, which belongs to the 'So sánh Học Monte-Carlo và TD' topic. Thus, the Baseline question receives 0 for all criteria."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Liên kết MDP với kiểm soát không mô hình",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant and well-formulated. The Pipeline question is slightly better because it asks 'Làm thế nào để liên kết...' (How to link...), which prompts for a more detailed explanation or application, aligning better with the 'Tạo' (Create) Bloom level and the 'Khó' difficulty. The correct answer also provides a more comprehensive explanation. The Baseline question is good but slightly simpler, asking 'Liên kết giữa MDP và kiểm soát không mô hình có thể được hiểu như thế nào?' (How can the link be understood?), which leans more towards 'Hiểu' or 'Phân tích' rather than 'Tạo'."
+        }
+    ]
+}

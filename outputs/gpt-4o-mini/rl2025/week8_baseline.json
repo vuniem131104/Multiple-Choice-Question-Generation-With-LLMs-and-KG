@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Khám phá và khai thác là gì trong bối cảnh ra quyết định?",
+            "answer": "Khám phá là tìm kiếm các lựa chọn mới, trong khi khai thác là sử dụng các lựa chọn đã biết để tối ưu hóa kết quả.",
+            "distractors": [
+                "Khám phá là sử dụng các lựa chọn đã biết, khai thác là tìm kiếm các lựa chọn mới.",
+                "Khám phá là việc tối ưu hóa một lựa chọn duy nhất.",
+                "Khám phá và khai thác là hai khái niệm không liên quan đến nhau."
+            ],
+            "explanation": "Khám phá và khai thác là hai khái niệm quan trọng trong lý thuyết quyết định, nơi khám phá giúp thu thập thông tin mới, trong khi khai thác giúp tối ưu hóa lợi ích từ các lựa chọn đã biết."
+        },
+        {
+            "question": "Nguyên tắc nào sau đây không phải là một phần của khám phá và khai thác?",
+            "answer": "Sự không chắc chắn.",
+            "distractors": [
+                "Khởi tạo lạc quan",
+                "Tối ưu hóa",
+                "Phân tích dữ liệu"
+            ],
+            "explanation": "Sự không chắc chắn là một nguyên tắc quan trọng trong khám phá và khai thác, trong khi các lựa chọn khác không phải là nguyên tắc cơ bản."
+        },
+        {
+            "question": "Thuật toán ε-greedy hoạt động như thế nào?",
+            "answer": "Nó chọn lựa chọn tốt nhất với xác suất 1-ε và khám phá lựa chọn ngẫu nhiên với xác suất ε.",
+            "distractors": [
+                "Nó luôn chọn lựa chọn tốt nhất mà không khám phá.",
+                "Nó chọn lựa chọn ngẫu nhiên mà không xem xét giá trị.",
+                "Nó chỉ khám phá mà không khai thác."
+            ],
+            "explanation": "Thuật toán ε-greedy là một phương pháp cân bằng giữa khám phá và khai thác, cho phép một tỷ lệ nhỏ các lựa chọn ngẫu nhiên để thu thập thông tin."
+        },
+        {
+            "question": "Hối tiếc trong bối cảnh bandit được định nghĩa như thế nào?",
+            "answer": "Hối tiếc là sự khác biệt giữa giá trị tối ưu và giá trị thực tế mà một hành động đã chọn mang lại.",
+            "distractors": [
+                "Hối tiếc là cảm giác không hài lòng về một quyết định đã thực hiện.",
+                "Hối tiếc là giá trị của hành động hiện tại.",
+                "Hối tiếc là một thuật ngữ không liên quan đến bandit."
+            ],
+            "explanation": "Hối tiếc là một khái niệm quan trọng trong lý thuyết bandit, giúp đánh giá hiệu quả của các quyết định."
+        },
+        {
+            "question": "Multi-Armed Bandit (MAB) có thể được liên kết với quy trình quyết định Markov (MDP) như thế nào?",
+            "answer": "MAB có thể được xem như một trường hợp đặc biệt của MDP, nơi các hành động có thể được chọn để tối ưu hóa kết quả.",
+            "distractors": [
+                "MAB và MDP là hai khái niệm hoàn toàn khác nhau.",
+                "MAB không liên quan đến quy trình quyết định.",
+                "MDP chỉ áp dụng cho các bài toán không có sự lựa chọn."
+            ],
+            "explanation": "MAB có thể được coi là một dạng MDP, nơi các quyết định được đưa ra để tối ưu hóa lợi ích trong một môi trường không chắc chắn."
+        },
+        {
+            "question": "Kỹ thuật xấp xỉ hàm giá trị trong học tăng cường thường được sử dụng để làm gì?",
+            "answer": "Để ước lượng giá trị của các trạng thái hoặc hành động trong môi trường không chắc chắn.",
+            "distractors": [
+                "Để tối ưu hóa một hành động duy nhất.",
+                "Để giảm thiểu số lượng hành động cần thực hiện.",
+                "Để xác định các lựa chọn không liên quan."
+            ],
+            "explanation": "Xấp xỉ hàm giá trị là một kỹ thuật quan trọng trong học tăng cường, giúp ước lượng giá trị của các hành động trong môi trường phức tạp."
+        },
+        {
+            "question": "Bayesian Bandits sử dụng nguyên tắc nào để tối ưu hóa quyết định?",
+            "answer": "Nguyên tắc Bayesian, cho phép cập nhật thông tin dựa trên các quan sát trước đó.",
+            "distractors": [
+                "Nguyên tắc tối ưu hóa đơn giản.",
+                "Nguyên tắc ngẫu nhiên hóa hoàn toàn.",
+                "Nguyên tắc không chắc chắn."
+            ],
+            "explanation": "Bayesian Bandits sử dụng nguyên tắc Bayesian để cập nhật và tối ưu hóa quyết định dựa trên thông tin thu thập được."
+        },
+        {
+            "question": "Giá trị thông tin trong quy trình quyết định có vai trò gì?",
+            "answer": "Giá trị thông tin giúp đánh giá tác động của việc khám phá và khai thác trong các quyết định.",
+            "distractors": [
+                "Giá trị thông tin không có ảnh hưởng đến quyết định.",
+                "Giá trị thông tin chỉ liên quan đến các lựa chọn đã biết.",
+                "Giá trị thông tin là một khái niệm không quan trọng."
+            ],
+            "explanation": "Giá trị thông tin là một yếu tố quan trọng trong quy trình quyết định, giúp phân tích và đánh giá các lựa chọn trong môi trường không chắc chắn."
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Đâu là hai thuộc tính cốt lõi mà một bài toán phải có để có thể áp dụng phương pháp Lập trình động (Dynamic Programming)?",
+            "answer": "Cấu trúc con tối ưu và các bài toán con chồng chéo.",
+            "distractors": [
+                "Tính tham lam và không gian trạng thái hữu hạn.",
+                "Tính đệ quy và tính ngẫu nhiên.",
+                "Tính độc lập và tính toàn vẹn dữ liệu."
+            ],
+            "explanation": "Lập trình động là một kỹ thuật giải quyết vấn đề bằng cách chia nhỏ bài toán thành các bài toán con nhỏ hơn. Hai thuộc tính cốt lõi để áp dụng Lập trình động là cấu trúc con tối ưu (optimal substructure), nghĩa là lời giải tối ưu của bài toán lớn có thể được xây dựng từ lời giải tối ưu của các bài toán con, và các bài toán con chồng chéo (overlapping subproblems), nghĩa là cùng một bài toán con được giải nhiều lần."
+        },
+        {
+            "question": "Thuộc tính Markov trong Quá trình Quyết định Markov (MDP) có ý nghĩa gì?",
+            "answer": "Trạng thái hiện tại chứa tất cả thông tin cần thiết để dự đoán tương lai, độc lập với lịch sử quá khứ.",
+            "distractors": [
+                "Hành động hiện tại chỉ phụ thuộc vào phần thưởng tức thì.",
+                "Chính sách tối ưu không thay đổi theo thời gian.",
+                "Các chuyển đổi trạng thái là hoàn toàn xác định."
+            ],
+            "explanation": "Thuộc tính Markov phát biểu rằng 'tương lai độc lập với quá khứ khi biết hiện tại'. Trong bối cảnh MDP, điều này có nghĩa là xác suất chuyển đổi sang trạng thái tiếp theo và phần thưởng nhận được chỉ phụ thuộc vào trạng thái và hành động hiện tại, không phụ thuộc vào chuỗi các trạng thái và hành động trước đó."
+        },
+        {
+            "question": "Thành phần nào sau đây KHÔNG phải là một phần của Quá trình Thưởng Markov (MRP)?",
+            "answer": "Tập hợp các hành động.",
+            "distractors": [
+                "Tập hợp các trạng thái.",
+                "Ma trận chuyển đổi trạng thái.",
+                "Hàm thưởng."
+            ],
+            "explanation": "Một Quá trình Thưởng Markov (MRP) được định nghĩa bởi một tập hợp các trạng thái (S), một ma trận chuyển đổi trạng thái (P) và một hàm thưởng (R). MRP không bao gồm tập hợp các hành động vì nó là một quá trình ngẫu nhiên không có tác nhân đưa ra quyết định. Tập hợp các hành động là một thành phần của Quá trình Quyết định Markov (MDP)."
+        },
+        {
+            "question": "Mục đích chính của phép sao lưu kỳ vọng Bellman (Bellman Expectation Backup) trong đánh giá chính sách lặp (Iterative Policy Evaluation) là gì?",
+            "answer": "Ước tính hàm giá trị V(s) cho một chính sách đã cho.",
+            "distractors": [
+                "Tìm chính sách tối ưu.",
+                "Cập nhật ma trận chuyển đổi trạng thái.",
+                "Tính toán phần thưởng tối đa có thể đạt được."
+            ],
+            "explanation": "Phép sao lưu kỳ vọng Bellman được sử dụng trong đánh giá chính sách lặp để tính toán hàm giá trị V(s) cho một chính sách cố định đã cho. Nó cập nhật giá trị của một trạng thái dựa trên giá trị kỳ vọng của các trạng thái kế tiếp và phần thưởng tức thì, theo phương trình Bellman cho V(s)."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản giữa thuật toán Lặp chính sách (Policy Iteration) và Lặp giá trị (Value Iteration) là gì?",
+            "answer": "Lặp chính sách xen kẽ giữa đánh giá chính sách và cải thiện chính sách, trong khi Lặp giá trị trực tiếp tìm hàm giá trị tối ưu.",
+            "distractors": [
+                "Lặp chính sách yêu cầu biết trước ma trận chuyển đổi, còn Lặp giá trị thì không.",
+                "Lặp chính sách luôn hội tụ nhanh hơn Lặp giá trị.",
+                "Lặp chính sách chỉ áp dụng cho không gian trạng thái rời rạc, còn Lặp giá trị thì không."
+            ],
+            "explanation": "Lặp chính sách bao gồm hai bước lặp đi lặp lại: Đánh giá chính sách (Policy Evaluation) để tính V(s) cho chính sách hiện tại, và Cải thiện chính sách (Policy Improvement) để tạo ra một chính sách tốt hơn. Ngược lại, Lặp giá trị kết hợp cả hai bước này vào một lần cập nhật duy nhất, trực tiếp tìm kiếm hàm giá trị tối ưu V*(s) mà không cần đánh giá chính sách đầy đủ ở mỗi bước."
+        },
+        {
+            "question": "Giả sử bạn đang sử dụng thuật toán Lặp giá trị (Value Iteration) để tìm hàm giá trị tối ưu. Nếu trạng thái s có các hành động a1 và a2, với các giá trị Q(s, a1) = 10 và Q(s, a2) = 15. Giá trị V(s) sau một bước cập nhật sẽ là bao nhiêu?",
+            "answer": "15",
+            "distractors": [
+                "10",
+                "25",
+                "Không thể xác định nếu không có hệ số chiết khấu."
+            ],
+            "explanation": "Trong Lặp giá trị, hàm giá trị của một trạng thái V(s) được cập nhật bằng cách lấy giá trị tối đa của tất cả các hành động có thể thực hiện từ trạng thái đó. Công thức là V(s) = max_a Q(s, a). Với Q(s, a1) = 10 và Q(s, a2) = 15, giá trị V(s) sẽ là max(10, 15) = 15."
+        },
+        {
+            "question": "Bạn có một hàm giá trị V(s) hiện tại cho một MDP. Để cải thiện chính sách hiện tại π(s), bạn nên thực hiện hành động nào tại mỗi trạng thái s?",
+            "answer": "Hành động a mà tối đa hóa Q(s, a) dựa trên V(s) hiện tại.",
+            "distractors": [
+                "Hành động a có phần thưởng tức thì R(s, a) cao nhất.",
+                "Hành động a được chọn ngẫu nhiên để khám phá.",
+                "Hành động a đã được thực hiện nhiều nhất trong quá khứ."
+            ],
+            "explanation": "Nguyên tắc cải thiện chính sách (Policy Improvement) nói rằng một chính sách mới có thể được tạo ra bằng cách hành động tham lam (greedy) đối với hàm giá trị hiện tại. Điều này có nghĩa là tại mỗi trạng thái s, chúng ta chọn hành động a mà tối đa hóa giá trị Q(s, a) được tính dựa trên hàm giá trị V(s) hiện tại. Chính sách mới này sẽ có giá trị bằng hoặc tốt hơn chính sách cũ."
+        },
+        {
+            "question": "Sự khác biệt chính giữa Sao lưu toàn bộ (Full Backup) và Sao lưu mẫu (Sample Backup) là gì, đặc biệt trong bối cảnh 'lời nguyền về chiều' (curse of dimensionality)?",
+            "answer": "Sao lưu toàn bộ yêu cầu biết mô hình môi trường và tính toán kỳ vọng trên tất cả các trạng thái/hành động có thể, trong khi Sao lưu mẫu chỉ sử dụng các mẫu trải nghiệm thực tế.",
+            "distractors": [
+                "Sao lưu toàn bộ chỉ áp dụng cho các MDP có không gian trạng thái nhỏ, còn Sao lưu mẫu thì không.",
+                "Sao lưu toàn bộ luôn hội tụ nhanh hơn Sao lưu mẫu.",
+                "Sao lưu toàn bộ là một phương pháp học không mô hình, còn Sao lưu mẫu là phương pháp học có mô hình."
+            ],
+            "explanation": "Sao lưu toàn bộ (ví dụ: trong Lặp giá trị hoặc Lặp chính sách) yêu cầu một mô hình đầy đủ của môi trường (ma trận chuyển đổi và hàm thưởng) và tính toán kỳ vọng trên tất cả các trạng thái và hành động có thể. Điều này trở nên không khả thi với không gian trạng thái/hành động lớn ('lời nguyền về chiều'). Ngược lại, Sao lưu mẫu (ví dụ: trong Monte Carlo hoặc Q-learning) chỉ sử dụng các mẫu trải nghiệm thực tế (trạng thái, hành động, phần thưởng, trạng thái tiếp theo) để cập nhật giá trị, không yêu cầu biết mô hình môi trường và hiệu quả hơn với các không gian lớn."
+        }
+    ]
+}

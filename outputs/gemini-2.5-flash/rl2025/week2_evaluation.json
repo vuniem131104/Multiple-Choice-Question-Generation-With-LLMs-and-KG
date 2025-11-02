@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Lập trình động",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and clear, testing the 'Nhớ' Bloom level effectively. The Pipeline question asks for one of the two properties, while the Baseline asks for both, which is more comprehensive given the topic description. The distractors in the Baseline question are slightly more plausible as they represent concepts that could be confused with DP properties (greedy, recursion) or other problem characteristics, making it a slightly better test of understanding."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Thuộc tính Markov và MDP",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are relevant and test the 'Nhớ' Bloom level. The Baseline question is slightly better because its question phrasing directly asks for the meaning of the Markov property, which is a more direct recall of the definition. Its distractors are also more plausible and represent common misunderstandings about MDPs, whereas Pipeline's distractors are a bit too broad ('Mục tiêu cuối cùng của tác nhân')."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Các thành phần của MRP",
+            "pipeline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is significantly better. It directly tests the knowledge of MRP components by asking to identify a non-component, which requires understanding each component. The Pipeline question, however, only asks for the *number* of components, which is a less meaningful assessment of understanding the topic. Its distractors are just numbers, making them less pedagogically valuable. The Baseline's distractors are actual components, making the incorrect option (Tập hợp các hành động) a strong and relevant distractor."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Sao lưu kỳ vọng Bellman",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent, highly relevant, clear, and effectively test the 'Hiểu' Bloom level. They both correctly identify the core purpose of Bellman Expectation Backup in Iterative Policy Evaluation. The distractors in both are plausible and represent other concepts in RL, making them strong choices. There is no significant difference in quality between the two."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Phân biệt Lặp chính sách và Lặp giá trị",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior. While both are relevant, the Baseline's correct answer provides a more concise and accurate distinction between Policy Iteration and Value Iteration. The Pipeline's correct answer is a bit verbose and slightly less precise in its description of Value Iteration's combined steps. The distractors in the Baseline are also more plausible and represent common misconceptions, whereas Pipeline's distractors include some less relevant or incorrect statements (e.g., 'Lặp giá trị chỉ hoạt động với các không gian trạng thái và hành động rời rạc')."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Cập nhật hàm giá trị bằng Lặp giá trị",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it truly tests the 'Áp dụng' Bloom level by requiring a calculation using the Bellman optimality backup equation, including the discount factor. The Baseline question, while relevant, is too simplistic for 'Áp dụng' as it only asks for the maximum of two Q-values, which is a direct application of the max operator without considering the full Bellman equation or discount factor. The Pipeline's distractors are also well-calculated to represent common errors in the formula."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ứng dụng Cải thiện chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and effectively test the 'Áp dụng' Bloom level for policy improvement. They both correctly identify the greedy action based on the current value function as the mechanism for policy improvement. The distractors in both are plausible and represent other concepts or incorrect approaches. The phrasing and content are very similar and equally strong."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Sao lưu toàn bộ vs. Sao lưu mẫu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are highly relevant, clear, and effectively test the 'Phân tích' Bloom level by asking for the core difference between Full Backup and Sample Backup, especially in the context of the 'curse of dimensionality'. The correct answers in both are accurate and comprehensive. The distractors are also well-formulated and plausible, representing common misunderstandings or related concepts. Both questions are of very high quality."
+        }
+    ]
+}

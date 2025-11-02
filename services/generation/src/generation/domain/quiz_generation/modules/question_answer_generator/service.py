@@ -14,6 +14,9 @@ from generation.domain.quiz_generation.prompts import QUESTION_ANSWER_USER_PROMP
 from generation.shared.models import Topic
 from generation.shared.settings import QuestionAnswerGeneratorSetting
 from logger import get_logger
+import httpx
+import json
+from typing import Optional
 
 logger = get_logger(__name__)
 
@@ -37,19 +40,98 @@ class QuestionAnswerGeneratorService(BaseService):
     settings: QuestionAnswerGeneratorSetting
     chromadb_client: ClientAPI
 
+    async def _get_rag_context(self, query: str) -> Optional[str]:
+        """
+        Gọi RAG API để lấy context liên quan đến query
+        """
+        # try:
+        #     rag_url = "http://0.0.0.0:3005/v1/local_search"
+            
+        #     async with httpx.AsyncClient(timeout=30.0) as client:
+        #         response = await client.post(
+        #             rag_url,
+        #             headers={
+        #                 "accept": "application/json",
+        #                 "Content-Type": "application/json"
+        #             },
+        #             json={"query": query}
+        #         )
+                
+        #         if response.status_code == 200:
+        #             result = response.json()
+                    
+        #             # Build context string từ kết quả RAG
+        #             context_parts = []
+                    
+        #             if "chunk_df" in result and result["chunk_df"]:
+        #                 for chunk_data in result["chunk_df"]:
+        #                     if "chunk" in chunk_data:
+        #                         context_parts.append(f"**Nội dung từ tài liệu:**\n{chunk_data['chunk']}")
+                            
+        #                     if "entities" in chunk_data and chunk_data["entities"]:
+        #                         entities_text = "\n".join([f"- {entity}" for entity in chunk_data["entities"]])
+        #                         context_parts.append(f"**Các khái niệm quan trọng:**\n{entities_text}")
+                            
+        #                     if "relationships" in chunk_data and chunk_data["relationships"]:
+        #                         relationships_text = "\n".join([f"- {rel}" for rel in chunk_data["relationships"]])
+        #                         context_parts.append(f"**Mối quan hệ:**\n{relationships_text}")
+                    
+        #             if context_parts:
+        #                 return "\n\n".join(context_parts)
+        #             else:
+        #                 logger.warning(
+        #                     "RAG API returned empty or invalid context",
+        #                     extra={"query": query, "response": result}
+        #                 )
+        #                 return None
+                        
+        #         else:
+        #             logger.warning(
+        #                 "RAG API call failed",
+        #                 extra={"query": query, "status_code": response.status_code, "response": response.text}
+        #             )
+        #             return None
+                    
+        # except Exception as e:
+        #     logger.exception(
+        #         "Error calling RAG API",
+        #         extra={"query": query, "error": str(e)}
+        #     )
+        #     return None
+        return None
+
     async def process(self, inputs: QuestionAnswerGeneratorInput) -> QuestionAnswerGeneratorOutput:
+        # Lấy RAG context
+        rag_context = await self._get_rag_context(inputs.topic.name)
+        
         try:
-            collection = self.chromadb_client.get_or_create_collection(name=self.settings.collection_name)
-            query = inputs.topic.name
-            embeddings = await self.litellm_service.embedding_llm_async(
-                inputs=LiteLLMEmbeddingInput(
-                    text=query
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                response = await client.post(
+                    "http://quiz_generation:3005/query",
+                    headers={
+                        "accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    json={
+                        "course_code": inputs.course_code,
+                        "query": inputs.topic.name,
+                    }
                 )
-            )
-            results = collection.query(
-                query_embeddings=[embeddings.embedding],
-                n_results=3
-            )
+                
+                if response.status_code == 200:
+                    results = response.json()['results']
+                else:
+                    logger.warning(
+                        "Failed to retrieve similar questions from quiz_generation service",
+                        extra={
+                            "course_code": inputs.course_code,
+                            "week_number": inputs.week_number,
+                            "topic_name": inputs.topic.name,
+                            "status_code": response.status_code,
+                            "response": response.text
+                        }
+                    )
+                    results = {"documents": [[]], "metadatas": [[]]}
             
             examples: list[tuple[str, str]] = []
             
@@ -57,11 +139,11 @@ class QuestionAnswerGeneratorService(BaseService):
                 examples.append((document, metadata['answer']))
                 
             if examples:
-                formatted_examples = "Here are some examples of high-quality question-answer pairs to guide your generation:\n\n" + "\n\n".join(
-                    [f"Example {i+1}:\nQuestion: {q}\nAnswer: {a}" for i, (q, a) in enumerate(examples)]
-                ) + "\n\nUse these examples as reference for the style, clarity, and appropriateness of questions and answers. Generate a similar quality question-answer pair for the given topic."
+                formatted_examples = "Dưới đây là một số ví dụ về các cặp câu hỏi-câu trả lời chất lượng cao để hướng dẫn việc tạo ra của bạn:\n\n" + "\n\n".join(
+                    [f"Ví dụ {i+1}:\nCâu hỏi: {q}\nCâu trả lời: {a}" for i, (q, a) in enumerate(examples)]
+                ) + "\n\nSử dụng những ví dụ này làm tham khảo cho phong cách, độ rõ ràng và tính phù hợp của câu hỏi và câu trả lời. Tạo ra một cặp câu hỏi-câu trả lời chất lượng tương tự cho chủ đề đã cho."
             else:
-                formatted_examples = "No similar examples available. Generate a high-quality question-answer pair based on the guidelines above."
+                formatted_examples = "Không có ví dụ tương tự nào. Tạo ra một cặp câu hỏi-câu trả lời chất lượng cao dựa trên hướng dẫn ở trên."
 
             logger.info(
                 "Retrieved similar questions from database",
@@ -70,7 +152,8 @@ class QuestionAnswerGeneratorService(BaseService):
                     "week_number": inputs.week_number,
                     "topic_name": inputs.topic.name,
                     "similar_questions_count": len(examples),
-                    "formatted_examples": formatted_examples
+                    "formatted_examples": formatted_examples,
+                    "rag_context_available": rag_context is not None
                 }
             )
         except Exception as e:
@@ -83,7 +166,7 @@ class QuestionAnswerGeneratorService(BaseService):
                     "error": str(e),
                 } 
             )
-            formatted_examples = "No similar examples available. Generate a high-quality question-answer pair based on the guidelines above."
+            formatted_examples = "Không có ví dụ tương tự nào. Tạo ra một cặp câu hỏi-câu trả lời chất lượng cao dựa trên hướng dẫn ở trên."
             
         try:
             output = await self.litellm_service.process_async(
@@ -103,7 +186,8 @@ class QuestionAnswerGeneratorService(BaseService):
                                 topic_description=inputs.topic.description,
                                 difficulty_level=inputs.topic.difficulty_level,
                                 bloom_taxonomy_level=inputs.topic.bloom_taxonomy_level,
-                                estimated_right_answer_rate=inputs.topic.estimated_right_answer_rate
+                                estimated_right_answer_rate=inputs.topic.estimated_right_answer_rate,
+                                context=rag_context if rag_context else "Không có thông tin bổ sung từ tài liệu."
                             )
                         )
                     ],
@@ -145,62 +229,3 @@ class QuestionAnswerGeneratorService(BaseService):
             raise e
 
 
-# if __name__ == "__main__":
-#     from lite_llm import LiteLLMSetting
-#     from chromadb import PersistentClient
-#     from generation.shared.settings import QuestionAnswerGeneratorSetting
-#     import asyncio
-#     from pydantic import HttpUrl, SecretStr
-#     client = PersistentClient(path="/home/vuiem/KLTN/chroma_database")
-
-#     # Mock topic for testing
-#     mock_topic = Topic(
-#         name="Kernel Trick and Dimensionality (Week 1 & 6)",
-#         description="This cross-week topic (integrating Week 1 and Week 6) connects the 'Curse of Dimensionality' from Week 1 with the 'Kernel Trick' from Week 6. Students should analyze how the kernel trick implicitly maps data to higher-dimensional feature spaces to achieve linear separability, and how this process, while beneficial for non-linear problems, relates to the computational challenges and potential pitfalls associated with high-dimensional spaces if not managed implicitly. MCQs can explore the trade-offs or the conceptual connection between these two ideas.",
-#         difficulty_level="Hard",
-#         estimated_right_answer_rate=0.35,
-#         bloom_taxonomy_level="Analyze"
-#     )
-
-#     litellm_setting = LiteLLMSetting(
-#         url=HttpUrl("http://localhost:9510"),
-#         token=SecretStr("abc123"),
-#         model="gemini-2.5-flash",
-#         frequency_penalty=0.0,
-#         n=1,
-#         temperature=0.0,
-#         top_p=1.0,
-#         max_completion_tokens=10000,
-#         dimension=1536,
-#         embedding_model="gemini-embedding"
-#     )
-    
-#     settings = QuestionAnswerGeneratorSetting(
-#         model="gemini-2.5-flash",
-#         temperature=0.0,
-#         top_p=1.0,
-#         n=1,
-#         frequency_penalty=0.0,
-#         max_completion_tokens=10000,
-#         collection_name="questions",
-#         reasoning_effort="medium"
-#     )
-
-#     litellm_service = LiteLLMService(litellm_setting=litellm_setting)
-#     qa_generator_service = QuestionAnswerGeneratorService(
-#         litellm_service=litellm_service,
-#         settings=settings,
-#         chromadb_client=client
-#     )
-
-#     async def test():
-#         output = await qa_generator_service.process(
-#             inputs=QuestionAnswerGeneratorInput(
-#                 topic=mock_topic,
-#                 week_number=6,
-#                 course_code="int3405"
-#             )
-#         )
-#         print(output)
-
-#     asyncio.run(test())

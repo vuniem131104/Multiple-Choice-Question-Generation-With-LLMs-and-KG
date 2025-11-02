@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Khái niệm nào sau đây mô tả tính chất của một Quy trình Quyết định Markov (MDP)?",
+            "answer": "Tính chất Markov",
+            "distractors": [
+                "Tính chất độc lập",
+                "Tính chất tuần hoàn",
+                "Tính chất đồng nhất"
+            ],
+            "explanation": "Tính chất Markov cho biết rằng trạng thái hiện tại chứa tất cả thông tin cần thiết để dự đoán trạng thái tiếp theo, không phụ thuộc vào các trạng thái trước đó."
+        },
+        {
+            "question": "Ma trận chuyển đổi trạng thái trong MDP được sử dụng để làm gì?",
+            "answer": "Mô tả xác suất chuyển đổi giữa các trạng thái",
+            "distractors": [
+                "Tính toán giá trị của các hành động",
+                "Lưu trữ các trạng thái đã thăm",
+                "Xác định chính sách tối ưu"
+            ],
+            "explanation": "Ma trận chuyển đổi trạng thái mô tả xác suất chuyển đổi từ trạng thái này sang trạng thái khác, là một phần quan trọng trong việc phân tích MDP."
+        },
+        {
+            "question": "Trong lập trình động, thuật toán nào được sử dụng để cải thiện chính sách lặp?",
+            "answer": "Đánh giá chính sách lặp",
+            "distractors": [
+                "Lặp giá trị",
+                "Tối ưu hóa chính sách",
+                "Học tăng cường"
+            ],
+            "explanation": "Đánh giá chính sách lặp là một phương pháp trong lập trình động để cải thiện chính sách bằng cách đánh giá giá trị của các trạng thái theo chính sách hiện tại."
+        },
+        {
+            "question": "Học khác biệt thời gian (TD) khác với Học Monte-Carlo ở điểm nào?",
+            "answer": "TD cập nhật giá trị ngay lập tức sau mỗi bước",
+            "distractors": [
+                "TD sử dụng toàn bộ chuỗi để cập nhật",
+                "Monte-Carlo không cần chính sách",
+                "TD không cần giá trị trạng thái"
+            ],
+            "explanation": "Học TD cập nhật giá trị ngay lập tức sau mỗi bước, trong khi Học Monte-Carlo cần chờ đến khi hoàn thành một chuỗi để cập nhật."
+        },
+        {
+            "question": "Trong Q-learning, mục tiêu chính là gì?",
+            "answer": "Tối ưu hóa hàm giá trị hành động",
+            "distractors": [
+                "Tối ưu hóa chính sách",
+                "Giảm thiểu sai số",
+                "Tăng cường tốc độ học"
+            ],
+            "explanation": "Mục tiêu của Q-learning là tối ưu hóa hàm giá trị hành động để tìm ra chính sách tốt nhất cho MDP."
+        },
+        {
+            "question": "Phương pháp nào sau đây là một cách để xấp xỉ hàm giá trị trong học tăng cường?",
+            "answer": "Xấp xỉ tuyến tính",
+            "distractors": [
+                "Xấp xỉ phi tuyến tính",
+                "Xấp xỉ ngẫu nhiên",
+                "Xấp xỉ theo phương pháp Monte-Carlo"
+            ],
+            "explanation": "Xấp xỉ tuyến tính là một trong những phương pháp phổ biến để xấp xỉ hàm giá trị trong học tăng cường, giúp xử lý các MDP lớn."
+        },
+        {
+            "question": "Khi so sánh Học Monte-Carlo và Học TD, ưu điểm nào của Học TD là nổi bật?",
+            "answer": "Cập nhật giá trị ngay lập tức",
+            "distractors": [
+                "Dễ dàng triển khai",
+                "Cần ít dữ liệu hơn",
+                "Có thể sử dụng cho các bài toán không có mô hình"
+            ],
+            "explanation": "Học TD có ưu điểm là cập nhật giá trị ngay lập tức sau mỗi bước, giúp cải thiện tốc độ học so với Học Monte-Carlo."
+        },
+        {
+            "question": "Liên kết giữa MDP và kiểm soát không mô hình có thể được hiểu như thế nào?",
+            "answer": "MDP cung cấp một khung để giải quyết các bài toán kiểm soát không mô hình",
+            "distractors": [
+                "MDP là một phần của kiểm soát không mô hình",
+                "Kiểm soát không mô hình không cần MDP",
+                "MDP và kiểm soát không mô hình là hai khái niệm tách biệt"
+            ],
+            "explanation": "MDP cung cấp một khung lý thuyết để giải quyết các bài toán kiểm soát không mô hình, cho phép áp dụng các phương pháp học tăng cường."
+        }
+    ]
+}

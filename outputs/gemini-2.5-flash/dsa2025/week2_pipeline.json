@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Sắp xếp trong khoa học máy tính được định nghĩa là gì?",
+      "answer": "Quá trình sắp xếp các phần tử trong một tập hợp theo một thứ tự xác định.",
+      "distractors": [
+        "Quá trình tìm kiếm một phần tử cụ thể trong một tập hợp dữ liệu.",
+        "Quá trình nhóm các phần tử tương tự lại với nhau dựa trên thuộc tính chung.",
+        "Quá trình loại bỏ các phần tử trùng lặp hoặc không cần thiết khỏi một tập hợp."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **\"Quá trình sắp xếp các phần tử trong một tập hợp theo một thứ tự xác định.\"** vì đây chính xác là định nghĩa của sắp xếp (sorting) trong khoa học máy tính. Sắp xếp liên quan đến việc tổ chức lại các phần tử của một danh sách hoặc mảng theo một thứ tự cụ thể, chẳng hạn như thứ tự tăng dần hoặc giảm dần, thứ tự bảng chữ cái, hoặc theo một tiêu chí tùy chỉnh.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **\"Quá trình tìm kiếm một phần tử cụ thể trong một tập hợp dữ liệu.\"** mô tả định nghĩa của **tìm kiếm (searching)**, không phải sắp xếp. Tìm kiếm tập trung vào việc xác định vị trí của một phần tử, trong khi sắp xếp tập trung vào việc tổ chức lại toàn bộ tập hợp.\n*   **\"Quá trình nhóm các phần tử tương tự lại với nhau dựa trên thuộc tính chung.\"** mô tả định nghĩa của **phân nhóm (clustering)** hoặc **phân loại (categorization)**, không phải sắp xếp. Phân nhóm tạo ra các nhóm dựa trên sự tương đồng, trong khi sắp xếp đặt các phần tử vào một chuỗi có thứ tự.\n*   **\"Quá trình loại bỏ các phần tử trùng lặp hoặc không cần thiết khỏi một tập hợp.\"** mô tả định nghĩa của **lọc (filtering)** hoặc **loại bỏ trùng lặp (deduplication)**. Mục tiêu của quá trình này là giảm kích thước hoặc làm sạch tập hợp dữ liệu, không phải sắp xếp chúng theo một thứ tự.",
+      "topic": {
+        "name": "Định nghĩa và ứng dụng của Sắp xếp",
+        "description": "Chủ đề này kiểm tra khả năng nhớ định nghĩa của sắp xếp và xác định các ví dụ ứng dụng thực tế của nó trong khoa học máy tính. Sinh viên nên có thể nhận diện các tình huống mà việc sắp xếp dữ liệu là cần thiết.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Thứ tự toàn phần được định nghĩa bởi ba thuộc tính chính nào?",
+      "answer": "Phản đối xứng, bắc cầu và toàn bộ.",
+      "distractors": [
+        "Phản xạ, đối xứng và bắc cầu.",
+        "Đối xứng, bắc cầu và toàn bộ.",
+        "Phản xạ, phản đối xứng và toàn bộ."
+      ],
+      "explanation": "Giải thích:\n\nThứ tự toàn phần được định nghĩa bởi ba thuộc tính chính: phản đối xứng, bắc cầu và toàn bộ.\n\n*   **Phản đối xứng**: Nếu $a \\le b$ và $b \\le a$, thì $a = b$. Điều này có nghĩa là không thể có hai phần tử khác nhau mà mỗi phần tử đều nhỏ hơn hoặc bằng phần tử kia.\n*   **Bắc cầu**: Nếu $a \\le b$ và $b \\le c$, thì $a \\le c$. Thuộc tính này đảm bảo tính nhất quán của mối quan hệ thứ tự.\n*   **Toàn bộ (hoặc Liên thông)**: Với mọi $a$ và $b$ trong tập hợp, thì $a \\le b$ hoặc $b \\le a$. Điều này có nghĩa là mọi cặp phần tử đều có thể so sánh được với nhau.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Phản xạ, đối xứng và bắc cầu**: Đây là các thuộc tính của một quan hệ tương đương, không phải thứ tự toàn phần. Quan hệ đối xứng ($a \\le b$ thì $b \\le a$) mâu thuẫn với tính phản đối xứng cần có trong thứ tự toàn phần (trừ khi $a=b$).\n*   **Đối xứng, bắc cầu và toàn bộ**: Tương tự như trên, tính đối xứng không phù hợp với định nghĩa thứ tự toàn phần.\n*   **Phản xạ, phản đối xứng và toàn bộ**: Mặc dù phản xạ ($a \\le a$) là một thuộc tính của thứ tự toàn phần (và thứ tự bộ phận), nhưng nó không phải là một trong ba thuộc tính *chính* định nghĩa thứ tự toàn phần khi đã có tính bắc cầu và phản đối xứng (tính phản xạ thường được suy ra hoặc coi là một phần của định nghĩa thứ tự bộ phận, nhưng ba thuộc tính cốt lõi để phân biệt thứ tự toàn phần là phản đối xứng, bắc cầu và toàn bộ). Quan trọng hơn, tùy chọn này thiếu tính bắc cầu, một thuộc tính thiết yếu.",
+      "topic": {
+        "name": "Đặc điểm của Thứ tự toàn phần",
+        "description": "Chủ đề này đánh giá sự hiểu biết của sinh viên về ba thuộc tính chính (phản đối xứng, bắc cầu, toàn bộ) định nghĩa một thứ tự toàn phần. Sinh viên cần nhận diện cặp thuộc tính đúng hoặc ví dụ minh họa chính xác.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong mỗi lần lặp (pass) của thuật toán Sắp xếp chọn, hành động chính nào được thực hiện để đưa phần tử nhỏ nhất về đúng vị trí trong phần chưa được sắp xếp của mảng?",
+      "answer": "Tìm phần tử nhỏ nhất trong phần chưa sắp xếp và hoán đổi nó với phần tử ở vị trí hiện tại.",
+      "distractors": [
+        "Hoán đổi phần tử đầu tiên với phần tử nhỏ nhất được tìm thấy trong toàn bộ mảng.",
+        "So sánh từng cặp phần tử liền kề và hoán đổi chúng nếu chúng không đúng thứ tự.",
+        "Chèn phần tử nhỏ nhất vào đầu phần chưa sắp xếp của mảng."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Tìm phần tử nhỏ nhất trong phần chưa sắp xếp và hoán đổi nó với phần tử ở vị trí hiện tại.** vì đây chính xác là cơ chế hoạt động của thuật toán Sắp xếp chọn (Selection Sort) trong mỗi lần lặp. Thuật toán này hoạt động bằng cách chia mảng thành hai phần: đã sắp xếp và chưa sắp xếp. Trong mỗi lần lặp, nó quét qua phần chưa sắp xếp để tìm phần tử nhỏ nhất, sau đó hoán đổi phần tử nhỏ nhất đó với phần tử đầu tiên của phần chưa sắp xếp (tức là phần tử ở vị trí hiện tại mà nó đang cố gắng đặt đúng chỗ). Điều này đảm bảo rằng sau mỗi lần lặp, một phần tử nữa được đặt đúng vị trí cuối cùng của nó.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Hoán đổi phần tử đầu tiên với phần tử nhỏ nhất được tìm thấy trong toàn bộ mảng.** Sai. Sắp xếp chọn chỉ tìm phần tử nhỏ nhất trong *phần chưa sắp xếp* của mảng, không phải toàn bộ mảng (trừ lần lặp đầu tiên). Hơn nữa, nó hoán đổi với phần tử ở *vị trí hiện tại* của phần chưa sắp xếp, không nhất thiết là phần tử đầu tiên của toàn bộ mảng.\n*   **So sánh từng cặp phần tử liền kề và hoán đổi chúng nếu chúng không đúng thứ tự.** Sai. Đây là mô tả của thuật toán Sắp xếp nổi bọt (Bubble Sort), không phải Sắp xếp chọn. Sắp xếp chọn không so sánh các phần tử liền kề để hoán đổi liên tục.\n*   **Chèn phần tử nhỏ nhất vào đầu phần chưa sắp xếp của mảng.** Sai. Đây là mô tả của thuật toán Sắp xếp chèn (Insertion Sort), trong đó các phần tử được chèn vào vị trí thích hợp trong phần đã sắp xếp. Sắp xếp chọn sử dụng thao tác hoán đổi, không phải chèn.",
+      "topic": {
+        "name": "Cơ chế hoạt động của Sắp xếp chọn",
+        "description": "Chủ đề tập trung vào việc hiểu cơ chế cốt lõi của thuật toán sắp xếp chọn, bao gồm quá trình quét, tìm phần tử nhỏ nhất và việc hoán đổi. Sinh viên cần mô tả đúng các bước lặp hoặc trạng thái mảng sau các bước cụ thể.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong giao diện Comparable của Java, khi phương thức compareTo() trả về một số nguyên âm, điều đó biểu thị điều gì?",
+      "answer": "Đối tượng hiện tại nhỏ hơn đối tượng được so sánh.",
+      "distractors": [
+        "Đối tượng hiện tại lớn hơn đối tượng được so sánh.",
+        "Hai đối tượng bằng nhau.",
+        "Một lỗi đã xảy ra trong quá trình so sánh."
+      ],
+      "explanation": "Khi phương thức `compareTo()` trong giao diện `Comparable` của Java trả về một số nguyên âm, điều đó biểu thị rằng đối tượng hiện tại (đối tượng mà phương thức được gọi trên đó) được coi là \"nhỏ hơn\" đối tượng được truyền làm đối số. Đây là quy ước tiêu chuẩn được định nghĩa trong tài liệu của giao diện `Comparable`.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Đối tượng hiện tại lớn hơn đối tượng được so sánh:** Điều này sẽ đúng nếu `compareTo()` trả về một số nguyên dương, không phải số âm.\n- **Hai đối tượng bằng nhau:** Điều này sẽ đúng nếu `compareTo()` trả về 0, không phải số âm.\n- **Một lỗi đã xảy ra trong quá trình so sánh:** Giá trị trả về của `compareTo()` được thiết kế để biểu thị mối quan hệ thứ tự giữa các đối tượng, không phải để báo hiệu lỗi. Nếu có lỗi, một ngoại lệ (exception) thường sẽ được ném ra.",
+      "topic": {
+        "name": "Sử dụng Giao diện Comparable API",
+        "description": "Chủ đề này kiểm tra kiến thức về giao diện Comparable của Java, đặc biệt là phương thức compareTo(). Sinh viên cần hiểu giá trị trả về của compareTo() đại diện cho điều gì khi so sánh hai đối tượng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Điểm khác biệt chính nào trong cơ chế hoạt động giữa Sắp xếp chọn (Selection Sort) và Sắp xếp chèn (Insertion Sort) cho phép Sắp xếp chèn đạt được hiệu suất tốt nhất O(N) trong khi Sắp xếp chọn luôn là O(N^2) trong mọi trường hợp về số lần so sánh?",
+      "answer": "Sắp xếp chèn có khả năng dừng sớm quá trình so sánh khi phần tử hiện tại đã nằm đúng vị trí trong dãy con đã sắp xếp, điều mà Sắp xếp chọn không làm được.",
+      "distractors": [
+        "Sắp xếp chèn thực hiện ít phép hoán đổi hơn Sắp xếp chọn trong trường hợp tốt nhất, dẫn đến hiệu suất O(N).",
+        "Sắp xếp chèn sử dụng một cấu trúc dữ liệu phụ trợ để theo dõi các phần tử đã sắp xếp, giúp giảm số lần so sánh.",
+        "Sắp xếp chọn luôn tìm phần tử nhỏ nhất trong toàn bộ mảng còn lại, trong khi Sắp xếp chèn chỉ so sánh với các phần tử lân cận."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là \"Sắp xếp chèn có khả năng dừng sớm quá trình so sánh khi phần tử hiện tại đã nằm đúng vị trí trong dãy con đã sắp xếp, điều mà Sắp xếp chọn không làm được.\" là chính xác vì đây là điểm khác biệt cốt lõi dẫn đến hiệu suất O(N) của Sắp xếp chèn trong trường hợp tốt nhất. Trong Sắp xếp chèn, khi một phần tử được xem xét, nó được chèn vào dãy con đã sắp xếp. Nếu dãy con đã sắp xếp theo thứ tự và phần tử hiện tại lớn hơn hoặc bằng phần tử cuối cùng của dãy con đã sắp xếp, nó sẽ được đặt ngay sau phần tử đó mà không cần so sánh thêm. Điều này xảy ra khi mảng đầu vào đã được sắp xếp (trường hợp tốt nhất), cho phép Sắp xếp chèn chỉ thực hiện N-1 phép so sánh (mỗi phần tử chỉ so sánh với phần tử liền trước nó một lần), dẫn đến độ phức tạp O(N). Ngược lại, Sắp xếp chọn luôn phải quét toàn bộ phần mảng chưa sắp xếp để tìm phần tử nhỏ nhất, bất kể trạng thái sắp xếp của mảng, do đó luôn yêu cầu khoảng N^2/2 phép so sánh, dẫn đến độ phức tạp O(N^2) trong mọi trường hợp.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Sắp xếp chèn thực hiện ít phép hoán đổi hơn Sắp xếp chọn trong trường hợp tốt nhất, dẫn đến hiệu suất O(N).** Mặc dù Sắp xếp chèn thực hiện ít phép hoán đổi hơn Sắp xếp chọn trong trường hợp tốt nhất (chỉ 0 phép hoán đổi thực sự, chỉ có các phép gán), nhưng số lượng phép hoán đổi không phải là lý do chính dẫn đến độ phức tạp O(N) về số lần so sánh. Hiệu suất O(N) của Sắp xếp chèn trong trường hợp tốt nhất chủ yếu đến từ khả năng dừng sớm các phép so sánh.\n\n*   **Sắp xếp chèn sử dụng một cấu trúc dữ liệu phụ trợ để theo dõi các phần tử đã sắp xếp, giúp giảm số lần so sánh.** Cả Sắp xếp chèn và Sắp xếp chọn đều là các thuật toán sắp xếp tại chỗ (in-place), nghĩa là chúng không sử dụng cấu trúc dữ liệu phụ trợ đáng kể để lưu trữ các phần tử đã sắp xếp. Sắp xếp chèn hoạt động bằng cách duy trì một dãy con đã sắp xếp ở đầu mảng và chèn các phần tử còn lại vào đúng vị trí trong dãy con đó.\n\n*   **Sắp xếp chọn luôn tìm phần tử nhỏ nhất trong toàn bộ mảng còn lại, trong khi Sắp xếp chèn chỉ so sánh với các phần tử lân cận.** Phần đầu của câu này là đúng về Sắp xếp chọn. Tuy nhiên, phần sau về Sắp xếp chèn là không hoàn toàn chính xác. Sắp xếp chèn không chỉ so sánh với các phần tử lân cận mà nó so sánh với các phần tử trong dãy con đã sắp xếp để tìm đúng vị trí chèn. Trong trường hợp xấu nhất, một phần tử có thể phải so sánh với tất cả các phần tử trong dãy con đã sắp xếp, dẫn đến độ phức tạp O(N^2). Điểm khác biệt chính là khả năng dừng sớm khi phần tử đã đúng vị trí, không phải là việc chỉ so sánh với các phần tử lân cận.",
+      "topic": {
+        "name": "So sánh Sắp xếp chọn và Sắp xếp chèn",
+        "description": "Chủ đề này yêu cầu sinh viên phân tích sự khác biệt về cơ chế hoạt động và hiệu suất đặc trưng (số lần so sánh, hoán đổi) giữa Sắp xếp chọn và Sắp xếp chèn trong các trường hợp khác nhau (tốt nhất, xấu nhất, trung bình).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Một lập trình viên muốn xây dựng một thuật toán sắp xếp (ví dụ: Sắp xếp nổi bọt) có khả năng hoạt động trên các danh sách chứa các đối tượng thuộc nhiều kiểu dữ liệu khác nhau, miễn là các đối tượng đó có thể so sánh được với nhau theo thứ tự tự nhiên của chúng. Để đạt được tính linh hoạt và tổng quát này trong Java, lập trình viên cần kết hợp Generics với cơ chế Callback nào?",
+      "answer": "Generics được sử dụng cùng với giao diện `Comparable`.",
+      "distractors": [
+        "Generics được sử dụng cùng với giao diện `Iterable`.",
+        "Generics được sử dụng cùng với lớp trừu tượng `AbstractList`.",
+        "Generics được sử dụng cùng với giao diện `Comparator`."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Generics được sử dụng cùng với giao diện `Comparable`**.\n\n**Tại sao câu trả lời đúng là đúng:**\nĐể xây dựng một thuật toán sắp xếp tổng quát có thể hoạt động trên các đối tượng thuộc nhiều kiểu dữ liệu khác nhau, miễn là chúng có thể so sánh được với nhau theo thứ tự tự nhiên của chúng, chúng ta cần hai cơ chế chính trong Java:\n1.  **Generics**: Cho phép thuật toán hoạt động với các kiểu dữ liệu khác nhau mà không cần viết lại mã cho từng kiểu. Ví dụ, một thuật toán sắp xếp có thể được định nghĩa là `sort<T>(List<T> list)`.\n2.  **Giao diện `Comparable`**: Cung cấp một cơ chế callback để các đối tượng tự định nghĩa cách chúng so sánh với các đối tượng khác cùng kiểu. Khi một lớp triển khai `Comparable<T>`, nó phải cung cấp phương thức `compareTo(T other)`. Phương thức này định nghĩa \"thứ tự tự nhiên\" của các đối tượng thuộc kiểu đó. Thuật toán sắp xếp sau đó có thể gọi `list.get(i).compareTo(list.get(j))` để so sánh hai phần tử.\n\nSự kết hợp giữa Generics và `Comparable` cho phép tạo ra các thuật toán sắp xếp linh hoạt, có thể sắp xếp bất kỳ danh sách nào chứa các đối tượng có thể so sánh được theo thứ tự tự nhiên của chúng.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Generics được sử dụng cùng với giao diện `Iterable`**: Giao diện `Iterable` được sử dụng để cho phép một đối tượng được lặp lại (ví dụ: trong vòng lặp `for-each`). Nó không cung cấp bất kỳ cơ chế nào để so sánh các phần tử bên trong danh sách, điều cần thiết cho việc sắp xếp. Do đó, nó không phù hợp cho mục đích này.\n\n*   **Generics được sử dụng cùng với lớp trừu tượng `AbstractList`**: `AbstractList` là một lớp trừu tượng cung cấp triển khai cơ bản cho giao diện `List`. Mặc dù nó có thể được sử dụng làm cơ sở cho các triển khai danh sách, nhưng bản thân nó không cung cấp cơ chế so sánh các phần tử. Nó tập trung vào cấu trúc và hành vi của một danh sách, không phải cách các phần tử bên trong nó được so sánh.\n\n*   **Generics được sử dụng cùng với giao diện `Comparator`**: Giao diện `Comparator` cũng được sử dụng để so sánh các đối tượng, nhưng nó được sử dụng khi bạn muốn định nghĩa một thứ tự sắp xếp *khác* với thứ tự tự nhiên của đối tượng, hoặc khi các đối tượng không triển khai `Comparable`. Câu hỏi yêu cầu sắp xếp theo \"thứ tự tự nhiên của chúng\", điều này được xử lý bởi `Comparable`. `Comparator` sẽ được sử dụng nếu lập trình viên muốn cung cấp một cách so sánh *bên ngoài* cho thuật toán sắp xếp, thay vì dựa vào khả năng so sánh *nội tại* của đối tượng.",
+      "topic": {
+        "name": "Vai trò của Callbacks trong sắp xếp với Generics",
+        "description": "Chủ đề liên tuần này kết nối khái niệm Generics (Tuần 1) với Callbacks và Giao diện Comparable (Tuần 2). Sinh viên cần hiểu cách Generics cùng với Callbacks (như Comparable) cho phép tạo ra các thuật toán sắp xếp linh hoạt, tổng quát cho các kiểu dữ liệu khác nhau.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Shellsort cải thiện sự неефективность của sắp xếp chèn bằng cách sử dụng các bước tăng h. Với cơ chế h-sort, Shellsort giảm đáng kể số lần di chuyển dữ liệu so với sắp xếp chèn tiêu chuẩn như thế nào?",
+      "answer": "Các phần tử ở xa vị trí cuối cùng có thể di chuyển một khoảng cách lớn hơn trong mỗi lần hoán đổi hoặc dịch chuyển trong các lần sắp xếp con.",
+      "distractors": [
+        "Shellsort sử dụng các thuật toán sắp xếp con phức tạp hơn, giúp giảm số lần hoán đổi tổng thể.",
+        "Shellsort chỉ thực hiện các phép so sánh và hoán đổi trên các phần tử liền kề, tương tự sắp xếp chèn nhưng với dữ liệu đã được sắp xếp một phần.",
+        "Các bước tăng h cho phép Shellsort bỏ qua việc sắp xếp các phần tử nhỏ, chỉ tập trung vào các phần tử lớn hơn để tăng tốc độ."
+      ],
+      "explanation": "Shellsort cải thiện sự неефективность của sắp xếp chèn bằng cách cho phép các phần tử di chuyển một khoảng cách lớn hơn trong mỗi lần hoán đổi hoặc dịch chuyển. Trong sắp xếp chèn tiêu chuẩn, một phần tử chỉ có thể di chuyển một vị trí tại một thời điểm, điều này dẫn đến nhiều lần hoán đổi hoặc dịch chuyển nếu phần tử đó ở rất xa vị trí cuối cùng của nó. Shellsort, thông qua cơ chế h-sort, tạo ra các \"sắp xếp con\" với các bước tăng h. Điều này có nghĩa là các phần tử cách nhau h vị trí được so sánh và hoán đổi. Khi h lớn, một phần tử có thể di chuyển một khoảng cách lớn (bằng bội số của h) trong một lần hoán đổi hoặc dịch chuyển, nhanh chóng đưa các phần tử ở xa vị trí cuối cùng đến gần hơn vị trí của chúng. Điều này làm giảm đáng kể tổng số lần di chuyển dữ liệu cần thiết.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Shellsort sử dụng các thuật toán sắp xếp con phức tạp hơn, giúp giảm số lần hoán đổi tổng thể.** Đây là sai. Shellsort không sử dụng các thuật toán sắp xếp con phức tạp hơn; nó vẫn sử dụng sắp xếp chèn (hoặc một biến thể của nó) cho các sắp xếp con. Sự cải thiện đến từ việc áp dụng sắp xếp chèn trên các tập hợp con thưa thớt, không phải từ một thuật toán sắp xếp con phức tạp hơn.\n- **Shellsort chỉ thực hiện các phép so sánh và hoán đổi trên các phần tử liền kề, tương tự sắp xếp chèn nhưng với dữ liệu đã được sắp xếp một phần.** Đây là sai. Trong các giai đoạn đầu của Shellsort (khi h lớn), các phép so sánh và hoán đổi được thực hiện trên các phần tử không liền kề (cách nhau h vị trí). Chỉ khi h giảm xuống 1, Shellsort mới hoạt động giống như sắp xếp chèn tiêu chuẩn trên các phần tử liền kề, nhưng lúc đó dữ liệu đã được sắp xếp một phần đáng kể.\n- **Các bước tăng h cho phép Shellsort bỏ qua việc sắp xếp các phần tử nhỏ, chỉ tập trung vào các phần tử lớn hơn để tăng tốc độ.** Đây là sai. Shellsort không bỏ qua việc sắp xếp bất kỳ phần tử nào, dù lớn hay nhỏ. Nó sắp xếp tất cả các phần tử trong mảng. Các bước tăng h chỉ thay đổi cách các phần tử được nhóm và so sánh trong các giai đoạn khác nhau của quá trình sắp xếp, không phải bỏ qua một số phần tử nhất định.",
+      "topic": {
+        "name": "Cải tiến hiệu suất từ Sắp xếp chèn đến Shellsort",
+        "description": "Chủ đề này đánh giá khả năng của sinh viên trong việc hiểu cách Shellsort cải thiện sự неефективность của sắp xếp chèn bằng cách sử dụng các bước tăng h. Sinh viên cần phân tích cơ chế h-sort và tại sao nó giảm số lần di chuyển dữ liệu so với sắp xếp chèn tiêu chuẩn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi đánh giá tác động của Knuth Shuffle đến hiệu suất thuật toán tổng thể, ưu điểm chính của độ phức tạp thời gian tuyến tính (O(N)) của nó, đặc biệt trong việc tạo ra hoán vị ngẫu nhiên đồng nhất, được thể hiện rõ ràng nhất ở khía cạnh nào?",
+      "answer": "Đảm bảo chi phí xáo trộn là tối thiểu và có thể dự đoán được, không trở thành nút thắt cổ chai trong các thuật toán phức tạp phụ thuộc vào dữ liệu ngẫu nhiên.",
+      "distractors": [
+        "Nó cho phép sử dụng các cấu trúc dữ liệu phức tạp hơn như cây nhị phân tìm kiếm để lưu trữ các phần tử đã xáo trộn, từ đó cải thiện thời gian truy cập.",
+        "Nó tối ưu hóa việc sử dụng bộ nhớ cache bằng cách đảm bảo các phần tử được truy cập theo thứ tự tuần tự, giảm thiểu lỗi bộ nhớ cache cho các tập dữ liệu lớn.",
+        "Nó làm tăng tính bảo mật của thuật toán bằng cách khiến việc dự đoán thứ tự các phần tử trở nên cực kỳ khó khăn, ngay cả với các cuộc tấn công tinh vi."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao \"Đảm bảo chi phí xáo trộn là tối thiểu và có thể dự đoán được, không trở thành nút thắt cổ chai trong các thuật toán phức tạp phụ thuộc vào dữ liệu ngẫu nhiên\" là câu trả lời đúng:**\n\nKnuth Shuffle có độ phức tạp thời gian tuyến tính (O(N)), nghĩa là thời gian thực hiện của nó tăng tỷ lệ thuận với số lượng phần tử (N) cần xáo trộn. Ưu điểm chính của điều này là chi phí xáo trộn luôn ở mức tối thiểu và có thể dự đoán được, bất kể kích thước của tập dữ liệu. Trong các thuật toán phức tạp hơn phụ thuộc vào việc tạo ra dữ liệu ngẫu nhiên hoặc hoán vị ngẫu nhiên đồng nhất, việc có một bước xáo trộn hiệu quả và có thể dự đoán được là rất quan trọng. Nếu bước xáo trộn có độ phức tạp cao hơn (ví dụ: O(N log N) hoặc O(N^2)), nó có thể nhanh chóng trở thành nút thắt cổ chai, làm chậm đáng kể hiệu suất tổng thể của thuật toán. Độ phức tạp tuyến tính của Knuth Shuffle đảm bảo rằng việc xáo trộn không phải là yếu tố hạn chế hiệu suất, cho phép các phần khác của thuật toán hoạt động hiệu quả.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **\"Nó cho phép sử dụng các cấu trúc dữ liệu phức tạp hơn như cây nhị phân tìm kiếm để lưu trữ các phần tử đã xáo trộn, từ đó cải thiện thời gian truy cập.\"**\n    Knuth Shuffle là một thuật toán xáo trộn tại chỗ (in-place) và không liên quan trực tiếp đến việc lựa chọn cấu trúc dữ liệu để lưu trữ các phần tử đã xáo trộn. Mặc dù các phần tử đã xáo trộn có thể được lưu trữ trong bất kỳ cấu trúc dữ liệu nào, nhưng bản thân Knuth Shuffle không \"cho phép\" hoặc yêu cầu sử dụng các cấu trúc dữ liệu phức tạp hơn. Mục đích của nó là tạo ra một hoán vị ngẫu nhiên đồng nhất, không phải để tối ưu hóa việc lưu trữ hoặc truy cập sau đó bằng các cấu trúc dữ liệu cụ thể.\n\n*   **\"Nó tối ưu hóa việc sử dụng bộ nhớ cache bằng cách đảm bảo các phần tử được truy cập theo thứ tự tuần tự, giảm thiểu lỗi bộ nhớ cache cho các tập dữ liệu lớn.\"**\n    Knuth Shuffle hoạt động bằng cách hoán đổi các phần tử ngẫu nhiên trong một mảng. Điều này dẫn đến việc truy cập bộ nhớ không tuần tự, vì các vị trí được truy cập để hoán đổi là ngẫu nhiên. Do đó, nó không tối ưu hóa việc sử dụng bộ nhớ cache bằng cách đảm bảo truy cập tuần tự; trên thực tế, nó có thể làm tăng lỗi bộ nhớ cache do tính chất ngẫu nhiên của các thao tác hoán đổi.\n\n*   **\"Nó làm tăng tính bảo mật của thuật toán bằng cách khiến việc dự đoán thứ tự các phần tử trở nên cực kỳ khó khăn, ngay cả với các cuộc tấn công tinh vi.\"**\n    Mặc dù Knuth Shuffle tạo ra các hoán vị ngẫu nhiên đồng nhất, điều này là cần thiết cho tính công bằng và tính đúng đắn của thuật toán, nhưng nó không phải là một thuật toán được thiết kế đặc biệt cho mục đích bảo mật mật mã. \"Tính bảo mật\" trong ngữ cảnh này thường liên quan đến việc sử dụng các bộ tạo số ngẫu nhiên an toàn về mặt mật mã (CSPRNG) và các giao thức bảo mật. Knuth Shuffle tự nó không cung cấp các đảm bảo bảo mật chống lại các cuộc tấn công tinh vi; hiệu quả của nó phụ thuộc vào chất lượng của bộ tạo số ngẫu nhiên cơ bản được sử dụng. Mục tiêu chính của nó là tạo ra một hoán vị ngẫu nhiên đồng nhất, không phải để bảo vệ dữ liệu khỏi các cuộc tấn công.",
+      "topic": {
+        "name": "Hiệu quả và ứng dụng của Knuth Shuffle so với các cấu trúc dữ liệu (Liên tuần)",
+        "description": "Chủ đề liên tuần này so sánh hiệu suất tuyến tính của Knuth Shuffle (Tuần 2) với các cân nhắc về hiệu suất của cấu trúc dữ liệu cơ bản như Stack và Queue (Tuần 1). Sinh viên cần phân tích tại sao Knuth Shuffle hiệu quả cho việc xáo trộn và liên hệ nó với việc tối ưu hóa hiệu suất tổng thể của các thuật toán.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    }
+  ]
+}

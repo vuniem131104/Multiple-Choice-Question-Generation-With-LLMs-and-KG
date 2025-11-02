@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Theo nguyên tắc thứ tự đối xứng của Cây tìm kiếm nhị phân (BST), mối quan hệ về giá trị giữa một nút cha, nút con trái và nút con phải là gì?",
+      "answer": "Giá trị của nút con trái luôn nhỏ hơn giá trị của nút cha, và giá trị của nút con phải luôn lớn hơn giá trị của nút cha.",
+      "distractors": [
+        "Giá trị của nút con trái luôn lớn hơn giá trị của nút cha, và giá trị của nút con phải luôn nhỏ hơn giá trị của nút cha.",
+        "Giá trị của nút con trái và nút con phải đều phải lớn hơn giá trị của nút cha.",
+        "Giá trị của nút con trái và nút con phải đều phải nhỏ hơn giá trị của nút cha."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Giá trị của nút con trái luôn nhỏ hơn giá trị của nút cha, và giá trị của nút con phải luôn lớn hơn giá trị của nút cha.\" vì đây là định nghĩa cơ bản và nguyên tắc thứ tự đối xứng của một Cây tìm kiếm nhị phân (BST). Để một cây nhị phân được coi là BST hợp lệ, tất cả các nút trong cây con bên trái của một nút phải có giá trị nhỏ hơn giá trị của nút đó, và tất cả các nút trong cây con bên phải phải có giá trị lớn hơn giá trị của nút đó. Điều này đảm bảo rằng việc tìm kiếm, chèn và xóa các phần tử có thể được thực hiện một cách hiệu quả.\n\nCác yếu tố gây nhiễu là sai vì:\n*   \"Giá trị của nút con trái luôn lớn hơn giá trị của nút cha, và giá trị của nút con phải luôn nhỏ hơn giá trị của nút cha.\" là sai vì nó đảo ngược hoàn toàn nguyên tắc thứ tự của BST. Nếu cây được xây dựng theo cách này, nó sẽ không còn là một BST hợp lệ và các hoạt động tìm kiếm sẽ không hoạt động như mong đợi.\n*   \"Giá trị của nút con trái và nút con phải đều phải lớn hơn giá trị của nút cha.\" là sai vì nó vi phạm nguyên tắc rằng cây con bên trái phải chứa các giá trị nhỏ hơn. Nếu cả hai cây con đều chứa các giá trị lớn hơn, việc phân biệt và tìm kiếm các giá trị nhỏ hơn sẽ trở nên không thể.\n*   \"Giá trị của nút con trái và nút con phải đều phải nhỏ hơn giá trị của nút cha.\" là sai vì nó vi phạm nguyên tắc rằng cây con bên phải phải chứa các giá trị lớn hơn. Tương tự như trên, nếu cả hai cây con đều chứa các giá trị nhỏ hơn, việc tìm kiếm các giá trị lớn hơn sẽ không hiệu quả.",
+      "topic": {
+        "name": "Đặc điểm cấu trúc của Cây tìm kiếm nhị phân (BST)",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc nhận biết các định nghĩa và đặc điểm cơ bản của một Cây tìm kiếm nhị phân, bao gồm nguyên tắc thứ tự đối xứng và cấu trúc nút. Học sinh cần hiểu các điều kiện mà một cây nhị phân được coi là BST hợp lệ.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi thực hiện thao tác tìm kiếm (get) một khóa trong cây tìm kiếm nhị phân (BST), nếu khóa cần tìm nhỏ hơn giá trị của nút hiện tại, thuật toán sẽ tiếp tục tìm kiếm ở nhánh nào?",
+      "answer": "Nhánh con trái của nút hiện tại",
+      "distractors": [
+        "Nhánh con phải của nút hiện tại",
+        "Nút gốc của cây",
+        "Nút cha của nút hiện tại"
+      ],
+      "explanation": "Khi thực hiện thao tác tìm kiếm (get) một khóa trong cây tìm kiếm nhị phân (BST), nếu khóa cần tìm nhỏ hơn giá trị của nút hiện tại, thuật toán sẽ tiếp tục tìm kiếm ở **nhánh con trái của nút hiện tại**. Điều này là do định nghĩa của BST quy định rằng tất cả các giá trị trong nhánh con trái của một nút phải nhỏ hơn giá trị của nút đó. Do đó, để tìm một khóa nhỏ hơn, thuật toán phải đi xuống nhánh con trái.\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n*   **Nhánh con phải của nút hiện tại**: Nhánh con phải chứa các giá trị lớn hơn hoặc bằng giá trị của nút hiện tại. Nếu khóa cần tìm nhỏ hơn, việc tìm kiếm ở nhánh con phải sẽ không bao giờ tìm thấy khóa đó và đi ngược lại nguyên tắc của BST.\n*   **Nút gốc của cây**: Nút gốc là điểm bắt đầu của quá trình tìm kiếm. Sau khi so sánh với nút hiện tại (không phải nút gốc trừ khi đó là lần so sánh đầu tiên), thuật toán cần di chuyển xuống một nhánh con, không quay lại nút gốc.\n*   **Nút cha của nút hiện tại**: Việc tìm kiếm trong BST luôn di chuyển xuống dưới (từ nút cha đến nút con) để thu hẹp phạm vi tìm kiếm. Quay lại nút cha sẽ đi ngược lại hướng tìm kiếm và không hiệu quả.\n",
+      "topic": {
+        "name": "Thao tác tìm kiếm (get) trong BST",
+        "description": "Chủ đề này tập trung vào quy trình tìm kiếm một khóa cụ thể trong BST. Học sinh phải hiểu cách thuật toán `get()` duyệt qua cây, so sánh khóa và đi theo các nhánh trái hoặc phải cho đến khi tìm thấy khóa hoặc xác định rằng khóa không tồn tại. Câu hỏi có thể hỏi về các bước hoặc điều kiện dừng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Nếu một khóa đã tồn tại trong Cây Tìm kiếm Nhị phân (BST) khi thực hiện thao tác `put()`, điều gì sẽ xảy ra?",
+      "answer": "Giá trị tương ứng với khóa đó sẽ được cập nhật.",
+      "distractors": [
+        "Một nút mới với khóa và giá trị đó sẽ được thêm vào cây.",
+        "Thao tác sẽ thất bại và trả về lỗi.",
+        "Khóa sẽ được thêm vào cây nhưng giá trị sẽ bị bỏ qua."
+      ],
+      "explanation": "Khi thực hiện thao tác `put()` (chèn) trong Cây Tìm kiếm Nhị phân (BST) và khóa đã tồn tại, giá trị tương ứng với khóa đó sẽ được cập nhật. Điều này là do BST thường được thiết kế để lưu trữ các khóa duy nhất. Nếu một khóa đã tồn tại, thao tác `put()` sẽ tìm thấy nút chứa khóa đó và thay thế giá trị cũ bằng giá trị mới được cung cấp.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Một nút mới với khóa và giá trị đó sẽ được thêm vào cây.** Điều này không đúng vì BST thường không cho phép các khóa trùng lặp. Nếu một nút mới được thêm vào với cùng một khóa, nó sẽ vi phạm nguyên tắc duy nhất của khóa trong BST hoặc tạo ra một cấu trúc không mong muốn.\n*   **Thao tác sẽ thất bại và trả về lỗi.** Mặc dù một số triển khai có thể chọn trả về lỗi hoặc ném ngoại lệ, nhưng hành vi tiêu chuẩn và phổ biến hơn của thao tác `put()` khi khóa đã tồn tại là cập nhật giá trị. Trả về lỗi sẽ hạn chế tính linh hoạt của cấu trúc dữ liệu.\n*   **Khóa sẽ được thêm vào cây nhưng giá trị sẽ bị bỏ qua.** Điều này không có ý nghĩa trong ngữ cảnh của BST. Nếu khóa được thêm vào, nó phải đi kèm với một giá trị. Việc bỏ qua giá trị sẽ làm cho thao tác `put()` trở nên vô dụng hoặc không đầy đủ.\n",
+      "topic": {
+        "name": "Thao tác chèn (put) vào BST",
+        "description": "Chủ đề này đánh giá kiến thức về chức năng `put()` để thêm một cặp khóa-giá trị mới vào BST hoặc cập nhật giá trị cho một khóa hiện có. Học sinh cần biết cách tìm vị trí thích hợp cho nút mới và cách cập nhật liên kết trong trường hợp chèn đệ quy hoặc lặp.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Tại sao Generics với ràng buộc `Comparable` cho khóa lại cần thiết khi cài đặt Cây Tìm Kiếm Nhị phân (BST)?",
+      "answer": "Để cho phép BST hoạt động với các kiểu dữ liệu khác nhau và duy trì đúng thứ tự của các khóa.",
+      "distractors": [
+        "Để đảm bảo rằng tất cả các khóa đều có cùng kiểu dữ liệu, tránh lỗi biên dịch.",
+        "Để Generics có thể tự động chuyển đổi kiểu dữ liệu của các khóa khi cần thiết.",
+        "Để cho phép BST chỉ lưu trữ các kiểu dữ liệu nguyên thủy, giúp tăng hiệu suất."
+      ],
+      "explanation": "Generics với ràng buộc `Comparable` cho khóa là cần thiết khi cài đặt Cây Tìm Kiếm Nhị phân (BST) **để cho phép BST hoạt động với các kiểu dữ liệu khác nhau và duy trì đúng thứ tự của các khóa**.\n\n**Giải thích:**\n\n*   **Tại sao câu trả lời đúng là đúng:**\n    *   **Hoạt động với các kiểu dữ liệu khác nhau:** Generics (ví dụ: `<T>`) cho phép bạn viết mã BST một lần và sử dụng nó với bất kỳ kiểu dữ liệu nào (số nguyên, chuỗi, đối tượng tùy chỉnh, v.v.) mà không cần viết lại mã cho từng kiểu. Điều này tăng tính tái sử dụng và linh hoạt của BST.\n    *   **Duy trì đúng thứ tự của các khóa:** Ràng buộc `Comparable<T>` (ví dụ: `<T extends Comparable<T>>`) đảm bảo rằng kiểu dữ liệu `T` phải triển khai giao diện `Comparable`. Giao diện này cung cấp phương thức `compareTo()`, cho phép so sánh hai đối tượng cùng kiểu. Trong BST, việc so sánh các khóa là cốt lõi để xác định vị trí của một nút mới (nhỏ hơn thì sang trái, lớn hơn thì sang phải) và để tìm kiếm các nút. Nếu không có khả năng so sánh, BST không thể duy trì cấu trúc thứ tự của nó.\n\n*   **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **\"Để đảm bảo rằng tất cả các khóa đều có cùng kiểu dữ liệu, tránh lỗi biên dịch.\"** Đây là một phần của lý do nhưng không phải là lý do chính và đầy đủ. Generics giúp đảm bảo tính nhất quán về kiểu dữ liệu trong một thể hiện của BST, nhưng mục đích chính của ràng buộc `Comparable` là để cho phép so sánh, không chỉ để tránh lỗi biên dịch. Lỗi biên dịch sẽ xảy ra nếu bạn cố gắng so sánh các kiểu không tương thích mà không có `Comparable`.\n    *   **\"Để Generics có thể tự động chuyển đổi kiểu dữ liệu của các khóa khi cần thiết.\"** Generics không thực hiện việc chuyển đổi kiểu dữ liệu tự động (type casting hoặc conversion). Chúng cung cấp an toàn kiểu tại thời điểm biên dịch và cho phép mã hoạt động với các kiểu khác nhau, nhưng không thay đổi kiểu của dữ liệu. Việc chuyển đổi kiểu là một khái niệm khác và thường được thực hiện thủ công hoặc thông qua các cơ chế khác.\n    *   **\"Để cho phép BST chỉ lưu trữ các kiểu dữ liệu nguyên thủy, giúp tăng hiệu suất.\"** Điều này hoàn toàn sai. Generics với `Comparable` cho phép BST lưu trữ *bất kỳ* kiểu dữ liệu nào (nguyên thủy hoặc đối tượng) miễn là chúng triển khai `Comparable`. Hơn nữa, việc giới hạn chỉ các kiểu nguyên thủy sẽ làm giảm đáng kể tính linh hoạt của BST và không phải là mục tiêu của Generics hay `Comparable`. Hiệu suất của BST chủ yếu phụ thuộc vào cấu trúc cây và thuật toán, không phải việc giới hạn kiểu dữ liệu.",
+      "topic": {
+        "name": "Generics và Comparable trong triển khai BST (Liên tuần)",
+        "description": "Chủ đề này kết nối các khái niệm từ Tuần 1 (Generics) và Tuần 2 (Comparable API) với việc triển khai BST trong Tuần 6. Học sinh cần hiểu tại sao việc sử dụng Generics với ràng buộc `Comparable` cho khóa là cần thiết để BST có thể hoạt động với các kiểu dữ liệu khác nhau và duy trì thứ tự.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Một cây tìm kiếm nhị phân (BST) được xây dựng bằng cách chèn N khóa riêng biệt theo thứ tự ngẫu nhiên. Số phép so sánh dự kiến (trung bình) để tìm kiếm hoặc chèn một khóa trong BST này sẽ xấp xỉ là bao nhiêu?",
+      "answer": "~ 2 ln N",
+      "distractors": [
+        "~ N log N",
+        "~ log N",
+        "~ N"
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **~ 2 ln N**.\n\nKhi N khóa riêng biệt được chèn vào một cây tìm kiếm nhị phân (BST) theo thứ tự ngẫu nhiên, chiều cao trung bình của cây sẽ tỷ lệ thuận với logarit tự nhiên của N. Cụ thể, số phép so sánh dự kiến (trung bình) để tìm kiếm hoặc chèn một khóa trong BST này được biết là xấp xỉ $2 \\ln N$. Đây là một kết quả tiêu chuẩn trong phân tích thuật toán của BST ngẫu nhiên.\n\nBây giờ, hãy xem xét tại sao các yếu tố gây nhiễu lại không chính xác:\n\n*   **~ N log N**: Độ phức tạp $N \\log N$ thường xuất hiện trong các thuật toán sắp xếp dựa trên so sánh (ví dụ: Merge Sort, Heap Sort) hoặc trong các trường hợp xấu nhất của một số cấu trúc dữ liệu. Tuy nhiên, đối với thao tác tìm kiếm hoặc chèn *một* khóa trong BST được xây dựng ngẫu nhiên, đây không phải là độ phức tạp trung bình. $N \\log N$ sẽ là độ phức tạp để xây dựng toàn bộ cây nếu chúng ta tính tổng chi phí của N lần chèn, nhưng câu hỏi chỉ hỏi về chi phí cho *một* thao tác tìm kiếm hoặc chèn.\n\n*   **~ log N**: Mặc dù $\\log N$ là độ phức tạp lý tưởng cho các thao tác tìm kiếm/chèn trong một BST cân bằng (ví dụ: AVL tree, Red-Black tree), nhưng đối với một BST được xây dựng bằng cách chèn các khóa theo thứ tự ngẫu nhiên, cây không đảm bảo sẽ cân bằng hoàn hảo. Do đó, chi phí trung bình sẽ cao hơn một chút so với $\\log N$ và được biểu thị chính xác hơn là $2 \\ln N$. Lưu ý rằng $\\ln N$ và $\\log N$ chỉ khác nhau bởi một hằng số nhân ($\\ln N = \\log_e N = \\frac{\\log_2 N}{\\log_2 e}$), nhưng hệ số 2 là quan trọng trong trường hợp này.\n\n*   **~ N**: Độ phức tạp $N$ thường xảy ra trong trường hợp xấu nhất của BST (khi các khóa được chèn theo thứ tự tăng dần hoặc giảm dần, tạo thành một danh sách liên kết) hoặc khi duyệt qua tất cả các phần tử của một cấu trúc dữ liệu. Đây không phải là chi phí trung bình cho một thao tác tìm kiếm hoặc chèn trong một BST được xây dựng ngẫu nhiên.",
+      "topic": {
+        "name": "Phân tích hiệu suất trung bình của BST",
+        "description": "Chủ đề này yêu cầu học sinh áp dụng kiến thức về phân tích thuật toán từ Tuần 3 và 4 vào BST trong Tuần 6. Cụ thể, học sinh cần hiểu và tính toán số phép so sánh dự kiến cho các thao tác tìm kiếm hoặc chèn khi N khóa riêng biệt được chèn vào BST theo thứ tự ngẫu nhiên, sử dụng công thức ~ 2 ln N.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi thực hiện duyệt cây Inorder trên một Cây Tìm kiếm Nhị phân (BST), các khóa được xuất ra luôn theo thứ tự tăng dần. Dựa trên kết quả này, thuộc tính cốt lõi nào của BST được xác nhận?",
+      "answer": "Mọi khóa trong cây con trái của một nút đều nhỏ hơn khóa của nút đó, và mọi khóa trong cây con phải đều lớn hơn.",
+      "distractors": [
+        "Mỗi nút cha luôn có giá trị lớn hơn tất cả các nút con của nó, đảm bảo thứ tự tăng dần.",
+        "Cây được cân bằng hoàn hảo, đảm bảo rằng việc duyệt sẽ đi qua các nút theo một trình tự có thể dự đoán được.",
+        "Thứ tự duyệt Inorder luôn truy cập cây con trái, sau đó là nút gốc, và cuối cùng là cây con phải."
+      ],
+      "explanation": "Khi thực hiện duyệt cây Inorder trên một Cây Tìm kiếm Nhị phân (BST), các khóa được xuất ra luôn theo thứ tự tăng dần. Điều này xác nhận thuộc tính cốt lõi của BST: **Mọi khóa trong cây con trái của một nút đều nhỏ hơn khóa của nút đó, và mọi khóa trong cây con phải đều lớn hơn.** Đây là định nghĩa cơ bản của một BST và là lý do trực tiếp khiến duyệt Inorder tạo ra một danh sách các khóa đã sắp xếp. Thuật toán duyệt Inorder truy cập cây con trái, sau đó là nút gốc, và cuối cùng là cây con phải. Do thuộc tính của BST, tất cả các giá trị trong cây con trái (được truy cập đầu tiên) sẽ nhỏ hơn nút gốc, và tất cả các giá trị trong cây con phải (được truy cập cuối cùng) sẽ lớn hơn nút gốc. Quá trình này được áp dụng đệ quy cho mỗi cây con, đảm bảo rằng toàn bộ cây được duyệt theo thứ tự tăng dần.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Mỗi nút cha luôn có giá trị lớn hơn tất cả các nút con của nó, đảm bảo thứ tự tăng dần.** Tuyên bố này mô tả thuộc tính của một Max-Heap, không phải BST. Trong BST, nút cha có thể lớn hơn hoặc nhỏ hơn các nút con của nó tùy thuộc vào việc chúng nằm ở cây con trái hay phải. Cụ thể, nút cha luôn lớn hơn các nút trong cây con trái của nó nhưng nhỏ hơn các nút trong cây con phải của nó.\n*   **Cây được cân bằng hoàn hảo, đảm bảo rằng việc duyệt sẽ đi qua các nút theo một trình tự có thể dự đoán được.** Mặc dù một cây cân bằng có thể cải thiện hiệu suất của các thao tác BST, nhưng việc cân bằng cây không phải là một thuộc tính bắt buộc để duyệt Inorder tạo ra các khóa theo thứ tự tăng dần. Ngay cả một BST không cân bằng cũng sẽ tạo ra các khóa đã sắp xếp khi duyệt Inorder, miễn là nó tuân thủ thuộc tính cơ bản của BST.\n*   **Thứ tự duyệt Inorder luôn truy cập cây con trái, sau đó là nút gốc, và cuối cùng là cây con phải.** Mặc dù đây là định nghĩa chính xác của thuật toán duyệt Inorder, nhưng nó chỉ mô tả cách duyệt được thực hiện chứ không phải thuộc tính cốt lõi của BST khiến kết quả được sắp xếp. Câu trả lời đúng giải thích *tại sao* việc áp dụng thuật toán duyệt Inorder lên một BST lại tạo ra kết quả đã sắp xếp, bằng cách đề cập đến mối quan hệ giá trị giữa nút cha và các cây con của nó.",
+      "topic": {
+        "name": "Ý nghĩa của duyệt cây Inorder trong BST",
+        "description": "Chủ đề này đánh giá sự hiểu biết của học sinh về duyệt cây theo thứ tự (inorder traversal) trong BST (Tuần 6). Học sinh cần phân tích kết quả của việc duyệt inorder, nhận ra rằng nó tạo ra các khóa theo thứ tự tăng dần. Chủ đề này có thể liên hệ gián tiếp với các thuật toán sắp xếp từ Tuần 2, 3, 4, 5.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi so sánh Heap nhị phân và Cây tìm kiếm nhị phân (BST) về nguyên tắc duy trì thứ tự giữa các nút, điểm khác biệt chính yếu nào được nhận thấy?",
+      "answer": "Heap nhị phân chỉ đảm bảo mối quan hệ thứ tự giữa nút cha và con, trong khi BST đảm bảo thứ tự tổng thể (con trái < cha < con phải) giữa các nút.",
+      "distractors": [
+        "Heap nhị phân duy trì thứ tự tăng dần hoặc giảm dần giữa tất cả các nút, trong khi BST chỉ sắp xếp các nút theo cấp độ.",
+        "Cả Heap nhị phân và BST đều đảm bảo thứ tự tổng thể giữa các nút, nhưng Heap nhị phân sử dụng cấu trúc mảng còn BST sử dụng con trỏ.",
+        "Heap nhị phân đảm bảo con trái nhỏ hơn cha và con phải lớn hơn cha, tương tự như BST nhưng không có quy tắc nghiêm ngặt về vị trí."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Heap nhị phân chỉ đảm bảo mối quan hệ thứ tự giữa nút cha và con, trong khi BST đảm bảo thứ tự tổng thể (con trái < cha < con phải) giữa các nút.\" là chính xác vì nó nêu bật sự khác biệt cơ bản trong nguyên tắc duy trì thứ tự của hai cấu trúc. Trong Heap nhị phân (min-heap hoặc max-heap), mối quan hệ thứ tự chỉ tồn tại giữa nút cha và các nút con trực tiếp của nó (ví dụ: trong min-heap, cha <= con). Không có mối quan hệ thứ tự bắt buộc giữa các nút con hoặc giữa các nút ở các nhánh khác nhau. Ngược lại, Cây tìm kiếm nhị phân (BST) duy trì một thứ tự tổng thể nghiêm ngặt: tất cả các nút trong cây con bên trái của một nút đều nhỏ hơn nút đó, và tất cả các nút trong cây con bên phải đều lớn hơn nút đó. Điều này cho phép tìm kiếm, chèn và xóa hiệu quả dựa trên giá trị.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **\"Heap nhị phân duy trì thứ tự tăng dần hoặc giảm dần giữa tất cả các nút, trong khi BST chỉ sắp xếp các nút theo cấp độ.\"** là sai. Heap nhị phân không duy trì thứ tự tăng dần hoặc giảm dần giữa *tất cả* các nút; nó chỉ đảm bảo mối quan hệ cha-con. Ví dụ, trong một min-heap, nút gốc là nhỏ nhất, nhưng các nút ở cấp độ sâu hơn không nhất thiết phải được sắp xếp theo thứ tự tăng dần. BST cũng không chỉ sắp xếp các nút theo cấp độ; nó sắp xếp chúng theo giá trị để duy trì thuộc tính tìm kiếm.\n\n*   **\"Cả Heap nhị phân và BST đều đảm bảo thứ tự tổng thể giữa các nút, nhưng Heap nhị phân sử dụng cấu trúc mảng còn BST sử dụng con trỏ.\"** là sai. Như đã giải thích, Heap nhị phân không đảm bảo thứ tự tổng thể. Mặc dù đúng là Heap nhị phân thường được triển khai bằng mảng và BST bằng con trỏ, đây là sự khác biệt về *triển khai* chứ không phải sự khác biệt chính yếu về *nguyên tắc duy trì thứ tự* giữa các nút.\n\n*   **\"Heap nhị phân đảm bảo con trái nhỏ hơn cha và con phải lớn hơn cha, tương tự như BST nhưng không có quy tắc nghiêm ngặt về vị trí.\"** là sai. Đây là thuộc tính của BST, không phải Heap nhị phân. Trong Heap nhị phân (ví dụ, min-heap), cả hai nút con đều phải lớn hơn hoặc bằng nút cha, nhưng không có quy tắc nào về việc con trái nhỏ hơn cha và con phải lớn hơn cha. Ngoài ra, Heap nhị phân có quy tắc nghiêm ngặt về cấu trúc (cây nhị phân hoàn chỉnh) và vị trí các nút để đảm bảo hiệu quả.",
+      "topic": {
+        "name": "So sánh Heap nhị phân và BST (Liên tuần)",
+        "description": "Chủ đề này yêu cầu học sinh phân tích và so sánh hai cấu trúc dữ liệu dựa trên cây: Heap nhị phân từ Tuần 5 và Cây tìm kiếm nhị phân từ Tuần 6. Các điểm so sánh có thể bao gồm cấu trúc, nguyên tắc duy trì thứ tự (tức là mối quan hệ giữa nút cha và con), và mục đích sử dụng chính của mỗi cấu trúc.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Dựa trên việc xóa Hibbard trong Cây Tìm kiếm Nhị phân có thể dẫn đến hình dạng cây không cân bằng, gây ra hiệu suất trung bình kém (ví dụ: √N mỗi thao tác), hãy đánh giá mối liên hệ sâu sắc nhất giữa vấn đề này và kịch bản xấu nhất của thuật toán Quicksort.",
+      "answer": "Cả hai thuật toán đều chịu ảnh hưởng tiêu cực từ việc tạo ra các phân vùng hoặc cấu trúc dữ liệu mất cân bằng nghiêm trọng.",
+      "distractors": [
+        "Vấn đề nằm ở việc cả hai đều yêu cầu bộ nhớ bổ sung đáng kể để duy trì hiệu suất, dẫn đến chi phí không gian cao.",
+        "Cả hai đều liên quan đến việc lựa chọn một phần tử trục không tối ưu, làm giảm hiệu quả của các phép toán tiếp theo.",
+        "Điểm chung là sự phụ thuộc vào các phép toán đệ quy, có thể gây ra tràn ngăn xếp trong các trường hợp xấu nhất."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Cả hai thuật toán đều chịu ảnh hưởng tiêu cực từ việc tạo ra các phân vùng hoặc cấu trúc dữ liệu mất cân bằng nghiêm trọng.\" vì cả việc xóa Hibbard trong Cây Tìm kiếm Nhị phân (BST) và thuật toán Quicksort đều gặp vấn đề về hiệu suất khi cấu trúc dữ liệu hoặc các phân vùng trở nên mất cân bằng. Trong BST, việc xóa Hibbard có thể dẫn đến cây bị lệch, khiến các thao tác tìm kiếm, chèn, xóa có độ phức tạp thời gian trung bình là O(√N) thay vì O(log N) lý tưởng. Tương tự, trong Quicksort, nếu việc chọn phần tử trục (pivot) liên tục tạo ra các phân vùng mất cân bằng (ví dụ: một phân vùng rất lớn và một phân vùng rất nhỏ), độ phức tạp thời gian của thuật toán sẽ suy biến từ O(N log N) trung bình thành O(N^2) trong trường hợp xấu nhất. Cả hai trường hợp đều minh họa rằng sự mất cân bằng trong cấu trúc dữ liệu hoặc quá trình phân chia là nguyên nhân cốt lõi dẫn đến hiệu suất kém.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- \"Vấn đề nằm ở việc cả hai đều yêu cầu bộ nhớ bổ sung đáng kể để duy trì hiệu suất, dẫn đến chi phí không gian cao.\" là sai. Mặc dù một số biến thể của Quicksort có thể sử dụng bộ nhớ đệ quy, vấn đề chính của cả Hibbard deletion và Quicksort trong trường hợp xấu nhất không phải là chi phí không gian mà là chi phí thời gian do sự mất cân bằng. Hibbard deletion không yêu cầu bộ nhớ bổ sung đáng kể.\n- \"Cả hai đều liên quan đến việc lựa chọn một phần tử trục không tối ưu, làm giảm hiệu quả của các phép toán tiếp theo.\" là sai. Mặc dù Quicksort thực sự bị ảnh hưởng bởi việc chọn phần tử trục không tối ưu, dẫn đến các phân vùng mất cân bằng, nhưng Hibbard deletion không liên quan đến khái niệm \"phần tử trục\". Vấn đề của Hibbard deletion là cách nó thay thế nút bị xóa có thể làm mất cân bằng hình dạng cây, không phải do chọn một phần tử trục.\n- \"Điểm chung là sự phụ thuộc vào các phép toán đệ quy, có thể gây ra tràn ngăn xếp trong các trường hợp xấu nhất.\" là sai. Quicksort là một thuật toán đệ quy và có thể gặp tràn ngăn xếp trong trường hợp xấu nhất. Tuy nhiên, Hibbard deletion không phải là một thuật toán đệ quy theo cách tương tự và vấn đề hiệu suất của nó không phải do tràn ngăn xếp mà là do hình dạng cây bị mất cân bằng.",
+      "topic": {
+        "name": "Đánh giá nhược điểm của Hibbard deletion và tương quan với Quicksort (Liên tuần)",
+        "description": "Chủ đề này đòi hỏi khả năng đánh giá sâu sắc về thuật toán xóa Hibbard trong BST từ Tuần 6 và liên hệ nó với các vấn đề hiệu suất của Quicksort trong trường hợp xấu nhất (Tuần 4). Học sinh cần hiểu tại sao Hibbard deletion có thể dẫn đến hiệu suất kém (ví dụ: √N mỗi thao tác) và cách hình dạng cây không cân bằng có thể tương tự như kịch bản xấu nhất của Quicksort.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    }
+  ]
+}

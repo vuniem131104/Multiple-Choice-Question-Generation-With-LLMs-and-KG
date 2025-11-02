@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Cây quyết định là gì?",
+            "answer": "Một mô hình phân loại sử dụng cấu trúc cây để đưa ra quyết định.",
+            "distractors": [
+                "Một loại cây thực vật trong tự nhiên.",
+                "Một thuật toán tìm kiếm trong cơ sở dữ liệu.",
+                "Một phương pháp thống kê để phân tích dữ liệu."
+            ],
+            "explanation": "Cây quyết định là một mô hình phân loại mà trong đó các quyết định được đưa ra dựa trên các điều kiện được xác định tại các nút trong cây."
+        },
+        {
+            "question": "Trong cây quyết định, nút gốc là gì?",
+            "answer": "Nút đầu tiên của cây, nơi bắt đầu quá trình phân loại.",
+            "distractors": [
+                "Nút cuối cùng của cây, nơi đưa ra quyết định cuối cùng.",
+                "Một nút không có bất kỳ nhánh nào.",
+                "Một nút chứa thông tin về tất cả các lớp."
+            ],
+            "explanation": "Nút gốc là nút đầu tiên trong cây quyết định, nơi mà tất cả các quyết định phân loại bắt đầu."
+        },
+        {
+            "question": "Thuật toán Hunt được sử dụng để làm gì?",
+            "answer": "Xây dựng cây quyết định từ dữ liệu huấn luyện.",
+            "distractors": [
+                "Tính toán độ không thuần khiết của nút.",
+                "Phân loại dữ liệu theo các lớp khác nhau.",
+                "Tối ưu hóa hàm mục tiêu trong hồi quy."
+            ],
+            "explanation": "Thuật toán Hunt là một phương pháp để xây dựng cây quyết định từ dữ liệu huấn luyện, giúp xác định cách phân chia dữ liệu."
+        },
+        {
+            "question": "Gain Ratio được sử dụng để khắc phục nhược điểm của chỉ số nào?",
+            "answer": "Information Gain.",
+            "distractors": [
+                "Chỉ số Gini.",
+                "Entropy.",
+                "Sai số phân loại."
+            ],
+            "explanation": "Gain Ratio được phát triển để điều chỉnh các vấn đề của Information Gain, đặc biệt là trong các trường hợp có nhiều giá trị thuộc tính."
+        },
+        {
+            "question": "Chỉ số Gini được sử dụng để đo lường điều gì trong cây quyết định?",
+            "answer": "Độ không thuần khiết của một nút.",
+            "distractors": [
+                "Số lượng nút trong cây.",
+                "Chi phí tính toán của thuật toán.",
+                "Độ chính xác của mô hình."
+            ],
+            "explanation": "Chỉ số Gini là một phương pháp đo lường độ không thuần khiết của một nút trong cây quyết định, giúp xác định chất lượng của phân chia."
+        },
+        {
+            "question": "Sai số phân loại tại một nút trong cây quyết định được tính toán như thế nào?",
+            "answer": "Dựa trên tần suất của các lớp trong nút đó.",
+            "distractors": [
+                "Bằng cách so sánh với các nút khác.",
+                "Dựa trên số lượng dữ liệu huấn luyện.",
+                "Bằng cách sử dụng chỉ số Gini."
+            ],
+            "explanation": "Sai số phân loại được tính toán dựa trên tần suất của các lớp trong nút, cho thấy mức độ chính xác của phân loại tại nút đó."
+        },
+        {
+            "question": "Một trong những ứng dụng thực tế của cây quyết định là gì?",
+            "answer": "Phân loại khách hàng vỡ nợ.",
+            "distractors": [
+                "Dự đoán thời tiết.",
+                "Phân tích dữ liệu hình ảnh.",
+                "Tối ưu hóa quy trình sản xuất."
+            ],
+            "explanation": "Cây quyết định thường được sử dụng trong các ứng dụng thực tế như phân loại khách hàng vỡ nợ, giúp doanh nghiệp đưa ra quyết định dựa trên dữ liệu."
+        },
+        {
+            "question": "Sự khác biệt chính giữa hồi quy logistic và cây quyết định là gì?",
+            "answer": "Hồi quy logistic sử dụng mô hình tuyến tính, trong khi cây quyết định sử dụng cấu trúc cây phân loại.",
+            "distractors": [
+                "Cả hai đều là mô hình phi tuyến.",
+                "Hồi quy logistic không thể xử lý dữ liệu phân loại.",
+                "Cây quyết định không thể xử lý dữ liệu liên tục."
+            ],
+            "explanation": "Hồi quy logistic là một mô hình tuyến tính trong khi cây quyết định sử dụng cấu trúc cây để phân loại, cho phép xử lý các mối quan hệ phi tuyến."
+        }
+    ]
+}

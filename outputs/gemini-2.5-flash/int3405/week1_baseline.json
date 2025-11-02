@@ -1,0 +1,92 @@
+{
+    "questions": [
+        {
+            "question": "Đâu là định nghĩa chính xác nhất về học có giám sát (Supervised Learning)?",
+            "answer": "Học có giám sát là một loại thuật toán học máy sử dụng dữ liệu đã được gán nhãn (labeled data) để huấn luyện mô hình, với mục tiêu dự đoán đầu ra cho dữ liệu mới chưa được gán nhãn.",
+            "distractors": [
+                "Học có giám sát là một loại thuật toán học máy sử dụng dữ liệu chưa được gán nhãn (unlabeled data) để tìm kiếm cấu trúc ẩn trong dữ liệu.",
+                "Học có giám sát là một phương pháp học máy mà mô hình tương tác với môi trường và học cách đưa ra quyết định thông qua phần thưởng hoặc hình phạt.",
+                "Học có giám sát là một kỹ thuật học máy chỉ áp dụng cho các bài toán phân loại, không bao gồm hồi quy.",
+                "Học có giám sát là quá trình mà con người giám sát trực tiếp việc học của máy tính trong thời gian thực."
+            ],
+            "explanation": "Học có giám sát đặc trưng bởi việc sử dụng dữ liệu huấn luyện đã có sẵn các cặp đầu vào-đầu ra (dữ liệu gán nhãn). Mục tiêu là học một ánh xạ từ đầu vào đến đầu ra để có thể dự đoán chính xác cho dữ liệu mới. Các lựa chọn khác mô tả học không giám sát, học tăng cường hoặc định nghĩa sai lệch về học có giám sát."
+        },
+        {
+            "question": "Trong hồi quy tuyến tính đơn biến, hàm giả thuyết h(x) được biểu diễn như thế nào?",
+            "answer": "h(x) = w0 + w1x",
+            "distractors": [
+                "h(x) = w0x + w1",
+                "h(x) = w0x",
+                "h(x) = w1x",
+                "h(x) = w0 + w1x^2"
+            ],
+            "explanation": "Trong hồi quy tuyến tính đơn biến, hàm giả thuyết có dạng một đường thẳng, được biểu diễn là h(x) = w0 + w1x, trong đó w0 là hệ số chặn (intercept) và w1 là hệ số góc (slope) của đường thẳng."
+        },
+        {
+            "question": "Mục đích chính của hàm chi phí J(w0, w1) trong hồi quy tuyến tính là gì?",
+            "answer": "Đo lường mức độ lỗi giữa các giá trị dự đoán của mô hình và các giá trị thực tế, và được sử dụng để tìm các tham số w0, w1 tối ưu bằng cách tối thiểu hóa nó.",
+            "distractors": [
+                "Đảm bảo rằng mô hình không bị quá khớp (overfitting) với dữ liệu huấn luyện.",
+                "Tăng tốc độ hội tụ của thuật toán Gradient Descent.",
+                "Xác định độ phức tạp của mô hình hồi quy tuyến tính.",
+                "Chỉ ra số lượng đặc trưng cần thiết cho mô hình."
+            ],
+            "explanation": "Hàm chi phí (Cost Function), thường là Mean Squared Error (MSE) trong hồi quy tuyến tính, đo lường sự khác biệt trung bình giữa các giá trị dự đoán và giá trị thực tế. Mục tiêu của việc huấn luyện mô hình là tìm các tham số w0 và w1 sao cho hàm chi phí này đạt giá trị nhỏ nhất, từ đó mô hình có hiệu suất tốt nhất."
+        },
+        {
+            "question": "Điều gì xảy ra nếu tốc độ học (learning rate) α trong thuật toán Gradient Descent quá lớn?",
+            "answer": "Thuật toán có thể không hội tụ hoặc phân kỳ, vượt qua điểm cực tiểu và không bao giờ đạt được giá trị tối ưu.",
+            "distractors": [
+                "Thuật toán sẽ hội tụ rất nhanh đến điểm cực tiểu toàn cục.",
+                "Thuật toán sẽ hội tụ chậm hơn nhưng đảm bảo đạt được điểm cực tiểu toàn cục.",
+                "Mô hình sẽ bị quá khớp (overfitting) với dữ liệu huấn luyện.",
+                "Mô hình sẽ bị thiếu khớp (underfitting) với dữ liệu huấn luyện."
+            ],
+            "explanation": "Nếu tốc độ học α quá lớn, mỗi bước cập nhật tham số sẽ quá lớn, khiến thuật toán 'nhảy' qua điểm cực tiểu và có thể phân kỳ, không bao giờ đạt được giá trị tối ưu. Ngược lại, α quá nhỏ sẽ làm chậm quá trình hội tụ."
+        },
+        {
+            "question": "Cho một mô hình hồi quy tuyến tính đơn biến h(x) = w0 + w1x. Giả sử w0 = 1 và w1 = 0.5. Nếu có một điểm dữ liệu huấn luyện (x=4, y=5), hãy tính giá trị của (h(x) - y)^2 cho điểm dữ liệu này.",
+            "answer": "4",
+            "distractors": [
+                "1",
+                "2",
+                "9",
+                "0"
+            ],
+            "explanation": "Với h(x) = w0 + w1x, w0 = 1, w1 = 0.5 và x = 4, ta có h(4) = 1 + 0.5 * 4 = 1 + 2 = 3. Giá trị thực tế y = 5. Vậy (h(x) - y)^2 = (3 - 5)^2 = (-2)^2 = 4."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản nhất giữa hồi quy tuyến tính đơn biến và hồi quy tuyến tính đa biến là gì?",
+            "answer": "Hồi quy đơn biến sử dụng một biến đầu vào (đặc trưng) duy nhất, trong khi hồi quy đa biến sử dụng nhiều biến đầu vào (nhiều đặc trưng).",
+            "distractors": [
+                "Hồi quy đơn biến chỉ có thể dự đoán các giá trị liên tục, còn hồi quy đa biến có thể dự đoán cả giá trị liên tục và rời rạc.",
+                "Hồi quy đơn biến luôn cho kết quả chính xác hơn hồi quy đa biến.",
+                "Hàm giả thuyết của hồi quy đơn biến là tuyến tính, còn của hồi quy đa biến là phi tuyến tính.",
+                "Hồi quy đơn biến không cần hàm chi phí, trong khi hồi quy đa biến cần."
+            ],
+            "explanation": "Sự khác biệt cốt lõi nằm ở số lượng biến đầu vào (đặc trưng). Hồi quy đơn biến (univariate) chỉ xem xét một đặc trưng để dự đoán đầu ra, trong khi hồi quy đa biến (multivariate) sử dụng nhiều đặc trưng để đưa ra dự đoán. Cả hai đều dự đoán giá trị liên tục và sử dụng hàm chi phí."
+        },
+        {
+            "question": "Đâu là một nhược điểm đáng kể của thuật toán Gradient Descent so với Phương trình chuẩn (Normal Equation) khi số lượng đặc trưng (n) rất lớn?",
+            "answer": "Gradient Descent yêu cầu lựa chọn tốc độ học (α) và có thể hội tụ chậm hoặc không hội tụ nếu α không phù hợp, trong khi Phương trình chuẩn không cần α và tìm ra nghiệm chính xác trong một bước.",
+            "distractors": [
+                "Gradient Descent luôn yêu cầu nhiều bộ nhớ hơn Phương trình chuẩn.",
+                "Gradient Descent không thể xử lý các tập dữ liệu có nhiều đặc trưng.",
+                "Gradient Descent luôn tìm ra nghiệm tối ưu toàn cục, còn Phương trình chuẩn có thể bị mắc kẹt ở cực tiểu cục bộ.",
+                "Gradient Descent không thể áp dụng cho các mô hình hồi quy tuyến tính."
+            ],
+            "explanation": "Một nhược điểm chính của Gradient Descent là sự phụ thuộc vào việc chọn tốc độ học α, điều này có thể ảnh hưởng lớn đến hiệu suất và khả năng hội tụ. Nếu α không được chọn đúng, thuật toán có thể hội tụ rất chậm hoặc thậm chí phân kỳ. Phương trình chuẩn không có vấn đề này vì nó tính toán nghiệm chính xác một cách trực tiếp. Tuy nhiên, Phương trình chuẩn lại gặp vấn đề về hiệu suất tính toán khi số lượng đặc trưng n rất lớn do yêu cầu tính toán nghịch đảo ma trận."
+        },
+        {
+            "question": "Trong trường hợp nào, Phương trình chuẩn (Normal Equation) thường được ưu tiên hơn Gradient Descent để tìm tham số tối ưu cho hồi quy tuyến tính?",
+            "answer": "Khi số lượng đặc trưng (n) tương đối nhỏ (ví dụ: n < 10.000), vì nó cung cấp nghiệm chính xác mà không cần chọn tốc độ học.",
+            "distractors": [
+                "Khi số lượng mẫu huấn luyện (m) rất lớn, vì nó có hiệu suất tính toán tốt hơn.",
+                "Khi hàm chi phí là phi lồi (non-convex).",
+                "Khi cần một giải pháp lặp để theo dõi quá trình hội tụ.",
+                "Khi có nhiều đặc trưng tương quan tuyến tính cao."
+            ],
+            "explanation": "Phương trình chuẩn tính toán nghiệm chính xác trong một bước và không yêu cầu lựa chọn tốc độ học. Tuy nhiên, nó liên quan đến việc tính toán nghịch đảo ma trận X^T X, có độ phức tạp O(n^3). Do đó, nó hiệu quả hơn Gradient Descent khi số lượng đặc trưng n nhỏ. Khi n lớn (ví dụ: n > 10.000), Gradient Descent thường được ưu tiên hơn do hiệu quả tính toán tốt hơn mặc dù là một phương pháp lặp."
+        }
+    ]
+}

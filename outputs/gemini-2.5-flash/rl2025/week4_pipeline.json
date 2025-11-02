@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong Học tăng cường, Kiểm soát không mô hình (Model-Free Control) học hỏi chủ yếu từ đâu?",
+      "answer": "Kinh nghiệm đã lấy mẫu",
+      "distractors": [
+        "Mô hình môi trường đã biết",
+        "Các quy tắc được lập trình sẵn",
+        "Phần thưởng tối đa có thể"
+      ],
+      "explanation": "Trong Học tăng cường, Kiểm soát không mô hình (Model-Free Control) học hỏi chủ yếu từ **Kinh nghiệm đã lấy mẫu**.\n\n**Tại sao \"Kinh nghiệm đã lấy mẫu\" là đúng:**\nKiểm soát không mô hình, đúng như tên gọi, không dựa vào một mô hình môi trường đã biết. Thay vào đó, nó học cách tối ưu hóa hành vi của tác nhân bằng cách tương tác trực tiếp với môi trường và thu thập kinh nghiệm dưới dạng các bộ ba (trạng thái, hành động, phần thưởng, trạng thái tiếp theo). Kinh nghiệm này được \"lấy mẫu\" từ các tương tác thực tế và được sử dụng để ước tính các giá trị hành động hoặc chính sách tối ưu.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **Mô hình môi trường đã biết:** Đây là cơ sở của Kiểm soát dựa trên mô hình (Model-Based Control), không phải Kiểm soát không mô hình. Kiểm soát không mô hình được sử dụng khi mô hình môi trường không xác định hoặc quá phức tạp để xây dựng.\n*   **Các quy tắc được lập trình sẵn:** Học tăng cường nói chung, và Kiểm soát không mô hình nói riêng, là về việc học hỏi thông qua thử và sai, không phải tuân theo các quy tắc được lập trình sẵn. Nếu có các quy tắc được lập trình sẵn, đó sẽ là một hệ thống dựa trên quy tắc, không phải Học tăng cường.\n*   **Phần thưởng tối đa có thể:** Mặc dù mục tiêu cuối cùng của Học tăng cường là tối đa hóa tổng phần thưởng tích lũy, nhưng \"phần thưởng tối đa có thể\" không phải là nguồn học hỏi. Thay vào đó, tác nhân học cách đạt được phần thưởng tối đa thông qua việc thu thập và phân tích kinh nghiệm đã lấy mẫu.\n",
+      "topic": {
+        "name": "Khái niệm Kiểm soát không mô hình",
+        "description": "Nắm vững định nghĩa và mục tiêu chính của Kiểm soát không mô hình trong Học tăng cường, bao gồm các trường hợp mà mô hình MDP không xác định hoặc quá lớn để sử dụng trực tiếp. Học sinh nên hiểu được vai trò của việc học từ kinh nghiệm đã lấy mẫu.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Nếu chính sách được sử dụng để tạo ra dữ liệu kinh nghiệm cũng là chính sách đang được cải thiện, phương pháp học tăng cường đó được gọi là gì?",
+      "answer": "Học theo chính sách (On-policy learning)",
+      "distractors": [
+        "Học ngoài chính sách (Off-policy learning)",
+        "Học dựa trên mô hình (Model-based learning)",
+        "Học không mô hình (Model-free learning)"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Học theo chính sách (On-policy learning)**. Trong học tăng cường, \"học theo chính sách\" đề cập đến phương pháp mà chính sách được sử dụng để tạo ra dữ liệu kinh nghiệm (ví dụ: các hành động được thực hiện trong môi trường) cũng chính là chính sách đang được cải thiện hoặc tối ưu hóa. Điều này có nghĩa là tác nhân học hỏi trực tiếp từ các tương tác của chính nó với môi trường dựa trên chính sách hiện tại của nó.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Học ngoài chính sách (Off-policy learning)** là sai vì nó mô tả một tình huống trong đó chính sách được sử dụng để tạo ra dữ liệu kinh nghiệm (chính sách hành vi) khác với chính sách đang được cải thiện (chính sách mục tiêu). Điều này cho phép tác nhân học hỏi từ kinh nghiệm được tạo ra bởi một chính sách khác, hoặc thậm chí từ dữ liệu lịch sử.\n*   **Học dựa trên mô hình (Model-based learning)** là sai vì nó phân loại các phương pháp học tăng cường dựa trên việc chúng có xây dựng một mô hình của môi trường hay không. Học dựa trên mô hình xây dựng một mô hình để dự đoán kết quả của các hành động, sau đó sử dụng mô hình đó để lập kế hoạch hoặc học hỏi. Nó không trực tiếp liên quan đến việc chính sách tạo ra kinh nghiệm có phải là chính sách đang được cải thiện hay không.\n*   **Học không mô hình (Model-free learning)** là sai vì nó cũng phân loại các phương pháp học tăng cường dựa trên việc chúng có xây dựng một mô hình của môi trường hay không. Học không mô hình học trực tiếp từ kinh nghiệm mà không xây dựng một mô hình rõ ràng của môi trường. Giống như học dựa trên mô hình, nó không trực tiếp giải quyết mối quan hệ giữa chính sách tạo ra kinh nghiệm và chính sách đang được cải thiện.",
+      "topic": {
+        "name": "Phân biệt Học theo Chính sách và Ngoài Chính sách",
+        "description": "Hiểu sự khác biệt cơ bản giữa học theo chính sách (on-policy) và học ngoài chính sách (off-policy). Học sinh cần phân biệt được cách kinh nghiệm được tạo ra và sử dụng để cập nhật chính sách mục tiêu trong từng phương pháp, bao gồm các ví dụ thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong nguyên tắc thăm dò ε-tham lam, biến ε (epsilon) đại diện cho điều gì?",
+      "answer": "Xác suất để thực hiện hành động thăm dò ngẫu nhiên.",
+      "distractors": [
+        "Số lượng hành động tối ưu đã được thực hiện.",
+        "Tỷ lệ phần trăm thời gian hệ thống khai thác các hành động tốt nhất.",
+        "Mức độ phần thưởng mà tác nhân nhận được từ môi trường."
+      ],
+      "explanation": "Trong nguyên tắc thăm dò ε-tham lam, biến ε (epsilon) đại diện cho **xác suất để thực hiện hành động thăm dò ngẫu nhiên**. Đây là câu trả lời đúng vì ε là một tham số được sử dụng để kiểm soát sự cân bằng giữa thăm dò (exploration) và khai thác (exploitation). Với xác suất ε, tác nhân sẽ chọn một hành động ngẫu nhiên (thăm dò) để khám phá các khả năng mới, ngay cả khi hành động đó không phải là hành động được cho là tốt nhất hiện tại. Với xác suất 1-ε, tác nhân sẽ chọn hành động được cho là tốt nhất dựa trên kiến thức hiện có (khai thác).\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n*   **Số lượng hành động tối ưu đã được thực hiện** không phải là ý nghĩa của ε. ε là một xác suất, không phải là một số lượng hành động.\n*   **Tỷ lệ phần trăm thời gian hệ thống khai thác các hành động tốt nhất** là 1-ε, không phải ε. ε đại diện cho xác suất thăm dò, trong khi 1-ε đại diện cho xác suất khai thác.\n*   **Mức độ phần thưởng mà tác nhân nhận được từ môi trường** là kết quả của hành động, không phải là tham số ε. ε là một tham số điều khiển hành vi lựa chọn hành động, không phải là giá trị của phần thưởng.",
+      "topic": {
+        "name": "Nguyên tắc Thăm dò ε-tham lam",
+        "description": "Mô tả cách thức hoạt động của thăm dò ε-tham lam (ε-Greedy Exploration) để cân bằng giữa thăm dò và khai thác. Học sinh cần biết công thức tính xác suất lựa chọn hành động và các thành phần của nó, cũng như vai trò của nó trong việc đảm bảo thăm dò liên tục.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán Sarsa, nếu tác nhân ở trạng thái S, thực hiện hành động A, nhận phần thưởng R, chuyển đến trạng thái S' và chọn hành động A' theo chính sách hiện tại, giá trị nào của cặp (S', A') sẽ được sử dụng để ước tính Q-value mục tiêu cho việc cập nhật Q(S,A)?",
+      "answer": "Giá trị Q(S', A') được sử dụng làm ước tính Q-value tương lai.",
+      "distractors": [
+        "Giá trị Q(S, A) hiện tại được sử dụng để cập nhật chính nó, phản ánh sự học hỏi từ kinh nghiệm.",
+        "Phần thưởng R nhận được được sử dụng trực tiếp làm ước tính Q-value mục tiêu.",
+        "Giá trị Q(S', A_max) được sử dụng, nơi A_max là hành động tối ưu trong S'."
+      ],
+      "explanation": "Trong thuật toán Sarsa, công thức cập nhật Q-value cho cặp (S, A) là: $Q(S, A) \\leftarrow Q(S, A) + \\alpha [R + \\gamma Q(S', A') - Q(S, A)]$.\n\n**Tại sao \"Giá trị Q(S', A') được sử dụng làm ước tính Q-value tương lai\" là đúng:**\nTrong Sarsa, việc cập nhật Q(S, A) dựa trên kinh nghiệm thực tế của tác nhân. Sau khi thực hiện hành động A từ trạng thái S, nhận phần thưởng R và chuyển đến trạng thái S', tác nhân *chọn* hành động A' tiếp theo dựa trên chính sách hiện tại (thường là chính sách $\\epsilon$-greedy). Giá trị Q(S', A') này chính là ước tính Q-value tương lai *theo chính sách hiện tại* mà tác nhân sẽ tuân theo. Đây là đặc điểm cốt lõi của Sarsa, một thuật toán học theo chính sách (on-policy), nơi nó học giá trị của chính sách mà nó đang sử dụng để điều khiển hành vi.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **\"Giá trị Q(S, A) hiện tại được sử dụng để cập nhật chính nó, phản ánh sự học hỏi từ kinh nghiệm.\"**\n    Mặc dù Q(S, A) hiện tại là một phần của công thức cập nhật (được trừ đi trong thuật ngữ sai số TD), nó không phải là ước tính Q-value mục tiêu. Ước tính mục tiêu là $R + \\gamma Q(S', A')$, đại diện cho tổng phần thưởng chiết khấu dự kiến từ thời điểm hiện tại trở đi. Q(S, A) hiện tại được sử dụng để tính toán sai số dự đoán, không phải là mục tiêu.\n\n*   **\"Phần thưởng R nhận được được sử dụng trực tiếp làm ước tính Q-value mục tiêu.\"**\n    Phần thưởng R là một thành phần quan trọng của ước tính Q-value mục tiêu, nhưng nó không phải là toàn bộ ước tính. Q-value đại diện cho tổng phần thưởng chiết khấu dự kiến trong tương lai, không chỉ phần thưởng tức thời. Do đó, ước tính mục tiêu phải bao gồm cả phần thưởng tức thời R và giá trị chiết khấu của trạng thái/hành động tiếp theo ($ \\gamma Q(S', A')$).\n\n*   **\"Giá trị Q(S', A_max) được sử dụng, nơi A_max là hành động tối ưu trong S'.\"**\n    Đây là đặc điểm của thuật toán Q-learning, một thuật toán học ngoài chính sách (off-policy). Q-learning sử dụng giá trị của hành động tối ưu A_max trong trạng thái S' để ước tính Q-value mục tiêu, bất kể hành động A' nào thực sự được chọn bởi chính sách hành vi. Ngược lại, Sarsa là thuật toán on-policy, nó sử dụng giá trị của hành động A' *được chọn* bởi chính sách hiện tại.",
+      "topic": {
+        "name": "Cập nhật giá trị hành động trong Sarsa",
+        "description": "Mô tả thuật toán Sarsa, bao gồm công thức cập nhật hàm giá trị hành động Q(S,A) của nó. Học sinh cần hiểu các yếu tố tham gia vào bản cập nhật (S, A, R, S', A') và cách chúng được sử dụng để học theo chính sách. Yêu cầu kiến thức về phương pháp TD từ Tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Bằng cách nào dấu vết đủ điều kiện (eligibility traces) trong Sarsa(λ) tích hợp thông tin từ nhiều bước thời gian đã ghé thăm trong quá khứ để cải thiện việc phân bổ tín dụng và đẩy nhanh tốc độ học?",
+      "answer": "Chúng cho phép phân bổ tín dụng cho các cặp trạng thái-hành động từ nhiều bước thời gian đã ghé thăm trước đó, không chỉ bước gần nhất.",
+      "distractors": [
+        "Chúng chỉ điều chỉnh giá trị hành động cho bước thời gian hiện tại dựa trên phần thưởng nhận được ngay lập tức.",
+        "Chúng giúp tổng hợp thông tin từ tất cả các trạng thái đã ghé thăm trong một tập để tính toán giá trị cuối cùng.",
+        "Chúng cho phép thuật toán bỏ qua các bước thời gian không liên quan và chỉ tập trung vào các trạng thái quan trọng nhất."
+      ],
+      "explanation": "Dấu vết đủ điều kiện (eligibility traces) trong Sarsa(λ) là một cơ chế mạnh mẽ giúp cải thiện việc phân bổ tín dụng và đẩy nhanh tốc độ học bằng cách kết nối các cập nhật giá trị với các cặp trạng thái-hành động đã ghé thăm trong quá khứ.\n\n**Tại sao câu trả lời đúng là đúng:**\n\"Chúng cho phép phân bổ tín dụng cho các cặp trạng thái-hành động từ nhiều bước thời gian đã ghé thăm trước đó, không chỉ bước gần nhất.\" là câu trả lời đúng vì đây chính là chức năng cốt lõi của dấu vết đủ điều kiện. Thay vì chỉ cập nhật giá trị cho cặp trạng thái-hành động ngay trước khi nhận được phần thưởng (như trong Sarsa 1-bước), dấu vết đủ điều kiện duy trì một \"ký ức\" về các cặp trạng thái-hành động đã ghé thăm gần đây. Khi một phần thưởng hoặc lỗi dự đoán được quan sát, tín dụng được phân bổ không chỉ cho hành động gần nhất mà còn cho các hành động trước đó theo tỷ lệ mức độ \"đủ điều kiện\" của chúng (thường giảm dần theo thời gian). Điều này cho phép thuật toán học hỏi từ các phần thưởng bị trì hoãn hiệu quả hơn, tương tự như cách học n-bước hoặc TD(λ) hoạt động, từ đó đẩy nhanh tốc độ hội tụ.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **\"Chúng chỉ điều chỉnh giá trị hành động cho bước thời gian hiện tại dựa trên phần thưởng nhận được ngay lập tức.\"** Tùy chọn này mô tả cơ chế của thuật toán học tăng cường 1-bước cơ bản (như Sarsa 1-bước), không phải Sarsa(λ). Mục đích của dấu vết đủ điều kiện là vượt qua giới hạn của việc chỉ học từ phần thưởng ngay lập tức bằng cách phân bổ tín dụng cho các hành động trong quá khứ.\n*   **\"Chúng giúp tổng hợp thông tin từ tất cả các trạng thái đã ghé thăm trong một tập để tính toán giá trị cuối cùng.\"** Mặc dù dấu vết đủ điều kiện có liên quan đến việc tổng hợp thông tin từ quá khứ, nhưng chúng không \"tổng hợp thông tin từ tất cả các trạng thái đã ghé thăm trong một tập để tính toán giá trị cuối cùng\" theo nghĩa đen. Thay vào đó, chúng duy trì một trọng số hoặc \"dấu vết\" cho từng cặp trạng thái-hành động riêng lẻ, cho biết mức độ gần đây và thường xuyên chúng được ghé thăm. Việc tính toán giá trị cuối cùng vẫn dựa trên các cập nhật gia tăng, không phải là một tổng hợp duy nhất sau khi một tập kết thúc.\n*   **\"Chúng cho phép thuật toán bỏ qua các bước thời gian không liên quan và chỉ tập trung vào các trạng thái quan trọng nhất.\"** Tùy chọn này không chính xác. Dấu vết đủ điều kiện không \"bỏ qua\" các bước thời gian. Ngược lại, chúng tích hợp thông tin từ *nhiều* bước thời gian, gán trọng số cho chúng dựa trên mức độ liên quan (thường là độ mới). Chúng không có cơ chế để xác định và chỉ tập trung vào \"các trạng thái quan trọng nhất\" theo cách bỏ qua các trạng thái khác; tất cả các cặp trạng thái-hành động đã ghé thăm đều có thể có dấu vết đủ điều kiện.",
+      "topic": {
+        "name": "Vai trò của Dấu vết Đủ điều kiện trong Sarsa(λ)",
+        "description": "Giải thích cơ chế hoạt động của dấu vết đủ điều kiện (eligibility traces) trong Sarsa(λ). Học sinh cần hiểu cách dấu vết đủ điều kiện được sử dụng để phân bổ tín dụng cho các cặp trạng thái-hành động đã ghé thăm trong quá khứ, kết nối với khái niệm TD(λ) và n-bước từ Tuần 3 để cải thiện tốc độ học.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Sự phân biệt cốt lõi nào trong việc ước tính giá trị mục tiêu làm cho Q-Learning là thuật toán off-policy và Sarsa là thuật toán on-policy?",
+      "answer": "Q-Learning ước tính giá trị mục tiêu dựa trên hành động tối ưu tiếp theo (max Q), trong khi Sarsa dựa trên hành động được chọn bởi chính sách hiện hành (Q(S', A')).",
+      "distractors": [
+        "Q-Learning sử dụng cập nhật on-policy để khám phá môi trường, trong khi Sarsa sử dụng cập nhật off-policy để khai thác.",
+        "Q-Learning cập nhật giá trị Q sau khi thực hiện hành động, còn Sarsa cập nhật trước khi thực hiện hành động.",
+        "Q-Learning tối ưu hóa chính sách bằng cách sử dụng phương pháp Monte Carlo, trong khi Sarsa sử dụng phương pháp Temporal Difference."
+      ],
+      "explanation": "Giải thích:\n\nSự phân biệt cốt lõi giữa Q-Learning và Sarsa nằm ở cách chúng ước tính giá trị mục tiêu để cập nhật giá trị Q. **Q-Learning ước tính giá trị mục tiêu dựa trên hành động tối ưu tiếp theo (max Q), trong khi Sarsa dựa trên hành động được chọn bởi chính sách hiện hành (Q(S', A')).** Đây là lý do tại sao Q-Learning là thuật toán off-policy và Sarsa là thuật toán on-policy. Cụ thể, Q-Learning sử dụng giá trị Q lớn nhất có thể có ở trạng thái tiếp theo (max Q(S', a')) để cập nhật giá trị Q hiện tại, bất kể chính sách hiện hành thực sự chọn hành động nào. Điều này có nghĩa là nó học chính sách tối ưu một cách độc lập với chính sách đang được sử dụng để khám phá môi trường, do đó nó là off-policy. Ngược lại, Sarsa sử dụng giá trị Q của hành động *thực sự được chọn* bởi chính sách hiện hành ở trạng thái tiếp theo (Q(S', A')) để cập nhật giá trị Q hiện tại. Vì nó học chính sách dựa trên các hành động mà chính sách đó thực sự thực hiện, nó là on-policy.\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n*   **\"Q-Learning sử dụng cập nhật on-policy để khám phá môi trường, trong khi Sarsa sử dụng cập nhật off-policy để khai thác.\"** Tuyên bố này đảo ngược bản chất on-policy/off-policy của hai thuật toán. Q-Learning là off-policy và Sarsa là on-policy. Cả hai thuật toán đều có thể sử dụng các chính sách khám phá (ví dụ: epsilon-greedy) để thu thập kinh nghiệm, nhưng cách chúng *học* từ kinh nghiệm đó mới xác định chúng là on-policy hay off-policy.\n*   **\"Q-Learning cập nhật giá trị Q sau khi thực hiện hành động, còn Sarsa cập nhật trước khi thực hiện hành động.\"** Cả Q-Learning và Sarsa đều là các thuật toán học Temporal Difference (TD) và chúng đều cập nhật giá trị Q *sau khi* thực hiện một hành động và quan sát trạng thái và phần thưởng tiếp theo. Sự khác biệt không nằm ở thời điểm cập nhật mà ở cách chúng tính toán giá trị mục tiêu cho bản cập nhật đó.\n*   **\"Q-Learning tối ưu hóa chính sách bằng cách sử dụng phương pháp Monte Carlo, trong khi Sarsa sử dụng phương pháp Temporal Difference.\"** Cả Q-Learning và Sarsa đều là các thuật toán học Temporal Difference (TD). Chúng đều cập nhật giá trị Q dựa trên phần thưởng tức thời và ước tính giá trị của trạng thái tiếp theo, thay vì chờ đợi đến cuối một tập như phương pháp Monte Carlo.",
+      "topic": {
+        "name": "So sánh Q-Learning và Sarsa",
+        "description": "Phân tích và đối chiếu thuật toán Q-Learning (off-policy) với Sarsa (on-policy). Học sinh cần so sánh công thức cập nhật của chúng, chỉ ra sự khác biệt trong việc lựa chọn hành động tiếp theo cho mục tiêu ước tính (max Q vs Q(S', A')) và liên hệ với các ví dụ điển hình như Cliff Walking (Q-Learning) và Windy Gridworld (Sarsa). Yêu cầu kiến thức về Học TD từ Tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh không mô hình, mục đích chính của việc sử dụng hàm giá trị hành động Q(s,a) cho Cải thiện chính sách tham lam là gì?",
+      "answer": "Q(s,a) cho phép lựa chọn hành động tham lam trực tiếp từ một trạng thái mà không cần mô hình MDP.",
+      "distractors": [
+        "Q(s,a) giúp đánh giá giá trị của một trạng thái mà không cần biết hành động tiếp theo.",
+        "Q(s,a) đơn giản hóa việc tính toán hàm giá trị V(s) bằng cách loại bỏ nhu cầu về mô hình.",
+        "Q(s,a) cho phép ước tính xác suất chuyển đổi trạng thái mà không cần mô hình."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Q(s,a) cho phép lựa chọn hành động tham lam trực tiếp từ một trạng thái mà không cần mô hình MDP.\" là đúng vì trong bối cảnh không mô hình, chúng ta không có quyền truy cập vào xác suất chuyển đổi trạng thái hoặc phần thưởng. Hàm giá trị hành động Q(s,a) ước tính giá trị của việc thực hiện một hành động cụ thể 'a' trong một trạng thái 's' và sau đó tuân theo chính sách. Điều này cho phép chúng ta chọn hành động tham lam (hành động có giá trị Q cao nhất) trực tiếp từ trạng thái hiện tại mà không cần biết cách môi trường sẽ phản ứng (tức là không cần mô hình MDP).\n\nCác yếu tố gây nhiễu là sai vì:\n*   \"Q(s,a) giúp đánh giá giá trị của một trạng thái mà không cần biết hành động tiếp theo.\" là sai. Q(s,a) đánh giá giá trị của một cặp trạng thái-hành động, không phải chỉ riêng trạng thái. Để đánh giá giá trị của một trạng thái (V(s)), chúng ta cần biết chính sách (xác suất chọn hành động) và giá trị Q của các hành động đó.\n*   \"Q(s,a) đơn giản hóa việc tính toán hàm giá trị V(s) bằng cách loại bỏ nhu cầu về mô hình.\" là sai. Mặc dù Q(s,a) hữu ích trong bối cảnh không mô hình, việc tính toán V(s) từ Q(s,a) vẫn yêu cầu biết chính sách hiện tại (xác suất chọn các hành động khác nhau trong trạng thái đó). Hơn nữa, mục đích chính của Q(s,a) trong cải thiện chính sách tham lam là chọn hành động, không phải đơn giản hóa việc tính toán V(s).\n*   \"Q(s,a) cho phép ước tính xác suất chuyển đổi trạng thái mà không cần mô hình.\" là sai. Hàm Q(s,a) không cung cấp thông tin về xác suất chuyển đổi trạng thái. Nó ước tính tổng phần thưởng tích lũy từ một cặp trạng thái-hành động, nhưng không mô tả động lực của môi trường (tức là cách các hành động dẫn đến các trạng thái tiếp theo). Việc ước tính xác suất chuyển đổi trạng thái vẫn yêu cầu một mô hình hoặc kinh nghiệm trực tiếp với môi trường để học các chuyển đổi đó.",
+      "topic": {
+        "name": "Tối ưu hóa chính sách với Hàm Giá trị Hành động",
+        "description": "Giải thích tại sao việc sử dụng hàm giá trị hành động Q(s,a) là cần thiết cho Cải thiện chính sách tham lam (Greedy Policy Improvement) trong bối cảnh không mô hình. Học sinh cần hiểu mối quan hệ giữa đánh giá chính sách và cải thiện chính sách trong Lặp lại Chính sách Tổng quát (GPI) từ Tuần 2, và tại sao V(s) yêu cầu mô hình MDP trong khi Q(s,a) không.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Yếu tố kiến trúc nào trong Q-Learning cho phép nó học hàm giá trị hành động tối ưu q*(s,a) một cách off-policy, độc lập với chính sách hành vi đang thăm dò, điều mà Kiểm soát Monte-Carlo GLIE không thể thực hiện theo cùng một cách mà không có các ràng buộc chặt chẽ hơn về điều kiện GLIE của chính sách đó?",
+      "answer": "Q-Learning sử dụng toán tử tối đa hóa (max) trên các giá trị Q của trạng thái kế tiếp, thay vì trung bình theo chính sách hành vi.",
+      "distractors": [
+        "Q-Learning sử dụng bộ nhớ đệm kinh nghiệm để lưu trữ các chuyển đổi, cho phép nó học từ dữ liệu được thu thập off-policy.",
+        "Q-Learning cập nhật giá trị Q dựa trên giá trị Q của hành động được thực hiện trong trạng thái kế tiếp, không phải hành động tối ưu.",
+        "Q-Learning hội tụ off-policy nhờ việc sử dụng tỷ lệ tầm quan trọng để điều chỉnh các bản cập nhật giá trị Q."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Q-Learning sử dụng toán tử tối đa hóa (max) trên các giá trị Q của trạng thái kế tiếp, thay vì trung bình theo chính sách hành vi.**\n\n**Tại sao đây là câu trả lời đúng:**\nQ-Learning là một thuật toán học tăng cường off-policy vì nó cập nhật giá trị Q của một cặp trạng thái-hành động (s, a) dựa trên giá trị Q tối đa của trạng thái kế tiếp (s'). Cụ thể, công thức cập nhật Q-Learning là: $Q(s, a) \\leftarrow Q(s, a) + \\alpha [r + \\gamma \\max_{a'} Q(s', a') - Q(s, a)]$. Toán tử $\\max_{a'} Q(s', a')$ này cho phép Q-Learning ước tính giá trị của chính sách tối ưu (chính sách tham lam) trong khi vẫn thăm dò bằng một chính sách hành vi khác. Điều này có nghĩa là Q-Learning học trực tiếp hàm giá trị hành động tối ưu $q^*(s,a)$ mà không cần chính sách hành vi phải là chính sách tham lam hoặc phải hội tụ về chính sách tham lam theo cách mà Kiểm soát Monte-Carlo GLIE yêu cầu. Kiểm soát Monte-Carlo GLIE, ngược lại, ước tính giá trị của chính sách hành vi hiện tại và sau đó cải thiện chính sách đó, yêu cầu chính sách hành vi phải thỏa mãn các điều kiện GLIE (Greedy in the Limit with Infinite Exploration) để đảm bảo hội tụ về chính sách tối ưu.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Q-Learning sử dụng bộ nhớ đệm kinh nghiệm để lưu trữ các chuyển đổi, cho phép nó học từ dữ liệu được thu thập off-policy.** Mặc dù bộ nhớ đệm kinh nghiệm (experience replay) thường được sử dụng với Q-Learning (đặc biệt là trong Deep Q-Networks) để cải thiện sự ổn định và hiệu quả học tập, nó không phải là yếu tố kiến trúc cốt lõi cho phép Q-Learning học off-policy. Q-Learning về bản chất là off-policy ngay cả khi không có bộ nhớ đệm kinh nghiệm, nhờ vào toán tử tối đa hóa trong công thức cập nhật của nó. Bộ nhớ đệm kinh nghiệm chỉ là một kỹ thuật để tái sử dụng dữ liệu và phá vỡ mối tương quan trong các bản cập nhật.\n\n*   **Q-Learning cập nhật giá trị Q dựa trên giá trị Q của hành động được thực hiện trong trạng thái kế tiếp, không phải hành động tối ưu.** Điều này là không chính xác. Như đã giải thích ở trên, Q-Learning cập nhật giá trị Q dựa trên giá trị Q tối đa của trạng thái kế tiếp, tức là giá trị của hành động tối ưu trong trạng thái kế tiếp, chứ không phải hành động thực sự được thực hiện bởi chính sách hành vi trong trạng thái kế tiếp. Nếu nó dựa trên hành động được thực hiện, nó sẽ là một thuật toán on-policy như SARSA.\n\n*   **Q-Learning hội tụ off-policy nhờ việc sử dụng tỷ lệ tầm quan trọng để điều chỉnh các bản cập nhật giá trị Q.** Tỷ lệ tầm quan trọng (importance sampling) là một kỹ thuật được sử dụng trong các phương pháp Monte-Carlo off-policy để điều chỉnh các ước tính khi chính sách hành vi khác với chính sách mục tiêu. Tuy nhiên, Q-Learning không sử dụng tỷ lệ tầm quan trọng. Khả năng học off-policy của nó đến từ việc sử dụng toán tử tối đa hóa để ước tính giá trị của chính sách tối ưu một cách trực tiếp, không cần phải điều chỉnh các bản cập nhật dựa trên sự khác biệt giữa chính sách hành vi và chính sách mục tiêu.",
+      "topic": {
+        "name": "Hội tụ của Kiểm soát Monte-Carlo GLIE và Q-Learning",
+        "description": "Phân tích các điều kiện hội tụ và đặc điểm của Kiểm soát Monte-Carlo GLIE và Q-Learning. Học sinh cần so sánh cách cả hai phương pháp này hội tụ về hàm giá trị hành động tối ưu q*(s,a), thảo luận về yêu cầu thăm dò (chính sách thăm dò trong Q-Learning, điều kiện GLIE trong MC) và liên hệ với các khái niệm hội tụ của Lập trình Động từ Tuần 2 và tính chất của Monte-Carlo/TD từ Tuần 3.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.45,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    }
+  ]
+}

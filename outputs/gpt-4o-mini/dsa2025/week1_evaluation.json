@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Kiểu dữ liệu Stack và Queue",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.8,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are excellent and perfectly align with the topic and expected Bloom level (Remember/Dễ). The Pipeline question is slightly better because its distractors are more closely related to the core concept of LIFO/FIFO, making them more plausible and requiring a clearer understanding to differentiate. The Baseline's distractors (Mảng, Danh sách liên kết) are too generic and easily ruled out, making the question slightly easier than intended for a 'Remember' level."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "So sánh triển khai Stack: Danh sách liên kết và Mảng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.5,
+                "difficulty": 0.3,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant to the topic of comparing Stack implementations using linked lists and arrays, and it targets the 'Phân tích' Bloom level by asking for an advantage of one over the other. The Baseline question, however, is completely off-topic. It asks about basic Stack operations (Push) which belongs to a 'Nhớ' or 'Hiểu' level and doesn't address the comparison of implementations at all. This makes the Baseline question irrelevant and misaligned with the expected difficulty and Bloom level."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Cách thức hoạt động của thao tác 'push' và 'pop'",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.4,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question perfectly aligns with the topic, asking about the 'push' operation, and is appropriate for the 'Hiểu' Bloom level and 'Dễ' difficulty. The Baseline question is completely off-topic, asking about the difference between array and linked list implementations, which belongs to a different topic ('So sánh triển khai Stack'). This makes the Baseline question irrelevant to the current topic and misaligned with the expected Bloom level and difficulty."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Triển khai Stack bằng danh sách liên kết và hiệu suất",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant to the topic. The Pipeline question is slightly better as it directly addresses the 'worst-case time complexity' aspect of linked list implementation for Stack, which is a key part of 'hiệu suất' (performance) and aligns well with the 'Đánh giá' Bloom level. The Baseline question is also good but focuses more on when to use linked lists, which is a slightly different angle of 'Đánh giá' and 'Hiểu'. The Pipeline's distractors are also more nuanced, requiring a deeper understanding of linked list operations beyond just Stack operations."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Kết nối giữa Stack và ứng dụng thực tế",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.3,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly relevant to the topic, asking for a real-world application of Stack, and aligns with the 'Áp dụng' Bloom level and 'Dễ' difficulty. The Baseline question is completely off-topic, asking about the 'Pop' operation, which belongs to a basic 'Nhớ' or 'Hiểu' level and a different topic ('Cách thức hoạt động của thao tác 'push' và 'pop''). This makes the Baseline question irrelevant and misaligned."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Mảng có thể thay đổi kích thước trong Stack",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant and well-formulated. The Pipeline question is slightly better because it asks about the *process* of resizing, which directly addresses 'cách thức hoạt động' (how it works) and 'quy trình resize' (resizing process) mentioned in the topic description, aligning perfectly with the 'Hiểu' Bloom level. The Baseline question is also good but focuses more on *when* resizing is needed, which is a slightly less detailed aspect of 'cách thức hoạt động'."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Tác động của tự động ép kiểu trong Stack tham số hóa",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant and good. The Pipeline question is superior because it asks 'Tại sao' (Why), requiring a deeper explanation of the mechanism and benefits of autoboxing, which aligns better with the 'Đánh giá' Bloom level. The Baseline question asks 'Lỗi nào' (Which error), which is more of a 'Nhớ' or 'Hiểu' level question, even though it's related to the topic. The Pipeline's distractors also challenge a more nuanced understanding of autoboxing."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Thuật toán hai stack của Dijkstra để đánh giá biểu thức số học",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant to the topic. The Pipeline question is better because it delves into the *application* of the two stacks within the Dijkstra algorithm (when to use which stack), which directly addresses 'từng bước trong thuật toán' and 'tình huống cụ thể' as mentioned in the topic description, aligning well with the 'Áp dụng' Bloom level. The Baseline question is more of a 'Nhớ' or 'Hiểu' level question, asking for the general purpose of the algorithm, which is less challenging for an 'Áp dụng' level."
+        }
+    ]
+}

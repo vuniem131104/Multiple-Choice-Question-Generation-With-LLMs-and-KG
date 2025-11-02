@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong học máy, vấn đề cốt lõi nào sau đây liên quan đến việc đảm bảo mô hình hoạt động tốt trên dữ liệu chưa từng thấy, tránh việc học thuộc lòng dữ liệu huấn luyện?",
+            "answer": "Lý thuyết tổng quát hóa để tránh overfitting",
+            "distractors": [
+                "Xác định không gian giả thuyết",
+                "Vấn đề tối ưu hóa hàm mục tiêu",
+                "Lựa chọn thuật toán học phù hợp"
+            ],
+            "explanation": "Lý thuyết tổng quát hóa tập trung vào việc đảm bảo mô hình có khả năng dự đoán chính xác trên dữ liệu mới, chưa từng được huấn luyện, nhằm tránh hiện tượng overfitting (học thuộc lòng dữ liệu huấn luyện mà không hiểu được quy luật tổng quát)."
+        },
+        {
+            "question": "Trong Định lý Bayes, thành phần nào đại diện cho xác suất của dữ liệu quan sát được (evidence) khi biết một giả thuyết (hypothesis) cụ thể là đúng?",
+            "answer": "Xác suất khả dĩ (Likelihood)",
+            "distractors": [
+                "Xác suất tiên nghiệm (Prior)",
+                "Xác suất hậu nghiệm (Posterior)",
+                "Bằng chứng (Evidence)"
+            ],
+            "explanation": "Xác suất khả dĩ (Likelihood), ký hiệu là P(D|H), là xác suất của dữ liệu D khi giả thuyết H là đúng. Nó đo lường mức độ phù hợp của giả thuyết với dữ liệu quan sát được."
+        },
+        {
+            "question": "Ước lượng Khả dĩ Tối đa (MLE) được sử dụng để tìm các tham số của mô hình bằng cách nào?",
+            "answer": "Tối đa hóa xác suất khả dĩ của dữ liệu huấn luyện dưới mô hình đã cho.",
+            "distractors": [
+                "Tối thiểu hóa sai số bình phương trung bình của mô hình.",
+                "Tối đa hóa xác suất hậu nghiệm của các tham số.",
+                "Tối thiểu hóa độ phức tạp của mô hình để tránh overfitting."
+            ],
+            "explanation": "MLE tìm các tham số của mô hình sao cho xác suất khả dĩ (likelihood) của việc quan sát dữ liệu huấn luyện là lớn nhất. Điều này có nghĩa là MLE chọn các tham số làm cho dữ liệu quan sát được có khả năng xảy ra cao nhất dưới mô hình đó. MLE thường giả định xác suất tiên nghiệm của các tham số là bằng nhau hoặc không có thông tin tiên nghiệm."
+        },
+        {
+            "question": "Hậu quả chính của 'Lời nguyền chiều dữ liệu' trong học máy là gì?",
+            "answer": "Số lượng mẫu dữ liệu cần thiết để bao phủ không gian dữ liệu tăng theo cấp số nhân, dẫn đến không đủ mẫu.",
+            "distractors": [
+                "Các thuật toán học máy trở nên quá nhanh và khó kiểm soát.",
+                "Mô hình luôn bị underfitting do không đủ độ phức tạp.",
+                "Dữ liệu trở nên quá dễ phân tách, gây ra các vấn đề về tính ổn định của mô hình."
+            ],
+            "explanation": "Khi số chiều của dữ liệu tăng lên, không gian dữ liệu trở nên cực kỳ lớn. Để có thể 'bao phủ' không gian này một cách đầy đủ (tức là có đủ mẫu dữ liệu đại diện cho mọi vùng trong không gian), số lượng mẫu dữ liệu cần thiết sẽ tăng theo cấp số nhân. Điều này dẫn đến việc dữ liệu trở nên 'thưa thớt' trong không gian chiều cao, gây khó khăn cho các thuật toán học máy trong việc tìm ra các mẫu và mối quan hệ có ý nghĩa."
+        },
+        {
+            "question": "Giả định cốt lõi nào là nền tảng của bộ phân loại Naïve Bayes?",
+            "answer": "Các đặc trưng (features) là độc lập có điều kiện với nhau khi biết lớp (class).",
+            "distractors": [
+                "Các đặc trưng có phân phối chuẩn.",
+                "Các lớp có xác suất tiên nghiệm bằng nhau.",
+                "Mối quan hệ giữa các đặc trưng và lớp là tuyến tính."
+            ],
+            "explanation": "Giả định cốt lõi của Naïve Bayes là các đặc trưng là độc lập có điều kiện với nhau khi biết lớp. Điều này có nghĩa là, nếu chúng ta biết lớp của một điểm dữ liệu, thì giá trị của một đặc trưng không ảnh hưởng đến giá trị của các đặc trưng khác. Giả định này giúp đơn giản hóa việc tính toán P(x|Ck) từ tích của P(xi|Ck), làm cho thuật toán trở nên hiệu quả về mặt tính toán, đặc biệt với dữ liệu chiều cao, mặc dù nó hiếm khi đúng hoàn toàn trong thực tế."
+        },
+        {
+            "question": "Điểm khác biệt chính về mục đích sử dụng giữa Hồi quy tuyến tính và Hồi quy Logistic là gì?",
+            "answer": "Hồi quy tuyến tính dự đoán một giá trị liên tục, trong khi Hồi quy Logistic được sử dụng cho các bài toán phân loại nhị phân hoặc đa lớp.",
+            "distractors": [
+                "Hồi quy tuyến tính sử dụng hàm sigmoid, còn Hồi quy Logistic sử dụng hàm nhận dạng.",
+                "Hồi quy tuyến tính yêu cầu dữ liệu được chuẩn hóa, còn Hồi quy Logistic thì không.",
+                "Hồi quy tuyến tính chỉ có thể xử lý một biến độc lập, còn Hồi quy Logistic có thể xử lý nhiều biến."
+            ],
+            "explanation": "Hồi quy tuyến tính được thiết kế để dự đoán một biến phụ thuộc có giá trị liên tục (ví dụ: giá nhà, nhiệt độ). Ngược lại, Hồi quy Logistic được sử dụng cho các bài toán phân loại, nơi biến phụ thuộc là rời rạc (ví dụ: có/không, mèo/chó/chim). Hồi quy Logistic sử dụng hàm sigmoid để ánh xạ đầu ra tuyến tính thành xác suất trong khoảng [0, 1], phù hợp cho phân loại."
+        },
+        {
+            "question": "Phát biểu nào sau đây mô tả đúng một ưu điểm của mô hình sinh (Generative Model) so với mô hình phân biệt (Discriminative Model)?",
+            "answer": "Mô hình sinh có thể tạo ra dữ liệu mới tương tự như dữ liệu huấn luyện và thường mạnh mẽ hơn với dữ liệu nhiễu hoặc thiếu.",
+            "distractors": [
+                "Mô hình sinh thường có tốc độ hội tụ nhanh hơn và chi phí tính toán thấp hơn.",
+                "Mô hình sinh trực tiếp mô hình hóa ranh giới quyết định, dẫn đến hiệu suất phân loại tốt hơn trong nhiều trường hợp.",
+                "Mô hình sinh yêu cầu ít dữ liệu huấn luyện hơn để đạt được hiệu suất tốt."
+            ],
+            "explanation": "Mô hình sinh học phân phối xác suất chung P(X, Y) hoặc P(X|Y) và P(Y), cho phép chúng tạo ra các mẫu dữ liệu mới. Do mô hình hóa phân phối dữ liệu, chúng thường mạnh mẽ hơn khi có dữ liệu nhiễu hoặc thiếu. Ngược lại, mô hình phân biệt trực tiếp học P(Y|X) và tập trung vào việc phân tách các lớp, thường hiệu quả hơn trong việc phân loại khi có đủ dữ liệu, nhưng không thể tạo ra dữ liệu mới."
+        },
+        {
+            "question": "Tại sao Gradient Descent lại là một phương pháp tối ưu hóa cần thiết cho Hồi quy Logistic, trong khi Hồi quy tuyến tính có thể có giải pháp dạng đóng?",
+            "answer": "Hàm chi phí của Hồi quy Logistic (log-likelihood) là một hàm lồi nhưng không có giải pháp dạng đóng để tìm điểm cực tiểu, do đó cần phương pháp lặp như Gradient Descent.",
+            "distractors": [
+                "Hồi quy Logistic luôn có nhiều điểm cực tiểu cục bộ, yêu cầu Gradient Descent để tìm điểm tốt nhất.",
+                "Hồi quy tuyến tính không bao giờ sử dụng Gradient Descent, chỉ Hồi quy Logistic mới dùng.",
+                "Gradient Descent giúp Hồi quy Logistic xử lý các mối quan hệ phi tuyến tính phức tạp mà Hồi quy tuyến tính không thể."
+            ],
+            "explanation": "Hàm chi phí của Hồi quy Logistic (thường là hàm log-likelihood âm hoặc cross-entropy) là một hàm lồi, đảm bảo rằng mọi điểm cực tiểu cục bộ cũng là điểm cực tiểu toàn cục. Tuy nhiên, không giống như Hồi quy tuyến tính (với hàm chi phí MSE), hàm chi phí của Hồi quy Logistic không có giải pháp dạng đóng (analytical solution) để tìm các tham số tối ưu. Do đó, các phương pháp tối ưu hóa lặp như Gradient Descent là cần thiết để tìm các tham số bằng cách di chuyển dần dần theo hướng ngược lại của gradient để giảm thiểu hàm chi phí."
+        }
+    ]
+}

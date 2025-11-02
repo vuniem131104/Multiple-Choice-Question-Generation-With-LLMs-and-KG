@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Học sâu trong Machine Learning được định nghĩa là gì?",
+      "answer": "Một nhánh của học máy sử dụng mạng nơ-ron để học các biểu diễn dữ liệu.",
+      "distractors": [
+        "Một phương pháp học máy không sử dụng dữ liệu lớn.",
+        "Một kỹ thuật học máy chỉ áp dụng cho hình ảnh.",
+        "Một nhánh của học máy tập trung vào việc tối ưu hóa thuật toán."
+      ],
+      "explanation": "Câu trả lời đúng \"Một nhánh của học máy sử dụng mạng nơ-ron để học các biểu diễn dữ liệu.\" là chính xác vì học sâu (deep learning) là một phần của học máy (machine learning) mà chủ yếu dựa vào các mạng nơ-ron sâu (deep neural networks) để tự động học và trích xuất các đặc trưng từ dữ liệu. Học sâu cho phép máy tính xử lý và phân tích dữ liệu phức tạp, từ đó tạo ra các biểu diễn dữ liệu có ý nghĩa mà không cần phải lập trình thủ công.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Một phương pháp học máy không sử dụng dữ liệu lớn**: Điều này sai vì học sâu thường yêu cầu một lượng lớn dữ liệu để đạt được hiệu suất tốt. Các mạng nơ-ron cần nhiều dữ liệu để học và tối ưu hóa các tham số của chúng.\n\n- **Một kỹ thuật học máy chỉ áp dụng cho hình ảnh**: Đây cũng là một quan niệm sai lầm. Mặc dù học sâu rất thành công trong các ứng dụng hình ảnh, nó không chỉ giới hạn ở đó. Học sâu còn được áp dụng trong nhiều lĩnh vực khác như xử lý ngôn ngữ tự nhiên, âm thanh, và nhiều loại dữ liệu khác.\n\n- **Một nhánh của học máy tập trung vào việc tối ưu hóa thuật toán**: Mặc dù tối ưu hóa thuật toán là một phần quan trọng trong học sâu, nhưng định nghĩa này quá hẹp. Học sâu không chỉ tập trung vào tối ưu hóa mà còn vào việc học các biểu diễn dữ liệu phức tạp thông qua các mạng nơ-ron, điều này không được đề cập trong tùy chọn này.\n\nTóm lại, câu trả lời đúng phản ánh chính xác bản chất của học sâu, trong khi các yếu tố gây nhiễu đều thiếu sót hoặc không chính xác trong việc mô tả đầy đủ khái niệm này.",
+      "topic": {
+        "name": "Khái niệm Học sâu trong Machine Learning",
+        "description": "Chủ đề này khám phá khái niệm học sâu, nằm trong lĩnh vực học máy, với sự tập trung vào cách mà các thuật toán học sâu học các biểu diễn dữ liệu. Học sinh sẽ được yêu cầu định nghĩa học sâu, nhận diện ứng dụng cụ thể như AlphaGo và ChatGPT, cũng như mô tả cách mà học sâu khác biệt so với học máy truyền thống.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Cấu trúc cơ bản của một mạng nơ-ron nhân tạo bao gồm các lớp nào?",
+      "answer": "Lớp đầu vào, lớp ẩn và lớp đầu ra.",
+      "distractors": [
+        "Lớp đầu vào, lớp đầu ra và lớp hồi tiếp.",
+        "Lớp đầu vào, lớp ẩn và lớp phân loại.",
+        "Lớp đầu vào, lớp đầu ra và lớp điều chỉnh."
+      ],
+      "explanation": "Câu trả lời đúng là \"Lớp đầu vào, lớp ẩn và lớp đầu ra\" vì đây là cấu trúc cơ bản của một mạng nơ-ron nhân tạo (ANN). Lớp đầu vào nhận dữ liệu đầu vào, lớp ẩn thực hiện các phép toán và xử lý thông tin, trong khi lớp đầu ra cung cấp kết quả cuối cùng. Cấu trúc này cho phép mạng nơ-ron học và tổng hợp thông tin từ dữ liệu đầu vào để đưa ra dự đoán hoặc phân loại.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Lớp đầu vào, lớp đầu ra và lớp hồi tiếp**: Mặc dù lớp hồi tiếp có thể xuất hiện trong các mạng nơ-ron hồi tiếp (RNN), nhưng nó không phải là một phần của cấu trúc cơ bản của mạng nơ-ron nhân tạo thông thường, mà chỉ có lớp đầu vào, lớp ẩn và lớp đầu ra.\n\n- **Lớp đầu vào, lớp ẩn và lớp phân loại**: Lớp phân loại không phải là một lớp trong cấu trúc mạng nơ-ron. Thay vào đó, lớp đầu ra thực hiện chức năng phân loại, nhưng không được gọi là lớp phân loại.\n\n- **Lớp đầu vào, lớp đầu ra và lớp điều chỉnh**: Lớp điều chỉnh không phải là một phần của cấu trúc mạng nơ-ron. Cấu trúc cơ bản chỉ bao gồm lớp đầu vào, lớp ẩn và lớp đầu ra, trong khi lớp điều chỉnh có thể liên quan đến quá trình huấn luyện nhưng không phải là một lớp trong mạng.\n\nTóm lại, chỉ có \"Lớp đầu vào, lớp ẩn và lớp đầu ra\" là cấu trúc chính xác của một mạng nơ-ron nhân tạo.",
+      "topic": {
+        "name": "Mạng nơ-ron nhân tạo và cấu trúc của nó",
+        "description": "Chủ đề này tập trung vào các khía cạnh cơ bản của mạng nơ-ron nhân tạo (ANN), bao gồm cấu trúc của nó với các lớp đầu vào, lớp ẩn, và lớp đầu ra. Học sinh sẽ cần nhớ công thức tính toán trọng số và ứng dụng của mạng trong các bài toán phân loại. Thảo luận về ví dụ thực tế sẽ làm rõ ứng dụng của ANN trong các lĩnh vực khác nhau.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Ưu điểm chính của bộ phân loại Naïve Bayes so với Hồi quy Logistic trong bài toán phân loại là gì?",
+      "answer": "Đơn giản và nhanh hơn trong việc xây dựng mô hình.",
+      "distractors": [
+        "Bộ phân loại Naïve Bayes có thể xử lý các biến liên tục tốt hơn Hồi quy Logistic.",
+        "Hồi quy Logistic thường cho kết quả chính xác hơn trong mọi trường hợp phân loại.",
+        "Bộ phân loại Naïve Bayes yêu cầu nhiều dữ liệu hơn để xây dựng mô hình so với Hồi quy Logistic."
+      ],
+      "explanation": "Câu trả lời đúng \"Đơn giản và nhanh hơn trong việc xây dựng mô hình\" là chính xác vì bộ phân loại Naïve Bayes dựa trên giả định rằng các biến độc lập với nhau, điều này giúp đơn giản hóa quá trình tính toán xác suất. Do đó, nó yêu cầu ít tài nguyên tính toán hơn và có thể xây dựng mô hình nhanh chóng, đặc biệt là với tập dữ liệu lớn. Ngược lại, Hồi quy Logistic có thể phức tạp hơn do cần tối ưu hóa các tham số và xử lý mối quan hệ giữa các biến.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Bộ phân loại Naïve Bayes có thể xử lý các biến liên tục tốt hơn Hồi quy Logistic**: Sai, vì Hồi quy Logistic có thể xử lý biến liên tục thông qua việc sử dụng các hàm số và không bị giới hạn bởi giả định độc lập như Naïve Bayes. Naïve Bayes thường yêu cầu biến liên tục phải được chuyển đổi thành biến rời rạc.\n  \n- **Hồi quy Logistic thường cho kết quả chính xác hơn trong mọi trường hợp phân loại**: Sai, vì độ chính xác của mỗi mô hình phụ thuộc vào đặc điểm của dữ liệu. Trong một số trường hợp, Naïve Bayes có thể hoạt động tốt hơn, đặc biệt là khi giả định độc lập gần đúng với thực tế.\n\n- **Bộ phân loại Naïve Bayes yêu cầu nhiều dữ liệu hơn để xây dựng mô hình so với Hồi quy Logistic**: Sai, thực tế là Naïve Bayes có thể hoạt động hiệu quả với ít dữ liệu hơn do tính chất đơn giản của nó và không yêu cầu nhiều thông tin về mối quan hệ giữa các biến. Hồi quy Logistic thường cần nhiều dữ liệu hơn để đạt được độ chính xác cao hơn. \n\nTóm lại, câu trả lời đúng nhấn mạnh vào sự đơn giản và tốc độ của Naïve Bayes, trong khi các yếu tố gây nhiễu đều không chính xác vì không phản ánh đúng tính chất và hiệu suất của các mô hình này trong thực tế.",
+      "topic": {
+        "name": "Phân loại và các thuật toán học máy",
+        "description": "Chủ đề này tập trung vào việc khám phá các phương pháp phân loại trong học máy, bao gồm Hồi quy Logistic và Bộ phân loại Naïve Bayes được đề cập trong các bài giảng trước. Học sinh sẽ được yêu cầu so sánh những mô hình này và thảo luận về ưu và nhược điểm của từng mô hình trong việc giải quyết các bài toán phân loại thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Gradient Descent là thuật toán tối ưu hóa bằng cách nào để cập nhật trọng số trong mô hình học máy?",
+      "answer": "Giảm dần theo hướng của gradient của hàm lỗi.",
+      "distractors": [
+        "Cập nhật trọng số ngẫu nhiên để tối ưu hóa mô hình.",
+        "Tăng dần theo hướng của hàm lỗi để cải thiện độ chính xác.",
+        "Sử dụng phương pháp hồi quy để điều chỉnh trọng số trong mô hình."
+      ],
+      "explanation": "Câu trả lời đúng \"Giảm dần theo hướng của gradient của hàm lỗi\" là chính xác vì thuật toán Gradient Descent hoạt động bằng cách tính toán gradient (đạo hàm) của hàm lỗi tại một điểm cụ thể và sau đó cập nhật trọng số theo hướng ngược lại với gradient đó. Điều này có nghĩa là thuật toán tìm kiếm hướng giảm dần của hàm lỗi, nhằm tối ưu hóa mô hình bằng cách giảm thiểu sai số giữa dự đoán và giá trị thực.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Cập nhật trọng số ngẫu nhiên để tối ưu hóa mô hình**: Tùy chọn này sai vì Gradient Descent không sử dụng cập nhật ngẫu nhiên mà dựa vào tính toán gradient để xác định hướng và độ lớn của bước cập nhật. Cập nhật ngẫu nhiên không đảm bảo rằng mô hình sẽ tiến gần hơn đến giá trị tối ưu.\n\n- **Tăng dần theo hướng của hàm lỗi để cải thiện độ chính xác**: Tùy chọn này cũng sai vì thuật toán Gradient Descent thực hiện cập nhật theo hướng ngược lại với gradient của hàm lỗi, tức là giảm dần chứ không phải tăng dần. Nếu tăng dần theo hướng của hàm lỗi, mô hình sẽ không tối ưu hóa mà có thể dẫn đến sai số lớn hơn.\n\n- **Sử dụng phương pháp hồi quy để điều chỉnh trọng số trong mô hình**: Tùy chọn này không chính xác vì hồi quy là một phương pháp thống kê để tìm mối quan hệ giữa các biến, trong khi Gradient Descent là một thuật toán tối ưu hóa. Hồi quy có thể sử dụng Gradient Descent để tối ưu hóa trọng số, nhưng không phải là cách thức chính của thuật toán này.\n\nTóm lại, câu trả lời đúng phản ánh chính xác cách thức hoạt động của Gradient Descent, trong khi các yếu tố gây nhiễu đều sai do không nắm bắt đúng bản chất của thuật toán này.",
+      "topic": {
+        "name": "Gradient Descent và thuật toán tối ưu hóa",
+        "description": "Chủ đề này kiểm tra sự hiểu biết của sinh viên về Gradient Descent, một thuật toán tối ưu hóa thiết yếu trong học máy. Học sinh sẽ được yêu cầu giải thích cách mà thuật toán hoạt động, động lực phía sau tối ưu hóa hàm lỗi, và ưu nhược điểm của nó so với Phương trình chuẩn được nêu tại tuần 1.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "So sánh giữa Hard Margin SVM và Soft Margin SVM, yếu tố nào quyết định việc lựa chọn phương pháp nào trong từng trường hợp cụ thể?",
+      "answer": "Đặc điểm phân phối dữ liệu và mức độ nhượng bộ cho sai số.",
+      "distractors": [
+        "Đặc điểm của mô hình phân loại khác như Decision Tree và Random Forest.",
+        "Chỉ số độ chính xác của mô hình trên tập dữ liệu huấn luyện.",
+        "Số lượng biến đầu vào trong mô hình phân loại mà không xem xét đến phân phối dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Đặc điểm phân phối dữ liệu và mức độ nhượng bộ cho sai số\" là chính xác vì việc lựa chọn giữa Hard Margin SVM và Soft Margin SVM phụ thuộc vào cách dữ liệu được phân phối. Hard Margin SVM yêu cầu dữ liệu phải hoàn toàn phân tách được mà không có sai số, điều này chỉ khả thi khi dữ liệu không có nhiễu và có thể phân tách rõ ràng. Ngược lại, Soft Margin SVM cho phép một số điểm dữ liệu nằm trong vùng sai số, điều này rất hữu ích khi dữ liệu có nhiễu hoặc không thể phân tách hoàn toàn. Do đó, đặc điểm phân phối dữ liệu và mức độ nhượng bộ cho sai số là yếu tố quyết định trong việc chọn phương pháp nào.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Đặc điểm của mô hình phân loại khác như Decision Tree và Random Forest**: Mặc dù các mô hình này có thể được so sánh với SVM, nhưng chúng không ảnh hưởng đến quyết định chọn Hard Margin hay Soft Margin SVM. Quyết định này chủ yếu dựa vào tính chất của dữ liệu mà không liên quan đến các mô hình khác.\n\n- **Chỉ số độ chính xác của mô hình trên tập dữ liệu huấn luyện**: Độ chính xác là một chỉ số quan trọng nhưng không phải là yếu tố quyết định giữa Hard Margin và Soft Margin. Độ chính xác có thể cao nhưng không đảm bảo rằng dữ liệu có thể phân tách hoàn toàn, do đó không thể dùng nó để chọn phương pháp SVM phù hợp.\n\n- **Số lượng biến đầu vào trong mô hình phân loại mà không xem xét đến phân phối dữ liệu**: Số lượng biến đầu vào có thể ảnh hưởng đến độ phức tạp của mô hình nhưng không quyết định việc chọn Hard Margin hay Soft Margin. Việc lựa chọn này cần phải xem xét đến cách dữ liệu được phân phối và khả năng chấp nhận sai số, không chỉ đơn thuần là số lượng biến. \n\nTóm lại, câu trả lời đúng tập trung vào đặc điểm của dữ liệu và khả năng chấp nhận sai số, trong khi các yếu tố gây nhiễu không liên quan trực tiếp đến quyết định này.",
+      "topic": {
+        "name": "SVM và các phương pháp phân loại nâng cao",
+        "description": "Chủ đề này sẽ mở rộng vào các khái niệm SVM từ bài giảng trước, yêu cầu học sinh thảo luận về cách thức hoạt động của Hard Margin và Soft Margin SVM. Học sinh sẽ cần nhận diện ứng dụng của SVM trong các bài toán không tuyến tính và ưu điểm của nó so với các mô hình phân loại khác mà đã học trước đó.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Các hàm kích hoạt khác nhau trong mạng nơ-ron như Sigmoid, Tanh và ReLU ảnh hưởng đến khả năng học của mạng như thế nào khi chúng được so sánh về mặt cải thiện độ chính xác và tốc độ hội tụ?",
+      "answer": "Chúng có thể ảnh hưởng đến tốc độ hội tụ và độ chính xác cuối cùng của mô hình.",
+      "distractors": [
+        "Chúng không ảnh hưởng đến tốc độ hội tụ của mô hình.",
+        "Hàm kích hoạt chỉ ảnh hưởng đến độ chính xác mà không liên quan đến tốc độ học.",
+        "Sử dụng hàm kích hoạt khác nhau không thay đổi kết quả cuối cùng của mạng nơ-ron."
+      ],
+      "explanation": "Câu trả lời đúng \"Chúng có thể ảnh hưởng đến tốc độ hội tụ và độ chính xác cuối cùng của mô hình.\" là chính xác vì các hàm kích hoạt như Sigmoid, Tanh và ReLU có vai trò quan trọng trong việc điều chỉnh cách mà mạng nơ-ron học từ dữ liệu. Hàm kích hoạt quyết định cách mà tín hiệu được truyền qua các nơ-ron, ảnh hưởng đến gradient trong quá trình tối ưu hóa. Ví dụ, ReLU giúp giảm thiểu vấn đề vanishing gradient, từ đó cải thiện tốc độ hội tụ và độ chính xác của mô hình so với các hàm như Sigmoid.\n\nCác yếu tố gây nhiễu đều không chính xác vì:\n\n1. \"Chúng không ảnh hưởng đến tốc độ hội tụ của mô hình.\" - Điều này sai vì hàm kích hoạt có thể làm thay đổi tốc độ mà mô hình học được. Ví dụ, ReLU thường cho phép mạng nơ-ron hội tụ nhanh hơn so với Sigmoid do không gặp phải vấn đề vanishing gradient.\n\n2. \"Hàm kích hoạt chỉ ảnh hưởng đến độ chính xác mà không liên quan đến tốc độ học.\" - Đây là một quan điểm sai lầm, vì tốc độ học và độ chính xác là hai yếu tố liên quan chặt chẽ. Nếu tốc độ hội tụ chậm, mô hình có thể không đạt được độ chính xác cao trong thời gian hợp lý.\n\n3. \"Sử dụng hàm kích hoạt khác nhau không thay đổi kết quả cuối cùng của mạng nơ-ron.\" - Điều này không đúng, vì các hàm kích hoạt khác nhau có thể dẫn đến các kết quả khác nhau trong việc tối ưu hóa mô hình. Ví dụ, một mô hình sử dụng ReLU có thể đạt được độ chính xác cao hơn so với mô hình sử dụng Sigmoid trong cùng một bài toán. \n\nTóm lại, hàm kích hoạt không chỉ ảnh hưởng đến độ chính xác mà còn có tác động lớn đến tốc độ hội tụ của mạng nơ-ron.",
+      "topic": {
+        "name": "Cách các hàm kích hoạt ảnh hưởng đến mạng nơ-ron",
+        "description": "Chủ đề này hướng tới việc phân tích các loại hàm kích hoạt khác nhau trong mạng nơ-ron, như Sigmoid, Tanh và ReLU. Học sinh sẽ cần phân biệt giữa các hàm này và thảo luận về cách mà chúng ảnh hưởng đến khả năng học của mạng nơ-ron, kết nối với các phương pháp tối ưu hóa đã thảo luận trong các tuần trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Thuật toán nào trong học máy thường được sử dụng để phân nhóm các đối tượng dựa trên đặc điểm giống nhau?",
+      "answer": "K-Means",
+      "distractors": [
+        "Phân loại hồi quy",
+        "Phân cụm DBSCAN",
+        "Phân cụm theo chiều cao"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"K-Means\" vì đây là một thuật toán phân cụm phổ biến trong học máy, được sử dụng để nhóm các đối tượng dựa trên sự tương đồng của các đặc điểm của chúng. K-Means hoạt động bằng cách phân chia dữ liệu thành K nhóm, trong đó mỗi nhóm có trung tâm (centroid) và các đối tượng trong nhóm gần gũi với trung tâm đó nhất. Thuật toán này rất hiệu quả trong việc tìm kiếm các mẫu trong dữ liệu và thường được áp dụng trong nhiều lĩnh vực như phân tích thị trường, nhận diện hình ảnh, và phân tích khách hàng.\n\nCác yếu tố gây nhiễu:\n\n1. **Phân loại hồi quy**: Đây là một thuật toán dùng để dự đoán giá trị liên tục dựa trên các đặc điểm đầu vào, không phải để phân nhóm. Phân loại hồi quy không liên quan đến việc nhóm các đối tượng mà chỉ tập trung vào việc dự đoán giá trị.\n\n2. **Phân cụm DBSCAN**: Mặc dù DBSCAN cũng là một thuật toán phân cụm, nhưng câu hỏi yêu cầu thuật toán \"thường được sử dụng\" để phân nhóm. K-Means thường được ưa chuộng hơn trong nhiều ứng dụng do tính đơn giản và hiệu quả của nó, trong khi DBSCAN thường được sử dụng cho các dữ liệu có hình dạng phức tạp và không đồng nhất. Do đó, DBSCAN không phải là câu trả lời chính xác cho câu hỏi này.\n\n3. **Phân cụm theo chiều cao**: Đây không phải là một thuật toán phân cụm mà là một cách mô tả một loại dữ liệu cụ thể. Phân cụm theo chiều cao không phải là một thuật toán trong học máy mà chỉ là một ví dụ về cách mà dữ liệu có thể được phân nhóm. Do đó, nó không thể được coi là một thuật toán phân cụm.\n\nTóm lại, K-Means là thuật toán chính xác cho câu hỏi này vì nó được sử dụng rộng rãi để phân nhóm các đối tượng dựa trên đặc điểm tương đồng, trong khi các yếu tố gây nhiễu khác không phù hợp với yêu cầu của câu hỏi.",
+      "topic": {
+        "name": "Phân cụm và ứng dụng thực tế",
+        "description": "Chủ đề này kiểm tra kiến thức của học sinh về phân cụm trong học máy, các thuật toán như K-Means và DBSCAN được trình bày trong tuần 6. Học sinh sẽ được yêu cầu thảo luận về các ứng dụng của phân cụm và cách mà các yếu tố như tính chất dữ liệu ảnh hưởng đến quá trình này, liên kết đến các ứng dụng thực tế mà học sinh đã học.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong quy trình lan truyền ngược, vai trò chính của gradient trong việc cập nhật trọng số là gì?",
+      "answer": "Gradient xác định hướng thay đổi trọng số để giảm thiểu hàm mất mát.",
+      "distractors": [
+        "Gradient xác định độ lớn thay đổi trọng số mà không quan tâm đến hướng.",
+        "Gradient chỉ cần thiết trong giai đoạn khởi tạo trọng số.",
+        "Gradient giúp xác định giá trị tối đa của hàm mất mát."
+      ],
+      "explanation": "Trong quy trình lan truyền ngược, câu trả lời đúng là \"Gradient xác định hướng thay đổi trọng số để giảm thiểu hàm mất mát.\" Điều này đúng vì gradient của hàm mất mát tại một điểm cụ thể cho biết hướng mà trọng số cần được điều chỉnh để giảm thiểu giá trị của hàm mất mát. Nói cách khác, gradient chỉ ra hướng đi mà chúng ta cần thay đổi trọng số để cải thiện hiệu suất của mô hình.\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n- **Gradient xác định độ lớn thay đổi trọng số mà không quan tâm đến hướng.**: Tùy chọn này sai vì gradient không chỉ xác định độ lớn mà còn quan trọng hơn, nó xác định hướng thay đổi. Nếu chỉ có độ lớn mà không có hướng, chúng ta sẽ không biết nên tăng hay giảm trọng số.\n\n- **Gradient chỉ cần thiết trong giai đoạn khởi tạo trọng số.**: Tùy chọn này cũng sai vì gradient là cần thiết trong suốt quá trình huấn luyện, không chỉ trong giai đoạn khởi tạo. Mỗi lần cập nhật trọng số, gradient được tính toán để điều chỉnh trọng số nhằm tối ưu hóa hàm mất mát.\n\n- **Gradient giúp xác định giá trị tối đa của hàm mất mát.**: Tùy chọn này không chính xác vì gradient được sử dụng để tìm giá trị tối thiểu của hàm mất mát, không phải tối đa. Trong học máy, mục tiêu là giảm thiểu hàm mất mát để cải thiện độ chính xác của mô hình.\n\nTóm lại, gradient là yếu tố quyết định trong việc cập nhật trọng số để giảm thiểu hàm mất mát, trong khi các yếu tố gây nhiễu đều sai do không hiểu đúng vai trò và ứng dụng của gradient trong quy trình lan truyền ngược.",
+      "topic": {
+        "name": "Quy trình của Lan truyền ngược và ứng dụng của nó",
+        "description": "Chủ đề này tập trung vào quy trình lan truyền ngược trong mạng nơ-ron, yêu cầu học sinh mô tả quy trình và ứng dụng của nó trong việc huấn luyện mạng. Qua đó, sinh viên sẽ cần nắm rõ lý thuyết đằng sau việc cập nhật trọng số và vai trò của gradient trong hệ thống học máy, có liên hệ với các kỹ thuật tối ưu hóa đã học trước đây.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Tạo"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    }
+  ]
+}

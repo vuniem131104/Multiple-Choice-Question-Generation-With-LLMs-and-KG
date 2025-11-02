@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Mục tiêu chính của phân tích cụm là gì?",
+            "answer": "Tối đa hóa khoảng cách giữa các cụm và tối thiểu hóa khoảng cách trong cụm.",
+            "distractors": [
+                "Dự đoán một giá trị liên tục dựa trên các biến đầu vào.",
+                "Phân loại các điểm dữ liệu vào các lớp đã biết trước.",
+                "Giảm chiều dữ liệu trong khi vẫn giữ được thông tin quan trọng."
+            ],
+            "explanation": "Phân tích cụm là một kỹ thuật học không giám sát nhằm nhóm các điểm dữ liệu tương tự lại với nhau. Mục tiêu cốt lõi là tạo ra các cụm mà các điểm trong cùng một cụm càng giống nhau càng tốt (khoảng cách trong cụm tối thiểu) và các cụm khác nhau càng khác nhau càng tốt (khoảng cách giữa các cụm tối đa)."
+        },
+        {
+            "question": "Phép đo khoảng cách nào sau đây thường được sử dụng để đánh giá độ tương tự giữa hai vector trong không gian nhiều chiều, đặc biệt khi hướng của vector quan trọng hơn độ lớn của chúng?",
+            "answer": "Cosine Similarity.",
+            "distractors": [
+                "Euclidean Distance.",
+                "Manhattan Distance.",
+                "Minkowski Distance."
+            ],
+            "explanation": "Cosine Similarity đo cosin của góc giữa hai vector. Giá trị này càng gần 1 thì hai vector càng có hướng tương tự nhau, bất kể độ lớn của chúng. Điều này rất hữu ích trong các ứng dụng như phân tích văn bản hoặc hệ thống gợi ý, nơi hướng của vector (tức là nội dung hoặc sở thích) quan trọng hơn độ lớn (tức là số lần xuất hiện tuyệt đối)."
+        },
+        {
+            "question": "Ý tưởng cốt lõi của thuật toán K-Means Clustering là gì?",
+            "answer": "Gán mỗi điểm dữ liệu vào tâm cụm gần nhất và cập nhật tâm cụm dựa trên các điểm được gán.",
+            "distractors": [
+                "Xây dựng một cây phân cấp bằng cách hợp nhất các cụm gần nhất một cách lặp đi lặp lại.",
+                "Tìm các vùng có mật độ cao trong không gian dữ liệu và mở rộng các cụm từ đó.",
+                "Xác định số lượng cụm tối ưu một cách tự động mà không cần chỉ định trước."
+            ],
+            "explanation": "K-Means là một thuật toán phân cụm phân hoạch lặp đi lặp lại. Nó bắt đầu bằng cách khởi tạo K tâm cụm, sau đó lặp lại hai bước: gán mỗi điểm dữ liệu vào tâm cụm gần nhất và cập nhật vị trí của tâm cụm bằng cách tính trung bình của tất cả các điểm được gán cho cụm đó. Quá trình này tiếp tục cho đến khi các tâm cụm không còn thay đổi đáng kể."
+        },
+        {
+            "question": "Thuật toán DBSCAN (Density-Based Spatial Clustering of Applications with Noise) là một ví dụ điển hình của loại phân cụm nào?",
+            "answer": "Phân cụm dựa trên mật độ (Density-based Clustering).",
+            "distractors": [
+                "Phân cụm phân hoạch (Partitional Clustering).",
+                "Phân cụm phân cấp (Hierarchical Clustering).",
+                "Phân cụm dựa trên mô hình (Model-based Clustering)."
+            ],
+            "explanation": "DBSCAN là một thuật toán phân cụm dựa trên mật độ. Nó nhóm các điểm dữ liệu lại với nhau dựa trên mức độ gần gũi của chúng, xác định các cụm là các vùng có mật độ cao được phân tách bởi các vùng có mật độ thấp. Nó có khả năng phát hiện các cụm có hình dạng tùy ý và xác định các điểm nhiễu (outliers)."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa thuật toán K-Means và Hierarchical Agglomerative Clustering (HAC) là gì?",
+            "answer": "K-Means yêu cầu số lượng cụm K được chỉ định trước, trong khi HAC tạo ra một cây phân cấp các cụm và không yêu cầu K ban đầu.",
+            "distractors": [
+                "K-Means có khả năng xử lý các cụm có hình dạng tùy ý, còn HAC chỉ xử lý các cụm hình cầu.",
+                "K-Means là một thuật toán học có giám sát, còn HAC là học không giám sát.",
+                "K-Means luôn tìm được giải pháp tối ưu toàn cục, trong khi HAC dễ bị mắc kẹt ở tối ưu cục bộ."
+            ],
+            "explanation": "K-Means là một thuật toán phân hoạch, yêu cầu người dùng phải chỉ định số lượng cụm K trước. Nó phân chia dữ liệu thành K cụm riêng biệt. Ngược lại, HAC là một thuật toán phân cấp, bắt đầu với mỗi điểm dữ liệu là một cụm riêng biệt và hợp nhất các cụm gần nhất một cách lặp đi lặp lại cho đến khi tất cả các điểm nằm trong một cụm hoặc đạt được tiêu chí dừng. HAC tạo ra một dendrogram, cho phép người dùng chọn số lượng cụm sau đó bằng cách cắt cây ở một mức độ nhất định."
+        },
+        {
+            "question": "Khi sử dụng phương pháp Elbow để xác định số lượng cụm K tối ưu cho K-Means, bạn sẽ tìm kiếm điều gì trên biểu đồ WCSS (Within-Cluster Sum of Squares) so với K?",
+            "answer": "Điểm mà sự giảm WCSS bắt đầu chậm lại đáng kể, tạo thành một 'khuỷu tay'.",
+            "distractors": [
+                "Điểm mà WCSS đạt giá trị lớn nhất.",
+                "Điểm mà WCSS đạt giá trị nhỏ nhất tuyệt đối.",
+                "Điểm mà WCSS bắt đầu tăng lên."
+            ],
+            "explanation": "Phương pháp Elbow dựa trên ý tưởng rằng khi tăng số lượng cụm K, WCSS sẽ giảm. Tuy nhiên, sau một điểm nhất định, việc tăng K sẽ không mang lại sự cải thiện đáng kể về WCSS. Điểm 'khuỷu tay' trên biểu đồ, nơi đường cong WCSS giảm mạnh rồi đột ngột phẳng lại, thường được coi là giá trị K tối ưu, vì nó đại diện cho sự cân bằng tốt giữa việc giảm WCSS và tránh quá khớp."
+        },
+        {
+            "question": "Sự khác biệt cơ bản nhất giữa học có giám sát (Supervised Learning) và học không giám sát (Unsupervised Learning) là gì?",
+            "answer": "Học có giám sát sử dụng dữ liệu có nhãn đầu ra để huấn luyện, trong khi học không giám sát làm việc với dữ liệu không có nhãn đầu ra.",
+            "distractors": [
+                "Học có giám sát chỉ áp dụng cho các bài toán phân loại, còn học không giám sát chỉ áp dụng cho các bài toán hồi quy.",
+                "Học có giám sát luôn yêu cầu một tập dữ liệu lớn hơn học không giám sát.",
+                "Học có giám sát tạo ra các mô hình dễ giải thích hơn học không giám sát."
+            ],
+            "explanation": "Điểm khác biệt cốt lõi là sự hiện diện của nhãn đầu ra (target variable) trong dữ liệu huấn luyện. Trong học có giám sát (ví dụ: hồi quy, phân loại), mô hình học cách ánh xạ đầu vào tới đầu ra dựa trên các cặp (đầu vào, nhãn) đã biết. Trong học không giám sát (ví dụ: phân cụm, giảm chiều), mô hình tìm kiếm các cấu trúc hoặc mẫu ẩn trong dữ liệu mà không có bất kỳ nhãn đầu ra nào được cung cấp."
+        },
+        {
+            "question": "Hệ số Silhouette là một chỉ số quan trọng để đánh giá chất lượng của một mô hình phân cụm. Một giá trị Hệ số Silhouette gần +1 cho một điểm dữ liệu cụ thể có ý nghĩa gì?",
+            "answer": "Điểm dữ liệu đó được gán vào cụm của nó một cách phù hợp và nằm rất xa các cụm lân cận.",
+            "distractors": [
+                "Điểm dữ liệu đó là một điểm nhiễu (outlier) và không thuộc về bất kỳ cụm nào.",
+                "Điểm dữ liệu đó nằm gần ranh giới giữa hai cụm khác nhau.",
+                "Điểm dữ liệu đó được gán sai cụm và nên thuộc về một cụm khác."
+            ],
+            "explanation": "Hệ số Silhouette cho một điểm dữ liệu i được tính bằng (b(i) - a(i)) / max(a(i), b(i)), trong đó a(i) là khoảng cách trung bình từ i đến các điểm khác trong cùng cụm, và b(i) là khoảng cách trung bình từ i đến các điểm trong cụm gần nhất mà i không thuộc về. Giá trị gần +1 cho thấy điểm dữ liệu được gán tốt vào cụm của nó và cụm đó được tách biệt rõ ràng với các cụm khác. Giá trị gần 0 cho thấy điểm nằm gần ranh giới giữa hai cụm, và giá trị gần -1 cho thấy điểm có thể đã bị gán sai cụm."
+        }
+    ]
+}

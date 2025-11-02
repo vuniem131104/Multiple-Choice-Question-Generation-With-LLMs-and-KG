@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Kiểm soát không mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because it directly asks about the source of learning in Model-Free Control, which is a core 'remember' concept. The distractors are plausible. The Baseline question is also good, but its correct answer is a bit long and combines two aspects (when it's used AND how it learns), making it slightly less direct for a 'remember' level question. One distractor in the baseline is also quite obviously wrong ('Khi mô hình MDP đã biết đầy đủ')."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Phân biệt Học theo Chính sách và Ngoài Chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more focused and clearer for an 'understand' level. It presents a scenario and asks for the correct term, which is a good way to test understanding. The distractors are relevant. The Baseline question's correct answer is a bit verbose, and some distractors are less plausible (e.g., 'luôn hội tụ nhanh hơn'). The Pipeline question's structure is more concise and effective for the intended Bloom level."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Nguyên tắc Thăm dò ε-tham lam",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is excellent for a 'understand' level, directly asking about the meaning of epsilon. The distractors are well-chosen and plausible. The Baseline question, while relevant, tests an 'apply' level (calculation) rather than 'understand' as specified in the topic description's Bloom level. Also, the calculation in the baseline question (0.925) is a bit tricky for a 'dễ' difficulty, and the distractors are not as strong."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Cập nhật giá trị hành động trong Sarsa",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior here. It directly asks for the Sarsa update formula, which is a direct application of knowledge and fits the 'apply' Bloom level perfectly. The distractors are variations of update rules, making them highly plausible. The Pipeline question is also good, but it's more of an 'understand' question about which term is used, rather than an 'apply' question about the formula itself. The Baseline question is a more direct and effective test of applying the Sarsa algorithm."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Vai trò của Dấu vết Đủ điều kiện trong Sarsa(λ)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better for the 'analyze' Bloom level. It clearly asks for the main role of eligibility traces and provides a concise, accurate answer. The distractors are plausible misconceptions. The Pipeline question is also good, but its question phrasing is a bit more convoluted ('Bằng cách nào... tích hợp thông tin... để cải thiện... và đẩy nhanh...') which makes it slightly less clear. Both are relevant, but the baseline is more direct and precise."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh Q-Learning và Sarsa",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and effectively test the 'analyze' Bloom level by focusing on the core difference between Q-Learning and Sarsa. The Pipeline question focuses on the 'why' (what makes it off-policy vs on-policy), while the Baseline question focuses on the 'where' (where in the formula the difference lies). Both are highly relevant, clear, and have plausible distractors. They are equally strong in assessing the comparison aspect of the topic."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Tối ưu hóa chính sách với Hàm Giá trị Hành động",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are very strong and effectively address the topic at the 'understand' Bloom level. They both clearly explain why Q(s,a) is crucial for greedy policy improvement in a model-free setting. The phrasing is clear, and distractors are plausible. There's no significant difference in quality between the two, making it a tie."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Hội tụ của Kiểm soát Monte-Carlo GLIE và Q-Learning",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better because it directly asks about the necessary conditions for Monte-Carlo GLIE convergence, which is a key analytical point for this topic. The correct answer is precise, and the distractors are plausible. The Pipeline question is also relevant and attempts to compare, but its phrasing is quite complex and a bit verbose ('Yếu tố kiến trúc nào... cho phép nó học... điều mà Kiểm soát Monte-Carlo GLIE không thể thực hiện theo cùng một cách mà không có các ràng buộc chặt chẽ hơn...'). This reduces its clarity and makes it harder to parse, especially for a 'khó' difficulty question where clarity is even more important."
+        }
+    ]
+}

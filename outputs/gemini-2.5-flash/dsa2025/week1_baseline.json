@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Nguyên tắc hoạt động cơ bản của cấu trúc dữ liệu Stack là gì?",
+            "answer": "Last In First Out (LIFO)",
+            "distractors": [
+                "First In First Out (FIFO)",
+                "Last In Last Out (LILO)",
+                "First In Last Out (FILO)"
+            ],
+            "explanation": "Stack hoạt động theo nguyên tắc LIFO, nghĩa là phần tử được thêm vào cuối cùng sẽ là phần tử được lấy ra đầu tiên. Các lựa chọn khác không phải là nguyên tắc hoạt động của Stack."
+        },
+        {
+            "question": "Thao tác nào sau đây được sử dụng để thêm một phần tử vào cuối Queue?",
+            "answer": "Enqueue",
+            "distractors": [
+                "Push",
+                "Pop",
+                "Dequeue"
+            ],
+            "explanation": "Trong Queue, thao tác 'enqueue' được dùng để thêm phần tử vào cuối hàng đợi (rear). 'Dequeue' là để xóa phần tử ở đầu hàng đợi (front). 'Push' và 'Pop' là các thao tác của Stack."
+        },
+        {
+            "question": "Lợi ích chính của việc tách biệt giao diện (interface) và triển khai (implementation) trong thiết kế phần mềm là gì?",
+            "answer": "Giảm sự phụ thuộc của client vào chi tiết triển khai, tăng khả năng tái sử dụng và tính mô-đun.",
+            "distractors": [
+                "Làm cho mã nguồn phức tạp hơn nhưng an toàn hơn.",
+                "Chỉ áp dụng cho các hệ thống phân tán lớn.",
+                "Tăng tốc độ biên dịch chương trình."
+            ],
+            "explanation": "Việc tách biệt giao diện và triển khai giúp client chỉ cần biết cách sử dụng giao diện mà không cần quan tâm đến chi tiết bên trong, từ đó giảm sự phụ thuộc, tăng tính linh hoạt, khả năng tái sử dụng mã và tính mô-đun của hệ thống."
+        },
+        {
+            "question": "Trong Java, Autoboxing và Generics cơ bản có vai trò gì?",
+            "answer": "Autoboxing tự động chuyển đổi kiểu nguyên thủy sang đối tượng wrapper, Generics cho phép tạo các cấu trúc dữ liệu tổng quát.",
+            "distractors": [
+                "Autoboxing chỉ dùng cho các phép toán số học, Generics chỉ dùng cho các lớp trừu tượng.",
+                "Autoboxing giúp tăng hiệu suất, Generics giúp giảm kích thước mã nguồn.",
+                "Autoboxing và Generics đều là cơ chế để xử lý ngoại lệ."
+            ],
+            "explanation": "Autoboxing là quá trình tự động chuyển đổi giữa các kiểu nguyên thủy (như int) và các đối tượng wrapper tương ứng (như Integer). Generics cho phép bạn định nghĩa các lớp, giao diện và phương thức với các kiểu dữ liệu tổng quát, tăng tính tái sử dụng và an toàn kiểu."
+        },
+        {
+            "question": "Khi thực hiện thao tác 'pop' trên một Stack được triển khai bằng danh sách liên kết đơn, điều gì xảy ra với con trỏ 'first' và làm thế nào để tránh 'loitering'?",
+            "answer": "Con trỏ 'first' được cập nhật để trỏ đến phần tử kế tiếp; để tránh 'loitering', phần tử bị 'pop' cần được gán null.",
+            "distractors": [
+                "Con trỏ 'first' không thay đổi; 'loitering' không phải là vấn đề trong danh sách liên kết.",
+                "Con trỏ 'first' được cập nhật để trỏ đến phần tử cuối cùng; 'loitering' được xử lý tự động bởi Garbage Collector.",
+                "Con trỏ 'first' được gán null; 'loitering' xảy ra khi Stack rỗng."
+            ],
+            "explanation": "Trong Stack danh sách liên kết, 'pop' loại bỏ phần tử mà 'first' đang trỏ tới. Sau đó, 'first' phải được cập nhật để trỏ đến phần tử kế tiếp trong danh sách. 'Loitering' xảy ra khi một đối tượng không còn được sử dụng nhưng vẫn giữ tham chiếu đến các đối tượng khác, ngăn cản Garbage Collector thu hồi bộ nhớ. Để tránh điều này, tham chiếu đến phần tử bị 'pop' (ví dụ, node.item) cần được gán null."
+        },
+        {
+            "question": "Vấn đề chính của việc triển khai Stack bằng mảng có dung lượng cố định là gì và giải pháp phổ biến cho vấn đề này là gì?",
+            "answer": "Vấn đề là tràn Stack (Stack Overflow) khi thêm quá nhiều phần tử; giải pháp là sử dụng mảng có thể thay đổi kích thước (resizing array).",
+            "distractors": [
+                "Vấn đề là hiệu suất chậm khi truy cập phần tử; giải pháp là sử dụng danh sách liên kết.",
+                "Vấn đề là lãng phí bộ nhớ khi Stack không đầy; giải pháp là sử dụng mảng có kích thước nhỏ hơn.",
+                "Vấn đề là khó khăn trong việc sắp xếp các phần tử; giải pháp là sử dụng cây nhị phân."
+            ],
+            "explanation": "Khi Stack được triển khai bằng mảng có dung lượng cố định, nếu số lượng phần tử vượt quá dung lượng mảng, sẽ xảy ra lỗi tràn Stack (Stack Overflow). Giải pháp hiệu quả là sử dụng mảng có thể thay đổi kích thước, cho phép mảng tự động mở rộng khi đầy và co lại khi trống để tối ưu hóa việc sử dụng bộ nhớ."
+        },
+        {
+            "question": "Trong ngữ cảnh Stack mảng có thể thay đổi kích thước, khái niệm phân tích khấu hao (amortized analysis) có ý nghĩa gì và phạm vi sử dụng bộ nhớ của triển khai này thường là bao nhiêu?",
+            "answer": "Phân tích khấu hao cho thấy thời gian chạy trung bình của các thao tác là hằng số; phạm vi bộ nhớ thường từ ~8N đến ~32N byte.",
+            "distractors": [
+                "Phân tích khấu hao chỉ ra rằng thời gian chạy luôn là trường hợp xấu nhất; phạm vi bộ nhớ là cố định ~8N byte.",
+                "Phân tích khấu hao không áp dụng cho Stack mảng; phạm vi bộ nhớ là ~N byte.",
+                "Phân tích khấu hao giúp giảm thiểu việc sử dụng bộ nhớ; phạm vi bộ nhớ là ~2N byte."
+            ],
+            "explanation": "Phân tích khấu hao cho thấy mặc dù một số thao tác thay đổi kích thước mảng có thể tốn kém (O(N)), nhưng khi tính trung bình trên một chuỗi dài các thao tác, chi phí trung bình cho mỗi thao tác (push/pop) là hằng số (O(1)). Về bộ nhớ, một Stack chứa N phần tử sử dụng mảng có thể thay đổi kích thước thường có kích thước mảng từ N đến 4N (khi tăng gấp đôi và giảm một nửa), dẫn đến phạm vi sử dụng bộ nhớ từ ~8N đến ~32N byte (giả sử mỗi phần tử chiếm 8 byte và có thêm chi phí cho đối tượng mảng)."
+        },
+        {
+            "question": "So sánh triển khai Stack bằng danh sách liên kết và mảng có thể thay đổi kích thước về thời gian chạy và bộ nhớ. Đồng thời, giải thích lý do cần 'unchecked cast' khi triển khai Stack chung bằng mảng trong Java.",
+            "answer": "Danh sách liên kết có thời gian chạy trường hợp xấu nhất O(1) cho push/pop nhưng tốn nhiều bộ nhớ hơn (8N-16N byte). Mảng có thể thay đổi kích thước có thời gian chạy khấu hao O(1) nhưng trường hợp xấu nhất O(N) và sử dụng bộ nhớ hiệu quả hơn (8N-32N byte). 'Unchecked cast' cần thiết vì Java Generics được triển khai bằng erasure, không thể tạo mảng của các kiểu tổng quát trực tiếp.",
+            "distractors": [
+                "Danh sách liên kết luôn nhanh hơn và tiết kiệm bộ nhớ hơn mảng. 'Unchecked cast' là một lỗi trong thiết kế của Java.",
+                "Mảng có thể thay đổi kích thước luôn có thời gian chạy O(1) và sử dụng ít bộ nhớ hơn. 'Unchecked cast' chỉ dùng để ép kiểu giữa các kiểu nguyên thủy.",
+                "Cả hai triển khai đều có hiệu suất và bộ nhớ tương đương. 'Unchecked cast' là một tính năng bảo mật của Java."
+            ],
+            "explanation": "Triển khai Stack bằng danh sách liên kết có thời gian chạy O(1) cho push và pop trong mọi trường hợp, nhưng mỗi Node tốn thêm chi phí con trỏ, dẫn đến sử dụng bộ nhớ khoảng 8N-16N byte cho N phần tử. Triển khai bằng mảng có thể thay đổi kích thước có thời gian chạy khấu hao O(1) cho push và pop, nhưng các thao tác thay đổi kích thước có thể tốn O(N) trong trường hợp xấu nhất. Nó sử dụng bộ nhớ hiệu quả hơn, khoảng 8N-32N byte. 'Unchecked cast' (ví dụ: (Item[]) new Object[capacity]) là cần thiết khi tạo mảng của các kiểu tổng quát trong Java vì Generics được triển khai bằng erasure, nghĩa là thông tin kiểu tổng quát bị xóa ở thời gian chạy. Do đó, không thể tạo trực tiếp một mảng của kiểu 'Item' mà phải tạo một mảng 'Object' và ép kiểu, điều này gây ra cảnh báo 'unchecked cast'."
+        }
+    ]
+}

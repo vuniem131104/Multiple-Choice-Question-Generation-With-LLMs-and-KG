@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong thuật toán tìm đường đi ngắn nhất, điều kiện nào phải thỏa mãn để một cạnh nối từ đỉnh `v` đến đỉnh `w` (có trọng số `weight(v, w)`) được thư giãn (relax)?",
+      "answer": "Tổng quãng đường từ đỉnh nguồn đến `v` cộng với trọng số của cạnh `v -> w` phải nhỏ hơn quãng đường hiện tại đã biết đến `w`.",
+      "distractors": [
+        "Trọng số của cạnh `v -> w` phải nhỏ hơn quãng đường hiện tại đã biết đến `w`.",
+        "Tổng quãng đường từ đỉnh nguồn đến `v` cộng với trọng số của cạnh `v -> w` phải lớn hơn quãng đường hiện tại đã biết đến `w`.",
+        "Quãng đường từ đỉnh nguồn đến `v` phải nhỏ hơn quãng đường hiện tại đã biết đến `w`."
+      ],
+      "explanation": "Trong thuật toán tìm đường đi ngắn nhất, một cạnh từ đỉnh `v` đến đỉnh `w` với trọng số `weight(v, w)` được thư giãn (relax) khi tổng quãng đường từ đỉnh nguồn đến `v` (ký hiệu là `distTo[v]`) cộng với trọng số của cạnh `v -> w` nhỏ hơn quãng đường hiện tại đã biết đến `w` (ký hiệu là `distTo[w]`). Điều này có nghĩa là `distTo[v] + weight(v, w) < distTo[w]`. Khi điều kiện này được thỏa mãn, chúng ta đã tìm thấy một đường đi ngắn hơn đến `w` thông qua `v`, và do đó, `distTo[w]` sẽ được cập nhật thành `distTo[v] + weight(v, w)`.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n- **Trọng số của cạnh `v -> w` phải nhỏ hơn quãng đường hiện tại đã biết đến `w`**: Điều kiện này không tính đến quãng đường từ đỉnh nguồn đến `v`. Một cạnh có trọng số nhỏ có thể không tạo ra đường đi ngắn nhất đến `w` nếu quãng đường đến `v` đã rất dài.\n- **Tổng quãng đường từ đỉnh nguồn đến `v` cộng với trọng số của cạnh `v -> w` phải lớn hơn quãng đường hiện tại đã biết đến `w`**: Nếu điều kiện này đúng, điều đó có nghĩa là đường đi mới thông qua `v` dài hơn hoặc bằng đường đi hiện tại đã biết đến `w`. Trong trường hợp này, không có lý do gì để cập nhật quãng đường đến `w` vì chúng ta không tìm thấy đường đi ngắn hơn.\n- **Quãng đường từ đỉnh nguồn đến `v` phải nhỏ hơn quãng đường hiện tại đã biết đến `w`**: Điều kiện này chỉ xem xét quãng đường đến đỉnh `v` mà bỏ qua trọng số của cạnh nối từ `v` đến `w`. Một đường đi ngắn đến `v` không đảm bảo rằng đường đi đến `w` thông qua `v` cũng sẽ ngắn hơn, đặc biệt nếu cạnh `v -> w` có trọng số lớn.\n",
+      "topic": {
+        "name": "Khái niệm relax cạnh trong thuật toán SP",
+        "description": "Chủ đề này kiểm tra khả năng của sinh viên trong việc nhớ và hiểu khái niệm thư giãn cạnh (edge relaxation) trong các thuật toán tìm đường đi ngắn nhất. Nó bao gồm công thức cập nhật distTo[] và edgeTo[] khi tìm thấy đường đi ngắn hơn. Sinh viên cần nhận biết điều kiện và kết quả của quá trình thư giãn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Thuật toán Dijkstra được sử dụng hiệu quả nhất để tìm đường đi ngắn nhất trong loại đồ thị nào?",
+      "answer": "Đồ thị có hướng với các cạnh có trọng số không âm.",
+      "distractors": [
+        "Đồ thị vô hướng với các cạnh có trọng số âm.",
+        "Đồ thị có hướng với các cạnh không có trọng số.",
+        "Đồ thị có hướng với các cạnh có trọng số âm."
+      ],
+      "explanation": "Thuật toán Dijkstra được thiết kế để tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác trong một đồ thị.\n\n**Tại sao \"Đồ thị có hướng với các cạnh có trọng số không âm\" là đúng:**\nThuật toán Dijkstra hoạt động bằng cách duy trì một tập hợp các đỉnh mà đường đi ngắn nhất đã được xác định và liên tục mở rộng tập hợp này bằng cách chọn đỉnh chưa được thăm có khoảng cách nhỏ nhất từ đỉnh nguồn. Cơ chế này dựa vào việc các trọng số cạnh là không âm. Nếu có cạnh có trọng số âm, thuật toán có thể không tìm được đường đi ngắn nhất chính xác vì nó không thể xử lý các chu trình âm (nếu có) hoặc việc một đường đi dài hơn ban đầu lại trở nên ngắn hơn khi đi qua một cạnh âm. Thuật toán Dijkstra có thể áp dụng cho cả đồ thị có hướng và vô hướng (đồ thị vô hướng có thể được coi là đồ thị có hướng với các cặp cạnh đối xứng có cùng trọng số).\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Đồ thị vô hướng với các cạnh có trọng số âm:** Thuật toán Dijkstra không hoạt động chính xác với các cạnh có trọng số âm. Sự hiện diện của trọng số âm có thể dẫn đến việc thuật toán không tìm được đường đi ngắn nhất tối ưu, vì nó không thể xử lý các chu trình âm hoặc việc một đường đi có thể được rút ngắn thêm bằng cách đi qua một cạnh âm sau khi đã \"hoàn tất\" việc thăm một đỉnh. Đối với đồ thị có trọng số âm, thuật toán Bellman-Ford là lựa chọn phù hợp hơn.\n\n*   **Đồ thị có hướng với các cạnh không có trọng số:** Mặc dù thuật toán Dijkstra có thể được sử dụng trên đồ thị không có trọng số (bằng cách gán trọng số 1 cho tất cả các cạnh), nhưng nó không phải là thuật toán hiệu quả nhất. Đối với đồ thị không có trọng số, thuật toán Tìm kiếm theo chiều rộng (BFS) hiệu quả hơn trong việc tìm đường đi ngắn nhất (tính theo số lượng cạnh) vì nó có độ phức tạp thời gian thấp hơn (O(V+E) so với O(E log V) hoặc O(V^2) của Dijkstra).\n\n*   **Đồ thị có hướng với các cạnh có trọng số âm:** Tương tự như trường hợp đồ thị vô hướng với các cạnh có trọng số âm, thuật toán Dijkstra không phù hợp với đồ thị có cạnh có trọng số âm. Trọng số âm làm hỏng giả định cơ bản của Dijkstra rằng khi một đỉnh được thêm vào tập hợp các đỉnh đã được thăm, khoảng cách đến nó là tối ưu.",
+      "topic": {
+        "name": "Ứng dụng của thuật toán Dijkstra",
+        "description": "Chủ đề này tập trung vào việc xác định bối cảnh áp dụng đúng của thuật toán Dijkstra. Sinh viên cần biết khi nào Dijkstra có thể được sử dụng (đồ thị có hướng có trọng số không âm) và các ứng dụng thực tế của nó như định tuyến bản đồ. Nó cũng kiểm tra sự hiểu biết về các biến thể bài toán đường đi ngắn nhất.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong các thuật toán tìm đường đi ngắn nhất, quá trình thư giãn cạnh có vai trò cập nhật những mảng cấu trúc dữ liệu nào nhằm duy trì thông tin đường đi ngắn nhất hiệu quả?",
+      "answer": "Mảng distTo[] và mảng edgeTo[].",
+      "distractors": [
+        "Mảng visited[] và mảng parent[].",
+        "Mảng weight[] và mảng path[].",
+        "Mảng queue[] và mảng stack[]."
+      ],
+      "explanation": "Giải thích:\n\nQuá trình thư giãn cạnh (edge relaxation) trong các thuật toán tìm đường đi ngắn nhất (như Dijkstra hoặc Bellman-Ford) có vai trò cập nhật hai mảng cấu trúc dữ liệu chính để duy trì thông tin về đường đi ngắn nhất:\n\n*   **Mảng `distTo[]` và mảng `edgeTo[]` là câu trả lời đúng.**\n    *   **`distTo[]`**: Mảng này lưu trữ độ dài đường đi ngắn nhất hiện tại từ đỉnh nguồn đến mỗi đỉnh khác. Khi một cạnh được thư giãn, nếu việc đi qua cạnh đó tạo ra một đường đi ngắn hơn đến đỉnh đích của cạnh, giá trị trong `distTo[]` của đỉnh đích sẽ được cập nhật.\n    *   **`edgeTo[]`**: Mảng này lưu trữ cạnh cuối cùng trên đường đi ngắn nhất hiện tại từ đỉnh nguồn đến mỗi đỉnh. Khi `distTo[]` của một đỉnh được cập nhật thông qua một cạnh cụ thể, `edgeTo[]` của đỉnh đó cũng được cập nhật để trỏ đến cạnh đó, giúp tái tạo lại đường đi ngắn nhất sau này.\n\n*   **Mảng `visited[]` và mảng `parent[]` là sai.**\n    *   `visited[]` thường được sử dụng trong các thuật toán duyệt đồ thị (như DFS, BFS) để đánh dấu các đỉnh đã được thăm nhằm tránh lặp lại hoặc tạo chu trình. Mặc dù một số thuật toán tìm đường đi ngắn nhất có thể sử dụng khái niệm tương tự để theo dõi các đỉnh đã được xử lý, nhưng nó không phải là mảng chính được cập nhật trực tiếp bởi quá trình thư giãn cạnh để lưu trữ độ dài hoặc cạnh của đường đi ngắn nhất.\n    *   `parent[]` có thể được sử dụng để lưu trữ đỉnh cha trong một cây (ví dụ: cây bao trùm tối thiểu) hoặc trong một số biến thể của thuật toán tìm đường đi, nhưng `edgeTo[]` là thuật ngữ chính xác hơn và cụ thể hơn để lưu trữ cạnh cuối cùng trên đường đi ngắn nhất trong ngữ cảnh này.\n\n*   **Mảng `weight[]` và mảng `path[]` là sai.**\n    *   `weight[]` thường dùng để lưu trữ trọng số của các cạnh trong đồ thị, không phải là mảng được cập nhật bởi quá trình thư giãn cạnh để lưu trữ thông tin đường đi ngắn nhất. Trọng số cạnh là dữ liệu đầu vào cố định.\n    *   `path[]` là một khái niệm chung chung và không phải là một cấu trúc dữ liệu tiêu chuẩn được cập nhật trực tiếp bởi quá trình thư giãn cạnh để duy trì thông tin đường đi ngắn nhất một cách hiệu quả. Thông tin đường đi được duy trì thông qua `distTo[]` và `edgeTo[]`.\n\n*   **Mảng `queue[]` và mảng `stack[]` là sai.**\n    *   `queue[]` (hàng đợi) và `stack[]` (ngăn xếp) là các cấu trúc dữ liệu được sử dụng để quản lý các đỉnh cần được xử lý trong các thuật toán tìm đường đi ngắn nhất (ví dụ: hàng đợi ưu tiên trong Dijkstra, hàng đợi trong Bellman-Ford). Chúng là các công cụ hỗ trợ cho thuật toán, không phải là các mảng lưu trữ thông tin đường đi ngắn nhất được cập nhật bởi quá trình thư giãn cạnh.",
+      "topic": {
+        "name": "Cấu trúc dữ liệu SPT và Edge Relaxation",
+        "description": "Chủ đề này kết hợp các khái niệm về Cây Đường đi Ngắn nhất (SPT) từ Tuần 8 với cách các mảng distTo[] và edgeTo[] (Tuần 8) được cập nhật thông qua quá trình thư giãn cạnh trong bài toán đường đi ngắn nhất. Nó kiểm tra cách các cấu trúc dữ liệu này được sử dụng để duy trì và tìm đường đi hiệu quả.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Ưu điểm nổi bật của thuật toán Bellman-Ford so với thuật toán Dijkstra là khả năng xử lý loại trọng số cạnh nào?",
+      "answer": "Trọng số âm",
+      "distractors": [
+        "Trọng số dương",
+        "Trọng số bằng 0",
+        "Trọng số lớn"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Trọng số âm** vì thuật toán Bellman-Ford được thiết kế để xử lý các đồ thị có trọng số cạnh âm, điều mà thuật toán Dijkstra không thể làm được. Dijkstra yêu cầu tất cả các trọng số cạnh phải không âm để đảm bảo tính đúng đắn của nó (ví dụ: để đảm bảo rằng khi một đỉnh được thêm vào tập hợp các đỉnh đã được xử lý, đường đi ngắn nhất đến nó đã được tìm thấy). Ngược lại, Bellman-Ford có thể tìm đường đi ngắn nhất trong đồ thị có trọng số âm và thậm chí có thể phát hiện sự tồn tại của chu trình âm.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Trọng số dương:** Cả Bellman-Ford và Dijkstra đều có thể xử lý trọng số dương. Tuy nhiên, trong trường hợp này, Dijkstra thường hiệu quả hơn nhiều về mặt thời gian chạy.\n*   **Trọng số bằng 0:** Tương tự như trọng số dương, cả hai thuật toán đều có thể xử lý trọng số bằng 0. Dijkstra vẫn là lựa chọn ưu tiên hơn do hiệu suất vượt trội.\n*   **Trọng số lớn:** Kích thước của trọng số (lớn hay nhỏ) không phải là yếu tố phân biệt chính giữa Bellman-Ford và Dijkstra. Cả hai thuật toán đều có thể xử lý các giá trị trọng số lớn miễn là chúng tuân thủ các quy tắc về dấu (không âm đối với Dijkstra, có thể âm đối với Bellman-Ford).\n",
+      "topic": {
+        "name": "Ưu nhược điểm của Bellman-Ford",
+        "description": "Chủ đề này đánh giá sự hiểu biết của sinh viên về ưu và nhược điểm của thuật toán Bellman-Ford so với Dijkstra. Sinh viên cần biết khi nào Bellman-Ford là cần thiết (trọng số âm, phát hiện chu trình âm) và hạn chế về hiệu suất của nó trong trường hợp xấu nhất.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong triển khai thuật toán Dijkstra sử dụng hàng đợi ưu tiên dựa trên đống nhị phân, yếu tố 'log V' trong độ phức tạp thời gian O(E log V) thể hiện điều gì liên quan đến các thao tác trên đống?",
+      "answer": "Yếu tố 'log V' phản ánh thời gian cần thiết cho các thao tác thêm một đỉnh mới hoặc cập nhật trọng số của đỉnh trong hàng đợi ưu tiên, được đảm bảo hiệu quả bằng các phép swim/sink.",
+      "distractors": [
+        "Yếu tố 'log V' đại diện cho số lần duyệt qua tất cả các cạnh kề của một đỉnh, tổng cộng là E lần.",
+        "Yếu tố 'log V' thể hiện thời gian cần thiết để tìm đỉnh có trọng số nhỏ nhất trong hàng đợi ưu tiên bằng cách duyệt tuyến tính.",
+        "Yếu tố 'log V' phản ánh số lượng đỉnh tối đa mà thuật toán phải xem xét trong mỗi lần lặp chính."
+      ],
+      "explanation": "Trong thuật toán Dijkstra sử dụng hàng đợi ưu tiên dựa trên đống nhị phân, độ phức tạp thời gian là O(E log V). Yếu tố 'log V' trong độ phức tạp này phản ánh thời gian cần thiết cho các thao tác thêm một đỉnh mới hoặc cập nhật trọng số của đỉnh trong hàng đợi ưu tiên. Khi một đỉnh mới được thêm vào hoặc trọng số của một đỉnh hiện có được cập nhật (thao tác \"decrease-key\"), vị trí của đỉnh đó trong đống có thể cần được điều chỉnh để duy trì thuộc tính đống. Các thao tác này (thường được gọi là `swim` hoặc `sink` tùy thuộc vào việc giá trị tăng hay giảm) có độ phức tạp thời gian là O(log V), vì chiều cao của đống nhị phân là log V.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Yếu tố 'log V' đại diện cho số lần duyệt qua tất cả các cạnh kề của một đỉnh, tổng cộng là E lần.** Điều này không chính xác. Số lần duyệt qua các cạnh kề của một đỉnh được tính vào yếu tố 'E' (số cạnh) trong độ phức tạp. Mỗi khi một đỉnh được trích xuất từ hàng đợi ưu tiên, thuật toán sẽ duyệt qua các cạnh kề của nó.\n- **Yếu tố 'log V' thể hiện thời gian cần thiết để tìm đỉnh có trọng số nhỏ nhất trong hàng đợi ưu tiên bằng cách duyệt tuyến tính.** Điều này không chính xác. Việc tìm đỉnh có trọng số nhỏ nhất trong đống nhị phân (thao tác `extract-min`) có độ phức tạp O(log V), nhưng không phải bằng cách duyệt tuyến tính. Đỉnh nhỏ nhất luôn nằm ở gốc của đống và việc trích xuất nó đòi hỏi sắp xếp lại đống, mất O(log V). Duyệt tuyến tính sẽ mất O(V).\n- **Yếu tố 'log V' phản ánh số lượng đỉnh tối đa mà thuật toán phải xem xét trong mỗi lần lặp chính.** Điều này không chính xác. Trong mỗi lần lặp chính, thuật toán trích xuất một đỉnh duy nhất từ hàng đợi ưu tiên. Số lượng đỉnh tối đa mà thuật toán phải xem xét tổng thể là V, nhưng 'log V' không đại diện cho số lượng đỉnh được xem xét trong mỗi lần lặp.",
+      "topic": {
+        "name": "Hiệu suất Dijkstra với Hàng đợi ưu tiên",
+        "description": "Chủ đề này tích hợp kiến thức về Thuật toán Dijkstra (Tuần 8) với khái niệm Hàng đợi Ưu tiên (Priority Queue) và các loại Heap nhị phân (Tuần 5). Sinh viên cần hiểu cách lựa chọn triển khai PQ ảnh hưởng đến độ phức tạp thời gian của Dijkstra (ví dụ: E log V với đống nhị phân) và cách hoạt động của swim/sink (Tuần 5) đảm bảo hiệu quả.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong thuật toán Bellman-Ford, sau khi thực hiện V-1 lần lặp thư giãn cạnh trên một đồ thị có V đỉnh, làm thế nào để xác định sự tồn tại của chu trình âm?",
+      "answer": "Kiểm tra xem có bất kỳ cạnh nào có thể tiếp tục được thư giãn trong lần lặp thứ V.",
+      "distractors": [
+        "Kiểm tra xem có bất kỳ cạnh nào có trọng số âm trong đồ thị ban đầu.",
+        "Tính tổng trọng số của tất cả các cạnh trong đồ thị và kiểm tra xem tổng đó có âm không.",
+        "So sánh khoảng cách ngắn nhất đến mỗi đỉnh sau V-1 lần lặp với khoảng cách ban đầu được gán."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Kiểm tra xem có bất kỳ cạnh nào có thể tiếp tục được thư giãn trong lần lặp thứ V.**\n\n**Tại sao câu trả lời đúng là đúng:**\nThuật toán Bellman-Ford hoạt động bằng cách lặp lại việc thư giãn tất cả các cạnh của đồ thị. Trong một đồ thị không có chu trình âm, đường đi ngắn nhất đến bất kỳ đỉnh nào sẽ có tối đa V-1 cạnh (trong đó V là số đỉnh). Do đó, sau V-1 lần lặp thư giãn cạnh, tất cả các đường đi ngắn nhất sẽ được tìm thấy và không có cạnh nào có thể được thư giãn thêm. Tuy nhiên, nếu có một chu trình âm, thì việc đi qua chu trình đó nhiều lần sẽ tiếp tục làm giảm tổng trọng số của đường đi. Do đó, nếu sau lần lặp thứ V-1, chúng ta thực hiện thêm một lần lặp thứ V và phát hiện ra rằng có bất kỳ cạnh nào vẫn có thể được thư giãn (tức là `dist[u] + weight(u, v) < dist[v]`), điều đó chứng tỏ sự tồn tại của một chu trình âm có thể tiếp tục làm giảm khoảng cách.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Kiểm tra xem có bất kỳ cạnh nào có trọng số âm trong đồ thị ban đầu.**\n    Việc có các cạnh có trọng số âm là điều kiện cần nhưng chưa đủ để có chu trình âm. Một đồ thị có thể có các cạnh âm nhưng không có chu trình âm. Ví dụ, một đường đi đơn giản có thể bao gồm một cạnh âm mà không tạo thành chu trình.\n\n*   **Tính tổng trọng số của tất cả các cạnh trong đồ thị và kiểm tra xem tổng đó có âm không.**\n    Tổng trọng số của tất cả các cạnh trong đồ thị không liên quan trực tiếp đến việc xác định chu trình âm. Một đồ thị có thể có tổng trọng số âm nhưng không có chu trình âm, hoặc ngược lại. Chu trình âm là một khái niệm cục bộ liên quan đến một chu trình cụ thể, không phải tổng thể của đồ thị.\n\n*   **So sánh khoảng cách ngắn nhất đến mỗi đỉnh sau V-1 lần lặp với khoảng cách ban đầu được gán.**\n    Khoảng cách ban đầu được gán cho các đỉnh (thường là 0 cho đỉnh nguồn và vô cùng cho các đỉnh khác) chỉ là giá trị khởi tạo. Việc so sánh với các giá trị này sau V-1 lần lặp không cung cấp thông tin về chu trình âm. Điều quan trọng là liệu các khoảng cách có thể tiếp tục giảm sau khi tất cả các đường đi ngắn nhất không có chu trình âm đã được tìm thấy.",
+      "topic": {
+        "name": "Xác định chu trình âm bằng Bellman-Ford",
+        "description": "Chủ đề này yêu cầu sinh viên áp dụng thuật toán Bellman-Ford (Tuần 8) để xác định sự tồn tại của chu trình âm trong một đồ thị có hướng có trọng số. Sinh viên cần hiểu tiêu chí để nhận biết một chu trình âm và cách thuật toán Bellman-Ford có thể phát hiện chúng thông qua các lần lặp.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi chuyển đổi vấn đề phát hiện chênh lệch giá (arbitrage) thành bài toán tìm chu trình âm trong đồ thị, một chu trình gồm các cạnh có tổng trọng số âm biểu thị điều gì sau khi áp dụng phép chuyển đổi logarit tự nhiên âm cho tỷ giá hối đoái?",
+      "answer": "Một cơ hội chênh lệch giá (arbitrage opportunity).",
+      "distractors": [
+        "Một con đường có chi phí thấp nhất giữa hai nút.",
+        "Một chuỗi các giao dịch không có lợi nhuận.",
+        "Một lỗi trong việc tính toán tỷ giá hối đoái."
+      ],
+      "explanation": "Khi chuyển đổi vấn đề phát hiện chênh lệch giá (arbitrage) thành bài toán tìm chu trình âm trong đồ thị, một chu trình gồm các cạnh có tổng trọng số âm biểu thị một cơ hội chênh lệch giá (arbitrage opportunity). Điều này là do phép chuyển đổi logarit tự nhiên âm được áp dụng cho tỷ giá hối đoái. Nếu bạn có một chuỗi các giao dịch tiền tệ (ví dụ: đổi từ A sang B, rồi B sang C, rồi C quay lại A) và tổng logarit tự nhiên âm của các tỷ giá hối đoái là âm, điều đó có nghĩa là tích của các tỷ giá hối đoái ban đầu lớn hơn 1. Một tích lớn hơn 1 cho thấy rằng sau khi thực hiện chuỗi giao dịch, bạn sẽ có nhiều tiền hơn số tiền ban đầu, đây chính là định nghĩa của chênh lệch giá.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Một con đường có chi phí thấp nhất giữa hai nút** là sai. Mặc dù bài toán tìm chu trình âm có liên quan đến các thuật toán đường đi ngắn nhất (như Bellman-Ford), nhưng bản thân một chu trình âm không biểu thị đường đi ngắn nhất giữa hai nút riêng biệt. Nó biểu thị một chuỗi các giao dịch khép kín mang lại lợi nhuận.\n*   **Một chuỗi các giao dịch không có lợi nhuận** là sai. Ngược lại, một chu trình âm biểu thị một chuỗi các giao dịch *có lợi nhuận*. Nếu tổng trọng số là dương, đó sẽ là một chuỗi không có lợi nhuận (mất tiền). Nếu tổng trọng số bằng 0, đó sẽ là một chuỗi hòa vốn.\n*   **Một lỗi trong việc tính toán tỷ giá hối đoái** là sai. Chu trình âm là kết quả của việc áp dụng đúng phép chuyển đổi và tìm kiếm một cấu trúc cụ thể trong đồ thị, không phải là dấu hiệu của lỗi tính toán. Nó chỉ ra một điều kiện thị trường thực tế (hoặc tiềm năng).",
+      "topic": {
+        "name": "Mô hình hóa Arbitrage và Chu trình âm",
+        "description": "Chủ đề này kiểm tra khả năng của sinh viên trong việc chuyển đổi một vấn đề thực tế (phát hiện chênh lệch giá - arbitrage detection từ Tuần 8) thành một bài toán tìm chu trình âm trong đồ thị. Sinh viên phải hiểu cách các tỷ giá hối đoái được chuyển đổi thành trọng số cạnh (sử dụng logarit tự nhiên âm) và ý nghĩa của chu trình âm trong ngữ cảnh này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.45,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Xem xét một đồ thị có hướng tổng quát chứa các trọng số cạnh âm nhưng không có chu trình âm. Để xác định đường đi ngắn nhất từ một đỉnh nguồn duy nhất đến tất cả các đỉnh khác một cách hiệu quả, thuật toán nào là lựa chọn phù hợp nhất khi so sánh với phương pháp dựa trên sắp xếp cấu trúc và thuật toán Dijkstra?",
+      "answer": "Thuật toán Bellman-Ford.",
+      "distractors": [
+        "Thuật toán Dijkstra với hàng đợi ưu tiên, vì nó hiệu quả cho đường đi ngắn nhất.",
+        "Sắp xếp cấu trúc kết hợp với một lần duyệt đồ thị, tương tự như trên DAG.",
+        "Thuật toán Floyd-Warshall, vì nó có thể xử lý trọng số âm và tìm tất cả các cặp đường đi ngắn nhất."
+      ],
+      "explanation": "**Giải thích:**\n\n**Thuật toán Bellman-Ford** là lựa chọn phù hợp nhất vì nó được thiết kế để tìm đường đi ngắn nhất từ một đỉnh nguồn duy nhất trong đồ thị có hướng chứa trọng số cạnh âm, miễn là không có chu trình âm. Thuật toán này hoạt động bằng cách lặp lại việc thư giãn các cạnh của đồ thị $|V|-1$ lần, đảm bảo rằng đường đi ngắn nhất được tìm thấy ngay cả khi có trọng số âm.\n\nCác lựa chọn khác không phù hợp vì:\n\n*   **Thuật toán Dijkstra với hàng đợi ưu tiên, vì nó hiệu quả cho đường đi ngắn nhất:** Thuật toán Dijkstra rất hiệu quả nhưng nó không thể xử lý trọng số cạnh âm. Nếu có trọng số âm, Dijkstra có thể đưa ra kết quả không chính xác vì nó giả định rằng khi một đỉnh được thêm vào tập hợp các đỉnh đã được xử lý, đường đi ngắn nhất đến nó đã được tìm thấy, điều này không đúng khi có trọng số âm.\n\n*   **Sắp xếp cấu trúc kết hợp với một lần duyệt đồ thị, tương tự như trên DAG:** Phương pháp này chỉ áp dụng cho Đồ thị có hướng không có chu trình (DAG). Sắp xếp cấu trúc yêu cầu đồ thị không có chu trình. Đồ thị trong câu hỏi là đồ thị tổng quát, có thể chứa chu trình (mặc dù không có chu trình âm), do đó sắp xếp cấu trúc không thể được áp dụng trực tiếp.\n\n*   **Thuật toán Floyd-Warshall, vì nó có thể xử lý trọng số âm và tìm tất cả các cặp đường đi ngắn nhất:** Thuật toán Floyd-Warshall thực sự có thể xử lý trọng số âm và tìm tất cả các cặp đường đi ngắn nhất. Tuy nhiên, câu hỏi yêu cầu tìm đường đi ngắn nhất từ *một đỉnh nguồn duy nhất* đến tất cả các đỉnh khác. Đối với bài toán nguồn đơn, Bellman-Ford hiệu quả hơn Floyd-Warshall về độ phức tạp thời gian ($O(VE)$ so với $O(V^3)$). Mặc dù Floyd-Warshall là một lựa chọn hợp lệ về mặt chức năng, nó không phải là lựa chọn *phù hợp nhất* về hiệu quả cho bài toán nguồn đơn.",
+      "topic": {
+        "name": "So sánh SP trên DAG và Đồ thị tổng quát",
+        "description": "Chủ đề này yêu cầu sinh viên phân tích sự khác biệt về cách tìm đường đi ngắn nhất trong Đồ thị có hướng không có chu trình (DAG) và Đồ thị có hướng tổng quát, bao gồm cả trọng số âm. Nó tích hợp khái niệm sắp xếp cấu trúc (topological sort) từ DAG (Tuần 8) và so sánh sự phức tạp cũng như hạn chế của các thuật toán (Dijkstra, Bellman-Ford) trong các loại đồ thị khác nhau. Nó cũng có thể liên hệ với khái niệm về thứ tự toàn phần (Tuần 2) nếu được mở rộng.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "dsa2025"
+    }
+  ]
+}

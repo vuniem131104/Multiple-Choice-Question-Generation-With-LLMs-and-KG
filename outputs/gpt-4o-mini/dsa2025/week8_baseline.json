@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Đường đi ngắn nhất trong đồ thị có trọng số là gì?",
+            "answer": "Là đường đi có tổng trọng số nhỏ nhất giữa hai đỉnh.",
+            "distractors": [
+                "Là đường đi có số lượng cạnh ít nhất.",
+                "Là đường đi có chiều dài ngắn nhất.",
+                "Là đường đi không có trọng số."
+            ],
+            "explanation": "Đường đi ngắn nhất trong đồ thị có trọng số được xác định bằng tổng trọng số của các cạnh, và mục tiêu là tìm ra đường đi có tổng trọng số nhỏ nhất giữa hai đỉnh."
+        },
+        {
+            "question": "Thuật toán nào thường được sử dụng để tìm đường đi ngắn nhất trong đồ thị có trọng số?",
+            "answer": "Thuật toán Dijkstra.",
+            "distractors": [
+                "Thuật toán Bellman-Ford.",
+                "Thuật toán Prim.",
+                "Thuật toán Kruskal."
+            ],
+            "explanation": "Thuật toán Dijkstra là thuật toán phổ biến nhất để tìm đường đi ngắn nhất trong đồ thị có trọng số dương."
+        },
+        {
+            "question": "Biến thể nào của bài toán đường đi ngắn nhất yêu cầu tìm đường đi ngắn nhất với điều kiện không đi qua một đỉnh nhất định?",
+            "answer": "Bài toán đường đi ngắn nhất với ràng buộc.",
+            "distractors": [
+                "Bài toán tìm đường đi tối ưu.",
+                "Bài toán tìm đường đi ngắn nhất đơn giản.",
+                "Bài toán tìm đường đi có trọng số."
+            ],
+            "explanation": "Bài toán đường đi ngắn nhất với ràng buộc yêu cầu tìm đường đi ngắn nhất mà không đi qua một đỉnh cụ thể."
+        },
+        {
+            "question": "Phương pháp thư giãn cạnh trong thuật toán Dijkstra có tác dụng gì?",
+            "answer": "Cập nhật khoảng cách ngắn nhất đến các đỉnh lân cận.",
+            "distractors": [
+                "Tìm kiếm đỉnh có trọng số lớn nhất.",
+                "Xóa các đỉnh không cần thiết.",
+                "Tính toán trọng số của các cạnh."
+            ],
+            "explanation": "Phương pháp thư giãn cạnh giúp cập nhật khoảng cách ngắn nhất đến các đỉnh lân cận dựa trên trọng số của các cạnh."
+        },
+        {
+            "question": "Điều kiện nào sau đây là cần thiết để thuật toán Bellman-Ford hoạt động hiệu quả?",
+            "answer": "Đồ thị không có chu trình âm.",
+            "distractors": [
+                "Đồ thị phải có trọng số dương.",
+                "Đồ thị phải liên thông.",
+                "Đồ thị phải có ít nhất một đỉnh."
+            ],
+            "explanation": "Thuật toán Bellman-Ford yêu cầu đồ thị không có chu trình âm để đảm bảo tính chính xác của kết quả."
+        },
+        {
+            "question": "Khi nào thuật toán Dijkstra không thể được sử dụng?",
+            "answer": "Khi đồ thị có trọng số âm.",
+            "distractors": [
+                "Khi đồ thị có trọng số dương.",
+                "Khi đồ thị không có cạnh.",
+                "Khi đồ thị có nhiều đỉnh."
+            ],
+            "explanation": "Thuật toán Dijkstra không thể được sử dụng trong đồ thị có trọng số âm vì nó không đảm bảo tìm được đường đi ngắn nhất."
+        },
+        {
+            "question": "Trong trường hợp nào thuật toán sắp xếp tô pô được sử dụng để tìm đường đi ngắn nhất?",
+            "answer": "Trong đồ thị có hướng không có chu trình.",
+            "distractors": [
+                "Trong đồ thị có chu trình.",
+                "Trong đồ thị không có hướng.",
+                "Trong đồ thị có trọng số âm."
+            ],
+            "explanation": "Thuật toán sắp xếp tô pô được sử dụng trong đồ thị có hướng không có chu trình để tìm đường đi ngắn nhất."
+        },
+        {
+            "question": "Ứng dụng nào sau đây của thuật toán Bellman-Ford là quan trọng trong kinh tế?",
+            "answer": "Phát hiện chênh lệch giá.",
+            "distractors": [
+                "Tối ưu hóa mạng lưới giao thông.",
+                "Tìm kiếm đường đi ngắn nhất.",
+                "Quản lý dữ liệu lớn."
+            ],
+            "explanation": "Thuật toán Bellman-Ford có thể được sử dụng để phát hiện chênh lệch giá trong các thị trường, điều này rất quan trọng trong kinh tế."
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Học tăng cường là gì?",
+            "answer": "Một phương pháp học máy mà trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc tương tác với môi trường.",
+            "distractors": [
+                "Một phương pháp học máy không cần dữ liệu",
+                "Một phương pháp học máy chỉ sử dụng dữ liệu tĩnh",
+                "Một phương pháp học máy chỉ dựa vào các thuật toán hồi quy"
+            ],
+            "explanation": "Học tăng cường là một phương pháp mà tác nhân học từ kinh nghiệm của mình thông qua việc nhận phần thưởng hoặc hình phạt từ môi trường."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa học dựa trên mô hình và không dựa trên mô hình là gì?",
+            "answer": "Học dựa trên mô hình sử dụng một mô hình để dự đoán hành động, trong khi học không dựa trên mô hình không sử dụng mô hình này.",
+            "distractors": [
+                "Học không dựa trên mô hình luôn chính xác hơn",
+                "Học dựa trên mô hình không cần dữ liệu",
+                "Học không dựa trên mô hình chỉ sử dụng hồi quy"
+            ],
+            "explanation": "Học dựa trên mô hình sử dụng một mô hình để dự đoán kết quả, trong khi học không dựa trên mô hình dựa vào dữ liệu thực tế mà không có mô hình."
+        },
+        {
+            "question": "Ưu điểm lớn nhất của học tăng cường dựa trên mô hình là gì?",
+            "answer": "Nó có thể dự đoán hành động trong môi trường không xác định.",
+            "distractors": [
+                "Nó luôn cho kết quả chính xác",
+                "Nó không cần dữ liệu",
+                "Nó dễ dàng hơn so với học không dựa trên mô hình"
+            ],
+            "explanation": "Học tăng cường dựa trên mô hình có thể dự đoán hành động trong môi trường không xác định, giúp tối ưu hóa quyết định."
+        },
+        {
+            "question": "Thuật toán nào được sử dụng trong lập kế hoạch dựa trên mô hình trong MDP?",
+            "answer": "Lặp giá trị và lặp chính sách.",
+            "distractors": [
+                "Hồi quy tuyến tính",
+                "Học sâu",
+                "Phân loại"
+            ],
+            "explanation": "Lặp giá trị và lặp chính sách là hai thuật toán chính được sử dụng trong lập kế hoạch dựa trên mô hình trong MDP."
+        },
+        {
+            "question": "Kỹ thuật nào được sử dụng để tối ưu hóa giải pháp trong môi trường MDP?",
+            "answer": "Lập trình động.",
+            "distractors": [
+                "Học sâu",
+                "Hồi quy logistic",
+                "Phân loại"
+            ],
+            "explanation": "Lập trình động là một kỹ thuật quan trọng để tối ưu hóa giải pháp trong môi trường MDP."
+        },
+        {
+            "question": "Dự đoán n-Bước là gì?",
+            "answer": "Một phương pháp kết hợp ưu điểm của Học Monte-Carlo và Học khác biệt thời gian.",
+            "distractors": [
+                "Một phương pháp chỉ sử dụng hồi quy",
+                "Một phương pháp không cần dữ liệu",
+                "Một phương pháp chỉ áp dụng cho MDP đơn giản"
+            ],
+            "explanation": "Dự đoán n-Bước kết hợp các ưu điểm của Học Monte-Carlo và Học khác biệt thời gian để cải thiện khả năng ước tính giá trị."
+        },
+        {
+            "question": "Khái niệm đạo hàm chính sách liên quan đến điều gì?",
+            "answer": "Tối ưu hóa chính sách trong học tăng cường.",
+            "distractors": [
+                "Tối ưu hóa hàm giá trị",
+                "Dự đoán hành động",
+                "Phân loại dữ liệu"
+            ],
+            "explanation": "Đạo hàm chính sách liên quan đến việc tối ưu hóa chính sách trong học tăng cường, giúp cải thiện quyết định của tác nhân."
+        },
+        {
+            "question": "Dyna-Q là gì?",
+            "answer": "Một thuật toán kết hợp học và lập kế hoạch trong học tăng cường.",
+            "distractors": [
+                "Một thuật toán chỉ sử dụng hồi quy",
+                "Một thuật toán không cần dữ liệu",
+                "Một thuật toán chỉ áp dụng cho MDP đơn giản"
+            ],
+            "explanation": "Dyna-Q là một thuật toán kết hợp học và lập kế hoạch, giúp đạt được sự hội tụ trong các tình huống học tăng cường phức tạp."
+        }
+    ]
+}

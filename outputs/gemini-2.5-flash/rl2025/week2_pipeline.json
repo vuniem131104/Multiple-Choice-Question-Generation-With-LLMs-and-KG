@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Thuộc tính cốt lõi nào sau đây là một trong hai thuộc tính đặc trưng của Lập trình động?",
+      "answer": "Cấu trúc con tối ưu",
+      "distractors": [
+        "Tham lam",
+        "Đệ quy",
+        "Chia để trị"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Cấu trúc con tối ưu** vì đây là một trong hai thuộc tính cốt lõi đặc trưng của Lập trình động (DP). Cấu trúc con tối ưu có nghĩa là một giải pháp tối ưu cho một bài toán có thể được xây dựng từ các giải pháp tối ưu của các bài toán con của nó. Thuộc tính còn lại là các bài toán con chồng chéo, nơi cùng một bài toán con được giải quyết nhiều lần.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Tham lam** là một phương pháp thiết kế thuật toán khác, trong đó thuật toán đưa ra lựa chọn tối ưu cục bộ tại mỗi bước với hy vọng tìm được giải pháp tối ưu toàn cục. Nó không phải là một thuộc tính của Lập trình động.\n*   **Đệ quy** là một kỹ thuật lập trình trong đó một hàm tự gọi chính nó. Mặc dù Lập trình động thường sử dụng đệ quy (đặc biệt là trong cách tiếp cận từ trên xuống với ghi nhớ), nhưng bản thân đệ quy không phải là một thuộc tính đặc trưng của Lập trình động mà là một công cụ có thể được sử dụng.\n*   **Chia để trị** là một mô hình thiết kế thuật toán khác, trong đó một bài toán được chia thành các bài toán con độc lập, giải quyết các bài toán con đó một cách đệ quy và sau đó kết hợp các giải pháp. Điểm khác biệt chính với Lập trình động là các bài toán con trong chia để trị thường độc lập và không chồng chéo.",
+      "topic": {
+        "name": "Khái niệm Lập trình động",
+        "description": "Chủ đề này kiểm tra sự hiểu biết cơ bản về lập trình động, bao gồm định nghĩa và hai thuộc tính cốt lõi (cấu trúc con tối ưu và các bài toán con chồng chéo). Học sinh cần nhận diện vai trò của lập trình động trong việc giải quyết các bài toán phức tạp bằng cách chia nhỏ chúng. (Tuần 2, Khái niệm 1)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Theo thuộc tính Markov, xác suất chuyển sang trạng thái tiếp theo chỉ phụ thuộc vào trạng thái hiện tại và không phụ thuộc vào yếu tố nào trong quá khứ?",
+      "answer": "Lịch sử của các trạng thái trước đó",
+      "distractors": [
+        "Các hành động đã thực hiện trong quá khứ",
+        "Phần thưởng nhận được từ các trạng thái trước đó",
+        "Mục tiêu cuối cùng của tác nhân"
+      ],
+      "explanation": "**Giải thích:**\n\nTheo thuộc tính Markov, xác suất chuyển sang trạng thái tiếp theo chỉ phụ thuộc vào trạng thái hiện tại và hoàn toàn không phụ thuộc vào **lịch sử của các trạng thái trước đó**. Đây là định nghĩa cốt lõi của thuộc tính Markov, nói rằng \"tương lai là độc lập với quá khứ khi biết hiện tại\".\n\n*   **Các hành động đã thực hiện trong quá khứ** là sai vì mặc dù các hành động trong quá khứ dẫn đến các trạng thái trong quá khứ, bản thân thuộc tính Markov tập trung vào sự độc lập của xác suất chuyển trạng thái với chuỗi các trạng thái đã qua, chứ không phải các hành động cụ thể. Các hành động hiện tại sẽ ảnh hưởng đến trạng thái tiếp theo, nhưng các hành động trong quá khứ không ảnh hưởng trực tiếp đến xác suất chuyển từ trạng thái hiện tại.\n*   **Phần thưởng nhận được từ các trạng thái trước đó** là sai vì phần thưởng là một yếu tố riêng biệt trong Quá trình Quyết định Markov (MDP) dùng để đánh giá chất lượng của các trạng thái hoặc hành động, nhưng chúng không ảnh hưởng đến xác suất chuyển trạng thái theo thuộc tính Markov. Xác suất chuyển trạng thái chỉ liên quan đến động lực học của môi trường.\n*   **Mục tiêu cuối cùng của tác nhân** là sai vì mục tiêu của tác nhân là một yếu tố chiến lược định hướng hành vi của tác nhân để tối đa hóa phần thưởng tích lũy, nhưng nó không ảnh hưởng đến xác suất chuyển trạng thái nội tại của môi trường theo thuộc tính Markov. Xác suất chuyển trạng thái là một đặc tính của môi trường, không phải của tác nhân.",
+      "topic": {
+        "name": "Thuộc tính Markov và MDP",
+        "description": "Chủ đề này tập trung vào thuộc tính Markov cơ bản từ tuần 1, đặc biệt là cách nó áp dụng trong Quá trình Quyết định Markov (MDPs). Sinh viên nên nhớ định nghĩa của thuộc tính Markov và tầm quan trọng của nó trong việc mô hình hóa các trạng thái hiện tại độc lập với lịch sử quá khứ. (Tuần 1)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một Quá trình Thưởng Markov (MRP) từ tuần 1 bao gồm bao nhiêu thành phần chính?",
+      "answer": "4",
+      "distractors": [
+        "3",
+        "5",
+        "2"
+      ],
+      "explanation": "Một Quá trình Thưởng Markov (MRP) bao gồm 4 thành phần chính: tập hợp trạng thái ($S$), ma trận chuyển đổi ($P$), hàm thưởng ($R$), và hệ số chiết khấu ($\\gamma$).\n\n*   **4 là câu trả lời đúng** vì một Quá trình Thưởng Markov (MRP) được định nghĩa bởi bốn thành phần này. Tập hợp trạng thái ($S$) liệt kê tất cả các trạng thái có thể có. Ma trận chuyển đổi ($P$) xác định xác suất chuyển từ trạng thái này sang trạng thái khác. Hàm thưởng ($R$) chỉ định phần thưởng nhận được khi ở một trạng thái hoặc thực hiện một hành động. Hệ số chiết khấu ($\\gamma$) xác định tầm quan trọng tương đối của các phần thưởng trong tương lai so với các phần thưởng hiện tại.\n\n*   **3 là sai** vì nó thiếu một trong các thành phần thiết yếu của MRP. Nếu chỉ có 3 thành phần, MRP sẽ không thể mô tả đầy đủ quá trình ra quyết định và phần thưởng theo thời gian.\n\n*   **5 là sai** vì MRP chỉ có 4 thành phần chính. Việc thêm một thành phần thứ năm sẽ không chính xác theo định nghĩa tiêu chuẩn của MRP và có thể nhầm lẫn với các khái niệm phức tạp hơn như Quá trình Ra quyết định Markov (MDP) có thêm tập hợp hành động.\n\n*   **2 là sai** vì nó thiếu hai thành phần quan trọng. Với chỉ 2 thành phần, không thể định nghĩa một quá trình Markov có phần thưởng và chiết khấu, làm cho nó không phải là một MRP.\n",
+      "topic": {
+        "name": "Các thành phần của MRP",
+        "description": "Kiểm tra kiến thức về các yếu tố cấu thành của một Quá trình Thưởng Markov (MRP) từ tuần 1, bao gồm tập hợp trạng thái, ma trận chuyển đổi, hàm thưởng và hệ số chiết khấu. Câu hỏi có thể yêu cầu xác định các thành phần chính hoặc vai trò của từng thành phần. (Tuần 1)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong đánh giá chính sách lặp (Iterative Policy Evaluation), sao lưu kỳ vọng Bellman được sử dụng với mục đích chính nào?",
+      "answer": "Ước tính hàm giá trị cho một chính sách đã cho.",
+      "distractors": [
+        "Cập nhật chính sách dựa trên hàm giá trị hiện tại.",
+        "Xác định hành động tối ưu cho mỗi trạng thái.",
+        "Tính toán phần thưởng tức thì cho mỗi bước."
+      ],
+      "explanation": "Trong đánh giá chính sách lặp (Iterative Policy Evaluation), sao lưu kỳ vọng Bellman được sử dụng để **ước tính hàm giá trị cho một chính sách đã cho**. Mục tiêu của đánh giá chính sách là xác định hàm giá trị $V^\\pi(s)$ cho một chính sách $\\pi$ cụ thể, mô tả giá trị kỳ vọng tích lũy khi bắt đầu từ trạng thái $s$ và tuân theo chính sách $\\pi$. Sao lưu kỳ vọng Bellman cung cấp một cách để cập nhật ước tính hàm giá trị của một trạng thái dựa trên giá trị kỳ vọng của các trạng thái kế tiếp và phần thưởng tức thì, lặp đi lặp lại cho đến khi hàm giá trị hội tụ.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Cập nhật chính sách dựa trên hàm giá trị hiện tại:** Đây là mục tiêu của cải thiện chính sách (Policy Improvement), không phải đánh giá chính sách. Cải thiện chính sách sử dụng hàm giá trị đã ước tính để tìm một chính sách tốt hơn, trong khi đánh giá chính sách chỉ tập trung vào việc ước tính giá trị của một chính sách hiện có.\n*   **Xác định hành động tối ưu cho mỗi trạng thái:** Việc xác định hành động tối ưu là một phần của kiểm soát chính sách (Policy Control) hoặc cải thiện chính sách, nơi mục tiêu là tìm ra chính sách tối ưu. Đánh giá chính sách chỉ đơn thuần đánh giá một chính sách đã cho, không tìm kiếm hành động tối ưu.\n*   **Tính toán phần thưởng tức thì cho mỗi bước:** Phần thưởng tức thì là một phần của môi trường và được sử dụng trong phép sao lưu Bellman, nhưng bản thân phép sao lưu không chỉ để tính toán phần thưởng tức thì. Mục đích chính của nó là sử dụng phần thưởng tức thì (cùng với giá trị của các trạng thái kế tiếp) để ước tính hàm giá trị tổng thể.\n",
+      "topic": {
+        "name": "Sao lưu kỳ vọng Bellman",
+        "description": "Chủ đề này đánh giá sự hiểu biết về cách sao lưu kỳ vọng Bellman được sử dụng trong đánh giá chính sách lặp (Iterative Policy Evaluation). Học sinh cần hiểu mục đích của phép sao lưu này trong việc ước tính hàm giá trị cho một chính sách đã cho và mối liên hệ với phương trình Bellman từ tuần 1. (Tuần 2, Khái niệm 2 & Tuần 1)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Điểm khác biệt cơ bản nào làm nổi bật Lặp chính sách so với Lặp giá trị trong cách chúng hội tụ đến chính sách tối ưu?",
+      "answer": "Lặp chính sách thực hiện đánh giá chính sách đến khi hàm giá trị hội tụ hoàn toàn trước khi cải thiện chính sách, trong khi Lặp giá trị kết hợp việc đánh giá và cải thiện chính sách trong một bước lặp.",
+      "distractors": [
+        "Lặp chính sách cập nhật chính sách sau mỗi bước đánh giá giá trị, trong khi Lặp giá trị chỉ cập nhật chính sách sau khi hàm giá trị đã hội tụ hoàn toàn.",
+        "Lặp chính sách đảm bảo hội tụ đến chính sách tối ưu nhanh hơn Lặp giá trị, vì nó sử dụng các bước cải thiện chính sách lớn hơn.",
+        "Lặp giá trị chỉ hoạt động với các không gian trạng thái và hành động rời rạc, trong khi Lặp chính sách có thể áp dụng cho các không gian liên tục."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao câu trả lời đúng là đúng:**\n\nCâu trả lời đúng nêu bật sự khác biệt cơ bản trong cách Lặp chính sách (Policy Iteration) và Lặp giá trị (Value Iteration) tiếp cận việc hội tụ đến chính sách tối ưu. Lặp chính sách bao gồm hai giai đoạn chính: Đánh giá chính sách và Cải thiện chính sách. Trong giai đoạn Đánh giá chính sách, thuật toán tính toán hàm giá trị của chính sách hiện tại cho đến khi nó hội tụ hoàn toàn (tức là hàm giá trị không thay đổi đáng kể nữa). Chỉ sau khi hàm giá trị đã hội tụ, thuật toán mới chuyển sang giai đoạn Cải thiện chính sách, nơi nó cập nhật chính sách dựa trên hàm giá trị đã hội tụ đó. Quá trình này lặp lại cho đến khi chính sách không còn được cải thiện nữa. Ngược lại, Lặp giá trị kết hợp việc đánh giá và cải thiện chính sách trong một bước lặp duy nhất. Trong mỗi bước lặp, nó cập nhật hàm giá trị của các trạng thái bằng cách sử dụng phương trình Bellman tối ưu, đồng thời ngụ ý một sự cải thiện chính sách. Điều này có nghĩa là Lặp giá trị không chờ đợi hàm giá trị hội tụ hoàn toàn trước khi thực hiện một bước cải thiện chính sách, mà thay vào đó, nó liên tục cập nhật hàm giá trị và chính sách một cách đồng thời.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Lặp chính sách cập nhật chính sách sau mỗi bước đánh giá giá trị, trong khi Lặp giá trị chỉ cập nhật chính sách sau khi hàm giá trị đã hội tụ hoàn toàn.** Tuyên bố này đảo ngược vai trò của hai thuật toán. Lặp chính sách chờ đợi hàm giá trị hội tụ hoàn toàn trước khi cập nhật chính sách. Lặp giá trị, về bản chất, cập nhật hàm giá trị và ngụ ý một chính sách tốt hơn trong mỗi bước lặp, không chờ đợi sự hội tụ hoàn toàn của hàm giá trị để thực hiện các cải tiến.\n\n*   **Lặp chính sách đảm bảo hội tụ đến chính sách tối ưu nhanh hơn Lặp giá trị, vì nó sử dụng các bước cải thiện chính sách lớn hơn.** Mặc dù Lặp chính sách thường hội tụ trong ít lần lặp hơn so với Lặp giá trị (vì mỗi lần lặp của Lặp chính sách bao gồm một quá trình đánh giá chính sách đầy đủ), nhưng mỗi lần lặp của Lặp chính sách lại tốn kém hơn về mặt tính toán. Do đó, không thể khẳng định chắc chắn rằng Lặp chính sách luôn nhanh hơn về tổng thời gian tính toán. Hơn nữa, khái niệm \"bước cải thiện chính sách lớn hơn\" không phải là một mô tả chính xác về sự khác biệt cơ bản giữa hai thuật toán.\n\n*   **Lặp giá trị chỉ hoạt động với các không gian trạng thái và hành động rời rạc, trong khi Lặp chính sách có thể áp dụng cho các không gian liên tục.** Cả Lặp chính sách và Lặp giá trị đều là các thuật toán cơ bản của Quy hoạch động và được thiết kế chủ yếu để hoạt động với các không gian trạng thái và hành động rời rạc. Để áp dụng chúng cho các không gian liên tục, cần phải sử dụng các kỹ thuật xấp xỉ như xấp xỉ hàm (function approximation), điều này nằm ngoài phạm vi của các thuật toán cơ bản này. Do đó, tuyên bố này là không chính xác.",
+      "topic": {
+        "name": "Phân biệt Lặp chính sách và Lặp giá trị",
+        "description": "Chủ đề này yêu cầu học sinh phân biệt hai thuật toán điều khiển chính là Lặp chính sách và Lặp giá trị. MCQ sẽ đánh giá sự hiểu biết về sự khác biệt trong cách các thuật toán này cập nhật hàm giá trị và chính sách, cũng như khả năng hội tụ của chúng. (Tuần 2, Khái niệm 3 & 5)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong một mô hình MDP, giả sử trạng thái S có hai hành động khả thi: A1 và A2. Với hệ số chiết khấu (gamma) là 0.9. Nếu thực hiện A1, phần thưởng tức thì là 5 và dẫn đến trạng thái S' có giá trị hiện tại là 10. Nếu thực hiện A2, phần thưởng tức thì là 2 và dẫn đến trạng thái S'' có giá trị hiện tại là 15. Sử dụng phương trình sao lưu tối ưu Bellman trong Lặp giá trị, giá trị mới của trạng thái S sau một bước lặp là bao nhiêu?",
+      "answer": "15.5",
+      "distractors": [
+        "13.5",
+        "14.0",
+        "10.5"
+      ],
+      "explanation": "Giải thích:\n\nĐể tính giá trị mới của trạng thái S sau một bước lặp bằng phương trình sao lưu tối ưu Bellman trong Lặp giá trị, chúng ta cần tính giá trị kỳ vọng của mỗi hành động và chọn giá trị lớn nhất. Công thức là: $V(S) = \\max_{a} (R(S,a) + \\gamma * V(S'))$.\n\n1.  **Tại sao 15.5 là câu trả lời đúng:**\n    *   Đối với hành động A1: Phần thưởng tức thì là 5, và dẫn đến trạng thái S' có giá trị hiện tại là 10.\n        Giá trị của A1 = $5 + 0.9 * 10 = 5 + 9 = 14$.\n    *   Đối với hành động A2: Phần thưởng tức thì là 2, và dẫn đến trạng thái S'' có giá trị hiện tại là 15.\n        Giá trị của A2 = $2 + 0.9 * 15 = 2 + 13.5 = 15.5$.\n    *   Phương trình Bellman tối ưu yêu cầu chúng ta chọn giá trị lớn nhất giữa các hành động khả thi. Trong trường hợp này, $\\max(14, 15.5) = 15.5$. Do đó, giá trị mới của trạng thái S là 15.5.\n\n2.  **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **13.5**: Giá trị này là kết quả của $0.9 * 15$, tức là chỉ tính phần giá trị chiết khấu của trạng thái tiếp theo S'' mà bỏ qua phần thưởng tức thì của hành động A2. Hoặc có thể là kết quả của một phép tính sai khác.\n    *   **14.0**: Giá trị này là giá trị của hành động A1 ($5 + 0.9 * 10 = 14$). Tuy nhiên, phương trình Bellman tối ưu yêu cầu chúng ta chọn giá trị lớn nhất giữa tất cả các hành động khả thi, và A2 mang lại giá trị cao hơn (15.5).\n    *   **10.5**: Giá trị này có thể là kết quả của việc tính toán sai hoặc nhầm lẫn các thành phần. Ví dụ, nếu lấy phần thưởng của A2 (2) cộng với giá trị chiết khấu của S' ($0.9 * 10 = 9$), ta được $2 + 9 = 11$, vẫn không phải 10.5. Hoặc nếu lấy phần thưởng của A1 (5) cộng với giá trị chiết khấu của S'' ($0.9 * 15 = 13.5$), ta được $5 + 13.5 = 18.5$. Không có cách tính hợp lý nào dẫn đến 10.5.",
+      "topic": {
+        "name": "Cập nhật hàm giá trị bằng Lặp giá trị",
+        "description": "Chủ đề này kiểm tra khả năng áp dụng công thức của Lặp giá trị để tính toán hàm giá trị tối ưu. Học sinh sẽ cần sử dụng phương trình sao lưu tối ưu Bellman để cập nhật giá trị trạng thái qua một hoặc nhiều bước lặp cụ thể. (Tuần 2, Khái niệm 5)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh cải thiện chính sách của học tăng cường, việc agent hành động tham lam (greedy) đối với hàm giá trị hiện tại V(s) tại mỗi trạng thái có mục đích chính là gì?",
+      "answer": "Nó dẫn đến một chính sách mới có giá trị bằng hoặc tốt hơn chính sách cũ.",
+      "distractors": [
+        "Nó đảm bảo rằng agent sẽ khám phá tất cả các trạng thái và hành động có thể có.",
+        "Nó giúp ước tính chính xác hơn hàm giá trị trạng thái-hành động Q(s,a).",
+        "Nó trực tiếp tối ưu hóa phần thưởng tích lũy trong tương lai mà không cần cập nhật chính sách."
+      ],
+      "explanation": "Trong bối cảnh cải thiện chính sách của học tăng cường, việc agent hành động tham lam (greedy) đối với hàm giá trị hiện tại V(s) tại mỗi trạng thái có mục đích chính là dẫn đến một chính sách mới có giá trị bằng hoặc tốt hơn chính sách cũ. Đây là nguyên tắc cốt lõi của bước cải thiện chính sách trong thuật toán lặp lại chính sách. Bằng cách chọn hành động tối đa hóa giá trị kỳ vọng của trạng thái tiếp theo (dựa trên hàm giá trị hiện tại), agent tạo ra một chính sách mới mà theo định nghĩa, sẽ không tệ hơn chính sách hiện tại và thường là tốt hơn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó đảm bảo rằng agent sẽ khám phá tất cả các trạng thái và hành động có thể có.** Hành động tham lam là một chiến lược khai thác (exploitation), không phải khám phá (exploration). Nó chọn hành động tốt nhất dựa trên kiến thức hiện tại, do đó có thể bỏ qua các trạng thái và hành động chưa được khám phá có thể dẫn đến phần thưởng cao hơn. Khám phá thường được xử lý bằng các chiến lược như epsilon-greedy hoặc thêm nhiễu.\n*   **Nó giúp ước tính chính xác hơn hàm giá trị trạng thái-hành động Q(s,a).** Hành động tham lam sử dụng hàm giá trị V(s) hoặc Q(s,a) đã được ước tính để *cải thiện chính sách*, chứ không phải để *ước tính* các hàm giá trị đó. Việc ước tính hàm giá trị là một phần của bước đánh giá chính sách.\n*   **Nó trực tiếp tối ưu hóa phần thưởng tích lũy trong tương lai mà không cần cập nhật chính sách.** Hành động tham lam là một phần của quá trình cập nhật chính sách. Nó tạo ra một chính sách mới dựa trên hàm giá trị hiện tại, và chính sách mới này sau đó sẽ được sử dụng để tính toán lại (hoặc ước tính lại) hàm giá trị, lặp lại quá trình cho đến khi hội tụ. Nó không trực tiếp tối ưu hóa phần thưởng mà không cần cập nhật chính sách.",
+      "topic": {
+        "name": "Ứng dụng Cải thiện chính sách",
+        "description": "Chủ đề này đánh giá khả năng của học sinh trong việc áp dụng nguyên tắc cải thiện chính sách. Câu hỏi sẽ tập trung vào cách một chính sách được cải thiện bằng cách hành động tham lam đối với hàm giá trị hiện tại, dẫn đến chính sách mới có giá trị bằng hoặc tốt hơn. (Tuần 2, Khái niệm 4)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi xử lý các Vấn đề Quyết định Markov (MDP) lớn mà 'lời nguyền về chiều' là yếu tố đáng kể, đặc điểm cơ bản nào chủ yếu giới hạn khả năng ứng dụng thực tế của sao lưu toàn bộ so với sao lưu mẫu?",
+      "answer": "Chi phí tính toán tăng theo cấp số nhân với kích thước không gian trạng thái.",
+      "distractors": [
+        "Sự phụ thuộc vào các mô hình chuyển đổi chính xác của môi trường.",
+        "Khó khăn trong việc ước tính chính xác hàm giá trị trong không gian trạng thái lớn.",
+        "Yêu cầu về bộ nhớ để lưu trữ tất cả các cặp trạng thái-hành động có thể."
+      ],
+      "explanation": "Khi xử lý các Vấn đề Quyết định Markov (MDP) lớn, \"lời nguyền về chiều\" đề cập đến sự tăng trưởng theo cấp số nhân của không gian trạng thái và hành động, điều này làm cho các phương pháp giải quyết truyền thống trở nên không khả thi. **Chi phí tính toán tăng theo cấp số nhân với kích thước không gian trạng thái** là câu trả lời đúng vì sao lưu toàn bộ (full backup) yêu cầu lặp lại qua *tất cả* các trạng thái và hành động có thể có trong mỗi lần cập nhật. Khi không gian trạng thái trở nên rất lớn, số lượng phép tính cần thiết để thực hiện sao lưu toàn bộ tăng lên nhanh chóng đến mức không thể quản lý được, đây chính là bản chất của \"lời nguyền về chiều\" và là hạn chế chính của sao lưu toàn bộ so với sao lưu mẫu (sample backup) vốn chỉ cập nhật dựa trên các mẫu được trải nghiệm.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Sự phụ thuộc vào các mô hình chuyển đổi chính xác của môi trường:** Mặc dù sao lưu toàn bộ *có* yêu cầu một mô hình chuyển đổi chính xác (khác với sao lưu mẫu thường không cần), đây không phải là đặc điểm *chủ yếu* giới hạn khả năng ứng dụng thực tế của nó trong bối cảnh \"lời nguyền về chiều\". Vấn đề chính là chi phí tính toán để sử dụng mô hình đó trên toàn bộ không gian trạng thái, chứ không phải bản thân sự phụ thuộc vào mô hình.\n*   **Khó khăn trong việc ước tính chính xác hàm giá trị trong không gian trạng thái lớn:** Khó khăn này là một hệ quả của chi phí tính toán cao và yêu cầu bộ nhớ, chứ không phải là nguyên nhân cơ bản giới hạn khả năng ứng dụng của sao lưu toàn bộ. Việc ước tính chính xác hàm giá trị trở nên khó khăn *vì* không thể thực hiện các phép tính cần thiết trên toàn bộ không gian trạng thái một cách hiệu quả.\n*   **Yêu cầu về bộ nhớ để lưu trữ tất cả các cặp trạng thái-hành động có thể:** Yêu cầu bộ nhớ là một hạn chế đáng kể khác của sao lưu toàn bộ trong các MDP lớn, nhưng nó thường đi đôi với chi phí tính toán. Tuy nhiên, trong bối cảnh \"lời nguyền về chiều\" và so sánh với sao lưu mẫu, chi phí tính toán để *xử lý* tất cả các cặp trạng thái-hành động thường được coi là rào cản cơ bản hơn so với việc chỉ *lưu trữ* chúng, đặc biệt khi các phương pháp xấp xỉ có thể được sử dụng để giảm yêu cầu bộ nhớ. Chi phí tính toán là yếu tố trực tiếp hơn liên quan đến việc thực hiện các phép tính cập nhật.",
+      "topic": {
+        "name": "Sao lưu toàn bộ vs. Sao lưu mẫu",
+        "description": "Chủ đề này yêu cầu học sinh phân tích sự khác biệt cơ bản giữa Sao lưu toàn bộ và Sao lưu mẫu, đặc biệt trong bối cảnh các vấn đề MDP lớn và 'lời nguyền về chiều'. Sinh viên cần hiểu khi nào nên sử dụng mỗi loại sao lưu và ưu điểm/nhược điểm của chúng. (Tuần 2, Khái niệm 8 & 9)",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Mergesort là gì?",
+            "answer": "Một thuật toán sắp xếp dựa trên nguyên tắc chia để trị.",
+            "distractors": [
+                "Một thuật toán tìm kiếm",
+                "Một thuật toán mã hóa",
+                "Một thuật toán phân loại"
+            ],
+            "explanation": "Mergesort là một thuật toán sắp xếp nổi tiếng, hoạt động theo nguyên tắc chia để trị, chia mảng thành các phần nhỏ hơn và sau đó hợp nhất chúng lại."
+        },
+        {
+            "question": "Nguyên tắc chính của Mergesort là gì?",
+            "answer": "Chia mảng thành các mảng con nhỏ hơn và hợp nhất chúng lại theo thứ tự.",
+            "distractors": [
+                "Sắp xếp mảng bằng cách hoán đổi các phần tử",
+                "Sắp xếp mảng bằng cách chọn phần tử lớn nhất",
+                "Sắp xếp mảng bằng cách sử dụng đệ quy mà không cần hợp nhất"
+            ],
+            "explanation": "Nguyên tắc chính của Mergesort là chia mảng thành các mảng con nhỏ hơn và sau đó hợp nhất chúng lại theo thứ tự."
+        },
+        {
+            "question": "Trong Java, phương thức nào được sử dụng để hợp nhất hai mảng con trong Mergesort?",
+            "answer": "Phương thức merge()",
+            "distractors": [
+                "Phương thức sort()",
+                "Phương thức combine()",
+                "Phương thức join()"
+            ],
+            "explanation": "Trong Java, phương thức merge() được sử dụng để hợp nhất hai mảng con đã sắp xếp trong thuật toán Mergesort."
+        },
+        {
+            "question": "Độ phức tạp thời gian của Mergesort trong trường hợp xấu nhất là gì?",
+            "answer": "O(n log n)",
+            "distractors": [
+                "O(n)",
+                "O(n^2)",
+                "O(log n)"
+            ],
+            "explanation": "Độ phức tạp thời gian của Mergesort trong trường hợp xấu nhất là O(n log n), điều này làm cho nó hiệu quả hơn so với nhiều thuật toán sắp xếp khác."
+        },
+        {
+            "question": "Mergesort có tính ổn định không?",
+            "answer": "Có, Mergesort là một thuật toán sắp xếp ổn định.",
+            "distractors": [
+                "Không, Mergesort không ổn định",
+                "Có, nhưng chỉ trong một số trường hợp",
+                "Không, Mergesort không thể đảm bảo tính ổn định"
+            ],
+            "explanation": "Mergesort là một thuật toán sắp xếp ổn định, nghĩa là nó giữ nguyên thứ tự của các phần tử có giá trị bằng nhau."
+        },
+        {
+            "question": "So với thuật toán sắp xếp chèn, Mergesort có ưu điểm gì?",
+            "answer": "Mergesort có độ phức tạp thời gian tốt hơn trong trường hợp xấu nhất.",
+            "distractors": [
+                "Sắp xếp chèn nhanh hơn trong mọi trường hợp",
+                "Mergesort sử dụng ít bộ nhớ hơn",
+                "Sắp xếp chèn dễ triển khai hơn"
+            ],
+            "explanation": "Mergesort có độ phức tạp thời gian O(n log n) trong trường hợp xấu nhất, trong khi sắp xếp chèn có độ phức tạp O(n^2), làm cho Mergesort hiệu quả hơn."
+        },
+        {
+            "question": "Giới hạn dưới cho số lần so sánh cần thiết trong bất kỳ thuật toán sắp xếp nào là gì?",
+            "answer": "lg(N!)",
+            "distractors": [
+                "N",
+                "N log N",
+                "N^2"
+            ],
+            "explanation": "Giới hạn dưới cho số lần so sánh cần thiết trong bất kỳ thuật toán sắp xếp nào là lg(N!), điều này có nghĩa là bất kỳ thuật toán sắp xếp nào cũng cần ít nhất số lần so sánh này trong trường hợp xấu nhất."
+        },
+        {
+            "question": "Sự khác biệt giữa sắp xếp ổn định và không ổn định là gì?",
+            "answer": "Sắp xếp ổn định giữ nguyên thứ tự của các phần tử có giá trị bằng nhau.",
+            "distractors": [
+                "Sắp xếp ổn định nhanh hơn sắp xếp không ổn định",
+                "Sắp xếp không ổn định sử dụng ít bộ nhớ hơn",
+                "Sắp xếp ổn định không thể sử dụng đệ quy"
+            ],
+            "explanation": "Sắp xếp ổn định giữ nguyên thứ tự của các phần tử có giá trị bằng nhau, trong khi sắp xếp không ổn định có thể thay đổi thứ tự này."
+        }
+    ]
+}

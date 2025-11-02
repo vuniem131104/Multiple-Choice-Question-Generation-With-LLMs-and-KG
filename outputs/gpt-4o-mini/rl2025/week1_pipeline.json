@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Quy trình Quyết định Markov (MDP) bao gồm các thành phần chính nào?",
+      "answer": "Trạng thái, hành động và hàm phần thưởng.",
+      "distractors": [
+        "Trạng thái, hành động và hàm xác suất.",
+        "Trạng thái, hành động và chính sách.",
+        "Trạng thái, hành động và hàm giá trị."
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về các thành phần chính của Quy trình Quyết định Markov (MDP) là \"Trạng thái, hành động và hàm phần thưởng.\" Đây là ba thành phần cốt lõi trong MDP. Trạng thái đại diện cho các tình huống mà hệ thống có thể gặp phải, hành động là các lựa chọn mà tác nhân có thể thực hiện để chuyển đổi giữa các trạng thái, và hàm phần thưởng cung cấp thông tin về giá trị của mỗi hành động trong một trạng thái nhất định, giúp tác nhân đưa ra quyết định tối ưu.\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n1. **Trạng thái, hành động và hàm xác suất**: Mặc dù hàm xác suất là một phần quan trọng trong MDP, nó không phải là một trong ba thành phần chính. Hàm xác suất mô tả khả năng chuyển đổi từ trạng thái này sang trạng thái khác khi thực hiện một hành động, nhưng không phải là thành phần chính như trạng thái, hành động và hàm phần thưởng.\n\n2. **Trạng thái, hành động và chính sách**: Chính sách là một quy tắc xác định hành động nào nên được thực hiện trong mỗi trạng thái, nhưng nó không phải là một trong ba thành phần chính của MDP. Chính sách có thể được xây dựng dựa trên các thành phần chính, nhưng không thể thay thế cho hàm phần thưởng.\n\n3. **Trạng thái, hành động và hàm giá trị**: Hàm giá trị đo lường giá trị kỳ vọng của một trạng thái hoặc hành động, nhưng nó cũng không phải là một trong ba thành phần chính của MDP. Hàm giá trị là một khái niệm hỗ trợ trong việc đánh giá các quyết định, nhưng không nằm trong danh sách các thành phần cơ bản như trạng thái, hành động và hàm phần thưởng.\n\nTóm lại, câu trả lời đúng là \"Trạng thái, hành động và hàm phần thưởng\" vì đây là ba thành phần thiết yếu trong cấu trúc của MDP, trong khi các yếu tố gây nhiễu khác không chính xác vì chúng không phải là các thành phần chính.",
+      "topic": {
+        "name": "Quy trình Quyết định Markov (MDP) cơ bản",
+        "description": "Khái niệm về Quy trình Quyết định Markov (MDPs) sẽ được kiểm tra, bao gồm định nghĩa và các thành phần của MDPs như trạng thái, hành động và hàm phần thưởng. Học sinh cần hiểu cách mà các MDPs mô tả môi trường trong học tăng cường và khả năng chuyển đổi giữa các trạng thái.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Tính chất Markov khẳng định rằng tương lai phụ thuộc vào điều gì trong khi không bị ảnh hưởng bởi lịch sử?",
+      "answer": "Tương lai phụ thuộc vào hiện tại.",
+      "distractors": [
+        "Tương lai phụ thuộc vào quá khứ.",
+        "Tương lai phụ thuộc vào các sự kiện ngẫu nhiên trước đó.",
+        "Tương lai phụ thuộc vào một chuỗi các trạng thái trước đó."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tương lai phụ thuộc vào hiện tại\" vì tính chất Markov khẳng định rằng trong một quá trình ngẫu nhiên, trạng thái tương lai chỉ phụ thuộc vào trạng thái hiện tại mà không bị ảnh hưởng bởi các trạng thái trước đó. Điều này có nghĩa là thông tin từ quá khứ không cần thiết để dự đoán tương lai, chỉ cần biết trạng thái hiện tại là đủ.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Tương lai phụ thuộc vào quá khứ**: Đây là một khái niệm trái ngược với tính chất Markov. Trong các quá trình Markov, quá khứ không ảnh hưởng đến tương lai, chỉ có hiện tại mới có vai trò quyết định.\n\n- **Tương lai phụ thuộc vào các sự kiện ngẫu nhiên trước đó**: Mặc dù có thể có các sự kiện ngẫu nhiên xảy ra trước đó, nhưng theo tính chất Markov, những sự kiện này không ảnh hưởng đến tương lai nếu trạng thái hiện tại đã được biết. Tương lai chỉ phụ thuộc vào trạng thái hiện tại.\n\n- **Tương lai phụ thuộc vào một chuỗi các trạng thái trước đó**: Điều này cũng không đúng với tính chất Markov. Tính chất này nhấn mạnh rằng chỉ cần trạng thái hiện tại để dự đoán tương lai, không cần phải xem xét toàn bộ chuỗi trạng thái trước đó.\n\nTóm lại, tính chất Markov khẳng định rằng tương lai chỉ phụ thuộc vào hiện tại, không bị ảnh hưởng bởi quá khứ hay chuỗi trạng thái trước đó.",
+      "topic": {
+        "name": "Tính chất Markov và ứng dụng",
+        "description": "Học sinh sẽ được đánh giá khả năng hiểu và áp dụng tính chất Markov vào các quy trình ngẫu nhiên. Cần nắm được cách mà tương lai phụ thuộc vào hiện tại và không bị ảnh hưởng bởi lịch sử, từ đó có thể áp dụng vào các bài toán cụ thể.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Ma trận Chuyển đổi Trạng thái trong MDP được sử dụng để xác định điều gì trong các quy trình này?",
+      "answer": "Xác suất chuyển đổi giữa các trạng thái.",
+      "distractors": [
+        "Ma trận Chuyển đổi Trạng thái xác định các hành động có thể thực hiện.",
+        "Ma trận này chỉ chứa thông tin về trạng thái hiện tại.",
+        "Xác suất chuyển đổi giữa các hành động trong một trạng thái."
+      ],
+      "explanation": "Câu trả lời đúng là \"Xác suất chuyển đổi giữa các trạng thái\" vì Ma trận Chuyển đổi Trạng thái trong MDP (Markov Decision Process) được thiết kế để mô tả xác suất mà một trạng thái hiện tại sẽ chuyển sang một trạng thái khác sau khi thực hiện một hành động nhất định. Mỗi phần tử trong ma trận này thể hiện xác suất chuyển đổi từ trạng thái này sang trạng thái khác, giúp mô hình hóa hành vi của hệ thống trong các quyết định.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Ma trận Chuyển đổi Trạng thái xác định các hành động có thể thực hiện**: Sai, vì ma trận này không xác định hành động mà chỉ mô tả xác suất chuyển đổi giữa các trạng thái. Hành động được xác định bởi chính sách (policy) chứ không phải bởi ma trận chuyển đổi.\n\n- **Ma trận này chỉ chứa thông tin về trạng thái hiện tại**: Sai, vì ma trận này không chỉ chứa thông tin về trạng thái hiện tại mà còn về tất cả các trạng thái có thể mà hệ thống có thể chuyển đến từ trạng thái hiện tại, cùng với xác suất tương ứng.\n\n- **Xác suất chuyển đổi giữa các hành động trong một trạng thái**: Sai, vì ma trận này không mô tả xác suất chuyển đổi giữa các hành động mà chỉ mô tả xác suất chuyển đổi giữa các trạng thái. Hành động và trạng thái là hai khái niệm khác nhau trong MDP.\n\nTóm lại, câu trả lời đúng phản ánh chính xác chức năng của Ma trận Chuyển đổi Trạng thái, trong khi các yếu tố gây nhiễu đều sai do hiểu nhầm về vai trò và nội dung của ma trận này.",
+      "topic": {
+        "name": "Ma trận Chuyển đổi Trạng thái trong MDP",
+        "description": "Chủ đề này sẽ kiểm tra sự hiểu biết về Ma trận Chuyển đổi Trạng thái, bao gồm cách xác định xác suất chuyển đổi giữa các trạng thái và ý nghĩa của các hàng ma trận này. Học sinh cần phân tích các ứng dụng của ma trận chuyển đổi trong việc mô phỏng các quy trình MDP.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương trình Bellman cho Quy trình Phần thưởng Markov, hàm giá trị V(s) được tính bằng cách nào?",
+      "answer": "V(s) = R(s) + γ ∑ P(s'|s,a)V(s')",
+      "distractors": [
+        "V(s) = R(s) + ∑ P(s'|s,a)V(s')",
+        "V(s) = R(s) + γ V(s')",
+        "V(s) = ∑ P(s'|s,a)R(s')"
+      ],
+      "explanation": "Câu trả lời đúng là \"V(s) = R(s) + γ ∑ P(s'|s,a)V(s')\" vì đây là phương trình Bellman cho hàm giá trị trong Quy trình Phần thưởng Markov (MRP). Trong đó, V(s) đại diện cho giá trị của trạng thái s, R(s) là phần thưởng tức thì nhận được khi ở trạng thái s, γ là hệ số chiết khấu (0 ≤ γ < 1) để điều chỉnh tầm quan trọng của các phần thưởng trong tương lai, và ∑ P(s'|s,a)V(s') là tổng giá trị kỳ vọng của các trạng thái tiếp theo s' mà có thể đạt được từ trạng thái s khi thực hiện hành động a. Phương trình này cho thấy rằng giá trị của một trạng thái không chỉ phụ thuộc vào phần thưởng ngay lập tức mà còn vào giá trị của các trạng thái tương lai.\n\nGiải thích về các yếu tố gây nhiễu:\n- **V(s) = R(s) + ∑ P(s'|s,a)V(s')**: Tùy chọn này sai vì nó thiếu hệ số chiết khấu γ. Hệ số này rất quan trọng trong việc điều chỉnh giá trị của các phần thưởng trong tương lai, nếu không có nó, phương trình sẽ không phản ánh đúng giá trị kỳ vọng của các trạng thái tiếp theo.\n  \n- **V(s) = R(s) + γ V(s')**: Tùy chọn này cũng sai vì nó chỉ tính đến một trạng thái tiếp theo s' mà không xem xét đến xác suất chuyển tiếp giữa các trạng thái. Phương trình Bellman cần tổng hợp giá trị của tất cả các trạng thái có thể đạt được từ trạng thái hiện tại, không chỉ một trạng thái duy nhất.\n\n- **V(s) = ∑ P(s'|s,a)R(s')**: Tùy chọn này sai vì nó chỉ tính đến phần thưởng của các trạng thái tiếp theo mà không bao gồm phần thưởng tức thì R(s) từ trạng thái hiện tại. Phương trình Bellman cần phải kết hợp cả phần thưởng tức thì và giá trị kỳ vọng của các trạng thái tiếp theo để tính toán chính xác giá trị của trạng thái hiện tại. \n\nTóm lại, câu trả lời đúng phản ánh đầy đủ các yếu tố cần thiết để tính toán giá trị của trạng thái trong một MRP, trong khi các yếu tố gây nhiễu đều thiếu sót hoặc sai lệch trong cách tiếp cận.",
+      "topic": {
+        "name": "Các phương trình Bellman trong MRPs",
+        "description": "Chủ đề này sẽ tập trung vào Phương trình Bellman và cách chúng được áp dụng trong Quy trình Phần thưởng Markov. Học sinh sẽ cần phân tích cách hàm giá trị có thể được tính toán qua các phần thưởng tức thì và giá trị tương lai, sử dụng các ví dụ thực tế được cung cấp.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Hàm Giá trị Trạng thái v(s) trong MRP được xác định dựa trên yếu tố nào sau đây trong quá trình tính toán giá trị dài hạn?",
+      "answer": "Phần thưởng và yếu tố chiết khấu.",
+      "distractors": [
+        "Chi phí và yếu tố chiết khấu.",
+        "Phần thưởng và yếu tố rủi ro.",
+        "Phần thưởng và giá trị hiện tại."
+      ],
+      "explanation": "Câu trả lời đúng là \"Phần thưởng và yếu tố chiết khấu\" vì trong MRP (Markov Decision Process), hàm giá trị trạng thái v(s) được xác định dựa trên tổng giá trị kỳ vọng của các phần thưởng trong tương lai, được điều chỉnh bởi yếu tố chiết khấu. Yếu tố chiết khấu giúp xác định giá trị hiện tại của các phần thưởng trong tương lai, từ đó cho phép tính toán giá trị dài hạn của trạng thái s.\n\nGiải thích về các yếu tố gây nhiễu:\n\n- **Chi phí và yếu tố chiết khấu**: Tùy chọn này sai vì chi phí không phải là yếu tố chính trong việc xác định hàm giá trị trạng thái. Hàm giá trị tập trung vào phần thưởng nhận được từ các hành động, không phải chi phí liên quan.\n\n- **Phần thưởng và yếu tố rủi ro**: Tùy chọn này không chính xác vì yếu tố rủi ro không được sử dụng trực tiếp trong việc tính toán hàm giá trị trạng thái. MRP chủ yếu dựa vào phần thưởng và yếu tố chiết khấu, không phải là các yếu tố rủi ro.\n\n- **Phần thưởng và giá trị hiện tại**: Tùy chọn này cũng sai vì mặc dù giá trị hiện tại là một khái niệm quan trọng, nhưng nó không phải là yếu tố độc lập trong việc xác định hàm giá trị trạng thái. Thay vào đó, giá trị hiện tại được tính toán thông qua phần thưởng và yếu tố chiết khấu, không thể tách rời khỏi chúng.\n\nTóm lại, câu trả lời đúng nhấn mạnh vai trò của phần thưởng và yếu tố chiết khấu trong việc xác định giá trị dài hạn của trạng thái trong MRP, trong khi các yếu tố gây nhiễu không phản ánh đúng các khái niệm này.",
+      "topic": {
+        "name": "Hàm Giá trị Trạng thái trong MRP",
+        "description": "Khả năng tính toán và hiểu Hàm Giá trị Trạng thái v(s) sẽ được đánh giá. Học sinh cần ứng dụng kiến thức về phần thưởng và yếu tố chiết khấu để giải thích giá trị dài hạn của các trạng thái trong MRP, dựa trên các hướng dẫn và số liệu từ các bài học trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong một MDP, chính sách nào có thể được đánh giá là tốt hơn khi nó dẫn đến hàm giá trị tối ưu cao hơn so với chính sách khác?",
+      "answer": "Chính sách tối ưu",
+      "distractors": [
+        "Chính sách ngẫu nhiên",
+        "Chính sách không thay đổi",
+        "Chính sách tối thiểu"
+      ],
+      "explanation": "Câu trả lời đúng là \"Chính sách tối ưu\" vì trong một MDP (Markov Decision Process), chính sách tối ưu là chính sách mà tại đó hàm giá trị tối ưu đạt được giá trị cao nhất có thể cho tất cả các trạng thái. Điều này có nghĩa là chính sách tối ưu sẽ dẫn đến các quyết định tốt nhất trong mọi tình huống, tối đa hóa phần thưởng kỳ vọng trong dài hạn.\n\nCác yếu tố gây nhiễu:\n\n- **Chính sách ngẫu nhiên**: Chính sách này chọn hành động một cách ngẫu nhiên mà không dựa trên giá trị của các trạng thái. Do đó, nó không đảm bảo rằng các hành động được thực hiện sẽ dẫn đến hàm giá trị tối ưu cao hơn, mà có thể dẫn đến các quyết định kém hiệu quả.\n\n- **Chính sách không thay đổi**: Chính sách này không thay đổi theo thời gian hoặc theo trạng thái, có thể dẫn đến việc không tối ưu hóa phần thưởng. Nếu chính sách không thay đổi không phải là chính sách tối ưu, nó sẽ không dẫn đến hàm giá trị tối ưu cao hơn so với chính sách tối ưu.\n\n- **Chính sách tối thiểu**: Chính sách này có thể chỉ tập trung vào việc giảm thiểu rủi ro hoặc chi phí mà không chú trọng đến việc tối đa hóa phần thưởng. Do đó, nó có thể dẫn đến hàm giá trị thấp hơn so với chính sách tối ưu, vì mục tiêu của nó không phải là tối đa hóa phần thưởng kỳ vọng.\n\nTóm lại, chỉ có \"Chính sách tối ưu\" mới đảm bảo hàm giá trị tối ưu cao nhất, trong khi các chính sách khác đều không đạt được điều này.",
+      "topic": {
+        "name": "Tích hợp MDP và Chính sách Tối ưu",
+        "description": "Chủ đề này liên kết các khái niệm về MDP và Chính sách Tối ưu, yêu cầu học sinh phân tích cách mỗi chính sách ảnh hưởng đến hàm giá trị tối ưu. Họ sẽ cần so sánh các chính sách khác nhau dựa trên tra cứu giá trị và hành động tối ưu trong MDP.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong việc thiết kế chính sách tối ưu cho MDPs, yếu tố nào sau đây trực tiếp ảnh hưởng đến giá trị tối ưu của trạng thái?",
+      "answer": "Các yếu tố môi trường như phần thưởng và xác suất chuyển trạng thái.",
+      "distractors": [
+        "Các yếu tố cá nhân của tác nhân như sở thích và thói quen.",
+        "Các yếu tố không liên quan như thời gian và không gian trong môi trường.",
+        "Các yếu tố lịch sử của tác nhân như kinh nghiệm trước đây trong các trạng thái."
+      ],
+      "explanation": "Câu trả lời đúng là \"Các yếu tố môi trường như phần thưởng và xác suất chuyển trạng thái\" vì trong MDPs (Markov Decision Processes), giá trị tối ưu của trạng thái phụ thuộc trực tiếp vào các phần thưởng mà trạng thái đó nhận được và xác suất chuyển từ trạng thái này sang trạng thái khác khi thực hiện một hành động. Phần thưởng cung cấp động lực cho tác nhân để tối ưu hóa hành động của mình, trong khi xác suất chuyển trạng thái xác định khả năng xảy ra của các kết quả khác nhau, ảnh hưởng đến quyết định của tác nhân.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Các yếu tố cá nhân của tác nhân như sở thích và thói quen**: Những yếu tố này không ảnh hưởng trực tiếp đến giá trị tối ưu của trạng thái trong MDPs, vì MDPs tập trung vào các yếu tố môi trường và không xem xét sở thích cá nhân của tác nhân. Chính sách tối ưu được xây dựng dựa trên phần thưởng và xác suất chuyển trạng thái, không phải sở thích cá nhân.\n\n- **Các yếu tố không liên quan như thời gian và không gian trong môi trường**: Mặc dù thời gian và không gian có thể ảnh hưởng đến cách thức hoạt động của môi trường, chúng không phải là yếu tố quyết định trong việc tính toán giá trị tối ưu của trạng thái. MDPs chủ yếu xem xét các phần thưởng và xác suất chuyển trạng thái, không phải các yếu tố không liên quan này.\n\n- **Các yếu tố lịch sử của tác nhân như kinh nghiệm trước đây trong các trạng thái**: Mặc dù kinh nghiệm có thể ảnh hưởng đến hành động của tác nhân trong một số mô hình học máy, trong MDPs, giá trị tối ưu của trạng thái được xác định bởi các yếu tố môi trường hiện tại, không phải bởi kinh nghiệm trước đây. MDPs giả định rằng tác nhân hoạt động trong một môi trường Markov, nơi mà quyết định chỉ phụ thuộc vào trạng thái hiện tại, không phải lịch sử. \n\nTóm lại, câu trả lời đúng tập trung vào các yếu tố môi trường, trong khi các yếu tố gây nhiễu không ảnh hưởng trực tiếp đến giá trị tối ưu của trạng thái trong MDPs.",
+      "topic": {
+        "name": "Hàm Giá trị Tối ưu và Chính sách Tay",
+        "description": "Chủ đề kiểm tra khả năng của học sinh trong việc xác định các yếu tố ảnh hưởng trực tiếp đến Hàm Giá trị Tối ưu và Thiết kế Chính sách cho MDPs. Học sinh cần giải thích các ví dụ từ bài giảng trước để xem cách tạo ra chính sách tối ưu từ các yếu tố môi trường được biết đến.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Quy trình Quyết định Markov Ergodic được đặc trưng bởi yếu tố nào trong việc mô hình hóa các hiện tượng thực tế?",
+      "answer": "Tính chất lặp lại trong các trạng thái.",
+      "distractors": [
+        "Tính chất ngẫu nhiên trong các trạng thái.",
+        "Sự phụ thuộc vào trạng thái trước đó.",
+        "Tính chất không đổi trong các trạng thái."
+      ],
+      "explanation": "Câu trả lời đúng \"Tính chất lặp lại trong các trạng thái\" là chính xác vì trong quy trình Quyết định Markov Ergodic, các trạng thái có khả năng quay trở lại với xác suất dương, cho phép hệ thống đạt được trạng thái ổn định theo thời gian. Điều này có nghĩa là sau một thời gian dài, phân phối xác suất của các trạng thái sẽ không thay đổi, cho phép mô hình hóa các hiện tượng thực tế một cách hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Tính chất ngẫu nhiên trong các trạng thái**: Mặc dù quy trình Markov có tính ngẫu nhiên, nhưng điều này không đặc trưng cho tính chất ergodic. Tính ngẫu nhiên chỉ đơn thuần là một phần của mô hình, không phải là yếu tố quyết định cho việc mô hình hóa hiện tượng thực tế.\n\n- **Sự phụ thuộc vào trạng thái trước đó**: Quy trình Markov, đặc biệt là ergodic, được đặc trưng bởi tính độc lập của các trạng thái hiện tại so với các trạng thái trước đó. Điều này có nghĩa là trạng thái hiện tại chỉ phụ thuộc vào trạng thái ngay trước đó, không phải là một yếu tố quyết định cho tính ergodic.\n\n- **Tính chất không đổi trong các trạng thái**: Tính không đổi không phải là một đặc điểm của quy trình ergodic. Trong thực tế, các trạng thái có thể thay đổi theo thời gian, nhưng tính chất lặp lại cho phép các trạng thái quay trở lại, tạo ra sự ổn định trong phân phối xác suất. \n\nTóm lại, câu trả lời đúng tập trung vào tính chất lặp lại, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất của quy trình Quyết định Markov Ergodic.",
+      "topic": {
+        "name": "Quy trình Quyết định Markov Ergodic",
+        "description": "Chủ đề này khám phá các đặc điểm của MDP Ergodic và tính chất lặp lại trong các quy trình quyết định. Học sinh cần phân tích các khía cạnh cấu trúc của quy trình ergodic và cách chúng mô hình hóa các hiện tượng trong thực tế, từ đó thực hành tự tạo mô hình cho các quy trình tương tự trong môi trường học tập.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    }
+  ]
+}

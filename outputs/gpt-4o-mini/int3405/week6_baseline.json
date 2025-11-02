@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Phân tích cụm là gì?",
+            "answer": "Là quá trình gộp nhóm các đối tượng có đặc điểm tương tự nhau.",
+            "distractors": [
+                "Là quá trình phân loại các đối tượng thành các nhóm khác nhau.",
+                "Là một phương pháp dự đoán giá trị của một biến số.",
+                "Là quá trình thu thập dữ liệu từ nhiều nguồn khác nhau."
+            ],
+            "explanation": "Phân tích cụm là một kỹ thuật trong máy học nhằm gộp nhóm các đối tượng có đặc điểm tương tự nhau, giúp nhận diện các mẫu và cấu trúc trong dữ liệu."
+        },
+        {
+            "question": "Các yếu tố nào có thể ảnh hưởng đến kết quả của phân tích cụm?",
+            "answer": "Các thuộc tính của dữ liệu, hình dạng cụm và vai trò của thuật toán.",
+            "distractors": [
+                "Chỉ số trung bình của dữ liệu.",
+                "Số lượng đối tượng trong mỗi cụm.",
+                "Thời gian thu thập dữ liệu."
+            ],
+            "explanation": "Các yếu tố như thuộc tính của dữ liệu, hình dạng cụm và thuật toán sử dụng có thể ảnh hưởng lớn đến kết quả phân tích cụm."
+        },
+        {
+            "question": "Phương pháp nào được sử dụng để đo lường độ tương tự giữa các điểm dữ liệu?",
+            "answer": "Khoảng cách Euclidean.",
+            "distractors": [
+                "Khoảng cách Manhattan.",
+                "Khoảng cách Cosine.",
+                "Khoảng cách Hamming."
+            ],
+            "explanation": "Khoảng cách Euclidean là một trong những phương pháp phổ biến nhất để đo lường độ tương tự giữa các điểm dữ liệu trong không gian đa chiều."
+        },
+        {
+            "question": "Khi áp dụng thuật toán K-Means, điều gì là quan trọng nhất trong việc lựa chọn K?",
+            "answer": "Số lượng cụm cần phân chia dữ liệu.",
+            "distractors": [
+                "Thời gian chạy của thuật toán.",
+                "Số lượng thuộc tính của dữ liệu.",
+                "Độ chính xác của dữ liệu đầu vào."
+            ],
+            "explanation": "Lựa chọn K là một bước quan trọng trong thuật toán K-Means, vì nó xác định số lượng cụm mà dữ liệu sẽ được phân chia."
+        },
+        {
+            "question": "Một trong những ưu điểm của K-Means là gì?",
+            "answer": "Thuật toán đơn giản và dễ hiểu.",
+            "distractors": [
+                "Có thể xử lý dữ liệu phi tuyến tính.",
+                "Không cần xác định số lượng cụm trước.",
+                "Có thể phát hiện các cụm bất thường."
+            ],
+            "explanation": "K-Means là một thuật toán đơn giản và dễ hiểu, nhưng nó có nhược điểm trong việc xử lý dữ liệu phi tuyến tính và phát hiện các cụm bất thường."
+        },
+        {
+            "question": "Chỉ số nào được sử dụng để đánh giá hiệu suất của phân cụm không giám sát?",
+            "answer": "Hệ số Silhouette.",
+            "distractors": [
+                "Chỉ số R-squared.",
+                "Chỉ số F1.",
+                "Chỉ số AUC."
+            ],
+            "explanation": "Hệ số Silhouette là một chỉ số quan trọng để đánh giá hiệu suất của phân cụm không giám sát, cho biết mức độ tương đồng giữa các đối tượng trong cùng một cụm."
+        },
+        {
+            "question": "Phân cụm phân cấp là gì?",
+            "answer": "Là phương pháp phân cụm dựa trên cấu trúc phân cấp của dữ liệu.",
+            "distractors": [
+                "Là phương pháp phân cụm dựa trên khoảng cách giữa các điểm dữ liệu.",
+                "Là phương pháp phân cụm sử dụng thuật toán K-Means.",
+                "Là phương pháp phân cụm dựa trên mật độ của dữ liệu."
+            ],
+            "explanation": "Phân cụm phân cấp là một phương pháp phân cụm mà trong đó các đối tượng được nhóm lại thành các cụm theo cấu trúc phân cấp."
+        },
+        {
+            "question": "DBSCAN là thuật toán phân cụm dựa trên yếu tố nào?",
+            "answer": "Mật độ của các điểm dữ liệu.",
+            "distractors": [
+                "Khoảng cách giữa các điểm dữ liệu.",
+                "Số lượng thuộc tính của dữ liệu.",
+                "Thời gian thu thập dữ liệu."
+            ],
+            "explanation": "DBSCAN là một thuật toán phân cụm dựa trên mật độ, cho phép phát hiện các cụm có hình dạng bất thường và không yêu cầu xác định số lượng cụm trước."
+        }
+    ]
+}

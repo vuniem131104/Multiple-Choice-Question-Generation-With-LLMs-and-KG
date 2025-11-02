@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Các vấn đề cốt lõi trong Học máy",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is slightly better overall due to its higher relevance and Bloom level appropriateness. It directly addresses a core issue in machine learning (generalization theory to avoid overfitting) and aligns perfectly with the Bloom level of 'Remember.' The pipeline question is clear and relevant but focuses on optimization, which is less central to the topic description. Distractors in both questions are plausible, but the baseline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Thành phần của Định lý Bayes",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher clarity and relevance. It focuses on the prior probability, which is a fundamental component of Bayes' theorem, and aligns well with the Bloom level of 'Remember.' The baseline question is also strong but slightly less clear and relevant, as it focuses on likelihood, which is secondary to the prior in the context of the topic description. Both questions have plausible distractors, but the pipeline question's distractors are slightly more pedagogically valuable."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Ước lượng Khả dĩ Tối đa (MLE)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher relevance and clarity. It directly addresses the concept of maximizing likelihood, which is central to MLE, and aligns well with the Bloom level of 'Understand.' The baseline question is also strong but slightly less clear and relevant, as it focuses on the process rather than the core concept. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Hậu quả của Lời nguyền chiều dữ liệu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher relevance and clarity. It directly addresses the core consequence of the curse of dimensionality (insufficient samples to cover the data space), which aligns well with the Bloom level of 'Understand.' The baseline question is also strong but slightly less clear and relevant, as it focuses on the exponential increase in sample requirements without emphasizing the practical implications. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Giả định cốt lõi của Naïve Bayes",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is better overall due to its higher relevance and Bloom level appropriateness. It directly addresses the core assumption of Naïve Bayes (conditional independence of features given the class) and aligns perfectly with the Bloom level of 'Understand.' The pipeline question is clear and relevant but focuses on the purpose of the assumption rather than the assumption itself. Distractors in both questions are plausible, but the baseline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh Hồi quy tuyến tính và Hồi quy Logistic",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher relevance and Bloom level appropriateness. It focuses on the core difference between linear and logistic regression (the nature of the target variable), which aligns well with the Bloom level of 'Analyze.' The baseline question is also strong but slightly less clear and relevant, as it focuses on the purpose rather than the fundamental difference. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Đặc điểm mô hình sinh và mô hình phân biệt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher relevance and Bloom level appropriateness. It focuses on the core characteristics of generative models (data requirements, computational cost, and convergence speed), which aligns well with the Bloom level of 'Analyze.' The baseline question is also strong but slightly less clear and relevant, as it focuses on the advantages of generative models rather than their core characteristics. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Ứng dụng Gradient Descent trong Hồi quy Logistic",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better overall due to its higher relevance and Bloom level appropriateness. It focuses on the practical application of Gradient Descent in logistic regression, which aligns well with the Bloom level of 'Apply.' The baseline question is also strong but slightly less clear and relevant, as it focuses on the necessity of Gradient Descent rather than its application. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Hàm băm (Hash Function) là gì?",
+            "answer": "Một hàm chuyển đổi dữ liệu đầu vào thành một giá trị băm cố định.",
+            "distractors": [
+                "Một hàm chuyển đổi dữ liệu đầu vào thành một giá trị ngẫu nhiên.",
+                "Một hàm dùng để mã hóa dữ liệu đầu vào thành dạng không thể đọc.",
+                "Một hàm chỉ sử dụng cho việc lưu trữ mật khẩu."
+            ],
+            "explanation": "Hàm băm là một hàm toán học chuyển đổi dữ liệu đầu vào thành một giá trị băm cố định, giúp dễ dàng quản lý và tìm kiếm dữ liệu."
+        },
+        {
+            "question": "Trong Java, phương thức nào được sử dụng để tạo mã băm cho một đối tượng?",
+            "answer": "hashCode()",
+            "distractors": [
+                "getHash()",
+                "generateHash()",
+                "createHash()"
+            ],
+            "explanation": "Phương thức hashCode() trong Java được sử dụng để tạo mã băm cho một đối tượng, giúp xác định vị trí của đối tượng trong bảng băm."
+        },
+        {
+            "question": "Xung đột trong hàm băm xảy ra khi nào?",
+            "answer": "Khi hai khóa khác nhau băm vào cùng một chỉ mục trong bảng băm.",
+            "distractors": [
+                "Khi một khóa không có giá trị băm.",
+                "Khi một khóa băm vào nhiều chỉ mục khác nhau.",
+                "Khi không có khóa nào được băm."
+            ],
+            "explanation": "Xung đột xảy ra khi hai khóa khác nhau tạo ra cùng một giá trị băm, dẫn đến việc chúng phải chia sẻ cùng một chỉ mục trong bảng băm."
+        },
+        {
+            "question": "Bảng băm chuỗi riêng biệt (Separate-Chaining) xử lý xung đột như thế nào?",
+            "answer": "Bằng cách lưu trữ các phần tử xung đột trong một danh sách liên kết tại chỉ mục đó.",
+            "distractors": [
+                "Bằng cách thay thế phần tử cũ bằng phần tử mới.",
+                "Bằng cách tạo ra một bảng băm mới.",
+                "Bằng cách bỏ qua phần tử xung đột."
+            ],
+            "explanation": "Bảng băm chuỗi riêng biệt xử lý xung đột bằng cách lưu trữ các phần tử xung đột trong một danh sách liên kết tại chỉ mục đó, giúp duy trì tất cả các phần tử."
+        },
+        {
+            "question": "Khi phân tích hiệu suất của bảng băm, N và M đại diện cho điều gì?",
+            "answer": "N là số lượng phần tử, M là số lượng chỉ mục trong bảng băm.",
+            "distractors": [
+                "N là số lượng chỉ mục, M là số lượng phần tử.",
+                "N là số lượng xung đột, M là số lượng phần tử.",
+                "N là số lượng phần tử, M là số lượng xung đột."
+            ],
+            "explanation": "Trong phân tích hiệu suất của bảng băm, N đại diện cho số lượng phần tử được lưu trữ, trong khi M là số lượng chỉ mục có sẵn trong bảng."
+        },
+        {
+            "question": "Mã băm cho các kiểu người dùng định nghĩa cần phải đảm bảo điều gì?",
+            "answer": "Giá trị băm phải duy nhất cho mỗi đối tượng khác nhau.",
+            "distractors": [
+                "Giá trị băm phải ngẫu nhiên và không thể đoán trước.",
+                "Giá trị băm phải có độ dài cố định.",
+                "Giá trị băm phải thay đổi theo thời gian."
+            ],
+            "explanation": "Mã băm cho các kiểu người dùng định nghĩa cần đảm bảo rằng mỗi đối tượng khác nhau có giá trị băm duy nhất để tránh xung đột."
+        },
+        {
+            "question": "Hàm băm một chiều thường được sử dụng trong ứng dụng nào?",
+            "answer": "Lưu trữ mật khẩu một cách an toàn.",
+            "distractors": [
+                "Mã hóa dữ liệu để truyền tải qua mạng.",
+                "Lưu trữ thông tin người dùng trong cơ sở dữ liệu.",
+                "Tạo ra các giá trị ngẫu nhiên cho trò chơi."
+            ],
+            "explanation": "Hàm băm một chiều thường được sử dụng để lưu trữ mật khẩu một cách an toàn, vì nó không thể đảo ngược để lấy lại mật khẩu gốc."
+        },
+        {
+            "question": "Điểm mạnh của bảng băm so với cây tìm kiếm cân bằng là gì?",
+            "answer": "Tìm kiếm nhanh hơn trong hầu hết các trường hợp.",
+            "distractors": [
+                "Dễ dàng cài đặt hơn.",
+                "Tiêu tốn ít bộ nhớ hơn.",
+                "Có thể lưu trữ dữ liệu theo thứ tự."
+            ],
+            "explanation": "Bảng băm thường cho phép tìm kiếm nhanh hơn so với cây tìm kiếm cân bằng, vì nó sử dụng giá trị băm để xác định vị trí của phần tử."
+        }
+    ]
+}

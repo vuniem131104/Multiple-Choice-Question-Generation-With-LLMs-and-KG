@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Khái niệm lập trình động (Dynamic Programming) chủ yếu dựa trên thuộc tính nào sau đây?",
+            "answer": "Cấu trúc con tối ưu",
+            "distractors": [
+                "Giải thuật tham lam",
+                "Phương pháp chia để trị",
+                "Lập trình hàm"
+            ],
+            "explanation": "Lập trình động dựa trên cấu trúc con tối ưu, cho phép giải quyết bài toán lớn bằng cách chia nhỏ thành các bài toán con tối ưu."
+        },
+        {
+            "question": "Trong quy trình đánh giá chính sách lặp, công thức nào được sử dụng để cập nhật giá trị trạng thái?",
+            "answer": "Công thức Bellman",
+            "distractors": [
+                "Công thức Newton",
+                "Công thức Pythagore",
+                "Công thức Gauss"
+            ],
+            "explanation": "Công thức Bellman là công thức chính trong đánh giá chính sách lặp, giúp cập nhật giá trị trạng thái dựa trên kỳ vọng."
+        },
+        {
+            "question": "Quá trình lặp lại giữa đánh giá và cải thiện chính sách trong lập trình động được gọi là gì?",
+            "answer": "Lặp chính sách",
+            "distractors": [
+                "Lặp giá trị",
+                "Đánh giá chính sách",
+                "Tối ưu hóa chính sách"
+            ],
+            "explanation": "Quá trình này được gọi là lặp chính sách, nơi đánh giá và cải thiện chính sách diễn ra liên tục cho đến khi hội tụ."
+        },
+        {
+            "question": "Nguyên tắc tối ưu trong MDPs cho biết rằng mỗi chính sách tối ưu có thể phân tách thành bao nhiêu thành phần?",
+            "answer": "Hai thành phần",
+            "distractors": [
+                "Một thành phần",
+                "Ba thành phần",
+                "Bốn thành phần"
+            ],
+            "explanation": "Nguyên tắc tối ưu cho biết rằng mỗi chính sách tối ưu có thể phân tách thành hai thành phần: giá trị và chính sách."
+        },
+        {
+            "question": "Phương pháp nào được sử dụng để tìm chính sách tối ưu thông qua lặp giá trị?",
+            "answer": "Lặp giá trị",
+            "distractors": [
+                "Lặp chính sách",
+                "Tối ưu hóa tuyến tính",
+                "Giải thuật tham lam"
+            ],
+            "explanation": "Lặp giá trị là phương pháp chính để tìm chính sách tối ưu bằng cách cập nhật giá trị trạng thái cho đến khi hội tụ."
+        },
+        {
+            "question": "Mối liên hệ giữa MDP và DP có thể được mô tả như thế nào?",
+            "answer": "DP có thể áp dụng cho MDPs để tối ưu hóa quyết định",
+            "distractors": [
+                "MDP không liên quan đến DP",
+                "DP chỉ là một phần của MDP",
+                "MDP là một loại DP"
+            ],
+            "explanation": "DP có thể áp dụng cho MDPs để tối ưu hóa quyết định, cho phép giải quyết các bài toán phức tạp hơn."
+        },
+        {
+            "question": "Định lý ánh xạ co (Contraction Mapping Theorem) chủ yếu được áp dụng trong lĩnh vực nào?",
+            "answer": "Hội tụ của các phương pháp đánh giá chính sách",
+            "distractors": [
+                "Giải thuật tìm kiếm",
+                "Lập trình hàm",
+                "Tối ưu hóa tuyến tính"
+            ],
+            "explanation": "Định lý ánh xạ co được áp dụng trong hội tụ của các phương pháp đánh giá chính sách, giúp đảm bảo rằng các giá trị sẽ hội tụ về một điểm."
+        },
+        {
+            "question": "Sự khác biệt chính giữa DP đồng bộ và không đồng bộ là gì?",
+            "answer": "Cách thức cập nhật giá trị trạng thái",
+            "distractors": [
+                "Số lượng bài toán con",
+                "Thời gian thực hiện",
+                "Độ phức tạp tính toán"
+            ],
+            "explanation": "Sự khác biệt chính giữa DP đồng bộ và không đồng bộ nằm ở cách thức cập nhật giá trị trạng thái, ảnh hưởng đến hiệu suất và độ chính xác của giải pháp."
+        }
+    ]
+}

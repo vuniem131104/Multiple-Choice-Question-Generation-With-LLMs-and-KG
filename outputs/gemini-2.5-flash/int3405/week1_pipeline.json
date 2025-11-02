@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Đặc trưng chính của học có giám sát là gì?",
+      "answer": "Sử dụng dữ liệu được gán nhãn để huấn luyện mô hình.",
+      "distractors": [
+        "Sử dụng dữ liệu không được gán nhãn để khám phá các mẫu.",
+        "Mô hình học hỏi bằng cách tương tác với môi trường và nhận phần thưởng.",
+        "Phân nhóm dữ liệu thành các cụm dựa trên sự tương đồng."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Sử dụng dữ liệu được gán nhãn để huấn luyện mô hình.** vì đây là đặc trưng cốt lõi của học có giám sát. Trong học có giám sát, mô hình được cung cấp một tập dữ liệu huấn luyện bao gồm các cặp đầu vào và đầu ra mong muốn (nhãn). Mục tiêu của mô hình là học một ánh xạ từ đầu vào đến đầu ra dựa trên các ví dụ đã được gán nhãn này, cho phép nó dự đoán đầu ra cho dữ liệu mới, chưa từng thấy.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Sử dụng dữ liệu không được gán nhãn để khám phá các mẫu.** Đây là đặc trưng của học không giám sát, nơi mô hình tìm kiếm các cấu trúc hoặc mẫu ẩn trong dữ liệu mà không có nhãn đầu ra được xác định trước.\n*   **Mô hình học hỏi bằng cách tương tác với môi trường và nhận phần thưởng.** Đây là mô tả của học tăng cường, một loại học máy mà tác nhân học cách đưa ra quyết định bằng cách thực hiện các hành động trong môi trường và nhận phản hồi dưới dạng phần thưởng hoặc hình phạt.\n*   **Phân nhóm dữ liệu thành các cụm dựa trên sự tương đồng.** Đây là một kỹ thuật phổ biến trong học không giám sát, cụ thể là phân cụm (clustering), nơi các điểm dữ liệu tương tự được nhóm lại với nhau mà không cần nhãn.",
+      "topic": {
+        "name": "Định nghĩa Học có giám sát",
+        "description": "Kiểm tra khả năng nhớ định nghĩa cốt lõi của học có giám sát, các thành phần chính như dữ liệu gán nhãn, và mục tiêu tổng thể của nó. MCQs có thể hỏi về đặc điểm chính hoặc ví dụ cơ bản. (Dựa trên Concept 1)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mục đích chính của hàm chi phí J(w0, w1) trong hồi quy tuyến tính là gì?",
+      "answer": "Tìm bộ tham số w0, w1 giúp tối thiểu hóa sai số giữa giá trị dự đoán và giá trị thực.",
+      "distractors": [
+        "Xác định mối quan hệ phi tuyến tính giữa các biến.",
+        "Đánh giá độ phức tạp tính toán của mô hình.",
+        "Tạo ra các điểm dữ liệu mới để huấn luyện mô hình."
+      ],
+      "explanation": "Mục đích chính của hàm chi phí J(w0, w1) trong hồi quy tuyến tính là **tìm bộ tham số w0, w1 giúp tối thiểu hóa sai số giữa giá trị dự đoán và giá trị thực**. Hàm chi phí đo lường mức độ \"sai\" của mô hình, tức là sự khác biệt giữa các giá trị mà mô hình dự đoán và các giá trị thực tế. Bằng cách tối thiểu hóa hàm chi phí, chúng ta tìm được các tham số (w0 và w1) làm cho đường hồi quy phù hợp nhất với dữ liệu, từ đó giảm thiểu sai số dự đoán.\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n*   **Xác định mối quan hệ phi tuyến tính giữa các biến:** Hàm chi phí trong hồi quy tuyến tính được thiết kế cho các mối quan hệ tuyến tính. Để xác định mối quan hệ phi tuyến tính, chúng ta cần sử dụng các mô hình hoặc kỹ thuật khác (ví dụ: hồi quy đa thức, mạng nơ-ron).\n*   **Đánh giá độ phức tạp tính toán của mô hình:** Độ phức tạp tính toán thường được đánh giá bằng các yếu tố như thời gian chạy hoặc bộ nhớ cần thiết, không phải là mục đích trực tiếp của hàm chi phí. Hàm chi phí tập trung vào độ chính xác của mô hình.\n*   **Tạo ra các điểm dữ liệu mới để huấn luyện mô hình:** Việc tạo ra các điểm dữ liệu mới (ví dụ: thông qua tăng cường dữ liệu) là một kỹ thuật để mở rộng tập dữ liệu huấn luyện, không phải là chức năng của hàm chi phí. Hàm chi phí sử dụng dữ liệu hiện có để đánh giá hiệu suất của mô hình.",
+      "topic": {
+        "name": "Chức năng Hàm chi phí",
+        "description": "Đánh giá hiểu biết về vai trò của hàm chi phí trong mô hình hồi quy tuyến tính, đặc biệt là mục tiêu của việc tối thiểu hóa hàm chi phí để tìm tham số tối ưu. MCQs sẽ hỏi về mục đích chính của J(w0, w1). (Dựa trên Concept 3)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong hồi quy tuyến tính đơn biến, công thức chung của hàm giả thuyết h(x) là gì?",
+      "answer": "h(x) = w0 + w1x",
+      "distractors": [
+        "h(x) = w1x",
+        "h(x) = w0x + w1",
+        "h(x) = w0 + w1x^2"
+      ],
+      "explanation": "Trong hồi quy tuyến tính đơn biến, hàm giả thuyết (hypothesis function) được sử dụng để mô hình hóa mối quan hệ tuyến tính giữa một biến đầu vào (x) và một biến đầu ra dự đoán (h(x)).\n\n**Tại sao h(x) = w0 + w1x là đúng:**\nĐây là công thức chuẩn của một đường thẳng trong không gian hai chiều, nơi `w0` đại diện cho hệ số chặn (intercept) hay còn gọi là bias term, là giá trị của h(x) khi x = 0. `w1` là hệ số góc (slope) hay trọng số (weight) của biến đầu vào `x`, cho biết mức độ thay đổi của h(x) khi x thay đổi một đơn vị. Sự kết hợp của cả hai hệ số này cho phép mô hình điều chỉnh để phù hợp nhất với dữ liệu, biểu diễn một mối quan hệ tuyến tính đầy đủ.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **h(x) = w1x**: Công thức này thiếu hệ số chặn `w0`. Điều này có nghĩa là đường hồi quy luôn phải đi qua gốc tọa độ (0,0), hạn chế nghiêm trọng khả năng mô hình hóa các mối quan hệ tuyến tính mà đường thẳng không đi qua gốc.\n*   **h(x) = w0x + w1**: Công thức này đã hoán đổi vị trí của hệ số chặn và hệ số góc. `w0` được gán cho biến `x` và `w1` trở thành hệ số chặn. Mặc dù vẫn là một đường thẳng, nhưng nó không tuân theo quy ước chuẩn và có thể gây nhầm lẫn trong việc diễn giải các tham số.\n*   **h(x) = w0 + w1x^2**: Công thức này không phải là hồi quy tuyến tính. Sự xuất hiện của `x^2` biến hàm giả thuyết thành một hàm bậc hai (parabola), mô tả mối quan hệ phi tuyến tính. Hồi quy tuyến tính đơn biến chỉ tìm kiếm mối quan hệ tuyến tính giữa các biến.",
+      "topic": {
+        "name": "Hàm giả thuyết Hồi quy đơn biến",
+        "description": "Kiểm tra khả năng nhận biết và nhớ công thức của hàm giả thuyết trong hồi quy tuyến tính với một biến đầu vào duy nhất. MCQs có thể yêu cầu chọn đúng cấu trúc hàm h(x) = w0 + w1x. (Dựa trên Concept 2)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong thuật toán Gradient Descent, nếu tốc độ học (alpha) được đặt quá lớn, điều gì có thể xảy ra với quá trình hội tụ?",
+      "answer": "Thuật toán có thể vượt qua điểm cực tiểu, dao động hoặc phân kỳ.",
+      "distractors": [
+        "Thuật toán sẽ hội tụ nhanh hơn đến điểm cực tiểu toàn cục.",
+        "Thuật toán sẽ luôn hội tụ đến một điểm cực tiểu cục bộ.",
+        "Thuật toán sẽ dừng lại sớm mà không cập nhật các trọng số."
+      ],
+      "explanation": "Khi tốc độ học (alpha) trong thuật toán Gradient Descent được đặt quá lớn, thuật toán có thể vượt qua điểm cực tiểu, dao động hoặc phân kỳ. Điều này xảy ra vì mỗi bước cập nhật trọng số sẽ quá lớn, khiến thuật toán \"nhảy\" qua điểm cực tiểu thay vì tiến dần đến nó. Nếu các bước nhảy đủ lớn, thuật toán có thể bắt đầu dao động xung quanh điểm cực tiểu mà không bao giờ hội tụ, hoặc thậm chí di chuyển ra xa khỏi điểm cực tiểu, dẫn đến phân kỳ.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Thuật toán sẽ hội tụ nhanh hơn đến điểm cực tiểu toàn cục.** Điều này không đúng. Mặc dù tốc độ học lớn có thể dẫn đến các bước cập nhật lớn hơn ban đầu, nhưng nó không đảm bảo hội tụ nhanh hơn đến điểm cực tiểu toàn cục. Thay vào đó, nó có nguy cơ cao vượt qua điểm cực tiểu hoặc phân kỳ.\n*   **Thuật toán sẽ luôn hội tụ đến một điểm cực tiểu cục bộ.** Điều này không đúng. Tốc độ học quá lớn không đảm bảo hội tụ đến bất kỳ điểm cực tiểu nào, dù là cục bộ hay toàn cục. Như đã giải thích, nó có thể dẫn đến dao động hoặc phân kỳ.\n*   **Thuật toán sẽ dừng lại sớm mà không cập nhật các trọng số.** Điều này không đúng. Tốc độ học lớn không khiến thuật toán dừng lại sớm. Ngược lại, nó khiến các cập nhật trọng số trở nên quá mạnh mẽ, dẫn đến các vấn đề như vượt qua điểm cực tiểu hoặc phân kỳ, chứ không phải dừng lại.\n",
+      "topic": {
+        "name": "Ảnh hưởng của Tốc độ học (alpha)",
+        "description": "Đánh giá sự hiểu biết về cách tốc độ học (α) ảnh hưởng đến quá trình hội tụ trong thuật toán Gradient Descent. MCQs có thể hỏi về hậu quả của việc α quá lớn hoặc quá nhỏ đối với quá trình tối ưu hóa. (Dựa trên Concept 4)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Cho hàm chi phí $J(w_0, w_1) = \\frac{1}{2m} \\sum_{i=1}^{m} (h_{w}(x^{(i)}) - y^{(i)})^2$, với $h_{w}(x^{(i)}) = w_0 + w_1 x^{(i)}$. Nếu $m=2$, các điểm dữ liệu là $(x_1=1, y_1=3)$ và $(x_2=2, y_2=5)$, và các tham số $w_0=0, w_1=2$, giá trị của hàm chi phí $J(w_0, w_1)$ là bao nhiêu?",
+      "answer": "0.5",
+      "distractors": [
+        "1.0",
+        "2.0",
+        "0.0"
+      ],
+      "explanation": "Giá trị của hàm chi phí $J(w_0, w_1)$ là 0.5.\n\n**Tại sao 0.5 là câu trả lời đúng:**\nĐể tính giá trị của hàm chi phí, chúng ta cần thực hiện các bước sau:\n1.  **Tính toán các dự đoán $h_w(x^{(i)})$ cho mỗi điểm dữ liệu:**\n    Với $w_0=0$ và $w_1=2$, hàm dự đoán là $h_w(x) = 0 + 2x = 2x$.\n    *   Đối với điểm dữ liệu thứ nhất $(x_1=1, y_1=3)$: $h_w(x_1) = 2 \\times 1 = 2$.\n    *   Đối với điểm dữ liệu thứ hai $(x_2=2, y_2=5)$: $h_w(x_2) = 2 \\times 2 = 4$.\n\n2.  **Tính toán sai số bình phương cho mỗi điểm dữ liệu:**\n    *   Đối với điểm thứ nhất: $(h_w(x_1) - y_1)^2 = (2 - 3)^2 = (-1)^2 = 1$.\n    *   Đối với điểm thứ hai: $(h_w(x_2) - y_2)^2 = (4 - 5)^2 = (-1)^2 = 1$.\n\n3.  **Tính tổng các sai số bình phương:**\n    $\\sum_{i=1}^{m} (h_w(x^{(i)}) - y^{(i)})^2 = 1 + 1 = 2$.\n\n4.  **Áp dụng công thức hàm chi phí:**\n    $J(w_0, w_1) = \\frac{1}{2m} \\sum_{i=1}^{m} (h_w(x^{(i)}) - y^{(i)})^2$.\n    Với $m=2$, ta có:\n    $J(w_0, w_1) = \\frac{1}{2 \\times 2} \\times 2 = \\frac{1}{4} \\times 2 = \\frac{2}{4} = 0.5$.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **1.0**: Giá trị này sẽ đúng nếu chúng ta bỏ qua hệ số $\\frac{1}{2m}$ và chỉ tính tổng các sai số bình phương chia cho $m$ (tức là $\\frac{1}{m} \\sum (h_w(x^{(i)}) - y^{(i)})^2 = \\frac{1}{2} \\times 2 = 1$). Hoặc nếu chúng ta chỉ chia cho $2$ mà không nhân với $m$ ở mẫu số (tức là $\\frac{1}{2} \\sum (h_w(x^{(i)}) - y^{(i)})^2 = \\frac{1}{2} \\times 2 = 1$). Cả hai đều không đúng với công thức hàm chi phí đã cho.\n*   **2.0**: Giá trị này sẽ đúng nếu chúng ta chỉ tính tổng các sai số bình phương mà không chia cho bất kỳ hệ số nào (tức là $\\sum (h_w(x^{(i)}) - y^{(i)})^2 = 1 + 1 = 2$). Điều này bỏ qua hệ số $\\frac{1}{2m}$ trong công thức hàm chi phí.\n*   **0.0**: Giá trị này sẽ đúng nếu mô hình dự đoán hoàn hảo các giá trị $y^{(i)}$, tức là $h_w(x^{(i)}) = y^{(i)}$ cho tất cả các điểm dữ liệu. Trong trường hợp này, có sự khác biệt giữa giá trị dự đoán và giá trị thực tế, do đó hàm chi phí không thể bằng 0.",
+      "topic": {
+        "name": "Áp dụng Hàm chi phí",
+        "description": "Kiểm tra khả năng áp dụng công thức hàm chi phí để tính toán giá trị lỗi cho một tập dữ liệu nhỏ hoặc một cặp dự đoán-thực tế cụ thể. MCQs sẽ cung cấp dữ liệu và yêu cầu tính J(w0, w1) hoặc một phần của nó. (Dựa trên Concept 3)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Để phân biệt hồi quy tuyến tính đơn biến và đa biến, sự khác biệt trong số lượng biến đầu vào ảnh hưởng đến cấu trúc hàm giả thuyết như thế nào?",
+      "answer": "Hàm giả thuyết của hồi quy đa biến mở rộng để bao gồm nhiều biến độc lập, mỗi biến có một hệ số riêng.",
+      "distractors": [
+        "Hàm giả thuyết của hồi quy đa biến chỉ thay đổi hệ số chặn, giữ nguyên hệ số của biến độc lập duy nhất.",
+        "Hàm giả thuyết của hồi quy đa biến sử dụng một biến độc lập tổng hợp thay vì nhiều biến riêng lẻ.",
+        "Hàm giả thuyết của hồi quy đa biến chỉ đơn giản là lặp lại hàm của hồi quy đơn biến cho mỗi biến đầu vào."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là \"Hàm giả thuyết của hồi quy đa biến mở rộng để bao gồm nhiều biến độc lập, mỗi biến có một hệ số riêng.\" bởi vì hồi quy tuyến tính đa biến được thiết kế để mô hình hóa mối quan hệ giữa một biến phụ thuộc và **nhiều** biến độc lập. Để làm được điều này, hàm giả thuyết (ví dụ: $h_\\theta(x) = \\theta_0 + \\theta_1x_1 + \\theta_2x_2 + ... + \\theta_nx_n$) phải bao gồm một thuật ngữ cho mỗi biến độc lập ($x_1, x_2, ..., x_n$), và mỗi biến này sẽ có một hệ số riêng ($\\theta_1, \\theta_2, ..., \\theta_n$) để biểu thị mức độ ảnh hưởng của nó đến biến phụ thuộc.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **\"Hàm giả thuyết của hồi quy đa biến chỉ thay đổi hệ số chặn, giữ nguyên hệ số của biến độc lập duy nhất.\"** là sai. Nếu chỉ thay đổi hệ số chặn và giữ nguyên hệ số của biến độc lập duy nhất, mô hình vẫn chỉ là hồi quy đơn biến. Hồi quy đa biến yêu cầu thêm các biến độc lập mới vào mô hình, không chỉ điều chỉnh hệ số chặn.\n*   **\"Hàm giả thuyết của hồi quy đa biến sử dụng một biến độc lập tổng hợp thay vì nhiều biến riêng lẻ.\"** là sai. Mặc dù có những kỹ thuật như phân tích thành phần chính (PCA) có thể tạo ra các biến tổng hợp, nhưng bản thân hồi quy đa biến hoạt động với nhiều biến độc lập riêng lẻ. Việc sử dụng một biến tổng hợp sẽ làm mất đi khả năng phân tích ảnh hưởng riêng lẻ của từng biến gốc.\n*   **\"Hàm giả thuyết của hồi quy đa biến chỉ đơn giản là lặp lại hàm của hồi quy đơn biến cho mỗi biến đầu vào.\"** là sai. Hồi quy đa biến không phải là một tập hợp các mô hình hồi quy đơn biến riêng lẻ. Thay vào đó, nó là một mô hình duy nhất kết hợp tất cả các biến độc lập để dự đoán biến phụ thuộc, tính đến ảnh hưởng đồng thời của chúng. Việc lặp lại hàm đơn biến cho mỗi đầu vào sẽ bỏ qua mối quan hệ tổng thể và sự tương tác tiềm ẩn giữa các biến độc lập.",
+      "topic": {
+        "name": "Phân biệt Hồi quy đơn biến và đa biến",
+        "description": "Đánh giá khả năng phân tích và so sánh sự khác biệt cơ bản giữa hồi quy tuyến tính đơn biến và đa biến, bao gồm số lượng biến đầu vào và cách thức biểu diễn hàm giả thuyết. (Tích hợp giữa Concept 2 và Concept 5 của Tuần 1)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nhà khoa học dữ liệu đã áp dụng thuật toán Gradient Descent để tối ưu hóa một mô hình hồi quy. Mặc dù tập dữ liệu rất lớn, nhưng anh ấy nhận thấy rằng kết quả hội tụ của mô hình có thể khác nhau đáng kể qua các lần chạy khác nhau ngay cả khi sử dụng cùng một tốc độ học. Đặc điểm nào của Gradient Descent giải thích cho hiện tượng này?",
+      "answer": "Sự phụ thuộc vào điểm khởi tạo ban đầu của các tham số.",
+      "distractors": [
+        "Tốc độ học quá lớn dẫn đến dao động và không hội tụ.",
+        "Sự ngẫu nhiên trong việc chọn các mẫu dữ liệu cho mỗi lần lặp.",
+        "Việc sử dụng các hàm mất mát không lồi có nhiều cực tiểu cục bộ."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Sự phụ thuộc vào điểm khởi tạo ban đầu của các tham số.** là vì Gradient Descent là một thuật toán tối ưu hóa lặp lại. Khi hàm mất mát không lồi (điều thường xảy ra trong các mô hình phức tạp), nó có thể có nhiều cực tiểu cục bộ. Điểm khởi tạo ban đầu của các tham số mô hình sẽ quyết định \"con đường\" mà thuật toán Gradient Descent đi theo trên bề mặt hàm mất mát. Nếu các điểm khởi tạo khác nhau, thuật toán có thể hội tụ về các cực tiểu cục bộ khác nhau, dẫn đến kết quả mô hình khác nhau qua các lần chạy, ngay cả khi tốc độ học không đổi.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Tốc độ học quá lớn dẫn đến dao động và không hội tụ.** Mặc dù tốc độ học quá lớn có thể gây ra dao động và không hội tụ, nhưng câu hỏi nêu rõ rằng \"kết quả hội tụ của mô hình có thể khác nhau đáng kể qua các lần chạy khác nhau ngay cả khi sử dụng cùng một tốc độ học\". Điều này ngụ ý rằng mô hình vẫn hội tụ, nhưng đến các điểm khác nhau, chứ không phải là không hội tụ do tốc độ học quá lớn.\n*   **Sự ngẫu nhiên trong việc chọn các mẫu dữ liệu cho mỗi lần lặp.** Đây là đặc điểm của Stochastic Gradient Descent (SGD) hoặc Mini-batch Gradient Descent, nơi các mẫu dữ liệu được chọn ngẫu nhiên trong mỗi lần lặp. Tuy nhiên, câu hỏi chỉ đề cập đến \"Gradient Descent\" nói chung. Ngay cả với Batch Gradient Descent (sử dụng toàn bộ tập dữ liệu), sự khác biệt trong kết quả hội tụ vẫn có thể xảy ra do điểm khởi tạo ban đầu nếu hàm mất mát không lồi. Hơn nữa, nếu sự ngẫu nhiên trong việc chọn mẫu là nguyên nhân, thì việc sử dụng cùng một tốc độ học sẽ không đảm bảo kết quả khác nhau một cách có hệ thống như vậy nếu không có yếu tố khác.\n*   **Việc sử dụng các hàm mất mát không lồi có nhiều cực tiểu cục bộ.** Mặc dù đây là điều kiện tiên quyết cho việc sự phụ thuộc vào điểm khởi tạo ban đầu trở thành vấn đề, nhưng bản thân việc sử dụng hàm mất mát không lồi không phải là \"đặc điểm của Gradient Descent\" giải thích cho hiện tượng này. Thay vào đó, chính là cách Gradient Descent tương tác với hàm mất mát không lồi (tức là sự phụ thuộc vào điểm khởi tạo) mới là nguyên nhân trực tiếp dẫn đến các kết quả hội tụ khác nhau.",
+      "topic": {
+        "name": "Đặc điểm của Gradient Descent",
+        "description": "Kiểm tra khả năng phân tích các đặc điểm chính của thuật toán Gradient Descent, bao gồm ưu điểm (ví dụ: xử lý tốt dữ liệu lớn) và nhược điểm (ví dụ: cần chọn α và phụ thuộc vào điểm khởi tạo). (Tích hợp giữa Concept 4 và Concept 7 của Tuần 1)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một chuyên gia học máy cần tối ưu hóa một mô hình hồi quy tuyến tính trên một tập dữ liệu gồm 1 triệu ví dụ huấn luyện (m = 10^6) và 50.000 đặc trưng (n = 50.000). Trong trường hợp này, phương pháp tối ưu hóa nào sau đây là lựa chọn phù hợp nhất để đảm bảo hiệu quả tính toán?",
+      "answer": "Mini-batch Gradient Descent",
+      "distractors": [
+        "Gradient Descent",
+        "Phương trình chuẩn",
+        "Stochastic Gradient Descent (SGD)"
+      ],
+      "explanation": "Câu trả lời đúng là **Mini-batch Gradient Descent** vì đây là phương pháp tối ưu hóa hiệu quả nhất cho các mô hình hồi quy tuyến tính trên các tập dữ liệu có kích thước lớn (m = 10^6) và số lượng đặc trưng lớn (n = 50.000). Mini-batch Gradient Descent tính toán gradient dựa trên một tập hợp con nhỏ (mini-batch) của dữ liệu trong mỗi lần lặp. Điều này mang lại sự cân bằng tối ưu giữa tốc độ cập nhật của SGD (nhanh hơn full-batch Gradient Descent) và sự ổn định của Gradient Descent (ít nhiễu hơn SGD), tận dụng tốt khả năng song song hóa của GPU/CPU, dẫn đến hội tụ nhanh và ổn định hơn so với hai phương pháp còn lại trong bối cảnh dữ liệu lớn như đã cho. Các phương pháp khác không phù hợp vì:\n\n*   **Gradient Descent:** Phương pháp này tính toán gradient trên toàn bộ tập dữ liệu huấn luyện trong mỗi lần lặp. Với m = 10^6 ví dụ, mỗi lần lặp sẽ rất tốn kém về mặt tính toán và sẽ rất chậm, làm giảm hiệu quả đáng kể mặc dù đường hội tụ ổn định.\n\n*   **Phương trình chuẩn:** Phương trình chuẩn giải trực tiếp các tham số tối ưu bằng cách tính toán nghịch đảo của ma trận (X^T * X). Tuy nhiên, độ phức tạp tính toán của phép nghịch đảo ma trận là O(n^3). Với n = 50.000 đặc trưng, việc tính toán nghịch đảo ma trận 50.000 x 50.000 là không khả thi về mặt tính toán và bộ nhớ. Do đó, đây là một lựa chọn hoàn toàn không thực tế cho kích thước dữ liệu này.\n\n*   **Stochastic Gradient Descent (SGD):** SGD cập nhật các tham số dựa trên chỉ một ví dụ huấn luyện duy nhất trong mỗi lần lặp. Mặc dù mỗi lần cập nhật rất nhanh, nhưng quá trình này gây ra nhiều nhiễu loạn trong đường đi đến điểm cực tiểu, có thể khiến việc hội tụ trở nên chậm chạp hoặc dao động quanh điểm cực tiểu, khó đạt được giải pháp chính xác một cách hiệu quả.",
+      "topic": {
+        "name": "Lựa chọn thuật toán tối ưu hóa",
+        "description": "Đánh giá khả năng của học sinh trong việc đánh giá và lựa chọn phương pháp tối ưu hóa phù hợp (Gradient Descent hoặc Phương trình chuẩn) dựa trên các ràng buộc của tập dữ liệu như kích thước (m) và số lượng đặc trưng (n). (Tích hợp giữa Concept 4, Concept 6 và Concept 7 của Tuần 1)",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 1,
+      "course_code": "int3405"
+    }
+  ]
+}

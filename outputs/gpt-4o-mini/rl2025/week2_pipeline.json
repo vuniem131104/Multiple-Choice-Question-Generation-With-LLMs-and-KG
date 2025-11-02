@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Khái niệm nào dưới đây là cốt lõi trong lập trình động (Dynamic Programming)?",
+      "answer": "Cấu trúc con tối ưu",
+      "distractors": [
+        "Cấu trúc con không tối ưu",
+        "Bài toán con không chồng chéo",
+        "Giải quyết từng bài toán một cách độc lập"
+      ],
+      "explanation": "Câu trả lời đúng là \"Cấu trúc con tối ưu\" vì đây là một khái niệm cốt lõi trong lập trình động. Lập trình động dựa trên nguyên tắc rằng nếu một bài toán có thể được chia thành các bài toán con, thì các bài toán con này phải có cấu trúc tối ưu. Điều này có nghĩa là giải pháp tối ưu cho bài toán lớn có thể được xây dựng từ các giải pháp tối ưu cho các bài toán con của nó. Nếu không có cấu trúc con tối ưu, lập trình động sẽ không thể áp dụng hiệu quả, vì các giải pháp cho bài toán con có thể không dẫn đến giải pháp tốt nhất cho bài toán lớn.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Cấu trúc con không tối ưu**: Đây là một yếu tố sai vì nếu các bài toán con không có cấu trúc tối ưu, thì lập trình động sẽ không thể đảm bảo rằng giải pháp cho bài toán lớn là tối ưu. Điều này đi ngược lại với nguyên tắc cơ bản của lập trình động.\n- **Bài toán con không chồng chéo**: Yếu tố này cũng sai vì lập trình động thường áp dụng cho các bài toán có bài toán con chồng chéo. Nếu các bài toán con không chồng chéo, thì không cần phải lưu trữ kết quả của chúng, và lập trình động sẽ không mang lại lợi ích. \n- **Giải quyết từng bài toán một cách độc lập**: Đây là một yếu tố sai vì lập trình động yêu cầu phải lưu trữ và sử dụng lại kết quả của các bài toán con đã giải quyết trước đó. Nếu giải quyết từng bài toán một cách độc lập, sẽ không tận dụng được các giải pháp đã có, dẫn đến việc tính toán lại và không hiệu quả.\n\nTóm lại, \"Cấu trúc con tối ưu\" là khái niệm cốt lõi trong lập trình động, trong khi các yếu tố gây nhiễu đều không chính xác vì chúng không phản ánh đúng nguyên tắc và ứng dụng của lập trình động.",
+      "topic": {
+        "name": "Lập trình động: Khái niệm vàứng dụng",
+        "description": "Chủ đề này khám phá khái niệm lập trình động (Dynamic Programming - DP), nơi bao gồm các thuộc tính cần thiết để áp dụng DP như cấu trúc con tối ưu và bài toán con chồng chéo. Học sinh sẽ được kiểm tra khả năng định nghĩa và đưa ra ví dụ về ứng dụng của DP trong các bài toán thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Phương pháp nào được sử dụng để cập nhật các giá trị trạng thái trong đánh giá chính sách lặp?",
+      "answer": "Sao lưu kỳ vọng Bellman",
+      "distractors": [
+        "Sao lưu giá trị trạng thái",
+        "Sao lưu chính sách tối ưu",
+        "Sao lưu giá trị trung bình"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Sao lưu kỳ vọng Bellman\" vì đây là phương pháp chính được sử dụng trong đánh giá chính sách lặp để cập nhật các giá trị trạng thái. Phương pháp này dựa trên nguyên tắc rằng giá trị của một trạng thái có thể được tính toán bằng cách lấy trung bình có trọng số của các giá trị trạng thái tiếp theo, với trọng số là xác suất chuyển tiếp giữa các trạng thái. Điều này cho phép chúng ta cập nhật giá trị trạng thái một cách chính xác dựa trên các kỳ vọng về hành động và kết quả trong môi trường.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sao lưu giá trị trạng thái**: Đây không phải là một phương pháp cụ thể để cập nhật giá trị trạng thái trong đánh giá chính sách lặp. Thay vào đó, nó chỉ đơn giản là một khái niệm mô tả giá trị của một trạng thái mà không chỉ ra cách thức cập nhật giá trị đó.\n\n- **Sao lưu chính sách tối ưu**: Phương pháp này liên quan đến việc tìm kiếm chính sách tốt nhất có thể, nhưng không phải là một phương pháp để cập nhật giá trị trạng thái trong quá trình đánh giá chính sách lặp. Nó thường được sử dụng trong giai đoạn tối ưu hóa chính sách, không phải trong đánh giá.\n\n- **Sao lưu giá trị trung bình**: Mặc dù có thể liên quan đến việc tính toán giá trị, nhưng nó không phải là phương pháp chính xác để cập nhật giá trị trạng thái trong bối cảnh đánh giá chính sách lặp. Sao lưu giá trị trung bình không tính đến các xác suất chuyển tiếp và không phản ánh đúng cách mà các giá trị trạng thái được cập nhật trong quy trình này.\n\nTóm lại, \"Sao lưu kỳ vọng Bellman\" là phương pháp chính xác để cập nhật giá trị trạng thái trong đánh giá chính sách lặp, trong khi các yếu tố gây nhiễu khác không đáp ứng được yêu cầu này.",
+      "topic": {
+        "name": "Đánh giá chính sách lặp: Quy trình và công thức",
+        "description": "Chủ đề này tập trung vào quy trình đánh giá một chính sách đã cho thông qua phương pháp đánh giá chính sách lặp (Iterative Policy Evaluation). Học sinh sẽ được yêu cầu hiểu công thức và cách áp dụng sao lưu kỳ vọng Bellman để cập nhật các giá trị trạng thái. Ví dụ minh họa thực tế sẽ giúp kiểm tra khả năng áp dụng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong quá trình thực hiện lặp chính sách, bước nào sau đây chủ yếu nhằm cải thiện chính sách hiện tại để tiến gần hơn đến chính sách tối ưu?",
+      "answer": "Cải thiện chính sách dựa trên giá trị kỳ vọng của chính sách hiện tại.",
+      "distractors": [
+        "Cải thiện chính sách dựa trên kết quả thử nghiệm của chính sách trước đó.",
+        "Cải thiện chính sách bằng cách thay đổi hoàn toàn các tham số của chính sách hiện tại.",
+        "Cải thiện chính sách thông qua việc áp dụng các quy tắc ngẫu nhiên mà không xem xét giá trị kỳ vọng."
+      ],
+      "explanation": "Câu trả lời đúng là \"Cải thiện chính sách dựa trên giá trị kỳ vọng của chính sách hiện tại\" vì trong quá trình thực hiện lặp chính sách, việc cải thiện chính sách dựa trên giá trị kỳ vọng cho phép chúng ta đánh giá hiệu quả của chính sách hiện tại và điều chỉnh nó để tối ưu hóa kết quả. Giá trị kỳ vọng cung cấp một cái nhìn tổng quát về hiệu suất của chính sách, từ đó giúp xác định các điều chỉnh cần thiết để tiến gần hơn đến chính sách tối ưu.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Cải thiện chính sách dựa trên kết quả thử nghiệm của chính sách trước đó**: Mặc dù kết quả thử nghiệm có thể cung cấp thông tin hữu ích, nhưng nó không nhất thiết phản ánh giá trị kỳ vọng của chính sách hiện tại. Việc chỉ dựa vào kết quả thử nghiệm có thể dẫn đến những điều chỉnh không chính xác và không tối ưu.\n\n- **Cải thiện chính sách bằng cách thay đổi hoàn toàn các tham số của chính sách hiện tại**: Thay đổi hoàn toàn các tham số có thể dẫn đến việc mất đi những thông tin quý giá từ chính sách hiện tại. Cải thiện chính sách nên được thực hiện một cách có hệ thống và dựa trên các giá trị kỳ vọng, không phải là một sự thay đổi đột ngột.\n\n- **Cải thiện chính sách thông qua việc áp dụng các quy tắc ngẫu nhiên mà không xem xét giá trị kỳ vọng**: Việc áp dụng quy tắc ngẫu nhiên mà không xem xét giá trị kỳ vọng có thể dẫn đến những quyết định không có cơ sở và không hiệu quả. Cải thiện chính sách cần phải dựa trên phân tích và đánh giá cụ thể, không phải là sự ngẫu nhiên.\n\nTóm lại, câu trả lời đúng tập trung vào việc sử dụng giá trị kỳ vọng để cải thiện chính sách, trong khi các yếu tố gây nhiễu không đáp ứng được yêu cầu này và có thể dẫn đến những quyết định không chính xác.",
+      "topic": {
+        "name": "Thực hiện lặp chính sách: Cải thiện chính sách",
+        "description": "Chủ đề này tập trung vào việc lặp lại giữa đánh giá và cải thiện chính sách trong lập trình động. Học sinh sẽ phải chứng minh khả năng mô tả quy trình này, cùng với các công thức liên quan và cách hội tụ đến chính sách tối ưu.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Nguyên tắc tối ưu trong các MDP xác định hai thành phần chính của một chính sách tối ưu. Hai thành phần này là gì?",
+      "answer": "Giá trị của trạng thái và chính sách hành động.",
+      "distractors": [
+        "Giá trị của hành động và chính sách trạng thái.",
+        "Giá trị của trạng thái và độ tin cậy của hành động.",
+        "Chi phí của trạng thái và chính sách hành động."
+      ],
+      "explanation": "Câu trả lời đúng là \"Giá trị của trạng thái và chính sách hành động\" vì trong các MDP (Markov Decision Processes), một chính sách tối ưu được xác định bởi hai thành phần chính: giá trị của trạng thái (mức độ tốt của một trạng thái trong việc đạt được mục tiêu) và chính sách hành động (quy tắc xác định hành động nào nên được thực hiện từ mỗi trạng thái). Giá trị của trạng thái giúp đánh giá lợi ích của việc ở lại trong trạng thái đó, trong khi chính sách hành động hướng dẫn cách thức hành động để tối ưu hóa giá trị này.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Giá trị của hành động và chính sách trạng thái**: Đây là sự nhầm lẫn giữa các khái niệm. Giá trị của hành động không phải là một thành phần chính trong chính sách tối ưu, và chính sách trạng thái không phải là một thuật ngữ chính xác trong ngữ cảnh MDP.\n\n- **Giá trị của trạng thái và độ tin cậy của hành động**: Độ tin cậy của hành động không phải là một thành phần trong chính sách tối ưu. Thay vào đó, chính sách hành động là yếu tố quyết định hành động nào nên được thực hiện từ trạng thái đó, không phải độ tin cậy.\n\n- **Chi phí của trạng thái và chính sách hành động**: Chi phí của trạng thái không phải là một thành phần trong chính sách tối ưu. Trong MDP, chúng ta thường nói về giá trị của trạng thái chứ không phải chi phí, và chính sách hành động là yếu tố quyết định hành động chứ không phải chi phí liên quan đến trạng thái.\n\nTóm lại, câu trả lời đúng phản ánh chính xác hai thành phần cốt lõi trong chính sách tối ưu của MDP, trong khi các yếu tố gây nhiễu đều chứa những khái niệm sai lệch hoặc không liên quan.",
+      "topic": {
+        "name": "Nguyên tắc tối ưu: Ý nghĩa và ứng dụng",
+        "description": "Chủ đề này khám phá nguyên tắc tối ưu trong MDPs, trong đó mỗi chính sách tối ưu có thể phân tách thành hai thành phần. Học sinh sẽ phải nhận diện và phân tích tính chất này cũng như ứng dụng của nó trong việc đạt được giá trị tối ưu từ một trạng thái nhất định.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Đâu là điểm khác biệt chính giữa lặp giá trị và lặp chính sách trong việc tìm kiếm chính sách tối ưu?",
+      "answer": "Lặp giá trị cập nhật giá trị của từng trạng thái cho đến khi hội tụ, trong khi lặp chính sách cải thiện chính sách dựa trên các giá trị đã tính toán.",
+      "distractors": [
+        "Lặp chính sách cập nhật giá trị của từng trạng thái cho đến khi hội tụ.",
+        "Lặp giá trị cải thiện chính sách dựa trên các giá trị đã tính toán.",
+        "Lặp chính sách chỉ sử dụng một giá trị duy nhất cho tất cả các trạng thái."
+      ],
+      "explanation": "Câu trả lời đúng là \"Lặp giá trị cập nhật giá trị của từng trạng thái cho đến khi hội tụ, trong khi lặp chính sách cải thiện chính sách dựa trên các giá trị đã tính toán.\" Điều này đúng vì lặp giá trị (Value Iteration) tập trung vào việc tính toán và cập nhật giá trị của từng trạng thái trong môi trường cho đến khi các giá trị này không thay đổi nhiều nữa (hội tụ). Ngược lại, lặp chính sách (Policy Iteration) bắt đầu với một chính sách ban đầu và cải thiện nó dựa trên các giá trị đã được tính toán từ chính sách đó, cho đến khi không còn cải thiện nào nữa.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Lặp chính sách cập nhật giá trị của từng trạng thái cho đến khi hội tụ**: Sai vì lặp chính sách không trực tiếp cập nhật giá trị của từng trạng thái mà thay vào đó, nó cải thiện chính sách dựa trên giá trị hiện tại. Việc cập nhật giá trị chỉ xảy ra trong lặp giá trị.\n- **Lặp giá trị cải thiện chính sách dựa trên các giá trị đã tính toán**: Sai vì lặp giá trị không cải thiện chính sách mà chỉ cập nhật giá trị cho từng trạng thái. Cải thiện chính sách là đặc trưng của lặp chính sách.\n- **Lặp chính sách chỉ sử dụng một giá trị duy nhất cho tất cả các trạng thái**: Sai vì lặp chính sách sử dụng giá trị khác nhau cho từng trạng thái để cải thiện chính sách, không phải chỉ một giá trị duy nhất. Mỗi trạng thái có thể có giá trị khác nhau tùy thuộc vào chính sách hiện tại.\n\nTóm lại, câu trả lời đúng nêu rõ sự khác biệt giữa hai phương pháp, trong khi các yếu tố gây nhiễu đều hiểu sai về cách thức hoạt động của lặp giá trị và lặp chính sách.",
+      "topic": {
+        "name": "Lặp giá trị: Tìm chính sách tối ưu",
+        "description": "Chủ đề này tập trung vào vấn đề tìm chính sách tối ưu thông qua phương pháp lặp giá trị (Value Iteration). Học sinh sẽ phải hiểu và áp dụng công thức để tìm giá trị tối ưu, cũng như sự khác biệt giữa lặp giá trị và lặp chính sách. Các ví dụ thực tế sẽ được sử dụng để kiểm tra khả năng giải quyết vấn đề phức tạp.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "MDP và DP có thể ứng dụng lẫn nhau như thế nào trong việc tối ưu hóa quyết định?",
+      "answer": "DP có thể được sử dụng để giải bài toán MDP thông qua quá trình tính toán giá trị của các trạng thái.",
+      "distractors": [
+        "DP không thể áp dụng cho MDP trong bất kỳ trường hợp nào.",
+        "MDP chỉ có thể được giải quyết bằng cách sử dụng các phương pháp học máy.",
+        "Quá trình tính toán giá trị của các trạng thái không liên quan đến DP."
+      ],
+      "explanation": "Câu trả lời đúng là \"DP có thể được sử dụng để giải bài toán MDP thông qua quá trình tính toán giá trị của các trạng thái\" vì lập trình động (DP) là một phương pháp mạnh mẽ để giải quyết các bài toán tối ưu hóa, bao gồm cả bài toán quyết định Markov (MDP). Trong MDP, chúng ta cần tính toán giá trị của các trạng thái để xác định chính sách tối ưu. DP cho phép chúng ta thực hiện điều này thông qua các thuật toán như Bellman, giúp tính toán giá trị tối ưu cho từng trạng thái dựa trên các trạng thái kế tiếp và phần thưởng nhận được.\n\nGiải thích về các yếu tố gây nhiễu:\n- **DP không thể áp dụng cho MDP trong bất kỳ trường hợp nào**: Điều này sai vì DP thực sự là một công cụ hữu ích để giải quyết MDP. Nhiều thuật toán DP, như phương pháp giá trị và phương pháp chính sách, được thiết kế đặc biệt để xử lý các bài toán MDP.\n- **MDP chỉ có thể được giải quyết bằng cách sử dụng các phương pháp học máy**: Sai lầm này xuất phát từ việc hiểu sai về MDP. MDP có thể được giải quyết bằng nhiều phương pháp khác nhau, không chỉ học máy. DP là một trong những phương pháp chính để giải quyết MDP.\n- **Quá trình tính toán giá trị của các trạng thái không liên quan đến DP**: Điều này không chính xác vì chính quá trình tính toán giá trị của các trạng thái là cốt lõi của DP. DP sử dụng các phương pháp như Bellman để tính toán giá trị trạng thái, từ đó giúp tìm ra chính sách tối ưu cho MDP.\n\nTóm lại, DP và MDP có mối liên hệ chặt chẽ, và DP là một công cụ quan trọng trong việc giải quyết các bài toán MDP thông qua việc tính toán giá trị trạng thái.",
+      "topic": {
+        "name": "Tương tác giữa MDPs và DP: So sánh và liên hệ",
+        "description": "Chủ đề liên tuần này tích hợp khái niệm MDPs từ tuần trước với phương pháp lập trình động hiện tại. Học sinh sẽ được yêu cầu so sánh và phân tích mối liên hệ giữa MDP và DP, cách DP có thể được áp dụng cho MDPs và ví dụ cụ thể điển hình.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.63,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Ánh xạ co trong định lý ánh xạ co được sử dụng trong quá trình hội tụ của lặp giá trị và đánh giá chính sách trong học tăng cường để làm gì?",
+      "answer": "Để đảm bảo rằng các chính sách trong MDP sẽ hội tụ đến một chính sách tối ưu.",
+      "distractors": [
+        "Để xác định các chính sách không hiệu quả trong MDP.",
+        "Để tối ưu hóa các tham số trong quá trình học tăng cường.",
+        "Để đảm bảo rằng tất cả các chính sách đều hội tụ đến cùng một giá trị."
+      ],
+      "explanation": "Câu trả lời đúng \"Để đảm bảo rằng các chính sách trong MDP sẽ hội tụ đến một chính sách tối ưu\" là chính xác vì định lý ánh xạ co đảm bảo rằng các phép biến đổi trong không gian chính sách sẽ dẫn đến sự hội tụ của các chính sách đến một chính sách tối ưu duy nhất. Điều này có nghĩa là khi áp dụng các phương pháp như lặp giá trị và đánh giá chính sách, các chính sách sẽ dần dần cải thiện và cuối cùng hội tụ đến chính sách tối ưu, nhờ vào tính chất co của ánh xạ.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Để xác định các chính sách không hiệu quả trong MDP**: Yếu tố này sai vì định lý ánh xạ co không được thiết kế để xác định chính sách không hiệu quả. Thay vào đó, nó tập trung vào việc đảm bảo sự hội tụ đến chính sách tối ưu, không phải phân loại các chính sách.\n\n- **Để tối ưu hóa các tham số trong quá trình học tăng cường**: Yếu tố này cũng sai vì ánh xạ co không liên quan trực tiếp đến việc tối ưu hóa tham số. Nó chỉ đảm bảo rằng quá trình lặp lại sẽ dẫn đến một chính sách tối ưu, không phải là tối ưu hóa các tham số cụ thể trong mô hình.\n\n- **Để đảm bảo rằng tất cả các chính sách đều hội tụ đến cùng một giá trị**: Yếu tố này không chính xác vì định lý ánh xạ co chỉ đảm bảo rằng các chính sách sẽ hội tụ đến một chính sách tối ưu, không phải là tất cả các chính sách đều hội tụ đến cùng một giá trị. Một số chính sách có thể không hội tụ hoặc hội tụ đến các giá trị khác nhau nếu không được điều chỉnh đúng cách. \n\nTóm lại, định lý ánh xạ co là công cụ quan trọng trong việc đảm bảo hội tụ đến chính sách tối ưu, trong khi các yếu tố gây nhiễu không phản ánh đúng vai trò của nó trong học tăng cường.",
+      "topic": {
+        "name": "Ánh xạ co: Định lý và ứng dụng trong MDP",
+        "description": "Chủ đề này phân tích định lý ánh xạ co (Contraction Mapping Theorem) và sự hội tụ của các phương pháp đánh giá chính sách. Học sinh sẽ cần hiểu công thức của định lý này và áp dụng nó vào quá trình hội tụ của lặp giá trị và đánh giá chính sách, từ đó đánh giá tác động của nó trong học tăng cường.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Sự khác biệt chính giữa lập trình động đồng bộ và không đồng bộ là gì?",
+      "answer": "Lập trình động đồng bộ thực hiện các thao tác tuần tự, trong khi lập trình động không đồng bộ cho phép thực hiện song song mà không chờ đợi kết quả từ các thao tác trước.",
+      "distractors": [
+        "Lập trình động đồng bộ cho phép thực hiện nhiều thao tác cùng lúc mà không cần chờ đợi.",
+        "Lập trình động không đồng bộ thực hiện tuần tự và chờ kết quả từ mỗi thao tác trước.",
+        "Lập trình động đồng bộ và không đồng bộ đều thực hiện song song mà không cần thứ tự."
+      ],
+      "explanation": "Câu trả lời đúng \"Lập trình động đồng bộ thực hiện các thao tác tuần tự, trong khi lập trình động không đồng bộ cho phép thực hiện song song mà không chờ đợi kết quả từ các thao tác trước\" là chính xác vì lập trình động đồng bộ yêu cầu mỗi thao tác phải hoàn thành trước khi bắt đầu thao tác tiếp theo, dẫn đến một chuỗi thực hiện tuần tự. Ngược lại, lập trình động không đồng bộ cho phép các thao tác được thực hiện đồng thời, nghĩa là một thao tác có thể bắt đầu mà không cần chờ thao tác trước đó hoàn thành, giúp tối ưu hóa thời gian và tài nguyên.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Lập trình động đồng bộ cho phép thực hiện nhiều thao tác cùng lúc mà không cần chờ đợi**: Sai vì lập trình đồng bộ thực hiện tuần tự, nghĩa là mỗi thao tác phải hoàn thành trước khi bắt đầu thao tác tiếp theo, không thể thực hiện đồng thời.\n- **Lập trình động không đồng bộ thực hiện tuần tự và chờ kết quả từ mỗi thao tác trước**: Sai vì lập trình không đồng bộ cho phép thực hiện các thao tác song song mà không cần chờ đợi kết quả từ thao tác trước, điều này trái ngược với khái niệm tuần tự.\n- **Lập trình động đồng bộ và không đồng bộ đều thực hiện song song mà không cần thứ tự**: Sai vì lập trình đồng bộ thực hiện tuần tự, trong khi lập trình không đồng bộ mới cho phép thực hiện song song mà không cần chờ đợi, do đó không thể nói cả hai đều thực hiện song song. \n\nTóm lại, câu trả lời đúng phản ánh chính xác sự khác biệt giữa hai loại lập trình, trong khi các yếu tố gây nhiễu đều sai lệch về khái niệm cơ bản của lập trình đồng bộ và không đồng bộ.",
+      "topic": {
+        "name": "Sự khác biệt giữa DP đồng bộ và không đồng bộ",
+        "description": "Chủ đề này kiểm tra sự khác biệt giữa lập trình động đồng bộ và không đồng bộ, cũng như ứng dụng cho các bài toán thực tế. Học sinh sẽ được yêu cầu đưa ra định nghĩa, phân tích ưu và nhược điểm, và các kịch bản chuyển giao cho mỗi loại.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "rl2025"
+    }
+  ]
+}

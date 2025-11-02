@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Perceptron sử dụng đặc điểm hình học nào để phân tách dữ liệu thành hai lớp (+1 và -1)?",
+      "answer": "Siêu phẳng tuyến tính",
+      "distractors": [
+        "Đường cong phi tuyến tính",
+        "Điểm trung tâm",
+        "Đường thẳng song song"
+      ],
+      "explanation": "Perceptron là một thuật toán phân loại nhị phân sử dụng một **siêu phẳng tuyến tính** để phân tách dữ liệu thành hai lớp (+1 và -1). Siêu phẳng này là một đường thẳng trong không gian 2D, một mặt phẳng trong không gian 3D, hoặc một khái niệm tương tự trong không gian nhiều chiều hơn, có khả năng phân chia dữ liệu một cách rõ ràng nếu dữ liệu đó có thể phân tách tuyến tính.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Đường cong phi tuyến tính**: Perceptron là một mô hình tuyến tính. Nó không thể tạo ra các đường cong phi tuyến tính để phân tách dữ liệu. Các mô hình phức tạp hơn như mạng nơ-ron với các hàm kích hoạt phi tuyến tính mới có khả năng này.\n*   **Điểm trung tâm**: Mặc dù các thuật toán phân cụm có thể sử dụng các điểm trung tâm (centroid) để nhóm dữ liệu, Perceptron không sử dụng điểm trung tâm để phân tách. Mục tiêu của nó là tìm một ranh giới phân loại, không phải một điểm đại diện cho một cụm.\n*   **Đường thẳng song song**: Perceptron tìm một siêu phẳng duy nhất để phân tách dữ liệu. Việc sử dụng nhiều đường thẳng song song không phải là cách Perceptron hoạt động để phân loại nhị phân.\n",
+      "topic": {
+        "name": "Khái niệm cơ bản của Perceptron",
+        "description": "Chủ đề này tập trung vào định nghĩa Perceptron, cách nó sử dụng siêu phẳng tuyến tính để phân tách dữ liệu thành hai lớp (+1 và -1), và khái niệm về tập dữ liệu phân tách tuyến tính. Học sinh cần biết cách Perceptron biểu diễn các hàm logic cơ bản.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mục tiêu chính của Máy Vector Hỗ trợ (SVM) biên cứng là gì?",
+      "answer": "Tìm siêu phẳng phân tách tối đa hóa biên giữa các lớp dữ liệu.",
+      "distractors": [
+        "Tìm siêu phẳng phân tách tối thiểu hóa lỗi phân loại trên tập huấn luyện.",
+        "Xây dựng một mô hình phức tạp để phù hợp với tất cả các điểm dữ liệu một cách hoàn hảo.",
+        "Chọn các đặc trưng quan trọng nhất để giảm chiều dữ liệu trước khi phân loại."
+      ],
+      "explanation": "Mục tiêu chính của Máy Vector Hỗ trợ (SVM) biên cứng là **tìm siêu phẳng phân tách tối đa hóa biên giữa các lớp dữ liệu**. SVM biên cứng tìm kiếm một siêu phẳng phân tách các lớp dữ liệu một cách rõ ràng, đồng thời đảm bảo khoảng cách (biên) từ siêu phẳng đến các điểm dữ liệu gần nhất của mỗi lớp là lớn nhất có thể. Việc tối đa hóa biên này giúp tăng cường khả năng tổng quát hóa của mô hình và giảm nguy cơ quá khớp.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Tìm siêu phẳng phân tách tối thiểu hóa lỗi phân loại trên tập huấn luyện.** Mặc dù việc giảm lỗi phân loại là một mục tiêu chung của nhiều thuật toán học máy, nhưng đối với SVM biên cứng, mục tiêu chính không phải là tối thiểu hóa lỗi trên tập huấn luyện một cách trực tiếp. Thay vào đó, nó tập trung vào việc tối đa hóa biên, điều này gián tiếp dẫn đến lỗi phân loại thấp và khả năng tổng quát hóa tốt hơn.\n*   **Xây dựng một mô hình phức tạp để phù hợp với tất cả các điểm dữ liệu một cách hoàn hảo.** SVM biên cứng không nhất thiết xây dựng một mô hình phức tạp để phù hợp hoàn hảo với tất cả các điểm dữ liệu. Trên thực tế, nó tìm kiếm một siêu phẳng tuyến tính (hoặc phi tuyến tính với kernel) đơn giản nhất có thể để phân tách các lớp với biên lớn nhất. Việc phù hợp hoàn hảo với tất cả các điểm dữ liệu có thể dẫn đến quá khớp, điều mà SVM cố gắng tránh thông qua việc tối đa hóa biên.\n*   **Chọn các đặc trưng quan trọng nhất để giảm chiều dữ liệu trước khi phân loại.** Việc chọn đặc trưng và giảm chiều dữ liệu là một bước tiền xử lý quan trọng trong nhiều bài toán học máy, nhưng nó không phải là mục tiêu chính của thuật toán SVM biên cứng. SVM tập trung vào việc tìm siêu phẳng phân tách sau khi dữ liệu đã được chuẩn bị.\n",
+      "topic": {
+        "name": "Mục tiêu tối ưu hóa của SVM biên cứng",
+        "description": "Tập trung vào mục tiêu chính của Máy Vector Hỗ trợ (SVM) là tìm siêu phẳng phân tách tối đa hóa biên (margin) giữa các lớp dữ liệu. Học sinh cần hiểu ý nghĩa của biên và các điểm Support Vectors, là các điểm dữ liệu gần nhất với siêu phẳng phân tách.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong Support Vector Machine (SVM) phi tuyến tính, mục đích chính của Kernel Trick là gì?",
+      "answer": "Thay thế tích vô hướng trong không gian đặc trưng cao chiều bằng một hàm kernel K(x_i, x_j).",
+      "distractors": [
+        "Giảm số chiều của dữ liệu đầu vào bằng cách chọn lọc các đặc trưng quan trọng nhất.",
+        "Trực tiếp biến đổi dữ liệu sang không gian đặc trưng cao chiều để tăng khả năng phân tách tuyến tính.",
+        "Tăng tốc độ huấn luyện mô hình bằng cách đơn giản hóa thuật toán tối ưu hóa bên trong SVM."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **\"Thay thế tích vô hướng trong không gian đặc trưng cao chiều bằng một hàm kernel K(x_i, x_j).\"** bởi vì Kernel Trick là một kỹ thuật cho phép SVM hoạt động hiệu quả trong không gian đặc trưng có số chiều cao mà không cần tính toán rõ ràng các tọa độ của dữ liệu trong không gian đó. Thay vì ánh xạ dữ liệu một cách tường minh sang không gian đặc trưng cao chiều và sau đó tính tích vô hướng, hàm kernel $K(x_i, x_j)$ trực tiếp tính giá trị của tích vô hướng trong không gian đặc trưng đó từ các vector đầu vào trong không gian ban đầu. Điều này giúp tránh được gánh nặng tính toán khi làm việc với các không gian có số chiều rất lớn (vấn đề \"curse of dimensionality\").\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **\"Giảm số chiều của dữ liệu đầu vào bằng cách chọn lọc các đặc trưng quan trọng nhất.\"** Đây là mục đích của các kỹ thuật giảm chiều như PCA (Phân tích thành phần chính) hoặc lựa chọn đặc trưng, không phải là Kernel Trick. Kernel Trick thực tế cho phép SVM làm việc trong không gian có số chiều cao hơn, chứ không phải giảm số chiều.\n*   **\"Trực tiếp biến đổi dữ liệu sang không gian đặc trưng cao chiều để tăng khả năng phân tách tuyến tính.\"** Mặc dù mục tiêu cuối cùng là tăng khả năng phân tách tuyến tính bằng cách làm việc trong không gian đặc trưng cao chiều, Kernel Trick không trực tiếp biến đổi dữ liệu một cách tường minh. Thay vào đó, nó thực hiện phép tính tích vô hướng trong không gian đó một cách gián tiếp thông qua hàm kernel, tránh việc phải tính toán và lưu trữ các vector đã biến đổi.\n*   **\"Tăng tốc độ huấn luyện mô hình bằng cách đơn giản hóa thuật toán tối ưu hóa bên trong SVM.\"** Kernel Trick không trực tiếp đơn giản hóa thuật toán tối ưu hóa bên trong SVM. Mục đích chính của nó là cho phép SVM xử lý các vấn đề phi tuyến tính một cách hiệu quả bằng cách làm việc trong không gian đặc trưng cao chiều mà không phải chịu chi phí tính toán của việc ánh xạ tường minh. Việc tăng tốc độ huấn luyện có thể là một hệ quả gián tiếp do tránh được các phép tính phức tạp trong không gian đặc trưng cao chiều, nhưng đó không phải là mục đích chính của nó.",
+      "topic": {
+        "name": "Chức năng và ý nghĩa của Kernel Trick",
+        "description": "Chủ đề này kiểm tra hiểu biết về Kernel Trick trong SVM phi tuyến tính. Học sinh nên nắm được mục đích của Kernel Trick là thay thế tích vô hướng trong không gian đặc trưng cao chiều bằng một hàm kernel K(x_i, x_j), từ đó tránh tính toán rõ ràng các vector đặc trưng và giải quyết vấn đề chiều dữ liệu lớn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong phân loại đa lớp của SVM, phương pháp 'Một-chống-phần còn lại' (One-vs-Rest) hoạt động dựa trên nguyên tắc nào?",
+      "answer": "Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một lớp với tất cả các lớp còn lại.",
+      "distractors": [
+        "Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một cặp lớp riêng lẻ.",
+        "Huấn luyện một bộ phân loại đa lớp duy nhất để phân biệt tất cả các lớp cùng một lúc.",
+        "Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một lớp với một lớp khác được chọn ngẫu nhiên."
+      ],
+      "explanation": "Trong phân loại đa lớp của SVM, phương pháp 'Một-chống-phần còn lại' (One-vs-Rest, còn gọi là One-vs-All) hoạt động bằng cách huấn luyện $k$ bộ phân loại nhị phân, trong đó $k$ là số lượng lớp. Mỗi bộ phân loại được huấn luyện để phân biệt một lớp cụ thể (gọi là \"lớp dương\") với tất cả các lớp còn lại gộp lại (gọi là \"lớp âm\"). Khi dự đoán, đầu ra của tất cả $k$ bộ phân loại được đánh giá, và lớp có điểm số cao nhất (hoặc khoảng cách lớn nhất đến siêu phẳng) được chọn làm dự đoán cuối cùng.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một cặp lớp riêng lẻ.** Đây là mô tả của phương pháp 'Một-chống-một' (One-vs-One), không phải 'Một-chống-phần còn lại'. Trong 'Một-chống-một', $\\frac{k(k-1)}{2}$ bộ phân loại nhị phân được huấn luyện, mỗi bộ phân biệt hai lớp cụ thể.\n*   **Huấn luyện một bộ phân loại đa lớp duy nhất để phân biệt tất cả các lớp cùng một lúc.** SVM cơ bản là một bộ phân loại nhị phân. Để xử lý đa lớp, cần có các chiến lược mở rộng như 'Một-chống-phần còn lại' hoặc 'Một-chống-một', chứ không phải một bộ phân loại đa lớp duy nhất theo cách này.\n*   **Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một lớp với một lớp khác được chọn ngẫu nhiên.** Phương pháp này không có cấu trúc rõ ràng và không đảm bảo rằng tất cả các lớp sẽ được phân biệt một cách có hệ thống với tất cả các lớp khác, dẫn đến hiệu suất phân loại kém hoặc không nhất quán. 'Một-chống-phần còn lại' yêu cầu mỗi lớp được so sánh với *tất cả* các lớp còn lại, không chỉ một lớp ngẫu nhiên.",
+      "topic": {
+        "name": "Phương pháp 'Một-chống-phần còn lại' trong SVM",
+        "description": "Chủ đề này đánh giá kiến thức về một trong những phương pháp mở rộng SVM cho phân loại đa lớp: 'Một-chống-phần còn lại'. Học sinh cần hiểu nguyên tắc hoạt động của phương pháp này, tức là huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một lớp với tất cả các lớp còn lại.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong bài toán tối ưu hóa SVM biên cứng, nếu một điểm dữ liệu (x_i, y_i) được phân loại đúng và nằm chính xác trên biên của lề (margin boundary), giá trị của biểu thức y_i(w^T x_i + b) sẽ là gì?",
+      "answer": "1",
+      "distractors": [
+        "0",
+        "-1",
+        "Giá trị này có thể là bất kỳ số thực dương nào lớn hơn hoặc bằng 1"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **1**. Trong bài toán tối ưu hóa SVM biên cứng, ràng buộc cho mỗi điểm dữ liệu là $y_i(w^T x_i + b) \\ge 1$. Ràng buộc này đảm bảo rằng tất cả các điểm dữ liệu được phân loại đúng và nằm ngoài lề hoặc trên biên của lề. Các điểm dữ liệu nằm chính xác trên biên của lề được gọi là các vector hỗ trợ (support vectors). Đối với các điểm này, bất đẳng thức trở thành đẳng thức, tức là $y_i(w^T x_i + b) = 1$. Đây là định nghĩa của một điểm nằm trên biên của lề trong SVM biên cứng.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **0**: Giá trị 0 sẽ chỉ ra rằng điểm dữ liệu nằm chính xác trên siêu phẳng phân loại ($w^T x_i + b = 0$), chứ không phải trên biên của lề. Điều này có nghĩa là điểm đó không được phân loại với một lề rõ ràng.\n*   **-1**: Giá trị -1 sẽ chỉ ra rằng điểm dữ liệu được phân loại sai và nằm trên biên của lề sai phía, hoặc nằm trên biên của lề nhưng với dấu ngược lại, điều này vi phạm ràng buộc phân loại đúng.\n*   **Giá trị này có thể là bất kỳ số thực dương nào lớn hơn hoặc bằng 1**: Mặc dù ràng buộc là $y_i(w^T x_i + b) \\ge 1$, nhưng câu hỏi chỉ rõ rằng điểm dữ liệu nằm **chính xác trên biên của lề**. Điều này ngụ ý rằng nó không nằm ngoài lề, mà là nằm trên ranh giới của lề, nơi bất đẳng thức trở thành đẳng thức, tức là bằng 1. Nếu giá trị lớn hơn 1, điểm đó sẽ nằm ngoài lề, không phải chính xác trên biên.",
+      "topic": {
+        "name": "Bài toán tối ưu hóa SVM biên cứng",
+        "description": "Chủ đề này đi sâu vào công thức của bài toán tối ưu hóa SVM biên cứng (primal problem). Học sinh cần hiểu hàm mục tiêu (tối thiểu hóa 1/2 ||w||^2) và các ràng buộc y_i(w^T x_i + b) >= 1, cũng như bản chất là một bài toán Lập trình bậc hai (Quadratic Programming - QP).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Để xử lý dữ liệu không phân tách tuyến tính hoặc có nhiễu, Soft Margin SVM khác biệt với Hard Margin SVM như thế nào thông qua cơ chế của biến slack (ξ) và tham số điều hòa C?",
+      "answer": "Soft Margin SVM giới thiệu biến slack để cho phép các điểm dữ liệu vi phạm biên hoặc bị phân loại sai, đồng thời sử dụng tham số C để cân bằng giữa việc tối đa hóa biên độ và hình phạt lỗi phân loại.",
+      "distractors": [
+        "Soft Margin SVM sử dụng biến slack để loại bỏ các điểm dữ liệu nhiễu và tham số C chỉ để điều chỉnh độ rộng của biên độ, không liên quan đến lỗi phân loại.",
+        "Soft Margin SVM cho phép tất cả các điểm dữ liệu vi phạm biên độ mà không có hình phạt, và tham số C kiểm soát số lượng biến slack được phép.",
+        "Soft Margin SVM chỉ áp dụng cho dữ liệu phân tách tuyến tính nhưng có một vài ngoại lệ, với biến slack giúp dịch chuyển biên độ và tham số C xác định số lượng ngoại lệ."
+      ],
+      "explanation": "Soft Margin SVM được thiết kế để xử lý dữ liệu không phân tách tuyến tính hoặc có nhiễu bằng cách giới thiệu biến slack (ξ) và tham số điều hòa C. Biến slack cho phép một số điểm dữ liệu vi phạm biên độ hoặc thậm chí bị phân loại sai, điều này là không thể trong Hard Margin SVM. Tham số C đóng vai trò quan trọng trong việc cân bằng giữa việc tối đa hóa biên độ (mục tiêu chính của SVM) và hình phạt cho các lỗi phân loại hoặc vi phạm biên độ. Giá trị C cao hơn sẽ áp đặt hình phạt lớn hơn cho các lỗi, dẫn đến một mô hình ít lỗi hơn nhưng có thể có biên độ hẹp hơn. Ngược lại, giá trị C thấp hơn cho phép nhiều lỗi hơn nhưng tạo ra biên độ rộng hơn, giúp mô hình tổng quát hóa tốt hơn trên dữ liệu chưa thấy.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **\"Soft Margin SVM sử dụng biến slack để loại bỏ các điểm dữ liệu nhiễu và tham số C chỉ để điều chỉnh độ rộng của biên độ, không liên quan đến lỗi phân loại.\"** Tùy chọn này sai vì biến slack không dùng để loại bỏ dữ liệu nhiễu mà là để cho phép chúng tồn tại trong mô hình với một hình phạt. Hơn nữa, tham số C không chỉ điều chỉnh độ rộng biên độ mà còn trực tiếp liên quan đến hình phạt cho các lỗi phân loại, ảnh hưởng đến sự cân bằng giữa biên độ và lỗi.\n*   **\"Soft Margin SVM cho phép tất cả các điểm dữ liệu vi phạm biên độ mà không có hình phạt, và tham số C kiểm soát số lượng biến slack được phép.\"** Tùy chọn này sai vì Soft Margin SVM không cho phép tất cả các điểm dữ liệu vi phạm biên độ mà không có hình phạt; mỗi vi phạm đều phải chịu một hình phạt được kiểm soát bởi tham số C. Tham số C không kiểm soát số lượng biến slack được phép mà kiểm soát mức độ hình phạt cho tổng các biến slack, từ đó gián tiếp ảnh hưởng đến số lượng và mức độ vi phạm.\n*   **\"Soft Margin SVM chỉ áp dụng cho dữ liệu phân tách tuyến tính nhưng có một vài ngoại lệ, với biến slack giúp dịch chuyển biên độ và tham số C xác định số lượng ngoại lệ.\"** Tùy chọn này sai vì Soft Margin SVM được thiết kế đặc biệt để xử lý dữ liệu không phân tách tuyến tính, không chỉ dữ liệu phân tách tuyến tính với ngoại lệ. Biến slack không dịch chuyển biên độ mà cho phép các điểm dữ liệu nằm trong biên độ hoặc ở phía sai của biên độ. Tham số C không xác định số lượng ngoại lệ mà kiểm soát mức độ hình phạt cho các ngoại lệ đó.",
+      "topic": {
+        "name": "So sánh SVM biên cứng và biên mềm",
+        "description": "Chủ đề này yêu cầu so sánh SVM biên cứng (Hard Margin) và biên mềm (Soft Margin). Học sinh cần hiểu khi nào sử dụng mỗi loại, vai trò của các biến slack (xi) và tham số điều hòa C trong Soft Margin SVM để xử lý dữ liệu không phân tách tuyến tính hoặc có nhiễu.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Đối với bài toán hồi quy tuyến tính trên tập dữ liệu có số lượng mẫu và đặc trưng rất lớn, phương pháp tối ưu hóa nào thường được ưu tiên sử dụng để đạt hiệu quả tính toán so với Normal Equation?",
+      "answer": "Gradient Descent",
+      "distractors": [
+        "Normal Equation",
+        "Quadratic Programming (QP)",
+        "Stochastic Gradient Descent"
+      ],
+      "explanation": "**Giải thích:**\n\n**Gradient Descent** là câu trả lời đúng vì đối với các tập dữ liệu có số lượng mẫu và đặc trưng rất lớn, Normal Equation trở nên không hiệu quả về mặt tính toán do yêu cầu tính toán nghịch đảo ma trận $X^TX$, có độ phức tạp là $O(n^3)$ (với $n$ là số lượng đặc trưng). Khi $n$ lớn, việc này tốn rất nhiều thời gian và bộ nhớ. Gradient Descent, với độ phức tạp $O(m \\times n)$ (với $m$ là số lượng mẫu và $n$ là số lượng đặc trưng) cho mỗi lần lặp, có thể hội tụ đến nghiệm tối ưu trong một số lần lặp hợp lý, làm cho nó hiệu quả hơn nhiều trong các trường hợp dữ liệu lớn.\n\n- **Normal Equation** là sai vì mặc dù nó cung cấp một giải pháp đóng cho bài toán hồi quy tuyến tính, nhưng như đã giải thích ở trên, việc tính toán nghịch đảo ma trận $X^TX$ trở nên cực kỳ tốn kém khi số lượng đặc trưng (kích thước của ma trận) rất lớn, khiến nó không thực tế cho các tập dữ liệu lớn.\n- **Quadratic Programming (QP)** là sai vì QP là một lớp bài toán tối ưu hóa rộng hơn, thường được sử dụng để giải quyết các bài toán có ràng buộc, ví dụ như trong Support Vector Machines (SVMs). Mặc dù hồi quy tuyến tính có thể được biểu diễn dưới dạng bài toán QP không ràng buộc, nhưng việc sử dụng các thuật toán QP tổng quát thường phức tạp và kém hiệu quả hơn so với Gradient Descent hoặc Normal Equation cho bài toán hồi quy tuyến tính đơn thuần, đặc biệt khi dữ liệu lớn.\n- **Stochastic Gradient Descent** cũng là một phương pháp tối ưu hóa hiệu quả cho dữ liệu lớn, nhưng trong ngữ cảnh câu hỏi so sánh với Normal Equation và tìm phương pháp \"thường được ưu tiên sử dụng để đạt hiệu quả tính toán\", Gradient Descent (phiên bản Batch Gradient Descent hoặc Mini-batch Gradient Descent) là một lựa chọn chung và mạnh mẽ. Stochastic Gradient Descent (SGD) là một biến thể của Gradient Descent, thường được sử dụng khi dữ liệu quá lớn đến mức không thể tải toàn bộ vào bộ nhớ, hoặc khi cần hội tụ nhanh hơn (mặc dù có thể dao động nhiều hơn). Tuy nhiên, nếu không có yêu cầu cụ thể về việc xử lý từng mẫu một, Gradient Descent (nói chung) là câu trả lời bao quát và chính xác nhất cho việc thay thế Normal Equation trên tập dữ liệu lớn. Trong nhiều trường hợp, \"Gradient Descent\" được sử dụng để chỉ chung các phương pháp dựa trên gradient, bao gồm cả Batch, Mini-batch và Stochastic Gradient Descent. Tuy nhiên, nếu chỉ có một lựa chọn, Gradient Descent là lựa chọn tổng quát hơn và đúng hơn so với Normal Equation trong bối cảnh dữ liệu lớn.",
+      "topic": {
+        "name": "So sánh các phương pháp tối ưu hóa trong Học máy",
+        "description": "Chủ đề liên tuần này so sánh các phương pháp tối ưu hóa đã học. Học sinh cần phân biệt sự khác biệt về bản chất và ứng dụng của Gradient Descent (Tuần 1 & 2), Normal Equation (Tuần 1) với bài toán Lập trình bậc hai (QP) trong tối ưu hóa SVM (Tuần 4). Câu hỏi có thể hỏi về ưu nhược điểm hoặc phạm vi áp dụng của từng phương pháp. (Kết nối: Tuần 1, Tuần 2, Tuần 4)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong bối cảnh 'Lời nguyền của chiều dữ liệu' và nhu cầu phân tách phi tuyến tính, hãy phân tích cách Kernel Trick trong SVM giải quyết vấn đề tăng chi phí tính toán khi ánh xạ dữ liệu lên không gian đặc trưng cao chiều?",
+      "answer": "Nó tính toán tích vô hướng của các vector trong không gian đặc trưng cao chiều thông qua một hàm kernel mà không cần ánh xạ dữ liệu tường minh.",
+      "distractors": [
+        "Nó giảm số chiều của dữ liệu ban đầu bằng các kỹ thuật lựa chọn đặc trưng trước khi ánh xạ lên không gian cao chiều.",
+        "Nó tạo ra một không gian đặc trưng mới với số chiều thấp hơn, nơi dữ liệu có thể được phân tách tuyến tính một cách dễ dàng hơn.",
+        "Nó chỉ áp dụng cho các tập dữ liệu có số chiều thấp, giúp đơn giản hóa việc tính toán khoảng cách Euclidean."
+      ],
+      "explanation": "Kernel Trick trong SVM giải quyết vấn đề tăng chi phí tính toán khi ánh xạ dữ liệu lên không gian đặc trưng cao chiều bằng cách **tính toán tích vô hướng của các vector trong không gian đặc trưng cao chiều thông qua một hàm kernel mà không cần ánh xạ dữ liệu tường minh**. Đây là câu trả lời đúng vì Kernel Trick cho phép chúng ta làm việc hiệu quả trong không gian đặc trưng cao chiều (nơi dữ liệu có thể phân tách tuyến tính) mà không phải chịu gánh nặng tính toán của việc ánh xạ tường minh từng điểm dữ liệu. Hàm kernel hoạt động như một \"phím tắt\", trực tiếp tính toán tích vô hướng trong không gian cao chiều từ các vector trong không gian ban đầu, từ đó tránh được chi phí tính toán và bộ nhớ khổng lồ liên quan đến việc tạo ra các đặc trưng mới.\n\nCác yếu tố gây nhiễu khác không chính xác vì:\n*   **Nó giảm số chiều của dữ liệu ban đầu bằng các kỹ thuật lựa chọn đặc trưng trước khi ánh xạ lên không gian cao chiều.** Điều này không đúng. Kernel Trick không giảm số chiều của dữ liệu ban đầu; thay vào đó, nó cho phép chúng ta làm việc trong một không gian có số chiều *cao hơn* một cách hiệu quả. Các kỹ thuật giảm chiều như lựa chọn đặc trưng là một phương pháp khác để giải quyết \"Lời nguyền của chiều dữ liệu\", nhưng không phải là cách Kernel Trick hoạt động.\n*   **Nó tạo ra một không gian đặc trưng mới với số chiều thấp hơn, nơi dữ liệu có thể được phân tách tuyến tính một cách dễ dàng hơn.** Điều này cũng không đúng. Mục đích của Kernel Trick là ánh xạ dữ liệu lên một không gian có số chiều *cao hơn* (hoặc đôi khi vô hạn) để dữ liệu có thể phân tách tuyến tính, chứ không phải tạo ra một không gian có số chiều thấp hơn.\n*   **Nó chỉ áp dụng cho các tập dữ liệu có số chiều thấp, giúp đơn giản hóa việc tính toán khoảng cách Euclidean.** Điều này hoàn toàn sai. Kernel Trick được thiết kế đặc biệt để xử lý các tập dữ liệu mà việc phân tách tuyến tính khó khăn trong không gian ban đầu, thường là các tập dữ liệu có số chiều cao hoặc khi cần ánh xạ lên không gian cao chiều để tìm mặt phẳng phân tách. Nó không giới hạn ở dữ liệu có số chiều thấp và không trực tiếp đơn giản hóa việc tính toán khoảng cách Euclidean mà tập trung vào tích vô hướng.",
+      "topic": {
+        "name": "Ứng dụng Kernel Trick giải quyết vấn đề chiều dữ liệu",
+        "description": "Chủ đề liên tuần này tập trung vào cách Kernel Trick trong SVM (Tuần 4) giải quyết thách thức của 'Lời nguyền của chiều dữ liệu' (Curse of Dimensionality) đã được giới thiệu trong các bài giảng về mô hình học dựa trên xác suất (Tuần 2). Học sinh cần hiểu cách Kernel Trick cho phép xử lý dữ liệu trong không gian đặc trưng cao chiều mà không cần tính toán tường minh, giúp cải thiện hiệu suất và khả năng xử lý các tập dữ liệu phức tạp. (Kết nối: Tuần 2, Tuần 4)",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    }
+  ]
+}

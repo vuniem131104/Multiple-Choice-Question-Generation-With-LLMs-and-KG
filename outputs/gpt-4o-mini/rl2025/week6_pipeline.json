@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong học tăng cường dựa trên chính sách, chính sách được tham số hóa để làm gì?",
+      "answer": "Quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại.",
+      "distractors": [
+        "Đưa ra quyết định dựa trên các dự đoán về tương lai.",
+        "Xác định trạng thái hiện tại của môi trường mà không cần hành động.",
+        "Lập kế hoạch cho các hành động trong tương lai mà không xem xét trạng thái hiện tại."
+      ],
+      "explanation": "Câu trả lời đúng \"Quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại\" là chính xác vì trong học tăng cường dựa trên chính sách, chính sách được tham số hóa để xác định hành động tối ưu mà một tác nhân nên thực hiện tại một trạng thái cụ thể. Điều này có nghĩa là tác nhân sẽ xem xét thông tin hiện tại của môi trường để đưa ra quyết định, nhằm tối đa hóa phần thưởng trong tương lai.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Đưa ra quyết định dựa trên các dự đoán về tương lai**: Mặc dù dự đoán về tương lai có thể ảnh hưởng đến quyết định, nhưng trong học tăng cường dựa trên chính sách, quyết định hành động chủ yếu dựa trên trạng thái hiện tại chứ không phải chỉ dựa vào dự đoán. Chính sách không chỉ là dự đoán mà là hành động cụ thể tại thời điểm hiện tại.\n\n- **Xác định trạng thái hiện tại của môi trường mà không cần hành động**: Việc xác định trạng thái hiện tại là một phần quan trọng, nhưng mục tiêu của chính sách là để quyết định hành động, không chỉ dừng lại ở việc xác định trạng thái. Chính sách không chỉ đơn thuần là nhận biết mà còn là hành động dựa trên nhận thức đó.\n\n- **Lập kế hoạch cho các hành động trong tương lai mà không xem xét trạng thái hiện tại**: Lập kế hoạch cho hành động tương lai là một khía cạnh của học tăng cường, nhưng chính sách phải dựa trên trạng thái hiện tại để đưa ra quyết định hành động. Nếu không xem xét trạng thái hiện tại, chính sách sẽ không thể đưa ra quyết định chính xác và hiệu quả.\n\nTóm lại, câu trả lời đúng tập trung vào việc quyết định hành động dựa trên trạng thái hiện tại, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất của học tăng cường dựa trên chính sách.",
+      "topic": {
+        "name": "Học tăng cường dựa trên chính sách",
+        "description": "Chủ đề này giải thích các khái niệm cơ bản về học tăng cường dựa trên chính sách, bao gồm cách thức mà chính sách được tham số hóa và áp dụng trong các tình huống khác nhau. Học sinh sẽ kiểm tra sự hiểu biết về công thức và ứng dụng cụ thể, chẳng hạn như trong trò chơi Rock-Paper-Scissors.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Hãy cho biết một trong những ưu điểm của học tăng cường trong chính sách là gì?",
+      "answer": "Nâng cao hiệu suất của các chính sách ngẫu nhiên.",
+      "distractors": [
+        "Giảm thiểu chi phí của các chính sách ngẫu nhiên.",
+        "Tăng cường sự phức tạp của các chính sách ngẫu nhiên.",
+        "Cải thiện sự đồng nhất trong các chính sách ngẫu nhiên."
+      ],
+      "explanation": "Câu trả lời đúng \"Nâng cao hiệu suất của các chính sách ngẫu nhiên\" là chính xác vì học tăng cường giúp cải thiện khả năng ra quyết định trong các tình huống không chắc chắn. Bằng cách học từ các phản hồi và điều chỉnh hành động dựa trên kết quả, các chính sách ngẫu nhiên có thể được tối ưu hóa để đạt được hiệu suất tốt hơn, từ đó mang lại kết quả tích cực hơn trong các tình huống thực tế.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giảm thiểu chi phí của các chính sách ngẫu nhiên**: Mặc dù học tăng cường có thể dẫn đến việc tối ưu hóa chi phí trong một số trường hợp, nhưng mục tiêu chính của nó không phải là giảm chi phí mà là cải thiện hiệu suất. Do đó, đây không phải là một ưu điểm chính của học tăng cường.\n\n- **Tăng cường sự phức tạp của các chính sách ngẫu nhiên**: Học tăng cường thường giúp đơn giản hóa các quyết định bằng cách cung cấp các chiến lược rõ ràng hơn dựa trên dữ liệu. Sự phức tạp không phải là một ưu điểm mà là một nhược điểm, vì nó có thể làm cho việc áp dụng chính sách trở nên khó khăn hơn.\n\n- **Cải thiện sự đồng nhất trong các chính sách ngẫu nhiên**: Học tăng cường không nhất thiết cải thiện sự đồng nhất, mà ngược lại, nó có thể dẫn đến sự đa dạng trong các quyết định dựa trên các tình huống khác nhau. Mục tiêu của học tăng cường là tối ưu hóa hành động trong từng tình huống cụ thể, không phải là tạo ra sự đồng nhất.\n\nTóm lại, câu trả lời đúng tập trung vào việc nâng cao hiệu suất, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất và mục tiêu của học tăng cường.",
+      "topic": {
+        "name": "Ưu và nhược điểm của Học tăng cường",
+        "description": "Ngày nay, chủ đề này trình bày những lợi thế và bất lợi của học tăng cường dựa trên chính sách. Học sinh cần so sánh và đánh giá sự ưu việt và tác động của chúng đến hiệu suất của các chính sách ngẫu nhiên.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong tối ưu hóa chính sách, công thức nào thường được sử dụng để tính toán đạo hàm của chính sách nhằm cập nhật hành động tối ưu?",
+      "answer": "Đạo hàm của chính sách theo tham số.",
+      "distractors": [
+        "Đạo hàm của chính sách theo hành động.",
+        "Đạo hàm của chính sách theo trạng thái.",
+        "Đạo hàm của chính sách theo giá trị."
+      ],
+      "explanation": "Câu trả lời đúng là \"Đạo hàm của chính sách theo tham số\" vì trong tối ưu hóa chính sách, chúng ta cần tính toán cách mà chính sách (hành động được chọn) thay đổi khi các tham số của nó được điều chỉnh. Việc này cho phép chúng ta cập nhật chính sách để tối ưu hóa hành động trong môi trường, từ đó cải thiện hiệu suất của mô hình. Đạo hàm này giúp xác định hướng và mức độ thay đổi cần thiết để đạt được kết quả tốt hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Đạo hàm của chính sách theo hành động**: Tùy chọn này sai vì đạo hàm không được tính theo hành động mà theo tham số của chính sách. Hành động là kết quả của chính sách, không phải là yếu tố điều chỉnh chính sách.\n\n- **Đạo hàm của chính sách theo trạng thái**: Tùy chọn này cũng không chính xác vì đạo hàm không được tính theo trạng thái. Trạng thái là một phần của môi trường mà chính sách hoạt động trong đó, nhưng không phải là yếu tố điều chỉnh chính sách.\n\n- **Đạo hàm của chính sách theo giá trị**: Tùy chọn này sai vì giá trị là kết quả của chính sách, không phải là tham số mà chúng ta điều chỉnh. Đạo hàm cần phải tập trung vào các tham số của chính sách để tối ưu hóa hành động.\n\nTóm lại, chỉ có \"Đạo hàm của chính sách theo tham số\" là đúng vì nó phản ánh cách mà chính sách có thể được điều chỉnh để cải thiện hiệu suất trong quá trình tối ưu hóa.",
+      "topic": {
+        "name": "Phương trình đạo hàm chính sách",
+        "description": "Chủ đề này nghiên cứu đạo hàm của chính sách và cách tối ưu hóa nó bằng các thuật toán đạo hàm chính sách. Học sinh sẽ được kiểm tra hiểu biết về công thức và cách thức áp dụng trong các tình huống thực tiễn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Xấp xỉ hàm giá trị tương thích ảnh hưởng đến hiệu suất của chính sách như thế nào trong học tăng cường?",
+      "answer": "Bằng cách cải thiện độ chính xác của các giá trị ước tính, dẫn đến việc cải thiện các quyết định hành động của chính sách.",
+      "distractors": [
+        "Bằng cách giảm thiểu độ chính xác của các giá trị ước tính, dẫn đến quyết định hành động kém hơn.",
+        "Bằng cách tăng cường sự phức tạp của các giá trị ước tính, dẫn đến quyết định hành động chính xác hơn.",
+        "Bằng cách thay đổi hoàn toàn phương pháp tính toán, dẫn đến quyết định hành động không liên quan."
+      ],
+      "explanation": "Câu trả lời đúng \"Bằng cách cải thiện độ chính xác của các giá trị ước tính, dẫn đến việc cải thiện các quyết định hành động của chính sách.\" là chính xác vì trong học tăng cường, hàm giá trị tương thích cung cấp thông tin về giá trị của các trạng thái hoặc hành động. Khi độ chính xác của các giá trị ước tính được cải thiện, chính sách có thể đưa ra quyết định tốt hơn, tối ưu hóa hành động để đạt được phần thưởng cao hơn. Điều này dẫn đến hiệu suất tổng thể tốt hơn trong quá trình học.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Bằng cách giảm thiểu độ chính xác của các giá trị ước tính, dẫn đến quyết định hành động kém hơn.**: Tùy chọn này sai vì việc giảm độ chính xác sẽ làm cho các quyết định hành động trở nên kém hiệu quả, không phải là một cách để cải thiện hiệu suất.\n\n- **Bằng cách tăng cường sự phức tạp của các giá trị ước tính, dẫn đến quyết định hành động chính xác hơn.**: Tùy chọn này không chính xác vì sự phức tạp không nhất thiết dẫn đến độ chính xác cao hơn. Thực tế, sự phức tạp có thể gây khó khăn trong việc ước lượng chính xác giá trị, làm giảm hiệu suất.\n\n- **Bằng cách thay đổi hoàn toàn phương pháp tính toán, dẫn đến quyết định hành động không liên quan.**: Tùy chọn này sai vì việc thay đổi phương pháp tính toán không đảm bảo rằng các quyết định hành động sẽ trở nên không liên quan. Thay vào đó, nếu phương pháp mới không phù hợp, nó có thể dẫn đến quyết định kém hơn, nhưng không phải lúc nào cũng là không liên quan.\n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của độ chính xác trong việc cải thiện quyết định hành động, trong khi các yếu tố gây nhiễu đều sai do không phản ánh đúng mối quan hệ giữa độ chính xác và hiệu suất trong học tăng cường.",
+      "topic": {
+        "name": "Xấp xỉ hàm tương thích và đạo hàm chính sách",
+        "description": "Chủ đề này kết nối các kiến thức từ tuần 5 và 6 về xấp xỉ hàm giá trị và tính đạo hàm. Học sinh sẽ khám phá cách xấp xỉ hàm giá trị tương thích liên quan đến đạo hàm chính sách và ảnh hưởng của nó đến sự chính xác và hiệu suất.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong Quy trình Quyền lợi tối ưu Bellman, yếu tố nào nhất định phải được xem xét để đánh giá hiệu quả của chính sách chọn lựa?",
+      "answer": "Giá trị kỳ vọng của chính sách.",
+      "distractors": [
+        "Giá trị tối đa của chính sách.",
+        "Giá trị trung bình của tất cả các trạng thái.",
+        "Chi phí tối thiểu của chính sách."
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Giá trị kỳ vọng của chính sách\" vì trong Quy trình Quyền lợi tối ưu Bellman, việc đánh giá hiệu quả của một chính sách được thực hiện thông qua việc tính toán giá trị kỳ vọng của nó. Giá trị kỳ vọng phản ánh tổng hợp các phần thưởng mà một chính sách có thể mang lại khi thực hiện trong một môi trường nhất định, từ đó cho phép so sánh và lựa chọn chính sách tối ưu.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giá trị tối đa của chính sách**: Đây không phải là yếu tố cần thiết để đánh giá hiệu quả của chính sách. Giá trị tối đa chỉ đơn thuần là giá trị cao nhất mà một chính sách có thể đạt được, nhưng không cung cấp thông tin đầy đủ về cách thức hoạt động của chính sách trong các trạng thái khác nhau.\n\n- **Giá trị trung bình của tất cả các trạng thái**: Mặc dù giá trị trung bình có thể cung cấp một cái nhìn tổng quát, nhưng nó không phản ánh chính xác hiệu quả của một chính sách cụ thể. Giá trị trung bình không tính đến sự phân bố của các phần thưởng trong các trạng thái khác nhau, do đó không thể đánh giá chính xác hiệu suất của chính sách.\n\n- **Chi phí tối thiểu của chính sách**: Chi phí tối thiểu không phải là yếu tố chính trong việc đánh giá hiệu quả của một chính sách trong Quy trình Quyền lợi tối ưu Bellman. Mục tiêu chính là tối đa hóa phần thưởng (hoặc giá trị kỳ vọng), không phải là tối thiểu hóa chi phí. Chi phí có thể là một yếu tố phụ, nhưng không phải là yếu tố chính trong việc đánh giá chính sách.\n\nTóm lại, \"Giá trị kỳ vọng của chính sách\" là yếu tố quan trọng nhất để đánh giá hiệu quả của chính sách trong Quy trình Quyền lợi tối ưu Bellman, trong khi các yếu tố gây nhiễu khác không cung cấp thông tin đầy đủ hoặc chính xác về hiệu suất của chính sách.",
+      "topic": {
+        "name": "Quy trình Quyền lợi tối ưu Bellman",
+        "description": "Chủ đề này yêu cầu học sinh tìm hiểu và áp dụng nguyên lý Quy trình Quyền lợi tối ưu Bellman từ tuần 1 và 2. Học sinh sẽ kiểm tra khả năng vận dụng phương trình vào các MDP thực tế để tìm ra chính sách tốt nhất.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Hàm mục tiêu của chính sách trong MDP xác định điều gì trong quá trình đánh giá chất lượng của chính sách?",
+      "answer": "Giá trị kỳ vọng của tổng phần thưởng mà chính sách có thể đạt được.",
+      "distractors": [
+        "Giá trị tối đa mà chính sách có thể đạt được trong một lần hành động.",
+        "Giá trị trung bình của tất cả các phần thưởng mà chính sách có thể nhận được.",
+        "Giá trị kỳ vọng của phần thưởng trong một trạng thái cụ thể mà chính sách đạt được."
+      ],
+      "explanation": "Câu trả lời đúng là \"Giá trị kỳ vọng của tổng phần thưởng mà chính sách có thể đạt được\" vì hàm mục tiêu trong MDP (Markov Decision Process) được thiết kế để đánh giá chất lượng của một chính sách thông qua việc tính toán tổng phần thưởng mà chính sách đó có thể mang lại trong suốt quá trình thực hiện. Giá trị kỳ vọng này phản ánh khả năng của chính sách trong việc tối ưu hóa phần thưởng qua nhiều bước, cho phép so sánh các chính sách khác nhau một cách hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giá trị tối đa mà chính sách có thể đạt được trong một lần hành động**: Tùy chọn này sai vì nó chỉ xem xét phần thưởng trong một hành động đơn lẻ, không phản ánh được tổng thể quá trình và các hành động tiếp theo mà chính sách có thể thực hiện.\n\n- **Giá trị trung bình của tất cả các phần thưởng mà chính sách có thể nhận được**: Tùy chọn này không chính xác vì giá trị trung bình không tính đến yếu tố thời gian và sự tích lũy của phần thưởng qua các bước khác nhau, trong khi hàm mục tiêu cần phải xem xét tổng phần thưởng theo thời gian.\n\n- **Giá trị kỳ vọng của phần thưởng trong một trạng thái cụ thể mà chính sách đạt được**: Tùy chọn này sai vì nó chỉ tập trung vào một trạng thái đơn lẻ mà không xem xét toàn bộ chuỗi hành động và trạng thái mà chính sách có thể trải qua, do đó không phản ánh được giá trị tổng thể của chính sách.\n\nTóm lại, câu trả lời đúng cung cấp một cái nhìn toàn diện về khả năng của chính sách trong việc tối ưu hóa phần thưởng qua nhiều bước, trong khi các yếu tố gây nhiễu chỉ tập trung vào các khía cạnh hạn chế và không đầy đủ.",
+      "topic": {
+        "name": "Hàm mục tiêu của chính sách",
+        "description": "Chủ đề này khám phá cách đánh giá chất lượng của một chính sách thông qua các hàm mục tiêu và giá trị khởi điểm trong các MDP. Học sinh sẽ được kiểm tra khả năng tính toán và hiểu mối quan hệ giữa giá trị và chính sách.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Thuật toán REINFORCE sử dụng đạo hàm nào để cập nhật tham số trong các bài toán học tăng cường?",
+      "answer": "Đạo hàm chính sách Monte-Carlo.",
+      "distractors": [
+        "Đạo hàm trung bình của các hành động trong quá trình học.",
+        "Đạo hàm chính sách theo phương pháp gradient.",
+        "Đạo hàm của giá trị trạng thái trong học tăng cường."
+      ],
+      "explanation": "Câu trả lời đúng là \"Đạo hàm chính sách Monte-Carlo\" vì thuật toán REINFORCE sử dụng phương pháp Monte-Carlo để ước lượng giá trị của chính sách. Cụ thể, nó cập nhật tham số của chính sách dựa trên đạo hàm của hàm lợi nhuận (return) được tính từ các trải nghiệm thu thập được trong quá trình tương tác với môi trường. Đạo hàm này cho phép thuật toán điều chỉnh chính sách theo hướng tối ưu hóa lợi nhuận kỳ vọng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Đạo hàm trung bình của các hành động trong quá trình học**: Tùy chọn này không chính xác vì REINFORCE không sử dụng đạo hàm trung bình mà thay vào đó là đạo hàm của hàm lợi nhuận, điều này không phản ánh chính xác cách cập nhật tham số trong thuật toán.\n\n- **Đạo hàm chính sách theo phương pháp gradient**: Mặc dù REINFORCE là một phương pháp gradient, nhưng thuật toán cụ thể này sử dụng đạo hàm chính sách Monte-Carlo, không phải là một khái niệm chung về đạo hàm gradient. Do đó, tùy chọn này không đủ chính xác để mô tả cách thức cập nhật tham số trong REINFORCE.\n\n- **Đạo hàm của giá trị trạng thái trong học tăng cường**: Tùy chọn này sai vì REINFORCE không dựa vào đạo hàm của giá trị trạng thái mà tập trung vào việc cập nhật tham số thông qua đạo hàm của chính sách, cụ thể là từ các trải nghiệm Monte-Carlo. Điều này làm cho nó khác biệt với các phương pháp khác trong học tăng cường.\n\nTóm lại, câu trả lời đúng là \"Đạo hàm chính sách Monte-Carlo\" vì nó phản ánh chính xác cách thức mà thuật toán REINFORCE cập nhật tham số, trong khi các yếu tố gây nhiễu đều không chính xác do không mô tả đúng quy trình này.",
+      "topic": {
+        "name": "Đạo hàm chính sách Monte-Carlo (REINFORCE)",
+        "description": "Chủ đề này trình bày về thuật toán REINFORCE và ứng dụng của nó trong việc cập nhật tham số thông qua đạo hàm chính sách Monte-Carlo. Học sinh sẽ đánh giá khả năng áp dụng trong các bài toán thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Đạo hàm chính sách tự nhiên giúp đánh giá mối quan hệ nào trong quá trình học của một agent trong môi trường phức tạp?",
+      "answer": "Mối quan hệ giữa các quyết định của agent và kết quả đạt được.",
+      "distractors": [
+        "Mối quan hệ giữa các hành động của agent và thời gian thực hiện chúng.",
+        "Mối quan hệ giữa các yếu tố môi trường và quyết định của agent.",
+        "Mối quan hệ giữa các quyết định của agent và các yếu tố ngẫu nhiên trong môi trường."
+      ],
+      "explanation": "Câu trả lời đúng là \"Mối quan hệ giữa các quyết định của agent và kết quả đạt được\" vì đạo hàm chính sách tự nhiên trong học tăng cường giúp đánh giá cách mà các quyết định (hành động) của agent ảnh hưởng đến kết quả (phần thưởng) mà nó nhận được trong môi trường. Điều này cho phép agent tối ưu hóa chính sách của mình để đạt được kết quả tốt nhất có thể.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Mối quan hệ giữa các hành động của agent và thời gian thực hiện chúng**: Thời gian thực hiện hành động không phải là yếu tố chính trong việc đánh giá hiệu quả của các quyết định. Đạo hàm chính sách tự nhiên tập trung vào kết quả đạt được từ các quyết định, không phải thời gian.\n\n- **Mối quan hệ giữa các yếu tố môi trường và quyết định của agent**: Mặc dù yếu tố môi trường có ảnh hưởng đến quyết định của agent, nhưng đạo hàm chính sách tự nhiên chủ yếu xem xét mối quan hệ giữa quyết định và kết quả, không phải giữa quyết định và các yếu tố môi trường.\n\n- **Mối quan hệ giữa các quyết định của agent và các yếu tố ngẫu nhiên trong môi trường**: Các yếu tố ngẫu nhiên có thể ảnh hưởng đến kết quả, nhưng đạo hàm chính sách tự nhiên không tập trung vào mối quan hệ này. Thay vào đó, nó phân tích cách mà các quyết định dẫn đến kết quả cụ thể, bất kể sự ngẫu nhiên trong môi trường.\n\nTóm lại, câu trả lời đúng tập trung vào mối quan hệ giữa quyết định và kết quả, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất của đạo hàm chính sách tự nhiên.",
+      "topic": {
+        "name": "Đạo hàm chính sách tự nhiên và ứng dụng của nó",
+        "description": "Chủ đề này kết nối và làm rõ khái niệm về đạo hàm chính sách tự nhiên và lý thuyết phía sau nó. Học sinh sẽ kiểm tra khả năng phân tích mối quan hệ giữa quá trình học và kết quả đạt được từ các quyết định trong môi trường phức tạp.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    }
+  ]
+}

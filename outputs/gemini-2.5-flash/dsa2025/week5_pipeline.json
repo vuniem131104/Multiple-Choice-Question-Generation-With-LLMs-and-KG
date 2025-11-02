@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Khi thực hiện thao tác DELETE-MAX trên một Hàng đợi ưu tiên, phần tử nào sẽ được loại bỏ khỏi hàng đợi?",
+      "answer": "Phần tử có giá trị lớn nhất",
+      "distractors": [
+        "Phần tử được chèn vào gần đây nhất",
+        "Phần tử có giá trị nhỏ nhất",
+        "Phần tử được chèn vào đầu tiên"
+      ],
+      "explanation": "Khi thực hiện thao tác DELETE-MAX trên một Hàng đợi ưu tiên, phần tử có giá trị lớn nhất sẽ được loại bỏ khỏi hàng đợi. Điều này là do định nghĩa cơ bản của Hàng đợi ưu tiên là một cấu trúc dữ liệu trừu tượng (ADT) nơi các phần tử được truy xuất dựa trên mức độ ưu tiên của chúng, và trong trường hợp DELETE-MAX, ưu tiên cao nhất được gán cho phần tử có giá trị lớn nhất.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Phần tử được chèn vào gần đây nhất**: Đây là đặc điểm của một ngăn xếp (Stack), nơi các phần tử được truy cập theo nguyên tắc LIFO (Last-In, First-Out), không phải Hàng đợi ưu tiên.\n*   **Phần tử có giá trị nhỏ nhất**: Nếu thao tác là DELETE-MIN, thì phần tử có giá trị nhỏ nhất sẽ bị loại bỏ. Tuy nhiên, với DELETE-MAX, mục tiêu là loại bỏ phần tử có giá trị lớn nhất.\n*   **Phần tử được chèn vào đầu tiên**: Đây là đặc điểm của một hàng đợi (Queue) thông thường, nơi các phần tử được truy cập theo nguyên tắc FIFO (First-In, First-Out), không phải Hàng đợi ưu tiên.",
+      "topic": {
+        "name": "Định nghĩa và Thao tác cơ bản của Hàng đợi ưu tiên",
+        "description": "Chủ đề này kiểm tra kiến thức về khái niệm Hàng đợi ưu tiên (Priority Queue) là gì, các thao tác chính mà nó hỗ trợ như chèn (INSERT) và xóa phần tử lớn nhất (DELETE-MAX), và các thuộc tính cơ bản của API như việc khóa phải generic và Comparable. Câu hỏi có thể tập trung vào định nghĩa ADT và các phương thức của nó.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong biểu diễn mảng 0-index của một heap nhị phân, để tìm chỉ số của nút cha của một nút con nằm tại chỉ số `i`, công thức nào được sử dụng?",
+      "answer": "Chỉ số của nút cha là `(i - 1) / 2`.",
+      "distractors": [
+        "Chỉ số của nút cha là `i / 2`.",
+        "Chỉ số của nút cha là `2 * i + 1`.",
+        "Chỉ số của nút cha là `i - 1`."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Chỉ số của nút cha là `(i - 1) / 2`**. Trong biểu diễn mảng 0-index của một heap nhị phân, các nút được lưu trữ theo thứ tự từ trái sang phải, từ trên xuống dưới. Đối với một nút con tại chỉ số `i` (với `i > 0`), nút cha của nó luôn nằm ở chỉ số `(i - 1) / 2`. Phép chia này là phép chia số nguyên, đảm bảo chúng ta nhận được chỉ số chính xác của nút cha. Ví dụ, nếu một nút con ở chỉ số 1 hoặc 2, nút cha của nó sẽ ở chỉ số `(1-1)/2 = 0` hoặc `(2-1)/2 = 0`. Nếu nút con ở chỉ số 3 hoặc 4, nút cha của nó sẽ ở chỉ số `(3-1)/2 = 1` hoặc `(4-1)/2 = 1`.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Chỉ số của nút cha là `i / 2`**: Công thức này sẽ đúng nếu mảng là 1-index (bắt đầu từ 1). Tuy nhiên, với mảng 0-index, công thức này sẽ cho kết quả sai. Ví dụ, nếu nút con ở chỉ số 1, `1/2 = 0`, đúng. Nhưng nếu nút con ở chỉ số 2, `2/2 = 1`, trong khi nút cha thực sự của nó là ở chỉ số 0.\n*   **Chỉ số của nút cha là `2 * i + 1`**: Đây là công thức để tìm chỉ số của nút con bên phải của một nút cha nằm tại chỉ số `i`, chứ không phải chỉ số của nút cha.\n*   **Chỉ số của nút cha là `i - 1`**: Công thức này chỉ đơn giản là chỉ số của phần tử ngay trước phần tử hiện tại trong mảng, không phản ánh mối quan hệ cha-con trong cấu trúc heap nhị phân.",
+      "topic": {
+        "name": "Biểu diễn và Cấu trúc của Heap nhị phân",
+        "description": "Chủ đề này đánh giá sự hiểu biết về cách Heap nhị phân được biểu diễn bằng mảng và mối quan hệ cha-con trong chỉ số mảng. Nó cũng bao gồm khái niệm cây nhị phân hoàn chỉnh và tính chất heap-ordered (thứ tự heap) của nó, là nền tảng cho cấu trúc dữ liệu này. Sinh viên cần nhận biết các quy tắc định vị nút cha/con.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Hàng đợi ưu tiên tổng quát hóa các cấu trúc dữ liệu Stack (nguyên tắc LIFO) và Queue (nguyên tắc FIFO) dựa trên nguyên tắc xóa phần tử như thế nào?",
+      "answer": "Nó xóa phần tử dựa trên một giá trị ưu tiên cụ thể, không bị giới hạn bởi thứ tự vào hoặc ra cố định.",
+      "distractors": [
+        "Nó luôn xóa phần tử nhỏ nhất trước, bất kể thứ tự chèn.",
+        "Nó chỉ xóa phần tử được thêm vào cuối cùng, giống như một Stack.",
+        "Nó xóa phần tử dựa trên thứ tự chúng được thêm vào, giống như một Queue."
+      ],
+      "explanation": "Hàng đợi ưu tiên tổng quát hóa Stack và Queue bằng cách xóa phần tử dựa trên một giá trị ưu tiên cụ thể, không bị giới hạn bởi thứ tự vào hoặc ra cố định. Điều này có nghĩa là phần tử có ưu tiên cao nhất sẽ được xóa trước, bất kể nó được thêm vào khi nào. Stack (LIFO - Last In, First Out) luôn xóa phần tử được thêm vào cuối cùng, trong khi Queue (FIFO - First In, First Out) luôn xóa phần tử được thêm vào đầu tiên. Hàng đợi ưu tiên linh hoạt hơn, cho phép các phần tử có ưu tiên cao hơn được xử lý trước, ngay cả khi chúng không phải là phần tử cuối cùng được thêm vào (như Stack) hoặc phần tử đầu tiên được thêm vào (như Queue).\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Nó luôn xóa phần tử nhỏ nhất trước, bất kể thứ tự chèn.** Đây là một trường hợp cụ thể của hàng đợi ưu tiên (hàng đợi ưu tiên tối thiểu), nhưng không phải là định nghĩa tổng quát. Hàng đợi ưu tiên có thể được cấu hình để xóa phần tử lớn nhất hoặc nhỏ nhất trước, tùy thuộc vào cách định nghĩa ưu tiên.\n*   **Nó chỉ xóa phần tử được thêm vào cuối cùng, giống như một Stack.** Điều này mô tả nguyên tắc LIFO của Stack, không phải nguyên tắc hoạt động của hàng đợi ưu tiên. Hàng đợi ưu tiên không bị ràng buộc bởi thứ tự chèn theo cách này.\n*   **Nó xóa phần tử dựa trên thứ tự chúng được thêm vào, giống như một Queue.** Điều này mô tả nguyên tắc FIFO của Queue, không phải nguyên tắc hoạt động của hàng đợi ưu tiên. Hàng đợi ưu tiên bỏ qua thứ tự chèn để ưu tiên giá trị ưu tiên.",
+      "topic": {
+        "name": "So sánh Hàng đợi ưu tiên với Stack và Queue",
+        "description": "Chủ đề này yêu cầu học sinh liên hệ khái niệm Hàng đợi ưu tiên với các kiểu dữ liệu trừu tượng đã học từ tuần 1 (Stack và Queue). Câu hỏi sẽ tập trung vào việc Hàng đợi ưu tiên tổng quát hóa các cấu trúc này như thế nào, dựa trên nguyên tắc xóa phần tử (LIFO, FIFO, lớn nhất/nhất) của mỗi loại. (Kết nối liên tuần: Tuần 1 và Tuần 5)",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong mô phỏng theo sự kiện (Event-driven simulation), Hàng đợi ưu tiên (Priority Queue) được sử dụng để quản lý loại sự kiện cụ thể nào?",
+      "answer": "Các sự kiện va chạm.",
+      "distractors": [
+        "Các sự kiện khởi tạo hệ thống.",
+        "Các sự kiện kết thúc mô phỏng.",
+        "Các sự kiện cập nhật trạng thái định kỳ."
+      ],
+      "explanation": "Trong mô phỏng theo sự kiện, Hàng đợi ưu tiên (Priority Queue) được sử dụng để quản lý các sự kiện va chạm. Điều này là do các sự kiện va chạm thường có thời gian xảy ra không cố định và cần được xử lý theo thứ tự thời gian tăng dần để đảm bảo tính chính xác của mô phỏng. Hàng đợi ưu tiên cho phép các sự kiện được sắp xếp dựa trên thời gian xảy ra của chúng, đảm bảo rằng sự kiện sớm nhất luôn được xử lý trước.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Các sự kiện khởi tạo hệ thống:** Các sự kiện này thường xảy ra một lần ở đầu mô phỏng và không yêu cầu quản lý bằng hàng đợi ưu tiên. Chúng được xử lý theo một trình tự cố định.\n*   **Các sự kiện kết thúc mô phỏng:** Tương tự như các sự kiện khởi tạo, sự kiện kết thúc mô phỏng xảy ra một lần ở cuối và không cần hàng đợi ưu tiên để quản lý.\n*   **Các sự kiện cập nhật trạng thái định kỳ:** Các sự kiện này xảy ra theo một khoảng thời gian cố định và có thể được quản lý bằng bộ đếm thời gian hoặc các cơ chế lập lịch đơn giản hơn, không nhất thiết phải là hàng đợi ưu tiên. Hàng đợi ưu tiên hiệu quả hơn cho các sự kiện không định kỳ, có thời gian xảy ra biến động như va chạm.",
+      "topic": {
+        "name": "Ứng dụng của Hàng đợi ưu tiên trong mô phỏng",
+        "description": "Chủ đề này tập trung vào các ứng dụng thực tế của Hàng đợi ưu tiên, đặc biệt là trong Mô phỏng theo sự kiện (Event-driven simulation). Sinh viên cần hiểu cách PQ được sử dụng để quản lý các sự kiện va chạm và cách nó giúp thay đổi trạng thái chỉ khi có điều gì đó thú vị xảy ra. Câu hỏi có thể hỏi về các tình huống sử dụng PQ trong mô phỏng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Cho một Max Heap được biểu diễn dưới dạng mảng: [20, 15, 18, 10, 12]. Nếu một phần tử mới 22 được chèn vào heap này, trạng thái của heap sau lần hoán đổi đầu tiên trong quá trình 'bơi' (swim) sẽ là gì?",
+      "answer": "[20, 15, 22, 10, 12, 18]",
+      "distractors": [
+        "[22, 20, 18, 10, 12, 15]",
+        "[20, 22, 18, 10, 12, 15]",
+        "[20, 15, 18, 10, 12, 22]"
+      ],
+      "explanation": "Giải thích:\n\nĐể chèn một phần tử mới vào Max Heap, chúng ta thêm phần tử đó vào cuối mảng và sau đó thực hiện thao tác 'bơi' (swim) để khôi phục thuộc tính Max Heap.\n\n1.  **Tại sao [20, 15, 22, 10, 12, 18] là câu trả lời đúng:**\n    *   Ban đầu, heap là [20, 15, 18, 10, 12].\n    *   Khi chèn 22, nó được thêm vào cuối mảng: [20, 15, 18, 10, 12, 22].\n    *   Phần tử mới 22 (ở chỉ số 5) được so sánh với cha của nó. Cha của phần tử ở chỉ số `i` là ở chỉ số `(i-1)/2`. Với 22 ở chỉ số 5, cha của nó là phần tử ở chỉ số `(5-1)/2 = 2`, tức là 18.\n    *   Vì 22 > 18, chúng ta hoán đổi 22 và 18.\n    *   Sau lần hoán đổi đầu tiên, mảng trở thành [20, 15, 22, 10, 12, 18]. Đây chính là trạng thái của heap sau lần hoán đổi đầu tiên.\n\n2.  **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **[22, 20, 18, 10, 12, 15]**: Tùy chọn này thể hiện trạng thái của heap sau khi tất cả các lần hoán đổi đã hoàn tất và 22 đã 'bơi' lên vị trí gốc. Câu hỏi yêu cầu trạng thái sau *lần hoán đổi đầu tiên*, không phải trạng thái cuối cùng.\n    *   **[20, 22, 18, 10, 12, 15]**: Tùy chọn này sai vì nó hoán đổi 22 với 15. 15 là con của 20 và là anh chị em của 18, không phải là cha của 22. Cha của 22 (ở chỉ số 5) là 18 (ở chỉ số 2).\n    *   **[20, 15, 18, 10, 12, 22]**: Tùy chọn này chỉ đơn thuần là heap sau khi chèn 22 vào cuối mà chưa thực hiện bất kỳ lần hoán đổi nào. Câu hỏi yêu cầu trạng thái sau *lần hoán đổi đầu tiên*.",
+      "topic": {
+        "name": "Cơ chế chèn và xóa trong Heap nhị phân",
+        "description": "Chủ đề này kiểm tra khả năng áp dụng các thao tác 'bơi' (swim) và 'chìm' (sink) để duy trì thứ tự heap sau khi chèn một phần tử mới hoặc xóa phần tử lớn nhất. Sinh viên cần hiểu chuỗi các bước hoán đổi và phép so sánh cần thiết cho mỗi thao tác. Câu hỏi sẽ đưa ra một tình huống và yêu cầu chọn bước tiếp theo hoặc kết quả của thao tác.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi phân tích Heapsort và Mergesort, sự khác biệt chủ yếu giữa hai thuật toán này về tính tại chỗ và độ ổn định được thể hiện như thế nào?",
+      "answer": "Heapsort là thuật toán tại chỗ nhưng không ổn định, còn Mergesort không phải tại chỗ (yêu cầu bộ nhớ bổ sung) nhưng có thể ổn định.",
+      "distractors": [
+        "Heapsort và Mergesort đều là các thuật toán tại chỗ, nhưng chỉ Mergesort là ổn định.",
+        "Mergesort là thuật toán tại chỗ và ổn định, trong khi Heapsort không phải tại chỗ và không ổn định.",
+        "Cả Heapsort và Mergesort đều không ổn định, nhưng Heapsort yêu cầu bộ nhớ bổ sung còn Mergesort thì không."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là \"Heapsort là thuật toán tại chỗ nhưng không ổn định, còn Mergesort không phải tại chỗ (yêu cầu bộ nhớ bổ sung) nhưng có thể ổn định.\" vì nó mô tả chính xác các đặc điểm chính của hai thuật toán này.\n\n*   **Heapsort:**\n    *   **Tại chỗ:** Heapsort hoạt động bằng cách xây dựng một heap trong mảng đầu vào và sau đó trích xuất các phần tử từ heap để sắp xếp. Quá trình này chỉ yêu cầu một lượng nhỏ bộ nhớ bổ sung (thường là O(1)) cho các biến tạm thời, do đó nó được coi là thuật toán tại chỗ.\n    *   **Không ổn định:** Heapsort không đảm bảo duy trì thứ tự tương đối của các phần tử bằng nhau. Khi các phần tử được hoán đổi để duy trì thuộc tính heap, thứ tự ban đầu của các phần tử bằng nhau có thể bị thay đổi.\n\n*   **Mergesort:**\n    *   **Không phải tại chỗ:** Mergesort hoạt động bằng cách chia mảng thành các nửa nhỏ hơn, sắp xếp chúng một cách đệ quy, sau đó hợp nhất các mảng con đã sắp xếp. Quá trình hợp nhất này thường yêu cầu một mảng phụ có kích thước bằng mảng gốc để lưu trữ các phần tử đã hợp nhất, dẫn đến độ phức tạp không gian là O(N). Do đó, nó không phải là thuật toán tại chỗ.\n    *   **Có thể ổn định:** Mergesort có thể được triển khai để trở thành một thuật toán sắp xếp ổn định. Trong quá trình hợp nhất, nếu hai phần tử bằng nhau, thuật toán có thể được thiết kế để luôn chọn phần tử từ mảng con bên trái trước, đảm bảo rằng thứ tự tương đối của các phần tử bằng nhau được duy trì.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **\"Heapsort và Mergesort đều là các thuật toán tại chỗ, nhưng chỉ Mergesort là ổn định.\"**\n    *   Sai vì Mergesort không phải là thuật toán tại chỗ; nó yêu cầu bộ nhớ bổ sung đáng kể (O(N)).\n\n*   **\"Mergesort là thuật toán tại chỗ và ổn định, trong đó Heapsort không phải tại chỗ và không ổn định.\"**\n    *   Sai vì Mergesort không phải là thuật toán tại chỗ. Ngoài ra, Heapsort là thuật toán tại chỗ, không phải không tại chỗ.\n\n*   **\"Cả Heapsort và Mergesort đều không ổn định, nhưng Heapsort yêu cầu bộ nhớ bổ sung còn Mergesort thì không.\"**\n    *   Sai vì Mergesort có thể ổn định. Hơn nữa, Heapsort là thuật toán tại chỗ (không yêu cầu bộ nhớ bổ sung đáng kể), trong khi Mergesort yêu cầu bộ nhớ bổ sung (O(N)).",
+      "topic": {
+        "name": "Phân tích hiệu suất Heapsort và so sánh với Mergesort, Quicksort",
+        "description": "Chủ đề này đòi hỏi phân tích độ phức tạp về thời gian và không gian của Heapsort (tối đa 2N lg N so sánh và hoán đổi, tại chỗ, worst-case N log N). Nó cũng yêu cầu so sánh Heapsort với Mergesort (Tuần 3) và Quicksort (Tuần 4) về các thuộc tính như tính tại chỗ, độ ổn định và hiệu quả bộ nhớ cache. (Kết nối liên tuần: Tuần 3, 4 và 5)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi đánh giá Heapsort so với Quicksort về độ phức tạp thời gian worst-case, tính tại chỗ và hiệu quả bộ nhớ cache, yếu tố nào thường được coi là nhược điểm chính của Heapsort?",
+      "answer": "Hiệu quả bộ nhớ cache kém.",
+      "distractors": [
+        "Độ phức tạp thời gian worst-case là O(N^2).",
+        "Yêu cầu không gian phụ lớn.",
+        "Không ổn định."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Hiệu quả bộ nhớ cache kém.** Heapsort hoạt động bằng cách truy cập các phần tử trong một cấu trúc cây nhị phân được lưu trữ trong một mảng. Các truy cập này thường không tuần tự, nghĩa là các phần tử được truy cập có thể nằm rải rác trong bộ nhớ. Điều này dẫn đến việc sử dụng bộ nhớ cache kém hiệu quả vì dữ liệu cần thiết không có khả năng nằm gần nhau trong bộ nhớ cache, gây ra nhiều lỗi bộ nhớ cache và làm chậm hiệu suất tổng thể, đặc biệt là trên các tập dữ liệu lớn. Ngược lại, Quicksort thường có hiệu quả bộ nhớ cache tốt hơn do tính chất truy cập tuần tự hơn trong các giai đoạn phân vùng của nó.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Độ phức tạp thời gian worst-case là O(N^2).** Đây là sai. Một trong những ưu điểm chính của Heapsort là độ phức tạp thời gian worst-case được đảm bảo là O(N log N), giống như Mergesort. Quicksort, mặc dù thường nhanh hơn trong trường hợp trung bình, nhưng có độ phức tạp thời gian worst-case là O(N^2). Do đó, đây không phải là nhược điểm của Heapsort.\n*   **Yêu cầu không gian phụ lớn.** Đây cũng là sai. Heapsort là một thuật toán sắp xếp tại chỗ (in-place), nghĩa là nó chỉ yêu cầu một lượng không gian phụ nhỏ, hằng số (O(1)), để thực hiện việc sắp xếp. Điều này trái ngược với Mergesort, vốn yêu cầu không gian phụ O(N).\n*   **Không ổn định.** Mặc dù đúng là Heapsort là một thuật toán sắp xếp không ổn định (nghĩa là thứ tự tương đối của các phần tử bằng nhau có thể bị thay đổi), nhưng đây không phải là nhược điểm chính thường được nhấn mạnh khi so sánh Heapsort với Quicksort về các tiêu chí được liệt kê (độ phức tạp thời gian worst-case, tính tại chỗ và hiệu quả bộ nhớ cache). Hiệu quả bộ nhớ cache kém là một vấn đề hiệu suất đáng kể hơn trong nhiều ứng dụng thực tế.",
+      "topic": {
+        "name": "Ưu nhược điểm của Heapsort so với các thuật toán sắp xếp khác",
+        "description": "Chủ đề này đánh giá khả năng của sinh viên trong việc đánh giá Heapsort so với Selection sort, Insertion sort (Tuần 2), Mergesort (Tuần 3) và Quicksort (Tuần 4). Sinh viên cần hiểu những ưu điểm như đảm bảo worst-case N log N và tính tại chỗ, cũng như nhược điểm như kém hiệu quả về bộ nhớ cache so với Quicksort. (Kết nối liên tuần: Tuần 2, 3, 4 và 5)",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Để xây dựng một thuật toán sắp xếp dựa trên so sánh mới đạt được giới hạn dưới N lg N trong trường hợp xấu nhất, một nhà thiết kế thuật toán cần đảm bảo đặc tính cốt lõi nào trong cơ chế phân chia hoặc cấu trúc dữ liệu của nó, dựa trên sự thành công của Mergesort và Heapsort, điều mà Quicksort thường không đảm bảo?",
+      "answer": "Đảm bảo phân chia hoặc xử lý các tập con một cách cân bằng nhất quán.",
+      "distractors": [
+        "Đảm bảo rằng các phép so sánh luôn được thực hiện trong thời gian hằng số để tối ưu hóa hiệu suất.",
+        "Sử dụng một cấu trúc dữ liệu cho phép truy cập ngẫu nhiên nhanh chóng đến bất kỳ phần tử nào trong tập con.",
+        "Thiết kế một cơ chế chia tách luôn tạo ra các tập con có kích thước bằng nhau một cách chính xác."
+      ],
+      "explanation": "Để đạt được giới hạn dưới N lg N trong trường hợp xấu nhất cho các thuật toán sắp xếp dựa trên so sánh, điều cốt lõi là phải đảm bảo phân chia hoặc xử lý các tập con một cách cân bằng nhất quán. **Mergesort** và **Heapsort** đạt được giới hạn này vì chúng luôn chia mảng thành các tập con có kích thước gần bằng nhau (Mergesort) hoặc duy trì cấu trúc heap cân bằng (Heapsort), đảm bảo rằng độ sâu của cây so sánh là logarit. Điều này dẫn đến độ phức tạp thời gian O(N lg N) trong mọi trường hợp. Ngược lại, **Quicksort** có thể có hiệu suất O(N^2) trong trường hợp xấu nhất nếu các phân chia không cân bằng (ví dụ: khi phần tử chốt luôn là phần tử nhỏ nhất hoặc lớn nhất), tạo ra một tập con rất lớn và một tập con rất nhỏ.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Đảm bảo rằng các phép so sánh luôn được thực hiện trong thời gian hằng số để tối ưu hóa hiệu suất.** Mặc dù các phép so sánh trong thời gian hằng số là mong muốn, nhưng đây là một đặc tính của phần cứng hoặc ngôn ngữ lập trình, không phải là một đặc tính thiết kế thuật toán cốt lõi quyết định việc đạt được giới hạn dưới N lg N trong trường hợp xấu nhất. Giới hạn dưới N lg N liên quan đến số lượng phép so sánh tối thiểu, không phải thời gian thực hiện của mỗi phép so sánh.\n*   **Sử dụng một cấu trúc dữ liệu cho phép truy cập ngẫu nhiên nhanh chóng đến bất kỳ phần tử nào trong tập con.** Truy cập ngẫu nhiên nhanh chóng là quan trọng đối với hiệu suất của nhiều thuật toán sắp xếp (bao gồm Quicksort và Heapsort), nhưng bản thân nó không đảm bảo giới hạn dưới N lg N trong trường hợp xấu nhất. Mergesort, mặc dù không yêu cầu truy cập ngẫu nhiên nhanh chóng theo cách tương tự như Quicksort (nó thường hoạt động tốt với danh sách liên kết), vẫn đạt được giới hạn này nhờ phân chia cân bằng.\n*   **Thiết kế một cơ chế chia tách luôn tạo ra các tập con có kích thước bằng nhau một cách chính xác.** Mặc dù việc tạo ra các tập con có kích thước bằng nhau là lý tưởng (như trong Mergesort), nhưng không nhất thiết phải \"chính xác bằng nhau\" để đạt được giới hạn dưới N lg N. \"Cân bằng nhất quán\" là đủ. Ví dụ, Heapsort không chia thành các tập con theo nghĩa truyền thống mà duy trì một cấu trúc dữ liệu cân bằng. Hơn nữa, việc luôn tạo ra các tập con có kích thước bằng nhau một cách chính xác có thể khó khăn hoặc không hiệu quả trong thực tế đối với một số thuật toán.",
+      "topic": {
+        "name": "Tối ưu hóa các thuật toán sắp xếp dựa trên giới hạn dưới",
+        "description": "Chủ đề này yêu cầu sinh viên tổng hợp kiến thức về các thuật toán sắp xếp đã học (Mergesort, Quicksort, Heapsort) và liên hệ chúng với khái niệm giới hạn dưới (lower bound) cho sắp xếp dựa trên so sánh (Tuần 3). Câu hỏi sẽ tập trung vào việc xác định thuật toán nào đạt được giới hạn dưới N lg N trong trường hợp xấu nhất và ý nghĩa của điều đó đối với việc thiết kế thuật toán sắp xếp tối ưu. (Kết nối liên tuần: Tuần 3, 4 và 5)",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Tạo"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong Học tăng cường, nhu cầu về Xấp xỉ Hàm giá trị phát sinh chủ yếu trong trường hợp nào?",
+      "answer": "Khi không gian trạng thái hoặc hành động rất lớn hoặc liên tục.",
+      "distractors": [
+        "Khi tác nhân cần học một mô hình môi trường chính xác.",
+        "Khi cần tối ưu hóa các tham số của hàm chính sách.",
+        "Khi hàm thưởng rất phức tạp hoặc không liên tục."
+      ],
+      "explanation": "Giải thích:\n\nNhu cầu về Xấp xỉ Hàm giá trị (Value Function Approximation) trong Học tăng cường phát sinh chủ yếu **khi không gian trạng thái hoặc hành động rất lớn hoặc liên tục**. Trong các bài toán Học tăng cường, nếu không gian trạng thái hoặc hành động quá lớn hoặc liên tục, việc sử dụng bảng tra cứu (lookup table) để lưu trữ giá trị cho từng cặp trạng thái-hành động (hoặc từng trạng thái) là không khả thi. Bảng tra cứu sẽ yêu cầu một lượng bộ nhớ khổng lồ và việc học các giá trị chính xác cho tất cả các mục nhập sẽ mất rất nhiều thời gian. Xấp xỉ Hàm giá trị sử dụng các hàm tham số (ví dụ: mạng nơ-ron) để ước lượng hàm giá trị, cho phép tổng quát hóa từ các trạng thái/hành động đã thấy sang các trạng thái/hành động chưa thấy, từ đó giải quyết vấn đề về kích thước không gian.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Khi tác nhân cần học một mô hình môi trường chính xác:** Nhu cầu học một mô hình môi trường chính xác liên quan đến các phương pháp Học tăng cường dựa trên mô hình (Model-based RL), nơi tác nhân cố gắng dự đoán động lực của môi trường. Mặc dù việc học mô hình có thể phức tạp, nhưng nó không phải là lý do chính cho việc cần Xấp xỉ Hàm giá trị. Xấp xỉ Hàm giá trị chủ yếu giải quyết vấn đề về kích thước không gian trạng thái/hành động, không phải việc học mô hình.\n*   **Khi cần tối ưu hóa các tham số của hàm chính sách:** Việc tối ưu hóa các tham số của hàm chính sách là trọng tâm của các phương pháp Học tăng cường dựa trên chính sách (Policy-based RL). Mặc dù các phương pháp này cũng có thể sử dụng Xấp xỉ Hàm giá trị (ví dụ: để ước lượng hàm giá trị trong Actor-Critic), nhưng nhu cầu tối ưu hóa tham số chính sách không phải là nguyên nhân trực tiếp dẫn đến việc cần Xấp xỉ Hàm giá trị. Xấp xỉ Hàm giá trị giải quyết vấn đề về kích thước không gian, không phải bản chất của việc tối ưu hóa chính sách.\n*   **Khi hàm thưởng rất phức tạp hoặc không liên tục:** Mặc dù hàm thưởng phức tạp có thể làm cho việc học trở nên khó khăn hơn, nhưng nó không phải là lý do chính cho việc cần Xấp xỉ Hàm giá trị. Xấp xỉ Hàm giá trị được thiết kế để xử lý không gian trạng thái/hành động lớn, không phải sự phức tạp nội tại của hàm thưởng. Hàm thưởng phức tạp có thể yêu cầu các kỹ thuật học mạnh mẽ hơn, nhưng không trực tiếp yêu cầu xấp xỉ hàm giá trị theo cách mà không gian trạng thái/hành động lớn yêu cầu.",
+      "topic": {
+        "name": "Nhu cầu Xấp xỉ Hàm giá trị",
+        "description": "Chủ đề này kiểm tra kiến thức về lý do tại sao phương pháp Xấp xỉ Hàm giá trị là cần thiết trong Học tăng cường, đặc biệt khi không gian trạng thái hoặc hành động trở nên quá lớn hoặc liên tục. Nó liên quan đến giới hạn của bảng tra cứu trong các MDP quy mô lớn đã học ở Tuần 1 và các vấn đề về khả năng lưu trữ, tốc độ học khi đối mặt với các bài toán RL phức tạp (Tuần 5).",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương pháp Giảm độ dốc (Gradient Descent), vector tham số được điều chỉnh theo hướng nào so với gradient của hàm mục tiêu?",
+      "answer": "Theo hướng ngược lại với gradient của hàm mục tiêu.",
+      "distractors": [
+        "Theo cùng hướng với gradient của hàm mục tiêu.",
+        "Theo hướng vuông góc với gradient của hàm mục tiêu.",
+        "Theo hướng ngẫu nhiên để khám phá không gian tham số."
+      ],
+      "explanation": "Trong phương pháp Giảm độ dốc (Gradient Descent), mục tiêu là tìm cực tiểu của hàm mục tiêu. Gradient của hàm mục tiêu tại một điểm cụ thể chỉ ra hướng có độ dốc tăng nhanh nhất. Do đó, để di chuyển về phía cực tiểu (tức là giảm giá trị của hàm mục tiêu), vector tham số phải được điều chỉnh theo hướng ngược lại với gradient. Việc di chuyển theo hướng ngược lại với gradient đảm bảo rằng mỗi bước sẽ giảm giá trị của hàm mục tiêu, dần dần đưa chúng ta đến cực tiểu cục bộ.\n\n- **Theo cùng hướng với gradient của hàm mục tiêu** là sai vì di chuyển theo cùng hướng với gradient sẽ làm tăng giá trị của hàm mục tiêu, dẫn đến cực đại thay vì cực tiểu.\n- **Theo hướng vuông góc với gradient của hàm mục tiêu** là sai vì di chuyển theo hướng vuông góc với gradient sẽ không đảm bảo giảm giá trị của hàm mục tiêu một cách hiệu quả. Hướng vuông góc có thể giữ nguyên hoặc thay đổi giá trị hàm mục tiêu theo cách không tối ưu để đạt được cực tiểu.\n- **Theo hướng ngẫu nhiên để khám phá không gian tham số** là sai vì Giảm độ dốc là một phương pháp tối ưu hóa có định hướng, sử dụng thông tin gradient để di chuyển một cách có hệ thống về phía cực tiểu. Việc di chuyển ngẫu nhiên là đặc trưng của các phương pháp tìm kiếm ngẫu nhiên hoặc khám phá, không phải là nguyên lý cơ bản của Giảm độ dốc.",
+      "topic": {
+        "name": "Khái niệm và nguyên lý Giảm độ dốc",
+        "description": "Chủ đề này tập trung vào định nghĩa và nguyên lý cơ bản của phương pháp Giảm độ dốc (Gradient Descent) như một phương pháp tối ưu hóa. Nó bao gồm cách thức điều chỉnh vector tham số theo hướng ngược lại với gradient của hàm mục tiêu để tìm cực tiểu cục bộ.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.9,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Công thức toán học nào biểu diễn hàm giá trị xấp xỉ tuyến tính v̂(S, w) dựa trên vector đặc trưng x(S) và các tham số trọng số w?",
+      "answer": "v̂(S, w) = wᵀx(S)",
+      "distractors": [
+        "v̂(S, w) = w + x(S)",
+        "v̂(S, w) = w / x(S)",
+        "v̂(S, w) = x(S)ᵀw"
+      ],
+      "explanation": "Giải thích:\n\nCông thức đúng để biểu diễn hàm giá trị xấp xỉ tuyến tính v̂(S, w) là **v̂(S, w) = wᵀx(S)**. Đây là dạng tích vô hướng (dot product) giữa vector trọng số w và vector đặc trưng x(S). Trong học tăng cường, hàm giá trị tuyến tính xấp xỉ một giá trị trạng thái bằng cách lấy tổng có trọng số của các đặc trưng của trạng thái đó. Cụ thể, mỗi đặc trưng trong x(S) được nhân với một trọng số tương ứng từ w, và sau đó tất cả các kết quả này được cộng lại. Phép nhân ma trận wᵀx(S) chính xác biểu diễn tổng có trọng số này, trong đó wᵀ là chuyển vị của vector trọng số, đảm bảo phép nhân ma trận hợp lệ và cho ra một giá trị vô hướng (scalar value) là giá trị xấp xỉ của trạng thái S.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **v̂(S, w) = w + x(S)**: Phép cộng vector không phải là cách để tính tổng có trọng số của các đặc trưng. Kết quả của phép cộng vector sẽ là một vector, không phải là một giá trị vô hướng biểu thị giá trị của trạng thái.\n*   **v̂(S, w) = w / x(S)**: Phép chia vector không phải là một phép toán tiêu chuẩn trong đại số tuyến tính để tính toán hàm giá trị xấp xỉ tuyến tính và không có ý nghĩa toán học trong ngữ cảnh này.\n*   **v̂(S, w) = x(S)ᵀw**: Mặc dù x(S)ᵀw cũng là một tích vô hướng và cho ra cùng một kết quả vô hướng với wᵀx(S) (vì aᵀb = bᵀa đối với các vector), nhưng theo quy ước phổ biến trong học tăng cường và các lĩnh vực liên quan, vector trọng số thường được viết trước dưới dạng chuyển vị (wᵀ) khi nhân với vector đặc trưng (x(S)). Do đó, wᵀx(S) là cách biểu diễn chuẩn và được ưu tiên hơn.",
+      "topic": {
+        "name": "Công thức Xấp xỉ Hàm giá trị tuyến tính",
+        "description": "Chủ đề này kiểm tra khả năng nhận biết và hiểu công thức biểu diễn hàm giá trị xấp xỉ tuyến tính v̂(S, w) và ý nghĩa của vector đặc trưng x(S) cùng các tham số trọng số w. Học sinh cần biết cách một trạng thái được ánh xạ thành giá trị thông qua các đặc trưng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán Monte-Carlo (MC) với xấp xấp xỉ hàm giá trị, mục tiêu được sử dụng để cập nhật các tham số là gì?",
+      "answer": "Đại lượng 'return' G_t",
+      "distractors": [
+        "Hàm giá trị Q(s,a)",
+        "Sai số thời gian khác biệt (TD error)",
+        "Hàm chính sách pi(s,a)"
+      ],
+      "explanation": "Trong thuật toán Monte-Carlo (MC) với xấp xỉ hàm giá trị, mục tiêu được sử dụng để cập nhật các tham số là **đại lượng 'return' G_t**.\n\n**Tại sao 'return' G_t là đúng:**\nTrong MC, 'return' G_t là tổng chiết khấu của tất cả các phần thưởng nhận được từ thời điểm t trở đi trong một tập. MC học từ các tập hoàn chỉnh, và G_t đại diện cho giá trị thực tế (hoặc ước tính tốt nhất) của trạng thái hoặc cặp trạng thái-hành động. Khi sử dụng xấp xỉ hàm giá trị, chúng ta muốn các tham số của hàm xấp xỉ (ví dụ: Q(s,a; w)) học cách dự đoán G_t. Do đó, G_t được sử dụng làm mục tiêu để cập nhật các tham số bằng cách giảm thiểu sai số giữa dự đoán của hàm xấp xỉ và G_t thực tế.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **Hàm giá trị Q(s,a)**: Hàm giá trị Q(s,a) là cái chúng ta đang cố gắng ước tính bằng cách sử dụng xấp xỉ hàm giá trị (ví dụ: Q(s,a; w)). Nó không phải là mục tiêu cập nhật mà là đầu ra của mô hình mà chúng ta đang điều chỉnh.\n*   **Sai số thời gian khác biệt (TD error)**: Sai số TD là một khái niệm được sử dụng trong các phương pháp học tăng cường khác như TD(0) hoặc Q-learning. Nó dựa trên sự khác biệt giữa ước tính giá trị hiện tại và ước tính giá trị tiếp theo (bootstrapping). MC không sử dụng bootstrapping; thay vào đó, nó dựa vào 'return' G_t hoàn chỉnh từ một tập.\n*   **Hàm chính sách pi(s,a)**: Hàm chính sách pi(s,a) xác định hành vi của tác nhân, tức là xác suất chọn một hành động nhất định trong một trạng thái nhất định. Mặc dù chính sách được cập nhật dựa trên hàm giá trị đã học, bản thân chính sách không phải là mục tiêu được sử dụng để cập nhật các tham số của hàm giá trị.",
+      "topic": {
+        "name": "Mục tiêu cập nhật trong MC với Xấp xỉ FA",
+        "description": "Chủ đề này tập trung vào việc xác định mục tiêu được sử dụng để cập nhật tham số trong thuật toán Monte-Carlo (MC) khi sử dụng xấp xỉ hàm giá trị. Nó kết nối khái niệm 'return' G_t từ tuần 3 với việc áp dụng trong quy tắc cập nhật tham số giảm độ dốc ngẫu nhiên (Tuần 5).",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi áp dụng Xấp xỉ Hàm giá trị tuyến tính, sự khác biệt trong mục tiêu cập nhật giữa phương pháp Monte-Carlo (sử dụng G_t) và Temporal-Difference (sử dụng mục tiêu TD) ảnh hưởng như thế nào đến mối quan hệ độ lệch-phương sai của các ước tính giá trị?",
+      "answer": "Monte-Carlo có độ lệch thấp hơn nhưng phương sai cao hơn; Temporal-Difference có độ lệch cao hơn nhưng phương sai thấp hơn.",
+      "distractors": [
+        "Cả Monte-Carlo và Temporal-Difference đều có độ lệch và phương sai tương tự nhau khi sử dụng xấp xỉ hàm tuyến tính.",
+        "Monte-Carlo có độ lệch cao hơn và phương sai thấp hơn; Temporal-Difference có độ lệch thấp hơn và phương sai cao hơn.",
+        "Monte-Carlo chỉ ảnh hưởng đến phương sai, trong khi Temporal-Difference chỉ ảnh hưởng đến độ lệch."
+      ],
+      "explanation": "Khi áp dụng Xấp xỉ Hàm giá trị tuyến tính, sự khác biệt trong mục tiêu cập nhật giữa phương pháp Monte-Carlo (sử dụng $G_t$) và Temporal-Difference (sử dụng mục tiêu TD) ảnh hưởng đến mối quan hệ độ lệch-phương sai của các ước tính giá trị như sau:\n\n**Monte-Carlo có độ lệch thấp hơn nhưng phương sai cao hơn; Temporal-Difference có độ lệch cao hơn nhưng phương sai thấp hơn.** Đây là câu trả lời đúng.\n*   **Monte-Carlo (MC)** sử dụng tổng lợi nhuận thực tế ($G_t$) từ một tập hợp các bước thời gian cho đến khi kết thúc tập. Vì $G_t$ là một ước tính không chệch của giá trị thực $v_\\pi(s)$, nên các ước tính của MC có độ lệch thấp hơn. Tuy nhiên, vì $G_t$ được tính toán từ toàn bộ chuỗi các phần thưởng ngẫu nhiên và chuyển đổi trạng thái, nó có phương sai cao hơn.\n*   **Temporal-Difference (TD)** sử dụng mục tiêu TD, là một ước tính bootstrap dựa trên ước tính giá trị hiện tại của trạng thái tiếp theo ($R_{t+1} + \\gamma V(S_{t+1}, w)$). Việc sử dụng ước tính này làm cho mục tiêu TD bị chệch so với giá trị thực, dẫn đến độ lệch cao hơn trong các ước tính của TD. Tuy nhiên, vì mục tiêu TD chỉ dựa vào một bước thời gian và ước tính giá trị của trạng thái tiếp theo, nó ít bị ảnh hưởng bởi sự biến động của toàn bộ chuỗi phần thưởng, dẫn đến phương sai thấp hơn.\n\n**Cả Monte-Carlo và Temporal-Difference đều có độ lệch và phương sai tương tự nhau khi sử dụng xấp xỉ hàm tuyến tính.** Tùy chọn này sai vì sự khác biệt cơ bản trong cách chúng cập nhật giá trị (dựa trên lợi nhuận thực tế so với lợi nhuận bootstrap) dẫn đến sự đánh đổi rõ rệt giữa độ lệch và phương sai.\n\n**Monte-Carlo có độ lệch cao hơn và phương sai thấp hơn; Temporal-Difference có độ lệch thấp hơn và phương sai cao hơn.** Tùy chọn này sai vì nó đảo ngược mối quan hệ độ lệch-phương sai thực tế giữa MC và TD. MC có độ lệch thấp hơn và phương sai cao hơn, trong khi TD có độ lệch cao hơn và phương sai thấp hơn.\n\n**Monte-Carlo chỉ ảnh hưởng đến phương sai, trong khi Temporal-Difference chỉ ảnh hưởng đến độ lệch.** Tùy chọn này sai vì cả hai phương pháp đều ảnh hưởng đến cả độ lệch và phương sai của các ước tính giá trị. Sự khác biệt nằm ở sự đánh đổi giữa hai yếu tố này, chứ không phải là một phương pháp chỉ ảnh hưởng đến một yếu tố duy nhất.",
+      "topic": {
+        "name": "So sánh MC và TD với Xấp xỉ Hàm tuyến tính",
+        "description": "Chủ đề này yêu cầu học sinh phân tích sự khác biệt giữa phương pháp Monte-Carlo (MC) và Temporal-Difference (TD) khi được áp dụng với Xấp xỉ Hàm giá trị tuyến tính. Cụ thể, học sinh cần hiểu sự khác biệt trong mục tiêu cập nhật (G_t vs. TD target), ảnh hưởng đến độ lệch và phương sai (Tuần 3 & 5).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Experience Replay trong Deep Q-Networks (DQN) đóng góp vào sự ổn định của quá trình huấn luyện bằng cách nào?",
+      "answer": "Nó giảm sự phụ thuộc giữa các mẫu kinh nghiệm liên tiếp và lấy mẫu ngẫu nhiên từ bộ nhớ đệm.",
+      "distractors": [
+        "Nó tăng cường sự phụ thuộc giữa các mẫu để đảm bảo tính nhất quán trong quá trình học.",
+        "Nó chỉ lưu trữ các mẫu có giá trị Q cao nhất để tối ưu hóa việc sử dụng bộ nhớ.",
+        "Nó cho phép mạng học hỏi từ các mẫu cũ hơn mà không cần cập nhật các tham số mục tiêu."
+      ],
+      "explanation": "Experience Replay trong Deep Q-Networks (DQN) đóng góp vào sự ổn định của quá trình huấn luyện bằng cách giảm sự phụ thuộc giữa các mẫu kinh nghiệm liên tiếp và lấy mẫu ngẫu nhiên từ bộ nhớ đệm. Trong học tăng cường, các mẫu kinh nghiệm liên tiếp thường có mối tương quan cao, điều này có thể dẫn đến sự không ổn định trong quá trình huấn luyện mạng nơ-ron. Bằng cách lưu trữ các kinh nghiệm (bộ ba trạng thái, hành động, phần thưởng, trạng thái tiếp theo) vào một bộ nhớ đệm (replay buffer) và sau đó lấy mẫu ngẫu nhiên các lô nhỏ (mini-batches) từ bộ nhớ đệm này để huấn luyện, Experience Replay phá vỡ mối tương quan tuần tự này. Điều này giúp mạng học hỏi từ một phân phối dữ liệu đa dạng hơn, ổn định hóa các cập nhật trọng số và ngăn chặn mạng bị mắc kẹt trong các cực tiểu cục bộ do dữ liệu có tương quan cao.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n- **Nó tăng cường sự phụ thuộc giữa các mẫu để đảm bảo tính nhất quán trong quá trình học.** Điều này hoàn toàn ngược lại với mục đích của Experience Replay. Mục tiêu chính là giảm sự phụ thuộc giữa các mẫu liên tiếp, không phải tăng cường nó, để cải thiện sự ổn định của quá trình học.\n- **Nó chỉ lưu trữ các mẫu có giá trị Q cao nhất để tối ưu hóa việc sử dụng bộ nhớ.** Mặc dù có các biến thể của Experience Replay (như Prioritized Experience Replay) có thể ưu tiên các mẫu nhất định, nhưng Experience Replay cơ bản lưu trữ tất cả các mẫu kinh nghiệm (hoặc một số lượng giới hạn các mẫu gần đây nhất) mà không chỉ chọn lọc dựa trên giá trị Q cao nhất. Mục đích chính không phải là tối ưu hóa việc sử dụng bộ nhớ theo cách này mà là để đa dạng hóa dữ liệu huấn luyện.\n- **Nó cho phép mạng học hỏi từ các mẫu cũ hơn mà không cần cập nhật các tham số mục tiêu.** Experience Replay thực sự cho phép mạng học hỏi từ các mẫu cũ hơn, nhưng điều này không liên quan trực tiếp đến việc không cập nhật các tham số mục tiêu. Các tham số mục tiêu (target network parameters) là một kỹ thuật riêng biệt trong DQN được sử dụng để ổn định mục tiêu Q-value, và chúng được cập nhật định kỳ, độc lập với việc lấy mẫu từ bộ nhớ đệm. Experience Replay và mạng mục tiêu là hai kỹ thuật bổ trợ nhau để ổn định quá trình huấn luyện DQN.",
+      "topic": {
+        "name": "Vai trò của Experience Replay trong DQN",
+        "description": "Chủ đề này khám phá vai trò và lợi ích của kỹ thuật Experience Replay (Lặp lại kinh nghiệm) trong kiến trúc Deep Q-Networks (DQN). Học sinh cần hiểu cách Experience Replay giúp giảm sự phụ thuộc giữa các mẫu liên tiếp và ổn định quá trình huấn luyện bằng cách lấy mẫu ngẫu nhiên (Tuần 5).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán Temporal-Difference (TD(0)) tuyến tính với xấp xỉ hàm giá trị, nếu vector đặc trưng x(S) cho trạng thái hiện tại có các giá trị lớn và lỗi dự đoán (TD error) cũng lớn, điều này sẽ ảnh hưởng như thế nào đến độ lớn của sự điều chỉnh tham số Δw?",
+      "answer": "Sự điều chỉnh tham số Δw sẽ có độ lớn lớn, tập trung vào các đặc trưng có giá trị lớn trong x(S).",
+      "distractors": [
+        "Sự điều chỉnh tham số Δw sẽ nhỏ, vì lỗi dự đoán lớn được bù đắp bởi các giá trị đặc trưng lớn.",
+        "Sự điều chỉnh tham số Δw sẽ không thay đổi đáng kể, vì thuật toán ưu tiên các đặc trưng có giá trị nhỏ hơn.",
+        "Sự điều chỉnh tham số Δw sẽ có độ lớn lớn, nhưng chủ yếu điều chỉnh các đặc trưng có giá trị nhỏ để cân bằng."
+      ],
+      "explanation": "Giải thích:\n\nTrong thuật toán TD(0) tuyến tính với xấp xỉ hàm giá trị, quy tắc cập nhật tham số Δw được định nghĩa là: Δw = α * δ * x(S), trong đó α là tốc độ học, δ là lỗi TD (TD error), và x(S) là vector đặc trưng cho trạng thái S.\n\n**Tại sao \"Sự điều chỉnh tham số Δw sẽ có độ lớn lớn, tập trung vào các đặc trưng có giá trị lớn trong x(S).\" là câu trả lời đúng:**\nTheo công thức Δw = α * δ * x(S), độ lớn của sự điều chỉnh Δw tỷ lệ thuận với cả lỗi TD (δ) và vector đặc trưng x(S). Nếu lỗi dự đoán (δ) lớn và các giá trị trong vector đặc trưng x(S) cũng lớn, thì tích của chúng sẽ tạo ra một Δw có độ lớn lớn. Hơn nữa, phép nhân này là phép nhân từng phần tử (hoặc tích vô hướng nếu xét từng thành phần của w), nghĩa là mỗi thành phần của Δw sẽ được điều chỉnh theo thành phần tương ứng của x(S). Do đó, các thành phần của w tương ứng với các đặc trưng có giá trị lớn trong x(S) sẽ nhận được sự điều chỉnh lớn hơn. Điều này đảm bảo rằng thuật toán tập trung điều chỉnh các tham số liên quan đến các đặc trưng nổi bật nhất của trạng thái khi có lỗi dự đoán lớn.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Sự điều chỉnh tham số Δw sẽ nhỏ, vì lỗi dự đoán lớn được bù đắp bởi các giá trị đặc trưng lớn.** Điều này sai vì lỗi dự đoán lớn và các giá trị đặc trưng lớn không bù đắp cho nhau mà ngược lại, chúng cùng góp phần làm tăng độ lớn của Δw. Công thức cập nhật là tích của các yếu tố này, không phải là phép trừ hay phép chia.\n\n*   **Sự điều chỉnh tham số Δw sẽ không thay đổi đáng kể, vì thuật toán ưu tiên các đặc trưng có giá trị nhỏ hơn.** Điều này sai. Thuật toán TD(0) tuyến tính không ưu tiên các đặc trưng có giá trị nhỏ hơn. Thực tế, như đã giải thích ở trên, các đặc trưng có giá trị lớn hơn trong x(S) sẽ có ảnh hưởng lớn hơn đến sự điều chỉnh các tham số tương ứng khi có lỗi dự đoán.\n\n*   **Sự điều chỉnh tham số Δw sẽ có độ lớn lớn, nhưng chủ yếu điều chỉnh các đặc trưng có giá trị nhỏ để cân bằng.** Điều này sai. Sự điều chỉnh Δw tỷ lệ thuận với các giá trị trong x(S). Do đó, các đặc trưng có giá trị lớn sẽ nhận được sự điều chỉnh lớn hơn, không phải các đặc trưng có giá trị nhỏ. Mục tiêu là để các tham số phản ánh chính xác hơn các đặc trưng nổi bật khi có lỗi lớn, không phải để cân bằng bằng cách điều chỉnh các đặc trưng nhỏ.",
+      "topic": {
+        "name": "Cập nhật TD(0) tuyến tính với FA",
+        "description": "Chủ đề này tập trung vào quy tắc cập nhật tham số cho thuật toán Temporal-Difference (TD(0)) tuyến tính với Xấp xỉ Hàm giá trị. Học sinh cần áp dụng công thức cập nhật Δw và hiểu ý nghĩa của thuật ngữ lỗi dự đoán (TD error) và vector đặc trưng x(S) trong bối cảnh này (Tuần 5).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi phân tích các giới hạn hội tụ của các thuật toán Học khác biệt thời gian (TD) sử dụng xấp xỉ hàm giá trị phi tuyến tính và chiến lược học ngoài chính sách, yếu tố tương tác nào thường được xác định là nguyên nhân chính dẫn đến sự phân kỳ?",
+      "answer": "Sự kết hợp của xấp xỉ hàm, bootstrapping và học ngoài chính sách.",
+      "distractors": [
+        "Việc sử dụng các hàm cơ sở không phù hợp kết hợp với tốc độ học quá lớn.",
+        "Sự mất cân bằng giữa khám phá và khai thác trong quá trình thu thập dữ liệu.",
+        "Sự phụ thuộc quá mức vào các ước lượng bootstrapping mà không có đủ sự đa dạng dữ liệu."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Sự kết hợp của xấp xỉ hàm, bootstrapping và học ngoài chính sách.** vì đây là \"bộ ba chết người\" nổi tiếng trong học tăng cường, thường được xác định là nguyên nhân chính dẫn đến sự phân kỳ khi sử dụng các thuật toán TD với xấp xỉ hàm phi tuyến tính và học ngoài chính sách.\n*   **Xấp xỉ hàm (Function Approximation)**: Khi sử dụng các hàm phi tuyến tính để xấp xỉ hàm giá trị, không có đảm bảo về tính co rút của toán tử Bellman, điều này có thể dẫn đến sự không ổn định.\n*   **Bootstrapping**: Các thuật toán TD sử dụng ước lượng của chính chúng để cập nhật (bootstrapping). Khi kết hợp với xấp xỉ hàm, lỗi trong ước lượng có thể tự khuếch đại.\n*   **Học ngoài chính sách (Off-policy Learning)**: Khi chính sách hành động (behavior policy) khác với chính sách mục tiêu (target policy), dữ liệu được thu thập từ một phân phối khác với phân phối mà chúng ta muốn tối ưu hóa. Điều này làm tăng phương sai và có thể gây ra sự không ổn định khi kết hợp với xấp xỉ hàm và bootstrapping.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Việc sử dụng các hàm cơ sở không phù hợp kết hợp với tốc độ học quá lớn.** Mặc dù các hàm cơ sở không phù hợp và tốc độ học lớn có thể góp phần gây ra sự phân kỳ hoặc hiệu suất kém, chúng không phải là nguyên nhân gốc rễ chính được xác định là \"bộ ba chết người\" trong bối cảnh này. \"Bộ ba chết người\" là một vấn đề cấu trúc cơ bản hơn của thuật toán.\n*   **Sự mất cân bằng giữa khám phá và khai thác trong quá trình thu thập dữ liệu.** Đây là một vấn đề quan trọng trong học tăng cường ảnh hưởng đến hiệu quả học tập và khả năng tìm ra chính sách tối ưu, nhưng nó không phải là nguyên nhân trực tiếp gây ra sự phân kỳ của thuật toán TD khi có xấp xỉ hàm phi tuyến tính và học ngoài chính sách. Sự mất cân bằng này chủ yếu ảnh hưởng đến chất lượng dữ liệu và tốc độ hội tụ, chứ không phải sự ổn định cơ bản của thuật toán.\n*   **Sự phụ thuộc quá mức vào các ước lượng bootstrapping mà không có đủ sự đa dạng dữ liệu.** Mặc dù sự đa dạng dữ liệu là quan trọng, vấn đề chính không chỉ là \"sự phụ thuộc quá mức\" vào bootstrapping mà là cách bootstrapping tương tác với xấp xỉ hàm và học ngoài chính sách để tạo ra sự không ổn định. Bootstrapping tự nó không phải là nguyên nhân duy nhất gây phân kỳ mà là một phần của \"bộ ba chết người\".",
+      "topic": {
+        "name": "Điều kiện hội tụ của TD với FA phi tuyến tính",
+        "description": "Chủ đề này yêu cầu học sinh phân tích các điều kiện dưới đó các thuật toán Học khác biệt thời gian (TD) với Xấp xỉ Hàm giá trị phi tuyến tính hoặc học ngoài chính sách có thể phân kỳ. Nó kết nối các hạn chế về sự hội tụ của TD (Tuần 3, 4) với các thách thức khi sử dụng xấp xỉ phi tuyến tính (Tuần 5).",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "rl2025"
+    }
+  ]
+}

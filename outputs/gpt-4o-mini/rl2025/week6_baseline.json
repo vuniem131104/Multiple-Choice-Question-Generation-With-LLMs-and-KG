@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Học tăng cường dựa trên chính sách là gì?",
+            "answer": "Một phương pháp học máy mà trong đó một tác nhân học cách tối ưu hóa hành động của mình thông qua việc tương tác với môi trường.",
+            "distractors": [
+                "Một phương pháp học máy không cần dữ liệu",
+                "Một phương pháp học máy chỉ sử dụng dữ liệu tĩnh",
+                "Một phương pháp học máy chỉ áp dụng cho trò chơi điện tử"
+            ],
+            "explanation": "Học tăng cường dựa trên chính sách là một phương pháp trong học máy, nơi tác nhân học từ kinh nghiệm của mình để tối ưu hóa hành động trong môi trường, khác với các phương pháp học khác."
+        },
+        {
+            "question": "Một trong những ưu điểm của học tăng cường là gì?",
+            "answer": "Khả năng học từ kinh nghiệm và cải thiện theo thời gian.",
+            "distractors": [
+                "Cần ít dữ liệu hơn các phương pháp khác",
+                "Dễ dàng áp dụng cho mọi loại bài toán",
+                "Không cần phải điều chỉnh tham số"
+            ],
+            "explanation": "Học tăng cường cho phép tác nhân học từ kinh nghiệm của mình và cải thiện hiệu suất theo thời gian, điều này không phải là đặc điểm của các phương pháp khác."
+        },
+        {
+            "question": "Phương trình đạo hàm chính sách được sử dụng để làm gì?",
+            "answer": "Tối ưu hóa chính sách bằng cách điều chỉnh tham số dựa trên gradient.",
+            "distractors": [
+                "Tính toán giá trị của trạng thái",
+                "Xác định hành động tốt nhất trong một trạng thái",
+                "Phân tích dữ liệu đầu vào"
+            ],
+            "explanation": "Phương trình đạo hàm chính sách giúp tối ưu hóa chính sách bằng cách điều chỉnh tham số dựa trên gradient, điều này rất quan trọng trong học tăng cường."
+        },
+        {
+            "question": "Xấp xỉ hàm giá trị tương thích có ảnh hưởng như thế nào đến đạo hàm chính sách?",
+            "answer": "Nó giúp cải thiện độ chính xác và hiệu suất của chính sách.",
+            "distractors": [
+                "Nó không có ảnh hưởng gì",
+                "Nó làm giảm hiệu suất của chính sách",
+                "Nó chỉ áp dụng cho các bài toán đơn giản"
+            ],
+            "explanation": "Xấp xỉ hàm giá trị tương thích giúp cải thiện độ chính xác và hiệu suất của chính sách, điều này rất quan trọng trong việc tối ưu hóa."
+        },
+        {
+            "question": "Nguyên lý Quy trình Quyền lợi tối ưu Bellman là gì?",
+            "answer": "Một phương pháp để tìm ra chính sách tốt nhất trong các MDP thông qua việc tối ưu hóa giá trị.",
+            "distractors": [
+                "Một phương pháp để xác định hành động ngẫu nhiên",
+                "Một nguyên lý không liên quan đến học tăng cường",
+                "Một công thức để tính toán độ phức tạp"
+            ],
+            "explanation": "Nguyên lý Quy trình Quyền lợi tối ưu Bellman là một phương pháp quan trọng trong học tăng cường để tìm ra chính sách tốt nhất thông qua tối ưu hóa giá trị."
+        },
+        {
+            "question": "Hàm mục tiêu của chính sách được sử dụng để làm gì?",
+            "answer": "Đánh giá chất lượng của một chính sách trong các MDP.",
+            "distractors": [
+                "Tính toán độ phức tạp của thuật toán",
+                "Xác định số lượng trạng thái trong MDP",
+                "Phân tích dữ liệu đầu vào"
+            ],
+            "explanation": "Hàm mục tiêu của chính sách giúp đánh giá chất lượng của một chính sách trong các MDP, điều này rất quan trọng trong việc tối ưu hóa."
+        },
+        {
+            "question": "Thuật toán REINFORCE trong đạo hàm chính sách Monte-Carlo có vai trò gì?",
+            "answer": "Cập nhật tham số thông qua đạo hàm chính sách dựa trên các mẫu Monte-Carlo.",
+            "distractors": [
+                "Tính toán giá trị của trạng thái",
+                "Xác định hành động tốt nhất trong một trạng thái",
+                "Phân tích dữ liệu đầu vào"
+            ],
+            "explanation": "Thuật toán REINFORCE giúp cập nhật tham số thông qua đạo hàm chính sách dựa trên các mẫu Monte-Carlo, điều này rất quan trọng trong học tăng cường."
+        },
+        {
+            "question": "Đạo hàm chính sách tự nhiên có điểm gì đặc biệt?",
+            "answer": "Nó giúp cải thiện tốc độ hội tụ của thuật toán học.",
+            "distractors": [
+                "Nó không có ảnh hưởng gì đến quá trình học",
+                "Nó chỉ áp dụng cho các bài toán đơn giản",
+                "Nó làm giảm hiệu suất của chính sách"
+            ],
+            "explanation": "Đạo hàm chính sách tự nhiên giúp cải thiện tốc độ hội tụ của thuật toán học, điều này rất quan trọng trong việc tối ưu hóa trong môi trường phức tạp."
+        }
+    ]
+}

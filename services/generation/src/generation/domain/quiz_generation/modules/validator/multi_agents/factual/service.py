@@ -51,7 +51,7 @@ class FactualService(BaseService):
                         )
                     ],
                     response_format=FactualMessage,
-                    temperature=1.0,  # Must be 1.0 for Claude with reasoning
+                    temperature=self.settings.temperature, 
                     top_p=self.settings.top_p,
                     n=self.settings.n,
                     frequency_penalty=self.settings.frequency_penalty,
@@ -73,57 +73,3 @@ class FactualService(BaseService):
             )
             raise e
 
-# if __name__ == "__main__":
-#     from lite_llm import LiteLLMSetting
-#     import asyncio
-#     from pydantic import HttpUrl, SecretStr
-#     import json
-    
-#     litellm_setting = LiteLLMSetting(
-#         url=HttpUrl("http://localhost:9510"),
-#         token=SecretStr("abc123"),
-#         model="claude-sonnet-4-20250514",
-#         frequency_penalty=0.0,
-#         n=1,
-#         temperature=0.0,
-#         top_p=1.0,
-#         max_completion_tokens=10000,
-#         dimension=1536,
-#         embedding_model="gemini-embedding"
-#     )
-
-#     settings = FactualSetting(
-#         model="claude-sonnet-4-20250514",
-#         temperature=1.0,  # Must be 1.0 when reasoning is enabled for Claude
-#         top_p=1.0,
-#         n=1,
-#         frequency_penalty=0.0,
-#         max_completion_tokens=10000,
-#         reasoning_effort="medium"
-#     )
-
-#     litellm_service = LiteLLMService(litellm_setting=litellm_setting)
-#     factual_service = FactualService(
-#         litellm_service=litellm_service,
-#         settings=settings
-#     )
-
-#     async def test():
-#         with open('/home/vuiem/KLTN/h.json', 'r', encoding='utf-8') as f:
-#             data = json.load(f)
-#         output = await factual_service.process(
-#             state=ValidatorState(
-#                 quiz_question=QuizQuestion(
-#                     **data
-#                 ),
-#                 factual_message="",
-#                 factual_score=0.0,
-#                 psychometric_message="",
-#                 pedagogical_message="",
-#                 pedagogical_score=0.0,
-#                 final_score=0.0
-#             )
-#         )
-#         print(output)
-
-#     asyncio.run(test())

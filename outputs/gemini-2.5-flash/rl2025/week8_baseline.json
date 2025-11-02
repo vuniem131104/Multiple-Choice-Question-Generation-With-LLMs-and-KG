@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong bối cảnh ra quyết định trực tuyến, việc 'khám phá' (exploration) đề cập đến hành động nào?",
+            "answer": "Thu thập thêm thông tin để đưa ra quyết định tốt hơn trong dài hạn.",
+            "distractors": [
+                "Đưa ra quyết định tốt nhất dựa trên thông tin hiện có.",
+                "Lặp lại hành động đã mang lại phần thưởng cao nhất trong quá khứ.",
+                "Bỏ qua thông tin mới và chỉ dựa vào kinh nghiệm cũ."
+            ],
+            "explanation": "Khám phá là hành động thu thập thêm thông tin để hiểu rõ hơn về môi trường, từ đó có thể đưa ra các quyết định tối ưu hơn trong tương lai, ngay cả khi điều đó có thể không mang lại phần thưởng cao nhất ngay lập tức. Ngược lại, khai thác là việc đưa ra quyết định tốt nhất dựa trên thông tin hiện có."
+        },
+        {
+            "question": "Mục tiêu chính của bài toán Multi-Armed Bandit (MAB) là gì?",
+            "answer": "Tối đa hóa tổng phần thưởng tích lũy trong một chuỗi các lần thử.",
+            "distractors": [
+                "Tìm ra hành động mang lại phần thưởng cao nhất trong một lần thử duy nhất.",
+                "Giảm thiểu thời gian cần thiết để xác định hành động tối ưu.",
+                "Đảm bảo rằng mọi hành động đều được chọn với tần suất như nhau."
+            ],
+            "explanation": "Bài toán MAB tập trung vào việc cân bằng giữa khám phá và khai thác để tối đa hóa tổng phần thưởng tích lũy trong suốt quá trình ra quyết định. Nó không chỉ tìm kiếm hành động tốt nhất trong một lần thử mà là tối ưu hóa hiệu suất tổng thể theo thời gian."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa thuật toán Tham lam (Greedy) và ε-Greedy trong bài toán MAB là gì?",
+            "answer": "ε-Greedy giới thiệu khám phá ngẫu nhiên với xác suất ε, trong khi Tham lam luôn chọn hành động tốt nhất hiện tại.",
+            "distractors": [
+                "Tham lam có thể đạt được tổng hối tiếc logarit, còn ε-Greedy thì không.",
+                "ε-Greedy luôn đảm bảo tìm thấy hành động tối ưu toàn cục, còn Tham lam thì không.",
+                "Tham lam yêu cầu biết trước phân phối phần thưởng của mỗi hành động, còn ε-Greedy thì không."
+            ],
+            "explanation": "Thuật toán Tham lam luôn chọn hành động có giá trị ước tính cao nhất, dẫn đến việc có thể bị mắc kẹt vào một hành động không tối ưu. Ngược lại, ε-Greedy giới thiệu một xác suất ε để chọn một hành động ngẫu nhiên (khám phá), giúp tránh được các cực tiểu cục bộ và có cơ hội tìm thấy hành động tốt hơn, mặc dù cả hai đều có tổng hối tiếc tuyến tính."
+        },
+        {
+            "question": "Trong Học tăng cường (RL), nguyên tắc 'khởi tạo lạc quan' (optimistic initialization) được áp dụng như thế nào để khuyến khích khám phá?",
+            "answer": "Khởi tạo giá trị Q(s, a) ban đầu ở mức cao, khiến tác nhân ưu tiên khám phá các hành động chưa được thử.",
+            "distractors": [
+                "Khởi tạo giá trị Q(s, a) ban đầu ở mức thấp để giảm thiểu rủi ro.",
+                "Chỉ áp dụng cho các phương pháp dựa trên mô hình, không áp dụng cho phương pháp không mô hình.",
+                "Yêu cầu tác nhân phải có kiến thức tiên nghiệm về phần thưởng tối ưu."
+            ],
+            "explanation": "Khởi tạo lạc quan là một kỹ thuật khuyến khích khám phá bằng cách đặt các giá trị Q(s, a) ban đầu cao một cách giả tạo. Điều này khiến tác nhân tin rằng có những phần thưởng lớn đang chờ đợi ở những hành động chưa được khám phá, thúc đẩy nó thử các hành động đó để cập nhật giá trị thực tế, từ đó dẫn đến việc khám phá hiệu quả hơn."
+        },
+        {
+            "question": "Thuật toán UCB1 (Upper Confidence Bound 1) sử dụng Bất đẳng thức Hoeffding để tính toán chỉ số UCB. Ý nghĩa của chỉ số UCB là gì trong việc cân bằng khám phá/khai thác?",
+            "answer": "Nó thể hiện sự lạc quan khi đối mặt với sự không chắc chắn, ưu tiên các hành động có giá trị ước tính cao và/hoặc chưa được thử nhiều.",
+            "distractors": [
+                "Nó chỉ đơn thuần là giá trị trung bình của phần thưởng đã quan sát được cho một hành động.",
+                "Nó là một giới hạn dưới của phần thưởng mà một hành động có thể mang lại.",
+                "Nó đo lường mức độ rủi ro liên quan đến việc chọn một hành động cụ thể."
+            ],
+            "explanation": "Chỉ số UCB kết hợp giá trị ước tính trung bình của một hành động với một thành phần 'không chắc chắn' dựa trên số lần hành động đó đã được thử. Thành phần không chắc chắn này, được tính toán bằng Bất đẳng thức Hoeffding, càng lớn khi hành động được thử càng ít. Điều này khuyến khích thuật toán chọn các hành động có giá trị ước tính cao (khai thác) hoặc các hành động chưa được khám phá nhiều (khám phá), thể hiện sự 'lạc quan khi đối mặt với sự không chắc chắn'."
+        },
+        {
+            "question": "Trong bài toán Multi-Armed Bandit (MAB), 'tổng hối tiếc' (total regret) là gì?",
+            "answer": "Sự khác biệt giữa tổng phần thưởng của hành động tối ưu và tổng phần thưởng tích lũy của thuật toán.",
+            "distractors": [
+                "Tổng số lần thuật toán chọn một hành động không tối ưu.",
+                "Phần thưởng trung bình mà thuật toán nhận được trong mỗi bước.",
+                "Thời gian cần thiết để thuật toán hội tụ về hành động tối ưu."
+            ],
+            "explanation": "Tổng hối tiếc là một thước đo hiệu suất quan trọng trong MAB, định lượng mức độ 'tồi tệ' của một thuật toán. Nó được định nghĩa là sự khác biệt giữa tổng phần thưởng mà một tác nhân sẽ nhận được nếu nó luôn chọn hành động tối ưu và tổng phần thưởng thực tế mà tác nhân đã nhận được. Mục tiêu của các thuật toán MAB là giảm thiểu tổng hối tiếc."
+        },
+        {
+            "question": "Ưu điểm chính của Thompson Sampling so với UCB trong bài toán MAB là gì?",
+            "answer": "Thompson Sampling sử dụng phân phối hậu nghiệm để lấy mẫu hành động, tận dụng kiến thức tiên nghiệm và thường đạt được giới hạn dưới của Lai và Robbins.",
+            "distractors": [
+                "Thompson Sampling không yêu cầu bất kỳ kiến thức tiên nghiệm nào về phân phối phần thưởng.",
+                "Thompson Sampling luôn đảm bảo hội tụ nhanh hơn UCB trong mọi trường hợp.",
+                "Thompson Sampling chỉ hoạt động hiệu quả với các phân phối phần thưởng nhị phân."
+            ],
+            "explanation": "Thompson Sampling là một thuật toán Bayesian, nó duy trì một phân phối hậu nghiệm cho giá trị của mỗi hành động và lấy mẫu từ các phân phối này để chọn hành động. Điều này cho phép nó tận dụng kiến thức tiên nghiệm và thích nghi tốt hơn với sự không chắc chắn, thường dẫn đến hiệu suất tốt hơn và đạt được giới hạn dưới tiệm cận logarit của Lai và Robbins, trong khi UCB dựa trên các đảm bảo tin cậy."
+        },
+        {
+            "question": "Trong Contextual Bandits, việc sử dụng Hồi quy Tuyến tính để xấp xỉ hàm giá trị hành động có ý nghĩa gì?",
+            "answer": "Nó cho phép tổng quát hóa các hành động từ các ngữ cảnh đã thấy sang các ngữ cảnh mới xuất hiện, mở rộng khả năng của MAB truyền thống.",
+            "distractors": [
+                "Nó loại bỏ hoàn toàn nhu cầu khám phá trong các ngữ cảnh mới.",
+                "Nó chỉ có thể được sử dụng khi số lượng ngữ cảnh là hữu hạn và nhỏ.",
+                "Nó đảm bảo rằng mỗi hành động sẽ được chọn với xác suất bằng nhau trong mọi ngữ cảnh."
+            ],
+            "explanation": "Contextual Bandits mở rộng MAB bằng cách đưa vào 'ngữ cảnh' (trạng thái). Khi sử dụng hồi quy tuyến tính để xấp xỉ hàm giá trị hành động, thuật toán có thể học một mối quan hệ giữa ngữ cảnh và phần thưởng của hành động. Điều này cho phép nó tổng quát hóa và đưa ra quyết định tốt cho các ngữ cảnh mới chưa từng thấy trước đây, thay vì phải học lại từ đầu cho mỗi ngữ cảnh, điều mà MAB truyền thống không thể làm được."
+        }
+    ]
+}

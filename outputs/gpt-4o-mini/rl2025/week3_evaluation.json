@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Giới thiệu Học tăng cường không mô hình",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because its question statement is more specific, directly asking 'phương pháp nào' (which method) which leads to a more precise correct answer. The distractors are also more plausible and directly related to the definition of model-free RL, making it a better test of understanding. The Baseline's distractors are too generic ('học có giám sát', 'học không giám sát') and less specific to the nuances of RL."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Phương pháp Monte-Carlo trong Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.75
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it integrates the example (Blackjack) mentioned in the topic description, making the question more contextual and relevant to the 'Hiểu' Bloom level. Its distractors are also more specific to the domain of RL and Monte-Carlo, making them more plausible. The Baseline question is a bit too general, and its distractors are less sophisticated."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Đánh giá chính sách Monte-Carlo",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly tests the distinction between 'lần đầu tiên' and 'mọi lần' methods, which is a core concept of the topic. The question is clear and the distractors are well-formed. The Baseline question is also good, but its correct answer is a bit broad, and the distractors are less specific to the technical differences between the two methods, making them slightly less plausible for an 'Áp dụng' level question."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Cập nhật Monte-Carlo tăng dần",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it directly asks for the formula, which is appropriate for an 'Áp dụng' Bloom level when understanding incremental updates. The distractors are variations of the formula, making them highly plausible. The Baseline question is too general and its correct answer is descriptive rather than formulaic, which doesn't align as well with 'Áp dụng' for a topic focused on 'công thức liên quan'."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh ưu và nhược điểm của MC và TD",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.75
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it poses a more nuanced comparison ('hội tụ nhanh hơn trong môi trường không ổn định'), which is suitable for a 'Phân tích' Bloom level. The distractors are also more specific to the comparison of convergence properties. The Baseline question is a bit too simplistic for a 'Khó' difficulty and 'Phân tích' level, and its correct answer is a common misconception rather than a deep analytical point."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Áp dụng Lập trình động vào MDPs",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.75
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more detailed and accurate description of how dynamic programming is applied in MDPs, aligning well with the 'Áp dụng' Bloom level. The distractors are also more sophisticated and represent plausible alternative (but incorrect) approaches. The Baseline question is too general, and its correct answer is a broad statement rather than a specific application method."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Dự đoán n-Bước trong Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.75
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks for the formula/method of calculating n-step return, which is appropriate for an 'Áp dụng' Bloom level. The distractors are plausible incorrect ways of calculating this. The Baseline question is too general, asking 'cho phép học sinh làm gì' (what does it allow students to do) rather than how it works, which is less precise for an 'Áp dụng' level question focused on 'công thức và lý thuyết liên quan'."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Sự tương đương giữa TD(λ) và MC/TD(0)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.75,
+                "clarity": 0.75,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it delves into a more specific aspect of the equivalence (the common mechanism and the basis for transition between long-term and short-term prediction), which is suitable for a 'Đánh giá' Bloom level. The distractors are also more relevant to the technical details. The Baseline question is too broad and its correct answer is a general statement about relationships, which doesn't test a deep 'Đánh giá' level understanding of the equivalence."
+        }
+    ]
+}

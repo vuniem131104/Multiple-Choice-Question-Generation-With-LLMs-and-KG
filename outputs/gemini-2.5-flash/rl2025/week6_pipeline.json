@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Đặc điểm chính của Học tăng cường dựa trên chính sách liên quan đến việc tham số hóa chính sách là gì?",
+      "answer": "Chính sách πθ(s, a) = P[a | s, θ] được tham số hóa một cách trực tiếp.",
+      "distractors": [
+        "Chính sách được tham số hóa gián tiếp thông qua một hàm giá trị.",
+        "Chính sách được biểu diễn dưới dạng bảng tra cứu các hành động tối ưu.",
+        "Chính sách được xác định bởi một hàm giá trị hành động Q(s, a)."
+      ],
+      "explanation": "Trong Học tăng cường dựa trên chính sách, đặc điểm chính là chính sách $\\pi_\\theta(s, a) = P[a | s, \\theta]$ được tham số hóa một cách trực tiếp. Điều này có nghĩa là chúng ta trực tiếp mô hình hóa và tối ưu hóa một hàm chính sách (thường là một mạng nơ-ron) để ánh xạ trạng thái đầu vào $s$ tới phân phối xác suất trên các hành động $a$, với $\\theta$ là các tham số của chính sách. Mục tiêu là tìm ra các tham số $\\theta$ tối ưu để tối đa hóa phần thưởng kỳ vọng.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Chính sách được tham số hóa gián tiếp thông qua một hàm giá trị.** Đây là đặc điểm của các phương pháp dựa trên giá trị (value-based methods), nơi chính sách được suy ra từ một hàm giá trị (ví dụ: chọn hành động có giá trị Q cao nhất), chứ không phải được tham số hóa trực tiếp.\n*   **Chính sách được biểu diễn dưới dạng bảng tra cứu các hành động tối ưu.** Mặc dù một chính sách có thể được biểu diễn dưới dạng bảng trong các không gian trạng thái và hành động rời rạc nhỏ, đây không phải là đặc điểm chính của Học tăng cường dựa trên chính sách nói chung, đặc biệt khi xử lý các không gian trạng thái/hành động lớn hoặc liên tục. Các phương pháp dựa trên chính sách thường sử dụng các hàm xấp xỉ (như mạng nơ-ron) để tham số hóa chính sách.\n*   **Chính sách được xác định bởi một hàm giá trị hành động Q(s, a).** Tương tự như yếu tố gây nhiễu đầu tiên, đây là đặc điểm của các phương pháp dựa trên giá trị (ví dụ: Q-learning, SARSA), nơi hàm giá trị hành động $Q(s, a)$ được học và chính sách được suy ra từ đó (ví dụ: chính sách tham lam). Trong Học tăng cường dựa trên chính sách, chính sách được tham số hóa và tối ưu hóa trực tiếp.",
+      "topic": {
+        "name": "Đặc điểm của Học tăng cường dựa trên chính sách",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc xác định các đặc điểm chính của Học tăng cường dựa trên chính sách, bao gồm việc tham số hóa trực tiếp chính sách πθ(s, a) = P[a | s, θ] và sự khác biệt với các phương pháp dựa trên giá trị (như kiểm soát không mô hình từ Tuần 4).",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong các thuật toán Đạo hàm chính sách, công thức cơ bản để cập nhật tham số chính sách Δθ là gì?",
+      "answer": "Δθ = α∇θJ(θ)",
+      "distractors": [
+        "Δθ = -α∇θJ(θ)",
+        "Δθ = αJ(θ)",
+        "Δθ = ∇θJ(θ)"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Δθ = α∇θJ(θ)**. Trong các thuật toán Đạo hàm chính sách, mục tiêu là tối đa hóa hàm mục tiêu J(θ), đại diện cho hiệu suất của chính sách. Để đạt được điều này, chúng ta thực hiện các bước theo hướng gradient của hàm mục tiêu. Gradient ∇θJ(θ) chỉ ra hướng tăng dốc nhất của J(θ). Hệ số học tập α (alpha) là một số dương nhỏ kiểm soát kích thước của bước cập nhật, đảm bảo quá trình học diễn ra ổn định. Do đó, công thức Δθ = α∇θJ(θ) biểu thị việc cập nhật các tham số chính sách θ theo hướng làm tăng hiệu suất của chính sách.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Δθ = -α∇θJ(θ)**: Công thức này sẽ thực hiện các bước theo hướng ngược lại với gradient, tức là theo hướng giảm dốc nhất của J(θ). Điều này sẽ dẫn đến việc tối thiểu hóa hàm mục tiêu, trái ngược với mục tiêu tối đa hóa hiệu suất trong Đạo hàm chính sách.\n*   **Δθ = αJ(θ)**: Công thức này không sử dụng gradient của hàm mục tiêu. Thay vào đó, nó cập nhật các tham số dựa trên giá trị tuyệt đối của hàm mục tiêu, điều này không cung cấp thông tin về hướng cần thiết để cải thiện chính sách.\n*   **Δθ = ∇θJ(θ)**: Công thức này bỏ qua hệ số học tập α. Mặc dù nó đi theo hướng gradient, nhưng việc thiếu α có thể dẫn đến các bước cập nhật quá lớn hoặc quá nhỏ, gây ra sự mất ổn định hoặc hội tụ chậm trong quá trình học. Hệ số học tập là rất quan trọng để kiểm soát tốc độ và sự ổn định của quá trình tối ưu hóa.",
+      "topic": {
+        "name": "Công thức cập nhật đạo hàm chính sách cơ bản",
+        "description": "Kiểm tra kiến thức của học sinh về công thức cơ bản để thực hiện các bước cập nhật tham số chính sách trong các thuật toán Đạo hàm chính sách, cụ thể là Δθ = α∇θJ(θ).",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một trong những ưu điểm đáng kể của Học tăng cường dựa trên chính sách so với các phương pháp khác là gì?",
+      "answer": "Khả năng hội tụ tốt hơn.",
+      "distractors": [
+        "Khả năng khám phá tốt hơn.",
+        "Tốc độ học nhanh hơn.",
+        "Yêu cầu ít dữ liệu hơn."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Khả năng hội tụ tốt hơn.** vì các phương pháp Học tăng cường dựa trên chính sách (Policy-based Reinforcement Learning) thường có khả năng hội tụ tốt hơn so với các phương pháp dựa trên giá trị (Value-based methods), đặc biệt trong các không gian trạng thái và hành động lớn hoặc liên tục. Điều này là do chúng trực tiếp tối ưu hóa chính sách, cho phép chúng tìm ra các chính sách tối ưu một cách ổn định hơn.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Khả năng khám phá tốt hơn:** Các phương pháp dựa trên chính sách không nhất thiết có khả năng khám phá tốt hơn. Khả năng khám phá thường phụ thuộc vào chiến lược khám phá được triển khai (ví dụ: epsilon-greedy, entropy regularization) hơn là bản chất của phương pháp dựa trên chính sách. Một số phương pháp dựa trên giá trị cũng có thể có chiến lược khám phá hiệu quả.\n*   **Tốc độ học nhanh hơn:** Các phương pháp dựa trên chính sách không phải lúc nào cũng học nhanh hơn. Tốc độ học có thể thay đổi đáng kể tùy thuộc vào độ phức tạp của môi trường, kiến trúc mạng nơ-ron (nếu có), và các siêu tham số. Trong một số trường hợp, các phương pháp dựa trên giá trị có thể hội tụ nhanh hơn nếu không gian trạng thái/hành động nhỏ.\n*   **Yêu cầu ít dữ liệu hơn:** Các phương pháp dựa trên chính sách thường yêu cầu một lượng lớn dữ liệu (kinh nghiệm) để học một chính sách hiệu quả, đặc biệt là khi sử dụng các phương pháp gradient chính sách. Chúng thường cần nhiều tương tác với môi trường hơn để ước tính gradient chính sách một cách chính xác, do đó không yêu cầu ít dữ liệu hơn.",
+      "topic": {
+        "name": "Ưu điểm của Học tăng cường dựa trên chính sách",
+        "description": "Học sinh cần nhận biết ít nhất hai ưu điểm chính của Học tăng cường dựa trên chính sách so với các phương pháp khác, chẳng hạn như khả năng hội tụ tốt hơn và hiệu quả trong không gian hành động liên tục.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong môi trường episodic, hàm mục tiêu J1(θ) định lượng chất lượng của một chính sách bằng cách sử dụng khái niệm gì?",
+      "answer": "Hàm giá trị của trạng thái khởi đầu, Vπθ(s1).",
+      "distractors": [
+        "Tổng phần thưởng tích lũy trong một tập, Gt.",
+        "Hàm giá trị hành động của trạng thái khởi đầu, Qπθ(s1, a1).",
+        "Giá trị trung bình của tất cả các trạng thái có thể có trong một tập."
+      ],
+      "explanation": "Trong môi trường episodic, hàm mục tiêu J1(θ) định lượng chất lượng của một chính sách bằng cách sử dụng **hàm giá trị của trạng thái khởi đầu, Vπθ(s1)**. Điều này là do trong các nhiệm vụ episodic, mục tiêu là tối đa hóa tổng phần thưởng tích lũy từ trạng thái khởi đầu của mỗi tập. Hàm giá trị của trạng thái khởi đầu, Vπθ(s1), chính xác đại diện cho kỳ vọng của tổng phần thưởng tích lũy (return) khi bắt đầu từ trạng thái s1 và tuân theo chính sách πθ.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Tổng phần thưởng tích lũy trong một tập, Gt**: Mặc dù Gt (return) là khái niệm cơ bản trong học tăng cường, hàm mục tiêu J1(θ) không trực tiếp là Gt. Thay vào đó, nó là kỳ vọng của Gt khi bắt đầu từ trạng thái khởi đầu, được biểu thị bằng Vπθ(s1). Gt là một biến ngẫu nhiên cụ thể cho một tập, trong khi J1(θ) là một giá trị kỳ vọng tổng quát hơn cho chính sách.\n*   **Hàm giá trị hành động của trạng thái khởi đầu, Qπθ(s1, a1)**: Hàm giá trị hành động Qπθ(s, a) định lượng chất lượng của việc thực hiện một hành động cụ thể 'a' trong một trạng thái 's' và sau đó tuân theo chính sách. Mặc dù liên quan, hàm mục tiêu J1(θ) tập trung vào giá trị của trạng thái khởi đầu, không phải giá trị của một cặp trạng thái-hành động cụ thể tại thời điểm khởi đầu.\n*   **Giá trị trung bình của tất cả các trạng thái có thể có trong một tập**: Hàm mục tiêu J1(θ) không phải là giá trị trung bình của tất cả các trạng thái. Nó đặc biệt tập trung vào giá trị của trạng thái khởi đầu, vì đây là điểm bắt đầu của mỗi tập và là nơi mà chất lượng của chính sách được đánh giá. Việc lấy trung bình trên tất cả các trạng thái có thể không phản ánh chính xác mục tiêu tối đa hóa phần thưởng từ điểm khởi đầu.\n",
+      "topic": {
+        "name": "Mục tiêu hàm chính sách trong môi trường episodic",
+        "description": "Chủ đề này tập trung vào cách định lượng chất lượng của một chính sách trong các môi trường episodic bằng cách sử dụng hàm mục tiêu giá trị khởi đầu J1(θ) = Vπθ(s1), nối lại khái niệm hàm giá trị từ Tuần 1.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi áp dụng Định lý đạo hàm chính sách theo mô tả để liên kết với khái niệm Q-value, đại lượng nào được thay thế bằng giá trị dài hạn Qπ(s, a)?",
+      "answer": "Phần thưởng tức thời",
+      "distractors": [
+        "Hàm giá trị trạng thái Vπ(s)",
+        "Hàm chính sách π(a|s)",
+        "Đạo hàm của hàm giá trị"
+      ],
+      "explanation": "Khi áp dụng Định lý đạo hàm chính sách để liên kết với khái niệm Q-value, đại lượng được thay thế bằng giá trị dài hạn Qπ(s, a) là **Phần thưởng tức thời**. Định lý đạo hàm chính sách thường liên quan đến việc tối ưu hóa kỳ vọng của phần thưởng tức thời. Tuy nhiên, để tích hợp khái niệm Q-value, vốn đại diện cho tổng phần thưởng chiết khấu trong tương lai khi thực hiện một hành động cụ thể trong một trạng thái nhất định và sau đó tuân theo chính sách π, chúng ta thay thế phần thưởng tức thời bằng Qπ(s, a). Điều này cho phép chúng ta tính toán đạo hàm chính sách dựa trên giá trị dài hạn của các hành động, thay vì chỉ phần thưởng ngay lập tức.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Hàm giá trị trạng thái Vπ(s)**: Vπ(s) đại diện cho tổng phần thưởng chiết khấu trong tương lai khi bắt đầu từ trạng thái s và tuân theo chính sách π. Mặc dù có liên quan chặt chẽ với Q-value (Vπ(s) = E_a[Qπ(s, a)]), Vπ(s) không phải là đại lượng được thay thế trực tiếp bằng Qπ(s, a) trong ngữ cảnh này. Qπ(s, a) thay thế phần thưởng tức thời để mở rộng phạm vi tối ưu hóa từ phần thưởng ngay lập tức sang phần thưởng dài hạn.\n*   **Hàm chính sách π(a|s)**: Hàm chính sách π(a|s) định nghĩa xác suất thực hiện hành động a trong trạng thái s. Đây là đối tượng mà chúng ta đang cố gắng tối ưu hóa thông qua đạo hàm chính sách, chứ không phải là đại lượng được thay thế.\n*   **Đạo hàm của hàm giá trị**: Đạo hàm của hàm giá trị là một khái niệm liên quan đến việc thay đổi giá trị khi các tham số thay đổi, nhưng nó không phải là đại lượng được thay thế bằng Qπ(s, a). Qπ(s, a) thay thế phần thưởng tức thời để định hình mục tiêu tối ưu hóa của đạo hàm chính sách.",
+      "topic": {
+        "name": "Ứng dụng của Định lý đạo hàm chính sách",
+        "description": "Học sinh phải áp dụng Định lý đạo hàm chính sách bằng cách thay thế phần thưởng tức thời bằng giá trị dài hạn Qπ(s, a). Điều này liên kết khái niệm Q-value (Tuần 1, 4) với việc tính toán đạo hàm chính sách (Tuần 6).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Dựa trên cơ chế cập nhật của nó, thuật toán REINFORCE làm thế nào để đảm bảo rằng việc cập nhật tham số chính sách là không thiên vị khi sử dụng các lợi nhuận (return)?",
+      "answer": "Thuật toán sử dụng lợi nhuận (return) thu được từ toàn bộ một tập (episode) để ước tính gradient chính sách một cách không thiên vị.",
+      "distractors": [
+        "Thuật toán sử dụng giá trị trạng thái (state value) để chuẩn hóa các lợi nhuận (return), đảm bảo tính không thiên vị.",
+        "Thuật toán chỉ sử dụng lợi nhuận (return) từ hành động ngay lập tức để ước tính gradient chính sách.",
+        "Thuật toán áp dụng một hệ số chiết khấu (discount factor) lớn để giảm phương sai của ước tính gradient."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là: **Thuật toán sử dụng lợi nhuận (return) thu được từ toàn bộ một tập (episode) để ước tính gradient chính sách một cách không thiên vị.**\n\n**Tại sao đây là câu trả lời đúng:**\nThuật toán REINFORCE là một phương pháp đạo hàm chính sách Monte-Carlo. Để đảm bảo ước tính gradient chính sách là không thiên vị, REINFORCE dựa vào việc lấy mẫu toàn bộ một tập (episode) và sử dụng lợi nhuận (return) tích lũy từ thời điểm hành động được thực hiện cho đến cuối tập đó. Lợi nhuận này, thường được ký hiệu là $G_t$, là tổng các phần thưởng chiết khấu nhận được sau thời điểm $t$. Bằng cách sử dụng $G_t$ làm ước lượng cho $Q(s_t, a_t)$ (giá trị hành động), REINFORCE có thể ước tính gradient chính sách một cách không thiên vị. Điều này là do $G_t$ là một ước lượng không thiên vị của giá trị hành động mong đợi dưới chính sách hiện tại, miễn là các tập được lấy mẫu từ chính sách đó.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Thuật toán sử dụng giá trị trạng thái (state value) để chuẩn hóa các lợi nhuận (return), đảm bảo tính không thiên vị.**\n    Đây là sai. Mặc dù việc sử dụng đường cơ sở (baseline), chẳng hạn như giá trị trạng thái, có thể giúp giảm phương sai của ước tính gradient, nó không phải là cơ chế chính đảm bảo tính không thiên vị của ước tính gradient trong REINFORCE. Tính không thiên vị chủ yếu đến từ việc sử dụng lợi nhuận Monte-Carlo. Đường cơ sở chỉ làm thay đổi phương sai mà không làm thay đổi giá trị kỳ vọng của gradient.\n\n*   **Thuật toán chỉ sử dụng lợi nhuận (return) từ hành động ngay lập tức để ước tính gradient chính sách.**\n    Đây là sai. REINFORCE không chỉ sử dụng lợi nhuận từ hành động ngay lập tức. Thay vào đó, nó sử dụng lợi nhuận tích lũy từ thời điểm hành động được thực hiện cho đến cuối tập (episode). Việc chỉ sử dụng lợi nhuận ngay lập tức sẽ không cung cấp đủ thông tin về hậu quả dài hạn của hành động và sẽ dẫn đến một ước tính gradient thiên vị hoặc không hiệu quả.\n\n*   **Thuật toán áp dụng một hệ số chiết khấu (discount factor) lớn để giảm phương sai của ước tính gradient.**\n    Đây là sai. Hệ số chiết khấu ($\\gamma$) được sử dụng để cân bằng tầm quan trọng của các phần thưởng trong tương lai so với các phần thưởng hiện tại, và nó là một phần cố hữu của định nghĩa lợi nhuận trong các bài toán học tăng cường. Mặc dù việc thay đổi $\\gamma$ có thể ảnh hưởng đến phương sai của lợi nhuận, mục đích chính của nó không phải là để giảm phương sai của ước tính gradient. Hơn nữa, một hệ số chiết khấu lớn (gần 1) thường làm tăng phương sai của lợi nhuận vì nó bao gồm nhiều bước thời gian hơn và do đó tích lũy nhiều sự ngẫu nhiên hơn. Các kỹ thuật giảm phương sai khác, như sử dụng đường cơ sở, được áp dụng cho mục đích này.",
+      "topic": {
+        "name": "Cơ chế cập nhật của thuật toán REINFORCE",
+        "description": "Chủ đề này yêu cầu học sinh giải thích cách thuật toán REINFORCE (Đạo hàm chính sách Monte-Carlo từ Tuần 6) sử dụng các lợi nhuận (return) thu được từ toàn bộ một tập (như trong Học Monte-Carlo của Tuần 3) để cập nhật tham số chính sách một cách không thiên vị.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Phân tích vai trò của Critic trong kiến trúc Actor-Critic, mục đích chính của việc Critic ước tính hàm giá trị hành động Qw(s, a) là gì liên quan đến đạo hàm chính sách của Actor?",
+      "answer": "Nó nhằm giảm phương sai trong ước tính đạo hàm chính sách của Actor.",
+      "distractors": [
+        "Nó nhằm mục đích trực tiếp tối ưu hóa chính sách của Actor bằng cách cung cấp gradient chính sách.",
+        "Nó được sử dụng để xác định hành động tối ưu mà Actor nên thực hiện trong mỗi trạng thái.",
+        "Nó cung cấp một tín hiệu lỗi cho Actor để điều chỉnh trọng số mạng của nó."
+      ],
+      "explanation": "Trong kiến trúc Actor-Critic, mục đích chính của việc Critic ước tính hàm giá trị hành động $Q_w(s, a)$ là để giảm phương sai trong ước tính đạo hàm chính sách của Actor. Critic cung cấp một ước tính về giá trị của các hành động, cho phép Actor cập nhật chính sách của mình theo hướng các hành động có giá trị cao hơn. Bằng cách sử dụng ước tính giá trị này làm đường cơ sở hoặc tín hiệu lợi thế, Actor có thể giảm phương sai của các ước tính gradient chính sách của mình, dẫn đến việc học ổn định và hiệu quả hơn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó nhằm mục đích trực tiếp tối ưu hóa chính sách của Actor bằng cách cung cấp gradient chính sách.** Điều này không chính xác vì Critic không trực tiếp cung cấp gradient chính sách. Thay vào đó, Critic ước tính hàm giá trị, và ước tính này được sử dụng để xây dựng tín hiệu lợi thế hoặc đường cơ sở, sau đó được sử dụng để tính toán gradient chính sách của Actor. Actor là thành phần chịu trách nhiệm trực tiếp tối ưu hóa chính sách của mình dựa trên gradient này.\n*   **Nó được sử dụng để xác định hành động tối ưu mà Actor nên thực hiện trong mỗi trạng thái.** Mặc dù Critic ước tính giá trị của các hành động, nhưng vai trò của nó không phải là trực tiếp ra lệnh hành động tối ưu cho Actor. Actor là thành phần chịu trách nhiệm chọn hành động dựa trên chính sách của nó, và Critic cung cấp thông tin để cải thiện chính sách đó. Trong các phương pháp dựa trên giá trị thuần túy, hàm giá trị có thể được sử dụng để chọn hành động tối ưu, nhưng trong Actor-Critic, Actor vẫn là người ra quyết định chính.\n*   **Nó cung cấp một tín hiệu lỗi cho Actor để điều chỉnh trọng số mạng của nó.** Mặc dù Critic cung cấp một dạng tín hiệu phản hồi, nhưng việc mô tả nó như một \"tín hiệu lỗi\" trực tiếp để điều chỉnh trọng số mạng của Actor là không hoàn toàn chính xác. Critic ước tính hàm giá trị, và sự khác biệt giữa giá trị ước tính và phần thưởng thực tế (hoặc giá trị mục tiêu) được sử dụng để cập nhật chính Critic. Đối với Actor, Critic cung cấp một tín hiệu lợi thế (sự khác biệt giữa giá trị hành động và giá trị trạng thái) hoặc một đường cơ sở, được sử dụng để điều chỉnh gradient chính sách, chứ không phải là một tín hiệu lỗi trực tiếp theo nghĩa truyền thống của việc cập nhật mạng.",
+      "topic": {
+        "name": "Vai trò của Critic trong Actor-Critic",
+        "description": "Chủ đề này kiểm tra sự hiểu biết về cách một Critic (Tuần 6) ước tính hàm giá trị hành động Qw(s, a) (từ Tuần 1, 4, 5) để giảm phương sai trong việc ước tính đạo hàm chính sách của Actor, một khái niệm tích hợp các phương pháp dựa trên giá trị và dựa trên chính sách.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh phức tạp của các phương pháp Actor-Critic sử dụng xấp xỉ hàm để tối ưu hóa đạo hàm chính sách, việc sử dụng lỗi TD (δπθ) làm ước tính không thiên vị cho Hàm lợi thế (Aπθ(s, a)) được đánh giá cao vì đóng góp chính nào vào sự ổn định và hiệu suất của quá trình học?",
+      "answer": "Nó giúp giảm đáng kể phương sai của đạo hàm chính sách.",
+      "distractors": [
+        "Nó đảm bảo tính hội tụ của thuật toán Actor-Critic ngay cả với các chính sách ngẫu nhiên.",
+        "Nó cho phép ước tính không thiên vị cho hàm giá trị trạng thái, cải thiện độ chính xác của nó.",
+        "Nó tăng cường khám phá bằng cách khuyến khích các hành động có lợi thế cao hơn trong các trạng thái không chắc chắn."
+      ],
+      "explanation": "Việc sử dụng lỗi TD (δπθ) làm ước tính không thiên vị cho Hàm lợi thế (Aπθ(s, a)) trong các phương pháp Actor-Critic với xấp xỉ hàm là rất quan trọng vì **nó giúp giảm đáng kể phương sai của đạo hàm chính sách**. Trong các thuật toán đạo hàm chính sách, việc ước tính đạo hàm chính sách thường có phương sai cao, đặc biệt khi sử dụng các phương pháp Monte Carlo. Lỗi TD cung cấp một ước tính có phương sai thấp hơn cho lợi thế, giúp ổn định quá trình học và cải thiện hiệu suất bằng cách cung cấp tín hiệu cập nhật đáng tin cậy hơn cho actor.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó đảm bảo tính hội tụ của thuật toán Actor-Critic ngay cả với các chính sách ngẫu nhiên.** Mặc dù việc giảm phương sai có thể góp phần vào sự ổn định và khả năng hội tụ, nhưng bản thân việc sử dụng lỗi TD không đảm bảo tính hội tụ trong mọi trường hợp, đặc biệt với các chính sách ngẫu nhiên hoặc các vấn đề phức tạp khác. Tính hội tụ phụ thuộc vào nhiều yếu tố như tốc độ học, kiến trúc mạng và tính chất của môi trường.\n*   **Nó cho phép ước tính không thiên vị cho hàm giá trị trạng thái, cải thiện độ chính xác của nó.** Lỗi TD là một ước tính không thiên vị cho hàm lợi thế, không phải hàm giá trị trạng thái. Hàm giá trị trạng thái (Vπθ(s)) được ước tính bởi critic, và lỗi TD được sử dụng để cập nhật critic và cung cấp tín hiệu cho actor. Mặc dù lỗi TD được tính toán dựa trên ước tính hàm giá trị, nhưng mục đích chính của nó trong bối cảnh này là ước tính lợi thế.\n*   **Nó tăng cường khám phá bằng cách khuyến khích các hành động có lợi thế cao hơn trong các trạng thái không chắc chắn.** Mặc dù việc học có thể dẫn đến khám phá tốt hơn theo thời gian, nhưng mục đích chính của việc sử dụng lỗi TD làm ước tính lợi thế không phải là trực tiếp tăng cường khám phá. Khám phá thường được xử lý thông qua các chiến lược khác như nhiễu loạn chính sách (ví dụ: chính sách epsilon-greedy hoặc nhiễu loạn Gauss) hoặc các thuật toán khám phá chuyên biệt. Lỗi TD tập trung vào việc cung cấp tín hiệu cập nhật hiệu quả cho các hành động đã được thực hiện.",
+      "topic": {
+        "name": "Tối ưu hóa đạo hàm chính sách bằng hàm lợi thế và lỗi TD",
+        "description": "Chủ đề khó này đòi hỏi sự tổng hợp kiến thức từ nhiều tuần: cách sử dụng lỗi TD δπθ (từ Học TD, Tuần 3 và 4) làm ước tính không thiên vị cho Hàm lợi thế Aπθ(s, a) (Tuần 6) để giảm đáng kể phương sai của đạo hàm chính sách, đặc biệt trong các khung Actor-Critic (Tuần 6) có sử dụng xấp xỉ hàm (Tuần 5).",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "rl2025"
+    }
+  ]
+}

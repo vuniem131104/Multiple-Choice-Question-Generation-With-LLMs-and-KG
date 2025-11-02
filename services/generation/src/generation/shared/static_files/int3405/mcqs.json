@@ -1,0 +1,1652 @@
+[
+    {
+        "question": "Mục tiêu chính của học máy là gì?",
+        "options": {
+            "A": "Lập trình máy tính thủ công",
+            "B": "Cho phép hệ thống học từ dữ liệu",
+            "C": "Mô phỏng trí tuệ con người",
+            "D": "Tăng tốc phần cứng máy tính"
+        },
+        "answer": "Cho phép hệ thống học từ dữ liệu",
+        "explanation": "Học máy xây dựng các mô hình cho phép hệ thống học từ dữ liệu và đưa ra quyết định mà không cần lập trình tường minh, cải thiện hiệu suất theo thời gian."
+    },
+    {
+        "question": "Loại dữ liệu nào được sử dụng trong học có giám sát?",
+        "options": {
+            "A": "Dữ liệu không có nhãn",
+            "B": "Dữ liệu có nhãn",
+            "C": "Cả hai",
+            "D": "Không cái nào"
+        },
+        "answer": "Dữ liệu có nhãn",
+        "explanation": "Thuật toán học có giám sát sử dụng dữ liệu có nhãn để huấn luyện, trong đó cả biến đầu vào và biến đầu ra đều được cung cấp để học."
+    },
+    {
+        "question": "Trong số các lựa chọn sau, đâu KHÔNG phải là nhiệm vụ phổ biến của học máy?",
+        "options": {
+            "A": "Phân loại",
+            "B": "Hồi quy",
+            "C": "Sắp xếp",
+            "D": "Phân cụm"
+        },
+        "answer": "Sắp xếp",
+        "explanation": "Sắp xếp không được coi là nhiệm vụ của học máy, trong khi phân loại, hồi quy và phân cụm là các nhiệm vụ tiêu chuẩn của học máy."
+    },
+    {
+        "question": "Thuật toán nào thường được dùng cho học có giám sát?",
+        "options": {
+            "A": "K-Means Clustering",
+            "B": "Hồi quy tuyến tính",
+            "C": "Phân tích thành phần chính",
+            "D": "DBSCAN"
+        },
+        "answer": "Hồi quy tuyến tính",
+        "explanation": "Hồi quy tuyến tính là một thuật toán học có giám sát phổ biến sử dụng dữ liệu có nhãn để dự đoán."
+    },
+    {
+        "question": "Sự khác biệt chính giữa học có giám sát và không giám sát là gì?",
+        "options": {
+            "A": "Học có giám sát sử dụng dữ liệu có nhãn",
+            "B": "Học không giám sát yêu cầu dữ liệu có nhãn",
+            "C": "Học có giám sát nhanh hơn",
+            "D": "Học không giám sát dự đoán nhãn"
+        },
+        "answer": "Học có giám sát sử dụng dữ liệu có nhãn",
+        "explanation": "Sự khác biệt chính là học có giám sát dựa vào dữ liệu có nhãn, trong khi học không giám sát làm việc với dữ liệu không có nhãn để tìm các mẫu."
+    },
+    {
+        "question": "'Overfitting' trong học máy đề cập đến điều gì?",
+        "options": {
+            "A": "Mô hình hoạt động tốt trên dữ liệu mới",
+            "B": "Mô hình khớp quá tốt với dữ liệu huấn luyện",
+            "C": "Mô hình có dữ liệu không đủ",
+            "D": "Mô hình sử dụng quá ít đặc trưng"
+        },
+        "answer": "Mô hình khớp quá tốt với dữ liệu huấn luyện",
+        "explanation": "Overfitting xảy ra khi một mô hình học quá chi tiết từ dữ liệu huấn luyện, kể cả nhiễu, dẫn đến khả năng khái quát kém trên dữ liệu mới."
+    },
+    {
+        "question": "Trong kịch bản nào bạn sẽ áp dụng học máy?",
+        "options": {
+            "A": "Tạo hệ thống dựa trên luật đơn giản",
+            "B": "Phát triển dự đoán từ dữ liệu lịch sử",
+            "C": "Lập trình thủ công mọi đầu ra",
+            "D": "Tăng tốc máy tính"
+        },
+        "answer": "Phát triển dự đoán từ dữ liệu lịch sử",
+        "explanation": "Học máy thường được áp dụng khi cần đưa ra dự đoán dựa trên các mẫu từ dữ liệu lịch sử."
+    },
+    {
+        "question": "Hàm nào trong thư viện sklearn được dùng để chia tập dữ liệu?",
+        "options": {
+            "A": "train_test_split()",
+            "B": "split_data()",
+            "C": "dataset_split()",
+            "D": "data_train_test()"
+        },
+        "answer": "train_test_split()",
+        "explanation": "Hàm train_test_split() trong sklearn thường được dùng để chia tập dữ liệu thành tập huấn luyện và kiểm thử để đánh giá mô hình."
+    },
+    {
+        "question": "Một mô hình hoạt động tốt trên dữ liệu huấn luyện nhưng kém trên dữ liệu kiểm thử. Tại sao?",
+        "options": {
+            "A": "Underfitting",
+            "B": "Overfitting",
+            "C": "Dữ liệu không đủ",
+            "D": "Lỗi dữ liệu kiểm thử"
+        },
+        "answer": "Overfitting",
+        "explanation": "Overfitting xảy ra khi mô hình học các chi tiết đặc trưng của dữ liệu huấn luyện, gây khả năng khái quát kém tới dữ liệu chưa thấy."
+    },
+    {
+        "question": "Ví dụ nào sau đây là học có giám sát?",
+        "options": {
+            "A": "K-Means Clustering",
+            "B": "Hồi quy tuyến tính",
+            "C": "Phân tích thành phần chính",
+            "D": "DBSCAN"
+        },
+        "answer": "Hồi quy tuyến tính",
+        "explanation": "Các mô hình học có giám sát, như Hồi quy tuyến tính, sử dụng dữ liệu có nhãn để huấn luyện nhằm dự đoán dựa trên đặc trưng đầu vào."
+    },
+    {
+        "question": "K-Means Clustering là ví dụ của loại học nào?",
+        "options": {
+            "A": "Học có giám sát",
+            "B": "Học không giám sát",
+            "C": "Học tăng cường",
+            "D": "Học bán giám sát"
+        },
+        "answer": "Học không giám sát",
+        "explanation": "K-Means là thuật toán học không giám sát phân nhóm các điểm dữ liệu dựa trên độ tương đồng mà không cần nhãn."
+    },
+    {
+        "question": "Loại học máy nào liên quan tới học từ dữ liệu có nhãn?",
+        "options": {
+            "A": "Học không giám sát",
+            "B": "Học có giám sát",
+            "C": "Học tăng cường",
+            "D": "Không cái nào ở trên"
+        },
+        "answer": "Học có giám sát",
+        "explanation": "Học có giám sát dựa trên dữ liệu có nhãn, trong đó cả đầu vào và đầu ra được cung cấp để mô hình học và dự đoán."
+    },
+    {
+        "question": "Ví dụ nào dưới đây là học không giám sát?",
+        "options": {
+            "A": "Cây quyết định",
+            "B": "Hồi quy tuyến tính",
+            "C": "Phân tích thành phần chính",
+            "D": "Hồi quy logistic"
+        },
+        "answer": "Phân tích thành phần chính",
+        "explanation": "Các thuật toán học không giám sát, như Phân tích thành phần chính (PCA), hoạt động không cần dữ liệu có nhãn để phát hiện cấu trúc hoặc mẫu."
+    },
+    {
+        "question": "Lý thuyết học nào nhằm tối đa hóa tín hiệu phần thưởng thông qua khám phá và khai thác?",
+        "options": {
+            "A": "Học có giám sát",
+            "B": "Học không giám sát",
+            "C": "Học tăng cường",
+            "D": "Học bán giám sát"
+        },
+        "answer": "Học tăng cường",
+        "explanation": "Học tăng cường liên quan tới huấn luyện một tác nhân đưa ra chuỗi quyết định để tối đa hóa phần thưởng tích lũy, học thông qua thử và sai."
+    },
+    {
+        "question": "Loại học nào được dùng khi mô hình học từ cả dữ liệu có nhãn và không có nhãn?",
+        "options": {
+            "A": "Học có giám sát",
+            "B": "Học không giám sát",
+            "C": "Học tăng cường",
+            "D": "Học bán giám sát"
+        },
+        "answer": "Học bán giám sát",
+        "explanation": "Học bán giám sát là cách tiếp cận kết hợp, nơi mô hình học từ cả dữ liệu có nhãn và không có nhãn để cải thiện độ chính xác."
+    },
+    {
+        "question": "Điều gì phân biệt học tăng cường với các phương pháp học khác?",
+        "options": {
+            "A": "Sử dụng dữ liệu có nhãn",
+            "B": "Học từ dữ liệu không có nhãn",
+            "C": "Học qua phần thưởng và hình phạt",
+            "D": "Không cái nào ở trên"
+        },
+        "answer": "Học qua phần thưởng và hình phạt",
+        "explanation": "Học tăng cường được đặc trưng bởi việc sử dụng phần thưởng và hình phạt để hướng dẫn quá trình học của một tác nhân theo thời gian."
+    },
+    {
+        "question": "Hàm nào trong Python có thể phân loại dữ liệu sử dụng k-láng giềng gần nhất (KNN)?",
+        "options": {
+            "A": "knn_classifier()",
+            "B": "KNeighborsClassifier()",
+            "C": "classify_neighbors()",
+            "D": "knn_predict()"
+        },
+        "answer": "KNeighborsClassifier()",
+        "explanation": "Hàm KNeighborsClassifier() từ sklearn được dùng để phân loại dữ liệu dựa trên thuật toán K-nearest neighbors."
+    },
+    {
+        "question": "Nếu một mô hình học có giám sát hoạt động kém trên cả tập huấn luyện và kiểm thử, vấn đề có thể là gì?",
+        "options": {
+            "A": "Overfitting",
+            "B": "Underfitting",
+            "C": "Lỗi dữ liệu",
+            "D": "Độ phức tạp của mô hình"
+        },
+        "answer": "Underfitting",
+        "explanation": "Underfitting xảy ra khi mô hình quá đơn giản và không thể nắm bắt cấu trúc tiềm ẩn của dữ liệu, dẫn đến hiệu suất kém trên cả tập huấn luyện và kiểm thử."
+    },
+    {
+        "question": "Trong học có giám sát, loại dữ liệu nào được dùng để huấn luyện mô hình?",
+        "options": {
+            "A": "Dữ liệu có nhãn",
+            "B": "Dữ liệu không có nhãn",
+            "C": "Dữ liệu ngẫu nhiên",
+            "D": "Dữ liệu nhiễu"
+        },
+        "answer": "Dữ liệu có nhãn",
+        "explanation": "Học có giám sát sử dụng dữ liệu có nhãn, nơi cả đầu vào và đầu ra được cung cấp để huấn luyện mô hình."
+    },
+    {
+        "question": "Ví dụ nào sau đây là một thuật toán học có giám sát?",
+        "options": {
+            "A": "K-Means",
+            "B": "Hồi quy tuyến tính",
+            "C": "PCA",
+            "D": "DBSCAN"
+        },
+        "answer": "Hồi quy tuyến tính",
+        "explanation": "Hồi quy tuyến tính là thuật toán học có giám sát dùng để dự đoán các giá trị liên tục dựa trên dữ liệu có nhãn."
+    },
+    {
+        "question": "Đặc trưng chính của học có giám sát là gì?",
+        "options": {
+            "A": "Chỉ sử dụng dữ liệu đầu vào",
+            "B": "Sử dụng dữ liệu có nhãn",
+            "C": "Không yêu cầu dữ liệu",
+            "D": "Sử dụng dữ liệu nhiễu"
+        },
+        "answer": "Sử dụng dữ liệu có nhãn",
+        "explanation": "Học có giám sát dựa vào dữ liệu có nhãn để huấn luyện mô hình, cung cấp cả thông tin đầu vào và đầu ra."
+    },
+    {
+        "question": "Mục tiêu chính của học có giám sát là gì?",
+        "options": {
+            "A": "Tìm mẫu trong dữ liệu không có nhãn",
+            "B": "Huấn luyện mô hình sử dụng dữ liệu có nhãn",
+            "C": "Tăng cường phần cứng máy tính",
+            "D": "Chia tập dữ liệu"
+        },
+        "answer": "Huấn luyện mô hình sử dụng dữ liệu có nhãn",
+        "explanation": "Mục tiêu của học có giám sát là huấn luyện mô hình sử dụng dữ liệu có nhãn để dự đoán kết quả dựa trên đặc trưng đầu vào."
+    },
+    {
+        "question": "Trong học có giám sát, nhiệm vụ nào là ví dụ của phân loại?",
+        "options": {
+            "A": "Dự đoán giá nhà",
+            "B": "Nhận diện email rác",
+            "C": "Dự báo nhiệt độ",
+            "D": "Phân cụm các mục giống nhau"
+        },
+        "answer": "Nhận diện email rác",
+        "explanation": "Nhiệm vụ phân loại trong học có giám sát liên quan tới gán dữ liệu vào các nhãn đã định, ví dụ như nhận diện email có phải là rác hay không."
+    },
+    {
+        "question": "Sự khác biệt giữa phân loại và hồi quy trong học có giám sát là gì?",
+        "options": {
+            "A": "Phân loại dự đoán giá trị liên tục",
+            "B": "Hồi quy dự đoán nhãn phân loại",
+            "C": "Phân loại dự đoán nhãn",
+            "D": "Hồi quy sử dụng dữ liệu không có nhãn"
+        },
+        "answer": "Phân loại dự đoán nhãn",
+        "explanation": "Trong học có giám sát, phân loại dự đoán nhãn phân loại, trong khi hồi quy dự đoán giá trị liên tục."
+    },
+    {
+        "question": "Hàm nào trong Python dùng để triển khai hồi quy tuyến tính trong sklearn?",
+        "options": {
+            "A": "LinearRegression()",
+            "B": "lin_reg()",
+            "C": "linear_model()",
+            "D": "regression_fit()"
+        },
+        "answer": "LinearRegression()",
+        "explanation": "Hàm LinearRegression() trong sklearn được dùng để triển khai hồi quy tuyến tính, một kỹ thuật học có giám sát để dự đoán giá trị liên tục."
+    },
+    {
+        "question": "Làm thế nào để tính độ chính xác của mô hình phân loại trong sklearn?",
+        "options": {
+            "A": "accuracy_score()",
+            "B": "calc_accuracy()",
+            "C": "model_accuracy()",
+            "D": "predict_accuracy()"
+        },
+        "answer": "accuracy_score()",
+        "explanation": "Hàm accuracy_score() trong sklearn dùng để tính độ chính xác của mô hình phân loại bằng cách so sánh nhãn dự đoán với nhãn thực tế."
+    },
+    {
+        "question": "Phương pháp nào có thể dùng để cross-validate một mô hình trong học có giám sát bằng sklearn?",
+        "options": {
+            "A": "cross_val_score()",
+            "B": "validate_model()",
+            "C": "cross_validate()",
+            "D": "k_fold_score()"
+        },
+        "answer": "cross_val_score()",
+        "explanation": "Hàm cross_val_score() trong sklearn được dùng để cross-validate một mô hình học có giám sát, giúp đánh giá hiệu suất trên các tập con khác nhau của dữ liệu."
+    },
+    {
+        "question": "Một mô hình phân loại hoạt động tốt trên dữ liệu huấn luyện nhưng kém trên dữ liệu kiểm thử. Vấn đề là gì?",
+        "options": {
+            "A": "Overfitting",
+            "B": "Underfitting",
+            "C": "Mất cân bằng dữ liệu",
+            "D": "Lỗi dữ liệu kiểm thử"
+        },
+        "answer": "Overfitting",
+        "explanation": "Overfitting xảy ra khi mô hình học quá mức dữ liệu huấn luyện, kể cả nhiễu, dẫn đến hiệu suất kém trên dữ liệu kiểm thử chưa thấy."
+    },
+    {
+        "question": "Một mô hình hồi quy có phương sai rất thấp nhưng độ thiên vị cao. Vấn đề có thể là gì?",
+        "options": {
+            "A": "Overfitting",
+            "B": "Underfitting",
+            "C": "Mất cân bằng dữ liệu",
+            "D": "Dữ liệu có chiều cao"
+        },
+        "answer": "Underfitting",
+        "explanation": "Độ thiên vị cao và phương sai thấp cho thấy underfitting, khi mô hình quá đơn giản để nắm bắt các mẫu tiềm ẩn trong dữ liệu."
+    },
+    {
+        "question": "Khi sử dụng cross-validation, mô hình hoạt động kém trên tất cả các fold. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Overfitting",
+            "B": "Underfitting",
+            "C": "Chọn mô hình kém",
+            "D": "Dữ liệu không đủ"
+        },
+        "answer": "Underfitting",
+        "explanation": "Khi mô hình hoạt động kém trên tất cả các fold trong cross-validation, khả năng cao là underfitting, nghĩa là mô hình không thể nắm bắt các mẫu trong dữ liệu huấn luyện."
+    },
+    {
+        "question": "Mục tiêu chính của học không giám sát là gì?",
+        "options": {
+            "A": "Gán nhãn dữ liệu",
+            "B": "Phân loại dữ liệu",
+            "C": "Tìm mẫu trong dữ liệu không có nhãn",
+            "D": "Chia dữ liệu"
+        },
+        "answer": "Tìm mẫu trong dữ liệu không có nhãn",
+        "explanation": "Học không giám sát tập trung vào việc xác định các mẫu hoặc cấu trúc ẩn trong dữ liệu mà không có nhãn đầu ra."
+    },
+    {
+        "question": "Ví dụ nào sau đây là học không giám sát?",
+        "options": {
+            "A": "Cây quyết định",
+            "B": "K-Means Clustering",
+            "C": "Hồi quy tuyến tính",
+            "D": "Hồi quy logistic"
+        },
+        "answer": "K-Means Clustering",
+        "explanation": "K-Means Clustering là thuật toán học không giám sát phổ biến dùng để phân chia dữ liệu thành các cụm dựa trên độ tương đồng."
+    },
+    {
+        "question": "Học không giám sát làm việc với loại dữ liệu nào?",
+        "options": {
+            "A": "Dữ liệu có nhãn",
+            "B": "Dữ liệu không có nhãn",
+            "C": "Cả dữ liệu có và không có nhãn",
+            "D": "Dữ liệu nhiễu"
+        },
+        "answer": "Dữ liệu không có nhãn",
+        "explanation": "Học không giám sát làm việc với dữ liệu không có nhãn, nhằm tìm cấu trúc hoặc mẫu mà không cần kết quả định trước."
+    },
+    {
+        "question": "Nhiệm vụ nào thường được giải quyết bởi học không giám sát?",
+        "options": {
+            "A": "Phân loại",
+            "B": "Hồi quy",
+            "C": "Phân cụm",
+            "D": "Dự báo chuỗi thời gian"
+        },
+        "answer": "Phân cụm",
+        "explanation": "Học không giám sát thường được dùng cho phân cụm, nhiệm vụ gom các điểm dữ liệu tương tự lại với nhau mà không có nhãn trước."
+    },
+    {
+        "question": "Phương pháp nào được dùng để giảm số chiều trong học không giám sát?",
+        "options": {
+            "A": "K-Means Clustering",
+            "B": "Phân tích thành phần chính (PCA)",
+            "C": "Hồi quy logistic",
+            "D": "Support Vector Machines (SVM)"
+        },
+        "answer": "Phân tích thành phần chính (PCA)",
+        "explanation": "PCA là kỹ thuật không giám sát dùng để giảm số chiều, giúp giữ lại các mẫu quan trọng trong khi giảm số lượng đặc trưng."
+    },
+    {
+        "question": "Sự khác biệt giữa phân cụm phân cấp và K-Means là gì?",
+        "options": {
+            "A": "K-Means nhanh hơn",
+            "B": "Phân cụm phân cấp không yêu cầu xác định số cụm trước",
+            "C": "Phân cụm phân cấp luôn chính xác hơn",
+            "D": "K-Means hoạt động tốt hơn trên tập dữ liệu lớn"
+        },
+        "answer": "Phân cụm phân cấp không yêu cầu xác định số cụm trước",
+        "explanation": "Phân cụm phân cấp không yêu cầu số cụm được xác định trước, trong khi K-Means cần số cụm; phân cụm phân cấp xây dựng cấu trúc cây của các cụm."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai K-Means?",
+        "options": {
+            "A": "KMeansClustering()",
+            "B": "KMeans()",
+            "C": "ClusteringK()",
+            "D": "cluster_KMeans()"
+        },
+        "answer": "KMeans()",
+        "explanation": "Hàm KMeans() trong sklearn được dùng để thực hiện K-Means clustering, phân chia dữ liệu thành cụm dựa trên khoảng cách tới các centroid."
+    },
+    {
+        "question": "Thư viện Python nào có thể dùng để thực hiện DBSCAN?",
+        "options": {
+            "A": "sklearn",
+            "B": "numpy",
+            "C": "pandas",
+            "D": "matplotlib"
+        },
+        "answer": "sklearn",
+        "explanation": "Thư viện sklearn cung cấp implement của thuật toán DBSCAN cho phân cụm, một kỹ thuật không giám sát dựa trên mật độ."
+    },
+    {
+        "question": "Làm thế nào để trực quan hóa các cụm từ K-Means bằng matplotlib?",
+        "options": {
+            "A": "plot_clusters()",
+            "B": "plt.scatter()",
+            "C": "cluster_plot()",
+            "D": "plot_kmeans()"
+        },
+        "answer": "plt.scatter()",
+        "explanation": "Hàm plt.scatter() trong matplotlib có thể dùng để vẽ trực quan các cụm tạo bởi K-Means bằng cách vẽ các điểm dữ liệu trên biểu đồ scatter."
+    },
+    {
+        "question": "Mô hình K-Means tạo ra các cụm có kích thước không đều. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Mô hình overfitting",
+            "B": "Phân bố dữ liệu",
+            "C": "Khởi tạo cụm",
+            "D": "Thiếu dữ liệu"
+        },
+        "answer": "Phân bố dữ liệu",
+        "explanation": "Kích thước cụm không đều có thể do phân bố tự nhiên của dữ liệu. K-Means giả định các cụm có kích thước và mật độ tương tự."
+    },
+    {
+        "question": "Mô hình DBSCAN không phân cụm được một số điểm. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Các điểm quá gần nhau",
+            "B": "Tham số mật độ quá cao",
+            "C": "Nhiễu trong dữ liệu",
+            "D": "Sai thuật toán phân cụm"
+        },
+        "answer": "Nhiễu trong dữ liệu",
+        "explanation": "DBSCAN có thể không phân cụm một số điểm nếu chúng được coi là nhiễu, tức là các điểm không thuộc cụm theo yêu cầu về mật độ."
+    },
+    {
+        "question": "Kết quả K-Means thay đổi với các khởi tạo khác nhau. Giải pháp nào giúp khắc phục?",
+        "options": {
+            "A": "Khởi tạo random state",
+            "B": "Giảm số cụm",
+            "C": "Tăng số đặc trưng",
+            "D": "Chuẩn hóa dữ liệu"
+        },
+        "answer": "Khởi tạo random state",
+        "explanation": "Khởi tạo random state giúp đạt kết quả ổn định bằng cách đảm bảo các centroid ban đầu giống nhau giữa các lần chạy."
+    },
+    {
+        "question": "Mục tiêu chính của hồi quy trong học máy là gì?",
+        "options": {
+            "A": "Phân loại dữ liệu",
+            "B": "Dự đoán giá trị liên tục",
+            "C": "Phân cụm dữ liệu",
+            "D": "Giảm số chiều"
+        },
+        "answer": "Dự đoán giá trị liên tục",
+        "explanation": "Mô hình hồi quy được dùng để dự đoán các giá trị liên tục dựa trên dữ liệu đầu vào."
+    },
+    {
+        "question": "Ví dụ nào sau đây là bài toán hồi quy tuyến tính?",
+        "options": {
+            "A": "Dự đoán xác suất người dùng nhấp vào quảng cáo",
+            "B": "Dự đoán giá nhà",
+            "C": "Phân loại email",
+            "D": "Phát hiện giao dịch gian lận"
+        },
+        "answer": "Dự đoán giá nhà",
+        "explanation": "Hồi quy tuyến tính thường được dùng để dự đoán giá trị liên tục như giá nhà dựa trên các biến đầu vào."
+    },
+    {
+        "question": "Mục đích của hàm chi phí trong hồi quy tuyến tính là gì?",
+        "options": {
+            "A": "Tìm cụm trong dữ liệu",
+            "B": "Giảm thiểu sai số giữa giá trị dự đoán và giá trị thực",
+            "C": "Dự đoán nhãn",
+            "D": "Tối đa hóa độ chính xác"
+        },
+        "answer": "Giảm thiểu sai số giữa giá trị dự đoán và giá trị thực",
+        "explanation": "Hàm chi phí trong hồi quy tuyến tính tính sai số giữa giá trị dự đoán và giá trị thực, và thuật toán tối tiểu hóa sai số này trong quá trình huấn luyện."
+    },
+    {
+        "question": "Giả thiết tuyến tính trong hồi quy tuyến tính là gì?",
+        "options": {
+            "A": "Mối quan hệ giữa các biến là phi tuyến",
+            "B": "Mối quan hệ giữa các biến là tuyến tính",
+            "C": "Các biến phụ thuộc lẫn nhau",
+            "D": "Dữ liệu là không dừng"
+        },
+        "answer": "Mối quan hệ giữa các biến là tuyến tính",
+        "explanation": "Hồi quy tuyến tính giả định mối quan hệ tuyến tính giữa biến phụ thuộc và các biến độc lập."
+    },
+    {
+        "question": "Multicollinearity trong hồi quy là gì?",
+        "options": {
+            "A": "Khi các biến dự đoán độc lập",
+            "B": "Khi các biến dự đoán có tương quan cao",
+            "C": "Khi predictor có giá trị thiếu",
+            "D": "Khi predictor không liên quan"
+        },
+        "answer": "Khi các biến dự đoán có tương quan cao",
+        "explanation": "Multicollinearity xảy ra khi các biến độc lập trong mô hình hồi quy có tương quan cao, dẫn tới ước lượng hệ số không đáng tin cậy."
+    },
+    {
+        "question": "Trong hồi quy đa thức, bậc của đa thức là gì?",
+        "options": {
+            "A": "Số lượng điểm dữ liệu",
+            "B": "Số lượng đặc trưng",
+            "C": "Lũy thừa cao nhất của biến dự đoán",
+            "D": "Số lượng cụm"
+        },
+        "answer": "Lũy thừa cao nhất của biến dự đoán",
+        "explanation": "Trong hồi quy đa thức, bậc của đa thức là lũy thừa cao nhất của biến dự đoán trong phương trình hồi quy."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai hồi quy tuyến tính?",
+        "options": {
+            "A": "lin_reg()",
+            "B": "LinearRegression()",
+            "C": "regression()",
+            "D": "fit_regression()"
+        },
+        "answer": "LinearRegression()",
+        "explanation": "Hàm LinearRegression() trong sklearn được dùng để triển khai hồi quy tuyến tính trong Python, giúp dự đoán giá trị liên tục dựa trên đặc trưng đầu vào."
+    },
+    {
+        "question": "Làm thế nào để tính Mean Squared Error (MSE) của một mô hình hồi quy trong sklearn?",
+        "options": {
+            "A": "mean_squared_error()",
+            "B": "calculate_mse()",
+            "C": "regression_mse()",
+            "D": "mse_calc()"
+        },
+        "answer": "mean_squared_error()",
+        "explanation": "Hàm mean_squared_error() trong sklearn tính Mean Squared Error (MSE), một chỉ số phổ biến để đánh giá độ chính xác của mô hình hồi quy."
+    },
+    {
+        "question": "Thư viện nào được sử dụng để triển khai hồi quy Ridge trong Python?",
+        "options": {
+            "A": "numpy",
+            "B": "pandas",
+            "C": "sklearn",
+            "D": "matplotlib"
+        },
+        "answer": "sklearn",
+        "explanation": "Thư viện sklearn cung cấp triển khai hồi quy Ridge, một dạng hồi quy tuyến tính có điều chuẩn giúp tránh overfitting bằng cách thêm một hạng tử phạt."
+    },
+    {
+        "question": "Một mô hình hồi quy tuyến tính có giá trị R-squared cao nhưng hiệu năng dự đoán trên dữ liệu test thấp. Vấn đề có thể là gì?",
+        "options": {
+            "A": "Quá khớp (Overfitting)",
+            "B": "Không khớp (Underfitting)",
+            "C": "Rò rỉ dữ liệu (Data leakage)",
+            "D": "Dữ liệu không đủ"
+        },
+        "answer": "Quá khớp (Overfitting)",
+        "explanation": "Quá khớp xảy ra khi mô hình học quá sát dữ liệu huấn luyện, kể cả nhiễu, dẫn đến khả năng tổng quát hóa kém trên dữ liệu mới."
+    },
+    {
+        "question": "Một mô hình hồi quy có phương sai cao nhưng độ chệch thấp. Vấn đề có thể là gì?",
+        "options": {
+            "A": "Quá khớp (Overfitting)",
+            "B": "Không khớp (Underfitting)",
+            "C": "Đa cộng tuyến (Multicollinearity)",
+            "D": "Không gian đặc trưng cao (High-dimensionality)"
+        },
+        "answer": "Quá khớp (Overfitting)",
+        "explanation": "Phương sai cao và độ chệch thấp thường chỉ ra hiện tượng quá khớp, khi mô hình nắm bắt quá nhiều chi tiết của dữ liệu huấn luyện và hoạt động kém trên dữ liệu chưa thấy."
+    },
+    {
+        "question": "Mô hình hồi quy Ridge cho kết quả không ổn định. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Tham số điều chuẩn sai",
+            "B": "Quá nhiều đặc trưng",
+            "C": "Không khớp (Underfitting)",
+            "D": "Hàm mất mát sai"
+        },
+        "answer": "Tham số điều chuẩn sai",
+        "explanation": "Hồi quy Ridge phụ thuộc vào tham số điều chuẩn để cân bằng giữa khớp dữ liệu và giữ hệ số nhỏ. Thiết lập sai có thể gây ra kết quả không ổn định."
+    },
+    {
+        "question": "Mục tiêu của phân loại (classification) trong học máy là gì?",
+        "options": {
+            "A": "Phân cụm dữ liệu",
+            "B": "Dự đoán giá trị liên tục",
+            "C": "Phân loại dữ liệu vào các lớp đã định trước",
+            "D": "Giảm chiều dữ liệu"
+        },
+        "answer": "Phân loại dữ liệu vào các lớp đã định trước",
+        "explanation": "Thuật toán phân loại được dùng để gán nhãn dữ liệu vào các lớp hoặc nhãn đã biết dựa trên các đặc trưng đầu vào."
+    },
+    {
+        "question": "Ví dụ nào sau đây là bài toán phân loại nhị phân?",
+        "options": {
+            "A": "Dự đoán giá nhà",
+            "B": "Phân loại email là spam hay không spam",
+            "C": "Phân cụm khách hàng",
+            "D": "Dự đoán nhiệt độ"
+        },
+        "answer": "Phân loại email là spam hay không spam",
+        "explanation": "Phân loại nhị phân liên quan đến dự đoán một trong hai lớp có thể có, ví dụ phân loại email là spam hoặc không spam."
+    },
+    {
+        "question": "Mục đích của ma trận nhầm lẫn (confusion matrix) trong bài toán phân loại là gì?",
+        "options": {
+            "A": "Đánh giá kết quả phân cụm",
+            "B": "Đánh giá độ chính xác của phân loại",
+            "C": "Xác định phân bố dữ liệu",
+            "D": "Dự đoán giá trị liên tục"
+        },
+        "answer": "Đánh giá độ chính xác của phân loại",
+        "explanation": "Ma trận nhầm lẫn dùng để đánh giá hiệu suất của thuật toán phân loại bằng cách hiển thị true positives, false positives, true negatives và false negatives."
+    },
+    {
+        "question": "Chỉ số nào phù hợp nhất cho bộ dữ liệu phân loại mất cân bằng (imbalanced)?",
+        "options": {
+            "A": "Accuracy",
+            "B": "Precision",
+            "C": "Recall",
+            "D": "F1-Score"
+        },
+        "answer": "F1-Score",
+        "explanation": "F1-Score kết hợp cả precision và recall, khiến nó phù hợp hơn cho các bộ dữ liệu mất cân bằng nơi một lớp chiếm ưu thế."
+    },
+    {
+        "question": "Sự khác biệt chính giữa logistic regression và linear regression là gì?",
+        "options": {
+            "A": "Logistic regression dùng cho phân loại",
+            "B": "Linear regression dùng cho phân loại",
+            "C": "Logistic regression dự đoán giá trị liên tục",
+            "D": "Linear regression dùng nhãn phân loại"
+        },
+        "answer": "Logistic regression dùng cho phân loại",
+        "explanation": "Logistic regression dùng cho phân loại nhị phân hoặc đa lớp, trong khi linear regression dùng để dự đoán giá trị liên tục."
+    },
+    {
+        "question": "Thuật toán nào sau đây thường được dùng cho phân loại đa lớp?",
+        "options": {
+            "A": "K-Means",
+            "B": "Naive Bayes",
+            "C": "KNN",
+            "D": "Logistic Regression"
+        },
+        "answer": "Naive Bayes",
+        "explanation": "Naive Bayes thường được dùng cho các bài toán phân loại đa lớp, cung cấp kết quả phân loại theo xác suất."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai logistic regression?",
+        "options": {
+            "A": "log_regression()",
+            "B": "LogisticRegression()",
+            "C": "reg_log()",
+            "D": "log_reg()"
+        },
+        "answer": "LogisticRegression()",
+        "explanation": "Hàm LogisticRegression() trong sklearn được dùng để triển khai logistic regression cho bài toán phân loại nhị phân hoặc đa lớp."
+    },
+    {
+        "question": "Làm thế nào để tính điểm precision trong bài toán phân loại bằng sklearn?",
+        "options": {
+            "A": "precision_score()",
+            "B": "precision()",
+            "C": "calc_precision()",
+            "D": "precision_calc()"
+        },
+        "answer": "precision_score()",
+        "explanation": "Hàm precision_score() trong sklearn được dùng để tính precision của một mô hình phân loại, đo lường độ chính xác của dự đoán dương."
+    },
+    {
+        "question": "Thư viện nào được dùng để triển khai cây quyết định (decision tree) trong Python?",
+        "options": {
+            "A": "numpy",
+            "B": "pandas",
+            "C": "sklearn",
+            "D": "matplotlib"
+        },
+        "answer": "sklearn",
+        "explanation": "Thư viện sklearn cung cấp triển khai cây quyết định, một thuật toán phân loại phổ biến dựa trên việc phân tách đặc trưng."
+    },
+    {
+        "question": "Mô hình phân loại có độ chính xác cao nhưng recall thấp. Điều này chỉ ra gì?",
+        "options": {
+            "A": "Mô hình bị quá khớp",
+            "B": "Mô hình có nhiều false negatives",
+            "C": "Mô hình có nhiều false positives",
+            "D": "Dữ liệu bị mất cân bằng"
+        },
+        "answer": "Mô hình có nhiều false negatives",
+        "explanation": "Recall thấp cho thấy mô hình bỏ sót nhiều ví dụ dương, dẫn đến nhiều false negatives mặc dù tổng thể có thể có độ chính xác cao."
+    },
+    {
+        "question": "Mô hình logistic regression bị quá khớp trên dữ liệu huấn luyện. Có thể làm gì để giảm điều này?",
+        "options": {
+            "A": "Giảm kích thước dữ liệu huấn luyện",
+            "B": "Tăng số lượng đặc trưng",
+            "C": "Áp dụng điều chuẩn (regularization)",
+            "D": "Dùng learning rate cao hơn"
+        },
+        "answer": "Áp dụng điều chuẩn (regularization)",
+        "explanation": "Kỹ thuật điều chuẩn như L1 hoặc L2 giúp giảm overfitting bằng cách phạt các hệ số lớn trong logistic regression."
+    },
+    {
+        "question": "Cây quyết định có độ sâu rất lớn và hoạt động kém trên dữ liệu test. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Quá khớp",
+            "B": "Không khớp",
+            "C": "Dữ liệu huấn luyện không đủ",
+            "D": "Hàm mất mát sai"
+        },
+        "answer": "Quá khớp",
+        "explanation": "Độ sâu lớn trong cây quyết định thường dẫn đến quá khớp, khi mô hình quá phức tạp và nắm bắt nhiễu trong dữ liệu huấn luyện, gây hiệu năng kém trên dữ liệu test."
+    },
+    {
+        "question": "Cây quyết định trong học máy là gì?",
+        "options": {
+            "A": "Mô hình cho bài toán hồi quy",
+            "B": "Mô hình cho phân cụm",
+            "C": "Cấu trúc dạng cây để ra quyết định",
+            "D": "Phương pháp giảm chiều dữ liệu"
+        },
+        "answer": "Cấu trúc dạng cây để ra quyết định",
+        "explanation": "Cây quyết định là thuật toán học có giám sát sử dụng cấu trúc dạng cây để dự đoán kết quả dựa trên các đặc trưng đầu vào."
+    },
+    {
+        "question": "Mục đích của việc pruning trong cây quyết định là gì?",
+        "options": {
+            "A": "Tăng độ sâu của cây",
+            "B": "Giảm kích thước của cây",
+            "C": "Cải thiện tốc độ huấn luyện",
+            "D": "Ngăn chặn overfitting"
+        },
+        "answer": "Ngăn chặn overfitting",
+        "explanation": "Pruning giúp ngăn chặn overfitting bằng cách giảm độ phức tạp của cây, loại bỏ các nhánh không đóng góp đáng kể cho độ chính xác."
+    },
+    {
+        "question": "Cây quyết định phân tách dữ liệu ở mỗi nút như thế nào?",
+        "options": {
+            "A": "Bằng cách tối đa hóa độ chính xác",
+            "B": "Bằng cách giảm khoảng cách giữa các điểm dữ liệu",
+            "C": "Bằng cách tối đa hóa thông tin thu được (information gain)",
+            "D": "Bằng cách sử dụng phân tách ngẫu nhiên"
+        },
+        "answer": "Bằng cách tối đa hóa thông tin thu được (information gain)",
+        "explanation": "Cây quyết định chọn đặc trưng phân tách dựa trên mức tăng thông tin lớn nhất, giảm sự không chắc chắn về biến mục tiêu."
+    },
+    {
+        "question": "Ưu điểm chính của Random Forest so với một cây quyết định đơn lẻ là gì?",
+        "options": {
+            "A": "Giảm độ phức tạp của mô hình",
+            "B": "Giảm overfitting",
+            "C": "Tăng độ sâu của các cây",
+            "D": "Sử dụng ít đặc trưng hơn"
+        },
+        "answer": "Giảm overfitting",
+        "explanation": "Random Forest giảm overfitting bằng cách kết hợp dự đoán từ nhiều cây quyết định, dẫn đến dự đoán chắc chắn và chính xác hơn."
+    },
+    {
+        "question": "Vai trò của entropy trong cây quyết định là gì?",
+        "options": {
+            "A": "Đo độ đồng nhất của dữ liệu",
+            "B": "Đo độ chính xác của mô hình",
+            "C": "Đo khoảng cách giữa các điểm dữ liệu",
+            "D": "Tính chiều cao của cây"
+        },
+        "answer": "Đo độ đồng nhất của dữ liệu",
+        "explanation": "Entropy đo độ đồng nhất của dữ liệu tại mỗi nút; entropy thấp nghĩa là nhóm dữ liệu đồng nhất hơn. Cây quyết định phân tách để giảm entropy."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai cây quyết định?",
+        "options": {
+            "A": "DecisionTree()",
+            "B": "TreeDecision()",
+            "C": "DecisionTreeClassifier()",
+            "D": "ClassifierTree()"
+        },
+        "answer": "DecisionTreeClassifier()",
+        "explanation": "Hàm DecisionTreeClassifier() trong sklearn được dùng để triển khai cây quyết định cho các bài toán phân loại."
+    },
+    {
+        "question": "Làm thế nào để trực quan hóa một cây quyết định trong Python sử dụng sklearn?",
+        "options": {
+            "A": "visualize_tree()",
+            "B": "plot_tree()",
+            "C": "draw_tree()",
+            "D": "show_tree()"
+        },
+        "answer": "plot_tree()",
+        "explanation": "Hàm plot_tree() trong sklearn cho phép trực quan hóa cấu trúc cây quyết định, hiển thị cách dữ liệu được phân tách tại mỗi nút."
+    },
+    {
+        "question": "Hàm nào của sklearn được dùng để triển khai Random Forest Classifier?",
+        "options": {
+            "A": "RandomForest()",
+            "B": "ForestClassifier()",
+            "C": "RandomForestClassifier()",
+            "D": "RandomClass()"
+        },
+        "answer": "RandomForestClassifier()",
+        "explanation": "Hàm RandomForestClassifier() trong sklearn được dùng để triển khai mô hình Random Forest cho các bài toán phân loại."
+    },
+    {
+        "question": "Tham số max_depth trong mô hình cây quyết định ảnh hưởng như thế nào đến hiệu suất?",
+        "options": {
+            "A": "Điều khiển số lượng đặc trưng",
+            "B": "Điều khiển độ sâu của cây",
+            "C": "Điều khiển số lượng mẫu",
+            "D": "Điều khiển số lượng cây"
+        },
+        "answer": "Điều khiển độ sâu của cây",
+        "explanation": "Tham số max_depth điều khiển độ sâu tối đa của cây. Độ sâu lớn hơn cho phép cây khớp nhiều chi tiết hơn nhưng có thể dẫn đến overfitting nếu quá cao."
+    },
+    {
+        "question": "Cách nào để xử lý khi cây quyết định quá khớp dữ liệu huấn luyện?",
+        "options": {
+            "A": "Tăng độ sâu cây",
+            "B": "Sử dụng ít đặc trưng hơn",
+            "C": "Prune (cắt tỉa) cây",
+            "D": "Tăng dữ liệu huấn luyện"
+        },
+        "answer": "Prune (cắt tỉa) cây",
+        "explanation": "Cắt tỉa giúp giảm độ phức tạp bằng cách loại bỏ các nhánh không cần thiết, ngăn chặn mô hình học nhiễu."
+    },
+    {
+        "question": "Mô hình Random Forest cho dự đoán không ổn định trên các tập dữ liệu khác nhau. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Không đủ số lượng cây",
+            "B": "Quá nhiều đặc trưng",
+            "C": "Quá khớp ở các cây riêng lẻ",
+            "D": "Không có tính ngẫu nhiên trong dữ liệu"
+        },
+        "answer": "Quá khớp ở các cây riêng lẻ",
+        "explanation": "Dự đoán không ổn định có thể xảy ra nếu các cây riêng lẻ trong Random Forest bị quá khớp. Tăng tính ngẫu nhiên trong mỗi cây có thể giúp giảm vấn đề này."
+    },
+    {
+        "question": "Cây quyết định có hiệu suất kém trên dữ liệu test nhưng rất tốt trên dữ liệu huấn luyện. Vấn đề là gì?",
+        "options": {
+            "A": "Phương sai cao",
+            "B": "Không khớp",
+            "C": "Quá khớp",
+            "D": "Mất cân bằng dữ liệu"
+        },
+        "answer": "Quá khớp",
+        "explanation": "Hiệu suất tuyệt vời trên dữ liệu huấn luyện và kém trên dữ liệu test cho thấy hiện tượng quá khớp, khi mô hình nắm bắt nhiễu và không tổng quát hoá tốt."
+    },
+    {
+        "question": "Mục tiêu chính của các thuật toán phân cụm (clustering) là gì?",
+        "options": {
+            "A": "Gán nhãn dữ liệu",
+            "B": "Phân loại dữ liệu",
+            "C": "Nhóm những điểm dữ liệu giống nhau",
+            "D": "Giảm chiều dữ liệu"
+        },
+        "answer": "Nhóm những điểm dữ liệu giống nhau",
+        "explanation": "Thuật toán phân cụm nhằm nhóm những điểm dữ liệu tương tự nhau dựa trên một số tiêu chí, mà không sử dụng dữ liệu có nhãn."
+    },
+    {
+        "question": "Thuật toán phân cụm nào sau đây là dựa trên mật độ?",
+        "options": {
+            "A": "K-Means",
+            "B": "DBSCAN",
+            "C": "Phân cụm phân cấp (Hierarchical clustering)",
+            "D": "Agglomerative clustering"
+        },
+        "answer": "DBSCAN",
+        "explanation": "DBSCAN là thuật toán phân cụm dựa trên mật độ phổ biến, nhóm các điểm dựa trên mật độ trong không gian đặc trưng."
+    },
+    {
+        "question": "Sự khác biệt chính giữa K-Means và phân cụm phân cấp là gì?",
+        "options": {
+            "A": "K-Means yêu cầu số lượng cụm xác định trước",
+            "B": "Phân cụm phân cấp nhanh hơn",
+            "C": "K-Means không cần metric khoảng cách",
+            "D": "Phân cụm phân cấp không thể dùng cho dữ liệu lớn"
+        },
+        "answer": "K-Means yêu cầu số lượng cụm xác định trước",
+        "explanation": "K-Means yêu cầu chỉ định trước số lượng cụm, trong khi phân cụm phân cấp không cần."
+    },
+    {
+        "question": "Thuật toán phân cụm nào không yêu cầu chỉ định số lượng cụm trước?",
+        "options": {
+            "A": "K-Means",
+            "B": "DBSCAN",
+            "C": "K-Nearest Neighbors",
+            "D": "PCA"
+        },
+        "answer": "DBSCAN",
+        "explanation": "DBSCAN không yêu cầu chỉ định số cụm trước, vì nó xác định cụm dựa trên mật độ của các điểm trong dữ liệu."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai K-Means?",
+        "options": {
+            "A": "kmeans_clustering()",
+            "B": "KMeans()",
+            "C": "cluster_means()",
+            "D": "cluster_KMeans()"
+        },
+        "answer": "KMeans()",
+        "explanation": "Hàm KMeans() trong sklearn được dùng để triển khai thuật toán K-Means trong Python."
+    },
+    {
+        "question": "Làm thế nào để chỉ định số lượng cụm trong K-Means bằng sklearn?",
+        "options": {
+            "A": "num_clusters()",
+            "B": "cluster_count()",
+            "C": "n_clusters",
+            "D": "num_clust"
+        },
+        "answer": "n_clusters",
+        "explanation": "Tham số n_clusters trong KMeans() chỉ định số lượng cụm mà thuật toán sẽ tạo ra."
+    },
+    {
+        "question": "Hàm nào được dùng để triển khai DBSCAN trong sklearn?",
+        "options": {
+            "A": "dbscan_clustering()",
+            "B": "DBSCAN()",
+            "C": "density_cluster()",
+            "D": "cluster_density"
+        },
+        "answer": "DBSCAN()",
+        "explanation": "Hàm DBSCAN() trong sklearn được dùng để triển khai DBSCAN, thuật toán phân cụm dựa trên mật độ."
+    },
+    {
+        "question": "Trong K-Means, hiệu ứng của việc dùng số lượng cụm lớn (n_clusters) là gì?",
+        "options": {
+            "A": "Tăng overfitting",
+            "B": "Tăng số vòng lặp",
+            "C": "Tăng tính ngẫu nhiên",
+            "D": "Cải thiện độ chính xác"
+        },
+        "answer": "Tăng overfitting",
+        "explanation": "Sử dụng nhiều cụm có thể dẫn đến overfitting, khi thuật toán cố gắng khớp từng cụm với các điểm cụ thể, giảm khả năng tổng quát."
+    },
+    {
+        "question": "Mô hình K-Means tạo ra các cụm có kích thước rất khác nhau. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Metric khoảng cách sai",
+            "B": "Dữ liệu chưa được chuẩn hoá",
+            "C": "Overfitting",
+            "D": "Không gian đặc trưng cao"
+        },
+        "answer": "Dữ liệu chưa được chuẩn hoá",
+        "explanation": "K-Means nhạy cảm với tỉ lệ của dữ liệu, nên nếu dữ liệu chưa được chuẩn hoá, nó có thể tạo ra các cụm kích thước khác nhau và hiệu suất kém."
+    },
+    {
+        "question": "Mô hình DBSCAN gán nhiều điểm là nhiễu (noise). Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Giá trị epsilon cao",
+            "B": "Giá trị min_samples thấp",
+            "C": "Giá trị epsilon thấp",
+            "D": "Giá trị min_samples cao"
+        },
+        "answer": "Giá trị epsilon thấp",
+        "explanation": "Epsilon quá thấp nghĩa là điểm cần rất gần nhau để tạo cụm, dẫn đến nhiều điểm bị gán là nhiễu."
+    },
+    {
+        "question": "Thuật toán phân cụm phân cấp tạo nhiều cụm nhỏ. Giải pháp nào có thể khắc phục?",
+        "options": {
+            "A": "Tăng số lượng cụm",
+            "B": "Giảm số lượng cụm",
+            "C": "Tăng tiêu chí linkage",
+            "D": "Dùng metric khoảng cách khác"
+        },
+        "answer": "Giảm số lượng cụm",
+        "explanation": "Giảm số lượng cụm giúp gộp các cụm nhỏ lại, tạo ra ít cụm lớn hơn có thể đại diện tốt hơn cho dữ liệu."
+    },
+    {
+        "question": "Mục đích của giảm chiều dữ liệu (dimensionality reduction) là gì?",
+        "options": {
+            "A": "Tăng độ phức tạp mô hình",
+            "B": "Loại bỏ các đặc trưng thừa",
+            "C": "Giảm độ chính xác mô hình",
+            "D": "Tạo thêm đặc trưng"
+        },
+        "answer": "Loại bỏ các đặc trưng thừa",
+        "explanation": "Giảm chiều dữ liệu giúp loại bỏ các đặc trưng thừa hoặc không liên quan, cải thiện hiệu quả và hiệu suất mô hình bằng cách tập trung vào các đặc trưng quan trọng."
+    },
+    {
+        "question": "Ý tưởng chính của Principal Component Analysis (PCA) là gì?",
+        "options": {
+            "A": "Tối đa hóa phương sai trên các chiều mới",
+            "B": "Giảm thiểu mất mát dữ liệu",
+            "C": "Giảm số lượng điểm dữ liệu",
+            "D": "Phân loại dữ liệu"
+        },
+        "answer": "Tối đa hóa phương sai trên các chiều mới",
+        "explanation": "PCA giảm chiều bằng cách tìm các chiều mới (principal components) tối đa hóa phương sai, nắm bắt thông tin quan trọng nhất của dữ liệu."
+    },
+    {
+        "question": "Sau khi biến đổi bằng PCA, các đặc trưng gốc sẽ như thế nào?",
+        "options": {
+            "A": "Chúng giữ nguyên",
+            "B": "Chúng được biến đổi thành các thành phần trực giao",
+            "C": "Chúng bị nhân với một scalar",
+            "D": "Chúng bị phân cụm"
+        },
+        "answer": "Chúng được biến đổi thành các thành phần trực giao",
+        "explanation": "Trong PCA, các đặc trưng gốc được biến đổi thành các thành phần trực giao, là các tổ hợp tuyến tính của đặc trưng gốc và nắm bắt phương sai lớn nhất."
+    },
+    {
+        "question": "Vai trò của eigenvectors trong PCA là gì?",
+        "options": {
+            "A": "Chúng đại diện cho hướng của các thành phần chính",
+            "B": "Chúng tăng phương sai",
+            "C": "Chúng giảm hàm mất mát",
+            "D": "Chúng tối đa hóa khoảng cách giữa các cụm"
+        },
+        "answer": "Chúng đại diện cho hướng của các thành phần chính",
+        "explanation": "Eigenvectors trong PCA đại diện cho hướng mà dữ liệu biến động mạnh nhất, xác định các thành phần chính mô tả tốt nhất phương sai của dữ liệu."
+    },
+    {
+        "question": "Hàm nào trong sklearn được dùng để triển khai PCA?",
+        "options": {
+            "A": "pca_reduction()",
+            "B": "PrincipalComponent()",
+            "C": "PCA()",
+            "D": "ComponentAnalysis()"
+        },
+        "answer": "PCA()",
+        "explanation": "Hàm PCA() trong sklearn được dùng để triển khai Principal Component Analysis, một kỹ thuật giảm chiều phổ biến."
+    },
+    {
+        "question": "Làm sao để đặt số lượng thành phần giữ lại trong PCA bằng sklearn?",
+        "options": {
+            "A": "num_components()",
+            "B": "n_components",
+            "C": "retain_components",
+            "D": "reduce_dimensions"
+        },
+        "answer": "n_components",
+        "explanation": "Tham số n_components trong PCA() của sklearn cho phép chỉ định số thành phần chính cần giữ lại để giảm chiều."
+    },
+    {
+        "question": "Thư viện nào có thể được dùng để triển khai t-SNE trong Python?",
+        "options": {
+            "A": "sklearn",
+            "B": "pandas",
+            "C": "numpy",
+            "D": "matplotlib"
+        },
+        "answer": "sklearn",
+        "explanation": "Thư viện sklearn cung cấp triển khai t-SNE (t-distributed Stochastic Neighbor Embedding), một kỹ thuật trực quan hóa dữ liệu có chiều cao xuống không gian thấp hơn."
+    },
+    {
+        "question": "Sau khi áp dụng PCA, hiệu suất mô hình giảm đáng kể. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Giữ quá nhiều thành phần",
+            "B": "Giữ quá ít thành phần",
+            "C": "Mô hình đang quá khớp",
+            "D": "Dữ liệu chưa được chuẩn hóa đúng"
+        },
+        "answer": "Giữ quá ít thành phần",
+        "explanation": "Giữ quá ít thành phần trong PCA có thể làm mất thông tin quan trọng, dẫn đến giảm mạnh hiệu suất mô hình."
+    },
+    {
+        "question": "Mô hình t-SNE không biểu diễn đúng cấu trúc dữ liệu đa chiều. Điều gì có thể cải thiện nó?",
+        "options": {
+            "A": "Dùng ít vòng lặp hơn",
+            "B": "Tăng perplexity",
+            "C": "Giảm learning rate",
+            "D": "Dùng PCA trước khi áp dụng t-SNE"
+        },
+        "answer": "Dùng PCA trước khi áp dụng t-SNE",
+        "explanation": "Áp dụng PCA trước t-SNE giúp nắm bắt các mẫu quan trọng nhất và giảm nhiễu, giúp t-SNE tập trung vào các chiều có ý nghĩa."
+    },
+    {
+        "question": "Thuật toán giảm chiều loại bỏ các đặc trưng quan trọng khỏi dữ liệu. Cách nào có thể ngăn chặn điều này?",
+        "options": {
+            "A": "Tăng số lượng thành phần",
+            "B": "Dùng điều chuẩn",
+            "C": "Thực hiện chọn đặc trưng trước",
+            "D": "Dùng metric khoảng cách khác"
+        },
+        "answer": "Thực hiện chọn đặc trưng trước",
+        "explanation": "Thực hiện chọn đặc trưng trước khi áp dụng giảm chiều có thể giúp giữ lại những đặc trưng quan trọng cần cho hiệu suất mô hình."
+    },
+    {
+        "question": "Mục đích của đánh giá mô hình trong học máy là gì?",
+        "options": {
+            "A": "Giảm số lượng đặc trưng",
+            "B": "Tăng độ chính xác",
+            "C": "Đánh giá hiệu suất của mô hình",
+            "D": "Chọn thuật toán tốt nhất"
+        },
+        "answer": "Đánh giá hiệu suất của mô hình",
+        "explanation": "Đánh giá mô hình nhằm mục đích kiểm tra mức độ mô hình tổng quát hóa tốt trên dữ liệu chưa thấy và xem nó có đáp ứng tiêu chí hiệu suất không."
+    },
+    {
+        "question": "Thước đo nào phù hợp nhất để đánh giá các bài toán phân loại?",
+        "options": {
+            "A": "Sai số bình phương trung bình (Mean Squared Error)",
+            "B": "Precision và Recall",
+            "C": "R-squared",
+            "D": "Sai số tuyệt đối trung bình (Mean Absolute Error)"
+        },
+        "answer": "Precision và Recall",
+        "explanation": "Precision và Recall là những thước đo phù hợp để đánh giá mô hình phân loại, đặc biệt khi dữ liệu bị mất cân bằng giữa các lớp."
+    },
+    {
+        "question": "Đường cong ROC biểu diễn gì trong bài toán phân loại?",
+        "options": {
+            "A": "Sự đánh đổi giữa tỷ lệ dương thực (true positive) và tỷ lệ dương giả (false positive)",
+            "B": "Độ chính xác của mô hình",
+            "C": "Thời gian huấn luyện",
+            "D": "Phân bố các lớp"
+        },
+        "answer": "Sự đánh đổi giữa tỷ lệ dương thực (true positive) và tỷ lệ dương giả (false positive)",
+        "explanation": "Đường cong ROC thể hiện sự đánh đổi giữa True Positive Rate (độ nhạy) và False Positive Rate, giúp đánh giá khả năng phân biệt của mô hình."
+    },
+    {
+        "question": "Biến thiên lớn (high variance) trong mô hình cho thấy điều gì?",
+        "options": {
+            "A": "Underfitting (không đủ khớp)",
+            "B": "Overfitting (quá khớp)",
+            "C": "Hiệu năng cân bằng",
+            "D": "Độ chính xác trên tập huấn luyện thấp"
+        },
+        "answer": "Overfitting (quá khớp)",
+        "explanation": "Biến thiên cao thường cho thấy mô hình đang quá khớp: mô hình hoạt động tốt trên dữ liệu huấn luyện nhưng kém trên dữ liệu chưa thấy do mô hình học cả nhiễu trong dữ liệu huấn luyện."
+    },
+    {
+        "question": "F1-Score được sử dụng để làm gì trong bài toán phân loại?",
+        "options": {
+            "A": "Đo tỷ lệ dương thực",
+            "B": "Cân bằng giữa precision và recall",
+            "C": "Tính độ chính xác (accuracy)",
+            "D": "Đo độ nhạy (sensitivity)"
+        },
+        "answer": "Cân bằng giữa precision và recall",
+        "explanation": "F1-Score là trung bình điều hòa của precision và recall, giúp cân bằng hai chỉ số này khi dữ liệu mất cân bằng."
+    },
+    {
+        "question": "Hàm nào trong sklearn dùng để tính accuracy cho mô hình phân loại?",
+        "options": {
+            "A": "calc_accuracy()",
+            "B": "accuracy()",
+            "C": "accuracy_score()",
+            "D": "classification_accuracy()"
+        },
+        "answer": "accuracy_score()",
+        "explanation": "Hàm accuracy_score() trong sklearn dùng để tính độ chính xác của mô hình phân loại bằng cách so sánh nhãn dự đoán với nhãn thật."
+    },
+    {
+        "question": "Làm sao để tính ma trận nhầm lẫn (confusion matrix) trong sklearn?",
+        "options": {
+            "A": "confusion_matrix()",
+            "B": "conf_matrix()",
+            "C": "calc_confusion()",
+            "D": "matrix_conf()"
+        },
+        "answer": "confusion_matrix()",
+        "explanation": "Hàm confusion_matrix() trong sklearn tính ma trận nhầm lẫn, giúp hiểu rõ hiệu năng của mô hình phân loại trên các lớp."
+    },
+    {
+        "question": "Làm thế nào để triển khai cross-validation trong Python bằng sklearn?",
+        "options": {
+            "A": "cross_validate()",
+            "B": "cross_val_score()",
+            "C": "validation_score()",
+            "D": "cv_validate()"
+        },
+        "answer": "cross_val_score()",
+        "explanation": "Hàm cross_val_score() trong sklearn được dùng để thực hiện cross-validation, chia dữ liệu nhiều lần thành tập huấn luyện và kiểm tra để đánh giá mô hình."
+    },
+    {
+        "question": "Một mô hình có độ chính xác cao nhưng hiệu năng kém trên dữ liệu mới. Vấn đề là gì?",
+        "options": {
+            "A": "Overfitting (quá khớp)",
+            "B": "Underfitting (không đủ khớp)",
+            "C": "Biến thiên thấp",
+            "D": "Sử dụng thước đo không phù hợp"
+        },
+        "answer": "Overfitting (quá khớp)",
+        "explanation": "Độ chính xác cao trên dữ liệu huấn luyện nhưng kém trên dữ liệu mới thường cho thấy mô hình bị quá khớp, tức là mô hình quá phức tạp và học cả nhiễu."
+    },
+    {
+        "question": "Mô hình phân loại có tỷ lệ dương giả cao. Nên tối ưu chỉ số nào?",
+        "options": {
+            "A": "Accuracy (độ chính xác)",
+            "B": "Recall (độ thu hồi)",
+            "C": "Precision (độ chính xác của dự đoán dương)",
+            "D": "F1-Score"
+        },
+        "answer": "Precision (độ chính xác của dự đoán dương)",
+        "explanation": "Khi tỷ lệ dương giả cao, nên tối ưu Precision vì nó đo tỷ lệ trong số các dự đoán dương thì bao nhiêu là đúng."
+    },
+    {
+        "question": "Mô hình hoạt động tốt trên tập huấn luyện nhưng kém trên tập validation. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Underfitting",
+            "B": "Overfitting",
+            "C": "Dữ liệu cân bằng",
+            "D": "Recall cao"
+        },
+        "answer": "Overfitting",
+        "explanation": "Hiệu năng kém trên tập validation trong khi tốt trên tập huấn luyện cho thấy mô hình bị quá khớp và không khái quát hóa tốt."
+    },
+    {
+        "question": "Hàm kích hoạt (activation function) trong mạng nơ-ron có vai trò gì?",
+        "options": {
+            "A": "Điều chỉnh trọng số",
+            "B": "Kiểm soát tốc độ học (learning rate)",
+            "C": "Tạo tính phi tuyến",
+            "D": "Tăng tốc độ huấn luyện"
+        },
+        "answer": "Tạo tính phi tuyến",
+        "explanation": "Hàm kích hoạt đưa tính phi tuyến vào mạng nơ-ron, cho phép mạng học và biểu diễn các mẫu phức tạp trong dữ liệu."
+    },
+    {
+        "question": "Vấn đề vanishing gradient (gradient biến mất) trong học sâu là gì?",
+        "options": {
+            "A": "Trọng số trở nên quá lớn",
+            "B": "Gradients không truyền ngược về các lớp trước",
+            "C": "Gradients trở nên quá lớn",
+            "D": "Mô hình bị quá khớp"
+        },
+        "answer": "Gradients không truyền ngược về các lớp trước",
+        "explanation": "Vanishing gradient xảy ra khi gradient dùng để cập nhật trọng số quá nhỏ ở các lớp đầu, khiến mạng học kém ở các lớp đó."
+    },
+    {
+        "question": "Mục đích của kỹ thuật dropout trong mạng nơ-ron là gì?",
+        "options": {
+            "A": "Phòng chống overfitting",
+            "B": "Tăng learning rate",
+            "C": "Cải thiện độ chính xác",
+            "D": "Tăng kích thước dữ liệu"
+        },
+        "answer": "Phòng chống overfitting",
+        "explanation": "Dropout là kỹ thuật regularization ngẫu nhiên tắt một số neuron trong quá trình huấn luyện để buộc mô hình tổng quát hóa tốt hơn và tránh quá khớp."
+    },
+    {
+        "question": "Backpropagation hoạt động như thế nào trong mạng nơ-ron?",
+        "options": {
+            "A": "Bằng cách điều chỉnh dữ liệu đầu vào",
+            "B": "Bằng cách cập nhật trọng số sử dụng gradient",
+            "C": "Bằng cách thay đổi kiến trúc mô hình",
+            "D": "Bằng cách tăng số lớp"
+        },
+        "answer": "Bằng cách cập nhật trọng số sử dụng gradient",
+        "explanation": "Backpropagation là quá trình cập nhật trọng số bằng cách tính gradient của hàm mất mát theo từng trọng số và sử dụng nó để điều chỉnh trọng số."
+    },
+    {
+        "question": "Thư viện Python nào thường được sử dụng để triển khai mạng nơ-ron?",
+        "options": {
+            "A": "numpy",
+            "B": "pandas",
+            "C": "keras",
+            "D": "matplotlib"
+        },
+        "answer": "keras",
+        "explanation": "Thư viện Keras thường được dùng để xây dựng và huấn luyện mạng nơ-ron trong Python."
+    },
+    {
+        "question": "Hàm nào trong Keras dùng để biên dịch (compile) mô hình mạng nơ-ron?",
+        "options": {
+            "A": "model.compile()",
+            "B": "network.compile()",
+            "C": "compile_nn()",
+            "D": "compile_model()"
+        },
+        "answer": "model.compile()",
+        "explanation": "Hàm model.compile() trong Keras được dùng để cấu hình quá trình học, chỉ định optimizer, loss function và các metrics để đánh giá mô hình."
+    },
+    {
+        "question": "Làm thế nào để thêm một lớp Dense vào mạng trong Keras?",
+        "options": {
+            "A": "add_dense()",
+            "B": "model.add(Dense())",
+            "C": "add_layer()",
+            "D": "layer.add(Dense())"
+        },
+        "answer": "model.add(Dense())",
+        "explanation": "Trong Keras, model.add(Dense()) được sử dụng để thêm một lớp dày (fully connected) vào mô hình."
+    },
+    {
+        "question": "Một mạng nơ-ron hoạt động tốt trên tập huấn luyện nhưng kém trên tập kiểm tra. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Underfitting",
+            "B": "Overfitting",
+            "C": "Rò rỉ dữ liệu (data leakage)",
+            "D": "Kiến trúc không đúng"
+        },
+        "answer": "Overfitting",
+        "explanation": "Nếu mạng hoạt động tốt trên tập huấn luyện nhưng kém trên tập kiểm tra, khả năng cao là mô hình bị quá khớp, học cả nhiễu trong dữ liệu huấn luyện."
+    },
+    {
+        "question": "Mạng nơ-ron không hội tụ trong quá trình huấn luyện. Nguyên nhân có thể là gì?",
+        "options": {
+            "A": "Learning rate quá thấp",
+            "B": "Số epoch quá cao",
+            "C": "Tập dữ liệu quá nhỏ",
+            "D": "Overfitting"
+        },
+        "answer": "Learning rate quá thấp",
+        "explanation": "Learning rate quá nhỏ có thể khiến các cập nhật trọng số quá nhỏ, làm mô hình không thể tiếp cận điểm tối ưu và dẫn đến không hội tụ."
+    },
+    {
+        "question": "Mạng sâu gặp vấn đề vanishing gradient. Điều gì có thể giúp giảm thiểu vấn đề này?",
+        "options": {
+            "A": "Sử dụng tập dữ liệu lớn hơn",
+            "B": "Tăng learning rate",
+            "C": "Sử dụng hàm kích hoạt ReLU",
+            "D": "Giảm số lớp"
+        },
+        "answer": "Sử dụng hàm kích hoạt ReLU",
+        "explanation": "Hàm kích hoạt ReLU (Rectified Linear Unit) giúp giảm thiểu vanishing gradient bằng cách giữ cho gradient không bị co lại quá nhiều khi truyền qua các lớp."
+    },
+    {
+        "question": "Mục đích chính của Support Vector Machine (SVM) là gì?",
+        "options": {
+            "A": "Giảm số lượng đặc trưng",
+            "B": "Phân loại các điểm dữ liệu",
+            "C": "Tăng kích thước dữ liệu",
+            "D": "Thực hiện phân cụm"
+        },
+        "answer": "Phân loại các điểm dữ liệu",
+        "explanation": "SVM chủ yếu được sử dụng cho các nhiệm vụ phân loại bằng cách tìm siêu phẳng tối ưu phân tách các lớp."
+    },
+    {
+        "question": "SVM xử lý dữ liệu không tách được theo tuyến tính như thế nào?",
+        "options": {
+            "A": "Bằng cách bỏ qua dữ liệu",
+            "B": "Bằng cách dùng kernel tuyến tính",
+            "C": "Bằng cách áp dụng kỹ thuật kernel trick",
+            "D": "Bằng cách giảm kích thước dữ liệu"
+        },
+        "answer": "Bằng cách áp dụng kỹ thuật kernel trick",
+        "explanation": "Kernel trick cho phép SVM ánh xạ dữ liệu sang không gian có chiều cao hơn, nơi có thể tìm được bộ phân tách tuyến tính."
+    },
+    {
+        "question": "Vai trò của margin trong SVM là gì?",
+        "options": {
+            "A": "Phân tách dữ liệu huấn luyện và kiểm tra",
+            "B": "Đo khoảng cách giữa các support vector",
+            "C": "Tối đa hóa khoảng cách giữa điểm dữ liệu và siêu phẳng",
+            "D": "Giảm độ phức tạp mô hình"
+        },
+        "answer": "Tối đa hóa khoảng cách giữa điểm dữ liệu và siêu phẳng",
+        "explanation": "SVM hướng tới tối đa hóa margin, tức là khoảng cách giữa siêu phẳng và các điểm gần nhất của mỗi lớp, giúp mô hình khái quát hóa tốt hơn."
+    },
+    {
+        "question": "Support vector trong SVM là gì?",
+        "options": {
+            "A": "Một điểm dữ liệu xa nhất so với siêu phẳng",
+            "B": "Một điểm dữ liệu gần nhất với siêu phẳng",
+            "C": "Một điểm dữ liệu bị phân loại sai",
+            "D": "Một điểm dùng để phát hiện ngoại lệ"
+        },
+        "answer": "Một điểm dữ liệu gần nhất với siêu phẳng",
+        "explanation": "Support vectors là những điểm dữ liệu gần siêu phẳng nhất và ảnh hưởng trực tiếp tới vị trí và hướng của siêu phẳng."
+    },
+    {
+        "question": "Hàm nào trong sklearn dùng để triển khai SVM cho phân loại?",
+        "options": {
+            "A": "SVC()",
+            "B": "SVM()",
+            "C": "svm_classifier()",
+            "D": "SupportVectorClassifier()"
+        },
+        "answer": "SVC()",
+        "explanation": "Hàm SVC() trong sklearn được dùng để triển khai Support Vector Machine cho nhiệm vụ phân loại trong Python."
+    },
+    {
+        "question": "Làm thế nào để chỉ định loại kernel trong triển khai SVM của sklearn?",
+        "options": {
+            "A": "kernel()",
+            "B": "svm_kernel()",
+            "C": "set_kernel()",
+            "D": "kernel_type()"
+        },
+        "answer": "kernel()",
+        "explanation": "Trong sklearn, tham số kernel được dùng để chỉ định loại kernel (ví dụ: linear, polynomial, RBF) dùng để ánh xạ dữ liệu sang không gian có chiều cao hơn."
+    },
+    {
+        "question": "Làm sao để điều chỉnh tham số regularization (C) trong SVM sử dụng sklearn?",
+        "options": {
+            "A": "reg_param()",
+            "B": "tune_c()",
+            "C": "C",
+            "D": "regularization()"
+        },
+        "answer": "C",
+        "explanation": "Tham số C trong sklearn kiểm soát sự đánh đổi giữa tối đa hóa margin và giảm lỗi phân loại."
+    },
+    {
+        "question": "Mô hình SVM hoạt động kém trên dữ liệu có các lớp chồng lấn. Điều gì có thể cải thiện hiệu năng?",
+        "options": {
+            "A": "Tăng tham số regularization (C)",
+            "B": "Sử dụng kernel tuyến tính",
+            "C": "Sử dụng kernel phi tuyến",
+            "D": "Giảm số support vector"
+        },
+        "answer": "Sử dụng kernel phi tuyến",
+        "explanation": "Sử dụng kernel phi tuyến như RBF giúp SVM xử lý các lớp chồng lấn bằng cách ánh xạ dữ liệu sang không gian có chiều cao hơn, nơi các lớp dễ tách hơn."
+    },
+    {
+        "question": "Mô hình SVM bị quá khớp trên dữ liệu huấn luyện. Cần điều chỉnh gì để giảm overfitting?",
+        "options": {
+            "A": "Tăng giá trị C",
+            "B": "Giảm giá trị C",
+            "C": "Tăng kích thước kernel",
+            "D": "Sử dụng tập dữ liệu lớn hơn"
+        },
+        "answer": "Giảm giá trị C",
+        "explanation": "Giảm giá trị C cho phép margin lớn hơn, làm cho SVM ít nhạy cảm với các điểm dữ liệu đơn lẻ và do đó giảm overfitting."
+    },
+    {
+        "question": "Ưu điểm chính của ensemble learning là gì?",
+        "options": {
+            "A": "Giảm số lượng đặc trưng",
+            "B": "Tăng độ phức tạp mô hình",
+            "C": "Cải thiện hiệu năng bằng cách kết hợp nhiều mô hình",
+            "D": "Tăng thời gian huấn luyện"
+        },
+        "answer": "Cải thiện hiệu năng bằng cách kết hợp nhiều mô hình",
+        "explanation": "Ensemble learning kết hợp dự đoán từ nhiều mô hình để nâng cao hiệu năng tổng thể và giảm khả năng bị overfitting hoặc underfitting."
+    },
+    {
+        "question": "Khác biệt chính giữa bagging và boosting trong ensemble learning là gì?",
+        "options": {
+            "A": "Bagging tập trung giảm bias",
+            "B": "Boosting tập trung giảm variance",
+            "C": "Bagging huấn luyện các mô hình song song",
+            "D": "Boosting chỉ dùng một mô hình"
+        },
+        "answer": "Bagging huấn luyện các mô hình song song",
+        "explanation": "Trong bagging, các mô hình được huấn luyện song song, còn boosting huấn luyện tuần tự, tập trung sửa lỗi của các mô hình trước đó."
+    },
+    {
+        "question": "Vai trò của weak learners trong boosting là gì?",
+        "options": {
+            "A": "Để đưa ra dự đoán chính xác",
+            "B": "Để xác định ngoại lệ",
+            "C": "Để sửa lỗi từ các learner trước đó",
+            "D": "Để tăng bias"
+        },
+        "answer": "Để sửa lỗi từ các learner trước đó",
+        "explanation": "Trong boosting, weak learners được huấn luyện tuần tự để sửa lỗi mà các learner trước đó đã mắc, từ đó dần cải thiện độ chính xác tổng thể."
+    },
+    {
+        "question": "Hàm nào trong sklearn dùng để triển khai Random Forest classifier?",
+        "options": {
+            "A": "RandomForestClassifier()",
+            "B": "ForestClassifier()",
+            "C": "RandomForest()",
+            "D": "ForestRandom()"
+        },
+        "answer": "RandomForestClassifier()",
+        "explanation": "Hàm RandomForestClassifier() trong sklearn dùng để triển khai thuật toán Random Forest, một phương pháp ensemble dựa trên cây quyết định."
+    },
+    {
+        "question": "Làm sao để triển khai AdaBoost trong Python sử dụng sklearn?",
+        "options": {
+            "A": "BoostingAda()",
+            "B": "AdaBoostClassifier()",
+            "C": "BoostAda()",
+            "D": "Adaboost()"
+        },
+        "answer": "AdaBoostClassifier()",
+        "explanation": "Hàm AdaBoostClassifier() trong sklearn dùng để triển khai thuật toán AdaBoost, một kỹ thuật boosting kết hợp weak learners để tạo mô hình mạnh hơn."
+    },
+    {
+        "question": "Siêu tham số nào trong Gradient Boosting Classifier của sklearn điều khiển learning rate?",
+        "options": {
+            "A": "max_depth",
+            "B": "learning_rate",
+            "C": "n_estimators",
+            "D": "boost_size"
+        },
+        "answer": "learning_rate",
+        "explanation": "Tham số learning_rate trong Gradient Boosting điều khiển mức đóng góp của mỗi weak learner vào dự đoán chung, cân bằng bias và variance."
+    },
+    {
+        "question": "Mô hình Random Forest bị quá khớp trên dữ liệu huấn luyện. Điều gì có thể giải quyết vấn đề này?",
+        "options": {
+            "A": "Tăng số estimators",
+            "B": "Giảm số lượng đặc trưng",
+            "C": "Tăng tham số max_depth",
+            "D": "Giảm số cây"
+        },
+        "answer": "Giảm số lượng đặc trưng",
+        "explanation": "Giảm số đặc trưng hoặc giới hạn độ sâu cây có thể giúp ngăn Random Forest quá khớp, vì ít đặc trưng hơn giảm khả năng học nhiễu."
+    },
+    {
+        "question": "Mô hình Gradient Boosting huấn luyện chậm và cho lợi ích giảm dần. Điều gì có thể cải thiện tốc độ huấn luyện?",
+        "options": {
+            "A": "Giảm learning rate",
+            "B": "Tăng số weak learners",
+            "C": "Sử dụng early stopping",
+            "D": "Tăng số estimators"
+        },
+        "answer": "Sử dụng early stopping",
+        "explanation": "Early stopping có thể cải thiện tốc độ huấn luyện bằng cách dừng quá trình khi hiệu năng trên dữ liệu validation không còn cải thiện, tiết kiệm thời gian và tránh overfitting."
+    },
+    {
+        "question": "Mục tiêu của reinforcement learning là gì?",
+        "options": {
+            "A": "Dự đoán giá trị liên tục",
+            "B": "Giảm thiểu tỷ lệ lỗi",
+            "C": "Tối đa hóa tổng phần thưởng tích lũy",
+            "D": "Phân loại các điểm dữ liệu"
+        },
+        "answer": "Tối đa hóa tổng phần thưởng tích lũy",
+        "explanation": "Trong reinforcement learning, mục tiêu là tối đa hóa tổng phần thưởng tích lũy theo thời gian bằng cách đưa ra các quyết định tối ưu tại mỗi bước trong môi trường."
+    },
+    {
+        "question": "Vai trò của agent trong reinforcement learning là gì?",
+        "options": {
+            "A": "Thu thập dữ liệu",
+            "B": "Cung cấp phần thưởng",
+            "C": "Thực hiện hành động dựa trên policy",
+            "D": "Xử lý dữ liệu môi trường"
+        },
+        "answer": "Thực hiện hành động dựa trên policy",
+        "explanation": "Trong reinforcement learning, agent thực hiện các hành động trong môi trường theo một chính sách (policy), nhằm tối đa hóa tổng phần thưởng tích lũy thông qua thử và sai."
+    },
+    {
+        "question": "Sự đánh đổi giữa exploration và exploitation trong reinforcement learning là gì?",
+        "options": {
+            "A": "Chỉ khám phá các hành động tối đa hóa phần thưởng",
+            "B": "Khám phá các hành động mới",
+            "C": "Cân bằng giữa thử các hành động mới và tối ưu hóa những hành động đã biết",
+            "D": "Bỏ qua tất cả phần thưởng"
+        },
+        "answer": "Cân bằng giữa thử các hành động mới và tối ưu hóa những hành động đã biết",
+        "explanation": "Agent phải cân bằng exploration (thử hành động mới để khám phá phần thưởng) và exploitation (tận dụng hành động đã biết cho phần thưởng tối đa)."
+    },
+    {
+        "question": "Thư viện Python nào thường được dùng để triển khai các thuật toán reinforcement learning?",
+        "options": {
+            "A": "keras",
+            "B": "scikit-learn",
+            "C": "gym",
+            "D": "numpy"
+        },
+        "answer": "gym",
+        "explanation": "Thư viện gym thường được sử dụng để phát triển và so sánh các thuật toán reinforcement learning bằng cách cung cấp các môi trường để huấn luyện và thử nghiệm agent."
+    },
+    {
+        "question": "Thuật toán nào trong reinforcement learning được dùng để tối ưu hàm giá trị hành động (action-value)?",
+        "options": {
+            "A": "Q-Learning",
+            "B": "Random Forest",
+            "C": "Support Vector Machine",
+            "D": "Gradient Boosting"
+        },
+        "answer": "Q-Learning",
+        "explanation": "Q-Learning là thuật toán phổ biến trong reinforcement learning dùng để tối ưu hàm giá trị hành động bằng cách học những hành động tốt nhất để tối đa hóa phần thưởng."
+    },
+    {
+        "question": "Làm thế nào để cập nhật giá trị Q trong thuật toán Q-learning?",
+        "options": {
+            "A": "Bằng cách tối đa hóa phần thưởng",
+            "B": "Bằng cách sử dụng phương trình Bellman",
+            "C": "Bằng cách giảm thiểu lỗi",
+            "D": "Bằng cách sử dụng bộ phân loại"
+        },
+        "answer": "Bằng cách sử dụng phương trình Bellman",
+        "explanation": "Trong Q-learning, phương trình Bellman được sử dụng để cập nhật Q-values, đại diện cho phần thưởng tích lũy kỳ vọng của một hành động tại một trạng thái."
+    },
+    {
+        "question": "Agent trong mô hình reinforcement learning không khám phá đủ. Điều gì có thể giúp khắc phục?",
+        "options": {
+            "A": "Giảm learning rate",
+            "B": "Tăng tỷ lệ khám phá (epsilon)",
+            "C": "Giảm hàm phần thưởng",
+            "D": "Tăng hệ số chiết khấu"
+        },
+        "answer": "Tăng tỷ lệ khám phá (epsilon)",
+        "explanation": "Tăng epsilon khuyến khích agent khám phá nhiều hơn bằng cách thực hiện các hành động ngẫu nhiên thay vì luôn chọn hành động đã biết."
+    },
+    {
+        "question": "Mô hình reinforcement learning hội tụ chậm. Điều gì có thể tăng tốc quá trình huấn luyện?",
+        "options": {
+            "A": "Sử dụng tập dữ liệu nhỏ hơn",
+            "B": "Giảm hệ số chiết khấu",
+            "C": "Tăng learning rate",
+            "D": "Tăng số hành động"
+        },
+        "answer": "Tăng learning rate",
+        "explanation": "Tăng learning rate có thể giúp hội tụ nhanh hơn bằng cách cho phép agent học nhanh hơn từ mỗi hành động và phần thưởng nhận được."
+    },
+    {
+        "question": "Mối quan tâm đạo đức chính trong học máy là gì?",
+        "options": {
+            "A": "Lưu trữ dữ liệu",
+            "B": "Độ chính xác mô hình",
+            "C": "Thiên vị và công bằng (bias and fairness)",
+            "D": "Lựa chọn đặc trưng"
+        },
+        "answer": "Thiên vị và công bằng (bias and fairness)",
+        "explanation": "Một mối quan tâm đạo đức chính là đảm bảo mô hình công bằng và không mang thiên vị, vì điều này có thể dẫn đến đối xử không công bằng đối với một số nhóm."
+    },
+    {
+        "question": "Bias trong mô hình học máy đề cập đến gì?",
+        "options": {
+            "A": "Hiệu năng của mô hình",
+            "B": "Định kiến trong dữ liệu hoặc quyết định",
+            "C": "Các đặc trưng không đúng",
+            "D": "Thuật toán kém hiệu quả"
+        },
+        "answer": "Định kiến trong dữ liệu hoặc quyết định",
+        "explanation": "Bias đề cập đến sự thiên vị hệ thống trong dự đoán của mô hình do dữ liệu huấn luyện có thiên vị, dẫn đến kết quả không công bằng."
+    },
+    {
+        "question": "Tại sao tính minh bạch (transparency) quan trọng trong các mô hình học máy?",
+        "options": {
+            "A": "Để cải thiện độ chính xác của mô hình",
+            "B": "Để đảm bảo an toàn dữ liệu",
+            "C": "Để giải thích các quyết định của mô hình",
+            "D": "Để giảm độ phức tạp mô hình"
+        },
+        "answer": "Để giải thích các quyết định của mô hình",
+        "explanation": "Tính minh bạch giúp giải thích các quyết định của mô hình, giúp người dùng và các bên liên quan hiểu và tin tưởng kết quả."
+    },
+    {
+        "question": "Thách thức chính khi ra quyết định bằng thuật toán trong các lĩnh vực nhạy cảm như y tế và thực thi pháp luật là gì?",
+        "options": {
+            "A": "Cải thiện độ chính xác",
+            "B": "Đảm bảo tính công bằng và trách nhiệm",
+            "C": "Giảm kích thước dữ liệu",
+            "D": "Giảm chi phí tính toán"
+        },
+        "answer": "Đảm bảo tính công bằng và trách nhiệm",
+        "explanation": "Quyết định thuật toán trong các lĩnh vực nhạy cảm yêu cầu xem xét kỹ lưỡng tính công bằng và trách nhiệm để tránh kết quả phân biệt đối xử và đảm bảo thực hành đạo đức."
+    },
+    {
+        "question": "Làm thế nào để các nhà thực hành học máy giải quyết các lo ngại về quyền riêng tư khi xử lý dữ liệu nhạy cảm?",
+        "options": {
+            "A": "Sử dụng dữ liệu có thiên vị",
+            "B": "Bỏ qua các đặc trưng nhạy cảm",
+            "C": "Triển khai differential privacy",
+            "D": "Tăng độ phức tạp mô hình"
+        },
+        "answer": "Triển khai differential privacy",
+        "explanation": "Kỹ thuật differential privacy giúp bảo vệ dữ liệu nhạy cảm bằng cách đảm bảo rằng các điểm dữ liệu cá nhân khó bị tái nhận dạng trong khi vẫn giữ được tính hữu dụng cho mô hình."
+    }
+]

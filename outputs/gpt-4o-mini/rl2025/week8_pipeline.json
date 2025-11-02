@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Sự cân bằng giữa việc khám phá các lựa chọn mới và khai thác các lựa chọn tốt nhất đã biết được gọi là gì?",
+      "answer": "Khám phá và khai thác.",
+      "distractors": [
+        "Khám phá và phát triển",
+        "Khám phá và tối ưu hóa",
+        "Khai thác và cải tiến"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Khám phá và khai thác\" vì đây là thuật ngữ chính xác mô tả sự cân bằng giữa việc tìm kiếm các lựa chọn mới (khám phá) và việc sử dụng các lựa chọn tốt nhất đã biết (khai thác). Trong bối cảnh ra quyết định, việc khám phá cho phép chúng ta thu thập thông tin mới, trong khi khai thác giúp tối ưu hóa lợi ích từ những lựa chọn đã được xác định là hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Khám phá và phát triển**: Tùy chọn này không chính xác vì \"phát triển\" không đề cập đến việc sử dụng các lựa chọn tốt nhất đã biết. Thay vào đó, nó tập trung vào việc cải tiến hoặc mở rộng, không phản ánh sự cân bằng giữa khám phá và khai thác.\n\n- **Khám phá và tối ưu hóa**: Tùy chọn này cũng sai vì \"tối ưu hóa\" thường liên quan đến việc cải thiện một lựa chọn cụ thể mà không nhấn mạnh đến việc khai thác các lựa chọn tốt nhất đã biết. Nó không bao hàm khía cạnh khai thác mà chỉ tập trung vào việc làm cho một lựa chọn trở nên tốt hơn.\n\n- **Khai thác và cải tiến**: Tùy chọn này không chính xác vì \"cải tiến\" chỉ đề cập đến việc nâng cao một lựa chọn đã biết mà không bao gồm yếu tố khám phá các lựa chọn mới. Nó thiếu đi khía cạnh tìm kiếm thông tin mới, điều cần thiết trong quá trình ra quyết định.\n\nTóm lại, \"Khám phá và khai thác\" là câu trả lời đúng vì nó chính xác mô tả sự cân bằng cần thiết giữa việc tìm kiếm và sử dụng thông tin trong quá trình ra quyết định.",
+      "topic": {
+        "name": "Khám Phá và Khai Thác (Exploration vs. Exploitation)",
+        "description": "Chủ đề này khám phá sự cân bằng giữa việc khám phá các lựa chọn mới để thu thập thông tin và khai thác các lựa chọn tốt nhất đã biết. Học sinh sẽ được kiểm tra về các định nghĩa cơ bản, ví dụ thực tế, và cách thức quản lý sự bối rối này trong thực tiễn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Nguyên tắc nào trong Khám Phá và Khai Thác liên quan đến việc bắt đầu với dự đoán tích cực trước khi thu thập dữ liệu?",
+      "answer": "Khởi tạo lạc quan",
+      "distractors": [
+        "Khởi tạo tiêu cực",
+        "Khởi tạo không chắc chắn",
+        "Khởi tạo trung lập"
+      ],
+      "explanation": "Câu trả lời đúng là \"Khởi tạo lạc quan\" vì nguyên tắc này nhấn mạnh việc bắt đầu với những giả định tích cực trước khi thu thập dữ liệu. Điều này giúp tạo ra một tâm lý tích cực, khuyến khích sự sáng tạo và khám phá, từ đó có thể dẫn đến những phát hiện mới và hữu ích trong quá trình phân tích dữ liệu.\n\nCác yếu tố gây nhiễu:\n\n- **Khởi tạo tiêu cực**: Tùy chọn này sai vì nó đề cập đến việc bắt đầu với những giả định tiêu cực, điều này có thể dẫn đến sự bi quan và hạn chế khả năng khám phá. Khởi tạo tiêu cực không khuyến khích sự sáng tạo và có thể làm giảm động lực trong quá trình thu thập dữ liệu.\n\n- **Khởi tạo không chắc chắn**: Tùy chọn này không chính xác vì khởi tạo không chắc chắn ám chỉ đến việc không có giả định rõ ràng, điều này có thể gây khó khăn trong việc định hướng và tập trung vào mục tiêu. Nguyên tắc khởi tạo lạc quan yêu cầu có một dự đoán tích cực rõ ràng để dẫn dắt quá trình khám phá.\n\n- **Khởi tạo trung lập**: Tùy chọn này cũng sai vì khởi tạo trung lập không thể hiện sự tích cực hay tiêu cực nào. Trong khi khởi tạo trung lập có thể giúp duy trì sự khách quan, nó không khuyến khích sự khám phá tích cực như khởi tạo lạc quan, vốn là điều cần thiết để phát hiện ra những cơ hội mới trong dữ liệu.\n\nTóm lại, \"Khởi tạo lạc quan\" là nguyên tắc đúng vì nó thúc đẩy một cách tiếp cận tích cực trong Khám Phá và Khai Thác, trong khi các yếu tố gây nhiễu khác đều không hỗ trợ cho việc khám phá hiệu quả.",
+      "topic": {
+        "name": "Nguyên Tắc Khám Phá và Khai Thác",
+        "description": "Chủ đề này tập trung vào các nguyên tắc nhìn nhận của Khám Phá và Khai Thác, như khởi tạo lạc quan và sự không chắc chắn. Sinh viên sẽ phải hiểu và ứng dụng các nguyên tắc này trong các bài toán ra quyết định.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán ε-greedy, ε đại diện cho điều gì trong ngữ cảnh tối ưu hóa khám phá và khai thác?",
+      "answer": "Tỷ lệ xác suất để chọn hành động ngẫu nhiên thay vì hành động tốt nhất đã biết.",
+      "distractors": [
+        "Tỷ lệ xác suất để chọn hành động tốt nhất đã biết thay vì hành động ngẫu nhiên.",
+        "Tỷ lệ xác suất để chọn hành động ngẫu nhiên mà không cần xem xét hành động tốt nhất.",
+        "Tỷ lệ xác suất để không thay đổi hành động đã chọn trước đó."
+      ],
+      "explanation": "Trong thuật toán ε-greedy, ε đại diện cho \"tỷ lệ xác suất để chọn hành động ngẫu nhiên thay vì hành động tốt nhất đã biết.\" Điều này có nghĩa là trong một số trường hợp nhất định, thuật toán sẽ chọn một hành động ngẫu nhiên với xác suất ε, nhằm khám phá các hành động khác ngoài hành động tốt nhất đã biết. Điều này giúp cân bằng giữa việc khai thác (chọn hành động tốt nhất) và khám phá (thử nghiệm các hành động mới), từ đó tối ưu hóa hiệu suất của thuật toán.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Tỷ lệ xác suất để chọn hành động tốt nhất đã biết thay vì hành động ngẫu nhiên**: Tùy chọn này sai vì ε-greedy không chỉ định xác suất cho việc chọn hành động tốt nhất mà là xác suất cho việc chọn hành động ngẫu nhiên. Hành động tốt nhất được chọn với xác suất 1 - ε.\n  \n- **Tỷ lệ xác suất để chọn hành động ngẫu nhiên mà không cần xem xét hành động tốt nhất**: Tùy chọn này cũng sai vì trong thuật toán ε-greedy, hành động ngẫu nhiên chỉ được chọn với xác suất ε, trong khi hành động tốt nhất vẫn có xác suất 1 - ε. Do đó, hành động tốt nhất vẫn được xem xét.\n\n- **Tỷ lệ xác suất để không thay đổi hành động đã chọn trước đó**: Tùy chọn này không chính xác vì ε-greedy không liên quan đến việc giữ nguyên hành động đã chọn. Thay vào đó, nó cho phép thay đổi hành động dựa trên xác suất ε, nhằm khám phá các lựa chọn khác.\n\nTóm lại, câu trả lời đúng phản ánh chính xác cách thức hoạt động của thuật toán ε-greedy trong việc tối ưu hóa khám phá và khai thác, trong khi các yếu tố gây nhiễu đều không chính xác vì không nắm bắt đúng bản chất của thuật toán.",
+      "topic": {
+        "name": "Thuật Toán ε-Greedy và Ứng Dụng",
+        "description": "Chủ đề sẽ phân tích thuật toán ε-greedy, cách thức hoạt động và hiệu quả của nó trong việc tối ưu hóa khám phá và khai thác. Học sinh sẽ cần làm rõ khái niệm thống kê và cách nó ảnh hưởng đến quyết định của thuật toán.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi so sánh tổng hối tiếc và giá trị hành động hiện có trong bối cảnh hối tiếc trong Bandit, điều gì sẽ xảy ra nếu tổng hối tiếc lớn hơn giá trị hành động hiện có?",
+      "answer": "Tổng hối tiếc lớn hơn giá trị hành động hiện có cho thấy sự thiếu hiệu quả trong việc lựa chọn hành động.",
+      "distractors": [
+        "Tổng hối tiếc nhỏ hơn giá trị hành động hiện có cho thấy sự lựa chọn hành động hiệu quả.",
+        "Tổng hối tiếc không ảnh hưởng đến giá trị hành động hiện có trong bất kỳ trường hợp nào.",
+        "Tổng hối tiếc lớn hơn giá trị hành động hiện có chứng tỏ rằng hành động đã được chọn là tốt nhất."
+      ],
+      "explanation": "Khi tổng hối tiếc lớn hơn giá trị hành động hiện có, điều này cho thấy rằng các quyết định đã được đưa ra không đạt hiệu quả tối ưu. Tổng hối tiếc phản ánh sự khác biệt giữa giá trị tối ưu mà người ra quyết định có thể đạt được và giá trị thực tế mà họ đã nhận được từ hành động đã chọn. Nếu tổng hối tiếc cao, điều này có nghĩa là có nhiều cơ hội tốt hơn mà người ra quyết định đã bỏ lỡ, dẫn đến sự thiếu hiệu quả trong việc lựa chọn hành động.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Tổng hối tiếc nhỏ hơn giá trị hành động hiện có cho thấy sự lựa chọn hành động hiệu quả.**: Điều này không chính xác vì tổng hối tiếc nhỏ hơn không nhất thiết chứng tỏ rằng hành động đã chọn là hiệu quả. Nó chỉ cho thấy rằng giá trị hành động hiện tại không quá tệ, nhưng không thể khẳng định rằng đó là lựa chọn tốt nhất.\n  \n- **Tổng hối tiếc không ảnh hưởng đến giá trị hành động hiện có trong bất kỳ trường hợp nào.**: Đây là một quan điểm sai lầm, vì tổng hối tiếc thực sự có thể ảnh hưởng đến việc đánh giá giá trị hành động hiện có. Nếu tổng hối tiếc cao, điều đó cho thấy rằng có nhiều lựa chọn tốt hơn mà người ra quyết định đã không thực hiện, từ đó ảnh hưởng đến giá trị hành động hiện tại.\n\n- **Tổng hối tiếc lớn hơn giá trị hành động hiện có chứng tỏ rằng hành động đã được chọn là tốt nhất.**: Đây là một sự hiểu lầm rõ ràng. Nếu tổng hối tiếc lớn hơn giá trị hành động hiện có, điều đó ngược lại cho thấy rằng hành động đã chọn không phải là tốt nhất, vì có những lựa chọn khác có thể mang lại giá trị cao hơn mà người ra quyết định đã không thực hiện. \n\nTóm lại, câu trả lời đúng chỉ ra sự thiếu hiệu quả trong lựa chọn hành động, trong khi các yếu tố gây nhiễu đều không chính xác vì chúng không phản ánh đúng mối quan hệ giữa tổng hối tiếc và giá trị hành động hiện có.",
+      "topic": {
+        "name": "Hối Tiếc trong Bandit",
+        "description": "Khái niệm hối tiếc sẽ được giải thích qua cách tính toán giá trị hành động tối ưu và hiểu được sự khác biệt giữa tổng hối tiếc và giá trị hành động hiện có. Học sinh cần phân tích các công thức liên quan để đánh giá sự hiệu quả.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi kết hợp Multi-Armed Bandit với quy trình quyết định Markov, yếu tố nào là quan trọng nhất để đánh giá hiệu suất của các chính sách hành động?",
+      "answer": "Tỷ lệ chiến thắng của từng hành động trong môi trường quy trình quyết định.",
+      "distractors": [
+        "Tỷ lệ thua của từng hành động trong môi trường quy trình quyết định.",
+        "Tổng số lần thực hiện mỗi hành động trong quá trình thử nghiệm.",
+        "Thời gian thực hiện mỗi hành động trong môi trường quy trình quyết định."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tỷ lệ chiến thắng của từng hành động trong môi trường quy trình quyết định\" vì đây là chỉ số chính để đánh giá hiệu suất của các chính sách hành động trong bối cảnh Multi-Armed Bandit (MAB) kết hợp với quy trình quyết định Markov (MDPs). Tỷ lệ chiến thắng cho biết mức độ thành công của mỗi hành động trong việc đạt được mục tiêu, cho phép người ra quyết định lựa chọn hành động tối ưu dựa trên thông tin thu thập được từ môi trường.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Tỷ lệ thua của từng hành động trong môi trường quy trình quyết định**: Mặc dù tỷ lệ thua có thể cung cấp thông tin về hiệu suất, nhưng nó không phải là chỉ số chính để đánh giá. Tỷ lệ chiến thắng là thông tin tích cực hơn, cho thấy khả năng thành công của hành động, trong khi tỷ lệ thua chỉ phản ánh mặt tiêu cực.\n\n- **Tổng số lần thực hiện mỗi hành động trong quá trình thử nghiệm**: Tổng số lần thực hiện không phản ánh hiệu suất của hành động mà chỉ cho biết mức độ thử nghiệm. Một hành động có thể được thực hiện nhiều lần nhưng không nhất thiết phải có hiệu suất tốt. Điều quan trọng là tỷ lệ thành công của các hành động đó.\n\n- **Thời gian thực hiện mỗi hành động trong môi trường quy trình quyết định**: Thời gian thực hiện không liên quan trực tiếp đến hiệu suất của hành động. Một hành động có thể mất nhiều thời gian nhưng vẫn có thể đạt được tỷ lệ chiến thắng cao, do đó thời gian không phải là yếu tố quyết định trong việc đánh giá hiệu suất hành động.\n\nTóm lại, tỷ lệ chiến thắng là chỉ số quan trọng nhất để đánh giá hiệu suất trong khi các yếu tố gây nhiễu khác không cung cấp thông tin chính xác về hiệu quả của các chính sách hành động.",
+      "topic": {
+        "name": "Multi-Armed Bandit (MAB) và Các Quy Trình Quyết Định",
+        "description": "Chủ đề này liên kết MAB với các quy trình quyết định Markov (MDPs) dưới góc nhìn lập kế hoạch. Học sinh sẽ cần nắm vững nguyên lý cơ bản của MAB và áp dụng nó trong bối cảnh MDPs từ tuần 1 và 4.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong học tăng cường, phương pháp nào thường được sử dụng để xấp xỉ hàm giá trị và đánh giá hiệu suất của các chính sách khác nhau?",
+      "answer": "Xấp xỉ giá trị (Value Approximation)",
+      "distractors": [
+        "Xấp xỉ chính sách (Policy Approximation)",
+        "Dự đoán giá trị (Value Prediction)",
+        "Tối ưu hóa chính sách (Policy Optimization)"
+      ],
+      "explanation": "Câu trả lời đúng là \"Xấp xỉ giá trị (Value Approximation)\" vì trong học tăng cường, phương pháp này được sử dụng để ước lượng giá trị của các trạng thái hoặc hành động, từ đó giúp đánh giá hiệu suất của các chính sách khác nhau. Xấp xỉ giá trị cho phép các thuật toán học tăng cường hoạt động hiệu quả hơn trong các môi trường phức tạp, nơi mà việc tính toán giá trị chính xác là không khả thi.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Xấp xỉ chính sách (Policy Approximation)**: Đây là phương pháp tập trung vào việc ước lượng chính sách tối ưu thay vì giá trị. Mặc dù xấp xỉ chính sách có thể giúp cải thiện hiệu suất, nhưng nó không phải là phương pháp chính để đánh giá hiệu suất của các chính sách khác nhau, mà là để tìm ra chính sách tốt nhất.\n\n- **Dự đoán giá trị (Value Prediction)**: Dự đoán giá trị thường liên quan đến việc ước lượng giá trị trong một khoảng thời gian cụ thể, nhưng không phải là phương pháp chính để xấp xỉ hàm giá trị trong học tăng cường. Dự đoán giá trị có thể là một phần của quá trình, nhưng không đủ để đánh giá hiệu suất của các chính sách.\n\n- **Tối ưu hóa chính sách (Policy Optimization)**: Tối ưu hóa chính sách là quá trình điều chỉnh chính sách để đạt được hiệu suất tốt hơn, nhưng nó không liên quan trực tiếp đến việc xấp xỉ hàm giá trị. Tối ưu hóa chính sách thường được thực hiện sau khi đã có các giá trị ước lượng, do đó không phải là phương pháp chính để xấp xỉ hàm giá trị.\n\nTóm lại, \"Xấp xỉ giá trị\" là phương pháp chính trong học tăng cường để đánh giá hiệu suất của các chính sách, trong khi các yếu tố gây nhiễu khác không phù hợp với mục tiêu này.",
+      "topic": {
+        "name": "Xấp Xỉ Hàm Giá Trị trong Học Tăng Cường",
+        "description": "Chủ đề này tìm hiểu kỹ thuật xấp xỉ hàm giá trị trong Học Tăng Cường, bao gồm các ứng dụng thực tiễn. Sinh viên sẽ phải phân tích và đánh giá các phương pháp khác nhau sẽ được lựa chọn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Bạn hãy thiết kế một thuật toán sử dụng các nguyên tắc Bayesian để giải quyết bài toán bandit contextual trong tình huống mà bạn có kiến thức trước về các biến độc lập có ảnh hưởng đến lựa chọn của người dùng. Liệt kê các thành phần chính cần có trong mô hình và giải thích cách những thành phần này tương tác với nhau trong quá trình ra quyết định.",
+      "answer": "Mô hình Bayesian Bandit, trước hết cần có prior distribution, likelihood function, và posterior update để điều chỉnh quyết định dựa trên dữ liệu thu thập được.",
+      "distractors": [
+        "Mô hình Bayesian Bandit chỉ cần một hàm xác suất duy nhất để đưa ra quyết định.",
+        "Prior distribution không cần thiết trong mô hình Bayesian Bandit.",
+        "Likelihood function có thể được bỏ qua nếu đã có dữ liệu đầy đủ."
+      ],
+      "explanation": "Câu trả lời đúng là \"Mô hình Bayesian Bandit, trước hết cần có prior distribution, likelihood function, và posterior update để điều chỉnh quyết định dựa trên dữ liệu thu thập được.\" Đây là câu trả lời chính xác vì trong mô hình Bayesian, prior distribution cung cấp thông tin ban đầu về các tham số trước khi có dữ liệu, likelihood function mô tả xác suất của dữ liệu dựa trên các tham số, và posterior update là quá trình điều chỉnh niềm tin về các tham số sau khi có dữ liệu mới. Sự tương tác giữa các thành phần này cho phép mô hình cập nhật và cải thiện quyết định theo thời gian, điều này rất quan trọng trong bối cảnh bandit contextual.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Mô hình Bayesian Bandit chỉ cần một hàm xác suất duy nhất để đưa ra quyết định**: Sai, vì mô hình Bayesian yêu cầu cả prior và likelihood để có thể tính toán posterior. Chỉ một hàm xác suất không đủ để phản ánh sự không chắc chắn và cập nhật thông tin.\n- **Prior distribution không cần thiết trong mô hình Bayesian Bandit**: Sai, vì prior distribution là thành phần cốt lõi trong mô hình Bayesian. Nó cung cấp thông tin ban đầu và ảnh hưởng đến cách mà dữ liệu mới được tích hợp vào mô hình.\n- **Likelihood function có thể được bỏ qua nếu đã có dữ liệu đầy đủ**: Sai, vì likelihood function là cần thiết để hiểu mối quan hệ giữa dữ liệu và các tham số. Ngay cả khi có dữ liệu đầy đủ, likelihood vẫn cần thiết để cập nhật posterior và điều chỉnh quyết định.",
+      "topic": {
+        "name": "Bayesian Bandits và Khám Phá có Kiến Thức Trước",
+        "description": "Chủ đề này kết nối các nguyên tắc Bayesian với Học Tăng Cường và Bandit Contextual. Học sinh cần phải hiểu các khái niệm và ứng dụng thực tiễn của Bayesian Bandits trong việc tối ưu hóa quyết định.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Tạo"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong quá trình ra quyết định, yếu tố nào quyết định giá trị của thông tin trong các MDP và Bandits?",
+      "answer": "Khám phá và khai thác",
+      "distractors": [
+        "Chỉ cần khai thác thông tin hiện có",
+        "Khám phá không cần thiết trong quyết định",
+        "Giá trị thông tin chỉ phụ thuộc vào số lượng dữ liệu"
+      ],
+      "explanation": "Câu trả lời đúng là \"Khám phá và khai thác\" vì trong các mô hình quyết định Markov (MDP) và băng nhóm (Bandits), giá trị của thông tin phụ thuộc vào sự cân bằng giữa việc khám phá các lựa chọn mới (khám phá) và việc sử dụng thông tin hiện có để tối ưu hóa quyết định (khai thác). Khám phá cho phép người ra quyết định thu thập thêm thông tin về các lựa chọn chưa được thử nghiệm, trong khi khai thác giúp tối đa hóa lợi ích từ thông tin đã biết. Sự kết hợp này là cần thiết để đạt được hiệu quả tối ưu trong quá trình ra quyết định.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Chỉ cần khai thác thông tin hiện có**: Tùy chọn này sai vì chỉ khai thác mà không khám phá có thể dẫn đến quyết định kém, do không tận dụng được thông tin mới có thể cải thiện kết quả. Việc chỉ khai thác không cho phép người ra quyết định phát hiện ra các lựa chọn tốt hơn.\n\n- **Khám phá không cần thiết trong quyết định**: Tùy chọn này cũng sai vì khám phá là rất cần thiết để đảm bảo rằng người ra quyết định không bỏ lỡ các cơ hội tốt hơn. Nếu không có khám phá, người ra quyết định có thể mắc kẹt trong các lựa chọn kém mà họ đã biết.\n\n- **Giá trị thông tin chỉ phụ thuộc vào số lượng dữ liệu**: Tùy chọn này không chính xác vì giá trị của thông tin không chỉ phụ thuộc vào số lượng dữ liệu mà còn vào cách mà dữ liệu đó được sử dụng. Việc có nhiều dữ liệu nhưng không được khai thác đúng cách có thể không mang lại giá trị cao trong quyết định.\n\nTóm lại, \"Khám phá và khai thác\" là yếu tố quyết định giá trị thông tin trong các MDP và Bandits, trong khi các yếu tố gây nhiễu đều thiếu sót trong việc nhận thức về tầm quan trọng của sự cân bằng giữa khám phá và khai thác.",
+      "topic": {
+        "name": "Giá Trị Thông Tin trong Quy Trình Quyết Định",
+        "description": "Khám phá giá trị của thông tin trong quá trình ra quyết định là trọng tâm của chủ đề này. Học sinh cần phân tích tác động của khám phá và khai thác trong các MDP và Bandits, kết nối các khái niệm từ tuần 1 đến tuần 8.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    }
+  ]
+}

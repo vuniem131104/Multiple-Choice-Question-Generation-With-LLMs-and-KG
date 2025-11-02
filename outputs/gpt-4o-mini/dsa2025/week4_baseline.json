@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Quicksort là thuật toán sắp xếp nào trong số các thuật toán sau?",
+            "answer": "Sắp xếp phân đoạn",
+            "distractors": [
+                "Sắp xếp nổi bọt",
+                "Sắp xếp chọn",
+                "Sắp xếp chèn"
+            ],
+            "explanation": "Quicksort là một thuật toán sắp xếp phân đoạn, hoạt động bằng cách chia mảng thành các phần nhỏ hơn và sắp xếp chúng một cách đệ quy."
+        },
+        {
+            "question": "Trong quy trình phân vùng của Quicksort, mục đích chính của việc sử dụng các con trỏ là gì?",
+            "answer": "Để hoán đổi các phần tử trong mảng",
+            "distractors": [
+                "Để tính toán số lần so sánh",
+                "Để xác định phần tử chốt",
+                "Để sắp xếp mảng theo thứ tự tăng dần"
+            ],
+            "explanation": "Các con trỏ trong quy trình phân vùng được sử dụng để quét mảng và hoán đổi các phần tử nhằm phân chia mảng thành các phần nhỏ hơn."
+        },
+        {
+            "question": "Trường hợp nào sau đây là trường hợp xấu nhất của Quicksort?",
+            "answer": "Mảng đã được sắp xếp theo thứ tự tăng dần",
+            "distractors": [
+                "Mảng có tất cả các phần tử giống nhau",
+                "Mảng có kích thước nhỏ",
+                "Mảng được sắp xếp theo thứ tự giảm dần"
+            ],
+            "explanation": "Trường hợp xấu nhất của Quicksort xảy ra khi mảng đã được sắp xếp theo thứ tự tăng dần, dẫn đến việc chọn phần tử chốt không hiệu quả."
+        },
+        {
+            "question": "Một trong những thuộc tính nào sau đây của Quicksort ảnh hưởng đến hiệu suất của nó?",
+            "answer": "Độ sâu đệ quy",
+            "distractors": [
+                "Thời gian thực hiện của Mergesort",
+                "Số lượng phần tử trong mảng",
+                "Tính ổn định của thuật toán"
+            ],
+            "explanation": "Độ sâu đệ quy ảnh hưởng đến hiệu suất của Quicksort, vì nó quyết định số lần gọi đệ quy và mức độ sử dụng bộ nhớ."
+        },
+        {
+            "question": "Một trong những cải tiến nào có thể được áp dụng cho Quicksort để tăng hiệu suất?",
+            "answer": "Sử dụng sắp xếp chèn cho các mảng con nhỏ",
+            "distractors": [
+                "Sử dụng sắp xếp nổi bọt cho toàn bộ mảng",
+                "Giảm số lần so sánh bằng cách sử dụng phân vùng ngẫu nhiên",
+                "Sử dụng thuật toán sắp xếp chọn cho các phần tử lớn"
+            ],
+            "explanation": "Sử dụng sắp xếp chèn cho các mảng con nhỏ là một cải tiến thực tiễn giúp tăng hiệu suất của Quicksort."
+        },
+        {
+            "question": "Vấn đề cờ Hà Lan trong Quicksort liên quan đến việc sắp xếp các phần tử nào?",
+            "answer": "Ba màu khác nhau",
+            "distractors": [
+                "Hai màu khác nhau",
+                "Một màu duy nhất",
+                "Nhiều màu khác nhau"
+            ],
+            "explanation": "Vấn đề cờ Hà Lan liên quan đến việc sắp xếp ba màu khác nhau, giúp tối ưu hóa quy trình phân vùng trong Quicksort."
+        },
+        {
+            "question": "Quicksort hai chốt có điểm khác biệt nào so với Quicksort thông thường?",
+            "answer": "Sử dụng hai phần tử chốt để phân vùng",
+            "distractors": [
+                "Sử dụng một phần tử chốt duy nhất",
+                "Không sử dụng phân vùng",
+                "Sử dụng ba phần tử chốt để phân vùng"
+            ],
+            "explanation": "Quicksort hai chốt sử dụng hai phần tử chốt để phân vùng, giúp cải thiện hiệu suất trong một số trường hợp."
+        },
+        {
+            "question": "Phương thức Arrays.sort() trong Java 7 sử dụng thuật toán nào để sắp xếp?",
+            "answer": "Quicksort hai chốt và Timsort",
+            "distractors": [
+                "Sắp xếp nổi bọt",
+                "Sắp xếp chèn",
+                "Sắp xếp chọn"
+            ],
+            "explanation": "Phương thức Arrays.sort() trong Java 7 sử dụng cả Quicksort hai chốt và Timsort, tùy thuộc vào kích thước và tính chất của mảng."
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Đặc điểm chính của Học tăng cường không mô hình là gì?",
+      "answer": "Không xây dựng mô hình nội tại của môi trường.",
+      "distractors": [
+        "Sử dụng mô hình nội tại để dự đoán hành vi môi trường.",
+        "Yêu cầu một tập dữ liệu lớn được gắn nhãn trước khi huấn luyện.",
+        "Chỉ hoạt động trong các môi trường có không gian trạng thái và hành động rời rạc."
+      ],
+      "explanation": "Đặc điểm chính của Học tăng cường không mô hình là **không xây dựng mô hình nội tại của môi trường**. Trong Học tăng cường không mô hình, tác nhân học cách tối ưu hóa hành vi của mình thông qua thử và sai trực tiếp với môi trường, mà không cần phải hiểu hoặc dự đoán động lực của môi trường. Nó học trực tiếp từ các phần thưởng và hình phạt nhận được.\n\nCác yếu tố gây nhiễu là sai vì:\n*   **Sử dụng mô hình nội tại để dự đoán hành vi môi trường** là đặc điểm của Học tăng cường dựa trên mô hình, nơi tác nhân xây dựng một mô hình của môi trường để lập kế hoạch và dự đoán kết quả của các hành động.\n*   **Yêu cầu một tập dữ liệu lớn được gắn nhãn trước khi huấn luyện** là đặc điểm của Học có giám sát, không phải Học tăng cường. Học tăng cường học từ tương tác với môi trường, không phải từ dữ liệu được gắn nhãn trước.\n*   **Chỉ hoạt động trong các môi trường có không gian trạng thái và hành động rời rạc** là không chính xác. Mặc dù Học tăng cường không mô hình thường được áp dụng trong các môi trường rời rạc, nhưng nó cũng có thể được mở rộng để hoạt động trong các môi trường có không gian trạng thái và hành động liên tục thông qua các kỹ thuật như xấp xỉ hàm giá trị hoặc chính sách.",
+      "topic": {
+        "name": "Khái niệm Học tăng cường không mô hình",
+        "description": "Chủ đề này kiểm tra sự hiểu biết cơ bản về Học tăng cường không mô hình, tập trung vào định nghĩa, sự khác biệt chính của nó so với các phương pháp dựa trên mô hình và lý do tại sao nó lại quan trọng. Học sinh nên có thể xác định các đặc điểm chính và khi nào nó được áp dụng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.9,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Đặc điểm nào thể hiện cách Học Monte-Carlo xử lý mô hình môi trường?",
+      "answer": "Nó là một phương pháp không mô hình.",
+      "distractors": [
+        "Nó yêu cầu một mô hình chính xác của môi trường.",
+        "Nó xây dựng một mô hình nội bộ của môi trường thông qua kinh nghiệm.",
+        "Nó dựa vào một mô hình được cung cấp trước để dự đoán kết quả."
+      ],
+      "explanation": "Giải thích:\n\n**Câu trả lời đúng là: Nó là một phương pháp không mô hình.**\nHọc Monte-Carlo là một phương pháp học tăng cường không mô hình. Điều này có nghĩa là nó học trực tiếp từ kinh nghiệm tương tác với môi trường mà không cần xây dựng hoặc sử dụng một mô hình nội bộ của môi trường (tức là không cần biết xác suất chuyển trạng thái hoặc phần thưởng). Thay vào đó, nó ước tính các giá trị hàm bằng cách lấy trung bình các phần thưởng nhận được từ nhiều lần trải nghiệm hoàn chỉnh (tập) của môi trường.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Nó yêu cầu một mô hình chính xác của môi trường.** Đây là sai vì Học Monte-Carlo được định nghĩa là một phương pháp không mô hình. Các phương pháp yêu cầu mô hình chính xác của môi trường thường thuộc loại lập kế hoạch hoặc học tăng cường dựa trên mô hình.\n*   **Nó xây dựng một mô hình nội bộ của môi trường thông qua kinh nghiệm.** Mặc dù Học Monte-Carlo học từ kinh nghiệm, nhưng nó không xây dựng một mô hình nội bộ của môi trường. Nó sử dụng kinh nghiệm để ước tính trực tiếp các hàm giá trị hoặc chính sách. Các phương pháp như Học Q-learning hoặc SARSA cũng là không mô hình nhưng không xây dựng mô hình môi trường. Các phương pháp dựa trên mô hình mới xây dựng mô hình môi trường.\n*   **Nó dựa vào một mô hình được cung cấp trước để dự đoán kết quả.** Điều này cũng sai. Nếu một mô hình được cung cấp trước, phương pháp đó sẽ là một phương pháp dựa trên mô hình hoặc lập kế hoạch, không phải Học Monte-Carlo. Học Monte-Carlo hoạt động mà không cần bất kỳ thông tin nào về động lực của môi trường ngoài các tương tác thực tế.",
+      "topic": {
+        "name": "Đặc điểm cơ bản của Học Monte-Carlo",
+        "description": "Chủ đề bao gồm các đặc điểm thiết yếu của phương pháp Học Monte-Carlo, bao gồm cách nó học từ kinh nghiệm hoàn chỉnh, tính chất không mô hình và hạn chế của nó khi chỉ áp dụng cho các MDP theo từng tập. Học sinh cần hiểu các yêu cầu và đầu ra của MC.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong đánh giá chính sách Monte-Carlo, phương pháp 'mọi lần' sử dụng lợi nhuận từ các lượt ghé thăm một trạng thái như thế nào để ước tính hàm giá trị của trạng thái đó?",
+      "answer": "Nó sử dụng lợi nhuận từ tất cả các lần trạng thái đó được ghé thăm trong một tập.",
+      "distractors": [
+        "Nó chỉ sử dụng lợi nhuận từ lần đầu tiên trạng thái đó được ghé thăm trong một tập.",
+        "Nó sử dụng lợi nhuận từ lần cuối cùng trạng thái đó được ghé thăm trong một tập.",
+        "Nó tính trung bình lợi nhuận của tất cả các trạng thái trong tập đó."
+      ],
+      "explanation": "Trong đánh giá chính sách Monte-Carlo, phương pháp 'mọi lần' (every-visit) ước tính hàm giá trị của một trạng thái bằng cách sử dụng lợi nhuận từ **tất cả các lần trạng thái đó được ghé thăm trong một tập**. Điều này có nghĩa là nếu một trạng thái được ghé thăm nhiều lần trong cùng một tập, mỗi lần ghé thăm sẽ đóng góp vào việc tính toán lợi nhuận trung bình để ước tính giá trị của trạng thái đó.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **\"Nó chỉ sử dụng lợi nhuận từ lần đầu tiên trạng thái đó được ghé thăm trong một tập.\"** Đây là mô tả của phương pháp 'lần đầu tiên' (first-visit) Monte-Carlo, không phải 'mọi lần'. Phương pháp 'lần đầu tiên' chỉ xem xét lợi nhuận từ lần đầu tiên một trạng thái được ghé thăm trong một tập.\n*   **\"Nó sử dụng lợi nhuận từ lần cuối cùng trạng thái đó được ghé thăm trong một tập.\"** Phương pháp này không phải là một phương pháp tiêu chuẩn trong đánh giá chính sách Monte-Carlo. Cả 'lần đầu tiên' và 'mọi lần' đều không hoạt động theo cách này.\n*   **\"Nó tính trung bình lợi nhuận của tất cả các trạng thái trong tập đó.\"** Phương pháp Monte-Carlo ước tính giá trị của *từng trạng thái cụ thể*, không phải giá trị trung bình của tất cả các trạng thái trong một tập. Mỗi trạng thái có hàm giá trị riêng được ước tính độc lập.",
+      "topic": {
+        "name": "Phân biệt Đánh giá chính sách MC: Lần đầu tiên và Mọi lần",
+        "description": "Kiểm tra khả năng phân biệt giữa đánh giá chính sách Monte-Carlo 'lần đầu tiên' và 'mọi lần'. Học sinh cần hiểu cách mỗi phương pháp sử dụng lợi nhuận từ các lượt ghé thăm trạng thái trong một tập để ước tính hàm giá trị và ý nghĩa của điều đó.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Ưu điểm chính của việc sử dụng tốc độ học (alpha) trong công thức cập nhật tăng dần Monte-Carlo là gì?",
+      "answer": "Cho phép ước tính giá trị mà không cần lưu trữ tất cả các kinh nghiệm đã qua.",
+      "distractors": [
+        "Giúp tăng tốc độ hội tụ của thuật toán.",
+        "Đảm bảo rằng các giá trị ước tính luôn chính xác tuyệt đối.",
+        "Cho phép sử dụng các hàm giá trị phức tạp hơn."
+      ],
+      "explanation": "Ưu điểm chính của việc sử dụng tốc độ học (alpha) trong công thức cập nhật tăng dần Monte-Carlo là **cho phép ước tính giá trị mà không cần lưu trữ tất cả các kinh nghiệm đã qua**. Khi sử dụng tốc độ học, mỗi bản cập nhật chỉ cần giá trị ước tính hiện tại và kinh nghiệm mới nhất để điều chỉnh ước tính. Điều này trái ngược với phương pháp trung bình đơn giản, yêu cầu lưu trữ hoặc tính toán lại tổng của tất cả các phần thưởng đã qua để có được giá trị trung bình. Do đó, việc sử dụng alpha giúp tiết kiệm bộ nhớ và hiệu quả tính toán, đặc biệt trong các môi trường có lượng kinh nghiệm lớn hoặc vô hạn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Giúp tăng tốc độ hội tụ của thuật toán.** Mặc dù việc chọn một giá trị alpha phù hợp có thể ảnh hưởng đến tốc độ hội tụ, nhưng đây không phải là ưu điểm chính của việc sử dụng alpha so với phương pháp trung bình. Trên thực tế, việc chọn alpha quá lớn có thể gây ra dao động và làm chậm quá trình hội tụ, trong khi alpha quá nhỏ có thể khiến thuật toán hội tụ rất chậm. Ưu điểm chính của alpha là về hiệu quả bộ nhớ và khả năng học liên tục.\n*   **Đảm bảo rằng các giá trị ước tính luôn chính xác tuyệt đối.** Không có phương pháp học tăng dần nào, kể cả với alpha, có thể đảm bảo độ chính xác tuyệt đối của các giá trị ước tính. Các ước tính luôn có một mức độ sai số nhất định, đặc biệt là trong các môi trường ngẫu nhiên hoặc khi số lượng kinh nghiệm còn hạn chế. Alpha chỉ là một tham số điều chỉnh tốc độ và mức độ ảnh hưởng của kinh nghiệm mới đến ước tính, không phải là yếu tố đảm bảo độ chính xác tuyệt đối.\n*   **Cho phép sử dụng các hàm giá trị phức tạp hơn.** Việc sử dụng tốc độ học (alpha) không trực tiếp cho phép sử dụng các hàm giá trị phức tạp hơn. Khả năng sử dụng các hàm giá trị phức tạp hơn (ví dụ: mạng nơ-ron) phụ thuộc vào việc sử dụng các phương pháp xấp xỉ hàm (function approximation), không phải là một tính năng nội tại của việc sử dụng tốc độ học trong công thức cập nhật tăng dần. Alpha chỉ là một tham số trong công thức cập nhật, không phải là một cơ chế cho phép biểu diễn hàm giá trị phức tạp.",
+      "topic": {
+        "name": "Công thức cập nhật tăng dần Monte-Carlo",
+        "description": "Chủ đề này tập trung vào các công thức cập nhật tăng dần được sử dụng trong Monte-Carlo để ước tính hàm giá trị. Học sinh cần nhớ công thức cập nhật trung bình và công thức sử dụng tốc độ học (alpha), bao gồm cả ưu điểm của việc sử dụng alpha.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong số các phương pháp Lập trình động (DP), Học Monte-Carlo (MC) và Học khác biệt thời gian (TD), phương pháp nào có khả năng bootstrapping (khởi tạo) đồng thời không yêu cầu một mô hình hoàn chỉnh của môi trường?",
+      "answer": "Học khác biệt thời gian (TD)",
+      "distractors": [
+        "Lập trình động (DP)",
+        "Học Monte-Carlo (MC)",
+        "Cả Học Monte-Carlo (MC) và Học khác biệt thời gian (TD)"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Học khác biệt thời gian (TD)** vì nó là phương pháp duy nhất trong số các lựa chọn có khả năng bootstrapping (khởi tạo) đồng thời không yêu cầu một mô hình hoàn chỉnh của môi trường. Học TD học từ các ước tính của các ước tính khác (bootstrapping) và có thể học trực tiếp từ kinh nghiệm mà không cần biết trước động lực của môi trường.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Lập trình động (DP)** là sai vì mặc dù nó có khả năng bootstrapping, nhưng nó yêu cầu một mô hình hoàn chỉnh của môi trường để tính toán các giá trị trạng thái hoặc hành động. DP không thể hoạt động nếu không có mô hình này.\n*   **Học Monte-Carlo (MC)** là sai vì mặc dù nó không yêu cầu một mô hình hoàn chỉnh của môi trường (nó học từ kinh nghiệm), nhưng nó không có khả năng bootstrapping. MC chỉ cập nhật các ước tính giá trị sau khi một tập hợp đầy đủ các kinh nghiệm (một tập hợp) đã hoàn thành, dựa trên phần thưởng thực tế nhận được, chứ không phải dựa trên các ước tính giá trị khác.\n*   **Cả Học Monte-Carlo (MC) và Học khác biệt thời gian (TD)** là sai vì, như đã giải thích ở trên, MC không có khả năng bootstrapping. Do đó, không phải cả hai phương pháp đều đáp ứng cả hai tiêu chí được nêu trong câu hỏi.\n",
+      "topic": {
+        "name": "So sánh Học TD với Học DP và MC (Liên tuần)",
+        "description": "Chủ đề này yêu cầu học sinh so sánh Học khác biệt thời gian (TD) với Lập trình động (DP) từ Tuần 2 và Học Monte-Carlo (MC) từ Tuần 3. Các điểm so sánh chính bao gồm yêu cầu mô hình, khả năng khởi tạo (bootstrapping), học trực tuyến và phương sai/độ lệch. Điều này tích hợp các khái niệm từ Tuần 2 và Tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một lập trình viên đang triển khai một thuật toán học tăng cường và chọn sử dụng lợi nhuận n-bước để cập nhật hàm giá trị. Quyết định này tác động như thế nào đến cách thuật toán cân bằng thông tin từ các phần thưởng trong tương lai và các ước tính giá trị hiện có?",
+      "answer": "Nó cho phép cập nhật hàm giá trị dựa trên một chuỗi n phần thưởng thực tế kết hợp với ước tính giá trị từ trạng thái thứ n, cân bằng giữa khởi tạo và nhìn xa.",
+      "distractors": [
+        "Nó chỉ sử dụng phần thưởng thực tế từ n bước đầu tiên, bỏ qua hoàn toàn các ước tính giá trị trong tương lai.",
+        "Nó cập nhật hàm giá trị chỉ dựa trên ước tính giá trị từ trạng thái thứ n, bỏ qua tất cả các phần thưởng thực tế.",
+        "Nó làm tăng phương sai của các cập nhật hàm giá trị đáng kể, làm cho thuật toán kém ổn định hơn so với các phương pháp Monte-Carlo."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Nó cho phép cập nhật hàm giá trị dựa trên một chuỗi n phần thưởng thực tế kết hợp với ước tính giá trị từ trạng thái thứ n, cân bằng giữa khởi tạo và nhìn xa.\" vì lợi nhuận n-bước (n-step return) là một phương pháp trong học tăng cường kết hợp các yếu tố của cả phương pháp Monte-Carlo và phương pháp khác biệt thời gian (TD). Cụ thể, nó tính toán tổng của n phần thưởng thực tế đầu tiên và sau đó thêm vào ước tính giá trị (từ hàm giá trị hiện tại) của trạng thái đạt được sau n bước. Điều này tạo ra sự cân bằng: nó sử dụng một số phần thưởng thực tế (như Monte-Carlo) để giảm độ lệch, nhưng cũng sử dụng ước tính giá trị (như TD) để giảm phương sai và cho phép cập nhật sớm hơn, không cần đợi đến cuối tập.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- \"Nó chỉ sử dụng phần thưởng thực tế từ n bước đầu tiên, bỏ qua hoàn toàn các ước tính giá trị trong tương lai.\" là sai. Nếu chỉ sử dụng phần thưởng thực tế từ n bước đầu tiên mà không có ước tính giá trị từ trạng thái thứ n, thì đây sẽ là một dạng cắt cụt của phương pháp Monte-Carlo, không phải lợi nhuận n-bước điển hình, và sẽ bỏ lỡ thông tin quan trọng về giá trị dài hạn.\n- \"Nó cập nhật hàm giá trị chỉ dựa trên ước tính giá trị từ trạng thái thứ n, bỏ qua tất cả các phần thưởng thực tế.\" là sai. Nếu chỉ dựa vào ước tính giá trị từ trạng thái thứ n mà bỏ qua tất cả các phần thưởng thực tế trong n bước đó, thì đây sẽ là một cập nhật TD(0) hoặc một dạng cập nhật TD thuần túy, không phải lợi nhuận n-bước, vốn được định nghĩa là bao gồm các phần thưởng thực tế.\n- \"Nó làm tăng phương sai của các cập nhật hàm giá trị đáng kể, làm cho thuật toán kém ổn định hơn so với các phương pháp Monte-Carlo.\" là sai. Ngược lại, lợi nhuận n-bước thường làm giảm phương sai so với các phương pháp Monte-Carlo đầy đủ (vốn chờ đến cuối tập) vì nó sử dụng ước tính giá trị để \"khởi tạo\" phần còn lại của chuỗi, thay vì phải chờ đợi tất cả các phần thưởng thực tế. Mặc dù nó có thể có phương sai cao hơn TD(0) (do sử dụng nhiều phần thưởng thực tế hơn), nhưng nó thường ổn định hơn Monte-Carlo.",
+      "topic": {
+        "name": "Ứng dụng lợi nhuận n-bước trong TD",
+        "description": "Chủ đề này khám phá cách lợi nhuận n-bước trong Học khác biệt thời gian cân bằng giữa việc nhìn xa của Monte-Carlo và khởi tạo của TD. Học sinh cần hiểu công thức lợi nhuận n-bước và cách nó được sử dụng để cập nhật các ước tính giá trị trạng thái.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Điểm khác biệt chính nào minh họa nguyên lý bootstrapping trong Học khác biệt thời gian (TD) và Lập trình Động (DP) so với phương pháp Monte-Carlo?",
+      "answer": "TD và DP cập nhật ước tính giá trị dựa trên các ước tính giá trị trạng thái/hành động tiếp theo, trong khi Monte-Carlo dựa vào giá trị trả về thực tế cuối cùng.",
+      "distractors": [
+        "TD và DP sử dụng mô hình môi trường đầy đủ để cập nhật giá trị, trong khi Monte-Carlo không yêu cầu mô hình.",
+        "Monte-Carlo cập nhật giá trị sau mỗi bước thời gian, còn TD và DP chỉ cập nhật ở cuối mỗi tập.",
+        "TD và DP yêu cầu khám phá toàn bộ không gian trạng thái trước khi cập nhật, còn Monte-Carlo có thể học từ các mẫu ngẫu nhiên."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao câu trả lời đúng là đúng:**\n\nNguyên lý bootstrapping là điểm khác biệt chính giữa các phương pháp Học khác biệt thời gian (TD) và Lập trình Động (DP) so với Monte-Carlo. TD và DP được gọi là các phương pháp bootstrapping vì chúng cập nhật ước tính giá trị của một trạng thái hoặc hành động dựa trên các ước tính giá trị của các trạng thái hoặc hành động tiếp theo. Điều này có nghĩa là chúng sử dụng \"ước tính của ước tính\" để cải thiện các ước tính giá trị hiện tại. Ngược lại, phương pháp Monte-Carlo không sử dụng bootstrapping; nó chỉ cập nhật ước tính giá trị sau khi hoàn thành toàn bộ một tập và có được giá trị trả về thực tế (tổng phần thưởng chiết khấu) từ trạng thái ban đầu đến trạng thái kết thúc. Do đó, Monte-Carlo dựa vào giá trị trả về thực tế cuối cùng, trong khi TD và DP dựa vào các ước tính giá trị tiếp theo.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **TD và DP sử dụng mô hình môi trường đầy đủ để cập nhật giá trị, trong khi Monte-Carlo không yêu cầu mô hình.** Tuyên bố này không chính xác. Mặc dù Lập trình Động (DP) yêu cầu một mô hình môi trường đầy đủ, Học khác biệt thời gian (TD) là một phương pháp học không mô hình (model-free), giống như Monte-Carlo. Cả TD và Monte-Carlo đều có thể học mà không cần biết trước động lực của môi trường.\n\n*   **Monte-Carlo cập nhật giá trị sau mỗi bước thời gian, còn TD và DP chỉ cập nhật ở cuối mỗi tập.** Tuyên bố này đảo ngược vai trò của các phương pháp. Phương pháp Monte-Carlo chỉ cập nhật ước tính giá trị sau khi kết thúc một tập và có được giá trị trả về cuối cùng. Ngược lại, các phương pháp TD (như TD(0)) cập nhật ước tính giá trị sau mỗi bước thời gian, sử dụng phần thưởng nhận được và ước tính giá trị của trạng thái tiếp theo. DP cũng cập nhật giá trị lặp đi lặp lại, thường là sau mỗi lần lặp chính sách hoặc giá trị, không chỉ ở cuối mỗi tập.\n\n*   **TD và DP yêu cầu khám phá toàn bộ không gian trạng thái trước khi cập nhật, còn Monte-Carlo có thể học từ các mẫu ngẫu nhiên.** Tuyên bố này không chính xác. DP thường yêu cầu truy cập vào toàn bộ không gian trạng thái để thực hiện các phép lặp giá trị hoặc chính sách. Tuy nhiên, TD, giống như Monte-Carlo, là một phương pháp học từ kinh nghiệm và có thể học từ các mẫu ngẫu nhiên hoặc các quỹ đạo được tạo ra thông qua tương tác với môi trường, mà không cần khám phá toàn bộ không gian trạng thái trước.",
+      "topic": {
+        "name": "Nguyên lý bootstrapping trong TD (Liên tuần)",
+        "description": "Chủ đề này kiểm tra sự hiểu biết về nguyên lý bootstrapping khi áp dụng cho Học khác biệt thời gian (TD) từ Tuần 3 và Lập trình động (DP) từ Tuần 2. Học sinh cần giải thích cách TD và DP cập nhật ước tính dựa trên các ước tính khác, trái ngược với Monte-Carlo. Điều này tích hợp các khái niệm từ Tuần 2 và Tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi phân tích thuật toán TD(λ), làm thế nào cơ chế tích lũy và giảm dần của dấu vết đủ điều kiện thay đổi nguyên tắc phân bổ tín dụng, cho phép lan truyền lỗi dự đoán vượt ra ngoài trạng thái liền kề so với các phương pháp học chênh lệch thời gian một bước?",
+      "answer": "Cơ chế này phân bổ lỗi dự đoán cho các trạng thái trước đó dựa trên mức độ \"đủ điều kiện\" của chúng, cho phép các cập nhật lan truyền ngược thời gian theo một chuỗi các trạng thái.",
+      "distractors": [
+        "Cơ chế này chỉ đơn giản là tăng cường tốc độ hội tụ bằng cách áp dụng các cập nhật lớn hơn cho các trạng thái đã truy cập gần đây nhất, không thay đổi nguyên tắc phân bổ tín dụng cơ bản.",
+        "Dấu vết đủ điều kiện chỉ điều chỉnh trọng số của các hành động được thực hiện trong một trạng thái cụ thể, không ảnh hưởng đến việc phân bổ lỗi dự đoán cho các trạng thái trước đó.",
+        "Cơ chế này cho phép thuật toán tính toán giá trị Q chính xác hơn bằng cách xem xét tất cả các phần thưởng trong một tập hợp con của các tập, thay vì chỉ các phần thưởng ngay lập tức."
+      ],
+      "explanation": "Giải thích:\n\nCơ chế tích lũy và giảm dần của dấu vết đủ điều kiện trong TD(λ) thay đổi nguyên tắc phân bổ tín dụng bằng cách cho phép lỗi dự đoán lan truyền vượt ra ngoài trạng thái liền kề. **Câu trả lời đúng** là \"Cơ chế này phân bổ lỗi dự đoán cho các trạng thái trước đó dựa trên mức độ \"đủ điều kiện\" của chúng, cho phép các cập nhật lan truyền ngược thời gian theo một chuỗi các trạng thái.\" Điều này là đúng vì dấu vết đủ điều kiện (eligibility traces) duy trì một \"dấu vết\" của các trạng thái đã truy cập gần đây, với mức độ đủ điều kiện giảm dần theo thời gian. Khi một lỗi dự đoán (TD error) xảy ra, nó không chỉ cập nhật trạng thái hiện tại mà còn phân bổ một phần lỗi đó cho các trạng thái trước đó theo tỷ lệ mức độ đủ điều kiện của chúng. Điều này tạo ra một cơ chế cập nhật \"ngược thời gian\", cho phép các trạng thái không liền kề với lỗi dự đoán cũng được cập nhật, giải quyết vấn đề phân bổ tín dụng trong các chuỗi hành động dài.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   \"Cơ chế này chỉ đơn giản là tăng cường tốc độ hội tụ bằng cách áp dụng các cập nhật lớn hơn cho các trạng thái đã truy cập gần đây nhất, không thay đổi nguyên tắc phân bổ tín dụng cơ bản.\" là sai. Mặc dù TD(λ) có thể cải thiện tốc độ hội tụ, nhưng nó không chỉ đơn thuần là áp dụng các cập nhật lớn hơn. Thay vào đó, nó thay đổi cơ bản cách phân bổ tín dụng bằng cách cho phép lỗi lan truyền đến các trạng thái không liền kề, điều này khác với việc chỉ tăng cường cập nhật cho các trạng thái gần đây.\n*   \"Dấu vết đủ điều kiện chỉ điều chỉnh trọng số của các hành động được thực hiện trong một trạng thái cụ thể, không ảnh hưởng đến việc phân bổ lỗi dự đoán cho các trạng thái trước đó.\" là sai. Dấu vết đủ điều kiện không chỉ điều chỉnh trọng số hành động; vai trò chính của chúng là theo dõi mức độ \"đủ điều kiện\" của các cặp trạng thái-hành động (hoặc trạng thái) để nhận được cập nhật từ lỗi dự đoán, cho phép lỗi đó ảnh hưởng đến các trạng thái đã truy cập trước đó.\n*   \"Cơ chế này cho phép thuật toán tính toán giá trị Q chính xác hơn bằng cách xem xét tất cả các phần thưởng trong một tập hợp con của các tập, thay vì chỉ các phần thưởng ngay lập tức.\" là sai. Mặc dù TD(λ) giúp tính toán giá trị chính xác hơn, nhưng nó không phải bằng cách xem xét \"tất cả các phần thưởng trong một tập hợp con của các tập\". Thay vào đó, nó sử dụng lỗi dự đoán một bước (TD error) và lan truyền lỗi đó ngược thời gian thông qua dấu vết đủ điều kiện, kết hợp các lợi ích của Monte Carlo (xem xét phần thưởng dài hạn) và TD một bước (sử dụng bootstrapping).",
+      "topic": {
+        "name": "Vai trò dấu vết đủ điều kiện trong TD(Lambda) (Liên tuần)",
+        "description": "Chủ đề này đi sâu vào vai trò của dấu vết đủ điều kiện (Eligibility Traces) trong TD(λ) từ Tuần 3. Học sinh cần phân tích cách dấu vết đủ điều kiện giải quyết vấn đề phân bổ tín dụng, cách chúng tích lũy và giảm dần, và mối quan hệ của chúng với các phương trình Bellman từ Tuần 1 để cải thiện hiệu quả học tập.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    }
+  ]
+}

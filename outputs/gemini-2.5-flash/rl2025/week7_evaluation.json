@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Phân biệt Học RL dựa trên mô hình và không mô hình",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it directly asks for the *key differentiating factor* (the presence/absence of the environment model) which aligns perfectly with the 'Nhớ' Bloom level and 'Dễ' difficulty. The correct answer is concise and unambiguous. The distractors are plausible concepts within RL but not the core differentiator. The Baseline question's correct answer is too verbose for a 'Nhớ' level question and essentially provides a definition rather than identifying the core difference. Its distractors are also less plausible as core differentiators."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Định nghĩa và thành phần của Mô hình trong RL",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are good and relevant. The Pipeline question is slightly better because its correct answer (Pη và Rη) is more direct and concise, fitting the 'Nhớ' Bloom level perfectly. The distractors are also well-chosen, representing other RL concepts. The Baseline's correct answer is also accurate but slightly more descriptive than necessary for a 'Nhớ' level question. Its distractors are also plausible but the Pipeline's are slightly more focused on components that could be confused with model components."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Mô hình tra cứu bảng trong Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "tie",
+            "rationale": "Both Pipeline and Baseline questions are excellent. They are highly relevant, clear, and have plausible distractors. The correct answer is precise and directly addresses the topic's learning objective at the 'Hiểu' Bloom level. There is no significant difference in quality between the two."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Quy trình cập nhật trong thuật toán Dyna-Q",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks for the *next step* in a sequence, which is a more focused and appropriate way to test 'Nhớ' level understanding of a process. The correct answer is concise. The Baseline question asks for the *entire sequence*, which is more demanding for a 'Nhớ' level and makes the correct answer very long and potentially difficult to parse. The distractors in the Baseline are also long and complex, making the question less clear and potentially confusing."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Áp dụng lập kế hoạch dựa trên mẫu với kiểm soát không mô hình",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "tie",
+            "rationale": "Both Pipeline and Baseline questions are excellent. They are highly relevant, clear, and have plausible distractors. The correct answer accurately describes the application of sample-based planning with model-free control, fitting the 'Áp dụng' Bloom level and 'Trung bình' difficulty. There is no significant difference in quality between the two."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Kiến trúc Dyna và sự tích hợp Học & Lập kế hoạch",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better. It focuses on the *interaction* between planning and learning, which is central to the 'Phân tích' Bloom level. The correct answer is concise and directly addresses this interaction. The Baseline question is also good and relevant, but its correct answer is a bit more descriptive of the overall process rather than specifically the *interaction* aspect. The Pipeline's distractors are also slightly more nuanced in their incorrectness."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "So sánh phương pháp Tìm kiếm Monte-Carlo đơn giản và MCTS",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because it specifically asks for the *basic difference in how the simulation policy is improved*, which is a more precise way to differentiate MCTS from simple MC search and aligns well with the 'Phân tích' Bloom level. The correct answer is focused. The Baseline question is also good, but its correct answer is a broader statement of the difference. The Pipeline's distractors are also well-crafted to represent common misunderstandings."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Khái niệm n-bước và dấu vết đủ điều kiện trong Học dựa trên mô hình",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better. It asks for the *main benefit* of integrating these concepts, which is a concise way to test 'Tổng hợp' level understanding. The correct answer is direct and accurate. The Baseline question is also very good and relevant, but its correct answer is a bit more descriptive of *how* it's applied rather than the primary *benefit*. For a 'Khó' and 'Tổng hợp' level, both are strong, but Pipeline's conciseness and directness in asking for the 'benefit' gives it a slight edge."
+        }
+    ]
+}

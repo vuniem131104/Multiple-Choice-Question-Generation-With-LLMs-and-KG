@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Học tăng cường là gì?",
+      "answer": "Kỹ thuật học dựa trên phản hồi.",
+      "distractors": [
+        "Kỹ thuật học không cần phản hồi.",
+        "Kỹ thuật học chỉ dựa trên kinh nghiệm.",
+        "Kỹ thuật học sử dụng mô hình cố định."
+      ],
+      "explanation": "Học tăng cường là một kỹ thuật học mà trong đó các quyết định được đưa ra dựa trên phản hồi từ môi trường. Câu trả lời đúng \"Kỹ thuật học dựa trên phản hồi\" phản ánh bản chất của học tăng cường, nơi mà các hành động được điều chỉnh dựa trên kết quả nhận được, giúp tối ưu hóa hành vi trong tương lai thông qua việc học từ những sai lầm và thành công.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Kỹ thuật học không cần phản hồi**: Tùy chọn này sai vì học tăng cường chính xác là một quá trình học mà phản hồi từ môi trường là rất quan trọng. Nếu không có phản hồi, không thể điều chỉnh hành động để cải thiện hiệu suất.\n\n- **Kỹ thuật học chỉ dựa trên kinh nghiệm**: Mặc dù kinh nghiệm là một phần của học tăng cường, nhưng điều quan trọng là phải có phản hồi từ môi trường để học hỏi và điều chỉnh hành động. Chỉ dựa vào kinh nghiệm mà không có phản hồi sẽ không đủ để hình thành một mô hình học tăng cường hiệu quả.\n\n- **Kỹ thuật học sử dụng mô hình cố định**: Tùy chọn này không chính xác vì học tăng cường thường liên quan đến việc điều chỉnh hành động dựa trên phản hồi, không phải là một mô hình cố định. Học tăng cường cho phép linh hoạt trong việc thay đổi hành động dựa trên kết quả, điều này trái ngược với khái niệm mô hình cố định.\n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của phản hồi trong học tăng cường, trong khi các yếu tố gây nhiễu đều thiếu sự hiểu biết về vai trò của phản hồi trong quá trình học này.",
+      "topic": {
+        "name": "Các khái niệm cơ bản về Học tăng cường",
+        "description": "Khám phá các khái niệm cơ bản của học tăng cường, bao gồm sự khác biệt giữa học dựa trên mô hình và không dựa trên mô hình. Chủ đề này bao gồm định nghĩa của các loại học và tính chất của MDPs, là nền tảng cho việc nắm vững các khái niệm học tăng cường.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một trong những ưu điểm chính của học tăng cường dựa trên mô hình so với không dựa trên mô hình là gì?",
+      "answer": "Khả năng dự đoán chính xác hơn trong các môi trường không xác định.",
+      "distractors": [
+        "Khả năng hoạt động tốt hơn trong các môi trường có dữ liệu đầy đủ.",
+        "Khả năng học từ các sai lầm trong quá khứ mà không cần mô hình hóa.",
+        "Khả năng áp dụng các quy tắc đơn giản để đưa ra quyết định nhanh chóng."
+      ],
+      "explanation": "Câu trả lời đúng \"Khả năng dự đoán chính xác hơn trong các môi trường không xác định\" là chính xác vì học tăng cường dựa trên mô hình sử dụng các mô hình toán học để ước lượng giá trị và hành động tối ưu trong các tình huống mà thông tin không đầy đủ. Điều này cho phép nó đưa ra quyết định dựa trên các dự đoán có cơ sở, giúp cải thiện hiệu suất trong các môi trường không xác định, nơi mà các yếu tố có thể thay đổi và không thể dự đoán được.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Khả năng hoạt động tốt hơn trong các môi trường có dữ liệu đầy đủ**: Đây là một yếu tố sai vì học tăng cường dựa trên mô hình không nhất thiết phải hoạt động tốt hơn trong môi trường có dữ liệu đầy đủ. Thực tế, ưu điểm của nó nằm ở khả năng xử lý và dự đoán trong các tình huống không chắc chắn, không phải khi có đầy đủ thông tin.\n\n- **Khả năng học từ các sai lầm trong quá khứ mà không cần mô hình hóa**: Tùy chọn này không chính xác vì học tăng cường dựa trên mô hình thực sự cần mô hình hóa để học từ các sai lầm. Việc không có mô hình hóa sẽ làm giảm khả năng học hỏi và cải thiện từ các trải nghiệm trước đó, điều này không phải là ưu điểm của phương pháp này.\n\n- **Khả năng áp dụng các quy tắc đơn giản để đưa ra quyết định nhanh chóng**: Đây cũng là một yếu tố sai vì học tăng cường dựa trên mô hình thường phức tạp hơn và không chỉ dựa vào các quy tắc đơn giản. Nó yêu cầu một quá trình tính toán phức tạp để tối ưu hóa hành động dựa trên mô hình, điều này không cho phép ra quyết định nhanh chóng như các phương pháp không dựa trên mô hình có thể làm.\n\nTóm lại, câu trả lời đúng nhấn mạnh vào khả năng dự đoán trong môi trường không xác định, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất và ưu điểm của học tăng cường dựa trên mô hình.",
+      "topic": {
+        "name": "Ưu nhược điểm của Học tăng cường dựa trên mô hình",
+        "description": "Phân tích các ưu điểm và nhược điểm của học tăng cường dựa trên mô hình so với không dựa trên mô hình. Hiểu các vấn đề xấp xỉ có thể phát sinh khi xây dựng hàm giá trị từ mô hình đã học trong môi trường không xác định.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong mô hình quyết định Markov (MDP), thuật toán nào thường được sử dụng để tối ưu hóa chính sách dựa trên giá trị của các trạng thái?",
+      "answer": "Lặp chính sách",
+      "distractors": [
+        "Lặp giá trị",
+        "Thuật toán Q-learning",
+        "Lặp trạng thái"
+      ],
+      "explanation": "Trong mô hình quyết định Markov (MDP), \"Lặp chính sách\" là câu trả lời đúng vì đây là một thuật toán được sử dụng để tối ưu hóa chính sách bằng cách cải thiện dần dần chính sách hiện tại dựa trên giá trị của các trạng thái. Quá trình này bao gồm hai bước: đánh giá chính sách (tính toán giá trị của các trạng thái theo chính sách hiện tại) và cải thiện chính sách (cập nhật chính sách dựa trên giá trị đã tính toán). Điều này giúp tìm ra chính sách tối ưu cho MDP.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Lặp giá trị**: Mặc dù lặp giá trị cũng là một thuật toán trong MDP, nó chủ yếu tập trung vào việc tính toán giá trị tối ưu cho các trạng thái mà không trực tiếp tối ưu hóa chính sách. Lặp giá trị không cải thiện chính sách mà chỉ tìm ra giá trị tối ưu cho từng trạng thái.\n\n- **Thuật toán Q-learning**: Đây là một phương pháp học tăng cường không cần mô hình, sử dụng để tìm ra giá trị tối ưu cho các hành động trong các trạng thái mà không cần phải biết trước mô hình của môi trường. Q-learning không phải là một thuật toán tối ưu hóa chính sách dựa trên giá trị của các trạng thái mà là một phương pháp học từ kinh nghiệm.\n\n- **Lặp trạng thái**: Thuật ngữ này không phải là một thuật toán chính thức trong MDP. Nó có thể gây nhầm lẫn với các thuật ngữ khác nhưng không liên quan đến việc tối ưu hóa chính sách. Lặp trạng thái không mô tả một quy trình cụ thể nào trong việc tối ưu hóa chính sách.\n\nTóm lại, \"Lặp chính sách\" là thuật toán chính xác cho việc tối ưu hóa chính sách trong MDP, trong khi các yếu tố gây nhiễu khác không phù hợp với yêu cầu của câu hỏi.",
+      "topic": {
+        "name": "Lập kế hoạch với mô hình MDP",
+        "description": "Tìm hiểu về cách lập kế hoạch dựa trên mô hình trong một MDP. Chủ đề này bao gồm các thuật toán như lặp giá trị và lặp chính sách và ứng dụng của chúng trong các tình huống thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Phương pháp nào thường được sử dụng để tối ưu hóa giải pháp trong các môi trường MDP khi áp dụng kỹ thuật lập trình động?",
+      "answer": "Giải thuật Bellman.",
+      "distractors": [
+        "Giải thuật A*",
+        "Giải thuật Dijkstra",
+        "Giải thuật Q-learning"
+      ],
+      "explanation": "Giải thuật Bellman là câu trả lời đúng vì nó là một phương pháp cơ bản trong lập trình động để tối ưu hóa các giải pháp trong môi trường quyết định Markov (MDP). Giải thuật này sử dụng nguyên tắc tối ưu Bellman, cho phép tính toán giá trị tối ưu của các trạng thái bằng cách phân tích các quyết định tại mỗi trạng thái và xác định giá trị kỳ vọng của các hành động. Điều này giúp tìm ra chính sách tối ưu cho việc ra quyết định trong các tình huống không chắc chắn.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Giải thuật A***: Đây là một thuật toán tìm kiếm được sử dụng chủ yếu trong các bài toán tìm đường, không phải là một phương pháp tối ưu hóa trong MDP. A* sử dụng hàm đánh giá để tìm đường đi ngắn nhất, nhưng không áp dụng nguyên tắc tối ưu Bellman.\n\n- **Giải thuật Dijkstra**: Giải thuật này cũng là một thuật toán tìm đường, chuyên dùng để tìm đường đi ngắn nhất trong đồ thị. Mặc dù nó có thể được sử dụng trong một số trường hợp liên quan đến MDP, nhưng nó không phải là một phương pháp tối ưu hóa cho MDP như giải thuật Bellman.\n\n- **Giải thuật Q-learning**: Đây là một phương pháp học tăng cường, không phải là một kỹ thuật lập trình động. Q-learning sử dụng các giá trị Q để học chính sách tối ưu từ các tương tác với môi trường, nhưng không dựa trên nguyên tắc tối ưu Bellman theo cách mà lập trình động thực hiện.\n\nTóm lại, giải thuật Bellman là phương pháp chính xác cho việc tối ưu hóa trong MDP, trong khi các yếu tố gây nhiễu khác không phù hợp với mục tiêu này.",
+      "topic": {
+        "name": "Khám phá các kỹ thuật Lập trình động",
+        "description": "Xem xét các kỹ thuật Kỹ thuật Lập trình động và các thuật toán chính của nó. Phân tích các phương pháp để tối ưu hóa các giải pháp trong môi trường MDP và xử lý các vấn đề phức tạp.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Dự đoán n-Bước và Lợi nhuận Lambda cải thiện khả năng ước tính giá trị trong học tăng cường bằng cách nào?",
+      "answer": "Kết hợp các ưu điểm của Học Monte-Carlo và Học khác biệt thời gian.",
+      "distractors": [
+        "Kết hợp các ưu điểm của Học hồi quy và Học phân loại.",
+        "Sử dụng phương pháp Học sâu để cải thiện khả năng ước tính.",
+        "Chỉ dựa vào Học Monte-Carlo mà không cần Học khác biệt thời gian."
+      ],
+      "explanation": "Câu trả lời đúng là \"Kết hợp các ưu điểm của Học Monte-Carlo và Học khác biệt thời gian\" vì Dự đoán n-Bước và Lợi nhuận Lambda thực sự kết hợp hai phương pháp này để cải thiện khả năng ước tính giá trị trong học tăng cường. Học Monte-Carlo cung cấp ước lượng chính xác hơn thông qua việc sử dụng nhiều mẫu ngẫu nhiên, trong khi Học khác biệt thời gian giúp cập nhật giá trị dự đoán một cách hiệu quả hơn theo thời gian. Sự kết hợp này cho phép mô hình tận dụng cả độ chính xác và tốc độ hội tụ, từ đó nâng cao hiệu suất ước tính giá trị.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Kết hợp các ưu điểm của Học hồi quy và Học phân loại**: Đây là hai phương pháp học máy khác nhau không liên quan trực tiếp đến việc ước tính giá trị trong học tăng cường. Học hồi quy thường được sử dụng cho các bài toán dự đoán liên tục, trong khi Học phân loại được sử dụng cho các bài toán phân loại. Chúng không cung cấp các ưu điểm cần thiết cho việc cải thiện ước tính giá trị trong ngữ cảnh này.\n\n- **Sử dụng phương pháp Học sâu để cải thiện khả năng ước tính**: Mặc dù Học sâu có thể cải thiện khả năng ước tính trong một số trường hợp, nhưng câu hỏi cụ thể đề cập đến Dự đoán n-Bước và Lợi nhuận Lambda, mà không nhất thiết phải sử dụng Học sâu. Học sâu không phải là yếu tố chính trong việc kết hợp Học Monte-Carlo và Học khác biệt thời gian.\n\n- **Chỉ dựa vào Học Monte-Carlo mà không cần Học khác biệt thời gian**: Nếu chỉ dựa vào Học Monte-Carlo, mô hình sẽ thiếu khả năng cập nhật giá trị một cách hiệu quả theo thời gian, dẫn đến việc ước tính không chính xác và chậm hội tụ. Học khác biệt thời gian là cần thiết để cải thiện tốc độ và độ chính xác của ước tính giá trị.\n\nTóm lại, câu trả lời đúng phản ánh sự kết hợp hiệu quả giữa hai phương pháp học, trong khi các yếu tố gây nhiễu không liên quan hoặc không đủ để cải thiện khả năng ước tính giá trị trong học tăng cường.",
+      "topic": {
+        "name": "Dự đoán n-Bước và Lợi nhuận Lambda",
+        "description": "Nghiên cứu về các phương pháp như Dự đoán n-Bước và Lợi nhuận Lambda kết hợp các ưu điểm của Học Monte-Carlo và Học khác biệt thời gian. Phân tích cách thức chúng có thể cải thiện khả năng ước tính giá trị trong học tăng cường.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán REINFORCE, đại lượng nào thường được sử dụng để điều chỉnh chính sách dựa trên đạo hàm của nó?",
+      "answer": "Gradient của giá trị kỳ vọng thưởng.",
+      "distractors": [
+        "Giá trị kỳ vọng của chính sách hiện tại.",
+        "Đạo hàm của hàm giá trị trạng thái.",
+        "Gradient của hàm mất mát trong học sâu."
+      ],
+      "explanation": "Trong thuật toán REINFORCE, câu trả lời đúng là \"Gradient của giá trị kỳ vọng thưởng\" vì thuật toán này sử dụng gradient của giá trị kỳ vọng thưởng để điều chỉnh chính sách. Cụ thể, REINFORCE tính toán gradient của giá trị kỳ vọng thưởng để cập nhật các tham số của chính sách nhằm tối đa hóa tổng thưởng mà tác nhân nhận được. Điều này cho phép tác nhân học từ các hành động đã thực hiện và cải thiện chính sách của mình theo thời gian.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n1. **Giá trị kỳ vọng của chính sách hiện tại**: Đây không phải là đại lượng được sử dụng để điều chỉnh chính sách trong REINFORCE. Giá trị kỳ vọng của chính sách hiện tại chỉ là một giá trị trung bình của các phần thưởng mà chính sách có thể nhận được, nhưng không cung cấp thông tin về cách điều chỉnh chính sách để tối ưu hóa phần thưởng.\n\n2. **Đạo hàm của hàm giá trị trạng thái**: Đạo hàm của hàm giá trị trạng thái liên quan đến việc đánh giá giá trị của một trạng thái cụ thể, nhưng không trực tiếp liên quan đến việc điều chỉnh chính sách. REINFORCE tập trung vào gradient của giá trị kỳ vọng thưởng, không phải là đạo hàm của hàm giá trị trạng thái.\n\n3. **Gradient của hàm mất mát trong học sâu**: Mặc dù gradient của hàm mất mát là một khái niệm quan trọng trong học sâu, nó không phải là đại lượng được sử dụng trong REINFORCE để điều chỉnh chính sách. REINFORCE sử dụng gradient của giá trị kỳ vọng thưởng, không phải gradient của hàm mất mát, để cập nhật chính sách.\n\nTóm lại, câu trả lời đúng là \"Gradient của giá trị kỳ vọng thưởng\" vì nó phản ánh cách mà REINFORCE điều chỉnh chính sách dựa trên phần thưởng kỳ vọng, trong khi các yếu tố gây nhiễu không liên quan trực tiếp đến quy trình này.",
+      "topic": {
+        "name": "Khái niệm đạo hàm chính sách",
+        "description": "Hiểu khái niệm đạo hàm chính sách và các phương pháp tính toán liên quan. Nắm vững cách các thuật toán đạo hàm chính sách như REINFORCE và Actor-Critic được sử dụng để tối ưu hóa chính sách trong học tăng cường.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Thuật toán Dyna-Q được sử dụng chủ yếu để đạt được cái gì trong học tăng cường phức tạp?",
+      "answer": "Sự hội tụ trong lập kế hoạch với mô hình.",
+      "distractors": [
+        "Sự tối ưu hóa trong học không giám sát.",
+        "Khả năng dự đoán trong các tình huống không chắc chắn.",
+        "Việc giảm thiểu sai số trong học có giám sát."
+      ],
+      "explanation": "Câu trả lời đúng \"Sự hội tụ trong lập kế hoạch với mô hình\" là chính xác vì thuật toán Dyna-Q kết hợp giữa học tăng cường và lập kế hoạch, cho phép nó sử dụng mô hình môi trường để cải thiện hiệu suất học. Dyna-Q sử dụng thông tin từ các trải nghiệm trước đó để cập nhật mô hình và từ đó tạo ra các kế hoạch hành động, giúp đạt được sự hội tụ nhanh chóng trong việc tìm kiếm chính sách tối ưu.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sự tối ưu hóa trong học không giám sát**: Dyna-Q không phải là một thuật toán học không giám sát. Nó chủ yếu hoạt động trong bối cảnh học có giám sát, nơi có phản hồi từ môi trường. Học không giám sát không liên quan đến việc tối ưu hóa chính sách dựa trên các hành động và phản hồi.\n\n- **Khả năng dự đoán trong các tình huống không chắc chắn**: Mặc dù Dyna-Q có thể dự đoán kết quả dựa trên mô hình, nhưng mục tiêu chính của nó không phải là dự đoán trong các tình huống không chắc chắn mà là cải thiện việc lập kế hoạch và học từ các trải nghiệm. Khả năng dự đoán không phải là trọng tâm của thuật toán này.\n\n- **Việc giảm thiểu sai số trong học có giám sát**: Dyna-Q không tập trung vào việc giảm thiểu sai số trong học có giám sát. Thay vào đó, nó sử dụng các trải nghiệm để cập nhật mô hình và cải thiện chính sách, không phải là một phương pháp để giảm thiểu sai số như trong học có giám sát.\n\nTóm lại, câu trả lời đúng phản ánh chính xác mục tiêu của Dyna-Q trong việc đạt được sự hội tụ thông qua lập kế hoạch với mô hình, trong khi các yếu tố gây nhiễu không liên quan đến chức năng chính của thuật toán này.",
+      "topic": {
+        "name": "Các thuật toán Dyna-Q và ứng dụng",
+        "description": "Xem xét thuật toán Dyna-Q, cách thức hoạt động của nó và ứng dụng của nó trong việc lập kế hoạch với mô hình.Mục tiêu là hiểu làm thế nào Dyna-Q có thể đạt được sự hội tụ ở các tình huống học tăng cường phức tạp.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong kiến trúc Dyna, tại sao việc sử dụng mô hình từ kinh nghiệm thực tế lại quan trọng cho việc lập kế hoạch hàm giá trị?",
+      "answer": "Nó giúp tạo ra kế hoạch hiệu quả hơn cho hàm giá trị.",
+      "distractors": [
+        "Nó giúp xác định các giá trị không chính xác trong kế hoạch.",
+        "Nó không ảnh hưởng đến hiệu quả của kế hoạch hàm giá trị.",
+        "Nó chỉ cần thiết cho các mô hình phức tạp hơn."
+      ],
+      "explanation": "Câu trả lời đúng \"Nó giúp tạo ra kế hoạch hiệu quả hơn cho hàm giá trị.\" là chính xác vì việc sử dụng mô hình từ kinh nghiệm thực tế trong kiến trúc Dyna cho phép hệ thống học hỏi từ các tình huống trước đó, từ đó cải thiện khả năng dự đoán và lập kế hoạch. Khi mô hình được xây dựng dựa trên dữ liệu thực tế, nó có thể phản ánh chính xác hơn các yếu tố ảnh hưởng đến giá trị, giúp tạo ra các kế hoạch tối ưu hơn cho hàm giá trị.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n- \"Nó giúp xác định các giá trị không chính xác trong kế hoạch.\" là sai vì mô hình từ kinh nghiệm thực tế không chỉ giúp xác định mà còn cải thiện độ chính xác của các giá trị trong kế hoạch, thay vì chỉ phát hiện sai sót.\n- \"Nó không ảnh hưởng đến hiệu quả của kế hoạch hàm giá trị.\" là sai vì việc sử dụng mô hình thực tế có ảnh hưởng lớn đến hiệu quả của kế hoạch, giúp tối ưu hóa các quyết định dựa trên thông tin chính xác hơn.\n- \"Nó chỉ cần thiết cho các mô hình phức tạp hơn.\" là sai vì mô hình từ kinh nghiệm thực tế có giá trị cho tất cả các loại mô hình, không chỉ riêng cho những mô hình phức tạp, mà còn giúp cải thiện hiệu quả cho các mô hình đơn giản hơn. \n\nTóm lại, việc sử dụng mô hình từ kinh nghiệm thực tế là rất quan trọng trong việc lập kế hoạch hàm giá trị, giúp nâng cao độ chính xác và hiệu quả của các quyết định.",
+      "topic": {
+        "name": "Tích hợp học và lập kế hoạch (Kiến trúc Dyna)",
+        "description": "Khám phá cách thức tích hợp giữa học và lập kế hoạch trong kiến trúc Dyna. Nhấn mạnh tầm quan trọng của việc sử dụng mô hình từ kinh nghiệm thực tế trong việc lập kế hoạch hiệu quả cho hàm giá trị.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    }
+  ]
+}

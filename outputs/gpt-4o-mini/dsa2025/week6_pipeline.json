@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Cây tìm kiếm nhị phân (BST) được định nghĩa như thế nào?",
+      "answer": "Là một cấu trúc dữ liệu trong đó mỗi nút có tối đa hai con và các nút con bên trái nhỏ hơn nút cha, còn các nút con bên phải lớn hơn nút cha.",
+      "distractors": [
+        "Là một cấu trúc dữ liệu trong đó mỗi nút có nhiều hơn hai con.",
+        "Là một cấu trúc dữ liệu mà các nút con bên trái lớn hơn nút cha.",
+        "Là một cấu trúc dữ liệu trong đó các nút con bên phải nhỏ hơn nút cha."
+      ],
+      "explanation": "Câu trả lời đúng \"Là một cấu trúc dữ liệu trong đó mỗi nút có tối đa hai con và các nút con bên trái nhỏ hơn nút cha, còn các nút con bên phải lớn hơn nút cha.\" là chính xác vì nó mô tả đúng định nghĩa của cây tìm kiếm nhị phân (BST). Trong BST, mỗi nút chỉ có tối đa hai con (trái và phải), và quy tắc phân chia giá trị giữa các nút con và nút cha là rất quan trọng: nút con bên trái phải có giá trị nhỏ hơn nút cha, trong khi nút con bên phải phải có giá trị lớn hơn. Điều này giúp cho việc tìm kiếm, chèn và xóa các nút trong cây trở nên hiệu quả hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- \"Là một cấu trúc dữ liệu trong đó mỗi nút có nhiều hơn hai con.\" - Sai vì định nghĩa của BST yêu cầu mỗi nút chỉ có tối đa hai con. Nếu một nút có nhiều hơn hai con, nó không còn là BST mà có thể là một cấu trúc dữ liệu khác như cây đa phân.\n\n- \"Là một cấu trúc dữ liệu mà các nút con bên trái lớn hơn nút cha.\" - Sai vì quy tắc của BST yêu cầu các nút con bên trái phải nhỏ hơn nút cha. Nếu nút con bên trái lớn hơn, điều này vi phạm nguyên tắc của BST và làm cho cấu trúc không còn hợp lệ.\n\n- \"Là một cấu trúc dữ liệu trong đó các nút con bên phải nhỏ hơn nút cha.\" - Sai vì trong BST, các nút con bên phải phải lớn hơn nút cha. Nếu các nút con bên phải nhỏ hơn, điều này cũng vi phạm nguyên tắc của BST và không thể đảm bảo tính chất tìm kiếm của cây.\n\nTóm lại, câu trả lời đúng phản ánh chính xác định nghĩa của BST, trong khi các yếu tố gây nhiễu đều vi phạm các quy tắc cơ bản của cấu trúc dữ liệu này.",
+      "topic": {
+        "name": "Cây tìm kiếm nhị phân (BST) là gì?",
+        "description": "Khái niệm cây tìm kiếm nhị phân (BST) được định nghĩa và cách hoạt động của nó. Học sinh cần hiểu cấu trúc, cách chèn và tìm kiếm trong BST. Câu hỏi có thể kiểm tra định nghĩa của BST và phân tích chi phí của các hoạt động căn bản trong BST.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Lớp Node trong biểu diễn cây tìm kiếm nhị phân (BST) bằng Java thường chứa những thành phần nào?",
+      "answer": "Giá trị của nút và các tham chiếu đến nút con trái và phải.",
+      "distractors": [
+        "Giá trị của nút và các tham chiếu đến nút cha.",
+        "Chỉ chứa giá trị của nút mà không có tham chiếu nào.",
+        "Giá trị của nút và một tham chiếu đến nút con trái."
+      ],
+      "explanation": "Câu trả lời đúng là \"Giá trị của nút và các tham chiếu đến nút con trái và phải\" vì trong cấu trúc cây tìm kiếm nhị phân (BST), mỗi nút (Node) cần lưu trữ giá trị của nó và hai tham chiếu (hoặc con trỏ) đến các nút con bên trái và bên phải. Điều này cho phép cây duy trì cấu trúc phân cấp, nơi các giá trị bên trái nhỏ hơn giá trị của nút cha và các giá trị bên phải lớn hơn.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Giá trị của nút và các tham chiếu đến nút cha**: Tùy chọn này sai vì trong BST, mỗi nút không cần tham chiếu đến nút cha. Việc chỉ cần tham chiếu đến các nút con trái và phải là đủ để duy trì cấu trúc cây.\n- **Chỉ chứa giá trị của nút mà không có tham chiếu nào**: Tùy chọn này cũng sai vì nếu chỉ có giá trị mà không có tham chiếu đến các nút con, thì không thể xây dựng được cấu trúc cây. Các tham chiếu là cần thiết để xác định mối quan hệ giữa các nút.\n- **Giá trị của nút và một tham chiếu đến nút con trái**: Tùy chọn này không chính xác vì nó chỉ đề cập đến tham chiếu đến nút con trái mà không có tham chiếu đến nút con phải. Để cây tìm kiếm nhị phân hoạt động đúng, cần phải có cả hai tham chiếu đến nút con trái và phải.\n\nTóm lại, câu trả lời đúng cung cấp đầy đủ thông tin cần thiết để xây dựng một nút trong BST, trong khi các yếu tố gây nhiễu đều thiếu sót hoặc không chính xác trong việc mô tả cấu trúc của một nút trong BST.",
+      "topic": {
+        "name": "Biểu diễn BST trong Java",
+        "description": "Chủ đề này khám phá cách biểu diễn cấu trúc BST trong Java. Học sinh nên hiểu cách xây dựng Node và BST class, cũng như ý nghĩa của các thành phần trong mã. Câu hỏi có thể kiểm tra kiến thức về các thành phần và định nghĩa trong Java.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Chi phí trung bình của phép tìm kiếm trong một cây tìm kiếm nhị phân (BST) là gì trong trường hợp cây có độ cân bằng tối ưu?",
+      "answer": "O(log n)",
+      "distractors": [
+        "O(n)",
+        "O(log n + n)",
+        "O(n^2)"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về chi phí trung bình của phép tìm kiếm trong một cây tìm kiếm nhị phân (BST) có độ cân bằng tối ưu là O(log n). Điều này đúng vì trong một cây BST cân bằng, số lượng nút ở mỗi cấp độ tăng theo cấp số nhân, dẫn đến việc số cấp độ của cây là logarit của số lượng nút (n). Do đó, khi tìm kiếm một giá trị, ta chỉ cần duyệt qua một số cấp độ nhất định, tương ứng với O(log n).\n\nGiải thích về các yếu tố gây nhiễu:\n- **O(n)**: Tùy chọn này sai vì O(n) biểu thị chi phí tìm kiếm trong trường hợp cây không cân bằng, nơi tất cả các nút có thể nằm trên một đường thẳng, dẫn đến việc phải duyệt qua tất cả các nút. Trong trường hợp cây cân bằng, chi phí sẽ thấp hơn nhiều.\n  \n- **O(log n + n)**: Tùy chọn này cũng không chính xác vì O(log n + n) không phản ánh đúng chi phí tìm kiếm. O(log n) là chi phí tìm kiếm trong cây cân bằng, trong khi O(n) là chi phí tìm kiếm trong cây không cân bằng. Kết hợp chúng lại không hợp lý vì chúng không xảy ra đồng thời trong cùng một trường hợp.\n\n- **O(n^2)**: Tùy chọn này sai vì O(n^2) thường liên quan đến các thuật toán có độ phức tạp cao hơn, như sắp xếp hoặc tìm kiếm trong các cấu trúc dữ liệu không hiệu quả. Trong một BST cân bằng, chi phí tìm kiếm không thể lên đến O(n^2) mà chỉ dừng lại ở O(log n).\n\nTóm lại, O(log n) là câu trả lời chính xác cho chi phí tìm kiếm trong một BST cân bằng, trong khi các yếu tố gây nhiễu đều không phản ánh đúng bản chất của chi phí tìm kiếm trong cấu trúc dữ liệu này.",
+      "topic": {
+        "name": "Chi phí tìm kiếm và chèn trong BST",
+        "description": "Khái niệm về chi phí tìm kiếm và chèn trong BST được đề cập. Câu hỏi có thể giúp kiểm tra khả năng hiểu biết về chi phí của các phép toán căn bản và cách hình dạng của cây ảnh hưởng tới hiệu suất.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi xóa một nút trong cây tìm kiếm nhị phân (BST) có hai con cháu, bước đầu tiên bạn cần thực hiện là gì?",
+      "answer": "Tìm nút kế vị (hoặc nút kế trước) để thay thế cho nút bị xóa.",
+      "distractors": [
+        "Xóa nút mà không cần thay thế nó bằng nút khác.",
+        "Chỉ cần xóa nút mà không cần xem xét các con cháu của nó.",
+        "Thay thế nút bị xóa bằng nút con bên trái của nó."
+      ],
+      "explanation": "Khi xóa một nút trong cây tìm kiếm nhị phân (BST) có hai con cháu, bước đầu tiên cần thực hiện là tìm nút kế vị (hoặc nút kế trước) để thay thế cho nút bị xóa. Điều này là đúng vì khi một nút có hai con cháu, việc xóa nó mà không thay thế sẽ làm mất cấu trúc của BST. Nút kế vị (nút nhỏ nhất trong cây con bên phải) hoặc nút kế trước (nút lớn nhất trong cây con bên trái) sẽ giữ được tính chất của BST, đảm bảo rằng tất cả các nút bên trái nhỏ hơn và tất cả các nút bên phải lớn hơn nút đó.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Xóa nút mà không cần thay thế nó bằng nút khác**: Tùy chọn này sai vì việc xóa một nút mà không thay thế sẽ làm mất cấu trúc của BST, dẫn đến việc không còn đảm bảo tính chất của cây tìm kiếm nhị phân.\n- **Chỉ cần xóa nút mà không cần xem xét các con cháu của nó**: Tùy chọn này cũng sai vì việc không xem xét các con cháu sẽ không cho phép duy trì cấu trúc của BST. Cần phải thay thế nút bị xóa để đảm bảo rằng cây vẫn hợp lệ.\n- **Thay thế nút bị xóa bằng nút con bên trái của nó**: Tùy chọn này không chính xác vì nếu chỉ thay thế bằng nút con bên trái, có thể vi phạm tính chất của BST. Nút con bên trái có thể không phải là nút lớn nhất trong cây con bên trái, do đó không đảm bảo rằng tất cả các nút bên trái vẫn nhỏ hơn nút mới.\n\nTóm lại, việc tìm nút kế vị hoặc kế trước là cần thiết để duy trì cấu trúc của BST sau khi xóa một nút có hai con cháu.",
+      "topic": {
+        "name": "Thiết kế thuật toán xóa trong BST",
+        "description": "Khả năng hiểu và thiết kế thuật toán xóa các nút trong BST. Chủ đề này cũng kiểm tra kiến thức của học sinh về các trường hợp khác nhau khi xóa một nút. Câu hỏi có thể liên quan đến các bước và phân tích độ phức tạp của thuật toán xóa.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Chiều cao của một cây tìm kiếm nhị phân (BST) tối ưu để thực hiện tìm kiếm và chèn là bao nhiêu trong trường hợp tốt nhất?",
+      "answer": "log(n)",
+      "distractors": [
+        "n",
+        "n/2",
+        "2^n"
+      ],
+      "explanation": "Chiều cao của một cây tìm kiếm nhị phân (BST) tối ưu trong trường hợp tốt nhất để thực hiện tìm kiếm và chèn là log(n). Điều này đúng vì trong một BST cân bằng, mỗi lần so sánh sẽ loại bỏ một nửa số nút còn lại, dẫn đến số lần so sánh tối đa cần thực hiện là log2(n). Do đó, chiều cao của cây, và do đó thời gian tìm kiếm và chèn, sẽ tỷ lệ thuận với log(n).\n\nGiải thích về các yếu tố gây nhiễu:\n- **n**: Đây là số lượng nút trong cây. Nếu chiều cao của cây bằng n, điều đó có nghĩa là cây không được cân bằng và có thể trở thành một danh sách liên kết, dẫn đến thời gian tìm kiếm và chèn là O(n), không phải log(n).\n- **n/2**: Mặc dù n/2 có thể là một giá trị trung bình nào đó, nhưng nó không phản ánh chiều cao của cây. Chiều cao của một BST tối ưu không thể là n/2, vì điều này cũng sẽ dẫn đến hiệu suất không tối ưu trong tìm kiếm và chèn.\n- **2^n**: Đây là một giá trị quá lớn và không thực tế cho chiều cao của một BST. Chiều cao của một cây không thể lớn hơn số lượng nút trong cây, vì vậy 2^n không thể là chiều cao của một BST, mà thực tế nó sẽ dẫn đến một cây cực kỳ không cân bằng.\n\nTóm lại, câu trả lời đúng là log(n) vì nó phản ánh chiều cao tối ưu của một BST cân bằng, trong khi các yếu tố gây nhiễu đều không chính xác vì chúng không phù hợp với khái niệm về chiều cao của BST trong trường hợp tốt nhất.",
+      "topic": {
+        "name": "Phân tích toán học của BST",
+        "description": "Khái niệm về phân tích toán học của các hoạt động trong BST, như tìm kiếm và chèn. Học sinh cần biết công thức và cách tính toán dựa trên chiều cao của BST. Câu hỏi có thể kiểm tra khả năng áp dụng công thức vào các ví dụ thực tiễn.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "So với thuật toán Quicksort, cấu trúc cây tìm kiếm nhị phân (BST) thường ảnh hưởng như thế nào đến hiệu suất sắp xếp khi thực hiện phân vùng?",
+      "answer": "BST cho phép truy xuất và sắp xếp dữ liệu theo thứ tự, nhưng hiệu suất phụ thuộc vào độ cân bằng của cây.",
+      "distractors": [
+        "BST luôn có hiệu suất tốt hơn Quicksort trong mọi trường hợp.",
+        "Quicksort không thể sắp xếp dữ liệu nếu sử dụng BST.",
+        "BST không cần phải cân bằng để đạt hiệu suất tối ưu trong sắp xếp."
+      ],
+      "explanation": "Câu trả lời đúng \"BST cho phép truy xuất và sắp xếp dữ liệu theo thứ tự, nhưng hiệu suất phụ thuộc vào độ cân bằng của cây\" là chính xác vì cây tìm kiếm nhị phân (BST) cho phép truy cập các phần tử theo thứ tự tăng dần thông qua việc duyệt cây. Tuy nhiên, hiệu suất của BST trong việc sắp xếp dữ liệu phụ thuộc vào việc cây có được cân bằng hay không. Nếu cây không cân bằng, thời gian truy xuất có thể trở nên kém hiệu quả, gần giống như danh sách liên kết, với độ phức tạp thời gian O(n) trong trường hợp xấu nhất.\n\nGiải thích về các yếu tố gây nhiễu:\n- **BST luôn có hiệu suất tốt hơn Quicksort trong mọi trường hợp**: Điều này không chính xác vì hiệu suất của BST phụ thuộc vào cấu trúc của cây. Trong trường hợp cây không cân bằng, BST có thể hoạt động kém hơn Quicksort, đặc biệt là trong các trường hợp dữ liệu đã được sắp xếp trước.\n- **Quicksort không thể sắp xếp dữ liệu nếu sử dụng BST**: Đây là một tuyên bố sai lầm. Quicksort là một thuật toán sắp xếp độc lập với cấu trúc dữ liệu, và nó có thể hoạt động hiệu quả trên bất kỳ tập dữ liệu nào, bao gồm cả dữ liệu được lưu trữ trong BST.\n- **BST không cần phải cân bằng để đạt hiệu suất tối ưu trong sắp xếp**: Điều này cũng không đúng. Để đạt được hiệu suất tối ưu, BST cần phải được cân bằng. Nếu không, hiệu suất có thể giảm xuống O(n) trong trường hợp xấu nhất, trong khi một BST cân bằng có thể đạt được hiệu suất O(log n) cho các thao tác tìm kiếm và sắp xếp.",
+      "topic": {
+        "name": "So sánh BST và Quicksort",
+        "description": "Chủ đề này tích hợp kiến thức từ các tuần trước, liên kết khái niệm BST với phân vùng trong thuật toán Quicksort. Học sinh cần so sánh và phân tích cách mà cấu trúc BST ảnh hưởng đến hiệu suất sắp xếp. Câu hỏi có thể kiểm tra khả năng hiểu trừu tượng giữa hai cấu trúc.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong cây tìm kiếm nhị phân (BST), kết quả của phép toán Min là gì?",
+      "answer": "Phần tử nhỏ nhất trong BST.",
+      "distractors": [
+        "Phần tử lớn nhất trong BST.",
+        "Phần tử ở giữa cây BST.",
+        "Phần tử đầu tiên được thêm vào BST."
+      ],
+      "explanation": "Trong cây tìm kiếm nhị phân (BST), câu trả lời đúng cho phép toán Min là \"Phần tử nhỏ nhất trong BST\" vì trong cấu trúc của BST, mỗi nút bên trái của một nút cha luôn có giá trị nhỏ hơn nút cha đó. Do đó, để tìm phần tử nhỏ nhất, ta cần đi xuống các nút bên trái cho đến khi không còn nút nào nữa. Nút cuối cùng mà ta dừng lại chính là phần tử nhỏ nhất trong cây.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phần tử lớn nhất trong BST**: Đây là phần tử có giá trị lớn nhất trong cây, và nó được tìm thấy bằng cách đi xuống các nút bên phải, không phải là phép toán Min mà là phép toán Max.\n\n- **Phần tử ở giữa cây BST**: Cây tìm kiếm nhị phân không có khái niệm \"phần tử ở giữa\" theo cách mà câu hỏi này đề cập. Phần tử ở giữa có thể thay đổi tùy thuộc vào cách cây được xây dựng và không liên quan đến phép toán Min.\n\n- **Phần tử đầu tiên được thêm vào BST**: Phần tử đầu tiên được thêm vào có thể là phần tử nhỏ nhất hoặc không, tùy thuộc vào các phần tử khác được thêm vào sau đó. Do đó, nó không nhất thiết là kết quả của phép toán Min.\n\nTóm lại, câu trả lời đúng là phần tử nhỏ nhất trong BST, trong khi các yếu tố gây nhiễu đều không chính xác vì chúng không phản ánh đúng khái niệm về phép toán Min trong cây tìm kiếm nhị phân.",
+      "topic": {
+        "name": "Các phép toán thứ tự trong BST",
+        "description": "Khái niệm về các phép toán có thứ tự trong BST như Min/Max, Floor/Ceiling. Học sinh cần hiểu cách thực hiện các phép toán này và tác động của chúng đến việc duyệt cây. Câu hỏi có thể yêu cầu học sinh xác định hoặc thực hiện các phép toán cụ thể trên BST.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong cây tìm kiếm nhị phân (BST), kết quả của việc duyệt theo thứ tự (inorder traversal) sẽ cho ra thứ tự các khóa như thế nào?",
+      "answer": "Thứ tự các khóa sẽ được sắp xếp theo thứ tự tăng dần.",
+      "distractors": [
+        "Thứ tự các khóa sẽ được sắp xếp theo thứ tự giảm dần.",
+        "Thứ tự các khóa sẽ là ngẫu nhiên và không theo quy tắc nào.",
+        "Thứ tự các khóa sẽ chỉ bao gồm các khóa lớn hơn giá trị gốc."
+      ],
+      "explanation": "Trong cây tìm kiếm nhị phân (BST), khi thực hiện duyệt theo thứ tự (inorder traversal), chúng ta sẽ truy cập các nút theo thứ tự từ nhỏ đến lớn. Điều này xảy ra vì trong BST, mỗi nút bên trái của một nút cha có giá trị nhỏ hơn nút cha, và mỗi nút bên phải có giá trị lớn hơn. Do đó, khi duyệt theo thứ tự, chúng ta sẽ lần lượt truy cập các nút từ nhỏ nhất đến lớn nhất, dẫn đến việc các khóa được sắp xếp theo thứ tự tăng dần. \n\nBây giờ, hãy xem xét các yếu tố gây nhiễu:\n\n1. **Thứ tự các khóa sẽ được sắp xếp theo thứ tự giảm dần**: Tùy chọn này sai vì trong BST, việc duyệt theo thứ tự không bao giờ cho ra thứ tự giảm dần. Nếu muốn có thứ tự giảm dần, chúng ta cần thực hiện duyệt theo thứ tự ngược lại (reverse inorder traversal), nhưng đó không phải là kết quả của duyệt theo thứ tự.\n\n2. **Thứ tự các khóa sẽ là ngẫu nhiên và không theo quy tắc nào**: Tùy chọn này cũng sai vì duyệt theo thứ tự trong BST luôn tạo ra một thứ tự có quy tắc, cụ thể là thứ tự tăng dần. Nếu các khóa được sắp xếp ngẫu nhiên, điều đó sẽ mâu thuẫn với cấu trúc của BST.\n\n3. **Thứ tự các khóa sẽ chỉ bao gồm các khóa lớn hơn giá trị gốc**: Tùy chọn này không chính xác vì trong quá trình duyệt theo thứ tự, chúng ta sẽ truy cập tất cả các nút trong cây, bao gồm cả các nút có giá trị nhỏ hơn và lớn hơn giá trị gốc. Do đó, không thể chỉ có các khóa lớn hơn giá trị gốc trong kết quả.\n\nTóm lại, câu trả lời đúng là \"Thứ tự các khóa sẽ được sắp xếp theo thứ tự tăng dần\" vì đó là đặc điểm chính của việc duyệt theo thứ tự trong BST, trong khi các yếu tố gây nhiễu đều sai do không phản ánh đúng quy tắc của cấu trúc cây.",
+      "topic": {
+        "name": "Duyệt cây theo thứ tự trong BST",
+        "description": "Chủ đề này kiểm tra khả năng duyệt cây theo thứ tự trong BST và cách mà việc duyệt này tạo ra thứ tự các khóa. Học sinh nên thể hiện được hiểu biết về cách thức duyệt cây và ứng dụng của nó trong các thuật toán khác. Câu hỏi có thể yêu cầu viết mã hoặc mô tả quy trình duyệt.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "dsa2025"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Học tăng cường không mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant to the topic and appropriately test the 'Remember' Bloom level. However, the Pipeline question is slightly clearer and has more plausible distractors, making it the better choice overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Đặc điểm cơ bản của Học Monte-Carlo",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more focused on the non-model-based nature of Monte-Carlo learning, aligning better with the topic. Its distractors are also slightly more plausible, giving it an edge over the Baseline question."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Phân biệt Đánh giá chính sách MC: Lần đầu tiên và Mọi lần",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more detailed and specific focus on the 'every-visit' method, making it more relevant and clear. Its distractors are also more plausible, leading to a higher overall score."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Công thức cập nhật tăng dần Monte-Carlo",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question better emphasizes the advantage of using alpha in incremental updates, aligning more closely with the topic. Its clarity and distractor plausibility are also slightly superior, making it the winner."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh Học TD với Học DP và MC (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more comprehensive comparison of TD, DP, and MC, aligning better with the 'Analyze' Bloom level. Its distractors are more plausible, and the question is clearer overall."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Ứng dụng lợi nhuận n-bước trong TD",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question delves deeper into the mechanics of n-step returns, providing a more nuanced understanding. Its distractors are more plausible, and the question aligns better with the 'Apply' Bloom level."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Nguyên lý bootstrapping trong TD (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a clearer and more detailed explanation of bootstrapping principles, aligning better with the topic. Its distractors are more plausible, and the question is more challenging in a meaningful way."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Vai trò dấu vết đủ điều kiện trong TD(Lambda) (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more in-depth analysis of eligibility traces, aligning better with the 'Analyze' Bloom level. Its distractors are more plausible, and the question is appropriately challenging, making it the better choice."
+        }
+    ]
+}

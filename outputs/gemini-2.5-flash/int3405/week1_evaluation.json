@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Định nghĩa Học có giám sát",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are good and align well with the topic and Bloom level. The Baseline question is slightly better because its correct answer provides a more comprehensive definition of supervised learning, including the objective of predicting output for new data, which is a key aspect. Its distractors are also very well-formulated, representing common misconceptions or related but incorrect concepts (unsupervised, reinforcement, classification only, human supervision)."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Chức năng Hàm chi phí",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is excellent, directly addressing the topic of the cost function's purpose and providing plausible distractors. The Baseline question is completely off-topic; it asks about the hypothesis function for simple linear regression, which is the topic of the next question pair, not the cost function. Therefore, its relevance, difficulty, and Bloom level appropriateness scores are 0.0."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Hàm giả thuyết Hồi quy đơn biến",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.0,
+                "bloom_level_appropriateness": 0.0
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfect for the topic, directly asking for the hypothesis function formula and offering reasonable distractors. The Baseline question is completely off-topic, asking about the purpose of the cost function, which was the topic of the previous question pair. This makes it irrelevant to the current topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Ảnh hưởng của Tốc độ học (alpha)",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and very similar in quality. They both accurately assess the impact of a large learning rate on Gradient Descent, providing clear questions and plausible distractors. There's no significant difference in their quality."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Áp dụng Hàm chi phí",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks for the calculation of the full cost function J(w0, w1) for a small dataset, which directly aligns with the 'Apply Cost Function' topic. The Baseline question only asks for a part of the cost function ((h(x) - y)^2) for a single data point, making it a simpler calculation and not a full application of the cost function formula. The Pipeline question's distractors are also more numerically plausible for the full calculation."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Phân biệt Hồi quy đơn biến và đa biến",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and effectively differentiate between univariate and multivariate linear regression based on the number of input variables. They both have clear questions and strong, plausible distractors. There is no significant difference in their quality."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Đặc điểm của Gradient Descent",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it presents a scenario (different convergence results with same learning rate) and asks the student to analyze which characteristic of Gradient Descent explains it. This aligns well with the 'Analyze' Bloom level. The Baseline question is also good but is more of a direct comparison of disadvantages, which is slightly less analytical than the scenario-based question from Pipeline. The Pipeline's distractors are also slightly more nuanced and relevant to the scenario."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Lựa chọn thuật toán tối ưu hóa",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior. It directly asks for the conditions under which Normal Equation is preferred over Gradient Descent, which is a core 'Evaluation' task based on dataset constraints. The Pipeline question is good but its correct answer 'Mini-batch Gradient Descent' is a specific variant of Gradient Descent, and the question doesn't explicitly ask for the *most* efficient variant, but rather the 'most suitable' method. The distractors in the Pipeline question are also less distinct in terms of the core choice between Gradient Descent (as a family) and Normal Equation. The Baseline question's distractors are very clear and directly address the trade-offs between the two main optimization methods."
+        }
+    ]
+}

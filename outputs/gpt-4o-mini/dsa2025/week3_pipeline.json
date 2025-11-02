@@ -1,0 +1,137 @@
+{
+  "questions": [
+    {
+      "question": "Mergesort được định nghĩa là gì trong lĩnh vực thuật toán sắp xếp?",
+      "answer": "Là một thuật toán sắp xếp hoạt động theo nguyên tắc chia để trị.",
+      "distractors": [
+        "Là một thuật toán sắp xếp sử dụng phương pháp chọn lọc.",
+        "Là một thuật toán sắp xếp hoạt động theo nguyên tắc sắp xếp nổi bọt.",
+        "Là một thuật toán sắp xếp thực hiện việc sắp xếp trong một lần duy nhất."
+      ],
+      "explanation": "Câu trả lời đúng \"Là một thuật toán sắp xếp hoạt động theo nguyên tắc chia để trị.\" là chính xác vì Mergesort thực hiện việc sắp xếp bằng cách chia mảng thành các phần nhỏ hơn, sắp xếp từng phần và sau đó hợp nhất chúng lại với nhau. Nguyên tắc chia để trị cho phép Mergesort xử lý các mảng lớn một cách hiệu quả, giảm thiểu độ phức tạp thời gian xuống O(n log n).\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- \"Là một thuật toán sắp xếp sử dụng phương pháp chọn lọc.\" là sai vì phương pháp chọn lọc (Selection Sort) là một thuật toán khác, hoạt động bằng cách tìm phần tử nhỏ nhất trong mảng và đặt nó vào vị trí đúng, không liên quan đến nguyên tắc chia để trị.\n\n- \"Là một thuật toán sắp xếp hoạt động theo nguyên tắc sắp xếp nổi bọt.\" cũng sai vì sắp xếp nổi bọt (Bubble Sort) là một thuật toán khác, hoạt động bằng cách so sánh và hoán đổi các cặp phần tử liền kề, không sử dụng phương pháp chia để trị như Mergesort.\n\n- \"Là một thuật toán sắp xếp thực hiện việc sắp xếp trong một lần duy nhất.\" là không chính xác vì Mergesort không thực hiện sắp xếp trong một lần duy nhất; nó cần nhiều bước để chia và hợp nhất các phần tử, điều này trái ngược với khái niệm sắp xếp trong một lần duy nhất. \n\nTóm lại, Mergesort là một thuật toán sắp xếp theo nguyên tắc chia để trị, trong khi các yếu tố gây nhiễu đề cập đến các thuật toán khác hoặc mô tả sai về cách thức hoạt động của Mergesort.",
+      "topic": {
+        "name": "Khái niệm Mergesort và nguyên tắc chính",
+        "description": "Mergesort là một thuật toán sắp xếp cố điển, hoạt động theo nguyên tắc chia để trị. Chủ đề này kiểm tra hiểu biết của sinh viên về cách hoạt động và quy trình của Mergesort, bao gồm việc chia mảng và quá trình hợp nhất. Câu hỏi có thể liên quan đến định nghĩa và quy trình cụ thể của thuật toán này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi triển khai thuật toán Mergesort trong Java, phương thức nào được sử dụng để kết hợp hai mảng đã được sắp xếp?",
+      "answer": "Phương thức merge",
+      "distractors": [
+        "Phương thức combine",
+        "Phương thức join",
+        "Phương thức concatenate"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Phương thức merge\" vì trong thuật toán Mergesort, việc kết hợp hai mảng đã được sắp xếp lại với nhau thành một mảng duy nhất được thực hiện thông qua phương thức merge. Phương thức này đảm bảo rằng các phần tử từ hai mảng được sắp xếp đúng thứ tự, từ nhỏ đến lớn, và là một phần quan trọng trong quá trình thực hiện thuật toán Mergesort.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phương thức combine**: Tùy chọn này không chính xác vì không có phương thức nào được gọi là combine trong ngữ cảnh của Mergesort. Mergesort sử dụng phương thức merge để kết hợp các mảng, không phải combine.\n\n- **Phương thức join**: Tương tự, join không phải là một phương thức được sử dụng trong Mergesort. Trong lập trình, join thường liên quan đến việc kết hợp các chuỗi hoặc các luồng, nhưng không phải là thuật ngữ được sử dụng trong việc kết hợp các mảng trong Mergesort.\n\n- **Phương thức concatenate**: Phương thức này thường được sử dụng để nối các chuỗi lại với nhau, nhưng không áp dụng cho việc kết hợp các mảng đã được sắp xếp trong Mergesort. Việc kết hợp mảng trong Mergesort yêu cầu một quy trình sắp xếp, mà phương thức concatenate không thực hiện.\n\nTóm lại, chỉ có \"Phương thức merge\" là chính xác trong ngữ cảnh của thuật toán Mergesort, trong khi các tùy chọn còn lại không liên quan đến quy trình này.",
+      "topic": {
+        "name": "Triển khai Mergesort bằng Java",
+        "description": "Chủ đề này kiểm tra khả năng áp dụng thuật toán Mergesort thông qua mã nguồn Java. Học sinh sẽ phải hiểu cấu trúc lệnh trong Java để triển khai Mergesort, bao gồm cách gọi đệ quy và sử dụng phương thức merge. Các câu hỏi có thể về cách viết mã và cách mà mã hoạt động.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Tại sao Mergesort thường được ưa chuộng trong các ứng dụng yêu cầu độ ổn định và hiệu suất sắp xếp lớn hơn so với sắp xếp chèn và sắp xếp chọn?",
+      "answer": "Độ phức tạp thời gian của Mergesort là O(n log n) trong mọi trường hợp.",
+      "distractors": [
+        "Độ phức tạp thời gian của Mergesort là O(n) trong mọi trường hợp.",
+        "Mergesort không đảm bảo độ ổn định trong quá trình sắp xếp.",
+        "Mergesort có độ phức tạp không gian là O(n) trong mọi trường hợp."
+      ],
+      "explanation": "Câu trả lời đúng \"Độ phức tạp thời gian của Mergesort là O(n log n) trong mọi trường hợp\" là chính xác vì Mergesort sử dụng phương pháp chia để trị, chia danh sách thành các phần nhỏ hơn, sắp xếp chúng và sau đó hợp nhất lại. Độ phức tạp thời gian O(n log n) đảm bảo rằng Mergesort có hiệu suất ổn định và tốt hơn so với các thuật toán như sắp xếp chèn (O(n^2) trong trường hợp xấu nhất) và sắp xếp chọn (O(n^2) trong mọi trường hợp).\n\nGiải thích về các yếu tố gây nhiễu:\n- **Độ phức tạp thời gian của Mergesort là O(n) trong mọi trường hợp**: Sai vì O(n) chỉ áp dụng cho các thuật toán sắp xếp khác trong trường hợp đặc biệt, không phải cho Mergesort. Mergesort luôn có độ phức tạp O(n log n) trong mọi trường hợp.\n- **Mergesort không đảm bảo độ ổn định trong quá trình sắp xếp**: Sai vì Mergesort là một thuật toán sắp xếp ổn định, nghĩa là nó giữ nguyên thứ tự của các phần tử có giá trị bằng nhau trong quá trình sắp xếp.\n- **Mergesort có độ phức tạp không gian là O(n) trong mọi trường hợp**: Mặc dù Mergesort có độ phức tạp không gian là O(n), điều này không phải là lý do để không ưa chuộng nó. Độ phức tạp không gian O(n) là một yếu tố cần xem xét, nhưng không ảnh hưởng đến độ ổn định và hiệu suất sắp xếp của thuật toán, mà chính O(n log n) mới là yếu tố quyết định chính.",
+      "topic": {
+        "name": "So sánh độ phức tạp Mergesort với các thuật toán khác",
+        "description": "Chủ đề này yêu cầu học sinh so sánh Mergesort với các thuật toán sắp xếp khác như sắp xếp chèn và sắp xếp chọn. Sinh viên sẽ phải phân tích và đánh giá độ phức tạp của Mergesort trong bối cảnh hiệu suất và không gian bộ nhớ so với các thuật toán khác. Câu hỏi sẽ kiểm tra khả năng phân tích của học sinh và nhận thức về các ưu điểm và nhược điểm của từng thuật toán.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Quy trình hợp nhất hai mảng con đã sắp xếp trong thuật toán Mergesort chủ yếu thực hiện hành động gì?",
+      "answer": "Gộp các phần tử từ hai mảng con vào một mảng lớn hơn theo thứ tự.",
+      "distractors": [
+        "Sắp xếp lại các phần tử trong hai mảng con theo thứ tự giảm dần.",
+        "Chỉ lấy các phần tử lớn nhất từ mỗi mảng con để tạo thành mảng mới.",
+        "Hợp nhất hai mảng con mà không cần kiểm tra thứ tự của chúng."
+      ],
+      "explanation": "Câu trả lời đúng \"Gộp các phần tử từ hai mảng con vào một mảng lớn hơn theo thứ tự\" là chính xác vì trong thuật toán Mergesort, quá trình hợp nhất hai mảng con đã được sắp xếp là bước quan trọng để tạo ra một mảng lớn hơn cũng được sắp xếp. Khi hợp nhất, thuật toán so sánh các phần tử đầu tiên của hai mảng con và thêm phần tử nhỏ hơn vào mảng kết quả, đảm bảo rằng mảng kết quả vẫn giữ được thứ tự tăng dần.\n\nCác yếu tố gây nhiễu:\n\n1. **Sắp xếp lại các phần tử trong hai mảng con theo thứ tự giảm dần**: Tùy chọn này sai vì Mergesort luôn duy trì thứ tự tăng dần. Quy trình hợp nhất không thay đổi thứ tự của các phần tử trong các mảng con mà chỉ kết hợp chúng lại với nhau.\n\n2. **Chỉ lấy các phần tử lớn nhất từ mỗi mảng con để tạo thành mảng mới**: Tùy chọn này không chính xác vì trong quá trình hợp nhất, thuật toán không chỉ lấy phần tử lớn nhất mà thực hiện so sánh để chọn phần tử nhỏ hơn từ hai mảng con, nhằm đảm bảo thứ tự tăng dần cho mảng kết quả.\n\n3. **Hợp nhất hai mảng con mà không cần kiểm tra thứ tự của chúng**: Tùy chọn này sai vì việc kiểm tra thứ tự là cốt lõi của quá trình hợp nhất. Nếu không kiểm tra thứ tự, mảng kết quả sẽ không được sắp xếp đúng cách, làm mất đi tính chính xác của thuật toán Mergesort. \n\nTóm lại, câu trả lời đúng phản ánh chính xác quy trình hợp nhất trong Mergesort, trong khi các yếu tố gây nhiễu đều sai do không tuân thủ nguyên tắc sắp xếp của thuật toán.",
+      "topic": {
+        "name": "Hợp nhất hai mảng con trong Mergesort",
+        "description": "Chủ đề này tập trung vào quy trình hợp nhất hai mảng con đã sắp xếp trong thuật toán Mergesort. Học sinh sẽ phải hiểu cách thức hợp nhất và kiểm tra khả năng áp dụng những hiểu biết này vào các tình huống cụ thể. Câu hỏi có thể yêu cầu sinh viên mô tả quá trình hoặc viết đoạn mã thực hiện.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "So sánh số lần so sánh trong Mergesort với số lần so sánh trong QuickSort trong trường hợp tốt nhất là bao nhiêu?",
+      "answer": "Mergesort cần O(n log n) so sánh trong trường hợp tốt nhất.",
+      "distractors": [
+        "Mergesort cần O(n) so sánh trong trường hợp tốt nhất.",
+        "QuickSort cần O(n^2) so sánh trong trường hợp tốt nhất.",
+        "Mergesort cần O(n^2) so sánh trong trường hợp tốt nhất."
+      ],
+      "explanation": "Câu trả lời đúng là \"Mergesort cần O(n log n) so sánh trong trường hợp tốt nhất\" vì Mergesort là một thuật toán phân chia và chinh phục, trong đó danh sách được chia thành hai nửa, và mỗi nửa được sắp xếp riêng biệt trước khi được hợp nhất. Trong quá trình hợp nhất, số lần so sánh cần thiết để sắp xếp các phần tử từ hai nửa là O(n). Do đó, với mỗi lần chia, số lần so sánh là O(n) và số lần chia là log n (vì danh sách được chia đôi). Kết hợp lại, tổng số lần so sánh trong trường hợp tốt nhất là O(n log n).\n\nGiải thích về các yếu tố gây nhiễu:\n- **Mergesort cần O(n) so sánh trong trường hợp tốt nhất**: Sai, vì O(n) chỉ là số lần so sánh trong một lần hợp nhất, không phải tổng số lần so sánh cho toàn bộ thuật toán. Tổng số lần so sánh là O(n log n).\n- **QuickSort cần O(n^2) so sánh trong trường hợp tốt nhất**: Sai, vì trong trường hợp tốt nhất, QuickSort có thể đạt được O(n log n) khi phân chia danh sách một cách cân bằng. O(n^2) là trường hợp xấu nhất khi danh sách đã được sắp xếp hoặc gần như sắp xếp.\n- **Mergesort cần O(n^2) so sánh trong trường hợp tốt nhất**: Sai, vì O(n^2) là một ước lượng cho các thuật toán sắp xếp khác như Bubble Sort trong trường hợp xấu nhất. Mergesort luôn duy trì O(n log n) trong cả trường hợp tốt nhất và xấu nhất. \n\nTóm lại, Mergesort có hiệu suất ổn định và hiệu quả hơn so với các tùy chọn sai trong việc phân tích số lần so sánh.",
+      "topic": {
+        "name": "Phân tích số lần so sánh trong Mergesort",
+        "description": "Chủ đề này liên quan đến phân tích số lần so sánh cần thiết để thực hiện Mergesort. Học sinh sẽ cần áp dụng định lý đệ quy để tìm ra số lần so sánh và so sánh nó với những thuật toán khác. Các câu hỏi có thể yêu cầu chứng minh hoặc giải thích mối quan hệ giữa số lượng phần tử và số lần so sánh.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Giới hạn dưới cho các thuật toán sắp xếp dựa trên so sánh trong trường hợp xấu nhất là gì?",
+      "answer": "lg(N!)",
+      "distractors": [
+        "N!",
+        "lg(N^2)",
+        "lg(N) + N"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"lg(N!)\" vì đây là giới hạn dưới cho số lần so sánh cần thiết trong trường hợp xấu nhất của bất kỳ thuật toán sắp xếp nào dựa trên so sánh. Lý do là vì có N! cách sắp xếp khác nhau cho N phần tử, và để xác định thứ tự đúng, thuật toán cần phân biệt giữa tất cả các cách sắp xếp này. Số lượng so sánh tối thiểu cần thiết để phân biệt giữa N! cách sắp xếp là lg(N!), theo định lý của lý thuyết tính toán.\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n1. **N!**: Đây không phải là giới hạn dưới cho số lần so sánh mà là số lượng cách sắp xếp có thể có của N phần tử. Mặc dù N! là một con số lớn, nó không phản ánh số lần so sánh tối thiểu cần thiết để xác định thứ tự của các phần tử.\n\n2. **lg(N^2)**: Tùy chọn này tính toán số lần so sánh dựa trên số lượng phần tử, nhưng không phản ánh đúng bản chất của vấn đề. lg(N^2) = 2*lg(N) chỉ cho thấy số lần so sánh cần thiết cho một số trường hợp cụ thể, không phải cho tất cả các cách sắp xếp. Do đó, nó không phải là giới hạn dưới cho thuật toán sắp xếp.\n\n3. **lg(N) + N**: Tùy chọn này cũng không chính xác vì nó kết hợp một thành phần logarithmic với một thành phần tuyến tính. Số lần so sánh tối thiểu không thể được biểu diễn như vậy, vì N phần tử cần phải được phân biệt giữa N! cách sắp xếp, và do đó, không thể chỉ đơn giản là cộng thêm N vào lg(N).\n\nTóm lại, \"lg(N!)\" là câu trả lời đúng vì nó chính xác phản ánh số lần so sánh tối thiểu cần thiết trong trường hợp xấu nhất cho các thuật toán sắp xếp dựa trên so sánh, trong khi các yếu tố gây nhiễu khác không đáp ứng được yêu cầu này.",
+      "topic": {
+        "name": "Giới hạn dưới dựa trên so sánh cho sắp xếp",
+        "description": "Chủ đề này khám phá giới hạn dưới cho các thuật toán sắp xếp dựa trên so sánh, yêu cầu sinh viên tìm hiểu và chứng minh rằng bất kỳ thuật toán sắp xếp nào cũng cần ít nhất lg(N!) lần so sánh trong trường hợp xấu nhất. Câu hỏi sẽ kiểm tra khả năng hiển thị và phân tích lý thuyết của học sinh.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "So với Mergesort, thuật toán sắp xếp nào sau đây được coi là không ổn định?",
+      "answer": "QuickSort",
+      "distractors": [
+        "HeapSort",
+        "InsertionSort",
+        "SelectionSort"
+      ],
+      "explanation": "Câu trả lời đúng là \"QuickSort\" vì thuật toán này không đảm bảo tính ổn định trong quá trình sắp xếp. Tính ổn định của một thuật toán sắp xếp có nghĩa là nếu hai phần tử có giá trị bằng nhau, thứ tự của chúng trong danh sách đầu vào sẽ được giữ nguyên trong danh sách đầu ra. QuickSort có thể thay đổi thứ tự của các phần tử giống nhau do cách nó phân chia và sắp xếp các phần tử, đặc biệt là khi sử dụng các chiến lược phân chia không ổn định.\n\nBây giờ, hãy xem xét các yếu tố gây nhiễu:\n\n- **HeapSort**: Thuật toán này cũng không ổn định, nhưng nó không phải là câu trả lời đúng trong ngữ cảnh của câu hỏi. HeapSort có thể thay đổi thứ tự của các phần tử giống nhau trong quá trình sắp xếp, nhưng trong câu hỏi này, QuickSort được coi là thuật toán không ổn định nổi bật hơn.\n\n- **InsertionSort**: Đây là một thuật toán sắp xếp ổn định. Khi hai phần tử có giá trị bằng nhau, InsertionSort sẽ giữ nguyên thứ tự của chúng trong danh sách đầu vào. Do đó, nó không thể là câu trả lời đúng cho câu hỏi về thuật toán không ổn định.\n\n- **SelectionSort**: Mặc dù SelectionSort không ổn định, nhưng nó không được coi là thuật toán không ổn định nổi bật như QuickSort. SelectionSort có thể thay đổi thứ tự của các phần tử giống nhau trong quá trình sắp xếp, nhưng QuickSort thường được nhắc đến nhiều hơn trong ngữ cảnh này.\n\nTóm lại, QuickSort là câu trả lời đúng vì nó không ổn định, trong khi các yếu tố gây nhiễu khác có những lý do cụ thể khiến chúng không chính xác trong ngữ cảnh của câu hỏi.",
+      "topic": {
+        "name": "Tính ổn định của Mergesort và các thuật toán sắp xếp khác",
+        "description": "Chủ đề này yêu cầu sinh viên phân tích tính ổn định của Mergesort và cách mà các thuật toán sắp xếp khác so với nó. Sinh viên sẽ phải hiểu rõ giữa sắp xếp ổn định và không ổn định. Câu hỏi sẽ kiểm tra khả năng so sánh và đánh giá của học sinh giữa các phương pháp sắp xếp khác nhau.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "dsa2025"
+    }
+  ]
+}

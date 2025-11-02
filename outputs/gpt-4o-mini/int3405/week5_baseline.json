@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Lỗi thực tế (True Error) trong mô hình học máy được định nghĩa là gì?",
+            "answer": "Lỗi trên dữ liệu chưa thấy.",
+            "distractors": [
+                "Lỗi trên dữ liệu huấn luyện.",
+                "Lỗi do quá khớp.",
+                "Lỗi do dưới khớp."
+            ],
+            "explanation": "Lỗi thực tế là lỗi mà mô hình gặp phải khi dự đoán trên dữ liệu chưa thấy, phản ánh khả năng tổng quát của mô hình."
+        },
+        {
+            "question": "Quá khớp (Overfitting) xảy ra khi nào trong mô hình học máy?",
+            "answer": "Khi mô hình học quá nhiều chi tiết từ dữ liệu huấn luyện.",
+            "distractors": [
+                "Khi mô hình không học được gì từ dữ liệu.",
+                "Khi mô hình chỉ học được các đặc trưng chung.",
+                "Khi mô hình không đủ phức tạp."
+            ],
+            "explanation": "Quá khớp xảy ra khi mô hình quá phức tạp và học cả những nhiễu trong dữ liệu huấn luyện, dẫn đến hiệu suất kém trên dữ liệu chưa thấy."
+        },
+        {
+            "question": "Đánh đổi giữa Độ lệch và Phương sai (Bias-Variance Trade-off) là gì?",
+            "answer": "Sự cân bằng giữa độ lệch và phương sai trong mô hình học máy.",
+            "distractors": [
+                "Sự khác biệt giữa dữ liệu huấn luyện và dữ liệu kiểm tra.",
+                "Sự thay đổi của mô hình theo thời gian.",
+                "Sự tương tác giữa các đặc trưng trong mô hình."
+            ],
+            "explanation": "Đánh đổi giữa độ lệch và phương sai là khái niệm quan trọng trong học máy, giúp tối ưu hóa mô hình bằng cách cân bằng giữa việc học đúng và khả năng tổng quát."
+        },
+        {
+            "question": "Phương pháp nào sau đây không phải là một kỹ thuật lựa chọn đặc trưng?",
+            "answer": "Kỹ thuật hồi quy Logistic.",
+            "distractors": [
+                "Phương pháp Wrapper.",
+                "Phương pháp Filter.",
+                "Phương pháp Embedded."
+            ],
+            "explanation": "Hồi quy Logistic là một phương pháp phân loại, không phải là một kỹ thuật lựa chọn đặc trưng. Các phương pháp Wrapper, Filter và Embedded đều là các kỹ thuật lựa chọn đặc trưng."
+        },
+        {
+            "question": "Điều chuẩn (Regularization) trong học máy có tác dụng gì?",
+            "answer": "Giảm thiểu hiện tượng quá khớp.",
+            "distractors": [
+                "Tăng độ phức tạp của mô hình.",
+                "Giúp mô hình học nhanh hơn.",
+                "Tăng độ chính xác trên dữ liệu huấn luyện."
+            ],
+            "explanation": "Điều chuẩn giúp giảm thiểu quá khớp bằng cách thêm một hình phạt vào hàm mất mát, từ đó khuyến khích mô hình đơn giản hơn."
+        },
+        {
+            "question": "Bagging (Bootstrap Aggregating) chủ yếu được sử dụng để làm gì trong học máy?",
+            "answer": "Tăng cường độ chính xác của mô hình phân loại.",
+            "distractors": [
+                "Giảm số lượng đặc trưng trong mô hình.",
+                "Tăng tốc độ huấn luyện mô hình.",
+                "Giảm thiểu độ lệch của mô hình."
+            ],
+            "explanation": "Bagging là một kỹ thuật tập hợp giúp cải thiện độ chính xác của mô hình phân loại bằng cách kết hợp nhiều mô hình học được từ các mẫu khác nhau."
+        },
+        {
+            "question": "AdaBoost là một kỹ thuật nào trong học máy?",
+            "answer": "Kỹ thuật Boosting.",
+            "distractors": [
+                "Kỹ thuật Bagging.",
+                "Kỹ thuật Lựa chọn đặc trưng.",
+                "Kỹ thuật Điều chuẩn."
+            ],
+            "explanation": "AdaBoost là một trong những thuật toán Boosting, giúp cải thiện độ chính xác của mô hình bằng cách kết hợp nhiều mô hình yếu thành một mô hình mạnh."
+        },
+        {
+            "question": "Kỹ thuật Stacking trong học máy có điểm khác biệt nào so với các phương pháp tập hợp khác?",
+            "answer": "Sử dụng một mô hình học thứ hai để kết hợp các dự đoán từ các mô hình khác.",
+            "distractors": [
+                "Chỉ sử dụng một mô hình duy nhất.",
+                "Không cần dữ liệu huấn luyện.",
+                "Chỉ áp dụng cho mô hình hồi quy."
+            ],
+            "explanation": "Stacking khác với các phương pháp tập hợp khác ở chỗ nó sử dụng một mô hình học thứ hai để kết hợp các dự đoán từ các mô hình khác, giúp cải thiện độ chính xác."
+        }
+    ]
+}

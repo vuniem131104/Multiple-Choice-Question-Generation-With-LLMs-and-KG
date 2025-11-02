@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Học có giám sát trong học máy là gì?",
+            "answer": "Một phương pháp học máy sử dụng dữ liệu đã được gán nhãn để huấn luyện mô hình dự đoán.",
+            "distractors": [
+                "Một phương pháp học máy không cần dữ liệu gán nhãn.",
+                "Một phương pháp học máy chỉ sử dụng dữ liệu không gán nhãn.",
+                "Một phương pháp học máy chỉ áp dụng cho dữ liệu hình ảnh."
+            ],
+            "explanation": "Học có giám sát là một phương pháp trong học máy mà trong đó dữ liệu đã được gán nhãn được sử dụng để huấn luyện mô hình, giúp mô hình học cách dự đoán đầu ra dựa trên đầu vào."
+        },
+        {
+            "question": "Trong hồi quy tuyến tính với một biến, yếu tố nào là đầu vào duy nhất để dự đoán giá trị đầu ra?",
+            "answer": "Biến độc lập.",
+            "distractors": [
+                "Biến phụ thuộc.",
+                "Hằng số.",
+                "Hệ số hồi quy."
+            ],
+            "explanation": "Trong hồi quy tuyến tính với một biến, biến độc lập là yếu tố duy nhất được sử dụng để dự đoán giá trị đầu ra (biến phụ thuộc)."
+        },
+        {
+            "question": "Hàm chi phí trong học máy được sử dụng để làm gì?",
+            "answer": "Đánh giá độ chính xác của mô hình dự đoán.",
+            "distractors": [
+                "Tính toán tốc độ học.",
+                "Xác định số lượng biến đầu vào.",
+                "Tối ưu hóa dữ liệu đầu vào."
+            ],
+            "explanation": "Hàm chi phí là một công cụ quan trọng trong học máy, được sử dụng để đánh giá độ chính xác của mô hình dự đoán bằng cách tính toán sai số giữa giá trị dự đoán và giá trị thực tế."
+        },
+        {
+            "question": "Gradient Descent là gì trong bối cảnh hồi quy tuyến tính?",
+            "answer": "Một thuật toán tối ưu hóa để điều chỉnh các tham số của mô hình.",
+            "distractors": [
+                "Một loại hàm chi phí.",
+                "Một phương pháp gán nhãn dữ liệu.",
+                "Một kỹ thuật phân loại."
+            ],
+            "explanation": "Gradient Descent là một thuật toán tối ưu hóa được sử dụng để điều chỉnh các tham số của mô hình hồi quy tuyến tính nhằm giảm thiểu hàm chi phí."
+        },
+        {
+            "question": "Hồi quy tuyến tính đa biến khác với hồi quy tuyến tính một biến ở điểm nào?",
+            "answer": "Sử dụng nhiều biến độc lập để dự đoán giá trị đầu ra.",
+            "distractors": [
+                "Chỉ sử dụng một biến độc lập.",
+                "Không cần dữ liệu gán nhãn.",
+                "Chỉ áp dụng cho dữ liệu hình ảnh."
+            ],
+            "explanation": "Hồi quy tuyến tính đa biến sử dụng nhiều biến độc lập để dự đoán giá trị đầu ra, trong khi hồi quy tuyến tính một biến chỉ sử dụng một biến độc lập."
+        },
+        {
+            "question": "Phương trình chuẩn trong hồi quy tuyến tính được sử dụng để làm gì?",
+            "answer": "Tìm các tham số tối ưu cho mô hình hồi quy.",
+            "distractors": [
+                "Tính toán hàm chi phí.",
+                "Xác định số lượng biến đầu vào.",
+                "Tối ưu hóa tốc độ học."
+            ],
+            "explanation": "Phương trình chuẩn trong hồi quy tuyến tính được sử dụng để tìm các tham số tối ưu cho mô hình hồi quy, giúp cải thiện độ chính xác của dự đoán."
+        },
+        {
+            "question": "Sự khác biệt chính giữa Gradient Descent và Phương trình chuẩn là gì?",
+            "answer": "Gradient Descent là một phương pháp lặp để tối ưu hóa, trong khi Phương trình chuẩn cung cấp một giải pháp trực tiếp.",
+            "distractors": [
+                "Cả hai đều là phương pháp lặp.",
+                "Phương trình chuẩn không cần dữ liệu gán nhãn.",
+                "Gradient Descent chỉ áp dụng cho hồi quy đa biến."
+            ],
+            "explanation": "Gradient Descent là một phương pháp lặp để tối ưu hóa các tham số, trong khi Phương trình chuẩn cung cấp một giải pháp trực tiếp cho việc tìm các tham số tối ưu."
+        },
+        {
+            "question": "Tích hợp khái niệm hồi quy với các khái niệm khác trong học máy có ý nghĩa gì?",
+            "answer": "Giúp hiểu rõ hơn về mối liên hệ giữa các khái niệm trong học máy.",
+            "distractors": [
+                "Không có ý nghĩa gì.",
+                "Chỉ áp dụng cho hồi quy đa biến.",
+                "Giúp giảm thiểu số lượng biến đầu vào."
+            ],
+            "explanation": "Tích hợp khái niệm hồi quy với các khái niệm khác trong học máy giúp sinh viên hiểu rõ hơn về mối liên hệ giữa các khái niệm, từ đó nâng cao khả năng áp dụng kiến thức."
+        }
+    ]
+}

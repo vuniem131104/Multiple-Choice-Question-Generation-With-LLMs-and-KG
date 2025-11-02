@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm và ứng dụng hàm băm",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more precise and complete definition of a hash function in its correct answer, aligning better with the 'Nhớ' Bloom level. Its distractors are also slightly more nuanced and less obviously incorrect than the Baseline's, which includes 'mã hóa dữ liệu' which is a different concept. The Pipeline question's correct answer explicitly mentions 'kích thước tùy ý' and 'kích thước cố định', which are key characteristics."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Quy ước mã băm của Java",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.95,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is a straightforward 'Nhớ' level question asking for the specific method name, which is perfectly aligned with the topic's focus on Java's hashCode() method. The Pipeline question, while relevant, asks a true/false question about a property of hashCode() that might be slightly more 'Hiểu' than 'Nhớ' and its distractors are a bit less clear. The Baseline's distractors are plausible method names that don't exist, making it a good recall question."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Xung đột trong hàm băm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.75
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question directly asks 'Xung đột trong hàm băm xảy ra khi nào?', which is a fundamental understanding question for the topic. Its correct answer is concise and accurate, and distractors are clearly incorrect but plausible misunderstandings. The Pipeline question asks about a solution to collision, which is also relevant, but its distractors are less strong. The Baseline question is a better fit for the 'Hiểu' Bloom level and 'Trung bình' difficulty by focusing on the core definition of a collision."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Bảng băm chuỗi riêng biệt và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are good and address the core concept of separate chaining. The Baseline question is slightly more direct and clear in its phrasing 'xử lý xung đột như thế nào?' and its correct answer is very precise. The Pipeline question's distractors are a bit less plausible, especially 'Sử dụng một mảng để lưu trữ tất cả các phần tử có cùng chỉ số băm' which is less specific than a linked list. The Baseline question is a slightly better fit for the 'Áp dụng' level by asking how the mechanism works."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Phân tích xếp chồng riêng biệt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.65,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is a much better fit for the 'Phân tích' Bloom level and 'Khó' difficulty. It asks for the definition of N and M, which is foundational for analysis. The Pipeline question attempts to ask about the impact of N and M on performance, but its correct answer is somewhat simplified and its distractors are not strong enough to make it a truly 'Phân tích' level question. The Baseline question sets the stage for deeper analysis by ensuring understanding of the variables."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Lý thuyết cơ bản về mã băm cho chủ đề do người dùng định nghĩa",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.75,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.65
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it directly addresses the design considerations for hashCode() in user-defined classes, specifically asking which fields to consider for uniform distribution. This aligns well with the 'Áp dụng' Bloom level. The Baseline question's correct answer 'Giá trị băm phải duy nhất cho mỗi đối tượng khác nhau' is an ideal but not always achievable or strictly required property (collisions are expected), making it less accurate and its distractors are weak. The Pipeline question's distractors are more plausible misconceptions."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Tổng quan về hàm băm một chiều",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are very similar and good. The Pipeline question is slightly better because its correct answer 'Lưu trữ mật khẩu' is more direct and specific to the primary application of one-way hash functions in security, as mentioned in the topic description. The Baseline's 'Lưu trữ mật khẩu một cách an toàn' is also correct but slightly less concise. The distractors in the Pipeline question are also slightly more distinct from the correct answer, making it a marginally stronger question."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "So sánh bảng băm và cây tìm kiếm cân bằng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is a stronger 'Đánh giá' level question as it asks for a direct comparison of a key strength (faster search) between hash tables and balanced search trees. This requires students to evaluate the performance characteristics. The Pipeline question asks about a factor affecting hash table performance but not balanced trees, which is also relevant, but its distractors are less effective. The Baseline question's correct answer is a fundamental comparative advantage, making it a better fit for the intended Bloom level and difficulty."
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Khái niệm nào mô tả tình trạng khi một mô hình học máy quá khớp với dữ liệu huấn luyện, dẫn đến hiệu suất kém trên dữ liệu mới?",
+      "answer": "Overfitting",
+      "distractors": [
+        "Underfitting",
+        "Overtraining",
+        "Data leakage"
+      ],
+      "explanation": "Câu trả lời đúng là \"Overfitting\" vì khái niệm này mô tả tình trạng khi một mô hình học máy học quá nhiều từ dữ liệu huấn luyện, dẫn đến việc nó không thể tổng quát hóa tốt cho dữ liệu mới. Khi một mô hình overfit, nó sẽ ghi nhớ các chi tiết và nhiễu trong dữ liệu huấn luyện thay vì học các mẫu chung, do đó hiệu suất của nó trên dữ liệu chưa thấy sẽ kém.\n\nCác yếu tố gây nhiễu:\n\n- **Underfitting**: Đây là tình trạng ngược lại với overfitting, khi mô hình không học đủ từ dữ liệu huấn luyện, dẫn đến hiệu suất kém cả trên dữ liệu huấn luyện và dữ liệu mới. Do đó, underfitting không mô tả tình trạng quá khớp mà là không đủ khớp.\n\n- **Overtraining**: Mặc dù thuật ngữ này có thể gây nhầm lẫn, nhưng nó không phải là một khái niệm chính thức trong học máy. Overtraining thường được sử dụng để chỉ việc huấn luyện mô hình quá lâu mà không có sự điều chỉnh thích hợp, nhưng nó không cụ thể mô tả tình trạng quá khớp với dữ liệu huấn luyện như overfitting.\n\n- **Data leakage**: Đây là một vấn đề xảy ra khi thông tin từ dữ liệu kiểm tra bị rò rỉ vào quá trình huấn luyện, dẫn đến việc mô hình có thể đạt được độ chính xác cao trên dữ liệu kiểm tra nhưng không phản ánh khả năng tổng quát thực sự. Data leakage không liên quan đến việc mô hình quá khớp với dữ liệu huấn luyện mà là một lỗi trong quy trình huấn luyện và đánh giá mô hình.\n\nTóm lại, \"Overfitting\" là câu trả lời đúng vì nó chính xác mô tả tình trạng mô hình học máy không thể tổng quát tốt do quá khớp với dữ liệu huấn luyện, trong khi các yếu tố gây nhiễu khác không phản ánh đúng khái niệm này.",
+      "topic": {
+        "name": "Các vấn đề chính trong Học máy",
+        "description": "Khám phá các vấn đề chính trong học máy là rất quan trọng để đánh giá hiệu suất của các thuật toán. Học sinh sẽ được kiểm tra hiểu biết về không gian giả thuyết, tối ưu hóa độ chính xác, và đánh giá độ tin cậy của kết quả. Cụ thể là các khái niệm về overfitting và yêu cầu dữ liệu huấn luyện.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Định lý Bayes dựa trên mối quan hệ nào giữa xác suất hậu nghiệm, xác suất khả dĩ và xác suất tiên nghiệm?",
+      "answer": "Xác suất hậu nghiệm = (Xác suất khả dĩ × Xác suất tiên nghiệm) / Xác suất (khả dĩ)",
+      "distractors": [
+        "Xác suất hậu nghiệm = Xác suất khả dĩ + Xác suất tiên nghiệm",
+        "Xác suất hậu nghiệm = Xác suất khả dĩ / Xác suất tiên nghiệm",
+        "Xác suất hậu nghiệm = Xác suất tiên nghiệm - Xác suất khả dĩ"
+      ],
+      "explanation": "Câu trả lời đúng \"Xác suất hậu nghiệm = (Xác suất khả dĩ × Xác suất tiên nghiệm) / Xác suất (khả dĩ)\" là chính xác vì nó phản ánh đúng công thức của Định lý Bayes. Định lý này cho phép chúng ta tính toán xác suất của một giả thuyết (xác suất hậu nghiệm) dựa trên các bằng chứng mới (xác suất khả dĩ) và xác suất ban đầu của giả thuyết đó (xác suất tiên nghiệm). Công thức này cho thấy mối quan hệ giữa các yếu tố này và cách mà xác suất hậu nghiệm được điều chỉnh dựa trên thông tin mới.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n1. **Xác suất hậu nghiệm = Xác suất khả dĩ + Xác suất tiên nghiệm**: Câu này sai vì xác suất không thể được cộng lại theo cách này. Xác suất hậu nghiệm không phải là tổng của xác suất khả dĩ và xác suất tiên nghiệm mà là một tỉ lệ được tính toán từ chúng.\n\n2. **Xác suất hậu nghiệm = Xác suất khả dĩ / Xác suất tiên nghiệm**: Câu này cũng sai vì nó bỏ qua yếu tố xác suất khả dĩ trong mẫu số. Định lý Bayes yêu cầu cả ba thành phần: xác suất khả dĩ, xác suất tiên nghiệm và xác suất khả dĩ để tính toán xác suất hậu nghiệm.\n\n3. **Xác suất hậu nghiệm = Xác suất tiên nghiệm - Xác suất khả dĩ**: Câu này không chính xác vì nó sử dụng phép trừ, điều này không phản ánh đúng mối quan hệ giữa các xác suất trong Định lý Bayes. Xác suất hậu nghiệm không thể được tính bằng cách trừ đi hai xác suất khác nhau.\n\nTóm lại, câu trả lời đúng phản ánh chính xác công thức của Định lý Bayes, trong khi các yếu tố gây nhiễu đều sai do không tuân theo nguyên tắc xác suất.",
+      "topic": {
+        "name": "Định lý Bayes và ứng dụng",
+        "description": "Chủ đề này sẽ kiểm tra hiểu biết của học sinh về Định lý Bayes, mà xác định cách xác suất hậu nghiệm liên quan đến xác suất khả dĩ và tiên nghiệm. Học sinh sẽ được yêu cầu áp dụng công thức của Định lý Bayes trong các ví dụ cụ thể hoặc câu hỏi tính toán.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong Học tập Hậu nghiệm tối đa (MAP), mục tiêu chính là gì khi áp dụng vào dữ liệu?",
+      "answer": "Xác định giả thuyết tối ưu dựa trên dữ liệu đã cho.",
+      "distractors": [
+        "Xác định giả thuyết tối ưu mà không cần dữ liệu đầu vào.",
+        "Tìm kiếm dữ liệu tối ưu để cải thiện độ chính xác của mô hình.",
+        "Chọn giả thuyết dựa trên kinh nghiệm cá nhân thay vì dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Xác định giả thuyết tối ưu dựa trên dữ liệu đã cho.\" là chính xác vì Học tập Hậu nghiệm tối đa (MAP) tập trung vào việc sử dụng dữ liệu quan sát được để ước lượng các tham số của mô hình. MAP kết hợp giữa thông tin từ dữ liệu và thông tin trước đó (prior) để tìm ra giả thuyết tối ưu nhất, tức là giả thuyết có xác suất cao nhất dựa trên dữ liệu đã cho. Điều này giúp cải thiện độ chính xác của mô hình trong việc dự đoán.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Xác định giả thuyết tối ưu mà không cần dữ liệu đầu vào**: Điều này sai vì MAP cần dữ liệu để xác định giả thuyết. Nếu không có dữ liệu, không thể đánh giá hay tối ưu hóa giả thuyết nào cả.\n\n- **Tìm kiếm dữ liệu tối ưu để cải thiện độ chính xác của mô hình**: Đây là một khái niệm khác, liên quan đến việc thu thập dữ liệu tốt hơn, nhưng không phải là mục tiêu chính của MAP. MAP không tìm kiếm dữ liệu mà sử dụng dữ liệu hiện có để xác định giả thuyết.\n\n- **Chọn giả thuyết dựa trên kinh nghiệm cá nhân thay vì dữ liệu**: Điều này không đúng vì MAP dựa vào dữ liệu để đưa ra quyết định. Việc chọn giả thuyết chỉ dựa trên kinh nghiệm cá nhân sẽ không đảm bảo tính chính xác và khách quan trong việc tối ưu hóa mô hình.\n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của dữ liệu trong việc xác định giả thuyết tối ưu, trong khi các yếu tố gây nhiễu đều bỏ qua vai trò thiết yếu của dữ liệu trong quá trình này.",
+      "topic": {
+        "name": "Học tập Hậu nghiệm tối đa (MAP) trong Học máy",
+        "description": "Chủ đề này liên quan đến khái niệm Học tập Hậu nghiệm tối đa, giúp học sinh hiểu cách tìm giả thuyết tối ưu dựa trên dữ liệu. Bằng cách phân tích công thức và ứng dụng thực tế, học sinh sẽ được kiểm tra về khả năng áp dụng MAP trong các tình huống học máy.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi nào ước lượng khả dĩ tối đa (MLE) được coi là một phương pháp hợp lệ trong thống kê?",
+      "answer": "Khi dữ liệu tuân theo giả thiết và điều kiện của mô hình thống kê đã chọn.",
+      "distractors": [
+        "Khi dữ liệu không có bất kỳ sai số nào.",
+        "Khi mô hình được chọn có độ phức tạp cao hơn dữ liệu.",
+        "Khi không có giả thiết nào cần phải kiểm tra."
+      ],
+      "explanation": "Câu trả lời đúng \"Khi dữ liệu tuân theo giả thiết và điều kiện của mô hình thống kê đã chọn\" là chính xác vì ước lượng khả dĩ tối đa (MLE) dựa trên giả định rằng dữ liệu được lấy mẫu từ một phân phối xác định. Nếu dữ liệu tuân theo các giả thiết của mô hình, MLE sẽ cung cấp ước lượng chính xác và hiệu quả cho các tham số của mô hình. Điều này có nghĩa là các giả định về phân phối, độc lập và đồng phân phối của dữ liệu cần phải được thỏa mãn để MLE hoạt động hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Khi dữ liệu không có bất kỳ sai số nào**: Mặc dù việc không có sai số trong dữ liệu có thể làm cho MLE hoạt động tốt hơn, nhưng điều này không phải là điều kiện cần thiết. MLE vẫn có thể được áp dụng ngay cả khi có sai số, miễn là các giả định của mô hình vẫn được thỏa mãn.\n\n- **Khi mô hình được chọn có độ phức tạp cao hơn dữ liệu**: Mô hình phức tạp hơn không đảm bảo rằng MLE sẽ hoạt động tốt. Thực tế, nếu mô hình quá phức tạp so với dữ liệu, nó có thể dẫn đến hiện tượng overfitting, làm giảm khả năng tổng quát của mô hình. MLE cần một mô hình phù hợp với dữ liệu để hoạt động hiệu quả.\n\n- **Khi không có giả thiết nào cần phải kiểm tra**: MLE yêu cầu các giả thiết cụ thể về phân phối dữ liệu. Nếu không có giả thiết nào, không thể xác định được mô hình nào là phù hợp, do đó MLE không thể được áp dụng một cách hợp lệ. Giả thiết là điều kiện tiên quyết để MLE có thể hoạt động chính xác. \n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của việc tuân thủ các giả thiết mô hình trong khi các yếu tố gây nhiễu đều không đáp ứng các điều kiện cần thiết cho MLE.",
+      "topic": {
+        "name": "Ước lượng khả dĩ tối đa (MLE)",
+        "description": "Kiểm tra sự hiểu biết về ước lượng khả dĩ tối đa (MLE) và các giả định liên quan đến nó. Học sinh sẽ hiểu cách tối đa hóa khả dĩ của dữ liệu huấn luyện để tìm ra mô hình dự đoán chính xác.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong mô hình sinh xác suất, tham số nào là cần thiết để phân loại đúng các thể hiện vào lớp tương ứng?",
+      "answer": "Các xác suất điều kiện cho mỗi lớp.",
+      "distractors": [
+        "Các xác suất biên cho mỗi thể hiện.",
+        "Các tham số không xác định cho mô hình.",
+        "Các xác suất đồng điều cho tất cả các lớp."
+      ],
+      "explanation": "Câu trả lời đúng là \"Các xác suất điều kiện cho mỗi lớp\" vì trong mô hình sinh xác suất, để phân loại một thể hiện vào lớp tương ứng, chúng ta cần biết xác suất của thể hiện đó xảy ra dưới điều kiện của từng lớp. Điều này cho phép chúng ta tính toán xác suất tổng quát cho mỗi lớp và từ đó xác định lớp nào có xác suất cao nhất cho thể hiện đó.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Các xác suất biên cho mỗi thể hiện**: Đây là xác suất của một thể hiện mà không xem xét lớp. Mặc dù chúng có thể hữu ích trong một số tính toán, nhưng chúng không đủ để phân loại thể hiện vào lớp nào, vì chúng không cung cấp thông tin về mối quan hệ giữa thể hiện và các lớp.\n\n- **Các tham số không xác định cho mô hình**: Các tham số không xác định không có giá trị cụ thể và do đó không thể sử dụng để phân loại. Để phân loại chính xác, chúng ta cần các tham số rõ ràng và xác định, đặc biệt là các xác suất điều kiện cho mỗi lớp.\n\n- **Các xác suất đồng điều cho tất cả các lớp**: Các xác suất này không phản ánh sự khác biệt giữa các lớp. Chúng không thể giúp phân loại thể hiện vào lớp nào, vì chúng không cung cấp thông tin về cách mà các thể hiện liên quan đến từng lớp cụ thể.\n\nTóm lại, chỉ có \"Các xác suất điều kiện cho mỗi lớp\" là cần thiết để phân loại đúng các thể hiện vào lớp tương ứng, trong khi các yếu tố gây nhiễu khác không cung cấp thông tin cần thiết cho quá trình phân loại.",
+      "topic": {
+        "name": "Mô hình sinh xác suất và ứng dụng thực tiễn",
+        "description": "Nội dung chủ yếu tập trung vào mô hình sinh xác suất và cách phân loại các thể hiện vào các lớp khác nhau. Học sinh sẽ được kiểm tra khả năng xác định các tham số cần thiết và hiểu rõ về mô hình này trong một số ứng dụng thực tế.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Lời nguyền của chiều trong học máy đề cập đến điều gì trong mối quan hệ với dữ liệu cao chiều?",
+      "answer": "Khó khăn trong việc phân tích và xử lý dữ liệu do gia tăng số chiều.",
+      "distractors": [
+        "Khó khăn trong việc thu thập dữ liệu do số lượng mẫu lớn.",
+        "Lời nguyền của chiều chỉ xảy ra khi có quá nhiều biến độc lập.",
+        "Dữ liệu cao chiều không ảnh hưởng đến khả năng phân tích của mô hình."
+      ],
+      "explanation": "Câu trả lời đúng \"Khó khăn trong việc phân tích và xử lý dữ liệu do gia tăng số chiều\" phản ánh bản chất của lời nguyền chiều trong học máy. Khi số chiều của dữ liệu tăng lên, không gian dữ liệu trở nên thưa thớt hơn, dẫn đến việc khó khăn trong việc tìm kiếm các mẫu và mối quan hệ giữa các biến. Điều này có thể làm giảm hiệu suất của các thuật toán học máy, vì chúng cần nhiều dữ liệu hơn để đạt được độ chính xác cao trong các không gian cao chiều.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Khó khăn trong việc thu thập dữ liệu do số lượng mẫu lớn**: Đây không phải là vấn đề chính của lời nguyền chiều. Lời nguyền chiều chủ yếu liên quan đến việc phân tích và xử lý dữ liệu trong không gian cao chiều, không phải là việc thu thập dữ liệu. Số lượng mẫu lớn có thể giúp cải thiện độ chính xác, nhưng không giải quyết được vấn đề thưa thớt trong không gian cao chiều.\n  \n- **Lời nguyền của chiều chỉ xảy ra khi có quá nhiều biến độc lập**: Mặc dù số lượng biến độc lập có thể góp phần vào lời nguyền chiều, nhưng vấn đề chính là sự gia tăng số chiều nói chung, không chỉ giới hạn ở các biến độc lập. Ngay cả khi có ít biến, nhưng nếu chúng có nhiều giá trị khác nhau, vẫn có thể gặp phải lời nguyền chiều.\n\n- **Dữ liệu cao chiều không ảnh hưởng đến khả năng phân tích của mô hình**: Đây là một quan điểm sai lầm. Dữ liệu cao chiều thực sự có thể làm giảm khả năng phân tích của mô hình do sự phức tạp và thưa thớt của không gian dữ liệu, dẫn đến việc khó khăn trong việc tìm kiếm các mẫu và mối quan hệ. Do đó, dữ liệu cao chiều có ảnh hưởng lớn đến khả năng phân tích của mô hình.\n\nTóm lại, câu trả lời đúng nêu rõ bản chất của lời nguyền chiều, trong khi các yếu tố gây nhiễu không chính xác vì chúng không phản ánh đúng vấn đề mà lời nguyền chiều đề cập đến.",
+      "topic": {
+        "name": "Lời nguyền của chiều trong Học máy",
+        "description": "Kiểm tra khả năng hiểu và phân tích vấn đề 'lời nguyền của chiều', một thách thức trong việc học với dữ liệu có chiều cao. Học sinh sẽ được hỏi về ảnh hưởng của số chiều đối với mẫu dữ liệu và cách giải quyết vấn đề này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi áp dụng bộ phân loại Naïve Bayes, việc giả định rằng các thuộc tính là độc lập có điều kiện ảnh hưởng đến điều gì trong việc ước tính xác suất của lớp?",
+      "answer": "Khả năng ước tính xác suất chính xác cho lớp dựa trên các thuộc tính đã cho.",
+      "distractors": [
+        "Khả năng ước tính xác suất cho lớp sẽ giảm nếu các thuộc tính không độc lập.",
+        "Giả định độc lập có thể dẫn đến việc ước tính xác suất cho lớp là không cần thiết.",
+        "Khả năng ước tính xác suất cho lớp chỉ phụ thuộc vào số lượng thuộc tính được sử dụng."
+      ],
+      "explanation": "Câu trả lời đúng \"Khả năng ước tính xác suất chính xác cho lớp dựa trên các thuộc tính đã cho\" là chính xác vì bộ phân loại Naïve Bayes dựa trên giả định rằng các thuộc tính là độc lập có điều kiện. Điều này có nghĩa là khi tính toán xác suất của một lớp, mỗi thuộc tính được xem xét độc lập với nhau, giúp đơn giản hóa quá trình tính toán và cho phép ước lượng xác suất chính xác hơn cho lớp dựa trên các thuộc tính đã cho. Nếu giả định này được thỏa mãn, mô hình có thể hoạt động hiệu quả và cho ra kết quả chính xác.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n1. **Khả năng ước tính xác suất cho lớp sẽ giảm nếu các thuộc tính không độc lập**: Mặc dù đúng rằng nếu các thuộc tính không độc lập, khả năng ước tính xác suất có thể bị ảnh hưởng, nhưng điều này không làm cho khả năng ước tính trở nên không chính xác hoàn toàn. Naïve Bayes vẫn có thể hoạt động, nhưng độ chính xác có thể giảm. Tuy nhiên, câu hỏi yêu cầu về ảnh hưởng của giả định độc lập, không phải là sự giảm sút.\n\n2. **Giả định độc lập có thể dẫn đến việc ước tính xác suất cho lớp là không cần thiết**: Giả định độc lập không làm cho việc ước tính xác suất trở nên không cần thiết. Trên thực tế, giả định này là cần thiết để đơn giản hóa quá trình tính toán và giúp mô hình hoạt động hiệu quả hơn. Nếu không có giả định này, việc ước tính sẽ phức tạp hơn và khó khăn hơn.\n\n3. **Khả năng ước tính xác suất cho lớp chỉ phụ thuộc vào số lượng thuộc tính được sử dụng**: Điều này không chính xác vì khả năng ước tính xác suất không chỉ phụ thuộc vào số lượng thuộc tính mà còn vào cách mà các thuộc tính này tương tác với nhau. Giả định độc lập cho phép mô hình tính toán xác suất cho lớp một cách hiệu quả hơn, nhưng không có nghĩa là số lượng thuộc tính là yếu tố duy nhất quyết định độ chính xác của ước tính.\n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của giả định độc lập trong việc ước tính xác suất chính xác cho lớp, trong khi các yếu tố gây nhiễu không phản ánh đúng bản chất của vấn đề.",
+      "topic": {
+        "name": "Bộ phân loại Naïve Bayes và những thách thức",
+        "description": "Học sinh sẽ phân tích Bộ phân loại Naïve Bayes, tìm hiểu cách mà giả định độc lập có điều kiện ảnh hưởng đến khả năng ước tính xác suất. Cũng như cách xử lý vấn đề khả dĩ bằng 0 trong điều kiện thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi nào thì mô hình phân biệt được ưu tiên hơn mô hình sinh trong việc lựa chọn thuật toán học máy?",
+      "answer": "Khi dữ liệu có giới hạn và cần sự phân loại chính xác hơn.",
+      "distractors": [
+        "Khi dữ liệu lớn và không cần phân loại chính xác.",
+        "Khi mô hình sinh có thể tạo ra dữ liệu mới từ dữ liệu đã có.",
+        "Khi không có yêu cầu về độ chính xác trong phân loại."
+      ],
+      "explanation": "Câu trả lời đúng \"Khi dữ liệu có giới hạn và cần sự phân loại chính xác hơn\" là chính xác vì mô hình phân biệt tập trung vào việc phân loại các điểm dữ liệu vào các lớp khác nhau dựa trên các đặc trưng của chúng. Khi dữ liệu hạn chế, mô hình phân biệt có thể tối ưu hóa việc sử dụng thông tin có sẵn để đạt được độ chính xác cao hơn trong phân loại, điều này rất quan trọng trong các ứng dụng mà sai sót trong phân loại có thể dẫn đến hậu quả nghiêm trọng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Khi dữ liệu lớn và không cần phân loại chính xác**: Trong trường hợp này, mô hình sinh có thể hoạt động tốt hơn vì nó có thể học từ một lượng lớn dữ liệu và không yêu cầu độ chính xác cao trong phân loại. Mô hình phân biệt không phải là lựa chọn ưu tiên khi không có yêu cầu về độ chính xác.\n\n- **Khi mô hình sinh có thể tạo ra dữ liệu mới từ dữ liệu đã có**: Mô hình sinh chủ yếu được sử dụng trong các tình huống mà việc tạo ra dữ liệu mới là cần thiết, chẳng hạn như trong các ứng dụng tạo hình ảnh hoặc văn bản. Điều này không liên quan đến việc phân loại chính xác, do đó không phù hợp với tình huống cần mô hình phân biệt.\n\n- **Khi không có yêu cầu về độ chính xác trong phân loại**: Nếu không có yêu cầu về độ chính xác, việc sử dụng mô hình phân biệt sẽ không cần thiết. Mô hình sinh có thể là lựa chọn tốt hơn trong các tình huống mà độ chính xác không phải là yếu tố quyết định, vì nó có thể xử lý dữ liệu một cách linh hoạt hơn.\n\nTóm lại, câu trả lời đúng nhấn mạnh tầm quan trọng của độ chính xác trong phân loại khi dữ liệu hạn chế, trong khi các yếu tố gây nhiễu không phù hợp với các điều kiện này.",
+      "topic": {
+        "name": "So sánh Mô hình phân biệt và Mô hình sinh",
+        "description": "Chủ đề cuối cùng kết hợp kiến thức từ tuần 1 và tuần 2. Học sinh sẽ được yêu cầu so sánh các mô hình phân biệt và sinh về ưu nhược điểm của chúng trong các tình huống khác nhau, đồng thời làm quen với cách những mô hình này ảnh hưởng đến việc lựa chọn thuật toán học máy thích hợp.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Các vấn đề chính trong Học máy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because its distractors are more specific and relevant to common machine learning terms (Underfitting, Overtraining, Data leakage), making them more plausible. The Baseline's distractors are a bit too generic ('Mô hình không học được', 'Mô hình có khả năng tổng quát cao') and one is essentially the opposite of the correct answer, making it less challenging. Both questions are clear and relevant, and appropriately test recall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Định lý Bayes và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks for the mathematical relationship, which is a more precise way to test understanding of Bayes' Theorem at the 'Understand' Bloom level. The distractors are also mathematical operations, making them highly plausible. The Baseline question is also relevant but its distractors are less specific and more easily ruled out, making it slightly less effective at assessing understanding. The Pipeline question's correct answer is the formula itself, which is a strong indicator of understanding the theorem's structure."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Học tập Hậu nghiệm tối đa (MAP) trong Học máy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because it focuses on the 'goal' of MAP when 'applied to data', which aligns well with the 'Apply' Bloom level. Its distractors are plausible misconceptions about MAP's purpose. The Baseline question is also good, but its correct answer includes 'xác suất tiên nghiệm' which, while true for MAP, makes it a bit more specific than just 'finding the optimal hypothesis based on data', which is the core application. The Pipeline's question and options are more direct in testing the application of the concept."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Ước lượng khả dĩ tối đa (MLE)",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks 'When' MLE is valid, requiring an evaluation of its conditions, which perfectly matches the 'Evaluate' Bloom level. The distractors are also well-crafted to test understanding of these conditions. The Baseline question is more of a 'Recall' or 'Understand' question about what MLE is, rather than 'Evaluate' its applicability, making it less aligned with the stated Bloom level. Its distractors are also less plausible than the Pipeline's."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Mô hình sinh xác suất và ứng dụng thực tiễn",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks about a specific 'parameter' needed for classification, requiring a deeper analytical understanding of generative models, aligning well with the 'Analyze' Bloom level. The distractors are also technically related terms, making them plausible. The Baseline question is more general, asking 'when' generative models are used, which leans more towards 'Understand' or 'Apply' rather than 'Analyze'. Its distractors are also less sophisticated."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Lời nguyền của chiều trong Học máy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better as it clearly defines 'Lời nguyền của chiều' in relation to high-dimensional data and its impact on analysis and processing, which is a precise understanding. The distractors are also well-formed and plausible. The Baseline question is also good, but its correct answer is a bit more general ('Giảm hiệu suất của mô hình'), and its distractors are less plausible (e.g., 'Tăng độ chính xác'). Both are relevant and test understanding, but Pipeline's is more precise."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Bộ phân loại Naïve Bayes và những thách thức",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks about the 'impact' of the conditional independence assumption on 'estimating class probabilities', which requires applying knowledge of Naïve Bayes to a specific scenario, aligning perfectly with the 'Apply' Bloom level. The distractors are also well-designed to test this application. The Baseline question is more of a 'Recall' or 'Understand' question about what the assumption is, rather than how it 'affects' the process, making it less aligned with the 'Apply' level."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "So sánh Mô hình phân biệt và Mô hình sinh",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks 'When' a discriminative model is 'preferred' over a generative model, requiring an evaluative judgment based on specific conditions (data limitations, need for accuracy). This aligns perfectly with the 'Evaluate' Bloom level. The distractors are also plausible scenarios. The Baseline question is a good 'Understand' or 'Analyze' question about the differences, but it doesn't quite reach the 'Evaluate' level of making a judgment or preference based on criteria. Its distractors are also less nuanced."
+        }
+    ]
+}

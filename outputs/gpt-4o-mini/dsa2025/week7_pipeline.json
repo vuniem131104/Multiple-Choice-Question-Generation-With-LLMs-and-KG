@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Hàm băm (Hash Function) là gì trong cấu trúc dữ liệu?",
+      "answer": "Hàm băm là một hàm chuyển đổi một tập hợp dữ liệu có kích thước tùy ý thành một giá trị có kích thước cố định.",
+      "distractors": [
+        "Hàm băm là một hàm chuyển đổi dữ liệu thành một chuỗi ký tự ngẫu nhiên.",
+        "Hàm băm là một hàm chỉ sử dụng cho các loại dữ liệu số.",
+        "Hàm băm là một hàm tạo ra nhiều giá trị đầu ra cho cùng một đầu vào."
+      ],
+      "explanation": "Hàm băm là một hàm chuyển đổi một tập hợp dữ liệu có kích thước tùy ý thành một giá trị có kích thước cố định. Điều này có nghĩa là bất kể kích thước của dữ liệu đầu vào là bao nhiêu, hàm băm sẽ luôn tạo ra một giá trị đầu ra có kích thước nhất định, thường được gọi là \"mã băm\". Điều này rất quan trọng trong cấu trúc dữ liệu, đặc biệt là trong bảng băm, vì nó giúp tối ưu hóa việc tìm kiếm và lưu trữ dữ liệu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Hàm băm là một hàm chuyển đổi dữ liệu thành một chuỗi ký tự ngẫu nhiên**: Điều này không chính xác vì hàm băm không tạo ra chuỗi ký tự ngẫu nhiên mà tạo ra một giá trị băm có kích thước cố định từ dữ liệu đầu vào. Giá trị này không phải là ngẫu nhiên mà được xác định bởi nội dung của dữ liệu đầu vào.\n  \n- **Hàm băm là một hàm chỉ sử dụng cho các loại dữ liệu số**: Sai lầm này xuất phát từ việc hiểu sai về khả năng của hàm băm. Hàm băm có thể được áp dụng cho bất kỳ loại dữ liệu nào, bao gồm cả chuỗi, hình ảnh, và các cấu trúc dữ liệu phức tạp khác, không chỉ giới hạn ở dữ liệu số.\n\n- **Hàm băm là một hàm tạo ra nhiều giá trị đầu ra cho cùng một đầu vào**: Đây là một hiểu lầm về tính chất của hàm băm. Một hàm băm phải đảm bảo rằng mỗi đầu vào duy nhất sẽ tạo ra một giá trị băm duy nhất (mặc dù có thể xảy ra xung đột, nhưng đó là một vấn đề khác). Nếu một hàm băm tạo ra nhiều giá trị cho cùng một đầu vào, nó không còn được coi là một hàm băm hợp lệ.",
+      "topic": {
+        "name": "Khái niệm và ứng dụng hàm băm",
+        "description": "Chủ đề này khám phá khái niệm hàm băm (Hash Function) và cách tính toán chỉ mục mảng từ khóa. Học sinh sẽ nắm vững định nghĩa, ví dụ, cùng với vấn đề phát sinh và xung đột trong hàm băm. Đây là kiến thức cơ bản cần thiết để hiểu cách hoạt động của bảng băm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Phương thức hashCode() trong Java đảm bảo rằng hai đối tượng khác nhau có thể có cùng một mã băm. Điều này có đúng không?",
+      "answer": "Đúng",
+      "distractors": [
+        "Không, phương thức hashCode() đảm bảo rằng hai đối tượng khác nhau luôn có mã băm khác nhau.",
+        "Đúng, nhưng chỉ trong trường hợp các đối tượng có cùng giá trị thuộc tính.",
+        "Không, mã băm chỉ là một giá trị ngẫu nhiên không liên quan đến đối tượng."
+      ],
+      "explanation": "Câu trả lời \"Đúng\" là chính xác vì phương thức hashCode() trong Java cho phép hai đối tượng khác nhau có thể có cùng một mã băm, điều này được gọi là \"va chạm mã băm\". Theo quy tắc của Java, mã băm được tính toán dựa trên các thuộc tính của đối tượng, nhưng không có quy định nào đảm bảo rằng mã băm sẽ luôn khác nhau cho các đối tượng khác nhau. Điều này có nghĩa là hai đối tượng khác nhau có thể có cùng giá trị mã băm, đặc biệt là khi số lượng đối tượng lớn hơn số lượng mã băm có thể có.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Không, phương thức hashCode() đảm bảo rằng hai đối tượng khác nhau luôn có mã băm khác nhau**: Tùy chọn này sai vì không có quy định nào trong Java đảm bảo rằng mã băm của các đối tượng khác nhau sẽ luôn khác nhau. Điều này trái ngược với thực tế rằng có thể xảy ra va chạm mã băm.\n  \n- **Đúng, nhưng chỉ trong trường hợp các đối tượng có cùng giá trị thuộc tính**: Tùy chọn này cũng sai vì mặc dù các đối tượng có cùng giá trị thuộc tính có thể có cùng mã băm, nhưng điều này không phải là điều kiện duy nhất. Hai đối tượng khác nhau, ngay cả khi có giá trị thuộc tính khác nhau, vẫn có thể có cùng mã băm do cách tính toán mã băm.\n  \n- **Không, mã băm chỉ là một giá trị ngẫu nhiên không liên quan đến đối tượng**: Tùy chọn này sai vì mã băm không phải là giá trị ngẫu nhiên. Nó được tính toán dựa trên các thuộc tính của đối tượng, mặc dù có thể xảy ra va chạm. Mã băm có liên quan trực tiếp đến trạng thái của đối tượng.\n\nTóm lại, câu trả lời \"Đúng\" là chính xác vì phương thức hashCode() cho phép hai đối tượng khác nhau có thể có cùng một mã băm, trong khi các yếu tố gây nhiễu đều sai do hiểu sai về cách thức hoạt động của phương thức này.",
+      "topic": {
+        "name": "Quy ước mã băm của Java",
+        "description": "Chủ đề này tập trung vào quy ước mã băm của Java, giúp sinh viên hiểu cách phương thức hashCode() hoạt động. Họ sẽ được kiểm tra về các điều kiện cần và mong muốn đối với giá trị trả về của mã băm và cách thực hiện điều này cho các lớp người dùng định nghĩa.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Xung đột trong hàm băm xảy ra khi hai khóa khác nhau băm vào cùng một chỉ mục trong bảng băm. Một trong những cách xử lý phổ biến xung đột này là gì?",
+      "answer": "Sử dụng phương pháp nối (chaining) để lưu trữ các giá trị tại cùng một chỉ mục.",
+      "distractors": [
+        "Sử dụng phương pháp mở (open addressing) để xử lý xung đột.",
+        "Thay thế giá trị cũ bằng giá trị mới tại cùng một chỉ mục.",
+        "Sử dụng một bảng băm mới để lưu trữ các giá trị khác nhau."
+      ],
+      "explanation": "Câu trả lời đúng là \"Sử dụng phương pháp nối (chaining) để lưu trữ các giá trị tại cùng một chỉ mục.\" vì phương pháp này cho phép lưu trữ nhiều giá trị tại cùng một chỉ mục trong bảng băm bằng cách tạo một danh sách liên kết hoặc một cấu trúc dữ liệu khác để chứa các giá trị. Khi hai khóa khác nhau băm vào cùng một chỉ mục, phương pháp nối sẽ không làm mất dữ liệu mà chỉ thêm giá trị mới vào danh sách tại chỉ mục đó, giúp duy trì tính toàn vẹn của dữ liệu.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng phương pháp mở (open addressing) để xử lý xung đột**: Phương pháp mở không lưu trữ nhiều giá trị tại cùng một chỉ mục mà thay vào đó tìm kiếm chỉ mục khác để lưu trữ giá trị mới. Điều này có thể dẫn đến việc mất dữ liệu nếu không xử lý đúng cách và không giải quyết được vấn đề xung đột tại chỉ mục ban đầu.\n\n- **Thay thế giá trị cũ bằng giá trị mới tại cùng một chỉ mục**: Cách này sẽ dẫn đến việc mất giá trị cũ, vì chỉ có một giá trị được lưu trữ tại mỗi chỉ mục. Điều này không phải là một phương pháp xử lý xung đột hiệu quả, vì nó không cho phép lưu trữ nhiều giá trị cho các khóa khác nhau.\n\n- **Sử dụng một bảng băm mới để lưu trữ các giá trị khác nhau**: Việc tạo ra một bảng băm mới không phải là một phương pháp xử lý xung đột mà chỉ là một cách để tránh xung đột. Điều này không giải quyết vấn đề xung đột tại bảng băm hiện tại và có thể gây lãng phí tài nguyên và thời gian.\n\nTóm lại, phương pháp nối là cách hiệu quả nhất để xử lý xung đột trong hàm băm, trong khi các phương pháp khác không giải quyết được vấn đề một cách hợp lý.",
+      "topic": {
+        "name": "Xung đột trong hàm băm",
+        "description": "Chủ đề này phân tích xung đột xảy ra khi hai khóa khác nhau băm vào cùng một chỉ mục trong một bảng băm. Sinh viên sẽ hiểu nguyên nhân, đặc điểm của xung đột cùng với cách xử lý. Điều này có thể được kiểm tra qua các câu hỏi về ví dụ và đồ thị.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Bảng băm chuỗi riêng biệt sử dụng cách nào để xử lý va chạm trong việc lưu trữ các phần tử có cùng chỉ số băm?",
+      "answer": "Liên kết các phần tử mới với các phần tử hiện có bằng một danh sách liên kết.",
+      "distractors": [
+        "Sử dụng một mảng để lưu trữ tất cả các phần tử có cùng chỉ số băm.",
+        "Thay thế phần tử cũ bằng phần tử mới khi xảy ra va chạm.",
+        "Lưu trữ tất cả các phần tử trong một cây nhị phân để xử lý va chạm."
+      ],
+      "explanation": "Câu trả lời đúng là \"Liên kết các phần tử mới với các phần tử hiện có bằng một danh sách liên kết\" vì phương pháp này cho phép lưu trữ nhiều phần tử tại cùng một chỉ số băm mà không làm mất dữ liệu. Khi xảy ra va chạm, phần tử mới sẽ được thêm vào danh sách liên kết tại chỉ số băm đó, giúp duy trì tất cả các phần tử mà không cần phải thay thế hay xóa bỏ bất kỳ phần tử nào.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng một mảng để lưu trữ tất cả các phần tử có cùng chỉ số băm**: Phương pháp này không phải là cách xử lý va chạm trong bảng băm chuỗi riêng biệt. Mặc dù có thể sử dụng mảng để lưu trữ các phần tử, nhưng điều này không cho phép lưu trữ linh hoạt và dễ dàng như danh sách liên kết, và có thể dẫn đến việc lãng phí bộ nhớ nếu số lượng phần tử lớn.\n\n- **Thay thế phần tử cũ bằng phần tử mới khi xảy ra va chạm**: Đây là một phương pháp không hợp lý trong bảng băm chuỗi riêng biệt, vì nó sẽ làm mất dữ liệu của phần tử cũ. Mục tiêu của bảng băm là lưu trữ tất cả các phần tử mà không làm mất thông tin, do đó việc thay thế là không phù hợp.\n\n- **Lưu trữ tất cả các phần tử trong một cây nhị phân để xử lý va chạm**: Mặc dù cây nhị phân có thể được sử dụng để tổ chức dữ liệu, nhưng nó không phải là phương pháp chính trong bảng băm chuỗi riêng biệt. Cách này có thể phức tạp hơn và không tận dụng được lợi ích của danh sách liên kết, như khả năng thêm phần tử mới một cách nhanh chóng và hiệu quả tại cùng một chỉ số băm.\n\nTóm lại, phương pháp liên kết các phần tử bằng danh sách liên kết là cách hiệu quả và chính xác nhất để xử lý va chạm trong bảng băm chuỗi riêng biệt.",
+      "topic": {
+        "name": "Bảng băm chuỗi riêng biệt và ứng dụng",
+        "description": "Chủ đề này hướng dẫn về bảng băm chuỗi riêng biệt (Separate-Chaining Symbol Table), sự triển khai và cách mà bảng này xử lý việc xung đột, cùng với hiệu suất của nó. Học sinh sẽ cần ứng dụng kiến thức trong các câu hỏi liên quan từ tuần trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong phân tích chuỗi riêng biệt của bảng băm, N và M ảnh hưởng ra sao đến hiệu suất truy cập dữ liệu trong tình huống có nhiều biến?",
+      "answer": "Tăng độ lớn bảng băm (N) và giảm tỉ lệ tải (M) sẽ cải thiện hiệu suất truy cập.",
+      "distractors": [
+        "Giảm độ lớn bảng băm (N) và tăng tỉ lệ tải (M) sẽ cải thiện hiệu suất truy cập.",
+        "Tăng độ lớn bảng băm (N) mà không thay đổi tỉ lệ tải (M) sẽ không ảnh hưởng đến hiệu suất.",
+        "Giảm tỉ lệ tải (M) mà không thay đổi độ lớn bảng băm (N) sẽ làm giảm hiệu suất truy cập."
+      ],
+      "explanation": "Câu trả lời đúng \"Tăng độ lớn bảng băm (N) và giảm tỉ lệ tải (M) sẽ cải thiện hiệu suất truy cập\" là chính xác vì khi độ lớn bảng băm (N) tăng, số lượng vị trí lưu trữ trong bảng băm cũng tăng, giúp giảm thiểu xung đột và tăng khả năng truy cập nhanh chóng đến các phần tử. Đồng thời, giảm tỉ lệ tải (M) có nghĩa là số lượng phần tử trên mỗi vị trí trong bảng băm giảm, từ đó làm giảm thời gian tìm kiếm và truy cập dữ liệu, cải thiện hiệu suất tổng thể.\n\nGiải thích cho các yếu tố gây nhiễu:\n- **Giảm độ lớn bảng băm (N) và tăng tỉ lệ tải (M) sẽ cải thiện hiệu suất truy cập**: Sai, vì giảm độ lớn bảng băm sẽ làm tăng khả năng xung đột giữa các phần tử, dẫn đến thời gian truy cập lâu hơn. Tăng tỉ lệ tải cũng làm tăng số lượng phần tử trên mỗi vị trí, gây ra sự chậm trễ trong việc tìm kiếm.\n  \n- **Tăng độ lớn bảng băm (N) mà không thay đổi tỉ lệ tải (M) sẽ không ảnh hưởng đến hiệu suất**: Sai, vì việc tăng độ lớn bảng băm sẽ giúp giảm xung đột và cải thiện hiệu suất truy cập, ngay cả khi tỉ lệ tải không thay đổi.\n\n- **Giảm tỉ lệ tải (M) mà không thay đổi độ lớn bảng băm (N) sẽ làm giảm hiệu suất truy cập**: Sai, vì giảm tỉ lệ tải thực tế sẽ cải thiện hiệu suất truy cập bằng cách giảm số lượng phần tử trên mỗi vị trí, giúp truy cập nhanh hơn.\n\nTóm lại, câu trả lời đúng phản ánh chính xác mối quan hệ giữa độ lớn bảng băm và tỉ lệ tải trong việc cải thiện hiệu suất truy cập dữ liệu.",
+      "topic": {
+        "name": "Phân tích xếp chồng riêng biệt",
+        "description": "Chủ đề này củng cố việc thu thập dữ liệu về phân tích chuỗi riêng biệt của bảng băm. Học sinh sẽ phân tích cách N và M trong bảng băm ảnh hưởng đến hiệu suất. Các câu hỏi sẽ yêu cầu phân tích dữ liệu khi có nhiều biến.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi thiết kế một phương thức hashCode cho lớp đối tượng do người dùng định nghĩa, trường nào cần được xem xét để đảm bảo phân phối đồng đều trong không gian băm?",
+      "answer": "Tất cả các trường của lớp đối tượng đó.",
+      "distractors": [
+        "Chỉ cần xem xét các trường có kiểu dữ liệu nguyên thủy.",
+        "Chỉ cần xem xét trường đầu tiên của lớp đối tượng.",
+        "Chỉ cần xem xét các trường có giá trị không null."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tất cả các trường của lớp đối tượng đó\" vì để đảm bảo phân phối đồng đều trong không gian băm, phương thức hashCode cần xem xét tất cả các trường của đối tượng. Mỗi trường có thể chứa thông tin quan trọng ảnh hưởng đến giá trị băm cuối cùng. Nếu chỉ xem xét một số trường, có thể dẫn đến xung đột băm cao hơn, làm giảm hiệu suất của cấu trúc dữ liệu sử dụng băm.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Chỉ cần xem xét các trường có kiểu dữ liệu nguyên thủy**: Đây là sai vì không chỉ các trường nguyên thủy mà cả các trường tham chiếu (đối tượng) cũng cần được xem xét. Các trường tham chiếu có thể chứa thông tin quan trọng và ảnh hưởng đến giá trị băm.\n- **Chỉ cần xem xét trường đầu tiên của lớp đối tượng**: Đây cũng là sai vì chỉ xem xét một trường duy nhất (dù là trường đầu tiên) không thể đại diện cho toàn bộ thông tin của đối tượng. Tất cả các trường đều có thể ảnh hưởng đến giá trị băm và cần được tính đến.\n- **Chỉ cần xem xét các trường có giá trị không null**: Điều này là không chính xác vì ngay cả các trường có giá trị null cũng có thể được xử lý trong phương thức hashCode. Việc bỏ qua các trường null có thể dẫn đến việc không tận dụng hết thông tin của đối tượng, làm giảm khả năng phân phối băm.\n\nTóm lại, để thiết kế một phương thức hashCode hiệu quả, cần xem xét tất cả các trường của lớp đối tượng để đảm bảo phân phối đồng đều và giảm thiểu xung đột băm.",
+      "topic": {
+        "name": "Lý thuyết cơ bản về mã băm cho chủ đề do người dùng định nghĩa",
+        "description": "Chủ đề này nhằm giúp học sinh hiểu rõ về cách thiết kế mã băm cho các kiểu người dùng định nghĩa. Họ sẽ học cách biến đổi mã băm cho các trường khác nhau và lý do cho sự lựa chọn đó. Kiến thức này kết nối với phần trước có liên quan đến mã băm trong Java.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Hàm băm một chiều chủ yếu được sử dụng trong ứng dụng nào dưới đây để bảo mật thông tin?",
+      "answer": "Lưu trữ mật khẩu.",
+      "distractors": [
+        "Mã hóa thông tin nhạy cảm.",
+        "Lưu trữ dữ liệu trên đám mây.",
+        "Bảo vệ dữ liệu trong quá trình truyền tải."
+      ],
+      "explanation": "Câu trả lời đúng là \"Lưu trữ mật khẩu\" vì hàm băm một chiều được thiết kế để chuyển đổi mật khẩu thành một chuỗi ký tự cố định, không thể đảo ngược. Điều này có nghĩa là ngay cả khi dữ liệu bị rò rỉ, kẻ tấn công cũng không thể khôi phục mật khẩu gốc từ giá trị băm. Hàm băm một chiều giúp bảo vệ mật khẩu bằng cách lưu trữ giá trị băm thay vì mật khẩu thực tế, làm tăng cường bảo mật thông tin.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Mã hóa thông tin nhạy cảm**: Mặc dù mã hóa cũng là một phương pháp bảo mật, nhưng nó khác với hàm băm. Mã hóa cho phép dữ liệu được khôi phục về dạng gốc bằng cách sử dụng khóa, trong khi hàm băm một chiều không thể đảo ngược để lấy lại dữ liệu gốc.\n\n- **Lưu trữ dữ liệu trên đám mây**: Lưu trữ dữ liệu trên đám mây không liên quan trực tiếp đến hàm băm một chiều. Đây là một phương pháp lưu trữ dữ liệu, không phải là một kỹ thuật bảo mật cụ thể. Dữ liệu có thể được lưu trữ trên đám mây mà không sử dụng hàm băm.\n\n- **Bảo vệ dữ liệu trong quá trình truyền tải**: Bảo vệ dữ liệu trong quá trình truyền tải thường sử dụng các giao thức mã hóa như SSL/TLS để đảm bảo an toàn cho dữ liệu khi di chuyển. Hàm băm một chiều không được sử dụng để bảo vệ dữ liệu trong quá trình truyền tải mà chủ yếu được áp dụng cho việc lưu trữ.\n\nTóm lại, hàm băm một chiều chủ yếu được sử dụng để lưu trữ mật khẩu, trong khi các yếu tố gây nhiễu khác không liên quan trực tiếp đến chức năng của hàm băm.",
+      "topic": {
+        "name": "Tổng quan về hàm băm một chiều",
+        "description": "Chủ đề này xem xét khái niệm hàm băm một chiều, với các ứng dụng thực tiễn như lưu trữ mật khẩu. Học sinh sẽ nhận diện các hàm băm một chiều khác nhau và hiểu cách thức hoạt động của chúng trong bảo mật.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong việc so sánh bảng băm và cây tìm kiếm cân bằng, yếu tố nào chủ yếu ảnh hưởng đến hiệu suất tìm kiếm trong bảng băm nhưng không có trên cây tìm kiếm cân bằng?",
+      "answer": "Hàm băm",
+      "distractors": [
+        "Chỉ số tìm kiếm",
+        "Cấu trúc cây nhị phân",
+        "Độ sâu của cây"
+      ],
+      "explanation": "Câu trả lời đúng là \"Hàm băm\" vì trong bảng băm, hiệu suất tìm kiếm phụ thuộc rất lớn vào chất lượng của hàm băm. Hàm băm quyết định cách mà các khóa được ánh xạ vào các chỉ số trong bảng, ảnh hưởng đến tốc độ truy cập dữ liệu. Nếu hàm băm tốt, các khóa sẽ phân bố đều, dẫn đến thời gian tìm kiếm gần như O(1). Ngược lại, nếu hàm băm kém, có thể xảy ra xung đột, làm tăng thời gian tìm kiếm.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Chỉ số tìm kiếm**: Trong cây tìm kiếm cân bằng, chỉ số tìm kiếm không phải là yếu tố chính ảnh hưởng đến hiệu suất tìm kiếm trong bảng băm. Cây tìm kiếm cân bằng sử dụng cấu trúc cây để tổ chức dữ liệu, và thời gian tìm kiếm chủ yếu phụ thuộc vào độ sâu của cây, không phải chỉ số tìm kiếm.\n\n- **Cấu trúc cây nhị phân**: Cấu trúc cây nhị phân là đặc điểm của cây tìm kiếm cân bằng, không liên quan đến bảng băm. Bảng băm không sử dụng cấu trúc cây mà sử dụng bảng để lưu trữ dữ liệu, do đó, cấu trúc cây nhị phân không ảnh hưởng đến hiệu suất tìm kiếm trong bảng băm.\n\n- **Độ sâu của cây**: Độ sâu của cây ảnh hưởng đến hiệu suất tìm kiếm trong cây tìm kiếm cân bằng, nhưng không có tác động đến bảng băm. Bảng băm không có khái niệm độ sâu như cây, mà thay vào đó, hiệu suất tìm kiếm chủ yếu phụ thuộc vào hàm băm.\n\nTóm lại, \"Hàm băm\" là yếu tố chính ảnh hưởng đến hiệu suất tìm kiếm trong bảng băm, trong khi các yếu tố gây nhiễu không liên quan đến bảng băm mà chỉ ảnh hưởng đến cây tìm kiếm cân bằng.",
+      "topic": {
+        "name": "So sánh bảng băm và cây tìm kiếm cân bằng",
+        "description": "Chủ đề này liên kết các khái niệm từ tuần 6 về cây tìm kiếm nhị phân và bảng băm, phân tích điểm mạnh và điểm yếu của mỗi phương pháp. Học sinh sẽ được kiểm tra khả năng so sánh hiệu suất giữa các cấu trúc dữ liệu và đối bức ảnh hưởng đến hiệu suất bảo mật.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    }
+  ]
+}

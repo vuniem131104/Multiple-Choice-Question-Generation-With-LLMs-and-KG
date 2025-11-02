@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Đâu là trình tự các bước chính xác của thuật toán Quicksort?",
+            "answer": "Xáo trộn mảng, phân vùng mảng, sắp xếp đệ quy các mảng con.",
+            "distractors": [
+                "Phân vùng mảng, xáo trộn mảng, sắp xếp đệ quy các mảng con.",
+                "Sắp xếp đệ quy các mảng con, phân vùng mảng, xáo trộn mảng.",
+                "Xáo trộn mảng, sắp xếp đệ quy các mảng con, phân vùng mảng."
+            ],
+            "explanation": "Các bước chính của Quicksort bao gồm: đầu tiên xáo trộn mảng để đảm bảo hiệu suất trung bình tốt, sau đó phân vùng mảng để đặt phần tử chốt vào đúng vị trí, và cuối cùng sắp xếp đệ quy các mảng con ở hai bên phần tử chốt."
+        },
+        {
+            "question": "Thuộc tính nào sau đây KHÔNG đúng với thuật toán Quicksort?",
+            "answer": "Ổn định (Stable).",
+            "distractors": [
+                "Tại chỗ (In-place).",
+                "Yêu cầu không gian phụ O(log N) trong trường hợp trung bình.",
+                "Sử dụng phương pháp chia để trị."
+            ],
+            "explanation": "Quicksort là một thuật toán sắp xếp tại chỗ (in-place) và sử dụng phương pháp chia để trị. Nó yêu cầu không gian phụ O(log N) trong trường hợp trung bình cho ngăn xếp đệ quy. Tuy nhiên, Quicksort KHÔNG phải là một thuật toán ổn định vì nó có thể thay đổi thứ tự tương đối của các phần tử bằng nhau trong quá trình hoán đổi."
+        },
+        {
+            "question": "Mục đích chính của quá trình phân vùng (partitioning) trong thuật toán Quicksort là gì?",
+            "answer": "Đặt phần tử chốt (pivot) vào vị trí cuối cùng của nó trong mảng đã sắp xếp, sao cho tất cả các phần tử nhỏ hơn nó nằm bên trái và tất cả các phần tử lớn hơn nó nằm bên phải.",
+            "distractors": [
+                "Sắp xếp hoàn toàn mảng con hiện tại.",
+                "Tìm phần tử nhỏ nhất và lớn nhất trong mảng con.",
+                "Hoán đổi tất cả các phần tử để chúng nằm ở vị trí ngẫu nhiên."
+            ],
+            "explanation": "Quá trình phân vùng trong Quicksort nhằm mục đích chọn một phần tử làm chốt, sau đó sắp xếp lại mảng con sao cho tất cả các phần tử nhỏ hơn phần tử chốt nằm ở bên trái nó, và tất cả các phần tử lớn hơn phần tử chốt nằm ở bên phải nó. Cuối cùng, phần tử chốt sẽ nằm ở vị trí cuối cùng của nó trong mảng đã sắp xếp."
+        },
+        {
+            "question": "Trong số các thuật toán sắp xếp sau, thuật toán nào KHÔNG ổn định?",
+            "answer": "Quicksort.",
+            "distractors": [
+                "Insertion Sort.",
+                "Mergesort.",
+                "Cả Insertion Sort và Mergesort."
+            ],
+            "explanation": "Insertion Sort và Mergesort là các thuật toán sắp xếp ổn định, nghĩa là chúng duy trì thứ tự tương đối của các phần tử có giá trị bằng nhau. Quicksort, mặt khác, là một thuật toán KHÔNG ổn định vì các thao tác hoán đổi có thể làm thay đổi thứ tự tương đối của các phần tử bằng nhau."
+        },
+        {
+            "question": "Cho mảng A = [5, 2, 8, 1, 9, 4, 7, 3]. Nếu chọn phần tử đầu tiên (5) làm chốt và áp dụng cơ chế phân vùng của Quicksort (sử dụng con trỏ i từ trái sang phải và j từ phải sang trái), trạng thái của mảng sau lần hoán đổi đầu tiên giữa A[i] và A[j] là gì? (Giả sử i bắt đầu từ 1 và j bắt đầu từ cuối mảng, bỏ qua phần tử chốt ban đầu).",
+            "answer": "[5, 2, 3, 1, 9, 4, 7, 8]",
+            "distractors": [
+                "[5, 2, 8, 1, 9, 4, 7, 3]",
+                "[5, 2, 4, 1, 9, 8, 7, 3]",
+                "[3, 2, 8, 1, 9, 4, 7, 5]"
+            ],
+            "explanation": "Với chốt là 5, con trỏ i sẽ di chuyển từ trái sang phải tìm phần tử lớn hơn 5. i dừng ở 8. Con trỏ j sẽ di chuyển từ phải sang trái tìm phần tử nhỏ hơn 5. j dừng ở 3. Lần hoán đổi đầu tiên sẽ là giữa A[i] (8) và A[j] (3). Kết quả mảng sẽ là [5, 2, 3, 1, 9, 4, 7, 8]."
+        },
+        {
+            "question": "Kỹ thuật cải tiến nào sau đây giúp Quicksort xử lý hiệu quả hơn các mảng con nhỏ?",
+            "answer": "Sử dụng Insertion Sort khi kích thước mảng con nhỏ hơn một ngưỡng nhất định.",
+            "distractors": [
+                "Luôn chọn phần tử đầu tiên làm chốt.",
+                "Sử dụng Mergesort cho các mảng con nhỏ.",
+                "Tăng kích thước ngưỡng để luôn sử dụng Quicksort."
+            ],
+            "explanation": "Insertion Sort có hiệu suất tốt với các mảng nhỏ. Khi Quicksort chia mảng thành các mảng con rất nhỏ, chi phí đệ quy của Quicksort có thể trở nên đáng kể. Bằng cách chuyển sang Insertion Sort cho các mảng con có kích thước nhỏ hơn một ngưỡng nhất định, chúng ta có thể giảm chi phí tổng thể và cải thiện hiệu suất của Quicksort."
+        },
+        {
+            "question": "Trong trường hợp xấu nhất, độ phức tạp thời gian của thuật toán Quicksort là bao nhiêu?",
+            "answer": "O(N^2)",
+            "distractors": [
+                "O(N log N)",
+                "O(log N)",
+                "O(N)"
+            ],
+            "explanation": "Trường hợp xấu nhất của Quicksort xảy ra khi phần tử chốt luôn là phần tử nhỏ nhất hoặc lớn nhất trong mảng con, dẫn đến việc phân vùng không cân bằng. Điều này tạo ra một cây đệ quy tuyến tính, khiến độ phức tạp thời gian tăng lên O(N^2) so với O(N log N) trong trường hợp trung bình và tốt nhất."
+        },
+        {
+            "question": "Khi so sánh Quicksort và Mergesort, phát biểu nào sau đây là chính xác nhất?",
+            "answer": "Mergesort ổn định và yêu cầu không gian phụ O(N), trong khi Quicksort không ổn định và yêu cầu không gian phụ O(log N) trong trường hợp trung bình.",
+            "distractors": [
+                "Cả Quicksort và Mergesort đều ổn định và yêu cầu không gian phụ O(N).",
+                "Quicksort ổn định và yêu cầu không gian phụ O(N), trong khi Mergesort không ổn định và yêu cầu không gian phụ O(log N).",
+                "Cả Quicksort và Mergesort đều không ổn định và yêu cầu không gian phụ O(log N)."
+            ],
+            "explanation": "Mergesort là một thuật toán sắp xếp ổn định và yêu cầu không gian phụ O(N) để lưu trữ mảng tạm thời trong quá trình trộn. Ngược lại, Quicksort là một thuật toán không ổn định và được coi là tại chỗ (in-place) với yêu cầu không gian phụ O(log N) trong trường hợp trung bình cho ngăn xếp đệ quy."
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Khái niệm nào được sử dụng để tối ưu hóa hàm giá trị trong một MDP mà không cần mệnh đề rõ ràng?",
+      "answer": "Kiểm soát không mô hình",
+      "distractors": [
+        "Kiểm soát mô hình",
+        "Tối ưu hóa theo quy tắc",
+        "Học tăng cường có giám sát"
+      ],
+      "explanation": "Câu trả lời đúng là \"Kiểm soát không mô hình\" vì khái niệm này liên quan đến việc tối ưu hóa hàm giá trị trong một MDP (Markov Decision Process) mà không cần có một mô hình rõ ràng về môi trường. Thay vào đó, kiểm soát không mô hình sử dụng các kỹ thuật lấy mẫu từ kinh nghiệm để học hỏi và cải thiện quyết định, điều này rất hữu ích trong các bài toán thực tế như quản lý danh mục đầu tư và cờ vây.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Kiểm soát mô hình**: Đây là phương pháp mà trong đó người ta xây dựng một mô hình rõ ràng về môi trường để tối ưu hóa hàm giá trị. Do đó, nó không phù hợp với yêu cầu của câu hỏi, vì câu hỏi đề cập đến việc tối ưu hóa mà không cần mệnh đề rõ ràng.\n\n- **Tối ưu hóa theo quy tắc**: Tối ưu hóa theo quy tắc thường liên quan đến việc áp dụng các quy tắc hoặc chiến lược đã biết để đưa ra quyết định, nhưng không nhất thiết phải liên quan đến việc tối ưu hóa hàm giá trị trong một MDP mà không có mô hình. Nó không phản ánh đúng khái niệm kiểm soát không mô hình.\n\n- **Học tăng cường có giám sát**: Học tăng cường có giám sát thường liên quan đến việc sử dụng thông tin từ các nhãn hoặc phản hồi để cải thiện quyết định. Tuy nhiên, trong kiểm soát không mô hình, không có sự giám sát rõ ràng từ một mô hình, mà thay vào đó là học từ kinh nghiệm. Do đó, nó không phù hợp với khái niệm tối ưu hóa hàm giá trị mà không cần mệnh đề rõ ràng.\n\nTóm lại, \"Kiểm soát không mô hình\" là câu trả lời đúng vì nó phản ánh chính xác cách tối ưu hóa hàm giá trị mà không cần một mô hình rõ ràng, trong khi các yếu tố gây nhiễu đều không phù hợp với khái niệm này.",
+      "topic": {
+        "name": "Tối ưu hóa trong kiểm soát không mô hình",
+        "description": "Khái niệm tối ưu hóa hàm giá trị của một MDP mà không cần mô hình rõ ràng. Học sinh cần hiểu về các kỹ thuật lấy mẫu từ kinh nghiệm và ứng dụng cho các bài toán như quản lý danh mục đầu tư và cờ vây. Nội dung này thuộc nền tảng tuần 4 qua khái niệm Kiểm soát không mô hình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Học theo chính sách trong học tăng cường là gì?",
+      "answer": "Là quá trình học hỏi từ kinh nghiệm của chính các hành động trong chính sách đang học.",
+      "distractors": [
+        "Là quá trình học hỏi từ các tài liệu lý thuyết mà không cần thực hành.",
+        "Là việc học từ những người khác mà không cần trải nghiệm cá nhân.",
+        "Là việc áp dụng các chính sách mà không cần xem xét kết quả thực tế."
+      ],
+      "explanation": "Câu trả lời đúng \"Là quá trình học hỏi từ kinh nghiệm của chính các hành động trong chính sách đang học\" là chính xác vì nó nhấn mạnh tầm quan trọng của việc học từ trải nghiệm thực tế. Trong học tăng cường, việc áp dụng các chính sách và hành động cụ thể cho phép người học rút ra bài học từ những gì đã xảy ra, từ đó cải thiện quyết định trong tương lai. Điều này phản ánh nguyên tắc cốt lõi của học theo chính sách, nơi mà kinh nghiệm thực tiễn là nguồn tài nguyên quý giá cho việc phát triển kiến thức và kỹ năng.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- \"Là quá trình học hỏi từ các tài liệu lý thuyết mà không cần thực hành\": Tùy chọn này sai vì học theo chính sách trong học tăng cường không chỉ dựa vào lý thuyết mà còn cần thực hành để có thể rút ra bài học từ các tình huống thực tế.\n\n- \"Là việc học từ những người khác mà không cần trải nghiệm cá nhân\": Tùy chọn này không đúng vì học theo chính sách nhấn mạnh việc học từ trải nghiệm cá nhân, không chỉ từ người khác. Kinh nghiệm cá nhân là yếu tố quan trọng để hiểu rõ hơn về các chính sách.\n\n- \"Là việc áp dụng các chính sách mà không cần xem xét kết quả thực tế\": Tùy chọn này sai vì việc học theo chính sách yêu cầu phải xem xét và phân tích kết quả thực tế để có thể điều chỉnh và cải thiện các hành động trong tương lai. Không xem xét kết quả sẽ dẫn đến việc không học hỏi được gì từ kinh nghiệm. \n\nTóm lại, câu trả lời đúng tập trung vào việc học từ trải nghiệm thực tế, trong khi các yếu tố gây nhiễu đều thiếu đi yếu tố quan trọng này.",
+      "topic": {
+        "name": "Học theo chính sách trong Học Tăng cường",
+        "description": "Học sinh cần nhận diện và mô tả các khái niệm Học theo chính sách, bao gồm việc học hỏi từ chính các trải nghiệm của chính sách đang học. Nội dung liên quan đến các thuật ngữ và phương pháp được triển khai ở tuần 4 và ứng dụng của nó từ tuần 2.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi áp dụng phương pháp ε-Greedy, xác suất để chọn lựa một hành động ngẫu nhiên là bao nhiêu nếu ε được đặt bằng 0.1?",
+      "answer": "0.1",
+      "distractors": [
+        "0.05",
+        "0.2",
+        "0.3"
+      ],
+      "explanation": "Khi áp dụng phương pháp ε-Greedy, xác suất để chọn lựa một hành động ngẫu nhiên được xác định bởi giá trị của ε. Trong trường hợp này, nếu ε được đặt bằng 0.1, điều đó có nghĩa là có 10% xác suất để chọn một hành động ngẫu nhiên. Do đó, câu trả lời đúng là 0.1.\n\nBây giờ, hãy xem xét các yếu tố gây nhiễu:\n\n- **0.05**: Đây là một giá trị thấp hơn giá trị ε đã cho. Nếu ε là 0.1, xác suất chọn hành động ngẫu nhiên không thể là 0.05, vì điều này sẽ không phản ánh đúng tỷ lệ thăm dò mà ε-Greedy quy định.\n\n- **0.2**: Giá trị này cao hơn ε. Nếu ε là 0.1, xác suất chọn hành động ngẫu nhiên không thể là 0.2, vì điều này sẽ vượt quá tỷ lệ thăm dò mà phương pháp ε-Greedy cho phép.\n\n- **0.3**: Tương tự như 0.2, giá trị này cũng cao hơn ε. Với ε là 0.1, xác suất chọn hành động ngẫu nhiên không thể là 0.3, vì điều này không phù hợp với quy tắc của phương pháp ε-Greedy.\n\nTóm lại, câu trả lời đúng là 0.1 vì nó phản ánh chính xác xác suất thăm dò theo giá trị ε đã cho, trong khi các yếu tố gây nhiễu đều sai vì chúng không tương thích với giá trị ε này.",
+      "topic": {
+        "name": "Phương pháp ε-Greedy trong thăm dò",
+        "description": "Khái niệm về thăm dò ε-Greedy cho phép học sinh phân tích cách thức chọn lựa hành động tham lam và việc thăm dò hành động ngẫu nhiên. Học sinh sẽ áp dụng công thức để tính toán xác suất của các hành động trong không gian hành động. Nội dung kết nối từ tuần 4 và phương pháp Lập trình động ở tuần 2.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương pháp học Q, hàm giá trị Q(S, A) được cập nhật chủ yếu thông qua yếu tố nào trong công thức Q-learning?",
+      "answer": "Hệ số học (alpha) và yếu tố giảm giá (gamma)",
+      "distractors": [
+        "Hệ số điều chỉnh (beta) và yếu tố khuyến khích (reward)",
+        "Hệ số giảm giá (gamma) và yếu tố khám phá (epsilon)",
+        "Hệ số học (alpha) và yếu tố khởi tạo (initialization)"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Hệ số học (alpha) và yếu tố giảm giá (gamma)\" vì trong phương pháp học Q, hàm giá trị Q(S, A) được cập nhật dựa trên hai yếu tố chính này. Hệ số học (alpha) xác định tốc độ mà tại đó giá trị Q được cập nhật, cho phép mô hình học từ các trải nghiệm mới. Yếu tố giảm giá (gamma) xác định mức độ quan trọng của các phần thưởng trong tương lai so với phần thưởng ngay lập tức, giúp mô hình cân nhắc giữa việc tối ưu hóa lợi ích ngắn hạn và dài hạn.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Hệ số điều chỉnh (beta) và yếu tố khuyến khích (reward)**: Hệ số điều chỉnh (beta) không phải là một yếu tố trong Q-learning; thuật ngữ này thường liên quan đến các phương pháp khác. Yếu tố khuyến khích (reward) là một phần của quá trình học nhưng không phải là yếu tố chính trong việc cập nhật hàm giá trị Q(S, A).\n  \n- **Hệ số giảm giá (gamma) và yếu tố khám phá (epsilon)**: Mặc dù hệ số giảm giá (gamma) là một yếu tố quan trọng, yếu tố khám phá (epsilon) không tham gia vào việc cập nhật hàm giá trị Q(S, A). Epsilon liên quan đến chiến lược khám phá trong Q-learning, nhưng không ảnh hưởng trực tiếp đến quá trình cập nhật giá trị.\n\n- **Hệ số học (alpha) và yếu tố khởi tạo (initialization)**: Hệ số học (alpha) là đúng, nhưng yếu tố khởi tạo (initialization) không phải là yếu tố chính trong việc cập nhật hàm giá trị Q(S, A). Khởi tạo chỉ là bước đầu tiên trong quá trình học, không ảnh hưởng đến cách thức cập nhật giá trị sau này.\n\nTóm lại, câu trả lời đúng là \"Hệ số học (alpha) và yếu tố giảm giá (gamma)\" vì chúng là hai yếu tố chính trong công thức Q-learning để cập nhật hàm giá trị Q(S, A). Các yếu tố gây nhiễu khác không chính xác vì chúng không liên quan trực tiếp đến quá trình cập nhật này.",
+      "topic": {
+        "name": "Đánh giá phương pháp Học Q (Q-Learning)",
+        "description": "Khái niệm học Q là một phương pháp kiểm soát ngoài chính sách. Học sinh cần hiểu về cách thức cập nhật hàm giá trị Q(S, A) và ứng dụng của nó thông qua các ví dụ thực tế như Cliff Walking. Chủ đề này liên quan đến tuần 4 và cần áp dụng kiến thức từ tuần 3 về các phương pháp kiểm soát.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Phương pháp nào trong học Monte-Carlo và học TD có khả năng cải thiện giá trị chính xác hơn trong các tình huống có tập dữ liệu hạn chế?",
+      "answer": "Học TD",
+      "distractors": [
+        "Học Monte-Carlo có thể cải thiện giá trị chính xác hơn trong mọi tình huống.",
+        "Học TD chỉ hiệu quả khi có dữ liệu đầy đủ.",
+        "Học Monte-Carlo thường nhanh hơn trong việc cải thiện giá trị chính xác."
+      ],
+      "explanation": "Câu trả lời đúng là \"Học TD\" vì phương pháp học Temporal-Difference (TD) có khả năng cập nhật giá trị dự đoán dựa trên các thông tin hiện tại và các giá trị ước lượng trước đó, cho phép nó hoạt động hiệu quả hơn trong các tình huống có tập dữ liệu hạn chế. Học TD không cần phải chờ đợi đến khi có một chuỗi hoàn chỉnh của trải nghiệm để cập nhật giá trị, mà có thể học từ từng bước một, giúp cải thiện độ chính xác nhanh chóng hơn trong các tình huống thiếu dữ liệu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Học Monte-Carlo có thể cải thiện giá trị chính xác hơn trong mọi tình huống**: Điều này không chính xác vì học Monte-Carlo yêu cầu có đủ dữ liệu để thực hiện các ước lượng chính xác. Trong các tình huống có tập dữ liệu hạn chế, nó không thể cập nhật giá trị cho đến khi có một chuỗi trải nghiệm hoàn chỉnh, điều này có thể dẫn đến độ chính xác thấp hơn so với học TD.\n  \n- **Học TD chỉ hiệu quả khi có dữ liệu đầy đủ**: Đây là một hiểu lầm. Học TD thực sự có thể hoạt động hiệu quả ngay cả khi dữ liệu không đầy đủ, vì nó cập nhật giá trị dựa trên các bước hiện tại và các giá trị ước lượng trước đó. Điều này cho phép nó học từ các trải nghiệm từng phần mà không cần phải có toàn bộ chuỗi dữ liệu.\n\n- **Học Monte-Carlo thường nhanh hơn trong việc cải thiện giá trị chính xác**: Điều này không đúng vì học Monte-Carlo cần phải chờ đợi đến khi có một chuỗi hoàn chỉnh để thực hiện cập nhật, trong khi học TD có thể cập nhật giá trị ngay lập tức sau mỗi bước. Do đó, trong các tình huống có tập dữ liệu hạn chế, học TD thường cải thiện giá trị chính xác nhanh hơn so với học Monte-Carlo.",
+      "topic": {
+        "name": "Học Monte-Carlo so với Học TD",
+        "description": "Khái niệm về sự khác biệt giữa hai phương pháp học là Monte-Carlo và Temporal-Difference (TD). Học sinh sẽ so sánh các ưu nhược điểm của từng phương pháp trong dự đoán không mô hình. Qua đó, kết nối các khái niệm từ tuần 3 đến tuần 4.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Thuật toán Sarsa cập nhật giá trị Q bằng cách sử dụng công thức nào sau đây?",
+      "answer": "Q(s, a) ← Q(s, a) + α[r + γQ(s', a') - Q(s, a)]",
+      "distractors": [
+        "Q(s, a) ← Q(s, a) + α[r + γQ(s, a) - Q(s', a')]",
+        "Q(s, a) ← Q(s, a) + α[r + γQ(s', a) - Q(s', a')]",
+        "Q(s, a) ← Q(s, a) + α[r + γQ(s, a') - Q(s', a')]"
+      ],
+      "explanation": "Câu trả lời đúng \"Q(s, a) ← Q(s, a) + α[r + γQ(s', a') - Q(s, a)]\" là chính xác vì nó phản ánh cách thuật toán Sarsa cập nhật giá trị Q cho một trạng thái s và hành động a. Trong công thức này, Q(s, a) là giá trị Q hiện tại, α là hệ số học, r là phần thưởng nhận được sau khi thực hiện hành động a trong trạng thái s, γ là hệ số chiết khấu cho giá trị tương lai, và Q(s', a') là giá trị Q của trạng thái tiếp theo s' và hành động tiếp theo a'. Công thức này cho phép thuật toán điều chỉnh giá trị Q dựa trên phần thưởng và giá trị Q của hành động tiếp theo, từ đó cải thiện chính sách hành động.\n\nGiải thích về các yếu tố gây nhiễu:\n1. **Q(s, a) ← Q(s, a) + α[r + γQ(s, a) - Q(s', a')]**: Tùy chọn này sai vì nó sử dụng Q(s, a) thay vì Q(s', a') trong phần thưởng tương lai. Điều này không phản ánh đúng cách mà Sarsa cập nhật giá trị Q, vì nó cần dựa vào giá trị Q của hành động tiếp theo trong trạng thái mới.\n   \n2. **Q(s, a) ← Q(s, a) + α[r + γQ(s', a) - Q(s', a')]**: Tùy chọn này cũng sai vì nó sử dụng Q(s', a) thay vì Q(s', a') trong phần thưởng tương lai. Điều này không đúng với cách Sarsa hoạt động, vì nó cần giá trị Q của hành động tiếp theo a' trong trạng thái mới s', không phải giá trị Q của hành động a trong trạng thái s'.\n\n3. **Q(s, a) ← Q(s, a) + α[r + γQ(s, a') - Q(s', a')]**: Tùy chọn này sai vì nó sử dụng Q(s, a') thay vì Q(s', a') trong phần thưởng tương lai. Điều này không chính xác vì Sarsa cần giá trị Q của hành động tiếp theo trong trạng thái mới, không phải giá trị Q của hành động khác trong trạng thái cũ.\n\nTóm lại, câu trả lời đúng phản ánh chính xác cách cập nhật giá trị Q trong thuật toán Sarsa, trong khi các yếu tố gây nhiễu đều sai do sử dụng sai các giá trị Q trong công thức.",
+      "topic": {
+        "name": "Khái-niệm về học Sarsa và ứng dụng",
+        "description": "Học sinh sẽ mô tả thuật toán Sarsa và cách nó cập nhật giá trị Q dựa trên các hành động. Liên kết giữa các khái niệm được học ở tuần 3 và ứng dụng trong tuần 4 để giải quyết các bài toán không đầy đủ thông tin.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Quá trình lặp lại nào giữa đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình được gọi là gì?",
+      "answer": "Lặp lại chính sách tổng quát",
+      "distractors": [
+        "Lặp lại chính sách cụ thể",
+        "Lặp lại chính sách định lượng",
+        "Lặp lại chính sách tạm thời"
+      ],
+      "explanation": "Quá trình lặp lại giữa đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình được gọi là \"Lặp lại chính sách tổng quát\" vì nó phản ánh cách mà các chính sách được điều chỉnh và cải tiến liên tục dựa trên các đánh giá và phản hồi từ thực tiễn. Trong môi trường không mô hình, nơi không có một cấu trúc rõ ràng để dự đoán kết quả, việc lặp lại này cho phép các nhà hoạch định chính sách linh hoạt điều chỉnh các chiến lược của họ để đạt được hiệu quả tốt hơn.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Lặp lại chính sách cụ thể**: Tùy chọn này sai vì nó chỉ tập trung vào các chính sách cụ thể mà không xem xét đến quá trình tổng quát của việc đánh giá và cải thiện. Lặp lại chính sách cụ thể không phản ánh được tính linh hoạt và tổng thể của quá trình lặp lại trong môi trường không mô hình.\n\n- **Lặp lại chính sách định lượng**: Tùy chọn này không chính xác vì nó liên quan đến việc sử dụng các số liệu và dữ liệu định lượng để đánh giá chính sách. Trong khi định lượng có thể là một phần của quá trình, lặp lại chính sách tổng quát không chỉ dựa vào số liệu mà còn bao gồm các yếu tố định tính và phản hồi từ thực tiễn.\n\n- **Lặp lại chính sách tạm thời**: Tùy chọn này sai vì nó gợi ý rằng quá trình lặp lại chỉ diễn ra trong một khoảng thời gian ngắn hoặc không ổn định. Tuy nhiên, lặp lại chính sách tổng quát là một quá trình liên tục và bền vững, không chỉ là một hành động tạm thời mà là một phần thiết yếu trong việc cải thiện chính sách lâu dài. \n\nTóm lại, \"Lặp lại chính sách tổng quát\" là câu trả lời đúng vì nó mô tả chính xác quá trình liên tục và linh hoạt trong việc đánh giá và cải thiện chính sách trong môi trường không mô hình.",
+      "topic": {
+        "name": "Khái niệm Lặp lại chính sách tổng quát",
+        "description": "Học sinh sẽ hiểu quá trình lặp lại giữa đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình. Chủ đề này nền tảng cho các khái niệm học tập hiệu quả trong tuần 4 và liên quan đến kiến thức từ tuần 2 về lập trình động.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Dấu vết đủ điều kiện và lợi nhuận trong học n-bước có thể được mô tả như thế nào từ cả góc nhìn tiến về phía trước và lùi về phía sau trong bối cảnh học tập?",
+      "answer": "Chúng phù hợp để tính toán giá trị kỳ vọng của các quyết định ở cả hai hướng trong chuỗi quyết định.",
+      "distractors": [
+        "Chúng chỉ có thể được tính toán từ một hướng duy nhất trong chuỗi quyết định.",
+        "Chúng không liên quan đến giá trị kỳ vọng trong học n-bước.",
+        "Chúng chỉ áp dụng cho các quyết định ngẫu nhiên mà không cần xem xét các yếu tố khác."
+      ],
+      "explanation": "Câu trả lời đúng \"Chúng phù hợp để tính toán giá trị kỳ vọng của các quyết định ở cả hai hướng trong chuỗi quyết định\" là chính xác vì dấu vết đủ điều kiện cho phép chúng ta đánh giá các quyết định dựa trên thông tin hiện có và các kết quả tiềm năng. Trong học n-bước, việc tính toán giá trị kỳ vọng từ cả góc nhìn tiến về phía trước (dựa trên các hành động và kết quả tương lai) và lùi về phía sau (dựa trên các kết quả đã xảy ra) là rất quan trọng để tối ưu hóa các quyết định trong chuỗi quyết định.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Chúng chỉ có thể được tính toán từ một hướng duy nhất trong chuỗi quyết định**: Sai, vì dấu vết đủ điều kiện có thể được tính toán từ cả hai hướng, cho phép phân tích toàn diện hơn về các quyết định.\n- **Chúng không liên quan đến giá trị kỳ vọng trong học n-bước**: Sai, vì dấu vết đủ điều kiện thực sự liên quan chặt chẽ đến việc tính toán giá trị kỳ vọng, là một phần thiết yếu trong việc ra quyết định trong học n-bước.\n- **Chúng chỉ áp dụng cho các quyết định ngẫu nhiên mà không cần xem xét các yếu tố khác**: Sai, vì dấu vết đủ điều kiện không chỉ áp dụng cho các quyết định ngẫu nhiên mà còn cần xem xét các yếu tố khác như trạng thái hiện tại và các hành động có thể xảy ra, để đưa ra quyết định tối ưu hơn. \n\nTóm lại, câu trả lời đúng phản ánh sự linh hoạt và tính toàn diện trong việc tính toán giá trị kỳ vọng, trong khi các yếu tố gây nhiễu đều thiếu chính xác trong việc mô tả vai trò của dấu vết đủ điều kiện trong học n-bước.",
+      "topic": {
+        "name": "Mối quan hệ giữa Dấu vết đủ điều kiện và học n-Bước",
+        "description": "Học sinh cần mô tả sự kết hợp giữa Dấu vết đủ điều kiện và các lợi nhuận trong học n-bước, hiểu rằng chúng phù hợp từ cả góc nhìn tiến về phía trước và lùi về phía sau. Chủ đề này trải rộng kiến thức từ tuần 4 tới những phương pháp học khác nhau trong tuần 3.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "rl2025"
+    }
+  ]
+}

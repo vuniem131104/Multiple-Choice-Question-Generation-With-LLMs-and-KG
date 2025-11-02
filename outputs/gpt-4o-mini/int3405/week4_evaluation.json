@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Mô hình Perceptron và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it directly asks about the application/task of Perceptron, which aligns perfectly with the 'ứng dụng' part of the topic and the 'Nhớ' Bloom level. The distractors are also more plausible and distinct. The Baseline question is a bit too general ('Mô hình Perceptron là gì?') and one distractor ('Một loại mạng nơ-ron phức tạp') is somewhat plausible but less precise for a 'Nhớ' level question about a simple model."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Thuật toán Perceptron và cập nhật trọng số",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it asks for a specific rule of weight update, which is more aligned with 'Hiểu' Bloom level and the topic's focus on 'công thức và các bước thực hiện'. The distractors are also well-formulated and plausible. The Baseline question is a bit vague ('như thế nào?') and its distractors are less plausible, especially 'Bằng cách giữ nguyên trọng số' and 'Bằng cách tăng trọng số ngẫu nhiên' which are obviously incorrect."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Lý thuyết Perceptron và số lần cập nhật",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question attempts to address the 'Áp dụng' Bloom level by asking about the factors influencing the update limit, which requires a deeper understanding than just recalling the limit. However, the correct answer 'Số lần cập nhật phụ thuộc vào số lượng điểm dữ liệu không phân loại được' is not entirely precise for the theoretical bound (which depends on margin and data norm). The Baseline question is simpler, asking 'Giới hạn số lần cập nhật trong thuật toán Perceptron là gì?', which is more 'Hiểu' than 'Áp dụng'. Its correct answer is also a bit vague. Pipeline is slightly better for trying to reach the 'Áp dụng' level, even if the answer could be more precise."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Máy Vector Hỗ trợ (SVM) và cấu trúc phân tách",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is excellent. It clearly asks about the 'chức năng chính' (main function) of SVM, directly addressing the core concept of finding an optimal hyperplane. The distractors are plausible and distinct. The Baseline question is also good but slightly less precise in its phrasing ('như thế nào?') and its distractors are a bit weaker, with 'Bằng cách giảm thiểu độ lệch' being somewhat related but not the primary mechanism for SVM's hyperplane finding."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "SVM và biên độ mềm",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it specifically targets the role of 'biến slack (ξ)' in soft-margin SVM, which is a key concept for the 'Phân tích' Bloom level. The correct answer and distractors are well-formulated and require a deeper understanding. The Baseline question is more general, asking 'Biên độ mềm trong SVM là gì?', which is more of a 'Hiểu' level question, not 'Phân tích'. Its distractors are also less sophisticated."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Tối ưu hóa SVM và bài toán quy hoạch bậc hai",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better as it delves into a specific condition ('điều kiện cần') for the quadratic programming problem to have an optimal solution, which aligns with the 'Phân tích' Bloom level. The distractors are also more nuanced. The Baseline question is more general, asking what the quadratic programming problem 'liên quan đến điều gì', which is more of a 'Hiểu' level question. Its distractors are also less specific to the topic."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Kernel Tricks trong SVM",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is excellent. It asks for a specific example of a kernel function used for non-linear data, which is a good 'Áp dụng' level question. The distractors are well-chosen, representing other common functions but not the primary one for this specific task. The Baseline question is also good, asking about the general 'tác dụng' (effect) of kernel functions, which is more of a 'Hiểu' level question. Pipeline is better for hitting the 'Áp dụng' Bloom level more precisely."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Phân loại đa lớp với SVM",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it directly asks for the name of the method ('phương pháp nào sau đây') that fits the description, which is a perfect 'Hiểu' level question. The distractors are also plausible alternatives or related terms. The Baseline question is also good, defining 'One-vs-Rest', but the Pipeline question's format of providing the description and asking for the name is slightly more challenging and effective for assessing understanding."
+        }
+    ]
+}

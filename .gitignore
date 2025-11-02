@@ -10,8 +10,6 @@ dist/
 build/
 data/ 
 frontend/node_modules/
-test/
 .venv/
-test/
-exam_questions_beautiful.pdf
 .github/
+config.yaml

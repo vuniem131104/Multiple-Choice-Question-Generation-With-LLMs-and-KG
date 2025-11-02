@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Định nghĩa và Thao tác cơ bản của Hàng đợi ưu tiên",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more focused on a specific operation (DELETE-MAX) within the priority queue, aligning better with the topic and Bloom's 'Remember' level. It is clearer and has slightly more plausible distractors. The baseline question is broader and less specific, making it slightly less relevant and challenging."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Biểu diễn và Cấu trúc của Heap nhị phân",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question directly addresses the parent-child relationship in a 0-indexed array representation, which is more aligned with the topic. It is clearer and has slightly more plausible distractors. The baseline question uses a 1-indexed array, which is less common and slightly less relevant to the topic."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "So sánh Hàng đợi ưu tiên với Stack và Queue",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more precise explanation of how priority queues generalize stacks and queues, aligning better with the topic and Bloom's 'Analyze' level. It is clearer and has slightly more plausible distractors. The baseline question is less specific and slightly less challenging."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Ứng dụng của Hàng đợi ưu tiên trong mô phỏng",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is more comprehensive and aligns better with the topic by addressing the broader role of priority queues in event-driven simulation. It is clearer and has more plausible distractors. The pipeline question is narrower in scope, focusing only on collision events, making it slightly less relevant."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Cơ chế chèn và xóa trong Heap nhị phân",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a specific scenario requiring application of the 'swim' operation, aligning well with the topic and Bloom's 'Apply' level. It is clearer and has more plausible distractors. The baseline question is more general and less challenging, making it slightly less effective."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Phân tích hiệu suất Heapsort và so sánh với Mergesort, Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question focuses on a direct comparison of Heapsort and Mergesort, aligning well with the topic and Bloom's 'Analyze' level. It is clearer and has more plausible distractors. The baseline question is broader and less specific, making it slightly less relevant and challenging."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ưu nhược điểm của Heapsort so với các thuật toán sắp xếp khác",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question directly addresses the key disadvantage of Heapsort (cache inefficiency), aligning well with the topic and Bloom's 'Evaluate' level. It is clearer and has more plausible distractors. The baseline question is less specific and slightly less challenging."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tối ưu hóa các thuật toán sắp xếp dựa trên giới hạn dưới",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question challenges students to think critically about designing an optimal sorting algorithm, aligning well with the topic and Bloom's 'Create' level. It is clearer and has more plausible distractors. The baseline question is more descriptive and less challenging, making it slightly less effective."
+        }
+    ]
+}

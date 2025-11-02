@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Học có giám sát trong học máy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 1.0,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant, clear, and perfectly align with the 'Nhớ' Bloom level and 'Dễ' difficulty. The Pipeline question's distractors are slightly more plausible and directly contradict the core definition, making them better at testing understanding. The Baseline's 'chỉ áp dụng cho dữ liệu hình ảnh' is less plausible as a general misconception for supervised learning."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Hồi quy tuyến tính với một biến",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it directly asks about the purpose of the model, which aligns well with the 'Hiểu' Bloom level. Its distractors are well-formulated and plausible. The Baseline question is also good, but it asks for a specific component ('yếu tố nào là đầu vào duy nhất'), which is slightly more 'Nhớ' than 'Hiểu'. The distractors are also good, but the Pipeline's question structure is superior for the stated Bloom level."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Hàm chi phí và tối ưu hóa",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant and clear. The Pipeline question's correct answer ('Sai số giữa giá trị dự đoán và giá trị thực') is more precise and directly reflects the core function of a cost function. Its distractors are also more nuanced and plausible misconceptions. The Baseline's correct answer ('Đánh giá độ chính xác của mô hình dự đoán') is a bit too general, and its distractors are less plausible for the 'Áp dụng' Bloom level."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Thuật toán Gradient Descent",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it delves into the 'role' of the learning rate, requiring a deeper understanding and application of the concept, aligning better with the 'Áp dụng' Bloom level. Its distractors are also more sophisticated and target common misunderstandings. The Baseline question is more of a 'Nhớ' or 'Hiểu' level question, asking for a definition, and its distractors are less plausible for a 'Trung bình' difficulty."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Hồi quy tuyến tính đa biến",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks for the formula, which is a good way to test 'Hiểu' for this topic. The distractors are variations of the formula, making them plausible. The Baseline question is also relevant and clear, but it's a more basic comparison question, leaning towards 'Nhớ' rather than a solid 'Hiểu' for the 'Trung bình' difficulty. Its distractors are also less sophisticated."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Phương trình chuẩn trong hồi quy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it requires a comparative 'Đánh giá' between two methods, which aligns perfectly with the 'Khó' difficulty and 'Đánh giá' Bloom level. The distractors are well-crafted to represent common misconceptions about the comparison. The Baseline question is a simple 'Nhớ' or 'Hiểu' level question about the purpose of the Normal Equation, which is too easy for the stated difficulty and Bloom level."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "So sánh các phương pháp hồi quy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are good and address the comparison. However, the Pipeline question provides a more comprehensive and nuanced comparison in its correct answer, highlighting both the numerical optimization aspect of Gradient Descent and the direct analytical solution of the Normal Equation. Its distractors are also more sophisticated. The Baseline's correct answer is accurate but slightly less detailed, and its distractors are a bit simpler."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tích hợp khái niệm hồi quy",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks for a specific 'mối liên hệ' between linear regression, cost function, and supervised learning, requiring students to synthesize knowledge, which aligns well with the 'Tạo' Bloom level and 'Trung bình' difficulty. Its distractors are also more targeted. The Baseline question is too general ('có ý nghĩa gì?') and its correct answer is vague, making it less effective for assessing integration of concepts at a 'Tạo' level."
+        }
+    ]
+}

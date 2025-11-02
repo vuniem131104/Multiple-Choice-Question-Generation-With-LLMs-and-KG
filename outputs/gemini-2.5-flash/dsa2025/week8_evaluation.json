@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm relax cạnh trong thuật toán SP",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more precise in its wording and aligns better with the topic's focus on edge relaxation conditions. The distractors are slightly more plausible and pedagogically valuable, and the difficulty is better calibrated for the 'Remember' Bloom level. The baseline question is clear but less specific in its phrasing, making it slightly less effective."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Ứng dụng của thuật toán Dijkstra",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly addresses the topic of Dijkstra's applicability, with slightly better distractor plausibility. The baseline question is clear but includes more verbose phrasing, which slightly detracts from its clarity and relevance."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Cấu trúc dữ liệu SPT và Edge Relaxation",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more focused on the role of distTo[] and edgeTo[] arrays, making it more relevant to the topic. The distractors are slightly more plausible and aligned with common misconceptions. The baseline question is clear but less concise and slightly more complex than necessary for the 'Understand' Bloom level."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Ưu nhược điểm của Bellman-Ford",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question provides a more comprehensive explanation of Bellman-Ford's advantages, including its ability to detect negative cycles, which aligns better with the topic. The distractors are slightly more plausible, and the difficulty is better calibrated for the 'Understand' Bloom level. The pipeline question is clear but less detailed."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Hiệu suất Dijkstra với Hàng đợi ưu tiên",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more detailed explanation of the 'log V' factor in Dijkstra's complexity, making it more relevant and aligned with the 'Analyze' Bloom level. The distractors are slightly more plausible, and the difficulty is better calibrated. The baseline question is clear but less specific in its focus on the priority queue implementation."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Xác định chu trình âm bằng Bellman-Ford",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly addresses the method for detecting negative cycles, making it more relevant and aligned with the 'Apply' Bloom level. The distractors are slightly more plausible, and the difficulty is better calibrated. The baseline question is clear but includes more verbose phrasing, which slightly detracts from its clarity and relevance."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Mô hình hóa Arbitrage và Chu trình âm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more focused on the interpretation of negative cycles in the context of arbitrage, making it more relevant and aligned with the 'Analyze' Bloom level. The distractors are slightly more plausible, and the difficulty is better calibrated. The baseline question is clear but less specific in its focus on the conversion of exchange rates to edge weights."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "So sánh SP trên DAG và Đồ thị tổng quát",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more detailed comparison of algorithms for general graphs with negative weights, making it more relevant and aligned with the 'Analyze' Bloom level. The distractors are slightly more plausible, and the difficulty is better calibrated. The baseline question is clear but less specific in its focus on the differences between DAGs and general graphs."
+        }
+    ]
+}

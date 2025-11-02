@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Các thành phần cơ bản của Cây Quyết định",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better overall due to its higher clarity and distractor plausibility. The phrasing of the pipeline question is more concise and avoids redundancy, making it clearer. Additionally, the distractors in the pipeline question are more plausible and aligned with the topic, while the baseline question includes 'nút trung gian,' which is less relevant."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Mục đích của các thước đo độ không thuần khiết",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise phrasing and slightly more plausible distractors. The baseline question's distractors include 'ngăn chặn hiện tượng quá khớp,' which is less relevant to the topic. The pipeline question also aligns better with the Bloom level of 'Hiểu' by focusing on the purpose of impurity measures."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Quy trình cơ bản của Thuật toán Hunt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is better overall due to its higher relevance and clarity. It provides a more comprehensive explanation of the stopping conditions in the Hunt algorithm, which aligns better with the topic description. The pipeline question is slightly less clear and does not fully address the conditions for stopping the recursive process."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Cách thức biểu diễn điều kiện kiểm tra thuộc tính",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise phrasing and slightly more plausible distractors. The baseline question includes distractors that are less relevant, such as 'chuyển đổi thuộc tính liên tục thành thuộc tính danh nghĩa,' which is not a common representation method. The pipeline question also aligns better with the Bloom level of 'Hiểu.'"
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh Chỉ số Gini và Entropy",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise focus on the computational differences between Gini and Entropy, which aligns well with the topic description. The baseline question includes distractors that are less plausible, such as 'Entropy luôn cho giá trị lớn hơn Chỉ số Gini,' which is factually incorrect. The pipeline question also has slightly better clarity."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Ưu nhược điểm Cây Quyết định và Hồi quy Logistic",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise phrasing and slightly more plausible distractors. The baseline question includes distractors that are less relevant, such as 'Cây Quyết định yêu cầu ít dữ liệu huấn luyện hơn,' which is not a significant advantage. The pipeline question also aligns better with the Bloom level of 'Phân tích.'"
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Tính toán Độ lợi thông tin từ Entropy",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise phrasing and slightly more plausible distractors. The baseline question includes distractors that are less relevant, such as '0.971,' which is the entropy of the parent node and not a plausible distractor for information gain. The pipeline question also aligns better with the Bloom level of 'Áp dụng.'"
+        },
+        {
+            "question_number": 8,
+            "topic_name": "So sánh tổng quát Hồi quy, Phân loại, Cây Quyết định",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.95
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is better due to its more precise phrasing and slightly more plausible distractors. The baseline question includes distractors that are less relevant, such as 'Khi dữ liệu có mối quan hệ tuyến tính rõ ràng,' which does not align well with the topic description. The pipeline question also aligns better with the Bloom level of 'Đánh giá.'"
+        }
+    ]
+}

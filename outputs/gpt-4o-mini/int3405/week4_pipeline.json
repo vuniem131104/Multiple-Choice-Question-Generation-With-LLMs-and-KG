@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Mô hình Perceptron được sử dụng để thực hiện loại nhiệm vụ nào trong học máy?",
+      "answer": "Phân loại dữ liệu.",
+      "distractors": [
+        "Phân tích dữ liệu.",
+        "Dự đoán giá trị liên tục.",
+        "Tìm kiếm mẫu trong dữ liệu."
+      ],
+      "explanation": "Mô hình Perceptron được sử dụng chủ yếu để **phân loại dữ liệu**. Đây là một thuật toán học máy đơn giản, hoạt động bằng cách tìm kiếm một siêu phẳng trong không gian nhiều chiều để phân tách các lớp dữ liệu khác nhau. Mục tiêu của Perceptron là tối ưu hóa các trọng số để đạt được sự phân loại chính xác giữa các lớp, do đó, phân loại dữ liệu là ứng dụng chính của nó.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phân tích dữ liệu**: Mặc dù phân tích dữ liệu là một phần quan trọng trong học máy, nhưng nó không phải là nhiệm vụ mà Perceptron thực hiện. Phân tích dữ liệu thường liên quan đến việc khám phá và hiểu dữ liệu, trong khi Perceptron tập trung vào việc phân loại các điểm dữ liệu vào các nhóm khác nhau.\n\n- **Dự đoán giá trị liên tục**: Perceptron không được thiết kế để dự đoán giá trị liên tục mà là để phân loại các điểm dữ liệu thành các lớp rời rạc. Các mô hình khác như hồi quy tuyến tính mới phù hợp cho nhiệm vụ dự đoán giá trị liên tục.\n\n- **Tìm kiếm mẫu trong dữ liệu**: Tìm kiếm mẫu thường liên quan đến việc phát hiện các mẫu hoặc cấu trúc trong dữ liệu mà không nhất thiết phải phân loại chúng. Perceptron không thực hiện nhiệm vụ này mà chỉ tập trung vào việc phân loại các điểm dữ liệu vào các nhóm đã xác định trước.\n\nTóm lại, Perceptron là một mô hình học máy chủ yếu được sử dụng cho phân loại dữ liệu, trong khi các yếu tố gây nhiễu khác không phản ánh đúng chức năng của nó.",
+      "topic": {
+        "name": "Mô hình Perceptron và ứng dụng",
+        "description": "Chủ đề này tập trung vào mô hình Perceptron, nơi sinh viên sẽ tìm hiểu về cách thức hoạt động của siêu phẳng phân tách dữ liệu và các khái niệm liên quan như biên độ và trọng số. Câu hỏi có thể kiểm tra các định nghĩa, công thức và ứng dụng của Perceptron. Kết nối với tuần 4.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong thuật toán Perceptron, trọng số được cập nhật theo quy tắc nào khi đầu ra sai với dự đoán?",
+      "answer": "Trọng số được cập nhật bằng cách cộng với sản phẩm của học số và đầu vào.",
+      "distractors": [
+        "Trọng số được cập nhật bằng cách trừ đi sản phẩm của học số và đầu vào.",
+        "Trọng số không thay đổi khi đầu ra sai với dự đoán.",
+        "Trọng số được cập nhật bằng cách nhân với đầu vào và học số."
+      ],
+      "explanation": "Trong thuật toán Perceptron, khi đầu ra sai với dự đoán, trọng số được cập nhật bằng cách cộng với sản phẩm của học số (learning rate) và đầu vào. Điều này đúng vì quy tắc cập nhật trọng số được thiết lập để điều chỉnh trọng số theo hướng làm giảm sai số. Cụ thể, nếu đầu ra dự đoán thấp hơn đầu ra thực tế (sai số dương), trọng số sẽ được tăng lên, và nếu đầu ra dự đoán cao hơn đầu ra thực tế (sai số âm), trọng số sẽ được giảm xuống. Việc cộng với sản phẩm của học số và đầu vào giúp điều chỉnh trọng số một cách hiệu quả để cải thiện độ chính xác của mô hình.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Trọng số được cập nhật bằng cách trừ đi sản phẩm của học số và đầu vào**: Tùy chọn này sai vì việc trừ đi sản phẩm sẽ làm giảm trọng số mà không điều chỉnh theo hướng cần thiết để cải thiện dự đoán. Điều này không phù hợp với quy tắc cập nhật trong Perceptron.\n- **Trọng số không thay đổi khi đầu ra sai với dự đoán**: Tùy chọn này sai vì nếu trọng số không thay đổi, mô hình sẽ không học từ sai số và không cải thiện được độ chính xác. Cập nhật trọng số là một phần thiết yếu trong quá trình học của Perceptron.\n- **Trọng số được cập nhật bằng cách nhân với đầu vào và học số**: Tùy chọn này sai vì việc nhân sẽ không tạo ra sự điều chỉnh cần thiết cho trọng số. Quy tắc cập nhật yêu cầu cộng hoặc trừ để điều chỉnh trọng số theo hướng đúng, không phải nhân. \n\nTóm lại, câu trả lời đúng là cách cập nhật trọng số thông qua phép cộng, trong khi các yếu tố gây nhiễu đều không phù hợp với quy trình học của thuật toán Perceptron.",
+      "topic": {
+        "name": "Thuật toán Perceptron và cập nhật trọng số",
+        "description": "Chủ đề này tìm hiểu về quy trình hoạt động của thuật toán Perceptron, cách cập nhật các trọng số và độ chính xác trong phân loại. Câu hỏi có thể tập trung vào công thức và các bước thực hiện trong thuật toán. Kết nối với tuần 4.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong thuật toán Perceptron, giới hạn số lần cập nhật của mô hình phụ thuộc vào yếu tố nào trong quá trình học?",
+      "answer": "Số lần cập nhật phụ thuộc vào số lượng điểm dữ liệu không phân loại được.",
+      "distractors": [
+        "Số lần cập nhật phụ thuộc vào số lượng lớp học trong dữ liệu.",
+        "Số lần cập nhật phụ thuộc vào tốc độ học của mô hình.",
+        "Số lần cập nhật phụ thuộc vào số lượng thuộc tính của dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng là \"Số lần cập nhật phụ thuộc vào số lượng điểm dữ liệu không phân loại được.\" Trong thuật toán Perceptron, mô hình sẽ thực hiện cập nhật trọng số mỗi khi nó gặp một điểm dữ liệu không được phân loại chính xác. Điều này có nghĩa là số lần cập nhật sẽ tăng lên nếu có nhiều điểm dữ liệu không được phân loại, cho thấy rằng mô hình cần cải thiện khả năng phân loại của mình. Do đó, số lần cập nhật trực tiếp liên quan đến số lượng điểm dữ liệu mà mô hình không thể phân loại đúng.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Số lần cập nhật phụ thuộc vào số lượng lớp học trong dữ liệu**: Điều này không chính xác vì số lượng lớp học không ảnh hưởng trực tiếp đến số lần cập nhật. Một mô hình có thể có nhiều lớp học nhưng vẫn có thể phân loại chính xác tất cả các điểm dữ liệu, dẫn đến không cần cập nhật.\n  \n- **Số lần cập nhật phụ thuộc vào tốc độ học của mô hình**: Tốc độ học (learning rate) ảnh hưởng đến kích thước của mỗi cập nhật trọng số, nhưng không ảnh hưởng đến số lần cập nhật. Nếu mô hình gặp điểm dữ liệu không phân loại, nó sẽ cập nhật bất kể tốc độ học là bao nhiêu.\n\n- **Số lần cập nhật phụ thuộc vào số lượng thuộc tính của dữ liệu**: Số lượng thuộc tính có thể ảnh hưởng đến độ phức tạp của mô hình nhưng không quyết định số lần cập nhật. Một mô hình có nhiều thuộc tính vẫn có thể phân loại chính xác các điểm dữ liệu, dẫn đến không cần cập nhật.\n\nTóm lại, câu trả lời đúng liên quan trực tiếp đến khả năng phân loại của mô hình, trong khi các yếu tố gây nhiễu không ảnh hưởng đến số lần cập nhật theo cách mà câu hỏi yêu cầu.",
+      "topic": {
+        "name": "Lý thuyết Perceptron và số lần cập nhật",
+        "description": "Chủ đề này tập trung vào giới hạn số lần cập nhật của thuật toán Perceptron, cùng với các công thức liên quan. Sinh viên sẽ được đánh giá về sự hiểu biết của họ về lý thuyết này và tính toán kết quả. Kết nối với tuần 4.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Chức năng chính của máy vector hỗ trợ (SVM) trong phân loại dữ liệu là gì?",
+      "answer": "Tìm siêu phẳng tối ưu để phân tách các lớp dữ liệu.",
+      "distractors": [
+        "Tìm siêu phẳng tối thiểu để phân tách các lớp dữ liệu.",
+        "Tìm điểm trung bình của các lớp dữ liệu để phân tách chúng.",
+        "Sử dụng thuật toán hồi quy để phân loại dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Tìm siêu phẳng tối ưu để phân tách các lớp dữ liệu\" là chính xác vì máy vector hỗ trợ (SVM) hoạt động bằng cách xác định một siêu phẳng (hyperplane) trong không gian nhiều chiều, nhằm tối đa hóa khoảng cách giữa các lớp dữ liệu khác nhau. Siêu phẳng tối ưu không chỉ phân tách các lớp mà còn đảm bảo rằng khoảng cách giữa siêu phẳng và các điểm dữ liệu gần nhất của mỗi lớp (gọi là biên độ) là lớn nhất, từ đó giúp cải thiện khả năng phân loại cho các dữ liệu chưa thấy.\n\nCác yếu tố gây nhiễu:\n\n1. **Tìm siêu phẳng tối thiểu để phân tách các lớp dữ liệu**: Tùy chọn này sai vì SVM không tìm kiếm siêu phẳng tối thiểu mà là siêu phẳng tối ưu, tức là siêu phẳng có khoảng cách lớn nhất giữa các lớp. Tìm siêu phẳng tối thiểu sẽ không đảm bảo độ chính xác cao trong phân loại.\n\n2. **Tìm điểm trung bình của các lớp dữ liệu để phân tách chúng**: Tùy chọn này không chính xác vì SVM không dựa vào điểm trung bình để phân tách các lớp. Thay vào đó, SVM tìm kiếm siêu phẳng tối ưu dựa trên các điểm dữ liệu gần nhất (các điểm biên) của mỗi lớp, không phải là điểm trung bình.\n\n3. **Sử dụng thuật toán hồi quy để phân loại dữ liệu**: Tùy chọn này sai vì SVM là một thuật toán phân loại, không phải hồi quy. Hồi quy thường được sử dụng để dự đoán giá trị liên tục, trong khi SVM được thiết kế đặc biệt để phân loại các lớp dữ liệu rời rạc. \n\nTóm lại, SVM tập trung vào việc tìm kiếm siêu phẳng tối ưu để phân tách các lớp dữ liệu, trong khi các yếu tố gây nhiễu đều không phản ánh đúng cách thức hoạt động của thuật toán này.",
+      "topic": {
+        "name": "Máy Vector Hỗ trợ (SVM) và cấu trúc phân tách",
+        "description": "Chủ đề này khám phá khái niệm về SVM, cách tìm siêu phẳng phân tách và định nghĩa biên độ tối đa. Câu hỏi có thể yêu cầu sinh viên hiểu rõ về thuật toán SVM và sự khác biệt giữa các loại. Kết nối đồng thời với tuần 3 và tuần 4.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong SVM biên độ mềm, biến slack (ξ) thể hiện điều gì trong bối cảnh xử lý các điểm dữ liệu không thể phân tách?",
+      "answer": "Độ cho phép sai lệch của các điểm dữ liệu so với siêu phẳng.",
+      "distractors": [
+        "Độ chính xác của mô hình trong việc phân loại các điểm dữ liệu.",
+        "Số lượng điểm dữ liệu mà mô hình có thể bỏ qua trong quá trình huấn luyện.",
+        "Độ mạnh của ranh giới phân cách giữa các lớp dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Độ cho phép sai lệch của các điểm dữ liệu so với siêu phẳng\" là chính xác vì trong SVM biên độ mềm, biến slack (ξ) được sử dụng để đo lường mức độ sai lệch của các điểm dữ liệu không thể phân tách so với siêu phẳng phân cách. Biến này cho phép một số điểm dữ liệu nằm bên trong hoặc bên ngoài biên độ, giúp mô hình có thể xử lý các trường hợp không thể phân tách một cách hiệu quả hơn mà không làm giảm độ chính xác tổng thể của mô hình.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Độ chính xác của mô hình trong việc phân loại các điểm dữ liệu**: Đây không phải là điều mà biến slack thể hiện. Độ chính xác là một chỉ số đánh giá hiệu suất của mô hình sau khi huấn luyện, trong khi biến slack chỉ ra mức độ cho phép sai lệch trong quá trình tối ưu hóa.\n\n- **Số lượng điểm dữ liệu mà mô hình có thể bỏ qua trong quá trình huấn luyện**: Biến slack không xác định số lượng điểm dữ liệu bị bỏ qua mà chỉ cho phép một số điểm dữ liệu vi phạm ranh giới phân cách. Số lượng điểm bị bỏ qua không phải là yếu tố mà biến slack đo lường.\n\n- **Độ mạnh của ranh giới phân cách giữa các lớp dữ liệu**: Biến slack không thể hiện độ mạnh của ranh giới phân cách. Độ mạnh này thường được điều chỉnh bởi tham số C trong SVM, trong khi biến slack chỉ cho phép một số điểm dữ liệu không tuân thủ ranh giới mà không làm giảm hiệu suất của mô hình.\n\nTóm lại, câu trả lời đúng liên quan trực tiếp đến cách mà biến slack cho phép mô hình xử lý các điểm dữ liệu không thể phân tách, trong khi các yếu tố gây nhiễu không phản ánh đúng vai trò của biến này trong SVM biên độ mềm.",
+      "topic": {
+        "name": "SVM và biên độ mềm",
+        "description": "Chủ đề này tìm hiểu về SVM biên độ mềm và cách giải quyết các tình huống không thể phân tách. Kiến thức về các biến slack và tham số C sẽ được kiểm tra. Kết nối liền mạch với tuần 4 về việc nới lỏng các ràng buộc.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong tối ưu hóa SVM, điều gì là điều kiện cần để bài toán quy hoạch bậc hai có nghiệm tối ưu?",
+      "answer": "Các ràng buộc phải thỏa mãn tính khả thi.",
+      "distractors": [
+        "Các ràng buộc không cần phải thỏa mãn tính khả thi.",
+        "Bài toán quy hoạch bậc hai luôn có nghiệm tối ưu nếu có đủ biến số.",
+        "Tính khả thi không ảnh hưởng đến sự tồn tại của nghiệm tối ưu."
+      ],
+      "explanation": "Câu trả lời đúng \"Các ràng buộc phải thỏa mãn tính khả thi\" là chính xác vì trong tối ưu hóa SVM, để bài toán quy hoạch bậc hai có nghiệm tối ưu, các ràng buộc phải được thiết lập sao cho chúng không mâu thuẫn và có thể thỏa mãn. Nếu các ràng buộc không khả thi, tức là không có điểm nào trong không gian biến số thỏa mãn tất cả các ràng buộc, thì bài toán sẽ không có nghiệm tối ưu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Các ràng buộc không cần phải thỏa mãn tính khả thi**: Sai, vì nếu các ràng buộc không khả thi, bài toán sẽ không có nghiệm nào thỏa mãn, dẫn đến việc không thể tìm ra nghiệm tối ưu.\n- **Bài toán quy hoạch bậc hai luôn có nghiệm tối ưu nếu có đủ biến số**: Sai, vì số lượng biến số không đảm bảo rằng bài toán có nghiệm tối ưu. Điều quan trọng là các ràng buộc phải khả thi; nếu không, nghiệm tối ưu sẽ không tồn tại.\n- **Tính khả thi không ảnh hưởng đến sự tồn tại của nghiệm tối ưu**: Sai, vì tính khả thi là yếu tố quyết định sự tồn tại của nghiệm tối ưu. Nếu bài toán không khả thi, thì không thể có nghiệm tối ưu nào.\n\nTóm lại, tính khả thi của các ràng buộc là điều kiện cần thiết để đảm bảo bài toán quy hoạch bậc hai trong tối ưu hóa SVM có nghiệm tối ưu.",
+      "topic": {
+        "name": "Tối ưu hóa SVM và bài toán quy hoạch bậc hai",
+        "description": "Chủ đề này đi sâu vào quy trình tối ưu hóa SVM và các công thức liên quan đến bài toán quy hoạch bậc hai. Sinh viên sẽ được đánh giá về khả năng áp dụng công thức và hiểu biết về các ràng buộc đặt ra trong SVM.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Hàm kernel nào có thể được sử dụng để chuyển đổi không gian đặc trưng nhằm phân loại dữ liệu phi tuyến tính trong SVM?",
+      "answer": "Hàm RBF (Radial Basis Function)",
+      "distractors": [
+        "Hàm polynomial, vì nó có thể phân loại dữ liệu tuyến tính tốt hơn",
+        "Hàm sigmoid, vì nó thường được sử dụng trong mạng nơ-ron",
+        "Hàm linear, vì nó là lựa chọn phổ biến cho các bài toán phân loại"
+      ],
+      "explanation": "Hàm RBF (Radial Basis Function) là câu trả lời đúng vì nó có khả năng chuyển đổi không gian đặc trưng một cách hiệu quả để phân loại dữ liệu phi tuyến tính trong SVM. Hàm RBF tạo ra các vùng ảnh hưởng xung quanh các điểm dữ liệu, cho phép mô hình nắm bắt được các mối quan hệ phi tuyến tính giữa các đặc trưng, từ đó cải thiện khả năng phân loại.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Hàm polynomial**: Mặc dù hàm polynomial có thể phân loại dữ liệu phi tuyến tính, nhưng nó có thể dẫn đến hiện tượng overfitting nếu bậc của đa thức quá cao. Hơn nữa, hàm polynomial không linh hoạt như hàm RBF trong việc điều chỉnh hình dạng của quyết định biên, đặc biệt trong các trường hợp dữ liệu phức tạp.\n\n- **Hàm sigmoid**: Hàm sigmoid thường được sử dụng trong mạng nơ-ron, nhưng không phải là lựa chọn tối ưu cho SVM trong việc phân loại dữ liệu phi tuyến tính. Hàm sigmoid có thể gặp khó khăn trong việc tối ưu hóa và không thể tạo ra các quyết định biên phức tạp như hàm RBF.\n\n- **Hàm linear**: Hàm linear chỉ có thể phân loại dữ liệu tuyến tính, do đó không phù hợp cho các bài toán yêu cầu phân loại dữ liệu phi tuyến tính. Trong trường hợp dữ liệu phi tuyến tính, hàm linear sẽ không thể tạo ra quyết định biên chính xác, dẫn đến hiệu suất kém.\n\nTóm lại, hàm RBF là lựa chọn tốt nhất cho việc phân loại dữ liệu phi tuyến tính trong SVM, trong khi các yếu tố gây nhiễu khác không đáp ứng được yêu cầu này.",
+      "topic": {
+        "name": "Kernel Tricks trong SVM",
+        "description": "Chủ đề này giới thiệu các hàm kernel và tác dụng của chúng trong việc phân loại dữ liệu phi tuyến tính. Kiến thức về các hàm kernel khác nhau sẽ được kiểm tra. Kết nối với tuần 4 qua việc chuyển đổi không gian đặc trưng.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Phương pháp nào sau đây được sử dụng trong mô hình SVM để thực hiện phân loại đa lớp bằng cách xây dựng nhiều bộ phân loại cho từng lớp?",
+      "answer": "One-vs-Rest",
+      "distractors": [
+        "One-vs-One",
+        "All-vs-All",
+        "One-vs-Many"
+      ],
+      "explanation": "Câu trả lời đúng là \"One-vs-Rest\" vì phương pháp này xây dựng một bộ phân loại cho mỗi lớp trong bài toán phân loại đa lớp. Cụ thể, trong phương pháp này, một bộ phân loại sẽ được huấn luyện để phân biệt giữa một lớp cụ thể và tất cả các lớp còn lại. Điều này cho phép mô hình dễ dàng mở rộng cho nhiều lớp mà không cần phải xây dựng một bộ phân loại cho mỗi cặp lớp, giúp giảm độ phức tạp và thời gian tính toán.\n\nCác yếu tố gây nhiễu:\n\n- **One-vs-One**: Phương pháp này xây dựng một bộ phân loại cho mỗi cặp lớp, dẫn đến số lượng bộ phân loại tăng lên theo cấp số nhân với số lớp. Điều này không hiệu quả cho phân loại đa lớp vì nó yêu cầu nhiều bộ phân loại hơn và không tập trung vào việc phân biệt một lớp với tất cả các lớp còn lại.\n\n- **All-vs-All**: Tương tự như One-vs-One, phương pháp này cũng xây dựng bộ phân loại cho mỗi cặp lớp. Mặc dù tên gọi có thể gây nhầm lẫn, nhưng nó không phải là một phương pháp phổ biến trong SVM cho phân loại đa lớp, vì nó cũng tạo ra quá nhiều bộ phân loại và không tối ưu cho việc phân loại một lớp so với tất cả các lớp khác.\n\n- **One-vs-Many**: Đây không phải là một thuật ngữ chính thức trong lĩnh vực học máy. Phương pháp này có thể gây nhầm lẫn với One-vs-Rest, nhưng không được công nhận như một phương pháp phân loại đa lớp trong SVM. Do đó, nó không chính xác trong ngữ cảnh này.\n\nTóm lại, \"One-vs-Rest\" là phương pháp chính xác cho phân loại đa lớp trong SVM, trong khi các yếu tố gây nhiễu đều không phù hợp với cách tiếp cận này.",
+      "topic": {
+        "name": "Phân loại đa lớp với SVM",
+        "description": "Chủ đề này tìm hiểu về cách mở rộng mô hình SVM cho phân loại đa lớp. Các phương pháp One-vs-Rest và One-vs-One sẽ được thảo luận. Câu hỏi sẽ tập trung vào việc áp dụng các khái niệm này và so sánh các phương pháp liên quan.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "int3405"
+    }
+  ]
+}

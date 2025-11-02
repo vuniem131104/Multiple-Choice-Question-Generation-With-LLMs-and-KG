@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Lỗi thực tế (True Error) và Lỗi thực nghiệm (Empirical Error) khác nhau như thế nào trong mô hình học máy?",
+      "answer": "Lỗi thực tế đo lường hiệu suất của mô hình trên toàn bộ tập dữ liệu, trong khi Lỗi thực nghiệm chỉ phản ánh hiệu suất trên dữ liệu huấn luyện.",
+      "distractors": [
+        "Lỗi thực nghiệm đo lường hiệu suất của mô hình trên toàn bộ tập dữ liệu.",
+        "Lỗi thực tế chỉ phản ánh hiệu suất trên dữ liệu huấn luyện.",
+        "Lỗi thực nghiệm và lỗi thực tế là giống nhau trong cách đo lường hiệu suất."
+      ],
+      "explanation": "Câu trả lời đúng là \"Lỗi thực tế đo lường hiệu suất của mô hình trên toàn bộ tập dữ liệu, trong khi Lỗi thực nghiệm chỉ phản ánh hiệu suất trên dữ liệu huấn luyện.\" Điều này đúng vì Lỗi thực tế (True Error) là thước đo chính xác về khả năng tổng quát của mô hình trên toàn bộ dữ liệu, bao gồm cả dữ liệu chưa thấy. Ngược lại, Lỗi thực nghiệm (Empirical Error) chỉ tính toán hiệu suất của mô hình trên tập dữ liệu huấn luyện, không phản ánh được khả năng của mô hình khi áp dụng vào dữ liệu mới.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Lỗi thực nghiệm đo lường hiệu suất của mô hình trên toàn bộ tập dữ liệu.**: Sai vì Lỗi thực nghiệm chỉ đo lường hiệu suất trên tập dữ liệu huấn luyện, không bao gồm dữ liệu chưa thấy.\n- **Lỗi thực tế chỉ phản ánh hiệu suất trên dữ liệu huấn luyện.**: Sai vì Lỗi thực tế đo lường hiệu suất của mô hình trên toàn bộ tập dữ liệu, không chỉ riêng dữ liệu huấn luyện.\n- **Lỗi thực nghiệm và lỗi thực tế là giống nhau trong cách đo lường hiệu suất.**: Sai vì hai loại lỗi này khác nhau về cách thức đo lường; Lỗi thực nghiệm chỉ phản ánh hiệu suất trên dữ liệu huấn luyện, trong khi Lỗi thực tế phản ánh hiệu suất tổng quát trên toàn bộ dữ liệu. \n\nTóm lại, sự khác biệt giữa Lỗi thực tế và Lỗi thực nghiệm rất quan trọng trong việc đánh giá hiệu suất của mô hình học máy.",
+      "topic": {
+        "name": "Khái niệm Lỗi thực tế và Lỗi thực nghiệm",
+        "description": "Chủ đề này tập trung vào việc phân biệt và hiểu rõ hai loại lỗi trong mô hình học máy: Lỗi thực tế (True Error) và Lỗi thực nghiệm (Empirical Error). Học sinh sẽ được kiểm tra khả năng áp dụng định nghĩa và công thức của chúng, cũng như ví dụ minh họa rõ ràng để nhận biết sự khác biệt giữa lỗi trên dữ liệu huấn luyện và dữ liệu chưa thấy.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Làm thế nào để xác định một mô hình đang gặp vấn đề với quá khớp khi đánh giá hiệu suất trên tập huấn luyện và tập kiểm tra?",
+      "answer": "Mô hình có độ chính xác cao trên tập huấn luyện nhưng thấp trên tập kiểm tra.",
+      "distractors": [
+        "Mô hình có độ chính xác thấp trên cả tập huấn luyện và tập kiểm tra.",
+        "Mô hình có độ chính xác cao trên cả tập huấn luyện và tập kiểm tra.",
+        "Mô hình có độ chính xác thấp trên tập huấn luyện nhưng cao trên tập kiểm tra."
+      ],
+      "explanation": "Câu trả lời đúng là \"Mô hình có độ chính xác cao trên tập huấn luyện nhưng thấp trên tập kiểm tra\" vì đây là dấu hiệu rõ ràng của hiện tượng quá khớp (overfitting). Khi một mô hình học quá nhiều từ dữ liệu huấn luyện, nó có thể ghi nhớ các đặc điểm cụ thể của tập huấn luyện mà không tổng quát hóa tốt cho dữ liệu mới, dẫn đến hiệu suất kém trên tập kiểm tra. Điều này cho thấy mô hình không chỉ học được các quy luật chung mà còn cả nhiễu và các đặc điểm không quan trọng của dữ liệu huấn luyện.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Mô hình có độ chính xác thấp trên cả tập huấn luyện và tập kiểm tra**: Đây không phải là dấu hiệu của quá khớp mà là dấu hiệu của dưới khớp (underfitting). Mô hình không học được đủ thông tin từ dữ liệu, dẫn đến hiệu suất kém trên cả hai tập.\n- **Mô hình có độ chính xác cao trên cả tập huấn luyện và tập kiểm tra**: Điều này cho thấy mô hình đang hoạt động tốt và không gặp vấn đề quá khớp. Thực tế, nếu một mô hình có độ chính xác cao trên cả hai tập, nó có thể đang tổng quát hóa tốt và không bị quá khớp.\n- **Mô hình có độ chính xác thấp trên tập huấn luyện nhưng cao trên tập kiểm tra**: Đây là một tình huống không hợp lý, vì nếu mô hình không học được từ tập huấn luyện, nó sẽ không thể có hiệu suất tốt trên tập kiểm tra. Điều này thường chỉ ra rằng có vấn đề trong cách thức đánh giá hoặc trong dữ liệu.\n\nTóm lại, câu trả lời đúng phản ánh rõ ràng hiện tượng quá khớp, trong khi các yếu tố gây nhiễu khác không phù hợp với định nghĩa và đặc điểm của quá khớp.",
+      "topic": {
+        "name": "Quá khớp và Dưới khớp trong mô hình",
+        "description": "Chủ đề này khám phá hai hiện tượng quan trọng trong việc tối ưu hóa mô hình, đó là Quá khớp (Overfitting) và Dưới khớp (Underfitting). Học sinh sẽ học cách nhận diện và phân tích nguyên nhân gây ra hai vấn đề này, từ đó áp dụng các thay đổi cần thiết để cải thiện mô hình. Các ví dụ thực tế sẽ được cung cấp để minh họa rõ hơn về các hiện tượng này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Đánh đổi giữa độ lệch (bias) và phương sai (variance) trong một mô hình học máy thường dẫn đến điều gì?",
+      "answer": "Cân bằng tối ưu giữa việc phù hợp với dữ liệu huấn luyện và khả năng tổng quát của mô hình.",
+      "distractors": [
+        "Cân bằng giữa việc giảm độ lệch và tăng độ chính xác của mô hình.",
+        "Tăng cường độ lệch để giảm thiểu độ phức tạp của mô hình.",
+        "Giảm độ lệch mà không cần quan tâm đến khả năng tổng quát của mô hình."
+      ],
+      "explanation": "Câu trả lời đúng \"Cân bằng tối ưu giữa việc phù hợp với dữ liệu huấn luyện và khả năng tổng quát của mô hình\" phản ánh chính xác khái niệm đánh đổi giữa độ lệch và phương sai trong học máy. Độ lệch (bias) đề cập đến sai số do giả định quá đơn giản trong mô hình, trong khi phương sai (variance) liên quan đến độ nhạy của mô hình với biến động trong dữ liệu huấn luyện. Một mô hình tốt cần đạt được sự cân bằng giữa việc phù hợp với dữ liệu huấn luyện (giảm độ lệch) và khả năng tổng quát cho dữ liệu mới (giảm phương sai). Nếu chỉ tập trung vào một yếu tố, mô hình có thể trở nên kém hiệu quả.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Cân bằng giữa việc giảm độ lệch và tăng độ chính xác của mô hình**: Tùy chọn này không chính xác vì nó không đề cập đến phương sai. Độ chính xác không chỉ phụ thuộc vào độ lệch mà còn vào khả năng tổng quát của mô hình, do đó không thể chỉ đơn thuần là giảm độ lệch để tăng độ chính xác.\n  \n- **Tăng cường độ lệch để giảm thiểu độ phức tạp của mô hình**: Tùy chọn này sai vì việc tăng độ lệch thường dẫn đến việc mô hình không phù hợp với dữ liệu huấn luyện, làm giảm khả năng tổng quát. Giảm độ phức tạp của mô hình có thể làm tăng độ lệch, nhưng không phải là một chiến lược tối ưu trong việc đánh đổi giữa độ lệch và phương sai.\n\n- **Giảm độ lệch mà không cần quan tâm đến khả năng tổng quát của mô hình**: Tùy chọn này cũng không chính xác vì việc chỉ giảm độ lệch mà không xem xét khả năng tổng quát có thể dẫn đến hiện tượng overfitting, nơi mô hình quá khớp với dữ liệu huấn luyện và không hoạt động tốt trên dữ liệu mới. Cần phải cân nhắc cả hai yếu tố để đạt được mô hình hiệu quả.",
+      "topic": {
+        "name": "Đánh đổi giữa Độ lệch và Phương sai",
+        "description": "Chủ đề này đi sâu vào khái niệm Đánh đổi Độ lệch - Phương sai (Bias-Variance Trade-off), giúp học sinh hiểu sự cân bằng giữa độ lệch và phương sai trong mô hình học máy. Học sinh sẽ được yêu cầu giải thích định nghĩa, ví dụ minh họa cũng như xúc tiến việc áp dụng phương pháp này trong xây dựng mô hình hiệu quả.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong Lựa chọn đặc trưng, phương pháp nào thường sử dụng thông tin về kết quả để cải thiện hiệu suất của mô hình?",
+      "answer": "Phương pháp có giám sát (Supervised methods)",
+      "distractors": [
+        "Phương pháp không giám sát (Unsupervised methods)",
+        "Phương pháp dự đoán (Predictive methods)",
+        "Phương pháp hồi quy (Regression methods)"
+      ],
+      "explanation": "Câu trả lời đúng là \"Phương pháp có giám sát (Supervised methods)\" vì phương pháp này sử dụng thông tin về kết quả (nhãn) để học và cải thiện hiệu suất của mô hình. Trong các phương pháp có giám sát, dữ liệu được cung cấp kèm theo nhãn, cho phép mô hình học cách phân loại hoặc dự đoán dựa trên các đặc trưng đã cho. Điều này giúp tối ưu hóa lựa chọn đặc trưng bằng cách xác định những đặc trưng nào có ảnh hưởng lớn nhất đến kết quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phương pháp không giám sát (Unsupervised methods)**: Phương pháp này không sử dụng thông tin về kết quả hay nhãn, mà chỉ dựa vào cấu trúc và mối quan hệ trong dữ liệu. Do đó, nó không thể cải thiện hiệu suất mô hình dựa trên kết quả như phương pháp có giám sát.\n\n- **Phương pháp dự đoán (Predictive methods)**: Mặc dù phương pháp dự đoán có thể liên quan đến việc sử dụng thông tin để dự đoán kết quả, nhưng không phải tất cả các phương pháp dự đoán đều là có giám sát. Một số phương pháp dự đoán có thể không sử dụng nhãn, do đó không phù hợp với yêu cầu của câu hỏi.\n\n- **Phương pháp hồi quy (Regression methods)**: Phương pháp hồi quy là một loại phương pháp có giám sát, nhưng không phải tất cả các phương pháp hồi quy đều sử dụng thông tin về kết quả để cải thiện lựa chọn đặc trưng. Hơn nữa, câu hỏi yêu cầu một phương pháp chung hơn, không chỉ giới hạn trong hồi quy.\n\nTóm lại, phương pháp có giám sát là lựa chọn chính xác vì nó dựa vào thông tin về kết quả để tối ưu hóa mô hình, trong khi các phương pháp khác không đáp ứng được tiêu chí này.",
+      "topic": {
+        "name": "Tối ưu hóa mô hình qua Lựa chọn đặc trưng",
+        "description": "Chủ đề này thảo luận về Lựa chọn đặc trưng (Feature Selection) như một kỹ thuật quan trọng trong tối ưu hóa mô hình. Học sinh sẽ phải nắm vững các phương pháp có giám sát và không giám sát, cùng các ví dụ áp dụng cụ thể từ thực tiễn, tương tự như khái niệm Information Gain và các phương pháp Wrapper, Filter, Embedded.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Phương pháp nào trong điều chuẩn là thích hợp nhất để giảm bớt độ phức tạp của mô hình mà còn giữ lại một số biến quan trọng trong hồi quy?",
+      "answer": "Hồi quy Lasso",
+      "distractors": [
+        "Hồi quy Ridge",
+        "Hồi quy đa thức",
+        "Hồi quy tuyến tính đơn giản"
+      ],
+      "explanation": "Hồi quy Lasso là câu trả lời đúng vì nó sử dụng kỹ thuật điều chuẩn L1, giúp giảm bớt độ phức tạp của mô hình bằng cách loại bỏ các biến không quan trọng, đồng thời giữ lại những biến quan trọng. Điều này giúp cải thiện khả năng tổng quát của mô hình và giảm thiểu hiện tượng quá khớp (overfitting). Hồi quy Lasso có khả năng tạo ra các hệ số hồi quy bằng 0 cho những biến không cần thiết, từ đó đơn giản hóa mô hình mà vẫn duy trì hiệu suất.\n\nCác yếu tố gây nhiễu:\n\n- **Hồi quy Ridge**: Hồi quy Ridge sử dụng kỹ thuật điều chuẩn L2, giúp giảm thiểu độ phức tạp của mô hình nhưng không loại bỏ hoàn toàn các biến. Thay vào đó, nó chỉ giảm giá trị của các hệ số, do đó không giữ lại được sự đơn giản của mô hình như Lasso.\n\n- **Hồi quy đa thức**: Hồi quy đa thức không phải là một phương pháp điều chuẩn mà là một cách mở rộng hồi quy tuyến tính bằng cách thêm các biến đa thức. Mặc dù nó có thể cải thiện độ chính xác của mô hình, nhưng nó có thể làm tăng độ phức tạp và dễ dẫn đến hiện tượng quá khớp, không phù hợp với yêu cầu giảm bớt độ phức tạp.\n\n- **Hồi quy tuyến tính đơn giản**: Hồi quy tuyến tính đơn giản không áp dụng điều chuẩn và chỉ sử dụng một biến độc lập. Mặc dù nó đơn giản, nhưng không có khả năng giảm bớt độ phức tạp của mô hình khi có nhiều biến, và do đó không đáp ứng được yêu cầu giữ lại các biến quan trọng trong hồi quy.\n\nTóm lại, Hồi quy Lasso là phương pháp điều chuẩn thích hợp nhất để giảm bớt độ phức tạp của mô hình trong khi vẫn giữ lại các biến quan trọng, trong khi các phương pháp khác không đáp ứng được yêu cầu này.",
+      "topic": {
+        "name": "Điều chuẩn trong học máy",
+        "description": "Chủ đề này tìm hiểu về điều chuẩn (Regularization) như một kỹ thuật giảm thiểu hiện tượng quá khớp. Học sinh sẽ được kiểm tra khả năng hiểu các phương pháp điều chuẩn khác nhau như Lasso và Rigid Regression, công thức liên quan, và ứng dụng thực tế trong việc cải thiện mô hình học máy.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Bagging, hay Bootstrap Aggregating, là một kỹ thuật trong học máy nhằm mục đích gì?",
+      "answer": "Cải thiện độ chính xác của mô hình phân loại bằng cách kết hợp nhiều mô hình.",
+      "distractors": [
+        "Giảm thiểu độ chính xác của mô hình bằng cách sử dụng một mô hình duy nhất.",
+        "Tăng tốc độ huấn luyện mô hình bằng cách giảm số lượng dữ liệu.",
+        "Cải thiện khả năng giải thích của mô hình bằng cách sử dụng nhiều thuật toán khác nhau."
+      ],
+      "explanation": "Câu trả lời đúng \"Cải thiện độ chính xác của mô hình phân loại bằng cách kết hợp nhiều mô hình\" là chính xác vì Bagging (Bootstrap Aggregating) hoạt động bằng cách tạo ra nhiều mẫu dữ liệu từ tập dữ liệu gốc thông qua phương pháp lấy mẫu bootstrap. Sau đó, nó huấn luyện một mô hình cho mỗi mẫu và kết hợp các dự đoán của các mô hình này để đưa ra dự đoán cuối cùng. Việc kết hợp này giúp giảm thiểu độ thiên lệch và phương sai, từ đó cải thiện độ chính xác tổng thể của mô hình phân loại.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giảm thiểu độ chính xác của mô hình bằng cách sử dụng một mô hình duy nhất**: Tùy chọn này sai vì việc sử dụng một mô hình duy nhất không tận dụng được lợi ích của việc kết hợp nhiều mô hình, dẫn đến khả năng cao hơn về độ thiên lệch và phương sai, không cải thiện độ chính xác.\n\n- **Tăng tốc độ huấn luyện mô hình bằng cách giảm số lượng dữ liệu**: Tùy chọn này cũng sai vì Bagging thực tế sử dụng toàn bộ dữ liệu gốc để tạo ra nhiều mẫu, không giảm số lượng dữ liệu. Mục tiêu của Bagging là cải thiện độ chính xác, không phải tăng tốc độ huấn luyện.\n\n- **Cải thiện khả năng giải thích của mô hình bằng cách sử dụng nhiều thuật toán khác nhau**: Tùy chọn này không chính xác vì Bagging thường sử dụng cùng một loại mô hình (như cây quyết định) cho tất cả các mẫu, không phải là nhiều thuật toán khác nhau. Mục tiêu chính của Bagging là cải thiện độ chính xác, không phải khả năng giải thích. \n\nTóm lại, câu trả lời đúng phản ánh chính xác mục đích của Bagging, trong khi các yếu tố gây nhiễu đều sai do không hiểu đúng về cách thức hoạt động và mục tiêu của kỹ thuật này.",
+      "topic": {
+        "name": "Tập hợp mô hình với Bagging",
+        "description": "Chủ đề này giới thiệu về Bagging (Bootstrap Aggregating) như một kỹ thuật tập hợp mạnh mẽ trong học máy. Học sinh sẽ phải làm quen với khái niệm, công thức và ứng dụng của Bagging trong xây dựng các mô hình phân loại, cũng như hiểu vai trò của việc lấy mẫu bootstrap trong kỹ thuật này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi sử dụng AdaBoost, cách mà thuật toán điều chỉnh trọng số của các mẫu dữ liệu sau mỗi lần phân loại là gì?",
+      "answer": "Nó tăng trọng số cho các mẫu bị phân loại sai.",
+      "distractors": [
+        "Nó giảm trọng số cho các mẫu bị phân loại đúng.",
+        "Nó giữ nguyên trọng số cho tất cả các mẫu dữ liệu.",
+        "Nó thay đổi trọng số một cách ngẫu nhiên cho các mẫu dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng là \"Nó tăng trọng số cho các mẫu bị phân loại sai.\" trong thuật toán AdaBoost. Nguyên tắc hoạt động của AdaBoost là tập trung vào các mẫu mà các mô hình trước đó phân loại sai. Khi một mẫu bị phân loại sai, trọng số của nó sẽ được tăng lên, điều này có nghĩa là trong lần phân loại tiếp theo, mô hình sẽ chú ý hơn đến các mẫu này để cải thiện độ chính xác. Điều này giúp AdaBoost cải thiện hiệu suất của mô hình qua từng vòng lặp.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- \"Nó giảm trọng số cho các mẫu bị phân loại đúng.\" là sai vì AdaBoost không giảm trọng số cho các mẫu được phân loại đúng. Thay vào đó, nó giữ nguyên hoặc không thay đổi trọng số của các mẫu này, nhằm duy trì sự chú ý cho các mẫu khó khăn hơn.\n\n- \"Nó giữ nguyên trọng số cho tất cả các mẫu dữ liệu.\" cũng không chính xác. AdaBoost điều chỉnh trọng số của các mẫu dữ liệu sau mỗi lần phân loại, cụ thể là tăng trọng số cho các mẫu bị phân loại sai, do đó không thể giữ nguyên trọng số cho tất cả các mẫu.\n\n- \"Nó thay đổi trọng số một cách ngẫu nhiên cho các mẫu dữ liệu.\" là sai vì trọng số không được thay đổi ngẫu nhiên. Thay vào đó, việc điều chỉnh trọng số dựa trên kết quả phân loại của mô hình trước đó, với mục tiêu cụ thể là cải thiện độ chính xác cho các mẫu khó khăn.\n\nTóm lại, câu trả lời đúng phản ánh chính xác cách thức hoạt động của AdaBoost, trong khi các yếu tố gây nhiễu đều không đúng với nguyên lý điều chỉnh trọng số của thuật toán này.",
+      "topic": {
+        "name": "Boosting và AdaBoost trong Mô hình học máy",
+        "description": "Chủ đề này tập trung vào Boosting như một kỹ thuật cải tiến mô hình, đặc biệt là qua thuật toán AdaBoost. Học sinh sẽ học cách hoạt động của AdaBoost, sự khác biệt với Bagging và ứng dụng thực tiễn trong cải thiện tính chính xác của mô hình phân loại. Học sinh sẽ áp dụng kiến thức này vào các bài toán thực tiễn để nâng cao hiểu biết về các phương pháp học máy.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Kỹ thuật nào trong học máy cho phép tổ chức các mô hình phân loại theo cách mà mô hình thứ hai được đào tạo dựa trên dự đoán của các mô hình đầu tiên?",
+      "answer": "Stacking",
+      "distractors": [
+        "Bagging",
+        "Boosting",
+        "Voting"
+      ],
+      "explanation": "Câu trả lời đúng là \"Stacking\" vì đây là một kỹ thuật trong học máy cho phép tổ chức các mô hình phân loại theo cách mà mô hình thứ hai được đào tạo dựa trên dự đoán của các mô hình đầu tiên. Trong Stacking, các mô hình cơ sở (base models) được huấn luyện độc lập và sau đó, một mô hình thứ hai (thường gọi là mô hình meta) sẽ được huấn luyện trên các dự đoán của các mô hình cơ sở này, nhằm cải thiện độ chính xác tổng thể.\n\nCác yếu tố gây nhiễu:\n\n- **Bagging**: Kỹ thuật này tập trung vào việc giảm phương sai của mô hình bằng cách huấn luyện nhiều mô hình trên các tập con khác nhau của dữ liệu và sau đó kết hợp kết quả của chúng. Bagging không sử dụng dự đoán của các mô hình khác để huấn luyện mô hình mới, do đó không phù hợp với định nghĩa của câu hỏi.\n\n- **Boosting**: Đây là một kỹ thuật mà các mô hình được huấn luyện tuần tự, với mỗi mô hình mới cố gắng cải thiện các sai sót của mô hình trước đó. Mặc dù Boosting cũng sử dụng thông tin từ các mô hình trước đó, nhưng nó không tổ chức các mô hình theo cách mà mô hình thứ hai được đào tạo dựa trên dự đoán của các mô hình đầu tiên như trong Stacking.\n\n- **Voting**: Kỹ thuật này kết hợp các dự đoán từ nhiều mô hình bằng cách lấy ý kiến đa số hoặc trung bình. Voting không tạo ra một mô hình mới dựa trên dự đoán của các mô hình khác, mà chỉ đơn giản là tổng hợp các dự đoán đã có, do đó không đáp ứng yêu cầu của câu hỏi.\n\nTóm lại, Stacking là kỹ thuật duy nhất trong số các tùy chọn được đưa ra cho phép mô hình thứ hai được đào tạo dựa trên dự đoán của các mô hình đầu tiên, trong khi các kỹ thuật khác không thực hiện điều này.",
+      "topic": {
+        "name": "Tập hợp mô hình qua Stacking",
+        "description": "Chủ đề này khám phá kỹ thuật Stacking trong việc tập hợp các mô hình phân loại. Học sinh sẽ tìm hiểu sự khác biệt giữa Stacking và các phương pháp tập hợp khác, cùng với ví dụ minh họa cách thức hoạt động của nó trong học máy. Việc nắm vững kỹ thuật này giúp học sinh có cái nhìn toàn diện về các phương pháp tối ưu hóa mô hình.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "int3405"
+    }
+  ]
+}

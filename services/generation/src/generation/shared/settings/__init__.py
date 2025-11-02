@@ -1,6 +1,4 @@
 from .quiz_settings import QuizGenerationSetting
-from .parser import ParserSetting
-from .exam_settings import ExamGenerationSetting
 from .settings import Settings
 from .concept_card import ConceptCardExtractorSetting
 from .topic_generator import TopicGeneratorSetting
@@ -12,4 +10,5 @@ from .pedagogical import PedagogicalSetting
 from .psychometric import PsychometricSetting
 from .quiz_validator import QuizValidatorSetting
 from .quiz_correction import QuizCorrectionSetting
-from .quiz_evaluator import QuizEvaluatorSetting
+from .llm_as_judge import JudgeSetting
+from .vector_database import VectorDatabaseSetting

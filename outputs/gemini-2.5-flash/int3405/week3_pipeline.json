@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong cấu trúc của cây quyết định, nút nào đại diện cho kết quả cuối cùng của một quyết định hoặc một nhãn lớp?",
+      "answer": "Nút lá",
+      "distractors": [
+        "Nút gốc",
+        "Nút quyết định",
+        "Nút nhánh"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Nút lá**. Trong cấu trúc của cây quyết định, nút lá (leaf node) là nút cuối cùng trong một nhánh, đại diện cho kết quả cuối cùng của một quyết định hoặc một nhãn lớp. Đây là nơi cây đưa ra dự đoán hoặc phân loại sau khi đã đi qua tất cả các điều kiện.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Nút gốc** là nút đầu tiên của cây, nơi quá trình ra quyết định bắt đầu. Nó đại diện cho toàn bộ tập dữ liệu và là điểm khởi đầu để phân chia dữ liệu.\n*   **Nút quyết định** (còn gọi là nút bên trong) là các nút mà tại đó một thuộc tính được kiểm tra để phân chia dữ liệu thành các tập con dựa trên các tiêu chí nhất định. Chúng không phải là kết quả cuối cùng mà là các điểm ra quyết định trung gian.\n*   **Nút nhánh** không phải là một thuật ngữ tiêu chuẩn trong cấu trúc cây quyết định để chỉ một loại nút cụ thể. Các nút trong cây có thể có các nhánh (edges) dẫn đến các nút con, nhưng bản thân \"nút nhánh\" không phải là một loại nút riêng biệt đại diện cho kết quả cuối cùng.",
+      "topic": {
+        "name": "Các thành phần cơ bản của Cây Quyết định",
+        "description": "Chủ đề này kiểm tra kiến thức về các khái niệm cốt lõi của cây quyết định, bao gồm các loại nút (nút gốc, nút quyết định, nút lá) và chức năng của chúng. Học sinh nên có khả năng xác định vai trò của mỗi thành phần trong cấu trúc cây.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong xây dựng cây quyết định, mục đích chính của các thước đo độ không thuần khiết như Gini Index và Entropy là gì?",
+      "answer": "Để xác định cách chia dữ liệu hiệu quả nhất nhằm tạo ra các nút con thuần khiết hơn.",
+      "distractors": [
+        "Để xác định số lượng nút lá tối ưu cho cây quyết định.",
+        "Để đánh giá độ chính xác tổng thể của mô hình cây quyết định.",
+        "Để chọn các đặc trưng quan trọng nhất cho mô hình dự đoán."
+      ],
+      "explanation": "Giải thích:\n\nMục đích chính của các thước đo độ không thuần khiết như Gini Index và Entropy trong xây dựng cây quyết định là **để xác định cách chia dữ liệu hiệu quả nhất nhằm tạo ra các nút con thuần khiết hơn**. Các thước đo này định lượng mức độ hỗn loạn hoặc không chắc chắn trong một tập dữ liệu tại một nút. Khi xây dựng cây quyết định, thuật toán cố gắng tìm ra cách chia dữ liệu tại mỗi nút sao cho các nút con được tạo ra có độ không thuần khiết thấp nhất có thể, nghĩa là chúng chứa chủ yếu các mẫu thuộc cùng một lớp. Điều này dẫn đến một cây quyết định có khả năng phân loại tốt hơn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Để xác định số lượng nút lá tối ưu cho cây quyết định.** Số lượng nút lá tối ưu thường được xác định thông qua các kỹ thuật như cắt tỉa (pruning) hoặc xác thực chéo (cross-validation), không phải trực tiếp bằng Gini Index hay Entropy. Các thước đo độ không thuần khiết giúp quyết định cách chia tại mỗi bước, nhưng không trực tiếp xác định cấu trúc tổng thể của cây.\n*   **Để đánh giá độ chính xác tổng thể của mô hình cây quyết định.** Độ chính xác tổng thể của mô hình được đánh giá bằng cách sử dụng các tập dữ liệu kiểm tra (test set) và các thước đo hiệu suất như độ chính xác (accuracy), độ chuẩn xác (precision), độ thu hồi (recall) hoặc F1-score, chứ không phải bằng Gini Index hay Entropy. Các thước đo này được sử dụng trong quá trình xây dựng cây, không phải để đánh giá hiệu suất cuối cùng.\n*   **Để chọn các đặc trưng quan trọng nhất cho mô hình dự đoán.** Mặc dù các thước đo độ không thuần khiết gián tiếp giúp chọn đặc trưng bằng cách ưu tiên các đặc trưng tạo ra các nút con thuần khiết nhất, nhưng mục đích chính của chúng không phải là để xếp hạng hoặc chọn các đặc trưng quan trọng nhất một cách độc lập. Việc lựa chọn đặc trưng quan trọng nhất thường liên quan đến các kỹ thuật lựa chọn đặc trưng (feature selection) riêng biệt hoặc phân tích tầm quan trọng của đặc trưng (feature importance) sau khi cây đã được xây dựng.",
+      "topic": {
+        "name": "Mục đích của các thước đo độ không thuần khiết",
+        "description": "Đánh giá sự hiểu biết của học sinh về lý do tại sao các thước đo độ không thuần khiết của nút (như Gini Index, Entropy) lại cần thiết trong xây dựng cây quyết định. Trọng tâm là vai trò của chúng trong việc xác định cách chia dữ liệu hiệu quả nhất để đạt được các nút 'thuần khiết' hơn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong thuật toán Hunt để xây dựng cây quyết định, quá trình chia dữ liệu đệ quy sẽ tiếp tục khi nào?",
+      "answer": "Khi các bản ghi trong một nút không đồng nhất.",
+      "distractors": [
+        "Khi tất cả các bản ghi trong một nút thuộc cùng một lớp.",
+        "Khi số lượng bản ghi trong một nút đạt đến một ngưỡng nhất định.",
+        "Khi độ sâu của cây đạt đến giới hạn tối đa được xác định trước."
+      ],
+      "explanation": "Giải thích:\n\nTrong thuật toán Hunt để xây dựng cây quyết định, quá trình chia dữ liệu đệ quy sẽ tiếp tục **khi các bản ghi trong một nút không đồng nhất**. Điều này có nghĩa là các bản ghi trong nút đó thuộc về nhiều lớp khác nhau, và thuật toán cần tìm một thuộc tính để chia nhỏ nút đó hơn nữa nhằm đạt được sự đồng nhất cao hơn trong các nút con. Mục tiêu của cây quyết định là phân loại các bản ghi, và việc chia nhỏ tiếp tục cho đến khi mỗi nút lá chứa các bản ghi thuộc cùng một lớp hoặc đạt được một tiêu chí dừng khác.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Khi tất cả các bản ghi trong một nút thuộc cùng một lớp:** Đây là một điều kiện dừng của thuật toán Hunt. Khi tất cả các bản ghi trong một nút đã đồng nhất (tức là thuộc cùng một lớp), không cần thiết phải chia nhỏ nút đó nữa vì nó đã là một nút lá \"thuần khiết\" và có thể đưa ra dự đoán rõ ràng.\n*   **Khi số lượng bản ghi trong một nút đạt đến một ngưỡng nhất định:** Mặc dù đây có thể là một điều kiện dừng được xác định trước để tránh quá khớp hoặc tạo ra các nút quá nhỏ, nhưng nó không phải là lý do chính để *tiếp tục* quá trình chia dữ liệu. Quá trình chia dữ liệu tiếp tục dựa trên tính không đồng nhất, không phải chỉ dựa vào số lượng bản ghi.\n*   **Khi độ sâu của cây đạt đến giới hạn tối đa được xác định trước:** Tương tự như ngưỡng số lượng bản ghi, giới hạn độ sâu tối đa là một điều kiện dừng để kiểm soát độ phức tạp của cây và tránh quá khớp. Nó không phải là lý do để *tiếp tục* chia dữ liệu; thay vào đó, khi đạt đến giới hạn này, quá trình chia dữ liệu sẽ dừng lại.",
+      "topic": {
+        "name": "Quy trình cơ bản của Thuật toán Hunt",
+        "description": "Kiểm tra kiến thức về các bước và nguyên tắc cơ bản của Thuật toán Hunt để xây dựng cây quyết định một cách đệ quy. Học sinh phải nhớ lại các điều kiện dừng hoặc tiếp tục quá trình chia dữ liệu dựa trên tính đồng nhất của các bản ghi.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong cây quyết định, một thuộc tính liên tục thường được biểu diễn thành điều kiện kiểm tra như thế nào?",
+      "answer": "Bằng một điều kiện nhị phân dạng A \t<=\t v hoặc A > v.",
+      "distractors": [
+        "Bằng một điều kiện đa chiều, chia thành nhiều nhánh dựa trên các khoảng giá trị.",
+        "Bằng cách gán trực tiếp giá trị của thuộc tính vào một nút lá.",
+        "Bằng một điều kiện danh nghĩa, coi mỗi giá trị là một danh mục riêng biệt."
+      ],
+      "explanation": "Trong cây quyết định, một thuộc tính liên tục thường được biểu diễn bằng một điều kiện nhị phân dạng A <= v hoặc A > v. Điều này là do các thuộc tính liên tục có thể nhận vô số giá trị trong một phạm vi nhất định. Để tạo ra một điểm chia hiệu quả trong cây quyết định, chúng ta cần tìm một ngưỡng (v) mà tại đó dữ liệu được phân tách thành hai nhóm: một nhóm có giá trị thuộc tính nhỏ hơn hoặc bằng ngưỡng và một nhóm có giá trị thuộc tính lớn hơn ngưỡng. Cách tiếp cận nhị phân này giúp đơn giản hóa quá trình phân loại và xây dựng cây, đồng thời vẫn giữ được khả năng phân biệt của thuộc tính liên tục.\n\n- **Bằng một điều kiện đa chiều, chia thành nhiều nhánh dựa trên các khoảng giá trị** là sai vì mặc dù về lý thuyết có thể chia thuộc tính liên tục thành nhiều khoảng, nhưng cách tiếp cận tiêu chuẩn và hiệu quả hơn trong hầu hết các thuật toán cây quyết định (như CART) là sử dụng các điều kiện nhị phân. Việc chia thành nhiều nhánh có thể làm tăng độ phức tạp của cây và khó tìm được các điểm chia tối ưu.\n- **Bằng cách gán trực tiếp giá trị của thuộc tính vào một nút lá** là sai vì nút lá trong cây quyết định biểu thị kết quả phân loại hoặc giá trị dự đoán, không phải là điều kiện kiểm tra thuộc tính. Các điều kiện kiểm tra luôn nằm ở các nút bên trong để hướng dẫn quá trình phân loại.\n- **Bằng một điều kiện danh nghĩa, coi mỗi giá trị là một danh mục riêng biệt** là sai vì điều này chỉ áp dụng cho các thuộc tính danh nghĩa (categorical attributes) có số lượng giá trị hữu hạn và rời rạc. Thuộc tính liên tục có thể có vô số giá trị, do đó không thể coi mỗi giá trị là một danh mục riêng biệt để tạo điều kiện kiểm tra.\n",
+      "topic": {
+        "name": "Cách thức biểu diễn điều kiện kiểm tra thuộc tính",
+        "description": "Chủ đề này yêu cầu học sinh hiểu cách các thuộc tính khác nhau (nhị phân, danh nghĩa, thứ tự, liên tục) được biểu diễn thành các điều kiện kiểm tra trong cây quyết định. Học sinh cần lựa chọn phương pháp chia (đa chiều, nhị phân) phù hợp với loại thuộc tính đã cho.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Điểm khác biệt nào sau đây về mặt tính chất tính toán thường được xem là ưu thế của Chỉ số Gini so với Entropy trong việc chọn điểm phân tách cây quyết định?",
+      "answer": "Chỉ số Gini không đòi hỏi phép tính logarit.",
+      "distractors": [
+        "Chỉ số Gini luôn cho kết quả phân tách tốt hơn Entropy.",
+        "Chỉ số Gini dễ tính toán hơn vì nó chỉ sử dụng phép nhân và cộng.",
+        "Chỉ số Gini ít nhạy cảm hơn với số lượng lớp trong tập dữ liệu."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Chỉ số Gini không đòi hỏi phép tính logarit.** là chính xác vì công thức tính Entropy bao gồm phép tính logarit (thường là logarit cơ số 2), trong khi công thức của Chỉ số Gini chỉ sử dụng phép nhân và phép trừ các xác suất. Các phép tính logarit thường tốn kém hơn về mặt tính toán so với các phép toán số học cơ bản như nhân và trừ. Do đó, việc không yêu cầu phép tính logarit giúp Chỉ số Gini có lợi thế về hiệu quả tính toán trong quá trình xây dựng cây quyết định, đặc biệt khi xử lý các tập dữ liệu lớn hoặc khi cần thực hiện nhiều phép phân tách.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Chỉ số Gini luôn cho kết quả phân tách tốt hơn Entropy.** Điều này không đúng. Cả Chỉ số Gini và Entropy đều là các thước đo độ không thuần khiết và thường cho kết quả tương tự nhau về chất lượng phân tách. Không có thước đo nào luôn vượt trội hơn thước đo kia trong mọi trường hợp. Hiệu suất của chúng có thể thay đổi tùy thuộc vào đặc điểm cụ thể của tập dữ liệu.\n*   **Chỉ số Gini dễ tính toán hơn vì nó chỉ sử dụng phép nhân và cộng.** Mặc dù Chỉ số Gini sử dụng phép nhân và trừ (không phải chỉ cộng), và điều này làm cho nó dễ tính toán hơn Entropy, nhưng lý do chính xác và cụ thể hơn về mặt tính toán là việc nó không yêu cầu phép tính logarit. Phép trừ cũng là một phép toán cơ bản, nhưng việc loại bỏ logarit là điểm khác biệt quan trọng nhất về mặt hiệu quả tính toán so với Entropy.\n*   **Chỉ số Gini ít nhạy cảm hơn với số lượng lớp trong tập dữ liệu.** Cả Chỉ số Gini và Entropy đều bị ảnh hưởng bởi số lượng lớp. Entropy có xu hướng phạt nặng hơn khi có nhiều lớp hơn và phân bố xác suất đồng đều hơn, trong khi Gini cũng tăng khi số lượng lớp tăng và phân bố đồng đều. Không có bằng chứng rõ ràng cho thấy Gini ít nhạy cảm hơn Entropy với số lượng lớp một cách tổng quát.",
+      "topic": {
+        "name": "So sánh Chỉ số Gini và Entropy",
+        "description": "Chủ đề này đánh giá khả năng phân tích của học sinh trong việc so sánh và đối chiếu hai thước đo độ không thuần khiết chính: Chỉ số Gini và Entropy. Các câu hỏi có thể liên quan đến sự khác biệt trong công thức, tính chất, hoặc ứng dụng của chúng trong việc đánh giá chất lượng một điểm chia.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi xem xét cả khả năng diễn giải và hiệu suất trên dữ liệu có quan hệ phi tuyến phức tạp, Cây Quyết định thường được ưu tiên hơn Hồi quy Logistic vì lý do cốt lõi nào?",
+      "answer": "Cây Quyết định có khả năng mô hình hóa các mối quan hệ phi tuyến tính rõ ràng hơn và dễ dàng diễn giải các quy tắc quyết định.",
+      "distractors": [
+        "Hồi quy Logistic có hiệu suất tính toán tốt hơn trên các tập dữ liệu lớn và phức tạp.",
+        "Cây Quyết định luôn cung cấp độ chính xác cao hơn Hồi quy Logistic trên mọi loại dữ liệu.",
+        "Hồi quy Logistic có khả năng xử lý các biến phân loại tốt hơn mà không cần mã hóa trước."
+      ],
+      "explanation": "Khi xem xét cả khả năng diễn giải và hiệu suất trên dữ liệu có quan hệ phi tuyến phức tạp, Cây Quyết định thường được ưu tiên hơn Hồi quy Logistic vì **Cây Quyết định có khả năng mô hình hóa các mối quan hệ phi tuyến tính rõ ràng hơn và dễ dàng diễn giải các quy tắc quyết định.** Cây Quyết định tự nhiên phân chia không gian đặc trưng thành các vùng hình chữ nhật, cho phép chúng nắm bắt các mối quan hệ phi tuyến tính phức tạp mà không cần biến đổi đặc trưng thủ công. Ngoài ra, cấu trúc dạng cây của chúng cung cấp một con đường rõ ràng để hiểu cách các quyết định được đưa ra, với mỗi nút đại diện cho một điều kiện và mỗi nhánh dẫn đến một kết quả hoặc điều kiện tiếp theo, làm cho chúng có khả năng diễn giải cao.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Hồi quy Logistic có hiệu suất tính toán tốt hơn trên các tập dữ liệu lớn và phức tạp.** Điều này không phải lúc nào cũng đúng. Mặc dù Hồi quy Logistic có thể hiệu quả trên các tập dữ liệu lớn, nhưng khi dữ liệu có quan hệ phi tuyến phức tạp, việc thêm các đặc trưng tương tác hoặc đa thức để Hồi quy Logistic có thể nắm bắt được các mối quan hệ này có thể làm tăng đáng kể chi phí tính toán và độ phức tạp của mô hình. Cây Quyết định có thể xử lý các mối quan hệ phi tuyến tính này một cách tự nhiên hơn mà không cần biến đổi đặc trưng phức tạp.\n*   **Cây Quyết định luôn cung cấp độ chính xác cao hơn Hồi quy Logistic trên mọi loại dữ liệu.** Đây là một tuyên bố quá khái quát và không chính xác. Hiệu suất của một mô hình phụ thuộc rất nhiều vào bản chất của dữ liệu. Trên dữ liệu có mối quan quan hệ tuyến tính rõ ràng, Hồi quy Logistic thường có thể hoạt động tốt hoặc thậm chí tốt hơn Cây Quyết định. Cây Quyết định có thể dễ bị quá khớp nếu không được điều chỉnh đúng cách, dẫn đến hiệu suất kém trên dữ liệu chưa thấy.\n*   **Hồi quy Logistic có khả năng xử lý các biến phân loại tốt hơn mà không cần mã hóa trước.** Điều này là sai. Hồi quy Logistic yêu cầu tất cả các biến đầu vào phải là số. Do đó, các biến phân loại phải được mã hóa thành định dạng số (ví dụ: mã hóa one-hot) trước khi được sử dụng trong Hồi quy Logistic. Ngược lại, Cây Quyết định có thể xử lý các biến phân loại trực tiếp hơn ở các nút phân tách mà không cần mã hóa trước.",
+      "topic": {
+        "name": "Ưu nhược điểm Cây Quyết định và Hồi quy Logistic",
+        "description": "Chủ đề liên tuần này kiểm tra khả năng của học sinh trong việc so sánh và đối chiếu ưu nhược điểm của Cây Quyết định (Tuần 3) với Hồi quy Logistic (Tuần 2). Học sinh phải phân tích các yếu tố như khả năng diễn giải, hiệu suất, và chi phí tính toán trong các bối cảnh khác nhau.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nút cha có Entropy là 0.98. Sau khi chia, nó tạo ra hai nút con: nút con thứ nhất chứa 60% dữ liệu với Entropy 0.75, và nút con thứ hai chứa 40% dữ liệu với Entropy 0.90. Độ lợi thông tin (Information Gain) cho lần chia này là bao nhiêu?",
+      "answer": "0.17",
+      "distractors": [
+        "0.23",
+        "0.13",
+        "0.83"
+      ],
+      "explanation": "Độ lợi thông tin (Information Gain) được tính bằng cách lấy Entropy của nút cha trừ đi Entropy trung bình có trọng số của các nút con.\n\n**Tại sao 0.17 là câu trả lời đúng:**\n\n1.  **Tính Entropy trung bình có trọng số của các nút con:**\n    *   Nút con thứ nhất: 60% dữ liệu với Entropy 0.75. Đóng góp: $0.60 \\times 0.75 = 0.45$\n    *   Nút con thứ hai: 40% dữ liệu với Entropy 0.90. Đóng góp: $0.40 \\times 0.90 = 0.36$\n    *   Entropy trung bình có trọng số = $0.45 + 0.36 = 0.81$\n\n2.  **Tính Độ lợi thông tin:**\n    *   Entropy nút cha = 0.98\n    *   Độ lợi thông tin = Entropy nút cha - Entropy trung bình có trọng số của các nút con\n    *   Độ lợi thông tin = $0.98 - 0.81 = 0.17$\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **0.23**: Giá trị này có thể xuất hiện nếu có lỗi trong phép tính Entropy trung bình có trọng số của các nút con, ví dụ như tính toán sai trọng số hoặc giá trị Entropy.\n*   **0.13**: Giá trị này có thể xuất hiện nếu có lỗi trong phép tính Entropy trung bình có trọng số của các nút con, dẫn đến một giá trị cao hơn thực tế, hoặc lỗi trong phép trừ cuối cùng.\n*   **0.83**: Giá trị này không phản ánh Độ lợi thông tin. Nó có thể là kết quả của việc cộng Entropy của nút cha với Entropy trung bình có trọng số của các nút con ($0.98 + 0.81 = 1.79$) hoặc một phép tính sai lệch hoàn toàn khác. Độ lợi thông tin luôn là hiệu số giữa Entropy trước và sau chia.",
+      "topic": {
+        "name": "Tính toán Độ lợi thông tin từ Entropy",
+        "description": "Chủ đề này yêu cầu học sinh áp dụng công thức Entropy và Độ lợi thông tin để tính toán điểm chia tốt nhất. Học sinh sẽ phải thực hiện các phép tính liên quan đến Entropy của nút trước khi chia và Entropy trung bình có trọng số của các nút con sau khi chia, từ đó xác định Độ lợi thông tin.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nhà khoa học dữ liệu đang xây dựng mô hình dự đoán khả năng khách hàng rời bỏ (churn) dựa trên dữ liệu chứa cả biến số liên tục và phân loại, với nhiều mối quan hệ phi tuyến phức tạp chưa biết. Mô hình cần đạt được khả năng diễn giải tốt và không quá nhạy cảm với các nhiễu nhỏ trong dữ liệu. Trong số Hồi quy tuyến tính, Hồi quy Logistic và Cây quyết định, mô hình nào phù hợp nhất để đạt được các mục tiêu này?",
+      "answer": "Cây quyết định",
+      "distractors": [
+        "Hồi quy Logistic",
+        "Hồi quy tuyến tính",
+        "Cả Hồi quy tuyến tính và Hồi quy Logistic đều phù hợp như nhau"
+      ],
+      "explanation": "**Giải thích:**\n\n**Cây quyết định** là lựa chọn phù hợp nhất vì nó có khả năng xử lý cả biến số liên tục và phân loại một cách tự nhiên, đồng thời có thể nắm bắt các mối quan hệ phi tuyến phức tạp mà không cần giả định trước về dạng của chúng. Khả năng diễn giải của cây quyết định rất cao vì cấu trúc dạng cây dễ hiểu, cho phép nhà khoa học dữ liệu dễ dàng theo dõi đường dẫn quyết định dẫn đến một dự đoán cụ thể. Ngoài ra, cây quyết định ít nhạy cảm với các nhiễu nhỏ trong dữ liệu hơn so với các mô hình tuyến tính, đặc biệt khi được kết hợp với các kỹ thuật như cắt tỉa (pruning) hoặc sử dụng trong các ensemble như Random Forest.\n\n**Hồi quy Logistic** không phù hợp bằng vì mặc dù nó là một mô hình phân loại và có thể xử lý cả biến liên tục và phân loại (thường thông qua mã hóa), nhưng nó là một mô hình tuyến tính. Điều này có nghĩa là nó sẽ gặp khó khăn trong việc nắm bắt các mối quan hệ phi tuyến phức tạp trong dữ liệu một cách hiệu quả mà không cần các kỹ thuật kỹ thuật đặc trưng (feature engineering) phức tạp. Khả năng diễn giải của hồi quy logistic tốt ở mức độ nào đó thông qua các hệ số, nhưng không trực quan bằng cây quyết định khi có nhiều tương tác phi tuyến.\n\n**Hồi quy tuyến tính** là một mô hình hồi quy, không phải phân loại, và được thiết kế để dự đoán một biến mục tiêu liên tục. Bài toán ở đây là dự đoán khả năng khách hàng rời bỏ (churn), đây là một bài toán phân loại (có/không rời bỏ) hoặc dự đoán xác suất rời bỏ, phù hợp hơn với các mô hình phân loại. Hơn nữa, hồi quy tuyến tính cũng là một mô hình tuyến tính, không thể nắm bắt các mối quan hệ phi tuyến phức tạp một cách hiệu quả và nhạy cảm với các nhiễu trong dữ liệu.\n\n**Cả Hồi quy tuyến tính và Hồi quy Logistic đều phù hợp như nhau** là sai vì những lý do đã nêu ở trên. Hồi quy tuyến tính không phù hợp cho bài toán phân loại này, và Hồi quy Logistic, mặc dù là mô hình phân loại, nhưng không đáp ứng tốt các yêu cầu về xử lý quan hệ phi tuyến phức tạp và khả năng diễn giải trực quan như Cây quyết định.",
+      "topic": {
+        "name": "So sánh tổng quát Hồi quy, Phân loại, Cây Quyết định",
+        "description": "Chủ đề liên tuần này đòi hỏi học sinh phân tích và đánh giá sự khác biệt cơ bản giữa các mô hình Hồi quy tuyến tính (Tuần 1), Hồi quy Logistic (Tuần 2) và Cây Quyết định (Tuần 3). Câu hỏi sẽ tập trung vào việc lựa chọn mô hình phù hợp nhất dựa trên loại bài toán (hồi quy/phân loại) và đặc điểm dữ liệu, cũng như cơ chế học của từng mô hình.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    }
+  ]
+}

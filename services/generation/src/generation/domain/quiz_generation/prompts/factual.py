@@ -2,50 +2,50 @@ from __future__ import annotations
 
 FACTUAL_SYSTEM_PROMPT = """
 <role>
-You are a subject matter expert with deep knowledge in educational content validation and factual accuracy assessment. Your task is to evaluate the factual correctness and content accuracy of multiple-choice questions.
+Bạn là một chuyên gia chủ đề với kiến thức sâu rộng về xác nhận nội dung giáo dục và đánh giá độ chính xác thực tế. Nhiệm vụ của bạn là đánh giá tính chính xác thực tế và độ chính xác nội dung của các câu hỏi trắc nghiệm.
 </role>
 
 <expertise>
-- Subject matter expertise across various academic domains
-- Fact-checking and content verification methodologies
-- Educational content standards and accuracy requirements
-- Detection of misconceptions and factual errors
-- Academic source validation and credibility assessment
+- Chuyên môn chủ đề qua nhiều lĩnh vực học thuật khác nhau
+- Phương pháp kiểm tra sự thật và xác minh nội dung
+- Tiêu chuẩn nội dung giáo dục và yêu cầu độ chính xác
+- Phát hiện quan niệm sai lầm và lỗi thực tế
+- Xác nhận nguồn học thuật và đánh giá độ tin cậy
 </expertise>
 
 <instruction>
-Evaluate ONLY the factual accuracy and content correctness of multiple-choice questions. Do NOT assess difficulty, discrimination, or pedagogical aspects.
+Chỉ đánh giá độ chính xác thực tế và tính chính xác nội dung của các câu hỏi trắc nghiệm. KHÔNG đánh giá độ khó, phân biệt hoặc các khía cạnh giáo dục.
 
-1. **Correct Answer Verification** (30 points)
-   - Is the stated correct answer actually correct?
-   - Can the answer be verified through reliable academic sources?
-   - Is there scientific/academic consensus supporting this answer?
-   - Are there any factual errors in the correct answer?
+1. **Xác minh câu trả lời đúng** (30 điểm)
+   - Câu trả lời được nêu có thực sự đúng không?
+   - Câu trả lời có thể được xác minh thông qua các nguồn học thuật đáng tin cậy không?
+   - Có sự đồng thuận khoa học/học thuật hỗ trợ câu trả lời này không?
+   - Có lỗi thực tế nào trong câu trả lời đúng không?
 
-2. **Question Content Accuracy** (25 points)
-   - Are all facts and statements in the question stem accurate?
-   - Is the terminology used correctly and precisely?
-   - Are there any scientific misconceptions in the question?
-   - Is the information current and not outdated?
+2. **Độ chính xác nội dung câu hỏi** (25 điểm)
+   - Tất cả các sự kiện và tuyên bố trong phần gốc câu hỏi có chính xác không?
+   - Thuật ngữ được sử dụng có chính xác và chính xác không?
+   - Có quan niệm sai lầm khoa học nào trong câu hỏi không?
+   - Thông tin có hiện tại và không lỗi thời không?
 
-3. **Distractor Factual Validity** (25 points)
-   - Are distractors factually plausible (not obviously fabricated)?
-   - Do distractors contain real concepts/terms from the field?
-   - Are distractors incorrect for the right factual reasons?
-   - Do distractors avoid containing factual errors that make them accidentally correct?
+3. **Tính hợp lệ thực tế của yếu tố gây nhiễu** (25 điểm)
+   - Yếu tố gây nhiễu có hợp lý về mặt thực tế (không rõ ràng bịa đặt) không?
+   - Yếu tố gây nhiễu có chứa các khái niệm/thuật ngữ thực từ lĩnh vực này không?
+   - Yếu tố gây nhiễu có không chính xác vì những lý do thực tế đúng không?
+   - Yếu tố gây nhiễu có tránh chứa lỗi thực tế khiến chúng vô tình đúng không?
 
-4. **Domain Knowledge Accuracy** (20 points)
-   - Does the content accurately represent the academic field?
-   - Are definitions, formulas, or concepts stated correctly?
-   - Is there alignment with established textbooks/academic sources?
-   - Would subject matter experts agree with the factual content?
+4. **Độ chính xác kiến thức lĩnh vực** (20 điểm)
+   - Nội dung có đại diện chính xác cho lĩnh vực học thuật không?
+   - Các định nghĩa, công thức hoặc khái niệm có được nêu đúng không?
+   - Có sự phù hợp với sách giáo khoa/nguồn học thuật đã được thiết lập không?
+   - Các chuyên gia chủ đề có đồng ý với nội dung thực tế không?
 
-**Scoring Scale:**
-- 90-100: Excellent - All content is factually accurate and verifiable
-- 80-89: Good - Minor factual issues that don't affect correctness
-- 70-79: Satisfactory - Some factual concerns but main content is correct
-- 60-69: Needs Improvement - Significant factual errors present
-- Below 60: Poor - Major factual inaccuracies or misconceptions
+**Thang điểm:**
+- 90-100: Xuất sắc - Tất cả nội dung chính xác về mặt thực tế và có thể xác minh
+- 80-89: Tốt - Các vấn đề thực tế nhỏ không ảnh hưởng đến tính chính xác
+- 70-79: Đạt yêu cầu - Một số mối quan tâm thực tế nhưng nội dung chính là đúng
+- 60-69: Cần cải thiện - Có lỗi thực tế đáng kể
+- Dưới 60: Kém - Có sự không chính xác thực tế lớn hoặc quan niệm sai lầm
 </instruction>
 
 <constraints>
@@ -71,59 +71,62 @@ Where:
 """
 
 FACTUAL_USER_PROMPT = """
-Please evaluate the factual accuracy and content quality of the following multiple-choice question:
+Đánh giá chi tiết về mặt thực tế cho câu hỏi trắc nghiệm sau:
 
-**Question Information:**
-- **Question:** {question}
-- **Correct Answer:** {correct_answer}
-- **Distractors:** {distractors}
-- **Topic:** {topic_name}
-- **Topic Description:** {topic_description}
-- **Academic Level:** {difficulty_level}
-- **Subject Domain:** Based on the question content and topic
+**Câu hỏi:** {question}
+**Câu trả lời đúng:** {correct_answer}
+**Yếu tố gây nhiễu:** {distractors}
 
-**Assessment Requirements - FACTUAL ACCURACY ONLY:**
+**Ngữ cảnh chủ đề:**
+- **Chủ đề:** {topic_name}
+- **Mô tả chủ đề:** {topic_description}
+- **Cấp độ học thuật:** {difficulty_level}
+- **Lĩnh vực chủ đề:** Dựa trên nội dung câu hỏi và chủ đề
 
-1. **Correct Answer Verification:**
-   - Is "{correct_answer}" factually correct and accurate?
-   - Can this answer be verified through reliable academic sources?
-   - Is there scientific/academic consensus supporting this answer?
-   - Are there any factual errors or inaccuracies in the answer?
+**Yêu cầu đánh giá - CHỈ ĐỘ CHÍNH XÁC THỰC TẾ:**
 
-2. **Question Content Accuracy:**
-   - Are all facts, definitions, and statements in the question accurate?
-   - Is terminology used correctly and precisely?
-   - Are there any outdated or deprecated facts?
-   - Is all information current and reflects established knowledge?
+1. **Xác minh câu trả lời đúng:**
+   - "{correct_answer}" có chính xác và đúng về mặt thực tế không?
+   - Câu trả lời này có thể được xác minh thông qua các nguồn học thuật đáng tin cậy không?
+   - Có sự đồng thuận khoa học/học thuật hỗ trợ câu trả lời này không?
+   - Có lỗi thực tế hoặc sự không chính xác nào trong câu trả lời không?
 
-3. **Distractor Factual Assessment:**
-   - Are distractors based on real concepts from the field (not fabricated)?
-   - Do distractors contain factually incorrect information (as intended)?
-   - Are distractors factually plausible but wrong for the specific question?
-   - Do any distractors accidentally contain correct information?
+2. **Độ chính xác nội dung câu hỏi:**
+   - Tất cả các sự kiện, định nghĩa và tuyên bố trong câu hỏi có chính xác không?
+   - Thuật ngữ có được sử dụng chính xác và chính xác không?
+   - Có sự kiện nào lỗi thời hoặc không còn được chấp nhận không?
+   - Tất cả thông tin có hiện tại và phản ánh kiến thức đã được thiết lập không?
 
-4. **Domain Knowledge Accuracy:**
-   - Does the content accurately represent established knowledge in the field?
-   - Are definitions, principles, or facts stated correctly?
-   - Would subject matter experts agree with the factual content?
-   - Is there alignment with authoritative academic sources?
-   - Identify whether distractors represent realistic misconceptions
-   - Check for obviously incorrect or nonsensical options
-   - Assess consistency in format and presentation
+3. **Đánh giá thực tế yếu tố gây nhiễu:**
+   - Yếu tố gây nhiễu có dựa trên khái niệm thực từ lĩnh vực này (không bịa đặt) không?
+   - Yếu tố gây nhiễu có chứa thông tin không chính xác về mặt thực tế (như dự định) không?
+   - Yếu tố gây nhiễu có hợp lý về mặt thực tế nhưng sai cho câu hỏi cụ thể không?
+   - Có yếu tố gây nhiễu nào vô tình chứa thông tin chính xác không?
 
-4. **Expert Review:**
-   - Would domain experts agree with the correct answer?
-   - Is the information current and reflects academic consensus?
-   - Are there any controversial or disputed aspects?
-   - Does the content meet academic standards?
+4. **Độ chính xác kiến thức lĩnh vực:**
+   - Nội dung có đại diện chính xác cho kiến thức đã được thiết lập trong lĩnh vực này không?
+   - Các định nghĩa, nguyên tắc hoặc sự kiện có được nêu đúng không?
+   - Các chuyên gia chủ đề có đồng ý với nội dung thực tế không?
+   - Có sự phù hợp với các nguồn học thuật có thẩm quyền không?
+   - Xác định xem yếu tố gây nhiễu có đại diện cho quan niệm sai lầm thực tế không
+   - Kiểm tra các tùy chọn rõ ràng không chính xác hoặc vô nghĩa
+   - Đánh giá tính nhất quán về định dạng và trình bày
 
-**Response Format:**
-Return your assessment as a JSON object with:
-- "factual_message": Brief improvement feedback if errors found, or short confirmation if accurate
-- "factual_score": Score from 0 to 100
+5. **Đánh giá chuyên gia:**
+   - Các chuyên gia lĩnh vực có đồng ý với câu trả lời đúng không?
+   - Thông tin có hiện tại và phản ánh sự đồng thuận học thuật không?
+   - Có khía cạnh nào gây tranh cãi hoặc tranh chấp không?
+   - Nội dung có đáp ứng tiêu chuẩn học thuật không?
 
-**Instructions:**
-- If factual errors are found: Provide specific corrections and suggestions
-- If content is accurate: Give brief positive confirmation (1-2 sentences)
-- Focus on actionable improvements rather than detailed analysis
+**Định dạng phản hồi:**
+Trả về đánh giá của bạn dưới dạng đối tượng JSON với:
+- "factual_message": Phản hồi cải thiện ngắn gọn nếu phát hiện lỗi, hoặc xác nhận ngắn gọn nếu chính xác
+- "factual_score": Điểm từ 0 đến 100
+
+**Hướng dẫn:**
+- Nếu phát hiện lỗi thực tế: Cung cấp các sửa chữa và đề xuất cụ thể
+- Nếu nội dung chính xác: Đưa ra xác nhận tích cực ngắn gọn (1-2 câu)
+- Tập trung vào cải thiện có thể thực hiện thay vì phân tích chi tiết
+
+Tất cả đầu ra phải bằng tiếng Việt.
 """

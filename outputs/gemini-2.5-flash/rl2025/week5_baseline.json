@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Tại sao phương pháp Xấp xỉ Hàm giá trị (Function Approximation) lại cần thiết trong Học tăng cường (Reinforcement Learning) khi không gian trạng thái hoặc hành động trở nên quá lớn hoặc liên tục?",
+            "answer": "Để giải quyết vấn đề về khả năng lưu trữ và tốc độ học khi không thể sử dụng bảng tra cứu.",
+            "distractors": [
+                "Để tăng cường độ chính xác của các giá trị trạng thái đã biết.",
+                "Để đơn giản hóa việc tính toán phần thưởng (reward) trong môi trường phức tạp.",
+                "Để đảm bảo rằng mọi trạng thái đều được ghé thăm đủ số lần."
+            ],
+            "explanation": "Khi không gian trạng thái hoặc hành động quá lớn hoặc liên tục, việc sử dụng bảng tra cứu (lookup table) trở nên bất khả thi do yêu cầu bộ nhớ khổng lồ và tốc độ học chậm. Xấp xỉ Hàm giá trị giúp tổng quát hóa từ các trạng thái đã ghé thăm sang các trạng thái chưa ghé thăm, giải quyết vấn đề này."
+        },
+        {
+            "question": "Nguyên lý cơ bản của phương pháp Giảm độ dốc (Gradient Descent) là gì?",
+            "answer": "Điều chỉnh vector tham số theo hướng ngược lại với gradient của hàm mục tiêu để tìm cực tiểu cục bộ.",
+            "distractors": [
+                "Điều chỉnh vector tham số theo hướng của gradient để tìm cực đại cục bộ.",
+                "Điều chỉnh vector tham số ngẫu nhiên để khám phá không gian tham số.",
+                "Điều chỉnh vector tham số dựa trên giá trị tuyệt đối của gradient."
+            ],
+            "explanation": "Giảm độ dốc là một thuật toán tối ưu hóa lặp đi lặp lại để tìm cực tiểu cục bộ của một hàm khả vi. Nó thực hiện điều này bằng cách di chuyển theo hướng ngược lại với gradient của hàm tại điểm hiện tại, vì hướng gradient là hướng tăng nhanh nhất của hàm."
+        },
+        {
+            "question": "Công thức nào sau đây biểu diễn hàm giá trị xấp xỉ tuyến tính v̂(S, w)?",
+            "answer": "v̂(S, w) = w^T * x(S)",
+            "distractors": [
+                "v̂(S, w) = w + x(S)",
+                "v̂(S, w) = w * x(S)",
+                "v̂(S, w) = w / x(S)"
+            ],
+            "explanation": "Trong xấp xỉ hàm giá trị tuyến tính, giá trị của một trạng thái S được ước lượng bằng tích vô hướng của vector trọng số w và vector đặc trưng x(S) của trạng thái đó. Công thức chính xác là v̂(S, w) = w^T * x(S)."
+        },
+        {
+            "question": "Trong thuật toán Monte-Carlo (MC) với xấp xỉ hàm giá trị, mục tiêu được sử dụng để cập nhật tham số là gì?",
+            "answer": "Return G_t (tổng phần thưởng chiết khấu từ thời điểm t đến cuối tập).",
+            "distractors": [
+                "Phần thưởng tức thời R_t+1.",
+                "Giá trị ước lượng của trạng thái tiếp theo v̂(S_t+1, w).",
+                "Lỗi TD (TD error) δ_t."
+            ],
+            "explanation": "Thuật toán Monte-Carlo dựa trên việc lấy mẫu toàn bộ một tập (episode) để tính toán return G_t, là tổng phần thưởng chiết khấu từ thời điểm t đến cuối tập. G_t sau đó được sử dụng làm mục tiêu để cập nhật tham số của hàm giá trị xấp xỉ."
+        },
+        {
+            "question": "Điểm khác biệt chính trong mục tiêu cập nhật giữa phương pháp Monte-Carlo (MC) và Temporal-Difference (TD) khi sử dụng Xấp xỉ Hàm giá trị tuyến tính là gì?",
+            "answer": "MC sử dụng return thực tế G_t, trong khi TD sử dụng mục tiêu TD (TD target) dựa trên ước lượng giá trị của trạng thái tiếp theo.",
+            "distractors": [
+                "MC cập nhật tham số sau mỗi bước thời gian, còn TD cập nhật sau khi kết thúc một tập.",
+                "MC chỉ hoạt động với không gian trạng thái rời rạc, còn TD hoạt động với không gian liên tục.",
+                "MC yêu cầu mô hình môi trường, còn TD thì không."
+            ],
+            "explanation": "MC sử dụng return G_t, là tổng phần thưởng thực tế từ thời điểm t đến cuối tập, làm mục tiêu cập nhật. Ngược lại, TD sử dụng mục tiêu TD, thường là R_t+1 + γ * v̂(S_t+1, w), kết hợp phần thưởng tức thời và ước lượng giá trị của trạng thái tiếp theo. Điều này dẫn đến sự khác biệt về độ lệch và phương sai giữa hai phương pháp."
+        },
+        {
+            "question": "Vai trò chính của kỹ thuật Experience Replay (Lặp lại kinh nghiệm) trong Deep Q-Networks (DQN) là gì?",
+            "answer": "Giảm sự phụ thuộc giữa các mẫu liên tiếp và ổn định quá trình huấn luyện bằng cách lấy mẫu ngẫu nhiên từ bộ nhớ đệm.",
+            "distractors": [
+                "Đảm bảo rằng tác nhân luôn khám phá các hành động mới.",
+                "Tăng tốc độ thu thập dữ liệu từ môi trường.",
+                "Giảm thiểu số lượng tham số cần học trong mạng nơ-ron."
+            ],
+            "explanation": "Experience Replay lưu trữ các bộ (trạng thái, hành động, phần thưởng, trạng thái tiếp theo) vào một bộ nhớ đệm. Trong quá trình huấn luyện, các mẫu được lấy ngẫu nhiên từ bộ đệm này. Điều này giúp phá vỡ sự tương quan giữa các mẫu liên tiếp, làm cho dữ liệu huấn luyện độc lập và phân phối đồng nhất hơn, từ đó ổn định quá trình học của mạng nơ-ron."
+        },
+        {
+            "question": "Cho một thuật toán TD(0) tuyến tính với xấp xỉ hàm giá trị, quy tắc cập nhật tham số trọng số w tại thời điểm t là gì, với α là tốc độ học và δ_t là lỗi TD?",
+            "answer": "w ← w + α * δ_t * x(S_t)",
+            "distractors": [
+                "w ← w + α * δ_t",
+                "w ← w + α * x(S_t)",
+                "w ← w + α * δ_t / x(S_t)"
+            ],
+            "explanation": "Trong TD(0) tuyến tính với xấp xỉ hàm giá trị, quy tắc cập nhật tham số trọng số w được định nghĩa là w ← w + α * δ_t * x(S_t), trong đó δ_t là lỗi TD (R_t+1 + γ * v̂(S_t+1, w) - v̂(S_t, w)) và x(S_t) là vector đặc trưng của trạng thái S_t. Đây là một dạng của giảm độ dốc ngẫu nhiên."
+        },
+        {
+            "question": "Điều kiện nào sau đây có thể khiến các thuật toán Học khác biệt thời gian (TD) với Xấp xỉ Hàm giá trị phi tuyến tính hoặc học ngoài chính sách (off-policy learning) dễ bị phân kỳ (diverge)?",
+            "answer": "Sử dụng xấp xỉ hàm phi tuyến tính kết hợp với học ngoài chính sách và bootstrapping.",
+            "distractors": [
+                "Sử dụng xấp xỉ hàm tuyến tính với học trong chính sách (on-policy learning).",
+                "Sử dụng bảng tra cứu (lookup table) cho hàm giá trị.",
+                "Sử dụng thuật toán Monte-Carlo với xấp xỉ hàm phi tuyến tính."
+            ],
+            "explanation": "Sự kết hợp của ba yếu tố: xấp xỉ hàm phi tuyến tính (ví dụ: mạng nơ-ron), học ngoài chính sách (ví dụ: Q-learning), và bootstrapping (sử dụng ước lượng để cập nhật ước lượng, như trong TD) được gọi là 'deadly triad' (bộ ba chết người) trong Học tăng cường. Sự kết hợp này có thể dẫn đến sự mất ổn định và phân kỳ của thuật toán, khiến hàm giá trị ước lượng không hội tụ."
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Các khái niệm cơ bản về Học tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better due to its more concise and direct correct answer, which is appropriate for a 'Nhớ' Bloom level. The distractors are also more focused on the core concept of reinforcement learning. The Baseline question's correct answer is a bit verbose for a 'Nhớ' level, and its distractors are less plausible in the context of basic RL definitions."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Ưu nhược điểm của Học tăng cường dựa trên mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses an advantage of model-based RL, aligning well with the topic description. The Baseline question, while related, asks about the 'main difference' rather than 'advantages/disadvantages' as specified in the topic. The Pipeline's distractors are also more plausible and relevant to the nuances of RL. The Baseline's distractors are too generic and easily dismissed."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Lập kế hoạch với mô hình MDP",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.5,
+                "clarity": 0.6,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.4,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant to the topic, asking about specific algorithms used in MDP planning. The Baseline question is completely off-topic, asking about the 'biggest advantage of model-based RL' which was covered in a previous topic, not 'planning with MDP models'. This makes the Baseline question irrelevant and its distractors poorly chosen for this specific topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Khám phá các kỹ thuật Lập trình động",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks about a method (Bellman equation) used for optimization in MDPs with dynamic programming, which is highly relevant. The Baseline question is also relevant but slightly less specific, asking about algorithms for model-based planning in MDPs, which overlaps with the previous topic. The Pipeline's distractors are also more specific to optimization algorithms, making them more plausible in this context."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Dự đoán n-Bước và Lợi nhuận Lambda",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.5,
+                "clarity": 0.6,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.4,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly aligned with the topic, directly asking how n-step prediction and Lambda returns improve value estimation by combining Monte-Carlo and TD learning. The Baseline question is completely off-topic, asking about optimization techniques in MDPs, which was covered in a previous topic. This makes the Baseline question irrelevant and its distractors poorly chosen for this specific topic."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Khái niệm đạo hàm chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.5,
+                "clarity": 0.6,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.4,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant, asking about a specific concept (gradient of expected reward) used in REINFORCE for policy adjustment, which is central to policy gradients. The Baseline question is completely off-topic, asking about n-step prediction, which was covered in a previous topic. This makes the Baseline question irrelevant and its distractors poorly chosen for this specific topic."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Các thuật toán Dyna-Q và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.5,
+                "clarity": 0.6,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.4,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly relevant to the topic, asking about the primary goal of Dyna-Q in complex RL scenarios (convergence in planning with a model). The Baseline question is completely off-topic, asking about policy gradient concepts, which was covered in a previous topic. This makes the Baseline question irrelevant and its distractors poorly chosen for this specific topic."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tích hợp học và lập kế hoạch (Kiến trúc Dyna)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant and well-formulated, directly addressing the importance of using models from real experience in Dyna architecture for value function planning. The Baseline question is also relevant but less specific, asking 'what is Dyna-Q?' which is a more basic recall question compared to the Pipeline's 'understand' level question. The Pipeline's distractors are also more nuanced and plausible for the given context."
+        }
+    ]
+}

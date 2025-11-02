@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Điểm khác biệt chính giữa Học tăng cường dựa trên mô hình (Model-Based RL) và Học tăng cường không dựa trên mô hình (Model-Free RL) là sự hiện diện hay vắng mặt của yếu tố nào?",
+      "answer": "Mô hình môi trường",
+      "distractors": [
+        "Thuật toán học",
+        "Hàm phần thưởng",
+        "Chính sách tối ưu"
+      ],
+      "explanation": "Điểm khác biệt chính giữa Học tăng cường dựa trên mô hình (Model-Based RL) và Học tăng cường không dựa trên mô hình (Model-Free RL) là sự hiện diện hay vắng mặt của **mô hình môi trường**.\n\n*   **Mô hình môi trường** là câu trả lời đúng vì trong Model-Based RL, tác nhân xây dựng hoặc được cung cấp một mô hình của môi trường (bao gồm hàm chuyển trạng thái và hàm phần thưởng) để dự đoán kết quả của các hành động và lập kế hoạch. Ngược lại, trong Model-Free RL, tác nhân học trực tiếp từ kinh nghiệm tương tác với môi trường mà không cần xây dựng một mô hình tường minh về môi trường đó.\n\n*   **Thuật toán học** là sai vì cả Model-Based và Model-Free RL đều sử dụng các thuật toán học để cập nhật chính sách hoặc giá trị. Sự khác biệt không nằm ở việc có hay không có thuật toán học, mà là cách thuật toán đó sử dụng thông tin (có hoặc không có mô hình).\n\n*   **Hàm phần thưởng** là sai vì hàm phần thưởng là một thành phần cơ bản của mọi bài toán Học tăng cường, bất kể là Model-Based hay Model-Free. Tác nhân cần hàm phần thưởng để đánh giá mức độ tốt của các hành động và trạng thái.\n\n*   **Chính sách tối ưu** là sai vì mục tiêu cuối cùng của cả Model-Based và Model-Free RL là tìm ra một chính sách tối ưu. Sự khác biệt không nằm ở mục tiêu này, mà là ở phương pháp tiếp cận để đạt được chính sách tối ưu đó.\n",
+      "topic": {
+        "name": "Phân biệt Học RL dựa trên mô hình và không mô hình",
+        "description": "Chủ đề này kiểm tra khả năng phân biệt cốt lõi giữa Học tăng cường dựa trên mô hình (Model-Based RL) và Học tăng cường không dựa trên mô hình (Model-Free RL) theo định nghĩa từ Tuần 7. Học sinh cần hiểu sự khác biệt cơ bản về việc có hay không có mô hình môi trường để đưa ra quyết định tối ưu. Câu trả lời đúng sẽ tập trung vào sự hiện diện hoặc vắng mặt của mô hình môi trường.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.9,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Theo bối cảnh Học tăng cường của Tuần 7, đâu là hai thành phần chính tạo nên một mô hình M?",
+      "answer": "Pη và Rη",
+      "distractors": [
+        "S và A",
+        "Pη và S",
+        "Rη và A"
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Pη và Rη** vì theo bối cảnh Học tăng cường của Tuần 7, một mô hình M được định nghĩa bởi hai thành phần chính: hàm xác suất chuyển trạng thái Pη (probability of next state) và hàm phần thưởng Rη (reward function). Pη mô tả động lực của môi trường, tức là xác suất chuyển từ trạng thái hiện tại sang trạng thái tiếp theo khi thực hiện một hành động cụ thể. Rη định lượng phần thưởng mà tác nhân nhận được khi thực hiện một hành động trong một trạng thái nhất định.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **S và A**: S (không gian trạng thái) và A (không gian hành động) là các thành phần cơ bản của một môi trường Học tăng cường, nhưng chúng không phải là các thành phần tạo nên *mô hình M*. Mô hình M sử dụng S và A để định nghĩa các chuyển đổi và phần thưởng, nhưng bản thân nó được cấu thành từ Pη và Rη.\n*   **Pη và S**: Mặc dù Pη là một thành phần của mô hình M, S không phải. Như đã giải thích, S là một phần của định nghĩa môi trường chứ không phải là một thành phần cấu tạo trực tiếp của mô hình M.\n*   **Rη và A**: Tương tự, Rη là một thành phần của mô hình M, nhưng A không phải. A là không gian hành động mà tác nhân có thể thực hiện trong môi trường, không phải là một phần của định nghĩa mô hình M.",
+      "topic": {
+        "name": "Định nghĩa và thành phần của Mô hình trong RL",
+        "description": "Chủ đề tập trung vào định nghĩa của một mô hình M trong Học tăng cường theo Tuần 7, bao gồm các thành phần chính của nó là Pη và Rη, cũng như vai trò của không gian trạng thái S và không gian hành động A. Học sinh cần nhớ các thành phần cấu tạo nên một mô hình trong bối cảnh RL.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong Học tăng cường, một Mô hình tra cứu bảng ước tính xác suất chuyển đổi trạng thái (P̂s,s'a) và hàm phần thưởng (R̂sa) bằng cách nào?",
+      "answer": "Bằng cách đếm số lần truy cập và trung bình hóa các kinh nghiệm đã quan sát được.",
+      "distractors": [
+        "Bằng cách sử dụng mạng nơ-ron để học các ánh xạ phức tạp từ trạng thái và hành động.",
+        "Bằng cách áp dụng các thuật toán tối ưu hóa để tìm kiếm giá trị tối ưu của xác suất và phần thưởng.",
+        "Bằng cách lấy mẫu ngẫu nhiên các chuyển đổi và phần thưởng từ môi trường."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **\"Bằng cách đếm số lần truy cập và trung bình hóa các kinh nghiệm đã quan sát được.\"** vì trong Học tăng cường, một mô hình tra cứu bảng (tabular model) hoạt động bằng cách lưu trữ trực tiếp các ước tính của xác suất chuyển đổi trạng thái và phần thưởng trong một bảng. Để cập nhật các ước tính này, mô hình sẽ đếm số lần một cặp trạng thái-hành động dẫn đến một trạng thái tiếp theo cụ thể (để ước tính P̂s,s'a) và trung bình hóa các phần thưởng đã quan sát được cho một cặp trạng thái-hành động cụ thể (để ước tính R̂sa). Đây là một phương pháp đơn giản và trực tiếp, phù hợp với bản chất của mô hình tra cứu bảng.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **\"Bằng cách sử dụng mạng nơ-ron để học các ánh xạ phức tạp từ trạng thái và hành động.\"** là sai. Mạng nơ-ron thường được sử dụng trong các phương pháp học tăng cường dựa trên xấp xỉ hàm (function approximation), đặc biệt khi không gian trạng thái hoặc hành động quá lớn để sử dụng bảng. Mô hình tra cứu bảng không sử dụng mạng nơ-ron.\n*   **\"Bằng cách áp dụng các thuật toán tối ưu hóa để tìm kiếm giá trị tối ưu của xác suất và phần thưởng.\"** là sai. Mặc dù các thuật toán tối ưu hóa được sử dụng rộng rãi trong Học tăng cường (ví dụ: để tìm chính sách tối ưu), nhưng việc ước tính xác suất chuyển đổi và phần thưởng trong mô hình tra cứu bảng không trực tiếp liên quan đến việc áp dụng các thuật toán tối ưu hóa phức tạp để tìm \"giá trị tối ưu\" của chúng. Thay vào đó, chúng được ước tính dựa trên dữ liệu quan sát được.\n*   **\"Bằng cách lấy mẫu ngẫu nhiên các chuyển đổi và phần thưởng từ môi trường.\"** là sai. Mặc dù việc lấy mẫu từ môi trường là một phần của quá trình thu thập dữ liệu trong Học tăng cường, nhưng bản thân việc \"lấy mẫu ngẫu nhiên\" không phải là cách mô hình tra cứu bảng ước tính P̂s,s'a và R̂sa. Thay vào đó, mô hình sử dụng các mẫu đã quan sát được để đếm và trung bình hóa, không chỉ đơn thuần là lấy mẫu ngẫu nhiên.",
+      "topic": {
+        "name": "Mô hình tra cứu bảng trong Học tăng cường",
+        "description": "Chủ đề này kiểm tra sự hiểu biết về cách một Mô hình tra cứu bảng (Concept 5, Tuần 7) ước tính xác suất chuyển đổi trạng thái (P̂s,s'a) và hàm phần thưởng (R̂sa). Học sinh cần biết rằng việc này được thực hiện bằng cách đếm số lần truy cập và trung bình hóa các kinh nghiệm đã quan sát được.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán Dyna-Q, sau khi cập nhật Q-value dựa trên kinh nghiệm thực tế và cập nhật mô hình, bước tiếp theo được thực hiện là gì?",
+      "answer": "Thực hiện n bước lập kế hoạch dựa trên mô hình.",
+      "distractors": [
+        "Chọn một hành động mới dựa trên Q-value đã cập nhật.",
+        "Cập nhật lại Q-value dựa trên phần thưởng và trạng thái mới.",
+        "Lưu trữ kinh nghiệm thực tế vào bộ nhớ đệm để sử dụng sau."
+      ],
+      "explanation": "Giải thích:\n\nTrong thuật toán Dyna-Q, sau khi đã cập nhật Q-value dựa trên kinh nghiệm thực tế (từ tương tác với môi trường) và cập nhật mô hình của môi trường, bước tiếp theo theo quy trình chuẩn là **thực hiện n bước lập kế hoạch dựa trên mô hình**. Đây là giai đoạn \"lập kế hoạch\" của Dyna-Q, nơi thuật toán sử dụng mô hình đã học để mô phỏng các tương tác và cập nhật Q-value mà không cần tương tác thực tế với môi trường, giúp tăng tốc quá trình học.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Chọn một hành động mới dựa trên Q-value đã cập nhật**: Việc chọn hành động mới thường xảy ra sau khi tất cả các cập nhật (bao gồm cả lập kế hoạch) đã hoàn tất cho một bước thời gian, để chuẩn bị cho tương tác thực tế tiếp theo với môi trường. Nó không phải là bước ngay sau khi cập nhật mô hình.\n*   **Cập nhật lại Q-value dựa trên phần thưởng và trạng thái mới**: Việc cập nhật Q-value dựa trên phần thưởng và trạng thái mới đã được thực hiện ngay sau khi quan sát kinh nghiệm thực tế. Bước này không lặp lại ngay sau khi cập nhật mô hình; thay vào đó, các cập nhật Q-value tiếp theo sẽ đến từ quá trình lập kế hoạch dựa trên mô hình.\n*   **Lưu trữ kinh nghiệm thực tế vào bộ nhớ đệm để sử dụng sau**: Việc lưu trữ kinh nghiệm thực tế vào bộ nhớ đệm (replay buffer) thường xảy ra ngay sau khi kinh nghiệm được thu thập từ môi trường, trước khi nó được sử dụng để cập nhật Q-value và mô hình. Nó không phải là bước tiếp theo sau khi đã cập nhật Q-value và mô hình.\n",
+      "topic": {
+        "name": "Quy trình cập nhật trong thuật toán Dyna-Q",
+        "description": "Chủ đề này đánh giá kiến thức về các bước tuần tự trong thuật toán Dyna-Q (Concept 8, Tuần 7). Học sinh cần nhớ quy trình bao gồm chọn hành động, thực hiện, quan sát phần thưởng/trạng thái mới, cập nhật Q-value dựa trên kinh nghiệm thực tế, cập nhật mô hình, và cuối cùng là thực hiện n bước lập kế hoạch dựa trên mô hình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi áp dụng lập kế hoạch dựa trên mẫu với kiểm soát không mô hình để tìm chính sách tối ưu, sau khi mô hình môi trường đã được học, tác nhân sẽ sử dụng mô hình này như thế nào để phục vụ các thuật toán kiểm soát không mô hình?",
+      "answer": "Tác nhân sẽ sử dụng mô hình để tạo ra các mẫu kinh nghiệm mô phỏng, sau đó áp dụng các thuật toán kiểm soát không mô hình lên các mẫu này.",
+      "distractors": [
+        "Tác nhân sẽ sử dụng mô hình để tính toán trực tiếp các giá trị Q hoặc giá trị trạng thái cho mỗi cặp trạng thái-hành động hoặc trạng thái.",
+        "Tác nhân sẽ sử dụng mô hình để điều chỉnh trực tiếp các tham số của thuật toán kiểm soát không mô hình mà không cần tạo mẫu.",
+        "Tác nhân sẽ sử dụng mô hình để xác định chính sách tối ưu một cách trực tiếp thông qua một phương pháp lập kế hoạch mà không cần thuật toán kiểm soát."
+      ],
+      "explanation": "Khi áp dụng lập kế hoạch dựa trên mẫu với kiểm soát không mô hình, tác nhân sử dụng mô hình môi trường đã học để tạo ra các mẫu kinh nghiệm mô phỏng. Các mẫu này bao gồm các bộ (trạng thái, hành động, phần thưởng, trạng thái tiếp theo) được sinh ra từ mô hình, giống như dữ liệu kinh nghiệm thực tế. Sau đó, các thuật toán kiểm soát không mô hình (như Monte-Carlo, Sarsa, Q-learning) được áp dụng lên các mẫu kinh nghiệm mô phỏng này để học và cải thiện chính sách, tìm ra chính sách tối ưu. Đây là cách các thuật toán kiểm soát không mô hình, vốn yêu cầu kinh nghiệm để học, có thể hoạt động hiệu quả ngay cả khi không tương tác trực tiếp với môi trường thực.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Tác nhân sẽ sử dụng mô hình để tính toán trực tiếp các giá trị Q hoặc giá trị trạng thái cho mỗi cặp trạng thái-hành động hoặc trạng thái.** Điều này mô tả lập kế hoạch dựa trên mô hình (model-based planning) hoặc các phương pháp lập kế hoạch động (dynamic programming), nơi mô hình được sử dụng để tính toán trực tiếp các giá trị. Tuy nhiên, câu hỏi chỉ rõ là \"kiểm soát không mô hình\", nghĩa là các thuật toán không dựa vào mô hình để tính toán trực tiếp giá trị mà dựa vào kinh nghiệm.\n- **Tác nhân sẽ sử dụng mô hình để điều chỉnh trực tiếp các tham số của thuật toán kiểm soát không mô hình mà không cần tạo mẫu.** Mô hình không được sử dụng để điều chỉnh trực tiếp các tham số của thuật toán kiểm soát. Thay vào đó, nó cung cấp dữ liệu (mẫu kinh nghiệm) mà thuật toán kiểm soát sử dụng để học và điều chỉnh chính sách của nó.\n- **Tác nhân sẽ sử dụng mô hình để xác định chính sách tối ưu một cách trực tiếp thông qua một phương pháp lập kế hoạch mà không cần thuật toán kiểm soát.** Nếu tác nhân sử dụng mô hình để xác định chính sách tối ưu một cách trực tiếp thông qua một phương pháp lập kế hoạch, đó sẽ là lập kế hoạch dựa trên mô hình thuần túy, không phải \"lập kế hoạch dựa trên mẫu với kiểm soát không mô hình\". Mục đích của việc kết hợp là sử dụng mô hình để tạo dữ liệu cho các thuật toán kiểm soát không mô hình.",
+      "topic": {
+        "name": "Áp dụng lập kế hoạch dựa trên mẫu với kiểm soát không mô hình",
+        "description": "Chủ đề liên tuần này kết hợp các khái niệm từ Tuần 7 (Lập kế hoạch dựa trên mẫu) với Tuần 3 (Học Monte-Carlo) và Tuần 4 (Sarsa, Q-Learning). Nó kiểm tra khả năng của học sinh trong việc hiểu cách một mô hình đã học (Tuần 7) được sử dụng để tạo mẫu kinh nghiệm mô phỏng, và sau đó các thuật toán kiểm soát không mô hình (như MC, Sarsa, Q-learning từ Tuần 3 & 4) được áp dụng trên các mẫu này để tìm chính sách tối ưu. Học sinh cần phân tích mối liên hệ giữa việc sinh dữ liệu từ mô hình và các thuật toán học.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong kiến trúc Dyna, việc 'lập kế hoạch' sử dụng mô hình đã học tương tác với 'học từ kinh nghiệm thực tế' như thế nào để tối ưu hóa liên tục hàm giá trị hoặc chính sách?",
+      "answer": "Nó tạo ra các kinh nghiệm giả lập từ mô hình để bổ sung cho các kinh nghiệm thực tế, giúp cập nhật hàm giá trị hoặc chính sách hiệu quả hơn.",
+      "distractors": [
+        "Nó thay thế hoàn toàn kinh nghiệm thực tế bằng các kinh nghiệm giả lập khi mô hình đã đủ chính xác.",
+        "Nó sử dụng mô hình để điều chỉnh trực tiếp các hành động trong môi trường mà không cần học thêm từ kinh nghiệm thực tế.",
+        "Nó chỉ sử dụng mô hình để đánh giá chất lượng của chính sách hiện tại, không tạo ra kinh nghiệm mới."
+      ],
+      "explanation": "Trong kiến trúc Dyna, việc 'lập kế hoạch' sử dụng mô hình đã học tương tác với 'học từ kinh nghiệm thực tế' bằng cách **tạo ra các kinh nghiệm giả lập từ mô hình để bổ sung cho các kinh nghiệm thực tế, giúp cập nhật hàm giá trị hoặc chính sách hiệu quả hơn**. Đây là câu trả lời đúng vì nó mô tả chính xác cơ chế cốt lõi của Dyna: mô hình được học từ kinh nghiệm thực tế và sau đó được sử dụng để tạo ra các kinh nghiệm \"ảo\" hoặc \"giả lập\". Những kinh nghiệm giả lập này, cùng với kinh nghiệm thực tế, được sử dụng để cập nhật hàm giá trị hoặc chính sách, cho phép học nhanh hơn và hiệu quả hơn so với việc chỉ dựa vào kinh nghiệm thực tế.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Nó thay thế hoàn toàn kinh nghiệm thực tế bằng các kinh nghiệm giả lập khi mô hình đã đủ chính xác.** Điều này không đúng. Kiến trúc Dyna được thiết kế để tích hợp cả kinh nghiệm thực tế và kinh nghiệm giả lập. Mặc dù mô hình có thể trở nên chính xác, việc học từ kinh nghiệm thực tế vẫn tiếp tục để tinh chỉnh mô hình và đảm bảo chính sách thích nghi với những thay đổi tiềm ẩn trong môi trường. Việc thay thế hoàn toàn sẽ bỏ qua lợi ích của việc học trực tiếp từ môi trường.\n\n*   **Nó sử dụng mô hình để điều chỉnh trực tiếp các hành động trong môi trường mà không cần học thêm từ kinh nghiệm thực tế.** Điều này không hoàn toàn chính xác. Mặc dù mô hình có thể được sử dụng để lập kế hoạch và chọn hành động tốt nhất trong một số trường hợp (ví dụ, trong các phương pháp lập kế hoạch dựa trên mô hình thuần túy), trong kiến trúc Dyna, mục tiêu chính của việc lập kế hoạch là tạo ra kinh nghiệm giả lập để *cập nhật hàm giá trị/chính sách*, chứ không phải trực tiếp điều khiển hành động mà không cần học thêm từ kinh nghiệm thực tế. Việc học từ kinh nghiệm thực tế vẫn là một phần không thể thiếu để cải thiện mô hình và chính sách.\n\n*   **Nó chỉ sử dụng mô hình để đánh giá chất lượng của chính sách hiện tại, không tạo ra kinh nghiệm mới.** Điều này không đúng. Mặc dù mô hình có thể được sử dụng để đánh giá chính sách, vai trò chính của nó trong kiến trúc Dyna là tạo ra các chuỗi trạng thái-hành động-phần thưởng giả lập (kinh nghiệm mới) để thực hiện các cập nhật hàm giá trị hoặc chính sách, giống như cách học từ kinh nghiệm thực tế.",
+      "topic": {
+        "name": "Kiến trúc Dyna và sự tích hợp Học & Lập kế hoạch",
+        "description": "Chủ đề liên tuần này đánh giá sự hiểu biết về Kiến trúc Dyna (Concept 7, Tuần 7) trong việc tích hợp học mô hình từ kinh nghiệm thực tế (Tuần 7) với việc lập kế hoạch sử dụng mô hình đã học. Nó yêu cầu học sinh phân tích cách Dyna kết nối ý tưởng lập kế hoạch từ mô hình (tương tự như Lập trình động từ Tuần 2) với các phương pháp học mà không cần mô hình để liên tục cải thiện hàm giá trị hoặc chính sách. Câu hỏi có thể yêu cầu xác định vai trò của các thành phần trong kiến trúc này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi so sánh Tìm kiếm Monte-Carlo đơn giản và Tìm kiếm cây Monte-Carlo (MCTS), điểm khác biệt cơ bản nào trong cách cải thiện chính sách mô phỏng giúp MCTS đạt được hiệu suất vượt trội?",
+      "answer": "MCTS cải thiện chính sách mô phỏng (chính sách cây) thông qua các giai đoạn trong cây và ngoài cây trong quá trình tìm kiếm.",
+      "distractors": [
+        "MCTS cải thiện chính sách mô phỏng bằng cách sử dụng một hàm giá trị để đánh giá các trạng thái, thay vì chỉ dựa vào kết quả cuối cùng của các lần mô phỏng.",
+        "MCTS cải thiện chính sách mô phỏng thông qua việc cập nhật trọng số của các hành động dựa trên kết quả của tất cả các lần mô phỏng đã thực hiện, không phân biệt vị trí trong cây.",
+        "MCTS cải thiện chính sách mô phỏng bằng cách chỉ tập trung vào việc khám phá các nút mới chưa được ghé thăm, bỏ qua việc khai thác các đường dẫn đã biết."
+      ],
+      "explanation": "MCTS đạt được hiệu suất vượt trội so với Tìm kiếm Monte-Carlo đơn giản chủ yếu nhờ cách nó cải thiện chính sách mô phỏng. **MCTS cải thiện chính sách mô phỏng (chính sách cây) thông qua các giai đoạn trong cây và ngoài cây trong quá trình tìm kiếm.** Điều này có nghĩa là MCTS không chỉ sử dụng kết quả của các lần mô phỏng để cập nhật thông tin về các nút đã ghé thăm (trong cây) mà còn sử dụng thông tin này để hướng dẫn các lần mô phỏng tiếp theo, tạo ra một chính sách tìm kiếm hiệu quả hơn. Cụ thể, giai đoạn \"trong cây\" liên quan đến việc lựa chọn nút dựa trên chiến lược cân bằng giữa khám phá và khai thác (ví dụ: UCB1), trong khi giai đoạn \"ngoài cây\" (rollout) sử dụng một chính sách mặc định để hoàn thành mô phỏng từ nút lá. Kết quả của các lần mô phỏng này sau đó được truyền ngược lên cây để cập nhật thống kê của các nút, từ đó cải thiện chính sách cây.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **MCTS cải thiện chính sách mô phỏng bằng cách sử dụng một hàm giá trị để đánh giá các trạng thái, thay vì chỉ dựa vào kết quả cuối cùng của các lần mô phỏng.** Mặc dù MCTS có thể được xem là ước tính giá trị của các trạng thái thông qua các lần mô phỏng, nhưng nó không trực tiếp sử dụng một \"hàm giá trị\" được định nghĩa trước theo cách của các thuật toán học tăng cường dựa trên giá trị (ví dụ: Q-learning). Thay vào đó, nó ước tính giá trị của các hành động/trạng thái thông qua tỷ lệ thắng/thua và số lần ghé thăm từ các lần mô phỏng. Điểm khác biệt cơ bản nằm ở cách nó sử dụng cấu trúc cây và các giai đoạn trong/ngoài cây để cải thiện chính sách, chứ không phải ở việc thay thế kết quả cuối cùng bằng một hàm giá trị.\n*   **MCTS cải thiện chính sách mô phỏng thông qua việc cập nhật trọng số của các hành động dựa trên kết quả của tất cả các lần mô phỏng đã thực hiện, không phân biệt vị trí trong cây.** Điều này không hoàn toàn chính xác. MCTS cập nhật thống kê của các nút (bao gồm số lần ghé thăm và tổng phần thưởng) theo cấu trúc cây. Việc cập nhật này là cục bộ cho từng nút và các nút cha của nó, chứ không phải là một cập nhật \"trọng số của các hành động\" chung chung không phân biệt vị trí trong cây. Chính cấu trúc cây và việc cập nhật có chọn lọc này mới là điểm mạnh của MCTS.\n*   **MCTS cải thiện chính sách mô phỏng bằng cách chỉ tập trung vào việc khám phá các nút mới chưa được ghé thăm, bỏ qua việc khai thác các đường dẫn đã biết.** Đây là một mô tả không chính xác về MCTS. Một trong những điểm mạnh của MCTS là khả năng cân bằng giữa khám phá (exploring) các đường dẫn mới và khai thác (exploiting) các đường dẫn đã biết có tiềm năng cao. Các thuật toán lựa chọn nút như UCB1 (Upper Confidence Bound 1) được thiết kế để thực hiện chính xác sự cân bằng này, đảm bảo rằng cả việc tìm kiếm các giải pháp mới và tối ưu hóa các giải pháp hiện có đều được thực hiện.",
+      "topic": {
+        "name": "So sánh phương pháp Tìm kiếm Monte-Carlo đơn giản và MCTS",
+        "description": "Chủ đề này yêu cầu so sánh hai phương pháp tìm kiếm tiến từ Tuần 7: Tìm kiếm Monte-Carlo đơn giản (Concept 10) và Tìm kiếm cây Monte-Carlo (MCTS) (Concept 11). Học sinh cần phân biệt được điểm khác biệt chính, đặc biệt là cách MCTS cải thiện chính sách mô phỏng (chính sách cây) trong quá trình tìm kiếm thông qua các giai đoạn trong cây và ngoài cây, dẫn đến hiệu suất tốt hơn so với tìm kiếm MC đơn giản.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh học tăng cường dựa trên mô hình, việc tổng hợp các khái niệm về n-bước và dấu vết đủ điều kiện (λ-return) vào các phương pháp tìm kiếm như Tìm kiếm khác biệt thời gian (TD Search) mang lại lợi ích chính nào cho quá trình lập kế hoạch hoặc tìm kiếm?",
+      "answer": "Nó cải thiện hiệu quả và giảm phương sai trong quá trình lập kế hoạch hoặc tìm kiếm.",
+      "distractors": [
+        "Nó làm tăng tính ngẫu nhiên của quá trình tìm kiếm, giúp khám phá các giải pháp tối ưu toàn cục tốt hơn.",
+        "Nó cho phép mô hình học trực tiếp từ các phần thưởng thưa thớt mà không cần cập nhật giá trị trạng thái trung gian.",
+        "Nó làm tăng độ phức tạp tính toán của thuật toán tìm kiếm nhưng đảm bảo hội tụ nhanh hơn đến chính sách tối ưu."
+      ],
+      "explanation": "Việc tổng hợp các khái niệm n-bước và dấu vết đủ điều kiện (λ-return) vào các phương pháp tìm kiếm dựa trên mô hình như Tìm kiếm khác biệt thời gian (TD Search) mang lại lợi ích chính là **nó cải thiện hiệu quả và giảm phương sai trong quá trình lập kế hoạch hoặc tìm kiếm**. Các phương pháp n-bước cho phép thuật toán học từ một chuỗi các trải nghiệm dài hơn, cung cấp một cái nhìn cân bằng hơn giữa các cập nhật một bước (phương sai cao, độ trễ thấp) và các cập nhật Monte Carlo (phương sai thấp, độ trễ cao). Tương tự, dấu vết đủ điều kiện (λ-return) cung cấp một cách để kết hợp tất cả các cập nhật n-bước có thể có, với trọng số giảm dần theo thời gian, dẫn đến một ước tính giá trị trạng thái hoặc hành động ổn định và hiệu quả hơn. Điều này giúp giảm phương sai của các ước tính giá trị, đồng thời cải thiện tốc độ hội tụ và hiệu quả của quá trình lập kế hoạch hoặc tìm kiếm bằng cách sử dụng thông tin từ nhiều bước trong tương lai.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó làm tăng tính ngẫu nhiên của quá trình tìm kiếm, giúp khám phá các giải pháp tối ưu toàn cục tốt hơn.** Điều này không đúng. Mục tiêu của việc kết hợp các phương pháp n-bước và λ-return là để cải thiện độ chính xác và hiệu quả của các ước tính giá trị, không phải để tăng tính ngẫu nhiên. Mặc dù khám phá là quan trọng, nhưng các kỹ thuật này tập trung vào việc cải thiện quá trình học và lập kế hoạch dựa trên mô hình đã có, không phải vào việc tăng cường khám phá ngẫu nhiên.\n*   **Nó cho phép mô hình học trực tiếp từ các phần thưởng thưa thớt mà không cần cập nhật giá trị trạng thái trung gian.** Điều này không chính xác. Mặc dù các phương pháp n-bước và λ-return có thể xử lý các phần thưởng thưa thớt tốt hơn các phương pháp một bước thuần túy bằng cách lan truyền thông tin phần thưởng qua nhiều bước, chúng vẫn dựa vào việc cập nhật các giá trị trạng thái hoặc hành động trung gian. Chúng không loại bỏ hoàn toàn nhu cầu cập nhật các giá trị này; thay vào đó, chúng cung cấp một cách hiệu quả hơn để thực hiện các cập nhật đó.\n*   **Nó làm tăng độ phức tạp tính toán của thuật toán tìm kiếm nhưng đảm bảo hội tụ nhanh hơn đến chính sách tối ưu.** Mặc dù việc triển khai các phương pháp n-bước và λ-return có thể thêm một chút phức tạp tính toán so với các phương pháp một bước đơn giản nhất, lợi ích chính không phải là \"tăng độ phức tạp\" mà là cải thiện hiệu quả và giảm phương sai. Hơn nữa, trong khi chúng có thể dẫn đến hội tụ nhanh hơn trong thực tế do các ước tính giá trị tốt hơn, việc tăng độ phức tạp tính toán không phải là lợi ích chính mà là một sự đánh đổi tiềm năng. Lợi ích cốt lõi là sự cân bằng giữa độ trễ và phương sai, dẫn đến học tập hiệu quả hơn.",
+      "topic": {
+        "name": "Khái niệm n-bước và dấu vết đủ điều kiện trong Học dựa trên mô hình",
+        "description": "Chủ đề liên tuần này là một chủ đề phức tạp kết hợp các khái niệm từ Tuần 3 (Dự đoán n-Bước, Dấu vết đủ điều kiện TD(λ)) với Tuần 7 (Học tăng cường dựa trên mô hình, Tìm kiếm khác biệt thời gian). Nó yêu cầu học sinh đánh giá cách các phương pháp học n-bước và dấu vết đủ điều kiện (λ-return) đã được giới thiệu trong bối cảnh dự đoán không mô hình, giờ có thể được áp dụng hoặc mở rộng sang các phương pháp tìm kiếm dựa trên mô hình như Tìm kiếm khác biệt thời gian (TD Search) trong Tuần 7 để cải thiện hiệu quả và giảm phương sai, từ đó tối ưu hóa quá trình lập kế hoạch hoặc tìm kiếm. Học sinh cần tổng hợp kiến thức từ các tuần khác nhau để hiểu ứng dụng nâng cao này.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Tổng hợp"
+      },
+      "week_number": 7,
+      "course_code": "rl2025"
+    }
+  ]
+}

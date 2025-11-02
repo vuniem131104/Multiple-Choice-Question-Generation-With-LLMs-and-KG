@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Yếu tố nào sau đây KHÔNG phải là thành phần cốt lõi của một Quá trình Quyết định Markov (MDP)?",
+            "answer": "Hàm giá trị tối ưu",
+            "distractors": [
+                "Tập hợp các trạng thái (S)",
+                "Tập hợp các hành động (A)",
+                "Hàm xác suất chuyển đổi trạng thái (P)"
+            ],
+            "explanation": "Một MDP bao gồm các thành phần chính là tập hợp các trạng thái (S), tập hợp các hành động (A), hàm xác suất chuyển đổi trạng thái (P), hàm thưởng (R), và hệ số chiết khấu (γ). Hàm giá trị tối ưu không phải là thành phần cốt lõi của MDP mà là kết quả của việc giải quyết MDP."
+        },
+        {
+            "question": "Thuộc tính Markov được định nghĩa như thế nào?",
+            "answer": "Tương lai chỉ phụ thuộc vào trạng thái hiện tại, không phụ thuộc vào quá khứ.",
+            "distractors": [
+                "Tương lai phụ thuộc vào cả trạng thái hiện tại và quá khứ.",
+                "Tương lai chỉ phụ thuộc vào hành động hiện tại.",
+                "Tương lai không phụ thuộc vào bất kỳ yếu tố nào."
+            ],
+            "explanation": "Thuộc tính Markov khẳng định rằng trạng thái hiện tại là một thống kê đủ để dự đoán tương lai, nghĩa là tương lai chỉ phụ thuộc vào trạng thái hiện tại và không cần quan tâm đến lịch sử."
+        },
+        {
+            "question": "Thành phần nào sau đây là yếu tố cấu thành nên một Quá trình Thưởng Markov (MRP)?",
+            "answer": "Hệ số chiết khấu (γ)",
+            "distractors": [
+                "Tập hợp các hành động (A)",
+                "Hàm giá trị tối ưu",
+                "Hàm chính sách (π)"
+            ],
+            "explanation": "Một MRP bao gồm tập hợp các trạng thái (S), ma trận xác suất chuyển đổi trạng thái (P), hàm thưởng (R), và hệ số chiết khấu (γ). Các yếu tố như tập hợp các hành động (A) hoặc hàm chính sách (π) không thuộc về MRP."
+        },
+        {
+            "question": "Hệ số chiết khấu (γ) ảnh hưởng như thế nào đến việc đánh giá phần thưởng?",
+            "answer": "Giá trị γ gần 1 làm tăng trọng số của phần thưởng tương lai.",
+            "distractors": [
+                "Giá trị γ gần 0 làm tăng trọng số của phần thưởng tương lai.",
+                "Giá trị γ không ảnh hưởng đến phần thưởng tương lai.",
+                "Giá trị γ chỉ ảnh hưởng đến phần thưởng tức thì."
+            ],
+            "explanation": "Hệ số chiết khấu (γ) xác định mức độ quan trọng của phần thưởng tương lai so với phần thưởng tức thì. Khi γ gần 1, phần thưởng tương lai được đánh giá cao hơn; khi γ gần 0, phần thưởng tức thì được ưu tiên."
+        },
+        {
+            "question": "Mối quan hệ giữa Chuỗi Markov và Quá trình Thưởng Markov (MRP) là gì?",
+            "answer": "MRP là một Chuỗi Markov được mở rộng thêm hàm thưởng và hệ số chiết khấu.",
+            "distractors": [
+                "Chuỗi Markov là một dạng đặc biệt của MRP.",
+                "MRP không liên quan đến Chuỗi Markov.",
+                "MRP chỉ khác Chuỗi Markov ở tập hợp các trạng thái."
+            ],
+            "explanation": "MRP mở rộng khái niệm Chuỗi Markov bằng cách thêm hàm thưởng (R) và hệ số chiết khấu (γ), giúp mô hình hóa các bài toán có yếu tố thưởng."
+        },
+        {
+            "question": "Cho chuỗi phần thưởng [10, 20, 30] và hệ số chiết khấu γ = 0.9, giá trị trả về (Gt) tại thời điểm t = 0 là bao nhiêu?",
+            "answer": "48.6",
+            "distractors": [
+                "60",
+                "54",
+                "50"
+            ],
+            "explanation": "Giá trị trả về (Gt) được tính bằng công thức Gt = R0 + γR1 + γ^2R2. Thay giá trị vào: Gt = 10 + 0.9×20 + 0.9^2×30 = 10 + 18 + 24.3 = 48.6."
+        },
+        {
+            "question": "Sự khác biệt chính giữa Quá trình Quyết định Markov (MDP) và Chính sách (Policy) là gì?",
+            "answer": "MDP mô tả môi trường, trong khi chính sách định nghĩa cách tác nhân hành động.",
+            "distractors": [
+                "MDP và chính sách là hai khái niệm giống nhau.",
+                "MDP chỉ áp dụng cho môi trường không có hành động.",
+                "Chính sách là một phần của MDP."
+            ],
+            "explanation": "MDP là mô hình mô tả môi trường với các trạng thái và hành động, trong khi chính sách (Policy) xác định cách tác nhân chọn hành động trong mỗi trạng thái. Chính sách không phải là một phần của MDP."
+        },
+        {
+            "question": "Phương trình Bellman Tối ưu giúp xác định điều gì trong MDP?",
+            "answer": "Hàm giá trị tối ưu và Chính sách tối ưu.",
+            "distractors": [
+                "Hàm giá trị kỳ vọng.",
+                "Hàm xác suất chuyển đổi trạng thái.",
+                "Hàm thưởng tức thì."
+            ],
+            "explanation": "Phương trình Bellman Tối ưu là công cụ quan trọng để xác định hàm giá trị tối ưu và chính sách tối ưu trong MDP, giúp tác nhân tối ưu hóa phần thưởng nhận được."
+        }
+    ]
+}

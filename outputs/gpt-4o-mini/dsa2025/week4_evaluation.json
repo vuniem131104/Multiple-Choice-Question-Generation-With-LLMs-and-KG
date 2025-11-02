@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Tổng quan về Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the core concept of Quicksort's main steps, which is explicitly mentioned in the topic description. The distractors are plausible and relate to the number of steps. The Baseline question's correct answer 'Sắp xếp phân đoạn' is a description of Quicksort's nature, not its name, making it less precise and potentially confusing. Its distractors are other sorting algorithms, which is relevant but less specific to the 'Tổng quan' aspect of Quicksort's operation."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Quy trình phân vùng trong Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are very similar in their intent and quality. They both clearly ask about the main purpose of pointers in the partitioning process of Quicksort and provide relevant and plausible distractors. Both are well-aligned with the 'Hiểu' Bloom level and 'Dễ' difficulty. The wording is slightly different but the core meaning and expected answer are identical."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Phân tích hiệu suất Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior because it asks about a specific scenario that leads to the worst-case performance, which requires understanding the conditions, aligning better with 'Áp dụng' and 'Trung bình' difficulty. The Pipeline question asks for a formula, which is more of a 'Nhớ' level task, and the distractors are just different complexities, making it less challenging. The topic description emphasizes 'cách tính toán số lần so sánh trong từng trường hợp', and understanding the worst-case scenario is a prerequisite for that."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Các thuộc tính của Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses a specific property of Quicksort (instability) and asks for its implication, requiring a deeper understanding ('Hiểu'). The distractors are well-formulated and plausible. The Baseline question is too general, asking 'Một trong những thuộc tính nào sau đây của Quicksort ảnh hưởng đến hiệu suất của nó?'. While 'Độ sâu đệ quy' is correct, the question is less specific and the distractor 'Thời gian thực hiện của Mergesort' is clearly irrelevant, reducing distractor plausibility. The Pipeline question better tests the understanding of the properties and their effects."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Cải tiến Quicksort cho hiệu suất tốt hơn",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and very similar. They both correctly identify 'sắp xếp chèn cho các mảng con nhỏ' as a key improvement for Quicksort's performance. The wording is slightly different, but both are clear, relevant, and have plausible distractors. They both align well with the 'Phân tích' Bloom level and 'Khó' difficulty by asking about specific optimization strategies."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Vấn đề cờ Hà Lan và phân vùng 3 chiều",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is more direct and fundamental to understanding the 'Vấn đề cờ Hà Lan' by asking what it relates to. It's a good foundational question for the 'Đánh giá' Bloom level, as understanding the problem is the first step. The Pipeline question is a bit verbose and asks about the 'yếu tố quyết định để tối ưu hóa', which is a bit more complex and could be broken down. While relevant, its clarity is slightly lower due to the length and complexity of the question stem and correct answer. The Baseline question is simpler, clearer, and effectively tests a core concept."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Quicksort hai chốt và ba chốt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is clearer and more concise in asking about the fundamental difference of two-pivot Quicksort. Its distractors are very plausible and directly related to the number of pivots. The Pipeline question, while relevant, is a bit more complex in its phrasing, asking 'phương pháp phân vùng hoạt động như thế nào trong việc xử lý các phần tử có giá trị trung bình?' for three-pivot Quicksort. This is a good question, but the Baseline's simplicity and directness make it slightly better for the 'Áp dụng' level, as understanding the core mechanism is key before diving into specific element handling."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Sử dụng sắp xếp hệ thống trong Java 7",
+            "pipeline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior because it directly addresses the core of the topic: 'sự khác biệt giữa việc sử dụng quicksort hai chốt và Timsort' by asking which algorithms Arrays.sort() uses. This requires specific recall ('Nhớ') of the algorithms mentioned in the topic. The Pipeline question asks for the method name, which is also relevant, but the distractors are less plausible (e.g., 'Arrays.order()'). The Baseline question's distractors are other sorting algorithms, making them more plausible and testing a deeper understanding of the context."
+        }
+    ]
+}

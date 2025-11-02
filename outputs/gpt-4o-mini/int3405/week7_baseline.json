@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Khái niệm học sâu trong Machine Learning là gì?",
+            "answer": "Một nhánh của học máy sử dụng mạng nơ-ron với nhiều lớp để học các biểu diễn dữ liệu phức tạp.",
+            "distractors": [
+                "Một phương pháp học máy truyền thống chỉ sử dụng một lớp nơ-ron.",
+                "Một thuật toán tối ưu hóa cho các mô hình hồi quy.",
+                "Một kỹ thuật phân loại đơn giản không sử dụng mạng nơ-ron."
+            ],
+            "explanation": "Học sâu là một nhánh của học máy, sử dụng mạng nơ-ron với nhiều lớp để học các biểu diễn dữ liệu phức tạp, khác với các phương pháp học máy truyền thống."
+        },
+        {
+            "question": "Mạng nơ-ron nhân tạo (ANN) bao gồm những thành phần nào?",
+            "answer": "Lớp đầu vào, lớp ẩn và lớp đầu ra.",
+            "distractors": [
+                "Chỉ có lớp đầu vào và lớp đầu ra.",
+                "Chỉ có lớp ẩn và lớp đầu ra.",
+                "Lớp đầu vào và lớp ẩn không cần thiết."
+            ],
+            "explanation": "Mạng nơ-ron nhân tạo bao gồm lớp đầu vào, lớp ẩn và lớp đầu ra, mỗi lớp có vai trò riêng trong việc xử lý thông tin."
+        },
+        {
+            "question": "So với hồi quy Logistic, Bộ phân loại Naïve Bayes có ưu điểm gì?",
+            "answer": "Naïve Bayes hoạt động tốt với dữ liệu lớn và có thể xử lý các biến độc lập.",
+            "distractors": [
+                "Hồi quy Logistic luôn chính xác hơn Naïve Bayes.",
+                "Naïve Bayes không cần dữ liệu huấn luyện.",
+                "Hồi quy Logistic không thể xử lý dữ liệu phân loại."
+            ],
+            "explanation": "Naïve Bayes có ưu điểm là hoạt động tốt với dữ liệu lớn và có thể xử lý các biến độc lập, trong khi hồi quy Logistic có thể gặp khó khăn với dữ liệu phức tạp."
+        },
+        {
+            "question": "Gradient Descent là gì và tại sao nó quan trọng trong học máy?",
+            "answer": "Là một thuật toán tối ưu hóa giúp tìm giá trị tối ưu của hàm lỗi.",
+            "distractors": [
+                "Là một phương pháp phân loại đơn giản.",
+                "Là một loại mạng nơ-ron.",
+                "Là một kỹ thuật để tăng tốc độ học."
+            ],
+            "explanation": "Gradient Descent là một thuật toán tối ưu hóa quan trọng trong học máy, giúp tìm giá trị tối ưu của hàm lỗi để cải thiện hiệu suất của mô hình."
+        },
+        {
+            "question": "SVM với Hard Margin và Soft Margin khác nhau như thế nào?",
+            "answer": "Hard Margin yêu cầu không có điểm dữ liệu nào nằm trong vùng biên, trong khi Soft Margin cho phép một số điểm nằm trong vùng biên.",
+            "distractors": [
+                "Cả hai đều yêu cầu không có điểm dữ liệu nào nằm trong vùng biên.",
+                "Soft Margin không thể xử lý dữ liệu không tuyến tính.",
+                "Hard Margin luôn chính xác hơn Soft Margin."
+            ],
+            "explanation": "Hard Margin yêu cầu không có điểm dữ liệu nào nằm trong vùng biên, trong khi Soft Margin cho phép một số điểm nằm trong vùng biên, giúp xử lý dữ liệu không tuyến tính tốt hơn."
+        },
+        {
+            "question": "Hàm kích hoạt nào sau đây thường được sử dụng trong mạng nơ-ron để cải thiện khả năng học?",
+            "answer": "ReLU (Rectified Linear Unit).",
+            "distractors": [
+                "Sigmoid.",
+                "Tanh.",
+                "Linear."
+            ],
+            "explanation": "ReLU là hàm kích hoạt phổ biến trong mạng nơ-ron vì nó giúp cải thiện khả năng học và giảm thiểu vấn đề vanishing gradient."
+        },
+        {
+            "question": "Phân cụm K-Means hoạt động như thế nào?",
+            "answer": "Nó phân chia dữ liệu thành K nhóm dựa trên khoảng cách giữa các điểm dữ liệu và tâm nhóm.",
+            "distractors": [
+                "Nó phân loại dữ liệu thành hai nhóm dựa trên một ngưỡng.",
+                "Nó sử dụng hồi quy để dự đoán giá trị cho mỗi điểm dữ liệu.",
+                "Nó không yêu cầu số lượng nhóm trước khi phân cụm."
+            ],
+            "explanation": "K-Means phân chia dữ liệu thành K nhóm dựa trên khoảng cách giữa các điểm dữ liệu và tâm nhóm, giúp tổ chức dữ liệu một cách hiệu quả."
+        },
+        {
+            "question": "Quy trình lan truyền ngược trong mạng nơ-ron có vai trò gì?",
+            "answer": "Cập nhật trọng số của mạng để giảm thiểu hàm lỗi trong quá trình huấn luyện.",
+            "distractors": [
+                "Tạo ra các đầu ra mới cho mạng nơ-ron.",
+                "Xác định số lượng lớp ẩn cần thiết.",
+                "Tăng tốc độ học của mạng nơ-ron."
+            ],
+            "explanation": "Quy trình lan truyền ngược giúp cập nhật trọng số của mạng để giảm thiểu hàm lỗi trong quá trình huấn luyện, là một phần quan trọng trong việc tối ưu hóa mạng nơ-ron."
+        }
+    ]
+}

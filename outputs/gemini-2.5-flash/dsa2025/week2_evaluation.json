@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Định nghĩa và ứng dụng của Sắp xếp",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and appropriate for the topic and Bloom level. However, the baseline question provides slightly more detailed phrasing in the correct answer, making it clearer and more precise. The distractors in the baseline question are also marginally more plausible, as they include realistic misconceptions about sorting. This gives the baseline question a slight edge overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Đặc điểm của Thứ tự toàn phần",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are well-aligned with the topic and Bloom level. The baseline question is slightly clearer in its phrasing, particularly in the way it introduces the concept of total order. The distractors in the baseline question are also slightly more plausible, as they include terms that could realistically confuse students. This makes the baseline question the better choice overall."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Cơ chế hoạt động của Sắp xếp chọn",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are relevant and appropriate for the topic and Bloom level. The baseline question is slightly clearer in its explanation of the selection sort mechanism, and its distractors are more plausible, as they include realistic misconceptions about sorting algorithms. This gives the baseline question a slight advantage overall."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Sử dụng Giao diện Comparable API",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are relevant and appropriate for the topic and Bloom level. However, the pipeline question is slightly clearer in its phrasing and has more plausible distractors, as it avoids overly specific or less relevant options. This makes the pipeline question the better choice overall."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh Sắp xếp chọn và Sắp xếp chèn",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are well-aligned with the topic and Bloom level. The baseline question is slightly clearer in its explanation of the differences between selection sort and insertion sort, making it easier for students to understand. The distractors are equally plausible in both questions, but the clarity gives the baseline question a slight edge."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Vai trò của Callbacks trong sắp xếp với Generics",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are relevant and appropriate for the topic and Bloom level. The baseline question is slightly clearer in its explanation of how Generics and Comparable/Comparator work together, and its distractors are more plausible, as they address common misconceptions about these concepts. This makes the baseline question the better choice overall."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Cải tiến hiệu suất từ Sắp xếp chèn đến Shellsort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are well-aligned with the topic and Bloom level. The baseline question is slightly clearer in its explanation of how Shellsort improves upon insertion sort, and its distractors are more plausible, as they address realistic misconceptions about sorting algorithms. This gives the baseline question a slight advantage overall."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Hiệu quả và ứng dụng của Knuth Shuffle so với các cấu trúc dữ liệu (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are relevant and appropriate for the topic and Bloom level. The baseline question is slightly clearer in its explanation of the efficiency of Knuth Shuffle, and its distractors are more plausible, as they address realistic misconceptions about data structures and algorithms. This makes the baseline question the better choice overall."
+        }
+    ]
+}

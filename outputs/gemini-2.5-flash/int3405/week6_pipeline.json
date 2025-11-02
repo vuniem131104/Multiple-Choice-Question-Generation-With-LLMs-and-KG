@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Phân tích cụm (cluster analysis) được phân loại là một dạng học máy thuộc loại nào?",
+      "answer": "Học không giám sát",
+      "distractors": [
+        "Học có giám sát",
+        "Học tăng cường",
+        "Học bán giám sát"
+      ],
+      "explanation": "Phân tích cụm (cluster analysis) được phân loại là một dạng học máy thuộc loại **Học không giám sát**.\n\n**Tại sao \"Học không giám sát\" là đúng:**\nHọc không giám sát là một loại học máy được sử dụng để tìm kiếm các cấu trúc hoặc mẫu ẩn trong dữ liệu mà không cần nhãn đầu ra được xác định trước. Trong phân tích cụm, mục tiêu là nhóm các điểm dữ liệu tương tự lại với nhau thành các cụm, dựa trên sự tương đồng nội tại của chúng, mà không có bất kỳ thông tin nào về việc các điểm dữ liệu đó thuộc về nhóm nào từ trước. Điều này hoàn toàn phù hợp với định nghĩa của học không giám sát.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n*   **Học có giám sát:** Học có giám sát yêu cầu dữ liệu huấn luyện có nhãn đầu ra (ví dụ: phân loại email là \"spam\" hoặc \"không spam\"). Phân tích cụm không sử dụng nhãn đầu ra để huấn luyện mô hình, do đó nó không phải là học có giám sát.\n*   **Học tăng cường:** Học tăng cường liên quan đến việc một tác nhân học cách đưa ra quyết định thông qua tương tác với môi trường để tối đa hóa phần thưởng. Đây là một lĩnh vực khác biệt hoàn toàn so với việc tìm kiếm cấu trúc trong dữ liệu như phân tích cụm.\n*   **Học bán giám sát:** Học bán giám sát sử dụng cả dữ liệu có nhãn và không có nhãn để huấn luyện mô hình. Mặc dù nó có thể sử dụng một lượng nhỏ dữ liệu có nhãn, nhưng bản chất cốt lõi của phân tích cụm là hoạt động hoàn toàn không có nhãn, do đó nó không thuộc loại học bán giám sát.\n",
+      "topic": {
+        "name": "Khái niệm cơ bản về Phân tích Cụm",
+        "description": "Chủ đề này kiểm tra hiểu biết về định nghĩa của phân tích cụm, mục tiêu chính của nó là tối đa hóa khoảng cách giữa các cụm và tối thiểu hóa khoảng cách trong cụm, cùng với việc nhận diện phân tích cụm là một dạng học không giám sát. Đây là kiến thức nền tảng trong bài giảng hiện tại.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Phép đo khoảng cách nào sau đây được tính bằng tổng các giá trị tuyệt đối của sự khác biệt giữa các tọa độ của hai điểm?",
+      "answer": "Manhattan Distance",
+      "distractors": [
+        "Euclidean Distance",
+        "Cosine Similarity",
+        "Chebyshev Distance"
+      ],
+      "explanation": "**Giải thích:**\n\n**Manhattan Distance** là câu trả lời đúng vì nó được định nghĩa là tổng các giá trị tuyệt đối của sự khác biệt giữa các tọa độ của hai điểm. Phép đo này còn được gọi là khoảng cách \"city block\" hoặc \"taxicab\" vì nó mô phỏng khoảng cách mà một chiếc taxi phải đi trong một mạng lưới đường phố vuông góc.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Euclidean Distance** tính khoảng cách đường thẳng giữa hai điểm trong không gian Euclidean. Nó được tính bằng căn bậc hai của tổng bình phương các hiệu số giữa các tọa độ tương ứng.\n*   **Cosine Similarity** đo độ tương đồng về hướng giữa hai vectơ trong không gian, không phải khoảng cách. Nó được tính bằng cosin của góc giữa hai vectơ và thường được sử dụng để đánh giá sự tương đồng về nội dung hoặc hướng.\n*   **Chebyshev Distance** (còn gọi là khoảng cách bàn cờ vua) được định nghĩa là giá trị tuyệt đối lớn nhất của sự khác biệt giữa các tọa độ của hai điểm. Nó đại diện cho số bước tối thiểu mà một quân vua cần để di chuyển giữa hai ô trên bàn cờ.",
+      "topic": {
+        "name": "Các phép đo khoảng cách trong phân cụm",
+        "description": "Chủ đề này đánh giá khả năng nhận biết và phân biệt các phép đo độ tương tự/khoảng cách cơ bản được sử dụng trong phân tích cụm, bao gồm công thức hoặc mục đích của Euclidean Distance, Manhattan Distance và Cosine Similarity. Đây là một khái niệm cốt lõi để hiểu cách các thuật toán nhóm dữ liệu.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một trong những yêu cầu cốt lõi của thuật toán K-Means là gì?",
+      "answer": "Số lượng cụm (K)",
+      "distractors": [
+        "Tâm cụm ban đầu",
+        "Số lượng lặp lại tối đa",
+        "Khoảng cách giữa các điểm dữ liệu"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Số lượng cụm (K)**. Thuật toán K-Means yêu cầu người dùng phải chỉ định trước số lượng cụm mong muốn (K) trước khi thuật toán bắt đầu. Đây là một yêu cầu cốt lõi vì thuật toán sẽ cố gắng phân chia dữ liệu thành đúng K cụm.\n\nCác yếu tố gây nhiễu khác không phải là yêu cầu cốt lõi:\n*   **Tâm cụm ban đầu**: Mặc dù việc khởi tạo tâm cụm ban đầu là một bước cần thiết trong thuật toán K-Means, nhưng nó không phải là một \"yêu cầu cốt lõi\" theo nghĩa là một tham số đầu vào bắt buộc phải được cung cấp bởi người dùng để định hình số lượng cụm cuối cùng. Thuật toán có thể tự chọn các tâm cụm ban đầu theo nhiều cách khác nhau (ví dụ: ngẫu nhiên), nhưng K thì không thể.\n*   **Số lượng lặp lại tối đa**: Đây là một tham số để kiểm soát thời gian chạy và sự hội tụ của thuật toán, ngăn chặn nó chạy vô thời hạn. Nó không phải là một yêu cầu cốt lõi để định nghĩa cấu trúc cụm mà thuật toán sẽ tìm kiếm.\n*   **Khoảng cách giữa các điểm dữ liệu**: Khoảng cách giữa các điểm dữ liệu là một khái niệm được sử dụng *bên trong* thuật toán (để gán điểm vào cụm gần nhất và tính toán lại tâm cụm), nhưng bản thân nó không phải là một \"yêu cầu cốt lõi\" mà người dùng phải cung cấp như một tham số đầu vào để thuật toán hoạt động.\n",
+      "topic": {
+        "name": "Ý tưởng chính của thuật toán K-Means",
+        "description": "Kiểm tra sự hiểu biết về ý tưởng cốt lõi của thuật toán K-Means Clustering: mỗi điểm được gán vào tâm cụm gần nhất và yêu cầu số lượng cụm (K) phải được chỉ định trước. Sinh viên cũng cần nắm được bản chất lặp đi lặp lại của thuật toán.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Loại phân cụm nào xác định các cụm bằng cách tìm kiếm các vùng trong không gian dữ liệu có mật độ điểm cao?",
+      "answer": "Phân cụm dựa trên mật độ",
+      "distractors": [
+        "Phân cụm phân hoạch",
+        "Phân cụm phân cấp",
+        "Phân cụm dựa trên mô hình"
+      ],
+      "explanation": "Phân cụm dựa trên mật độ là câu trả lời đúng vì nó được thiết kế để xác định các cụm bằng cách tìm kiếm các vùng trong không gian dữ liệu có mật độ điểm cao, tách biệt bởi các vùng có mật độ thấp hơn. Các thuật toán như DBSCAN là ví dụ điển hình của phương pháp này, nơi các cụm được hình thành từ các điểm \"cốt lõi\" có đủ số lượng điểm lân cận trong một bán kính nhất định.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Phân cụm phân hoạch** (ví dụ: K-Means) chia dữ liệu thành các cụm không chồng chéo dựa trên khoảng cách đến tâm cụm, không phải mật độ.\n*   **Phân cụm phân cấp** xây dựng một cây phân cấp các cụm (dendrogram) bằng cách hợp nhất hoặc chia tách các cụm, cũng không dựa trực tiếp vào mật độ.\n*   **Phân cụm dựa trên mô hình** giả định rằng dữ liệu được tạo ra từ một hỗn hợp các phân phối xác suất (ví dụ: phân phối Gaussian) và cố gắng tìm các tham số của các phân phối này, không phải các vùng mật độ cao.",
+      "topic": {
+        "name": "Các loại phân cụm",
+        "description": "Chủ đề này tập trung vào việc nhận diện các loại phân cụm chính như phân cụm phân hoạch (Partitional), phân cấp (Hierarchical), dựa trên mật độ (Density-based) và dựa trên mô hình (Model-based), cùng với các ví dụ điển hình của mỗi loại. Điều này giúp học sinh phân loại các phương pháp tiếp cận khác nhau trong phân tích cụm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong một tình huống mà số lượng cụm tối ưu (K) trong dữ liệu chưa được xác định rõ ràng, thuật toán phân cụm nào sau đây phù hợp hơn để khởi đầu việc khám phá cấu trúc dữ liệu mà không yêu cầu giá trị K cụ thể?",
+      "answer": "Hierarchical Agglomerative Clustering (HAC)",
+      "distractors": [
+        "K-Means Clustering",
+        "DBSCAN",
+        "Gaussian Mixture Models (GMM)"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Hierarchical Agglomerative Clustering (HAC)** vì đây là thuật toán phân cụm phân cấp không yêu cầu số lượng cụm (K) được xác định trước. Thay vào đó, HAC xây dựng một cây phân cấp các cụm (dendrogram), cho phép người dùng khám phá cấu trúc dữ liệu ở các mức độ chi tiết khác nhau và chọn số lượng cụm phù hợp sau khi quá trình phân cụm hoàn tất. Điều này đặc biệt hữu ích khi K chưa được xác định rõ ràng.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **K-Means Clustering**: Thuật toán K-Means yêu cầu người dùng phải chỉ định trước số lượng cụm (K) mà nó sẽ tạo ra. Nếu K không được biết, K-Means sẽ không thể hoạt động hiệu quả hoặc sẽ yêu cầu các phương pháp bổ sung để ước tính K, điều này đi ngược lại yêu cầu của câu hỏi là không cần K cụ thể để khởi đầu.\n*   **DBSCAN**: Mặc dù DBSCAN không yêu cầu K được xác định trước, nó yêu cầu hai tham số khác là `epsilon` (bán kính lân cận) và `min_samples` (số lượng điểm tối thiểu trong một lân cận để tạo thành một cụm). Việc chọn các tham số này có thể phức tạp và ảnh hưởng đáng kể đến kết quả phân cụm, đặc biệt là trong việc khám phá cấu trúc dữ liệu tổng thể mà không có K cụ thể. Hơn nữa, DBSCAN tập trung vào việc tìm các cụm dựa trên mật độ và có thể bỏ qua các cụm có mật độ thấp hoặc gán chúng là nhiễu.\n*   **Gaussian Mixture Models (GMM)**: GMM là một thuật toán phân cụm dựa trên mô hình xác suất, và giống như K-Means, nó thường yêu cầu số lượng thành phần Gaussian (tương đương với số cụm K) được chỉ định trước. Mặc dù có thể sử dụng các tiêu chí như AIC hoặc BIC để ước tính K, nhưng bản thân thuật toán GMM vẫn cần K để khởi tạo và chạy, không phù hợp với yêu cầu \"không yêu cầu giá trị K cụ thể\" để khởi đầu việc khám phá.",
+      "topic": {
+        "name": "So sánh K-Means và HAC",
+        "description": "Kiểm tra sự hiểu biết về sự khác biệt cơ bản giữa thuật toán K-Means (phân hoạch) và Hierarchical Agglomerative Clustering - HAC (phân cấp). Bao gồm các khía cạnh như cách các cụm được hình thành (lặp lại vs. hợp nhất), yêu cầu về số lượng cụm K và các vấn đề về độ phức tạp. Chủ đề này giúp sinh viên phân tích sự phù hợp của mỗi thuật toán trong các bối cảnh khác nhau.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một nhà khoa học dữ liệu đang sử dụng Phương pháp Elbow để xác định số lượng cụm tối ưu cho thuật toán K-Means. Nếu biểu đồ tổng bình phương khoảng cách trong cụm (WCSS) giảm mạnh và sau đó độ dốc của đường cong giảm đáng kể tại K=4, giá trị K tối ưu mà nhà khoa học dữ liệu nên chọn là bao nhiêu?",
+      "answer": "K = 4",
+      "distractors": [
+        "K = 1, vì không có cụm nào được hình thành, cho thấy sự đồng nhất tối đa.",
+        "K = 2, vì đây là số cụm tối thiểu để bắt đầu phân tích và thường là điểm khởi đầu hợp lý.",
+        "K = 3, vì đây là điểm ngay trước khi độ dốc giảm đáng kể, cho thấy vẫn còn tiềm năng cải thiện."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **K = 4**. Phương pháp Elbow tìm kiếm điểm trên biểu đồ WCSS (Tổng bình phương khoảng cách trong cụm) nơi độ dốc của đường cong giảm đáng kể, tạo thành một \"khuỷu tay\". Điểm này cho thấy việc tăng thêm số lượng cụm không mang lại nhiều lợi ích đáng kể trong việc giảm WCSS nữa, và do đó, đây là số lượng cụm tối ưu. Trong trường hợp này, việc độ dốc giảm đáng kể tại K=4 chính là dấu hiệu của điểm \"khuỷu tay\", cho thấy K=4 là lựa chọn tối ưu.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **K = 1, vì không có cụm nào được hình thành, cho thấy sự đồng nhất tối đa.** K=1 có nghĩa là tất cả các điểm dữ liệu được coi là thuộc về một cụm duy nhất. Điều này không phải là mục tiêu của phân cụm và thường dẫn đến giá trị WCSS rất cao, không cung cấp thông tin hữu ích về cấu trúc cụm của dữ liệu.\n*   **K = 2, vì đây là số cụm tối thiểu để bắt đầu phân tích và thường là điểm khởi đầu hợp lý.** Mặc dù K=2 là số cụm tối thiểu để bắt đầu phân tích, nhưng nó không nhất thiết là giá trị tối ưu. Phương pháp Elbow được sử dụng để tìm ra giá trị K tối ưu dựa trên dữ liệu cụ thể, không chỉ dựa vào một điểm khởi đầu tùy ý.\n*   **K = 3, vì đây là điểm ngay trước khi độ dốc giảm đáng kể, cho thấy vẫn còn tiềm năng cải thiện.** Chọn K=3 sẽ bỏ qua điểm \"khuỷu tay\" thực sự tại K=4. Mặc dù WCSS có thể vẫn giảm khi chuyển từ K=3 sang K=4, nhưng việc giảm độ dốc đáng kể tại K=4 cho thấy rằng lợi ích của việc tăng thêm cụm đã giảm đi đáng kể, và K=4 là điểm cân bằng tốt nhất giữa việc giảm WCSS và tránh quá khớp (overfitting).\n",
+      "topic": {
+        "name": "Phương pháp Elbow tìm K tối ưu trong K-Means",
+        "description": "Đánh giá khả năng áp dụng Phương pháp Elbow để xác định giá trị K tối ưu cho thuật toán K-Means bằng cách phân tích biểu đồ tổng bình phương khoảng cách trong cụm (WCSS). Sinh viên cần hiểu cách biểu đồ này được sử dụng để tìm điểm 'khuỷu tay' chỉ ra sự thay đổi nhanh chóng của WCSS. Đây là một ứng dụng quan trọng của K-Means.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Điểm khác biệt cơ bản nào sau đây tách biệt các bài toán học có giám sát (ví dụ: Hồi quy tuyến tính, Hồi quy logistic) khỏi các bài toán học không giám sát (ví dụ: Phân tích cụm)?",
+      "answer": "Sự cần thiết của nhãn đầu ra trong dữ liệu huấn luyện.",
+      "distractors": [
+        "Sự khác biệt về loại thuật toán được sử dụng để xây dựng mô hình.",
+        "Mục tiêu chính là dự đoán giá trị liên tục hay phân loại dữ liệu.",
+        "Khả năng xử lý dữ liệu bị thiếu hoặc nhiễu trong tập dữ liệu."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Sự cần thiết của nhãn đầu ra trong dữ liệu huấn luyện.** vì đây là điểm khác biệt cơ bản nhất giữa học có giám sát và học không giám sát. Trong học có giám sát, mô hình được huấn luyện trên một tập dữ liệu bao gồm cả các đặc trưng đầu vào và các nhãn đầu ra (hoặc biến mục tiêu) tương ứng. Mục tiêu là học một ánh xạ từ đầu vào đến đầu ra để có thể dự đoán nhãn cho dữ liệu mới, chưa từng thấy. Ngược lại, trong học không giám sát, dữ liệu huấn luyện chỉ bao gồm các đặc trưng đầu vào mà không có bất kỳ nhãn đầu ra nào. Mục tiêu là khám phá các cấu trúc, mẫu hoặc mối quan hệ ẩn trong dữ liệu.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Sự khác biệt về loại thuật toán được sử dụng để xây dựng mô hình.** Mặc dù đúng là các loại thuật toán khác nhau thường được sử dụng cho học có giám sát và không giám sát, nhưng đây là hệ quả của sự khác biệt cơ bản về nhãn đầu ra, chứ không phải là điểm khác biệt cơ bản nhất. Các thuật toán được chọn dựa trên việc có hay không có nhãn để huấn luyện.\n*   **Mục tiêu chính là dự đoán giá trị liên tục hay phân loại dữ liệu.** Đây là sự phân biệt giữa các loại bài toán học có giám sát (hồi quy cho giá trị liên tục và phân loại cho dữ liệu rời rạc), chứ không phải là sự phân biệt giữa học có giám sát và học không giám sát. Học không giám sát không có mục tiêu dự đoán giá trị liên tục hay phân loại theo nghĩa truyền thống.\n*   **Khả năng xử lý dữ liệu bị thiếu hoặc nhiễu trong tập dữ liệu.** Khả năng xử lý dữ liệu bị thiếu hoặc nhiễu là một thách thức chung trong cả học có giám sát và không giám sát, và các kỹ thuật xử lý dữ liệu bị thiếu hoặc nhiễu được áp dụng cho cả hai loại bài toán. Đây không phải là điểm khác biệt cơ bản để phân biệt hai loại học này.",
+      "topic": {
+        "name": "Phân biệt học có giám sát và không giám sát",
+        "description": "Chủ đề liên tuần này yêu cầu học sinh phân biệt rõ ràng giữa các bài toán Học có giám sát (từ Tuần 1, 2, 3, 4) và Học không giám sát (Tuần 6). Câu hỏi sẽ tập trung vào sự khác biệt trong tính sẵn có của nhãn đầu ra, mục tiêu của thuật toán và các ví dụ điển hình của mỗi loại (ví dụ: Hồi quy tuyến tính, Hồi quy logistic so với Phân tích cụm).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi đánh giá ba mô hình phân cụm với các giá trị Hệ số Silhouette trung bình lần lượt là 0.75, 0.45 và -0.20, mô hình nào thể hiện chất lượng phân cụm tốt nhất theo tiêu chí về sự kết hợp giữa độ gắn kết và độ tách biệt của các cụm?",
+      "answer": "Mô hình có Hệ số Silhouette trung bình 0.75",
+      "distractors": [
+        "Mô hình có Hệ số Silhouette trung bình -0.20",
+        "Mô hình có Hệ số Silhouette trung bình 0.45",
+        "Mô hình có Hệ số Silhouette trung bình gần 0 nhất"
+      ],
+      "explanation": "Giải thích:\n\nMô hình có Hệ số Silhouette trung bình 0.75 là câu trả lời đúng vì Hệ số Silhouette đo lường mức độ tương đồng của một đối tượng với cụm của chính nó (độ gắn kết) so với các cụm khác (độ tách biệt). Giá trị của Hệ số Silhouette nằm trong khoảng từ -1 đến 1. Giá trị càng gần 1 cho thấy các cụm được phân tách rõ ràng và các điểm dữ liệu được gán đúng vào cụm của chúng. Do đó, 0.75 là giá trị cao nhất trong các lựa chọn, biểu thị chất lượng phân cụm tốt nhất.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Mô hình có Hệ số Silhouette trung bình -0.20**: Giá trị âm của Hệ số Silhouette (như -0.20) cho thấy các điểm dữ liệu có thể đã được gán sai cụm, hoặc các cụm chồng chéo lên nhau đáng kể. Đây là dấu hiệu của chất lượng phân cụm kém.\n- **Mô hình có Hệ số Silhouette trung bình 0.45**: Mặc dù 0.45 là một giá trị dương, cho thấy sự phân cụm hợp lý, nhưng nó thấp hơn 0.75. Điều này có nghĩa là chất lượng phân cụm của mô hình này không tốt bằng mô hình có Hệ số Silhouette trung bình 0.75.\n- **Mô hình có Hệ số Silhouette trung bình gần 0 nhất**: Giá trị Hệ số Silhouette gần 0 cho thấy các cụm có thể chồng chéo hoặc các điểm dữ liệu nằm rất gần ranh giới giữa các cụm. Điều này không phải là dấu hiệu của chất lượng phân cụm tốt nhất, mà thường chỉ ra sự không rõ ràng trong cấu trúc cụm. Mục tiêu là tối đa hóa Hệ số Silhouette, tức là tìm giá trị gần 1 nhất, chứ không phải gần 0 nhất.",
+      "topic": {
+        "name": "Hệ số Silhouette và Đánh giá mô hình",
+        "description": "Chủ đề liên tuần này kết hợp kiến thức về đánh giá mô hình từ Tuần 5 (tối ưu hóa mô hình tổng quát) với Hệ số Silhouette (Tuần 6) để đánh giá chất lượng phân cụm. Học sinh cần hiểu cách Hệ số Silhouette kết hợp độ gắn kết và độ tách biệt của các cụm, ý nghĩa của các giá trị silhouette khác nhau và cách nó được sử dụng như một chỉ số định lượng để lựa chọn mô hình phân cụm tốt nhất, tương tự như các chỉ số hiệu suất trong học có giám sát.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    }
+  ]
+}

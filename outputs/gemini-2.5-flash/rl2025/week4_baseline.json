@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong Học tăng cường, Kiểm soát không mô hình (Model-Free Control) được sử dụng khi nào?",
+            "answer": "Khi mô hình MDP không xác định hoặc quá lớn để sử dụng trực tiếp, và việc học phải dựa trên kinh nghiệm đã lấy mẫu.",
+            "distractors": [
+                "Khi mô hình MDP đã biết đầy đủ và có thể tính toán chính sách tối ưu trực tiếp.",
+                "Khi cần tối ưu hóa chính sách bằng cách sử dụng phương pháp lập trình động.",
+                "Khi chỉ quan tâm đến việc đánh giá hàm giá trị của một chính sách đã cho, không phải cải thiện chính sách."
+            ],
+            "explanation": "Kiểm soát không mô hình là phương pháp học tăng cường được áp dụng khi chúng ta không có thông tin đầy đủ về môi trường (mô hình MDP không xác định) hoặc khi mô hình quá phức tạp để xử lý. Trong trường hợp này, tác nhân phải học từ các tương tác thực tế (kinh nghiệm đã lấy mẫu) với môi trường để tìm ra chính sách tối ưu."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản giữa học theo chính sách (on-policy) và học ngoài chính sách (off-policy) là gì?",
+            "answer": "Học theo chính sách sử dụng kinh nghiệm được tạo ra bởi chính sách đang được cải thiện, trong khi học ngoài chính sách sử dụng kinh nghiệm được tạo ra bởi một chính sách khác (chính sách hành vi).",
+            "distractors": [
+                "Học theo chính sách chỉ áp dụng cho các môi trường có mô hình MDP đã biết, còn học ngoài chính sách thì không.",
+                "Học theo chính sách luôn hội tụ nhanh hơn học ngoài chính sách.",
+                "Học theo chính sách không yêu cầu thăm dò, trong khi học ngoài chính sách luôn yêu cầu thăm dò."
+            ],
+            "explanation": "Sự khác biệt cốt lõi nằm ở cách kinh nghiệm được tạo ra và sử dụng. Học theo chính sách (on-policy) học và cải thiện chính sách dựa trên dữ liệu được tạo ra bởi chính sách đó. Ngược lại, học ngoài chính sách (off-policy) học một chính sách mục tiêu (target policy) trong khi thực hiện các hành động theo một chính sách hành vi (behavior policy) khác, cho phép tái sử dụng dữ liệu và học từ các chính sách thăm dò."
+        },
+        {
+            "question": "Trong thăm dò ε-tham lam (ε-Greedy Exploration), nếu ε = 0.1 và có 4 hành động khả thi, xác suất để chọn hành động tốt nhất hiện tại là bao nhiêu?",
+            "answer": "0.925",
+            "distractors": [
+                "0.1",
+                "0.9",
+                "0.025"
+            ],
+            "explanation": "Với thăm dò ε-tham lam, xác suất chọn hành động tốt nhất hiện tại là 1 - ε + ε/N, trong đó N là số lượng hành động khả thi. Trong trường hợp này, ε = 0.1 và N = 4. Vậy, xác suất là 1 - 0.1 + 0.1/4 = 0.9 + 0.025 = 0.925. Các hành động không tốt nhất sẽ được chọn với xác suất ε/N."
+        },
+        {
+            "question": "Công thức cập nhật hàm giá trị hành động Q(S,A) trong thuật toán Sarsa là gì?",
+            "answer": "Q(S,A) ← Q(S,A) + α[R + γQ(S',A') - Q(S,A)]",
+            "distractors": [
+                "Q(S,A) ← Q(S,A) + α[R + γmax_a Q(S',a) - Q(S,A)]",
+                "Q(S,A) ← R + γQ(S',A')",
+                "Q(S,A) ← Q(S,A) + α[R + γV(S') - Q(S,A)]"
+            ],
+            "explanation": "Thuật toán Sarsa là một phương pháp học theo chính sách (on-policy) TD control. Công thức cập nhật của nó sử dụng bộ 5 (S, A, R, S', A') để ước tính giá trị hành động tiếp theo Q(S',A'). Cụ thể, Q(S,A) được cập nhật dựa trên phần thưởng R nhận được và giá trị Q của cặp trạng thái-hành động tiếp theo (S',A') được chọn theo chính sách hiện tại. Đây là một dạng của cập nhật TD(0)."
+        },
+        {
+            "question": "Trong Sarsa(λ), vai trò chính của dấu vết đủ điều kiện (eligibility traces) là gì?",
+            "answer": "Phân bổ tín dụng cho các cặp trạng thái-hành động đã ghé thăm trong quá khứ, giúp tăng tốc độ học bằng cách kết nối các cập nhật TD với nhiều bước trong quá khứ.",
+            "distractors": [
+                "Chỉ để lưu trữ giá trị Q của các cặp trạng thái-hành động đã ghé thăm gần đây nhất.",
+                "Giúp thuật toán chuyển đổi từ học theo chính sách sang học ngoài chính sách.",
+                "Đảm bảo rằng thuật toán luôn chọn hành động tối ưu mà không cần thăm dò."
+            ],
+            "explanation": "Dấu vết đủ điều kiện (eligibility traces) trong Sarsa(λ) (và TD(λ) nói chung) là một cơ chế để phân bổ tín dụng cho các cặp trạng thái-hành động đã ghé thăm trong quá khứ. Nó giúp kết nối các cập nhật TD với nhiều bước thời gian trước đó, cho phép thông tin phần thưởng lan truyền ngược nhanh hơn qua chuỗi trạng thái-hành động, từ đó tăng tốc độ hội tụ của thuật toán. Nó là sự tổng quát hóa của các phương pháp n-bước TD."
+        },
+        {
+            "question": "Sự khác biệt chính trong công thức cập nhật giữa Q-Learning và Sarsa nằm ở đâu?",
+            "answer": "Q-Learning sử dụng max_a Q(S',a) để ước tính giá trị hành động tiếp theo (off-policy), trong khi Sarsa sử dụng Q(S',A') (on-policy).",
+            "distractors": [
+                "Q-Learning không sử dụng hệ số chiết khấu γ, còn Sarsa thì có.",
+                "Q-Learning chỉ cập nhật khi nhận được phần thưởng dương, còn Sarsa cập nhật mọi lúc.",
+                "Q-Learning yêu cầu mô hình môi trường, còn Sarsa thì không."
+            ],
+            "explanation": "Điểm khác biệt cốt lõi giữa Q-Learning và Sarsa là cách chúng ước tính giá trị của trạng thái tiếp theo. Sarsa là thuật toán on-policy, nó sử dụng giá trị Q(S',A') của hành động A' được chọn bởi chính sách hiện tại (thường là ε-greedy) để cập nhật Q(S,A). Ngược lại, Q-Learning là thuật toán off-policy, nó sử dụng giá trị tối đa max_a Q(S',a) của tất cả các hành động có thể có ở trạng thái S' để cập nhật Q(S,A), bất kể hành động nào thực sự được chọn bởi chính sách hành vi. Điều này cho phép Q-Learning học chính sách tối ưu trong khi vẫn thăm dò."
+        },
+        {
+            "question": "Tại sao việc sử dụng hàm giá trị hành động Q(s,a) lại cần thiết cho Cải thiện chính sách tham lam (Greedy Policy Improvement) trong bối cảnh kiểm soát không mô hình?",
+            "answer": "Vì Q(s,a) cho phép chọn hành động tốt nhất mà không cần biết mô hình chuyển đổi trạng thái của môi trường, điều mà V(s) không thể làm được.",
+            "distractors": [
+                "Vì Q(s,a) luôn hội tụ nhanh hơn V(s).",
+                "Vì V(s) chỉ có thể được sử dụng trong các môi trường có mô hình MDP đã biết.",
+                "Vì Q(s,a) giúp giảm thiểu nhu cầu thăm dò trong quá trình học."
+            ],
+            "explanation": "Trong kiểm soát không mô hình, chúng ta không có thông tin về mô hình chuyển đổi trạng thái P(s',r|s,a). Để thực hiện cải thiện chính sách tham lam (chọn hành động a' sao cho Q(s,a') là lớn nhất), chúng ta cần biết giá trị của từng hành động trong một trạng thái cụ thể. Hàm giá trị trạng thái V(s) chỉ cho biết giá trị của trạng thái, nhưng không trực tiếp cho biết hành động nào là tốt nhất để thực hiện từ trạng thái đó mà không có mô hình. Hàm Q(s,a) cung cấp thông tin trực tiếp về giá trị của việc thực hiện hành động a trong trạng thái s, cho phép lựa chọn hành động tham lam mà không cần mô hình."
+        },
+        {
+            "question": "Điều kiện nào là cần thiết để Kiểm soát Monte-Carlo GLIE (Greedy in the Limit with Infinite Exploration) hội tụ về hàm giá trị hành động tối ưu q*(s,a)?",
+            "answer": "Mỗi cặp trạng thái-hành động phải được ghé thăm vô hạn lần, và chính sách phải trở nên tham lam trong giới hạn (ε giảm dần về 0).",
+            "distractors": [
+                "Chính sách thăm dò phải luôn là chính sách tham lam ngay từ đầu.",
+                "Môi trường phải là môi trường xác định (deterministic).",
+                "Hệ số chiết khấu γ phải bằng 0."
+            ],
+            "explanation": "Để Kiểm soát Monte-Carlo GLIE hội tụ về q*(s,a), hai điều kiện chính phải được thỏa mãn: 1) GLIE (Greedy in the Limit with Infinite Exploration): Mỗi cặp trạng thái-hành động (s,a) phải được ghé thăm vô hạn lần để đảm bảo thăm dò đầy đủ. 2) Chính sách phải trở nên tham lam trong giới hạn: Tham số thăm dò ε phải giảm dần về 0 theo thời gian, đảm bảo rằng khi học đủ, tác nhân sẽ ưu tiên khai thác các hành động tốt nhất đã biết. Điều này cho phép thuật toán cân bằng giữa thăm dò và khai thác, cuối cùng hội tụ về chính sách tối ưu."
+        }
+    ]
+}

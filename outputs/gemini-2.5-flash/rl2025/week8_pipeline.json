@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Trong bối cảnh ra quyết định trực tuyến giữa khám phá và khai thác, thuật ngữ nào mô tả việc đưa ra quyết định tối ưu nhất dựa trên thông tin hiện có tại thời điểm đó?",
+      "answer": "Khai thác",
+      "distractors": [
+        "Khám phá",
+        "Cân bằng",
+        "Tối ưu hóa"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Khai thác**. Trong bối cảnh ra quyết định trực tuyến giữa khám phá và khai thác, \"khai thác\" đề cập đến việc đưa ra quyết định tối ưu nhất dựa trên thông tin hiện có tại thời điểm đó. Mục tiêu của khai thác là tận dụng kiến thức hiện có để tối đa hóa phần thưởng ngay lập tức.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Khám phá:** \"Khám phá\" là quá trình thu thập thêm thông tin để có khả năng đưa ra quyết định tốt hơn trong tương lai, ngay cả khi điều đó có nghĩa là không đưa ra quyết định tối ưu nhất ngay lập tức. Nó tập trung vào việc học hỏi và tìm kiếm các lựa chọn mới, trái ngược với việc sử dụng thông tin hiện có.\n*   **Cân bằng:** \"Cân bằng\" đề cập đến hành động tìm kiếm sự cân bằng giữa khám phá và khai thác. Nó không phải là một hành động ra quyết định cụ thể mà là một chiến lược để quản lý cả hai khía cạnh.\n*   **Tối ưu hóa:** Mặc dù \"tối ưu hóa\" có liên quan đến việc tìm kiếm giải pháp tốt nhất, nhưng trong bối cảnh khám phá và khai thác, nó là một mục tiêu rộng hơn. \"Khai thác\" là phương pháp cụ thể để đạt được sự tối ưu hóa dựa trên thông tin hiện có, trong khi \"tối ưu hóa\" có thể bao gồm cả việc khám phá để tìm ra giải pháp tối ưu hơn trong dài hạn.\n",
+      "topic": {
+        "name": "Khái niệm Cốt lõi về Khám phá và Khai thác",
+        "description": "Chủ đề này kiểm tra hiểu biết cơ bản về thế lưỡng nan khám phá so với khai thác trong việc ra quyết định trực tuyến. Học sinh nên có khả năng phân biệt giữa việc đưa ra quyết định tốt nhất dựa trên thông tin hiện có (khai thác) và thu thập thêm thông tin (khám phá) để đưa ra quyết định tốt hơn trong dài hạn.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Mục tiêu chính của thuật toán Multi-Armed Bandit (MAB) là gì?",
+      "answer": "Tối đa hóa phần thưởng tích lũy.",
+      "distractors": [
+        "Tìm ra hành động tốt nhất duy nhất.",
+        "Giảm thiểu sự hối tiếc ngay lập tức.",
+        "Cân bằng giữa khám phá và khai thác."
+      ],
+      "explanation": "Mục tiêu chính của thuật toán Multi-Armed Bandit (MAB) là **tối đa hóa phần thưởng tích lũy**. Điều này có nghĩa là trong suốt quá trình thực hiện, thuật toán cố gắng chọn các hành động (cánh tay) mang lại tổng phần thưởng cao nhất có thể. Mặc dù việc cân bằng giữa khám phá (thử các hành động mới) và khai thác (chọn hành động đã biết là tốt nhất) là một chiến lược quan trọng để đạt được mục tiêu này, nhưng bản thân nó không phải là mục tiêu cuối cùng mà là một phương tiện để đạt được mục tiêu.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Tìm ra hành động tốt nhất duy nhất:** Mặc dù MAB cố gắng tìm ra các hành động tốt, nhưng mục tiêu chính không phải là chỉ tìm ra một hành động tốt nhất duy nhất và dừng lại. Thay vào đó, nó tập trung vào việc liên tục chọn các hành động để tối đa hóa tổng phần thưởng theo thời gian.\n*   **Giảm thiểu sự hối tiếc ngay lập tức:** MAB không chỉ tập trung vào việc giảm thiểu sự hối tiếc (sự khác biệt giữa phần thưởng nhận được và phần thưởng tối đa có thể nhận được) ở mỗi bước riêng lẻ. Mục tiêu là tối ưu hóa phần thưởng tích lũy trong dài hạn, điều này có thể đòi hỏi phải chấp nhận một số sự hối tiếc ngắn hạn để khám phá các hành động tiềm năng tốt hơn.\n*   **Cân bằng giữa khám phá và khai thác:** Đây là một thách thức cốt lõi và là một chiến lược quan trọng trong các thuật toán MAB, nhưng nó không phải là mục tiêu cuối cùng. Việc cân bằng giữa khám phá (thử các hành động mới để tìm hiểu về chúng) và khai thác (chọn hành động đã biết là tốt nhất) là cần thiết để đạt được mục tiêu tối đa hóa phần thưởng tích lũy, nhưng bản thân nó không phải là mục tiêu chính.\n",
+      "topic": {
+        "name": "Giới thiệu Thuật toán Multi-Armed Bandit (MAB)",
+        "description": "Chủ đề này tập trung vào định nghĩa của Multi-Armed Bandit (MAB) và mục tiêu của nó. Học sinh cần hiểu MAB là một bộ của các hành động và phân phối phần thưởng không xác định, với mục tiêu là tối đa hóa phần thưởng tích lũy, đặc biệt là các hành động được chọn ở mỗi bước và cách phần thưởng được tạo ra.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bài toán Multi-Armed Bandit (MAB), thuật toán ε-Greedy thể hiện sự cải tiến đáng kể so với thuật toán Tham lam đơn thuần thông qua cơ chế nào để giải quyết vấn đề bị khóa vào một hành động không tối ưu?",
+      "answer": "Thuật toán ε-Greedy giới thiệu yếu tố khám phá ngẫu nhiên với một xác suất ε.",
+      "distractors": [
+        "Thuật toán ε-Greedy sử dụng một hàm thưởng phức tạp hơn để đánh giá các hành động.",
+        "Thuật toán ε-Greedy giới thiệu một cơ chế phạt cho việc chọn các hành động không tối ưu.",
+        "Thuật toán ε-Greedy duy trì một bộ nhớ về các hành động đã chọn trước đó để tránh lặp lại."
+      ],
+      "explanation": "Thuật toán ε-Greedy cải thiện đáng kể so với thuật toán Tham lam đơn thuần bằng cách giới thiệu yếu tố khám phá ngẫu nhiên với một xác suất ε. Điều này có nghĩa là, với xác suất (1-ε), thuật toán sẽ chọn hành động có giá trị ước tính tốt nhất (khai thác), nhưng với xác suất ε, nó sẽ chọn một hành động ngẫu nhiên (khám phá). Cơ chế khám phá ngẫu nhiên này là chìa khóa để giải quyết vấn đề bị khóa vào một hành động không tối ưu, vì nó cho phép thuật toán thỉnh thoảng thử các hành động khác ngay cả khi chúng hiện không được coi là tốt nhất, từ đó có cơ hội tìm thấy các hành động tối ưu hơn mà thuật toán Tham lam có thể bỏ qua.\n\nCác yếu tố gây nhiễu là không chính xác vì:\n- **Thuật toán ε-Greedy sử dụng một hàm thưởng phức tạp hơn để đánh giá các hành động.** Điều này không đúng. Cả thuật toán Tham lam và ε-Greedy đều sử dụng cùng một cách tiếp cận cơ bản để ước tính giá trị của các hành động (thường là trung bình của các phần thưởng đã nhận). Sự khác biệt nằm ở cách chúng sử dụng các ước tính này để chọn hành động, chứ không phải ở cách chúng tính toán phần thưởng.\n- **Thuật toán ε-Greedy giới thiệu một cơ chế phạt cho việc chọn các hành động không tối ưu.** Điều này không phải là cơ chế chính của ε-Greedy. Thuật toán không áp dụng hình phạt rõ ràng cho việc chọn các hành động không tối ưu; thay vào đó, nó dựa vào việc khám phá để tìm ra các hành động tốt hơn và giảm thiểu việc chọn các hành động kém hiệu quả theo thời gian.\n- **Thuật toán ε-Greedy duy trì một bộ nhớ về các hành động đã chọn trước đó để tránh lặp lại.** Mặc dù ε-Greedy theo dõi các phần thưởng đã nhận để cập nhật ước tính giá trị của các hành động, nhưng mục đích chính của nó không phải là để tránh lặp lại các hành động cụ thể. Thay vào đó, nó sử dụng các ước tính này để đưa ra quyết định khai thác hoặc khám phá, và việc lặp lại một hành động là hoàn toàn có thể xảy ra nếu nó được coi là tối ưu hoặc được chọn ngẫu nhiên trong giai đoạn khám phá.",
+      "topic": {
+        "name": "So sánh Thuật toán Tham lam và ε-Greedy",
+        "description": "Chủ đề này kiểm tra sự khác biệt giữa thuật toán Tham lam đơn giản và thuật toán ε-Greedy để giải bài toán MAB. Học sinh nên hiểu rằng thuật toán Tham lam có thể bị khóa vào một hành động không tối ưu, trong khi ε-Greedy giới thiệu khám phá ngẫu nhiên với xác suất ε để giảm thiểu hối tiếc, đồng thời nhận ra giới hạn của cả hai (tổng hối tiếc tuyến tính).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh Học tăng cường (RL) khi áp dụng nguyên tắc khởi tạo lạc quan, tác nhân được khuyến khích hành động như thế nào trong các giai đoạn đầu của quá trình học?",
+      "answer": "Tác nhân sẽ ưu tiên khám phá các hành động và trạng thái chưa biết để tìm kiếm phần thưởng tiềm năng.",
+      "distractors": [
+        "Tác nhân sẽ tập trung vào việc khai thác các hành động đã biết để tối đa hóa phần thưởng ngay lập tức.",
+        "Tác nhân sẽ chọn ngẫu nhiên các hành động mà không có bất kỳ chiến lược ưu tiên nào.",
+        "Tác nhân sẽ ưu tiên các hành động dẫn đến trạng thái có giá trị phần thưởng âm thấp nhất."
+      ],
+      "explanation": "Trong bối cảnh Học tăng cường (RL) khi áp dụng nguyên tắc khởi tạo lạc quan, tác nhân được khuyến khích hành động như thế nào trong các giai đoạn đầu của quá trình học?\n\n**Giải thích:**\n\nCâu trả lời đúng là **\"Tác nhân sẽ ưu tiên khám phá các hành động và trạng thái chưa biết để tìm kiếm phần thưởng tiềm năng.\"** Nguyên tắc khởi tạo lạc quan (Optimistic Initialization) trong RL hoạt động bằng cách gán các giá trị ban đầu cao một cách giả tạo cho các cặp trạng thái-hành động (Q-values) hoặc các ước tính giá trị khác. Điều này khiến tác nhân tin rằng có những phần thưởng lớn tiềm năng ở những khu vực chưa được khám phá. Do đó, để đạt được những phần thưởng \"được hứa hẹn\" này, tác nhân sẽ bị thúc đẩy để thử các hành động và khám phá các trạng thái mà nó chưa từng trải nghiệm hoặc chưa được đánh giá cao. Mục tiêu là để tác nhân khám phá môi trường một cách rộng rãi trong giai đoạn đầu, thu thập thông tin về các phần thưởng thực tế và các động lực của môi trường, trước khi tập trung vào việc khai thác các hành động đã biết.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **\"Tác nhân sẽ tập trung vào việc khai thác các hành động đã biết để tối đa hóa phần thưởng ngay lập tức.\"** Điều này mô tả hành vi khai thác (exploitation), trái ngược với mục đích của khởi tạo lạc quan. Khởi tạo lạc quan được thiết kế để chống lại xu hướng khai thác quá sớm bằng cách khuyến khích khám phá (exploration). Nếu tác nhân chỉ tập trung vào các hành động đã biết, nó có thể bỏ lỡ các hành động tối ưu hơn ở những khu vực chưa được khám phá.\n*   **\"Tác nhân sẽ chọn ngẫu nhiên các hành động mà không có bất kỳ chiến lược ưu tiên nào.\"** Mặc dù khám phá có thể liên quan đến một mức độ ngẫu nhiên, khởi tạo lạc quan không phải là việc chọn hành động hoàn toàn ngẫu nhiên. Thay vào đó, nó là một chiến lược có chủ đích để hướng dẫn tác nhân khám phá các hành động và trạng thái chưa biết bằng cách làm cho chúng có vẻ hấp dẫn hơn (do giá trị khởi tạo cao). Việc chọn ngẫu nhiên hoàn toàn không có mục đích có thể kém hiệu quả hơn trong việc tìm kiếm các phần thưởng tiềm năng.\n*   **\"Tác nhân sẽ ưu tiên các hành động dẫn đến trạng thái có giá trị phần thưởng âm thấp nhất.\"** Điều này ngụ ý rằng tác nhân đang cố gắng tránh các hình phạt hoặc giảm thiểu tổn thất, điều này không phải là mục tiêu chính của khởi tạo lạc quan. Khởi tạo lạc quan tập trung vào việc tìm kiếm phần thưởng tiềm năng cao bằng cách khuyến khích khám phá, chứ không phải chỉ đơn thuần là tránh các kết quả tiêu cực.",
+      "topic": {
+        "name": "Ứng dụng Khởi tạo lạc quan trong RL",
+        "description": "Chủ đề này đánh giá cách nguyên tắc khởi tạo lạc quan được áp dụng trong Học tăng cường (RL), cả trong các phương pháp không mô hình (ví dụ: khởi tạo Q(s, a) cao) và dựa trên mô hình (ví dụ: xây dựng MDP lạc quan). Cần kết nối với khái niệm Khởi tạo lạc quan từ tuần 8 và ảnh hưởng của nó (khuyến khích khám phá ban đầu). Đây cũng liên quan đến khởi tạo giá trị trong Lập trình động (Tuần 2) và Học tăng cường không mô hình (Tuần 4).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong thuật toán UCB1, thành phần mở rộng được suy ra từ Bất đẳng thức Hoeffding có vai trò chính như thế nào trong việc định hình hành vi khám phá của thuật toán, đặc biệt liên quan đến tần suất kéo của một cánh tay và tổng số lần kéo toàn cục?",
+      "answer": "Thành phần này ưu tiên khám phá các cánh tay có độ không chắc chắn cao (số lần kéo thấp) bằng cách tăng đáng kể giới hạn trên của chúng, đồng thời giá trị này giảm khi số lần kéo cánh tay đó tăng lên.",
+      "distractors": [
+        "Thành phần này ưu tiên khai thác các cánh tay đã biết bằng cách giảm giới hạn trên của chúng, đảm bảo rằng các cánh tay có hiệu suất cao được chọn thường xuyên hơn.",
+        "Nó điều chỉnh tốc độ học tập của thuật toán, đảm bảo rằng các ước tính giá trị cánh tay hội tụ nhanh chóng hơn khi số lần kéo tăng lên.",
+        "Thành phần này chủ yếu ngăn chặn việc chọn các cánh tay có giá trị trung bình thấp bằng cách đặt giới hạn trên của chúng xuống mức tối thiểu, buộc thuật toán phải khám phá các cánh tay khác."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Thành phần này ưu tiên khám phá các cánh tay có độ không chắc chắn cao (số lần kéo thấp) bằng cách tăng đáng kể giới hạn trên của chúng, đồng thời giá trị này giảm khi số lần kéo cánh tay đó tăng lên.\" bởi vì trong thuật toán UCB1, thành phần mở rộng (thường là $\\sqrt{\\frac{2 \\ln N_t}{n_i}}$) được suy ra từ Bất đẳng thức Hoeffding. Thành phần này được thêm vào giá trị trung bình ước tính của một cánh tay ($Q_i$) để tạo ra Giới hạn tin cậy trên (UCB). Mục đích của nó là định lượng sự không chắc chắn về giá trị thực của cánh tay. Khi một cánh tay có số lần kéo ($n_i$) thấp, thành phần mở rộng này sẽ lớn, làm tăng đáng kể UCB của cánh tay đó. Điều này khuyến khích thuật toán chọn các cánh tay ít được khám phá hơn (có độ không chắc chắn cao), thúc đẩy hành vi khám phá. Khi một cánh tay được kéo nhiều lần hơn, $n_i$ tăng lên, làm cho thành phần mở rộng giảm đi, phản ánh rằng chúng ta có ước tính đáng tin cậy hơn về giá trị của cánh tay đó. Do đó, nó cân bằng giữa việc khám phá các cánh tay chưa biết và khai thác các cánh tay đã biết.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **\"Thành phần này ưu tiên khai thác các cánh tay đã biết bằng cách giảm giới hạn trên của chúng, đảm bảo rằng các cánh tay có hiệu suất cao được chọn thường xuyên hơn.\"** Điều này không chính xác. Thành phần mở rộng được thiết kế để *tăng* giới hạn trên của các cánh tay chưa được khám phá nhiều, không phải để giảm giới hạn trên của các cánh tay đã biết. Việc giảm giới hạn trên sẽ làm giảm khả năng được chọn của chúng, đi ngược lại mục tiêu khám phá. Khai thác được xử lý bởi thành phần giá trị trung bình ước tính, không phải thành phần mở rộng.\n*   **\"Nó điều chỉnh tốc độ học tập của thuật toán, đảm bảo rằng các ước tính giá trị cánh tay hội tụ nhanh chóng hơn khi số lần kéo tăng lên.\"** Điều này không phải là vai trò chính của thành phần mở rộng. Tốc độ hội tụ của các ước tính giá trị cánh tay chủ yếu được xác định bởi bản chất của vấn đề (ví dụ: phương sai phần thưởng) và cách các ước tính được cập nhật (ví dụ: trung bình mẫu). Thành phần mở rộng tập trung vào việc cân bằng khám phá/khai thác bằng cách điều chỉnh *ưu tiên lựa chọn* dựa trên sự không chắc chắn, chứ không phải trực tiếp điều chỉnh tốc độ học tập của các ước tính giá trị.\n*   **\"Thành phần này chủ yếu ngăn chặn việc chọn các cánh tay có giá trị trung bình thấp bằng cách đặt giới hạn trên của chúng xuống mức tối thiểu, buộc thuật toán phải khám phá các cánh tay khác.\"** Điều này không chính xác. Thành phần mở rộng luôn là một giá trị dương và được *cộng* vào giá trị trung bình ước tính. Do đó, nó không thể đặt giới hạn trên xuống mức tối thiểu. Vai trò của nó là tăng giới hạn trên, đặc biệt là đối với các cánh tay ít được khám phá, để khuyến khích khám phá, chứ không phải để ngăn chặn việc chọn các cánh tay có giá trị thấp bằng cách giảm UCB của chúng. Các cánh tay có giá trị trung bình thấp sẽ có UCB thấp hơn do giá trị trung bình ước tính thấp, nhưng thành phần mở rộng không phải là cơ chế chính để ngăn chặn việc chọn chúng.",
+      "topic": {
+        "name": "Tính toán chỉ số UCB1 bằng Bất đẳng thức Hoeffding",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc áp dụng Bất đẳng thức Hoeffding để tính toán Giới hạn tin cậy trên (UCB) cho giá trị hành động trong ngữ cảnh MAB. Học sinh cần hiểu ý nghĩa của UCB (lạc quan khi đối mặt với sự không chắc chắn) và cách nó được sử dụng trong thuật toán UCB1 để cân bằng khám phá/khai thác một cách hiệu quả, dẫn đến tổng hối tiếc logarit. Liên quan đến các kỹ thuật ước lượng giá trị từ Tuần 3 và 4.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong các bài toán Multi-Armed Bandit (MAB), mục tiêu chính liên quan đến khái niệm tổng hối tiếc (Total Regret) là gì?",
+      "answer": "Giảm thiểu tổng hối tiếc.",
+      "distractors": [
+        "Tối đa hóa tổng hối tiếc.",
+        "Đảm bảo tổng hối tiếc luôn bằng không.",
+        "Giảm thiểu số lần chọn sai cánh tay."
+      ],
+      "explanation": "Trong các bài toán Multi-Armed Bandit (MAB), mục tiêu chính là **giảm thiểu tổng hối tiếc**. Hối tiếc (regret) là thước đo sự khác biệt giữa phần thưởng tích lũy mà một thuật toán đạt được và phần thưởng tối ưu có thể đạt được nếu luôn chọn cánh tay tốt nhất. Do đó, để đạt được hiệu suất tốt nhất, thuật toán MAB cần phải giảm thiểu sự khác biệt này, tức là giảm thiểu tổng hối tiếc.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Tối đa hóa tổng hối tiếc:** Tối đa hóa tổng hối tiếc có nghĩa là thuật toán đang cố gắng chọn các cánh tay kém hiệu quả nhất, dẫn đến phần thưởng tích lũy thấp nhất có thể. Điều này hoàn toàn trái ngược với mục tiêu của MAB.\n*   **Đảm bảo tổng hối tiếc luôn bằng không:** Trong hầu hết các kịch bản MAB thực tế, việc đảm bảo tổng hối tiếc luôn bằng không là không thể. Điều này đòi hỏi thuật toán phải biết trước cánh tay tối ưu và luôn chọn nó, điều này mâu thuẫn với bản chất của bài toán khám phá/khai thác (exploration/exploitation tradeoff). Ngay cả các thuật toán tối ưu cũng chỉ có thể giảm thiểu hối tiếc đến một giới hạn dưới nhất định (như Định lý Lai và Robbins đã chỉ ra), chứ không phải bằng không.\n*   **Giảm thiểu số lần chọn sai cánh tay:** Mặc dù việc giảm thiểu số lần chọn sai cánh tay có liên quan đến việc giảm hối tiếc, nhưng nó không phải là mục tiêu chính. Mục tiêu chính là giảm thiểu tổng hối tiếc, vốn tính đến cả mức độ \"sai\" của mỗi lựa chọn (tức là sự khác biệt về phần thưởng so với cánh tay tối ưu), chứ không chỉ đơn thuần là số lượng lựa chọn sai. Một lựa chọn sai với phần thưởng gần bằng cánh tay tối ưu sẽ gây ra ít hối tiếc hơn một lựa chọn sai với phần thưởng rất thấp.\n",
+      "topic": {
+        "name": "Mối quan hệ Regret và Lai và Robbins",
+        "description": "Chủ đề này tập trung vào khái niệm hối tiếc (regret) và Tổng hối tiếc trong MAB, bao gồm cả giới hạn dưới lý thuyết của Định lý Lai và Robbins. Học sinh nên hiểu rằng mục tiêu của MAB là giảm thiểu tổng hối tiếc và điều gì tạo nên giới hạn dưới tiệm cận logarit của hối tiếc cho bất kỳ thuật toán nào.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Điểm khác biệt cốt lõi nào trong cách tiếp cận của Thompson Sampling giúp nó đạt được giới hạn dưới của Lai và Robbins, khi so sánh với thuật toán UCB?",
+      "answer": "Thompson Sampling tận dụng phân phối hậu nghiệm và kiến thức tiên nghiệm để lấy mẫu hành động, khác với UCB dựa trên đảm bảo tin cậy.",
+      "distractors": [
+        "Thompson Sampling ưu tiên khám phá hơn khai thác bằng cách luôn chọn hành động ngẫu nhiên, trong khi UCB cân bằng chúng một cách có hệ thống.",
+        "Thompson Sampling đạt được giới hạn dưới bằng cách sử dụng một hàm thưởng cố định, không thay đổi theo thời gian, khác với UCB điều chỉnh thưởng động.",
+        "Thompson Sampling dựa vào việc ước tính trực tiếp giá trị trung bình của phần thưởng, trong khi UCB sử dụng các khoảng tin cậy để xác định hành động tốt nhất."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là \"Thompson Sampling tận dụng phân phối hậu nghiệm và kiến thức tiên nghiệm để lấy mẫu hành động, khác với UCB dựa trên đảm bảo tin cậy.\" là chính xác vì nó nêu bật sự khác biệt cơ bản trong cách tiếp cận của hai thuật toán. Thompson Sampling (TS) là một thuật toán Bayesian, sử dụng phân phối hậu nghiệm của các tham số phần thưởng (ví dụ: xác suất thành công của mỗi cánh tay trong bài toán đa tay cướp biển Bernoulli) để lấy mẫu một giá trị cho mỗi cánh tay và sau đó chọn cánh tay có giá trị mẫu cao nhất. Cách tiếp cận này tự nhiên kết hợp cả khám phá (do sự ngẫu nhiên trong việc lấy mẫu từ phân phối hậu nghiệm) và khai thác (do chọn cánh tay tốt nhất dựa trên các mẫu hiện tại). Kiến thức tiên nghiệm được tích hợp vào phân phối tiên nghiệm ban đầu, sau đó được cập nhật thành phân phối hậu nghiệm khi có thêm dữ liệu. Ngược lại, thuật toán Upper Confidence Bound (UCB) dựa trên việc xây dựng các khoảng tin cậy cho giá trị trung bình của phần thưởng của mỗi cánh tay và chọn cánh tay có giới hạn trên của khoảng tin cậy cao nhất. Giới hạn trên này là một đảm bảo tin cậy, cân bằng giữa ước tính phần thưởng trung bình và sự không chắc chắn về ước tính đó. Việc TS sử dụng phân phối hậu nghiệm cho phép nó đạt được giới hạn dưới của Lai và Robbins, vốn là một giới hạn lý thuyết về hiệu suất tối ưu trong bài toán đa tay cướp biển, bằng cách tích hợp thông tin một cách hiệu quả hơn.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Thompson Sampling ưu tiên khám phá hơn khai thác bằng cách luôn chọn hành động ngẫu nhiên, trong khi UCB cân bằng chúng một cách có hệ thống.** Điều này không chính xác. Thompson Sampling không \"luôn chọn hành động ngẫu nhiên\" theo nghĩa ngẫu nhiên hoàn toàn; nó lấy mẫu từ phân phối hậu nghiệm và chọn cánh tay tốt nhất dựa trên mẫu đó. Cách tiếp cận này tự nhiên cân bằng khám phá và khai thác. UCB cũng cân bằng chúng một cách có hệ thống thông qua các khoảng tin cậy của nó.\n*   **Thompson Sampling đạt được giới hạn dưới bằng cách sử dụng một hàm thưởng cố định, không thay đổi theo thời gian, khác với UCB điều chỉnh thưởng động.** Điều này không chính xác. Cả Thompson Sampling và UCB đều hoạt động trong các môi trường mà phần thưởng có thể là ngẫu nhiên nhưng phân phối cơ bản của chúng thường được giả định là cố định (stationary) trong bài toán đa tay cướp biển cổ điển. Không có thuật toán nào sử dụng \"hàm thưởng cố định\" theo nghĩa là phần thưởng luôn giống nhau; chúng đều ước tính và phản ứng với các phần thưởng ngẫu nhiên. Sự khác biệt không nằm ở việc \"điều chỉnh thưởng động\".\n*   **Thompson Sampling dựa vào việc ước tính trực tiếp giá trị trung bình của phần thưởng, trong khi UCB sử dụng các khoảng tin cậy để xác định hành động tốt nhất.** Điều này không hoàn toàn chính xác. Thompson Sampling không ước tính trực tiếp giá trị trung bình mà thay vào đó lấy mẫu từ phân phối xác suất của giá trị trung bình (hoặc các tham số liên quan). UCB thực sự sử dụng các khoảng tin cậy, nhưng sự khác biệt cốt lõi của TS là cách nó sử dụng toàn bộ phân phối hậu nghiệm để lấy mẫu, thay vì chỉ dựa vào một giới hạn trên của khoảng tin cậy.",
+      "topic": {
+        "name": "Thompson Sampling và Ưu điểm so với UCB",
+        "description": "Chủ đề này đánh giá sự hiểu biết về Thompson Sampling như một thuật toán Khớp xác suất trong Bayesian Bandits, đặc biệt là cách nó sử dụng phân phối hậu nghiệm. Học sinh cần phân biệt Thompson Sampling với UCB, nhấn mạnh cách TS đạt được giới hạn dưới của Lai và Robbins và tận dụng kiến thức tiên nghiệm, một cách tiếp cận khác với UCB dựa trên đảm bảo tin cậy.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong khung Contextual Bandits, việc sử dụng hồi quy tuyến tính làm Xấp xỉ hàm giá trị chủ yếu phục vụ mục đích gì khi gặp các ngữ cảnh mới?",
+      "answer": "Tổng quát hóa hàm giá trị hành động từ các ngữ cảnh đã thấy để dự đoán cho các ngữ cảnh mới chưa từng xuất hiện.",
+      "distractors": [
+        "Giảm thiểu sự cần thiết của việc khám phá các hành động mới trong các ngữ cảnh đã biết.",
+        "Đảm bảo rằng các hành động được chọn luôn tối ưu cho mọi ngữ cảnh, kể cả những ngữ cảnh chưa thấy.",
+        "Chỉ đơn thuần là lưu trữ các cặp ngữ cảnh-hành động đã quan sát để tra cứu trực tiếp."
+      ],
+      "explanation": "Trong khung Contextual Bandits, việc sử dụng hồi quy tuyến tính làm Xấp xỉ hàm giá trị chủ yếu phục vụ mục đích **Tổng quát hóa hàm giá trị hành động từ các ngữ cảnh đã thấy để dự đoán cho các ngữ cảnh mới chưa từng xuất hiện.** Đây là mục tiêu chính của việc sử dụng xấp xỉ hàm giá trị trong Contextual Bandits. Hồi quy tuyến tính cho phép mô hình học một mối quan hệ giữa các đặc trưng của ngữ cảnh và giá trị của các hành động. Khi một ngữ cảnh mới xuất hiện mà mô hình chưa từng thấy trước đây, nó có thể sử dụng mối quan hệ đã học này để ước tính giá trị của các hành động trong ngữ cảnh mới đó, từ đó đưa ra quyết định mà không cần phải khám phá lại từ đầu. Điều này mở rộng khả năng của Contextual Bandits vượt ra ngoài các bài toán Multi-Armed Bandit truyền thống, nơi mỗi ngữ cảnh (hoặc trạng thái) được coi là độc lập.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Giảm thiểu sự cần thiết của việc khám phá các hành động mới trong các ngữ cảnh đã biết.** Mục đích chính của hồi quy tuyến tính không phải là giảm thiểu khám phá trong các ngữ cảnh đã biết. Mặc dù việc học một hàm giá trị có thể giúp đưa ra quyết định tốt hơn, nhưng khám phá vẫn là một phần quan trọng để cải thiện ước tính hàm giá trị, đặc biệt là trong các ngữ cảnh đã biết nhưng chưa được khám phá đầy đủ. Hơn nữa, vai trò chính của hồi quy là tổng quát hóa cho các ngữ cảnh *mới*, không phải chỉ các ngữ cảnh *đã biết*.\n*   **Đảm bảo rằng các hành động được chọn luôn tối ưu cho mọi ngữ cảnh, kể cả những ngữ cảnh chưa thấy.** Hồi quy tuyến tính, hoặc bất kỳ phương pháp xấp xỉ hàm giá trị nào, không thể đảm bảo rằng các hành động được chọn luôn tối ưu. Nó chỉ cung cấp một ước tính tốt nhất có thể dựa trên dữ liệu đã học. Luôn có khả năng ước tính này không hoàn hảo, đặc biệt là đối với các ngữ cảnh mới hoặc khi có sự không chắc chắn. Việc đảm bảo tối ưu là một mục tiêu rất khó đạt được trong học tăng cường và Contextual Bandits.\n*   **Chỉ đơn thuần là lưu trữ các cặp ngữ cảnh-hành động đã quan sát để tra cứu trực tiếp.** Nếu chỉ lưu trữ và tra cứu trực tiếp, mô hình sẽ không thể xử lý các ngữ cảnh mới chưa từng thấy. Đây là cách tiếp cận của một bảng tra cứu (lookup table), không phải là xấp xỉ hàm giá trị. Hồi quy tuyến tính được sử dụng để học một mô hình có thể tổng quát hóa, chứ không chỉ đơn thuần là ghi nhớ.",
+      "topic": {
+        "name": "Áp dụng Contextual Bandits với Hồi quy Tuyến tính",
+        "description": "Chủ đề này liên kết khái niệm Contextual Bandits từ tuần 8 với việc sử dụng Xấp xỉ hàm giá trị (Tuần 5), cụ thể là Hồi quy tuyến tính, để ước tính hàm giá trị hành động. Học sinh cần hiểu rằng trong CB, hành động được chọn dựa trên ngữ cảnh (trạng thái) và cách hồi quy tuyến tính giúp tổng quát hóa các hành động từ các ngữ cảnh đã thấy sang các ngữ cảnh mới xuất hiện, một phương pháp mở rộng MAB truyền thống.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 8,
+      "course_code": "rl2025"
+    }
+  ]
+}

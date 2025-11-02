@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Đặc điểm cơ bản nào sau đây là đặc trưng quan trọng của Học sâu?",
+      "answer": "Việc học các biểu diễn dữ liệu đa cấp độ",
+      "distractors": [
+        "Sử dụng các thuật toán học có giám sát độc quyền",
+        "Tập trung vào việc học các mô hình tuyến tính đơn giản",
+        "Yêu cầu dữ liệu được gắn nhãn thủ công hoàn toàn"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Việc học các biểu diễn dữ liệu đa cấp độ** vì đây là đặc điểm cốt lõi và phân biệt của Học sâu. Các mô hình Học sâu, đặc biệt là mạng nơ-ron sâu, được thiết kế để tự động học các biểu diễn dữ liệu ngày càng trừu tượng và phức tạp thông qua nhiều lớp (layer). Mỗi lớp học một biểu diễn khác nhau của dữ liệu đầu vào, từ các đặc trưng cấp thấp (như cạnh, góc trong ảnh) đến các đặc trưng cấp cao hơn (như các bộ phận của vật thể, khuôn mặt). Quá trình học biểu diễn đa cấp độ này cho phép các mô hình Học sâu hiểu và trích xuất thông tin có ý nghĩa từ dữ liệu thô một cách hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Sử dụng các thuật toán học có giám sát độc quyền:** Học sâu không chỉ giới hạn ở học có giám sát mà còn bao gồm học không giám sát, học bán giám sát và học tăng cường. Hơn nữa, các thuật toán được sử dụng trong Học sâu không phải là \"độc quyền\" mà thường là các phương pháp đã được nghiên cứu và công bố rộng rãi, mặc dù có nhiều biến thể và cải tiến.\n*   **Tập trung vào việc học các mô hình tuyến tính đơn giản:** Ngược lại, Học sâu nổi tiếng với khả năng học các mối quan hệ phi tuyến tính phức tạp trong dữ liệu. Các mô hình tuyến tính đơn giản không đủ mạnh để nắm bắt được sự phức tạp của dữ liệu thực tế mà Học sâu thường xử lý.\n*   **Yêu cầu dữ liệu được gắn nhãn thủ công hoàn toàn:** Mặc dù học có giám sát trong Học sâu thường yêu cầu dữ liệu được gắn nhãn, nhưng không phải lúc nào cũng là \"hoàn toàn thủ công\". Có nhiều kỹ thuật như học bán giám sát, học không giám sát, hoặc sử dụng các phương pháp gắn nhãn tự động/bán tự động để giảm bớt gánh nặng gắn nhãn thủ công. Hơn nữa, khả năng học biểu diễn là đặc điểm cơ bản của Học sâu, không phụ thuộc hoàn toàn vào việc gắn nhãn thủ công.",
+      "topic": {
+        "name": "Đặc điểm cơ bản của Học sâu",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh trong việc xác định các đặc điểm chính và tính chất cơ bản của Học sâu, bao gồm việc học các biểu diễn dữ liệu đa cấp độ và khả năng thích ứng nhanh chóng. Quiz sẽ tập trung vào các định nghĩa và mô tả khái niệm cốt lõi của lĩnh vực này từ Tuần 7.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong một Mạng nơ-ron nhân tạo (ANN), lớp nào chịu trách nhiệm đưa ra dự đoán hoặc kết quả cuối cùng của mô hình?",
+      "answer": "Lớp đầu ra",
+      "distractors": [
+        "Lớp đầu vào",
+        "Lớp ẩn",
+        "Lớp giữa"
+      ],
+      "explanation": "**Giải thích:**\n\n**Lớp đầu ra** là câu trả lời đúng vì trong một Mạng nơ-ron nhân tạo (ANN), lớp đầu ra là lớp cuối cùng chịu trách nhiệm tạo ra dự đoán hoặc kết quả cuối cùng của mô hình. Các nơ-ron trong lớp này tổng hợp thông tin đã được xử lý qua các lớp trước đó để đưa ra kết quả cuối cùng, có thể là một giá trị số (ví dụ: dự đoán giá nhà) hoặc một phân loại (ví dụ: chó hay mèo).\n\nCác tùy chọn khác không chính xác vì:\n\n*   **Lớp đầu vào** là lớp đầu tiên của ANN, nơi dữ liệu thô được đưa vào mô hình. Nó chỉ đơn thuần nhận dữ liệu và truyền nó đến lớp tiếp theo mà không thực hiện bất kỳ dự đoán nào.\n*   **Lớp ẩn** là các lớp nằm giữa lớp đầu vào và lớp đầu ra. Chúng thực hiện các phép tính phức tạp và trích xuất các đặc trưng từ dữ liệu đầu vào, nhưng chúng không trực tiếp đưa ra dự đoán cuối cùng. Một ANN có thể có một hoặc nhiều lớp ẩn.\n*   **Lớp giữa** không phải là một thuật ngữ tiêu chuẩn được sử dụng để mô tả một lớp cụ thể trong cấu trúc ANN. Nó có thể được hiểu là lớp ẩn, nhưng thuật ngữ chính xác và phổ biến hơn là \"lớp ẩn\". Do đó, nó không phải là câu trả lời chính xác cho lớp chịu trách nhiệm đưa ra dự đoán cuối cùng.\n",
+      "topic": {
+        "name": "Cấu trúc Mạng nơ-ron nhân tạo",
+        "description": "Chủ đề này đánh giá sự hiểu biết của học sinh về cấu trúc cơ bản của Mạng nơ-ron nhân tạo (ANN), bao gồm việc xác định các lớp đầu vào, lớp ẩn, lớp đầu ra và vai trò của các nút (nơ-ron) trong mỗi lớp. Quiz có thể hỏi về số lượng lớp hoặc chức năng của một lớp cụ thể theo định dạng từ Tuần 7.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong mạng nơ-ron, mục đích chính của việc sử dụng hàm kích hoạt phi tuyến tính là gì?",
+      "answer": "Cho phép mạng học các mối quan hệ phi tuyến phức tạp.",
+      "distractors": [
+        "Giúp mạng hội tụ nhanh hơn trong quá trình huấn luyện.",
+        "Ngăn chặn hiện tượng quá khớp bằng cách giới thiệu nhiễu.",
+        "Đảm bảo rằng các giá trị đầu ra luôn nằm trong một phạm vi nhất định."
+      ],
+      "explanation": "Mục đích chính của việc sử dụng hàm kích hoạt phi tuyến tính trong mạng nơ-ron là **cho phép mạng học các mối quan hệ phi tuyến phức tạp**. Nếu chỉ sử dụng các hàm kích hoạt tuyến tính, toàn bộ mạng nơ-ron, bất kể có bao nhiêu lớp, sẽ chỉ tương đương với một mô hình hồi quy tuyến tính đơn giản. Điều này là do một chuỗi các phép biến đổi tuyến tính vẫn là một phép biến đổi tuyến tính. Bằng cách giới thiệu các hàm kích hoạt phi tuyến tính, mạng có khả năng học và biểu diễn các ánh xạ phức tạp, phi tuyến tính từ đầu vào đến đầu ra, điều cần thiết để giải quyết hầu hết các vấn đề trong thế giới thực.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Giúp mạng hội tụ nhanh hơn trong quá trình huấn luyện:** Mặc dù một số hàm kích hoạt có thể ảnh hưởng đến tốc độ hội tụ (ví dụ: ReLU có thể giúp giảm vấn đề gradient biến mất so với sigmoid), nhưng đây không phải là mục đích chính của việc sử dụng *phi tuyến tính*. Mục đích chính là khả năng học các mối quan hệ phức tạp, không phải tốc độ hội tụ.\n*   **Ngăn chặn hiện tượng quá khớp bằng cách giới thiệu nhiễu:** Hàm kích hoạt không được thiết kế để ngăn chặn quá khớp bằng cách giới thiệu nhiễu. Các kỹ thuật như dropout, chuẩn hóa L1/L2 hoặc tăng cường dữ liệu được sử dụng để chống quá khớp. Hàm kích hoạt có vai trò khác.\n*   **Đảm bảo rằng các giá trị đầu ra luôn nằm trong một phạm vi nhất định:** Mặc dù một số hàm kích hoạt (như sigmoid hoặc tanh) giới hạn đầu ra trong một phạm vi cụ thể, nhưng không phải tất cả các hàm kích hoạt phi tuyến tính đều làm như vậy (ví dụ: ReLU có đầu ra không giới hạn ở phía dương). Hơn nữa, việc giới hạn phạm vi đầu ra không phải là mục đích chính của việc sử dụng tính phi tuyến tính; mục đích chính vẫn là khả năng học các mối quan hệ phức tạp.",
+      "topic": {
+        "name": "Mục đích Hàm kích hoạt",
+        "description": "Chủ đề này yêu cầu học sinh giải thích hoặc xác định vai trò và mục đích của các hàm kích hoạt trong mạng nơ-ron. Tập trung vào lý do tại sao các hàm phi tuyến tính lại cần thiết để mạng học được các mối quan hệ phức tạp, thay vì chỉ là quan hệ tuyến tính như đã học trong Tuần 7.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Điểm khác biệt chính nào về việc xử lý đặc trưng giữa Học sâu và Học máy truyền thống?",
+      "answer": "Học sâu tự động trích xuất đặc trưng, còn Học máy truyền thống thường cần đặc trưng được kỹ thuật thủ công.",
+      "distractors": [
+        "Học sâu yêu cầu nhiều dữ liệu được gán nhãn hơn, còn Học máy truyền thống thì không.",
+        "Học sâu luôn cần phần cứng chuyên dụng, còn Học máy truyền thống có thể chạy trên CPU thông thường.",
+        "Học sâu chỉ hoạt động với dữ liệu phi cấu trúc, còn Học máy truyền thống chỉ xử lý dữ liệu có cấu trúc."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Học sâu tự động trích xuất đặc trưng, còn Học máy truyền thống thường cần đặc trưng được kỹ thuật thủ công.** Điều này là đúng vì một trong những ưu điểm chính của học sâu là khả năng tự động học và trích xuất các đặc trưng có ý nghĩa từ dữ liệu thô thông qua các lớp mạng nơ-ron. Ngược lại, các thuật toán học máy truyền thống thường yêu cầu các đặc trưng được thiết kế và trích xuất thủ công bởi con người (kỹ thuật đặc trưng) trước khi mô hình có thể học.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Học sâu yêu cầu nhiều dữ liệu được gán nhãn hơn, còn Học máy truyền thống thì không.** Mặc dù học sâu thường hoạt động tốt hơn với lượng lớn dữ liệu được gán nhãn, nhưng đây không phải là điểm khác biệt chính về việc xử lý đặc trưng. Cả hai phương pháp đều có thể hưởng lợi từ dữ liệu được gán nhãn, và mức độ yêu cầu phụ thuộc vào độ phức tạp của bài toán và mô hình.\n*   **Học sâu luôn cần phần cứng chuyên dụng, còn Học máy truyền thống có thể chạy trên CPU thông thường.** Mặc dù học sâu thường được tăng tốc bởi GPU hoặc TPU do tính toán song song cường độ cao, nhưng không phải lúc nào cũng \"luôn luôn\" cần phần cứng chuyên dụng, đặc biệt đối với các mô hình nhỏ hơn hoặc trong giai đoạn suy luận. Ngược lại, một số mô hình học máy truyền thống phức tạp cũng có thể hưởng lợi từ phần cứng mạnh mẽ. Đây là một sự khác biệt về yêu cầu tài nguyên, không phải về xử lý đặc trưng.\n*   **Học sâu chỉ hoạt động với dữ liệu phi cấu trúc, còn Học máy truyền thống chỉ xử lý dữ liệu có cấu trúc.** Đây là một sự đơn giản hóa quá mức và không chính xác. Học sâu rất mạnh mẽ với dữ liệu phi cấu trúc (hình ảnh, văn bản, âm thanh) nhưng cũng có thể được áp dụng cho dữ liệu có cấu trúc. Tương tự, học máy truyền thống chủ yếu được sử dụng với dữ liệu có cấu trúc nhưng cũng có các kỹ thuật để xử lý dữ liệu phi cấu trúc (sau khi trích xuất đặc trưng thủ công).\n",
+      "topic": {
+        "name": "Khác biệt giữa Học sâu và Học máy truyền thống",
+        "description": "Chủ đề này kiểm tra khả năng của học sinh phân biệt các đặc điểm chính, ưu điểm và nhược điểm của Học sâu (tuần 7) so với các phương pháp Học máy truyền thống (được giới thiệu từ tuần 1 đến tuần 6). Câu hỏi có thể so sánh các yêu cầu về đặc trưng, khả năng biểu diễn, và ví dụ ứng dụng điển hình để kiểm tra hiểu biết tích hợp.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Khi so sánh cách Gradient Descent được áp dụng để huấn luyện Hồi quy Logistic và Mạng nơ-ron nhân tạo, yếu tố nào chính trong cấu trúc của ANN làm cho phương pháp tính toán gradient để cập nhật trọng số trở nên phức tạp hơn đáng kể?",
+      "answer": "Sự hiện diện của các lớp ẩn và hàm kích hoạt phi tuyến tính.",
+      "distractors": [
+        "Việc sử dụng hàm mất mát entropy chéo thay vì hàm mất mát bình phương tối thiểu.",
+        "Kích thước lớn hơn của tập dữ liệu huấn luyện và số lượng tham số cần tối ưu.",
+        "Sự cần thiết phải chuẩn hóa đầu vào và sử dụng các thuật toán tối ưu hóa phức tạp hơn."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Sự hiện diện của các lớp ẩn và hàm kích hoạt phi tuyến tính.** là đúng vì trong Hồi quy Logistic, mô hình chỉ có một lớp đầu vào và một lớp đầu ra, với hàm kích hoạt sigmoid (phi tuyến tính) ở lớp đầu ra. Việc tính toán gradient cho các trọng số tương đối đơn giản vì chỉ có một tập hợp trọng số để tối ưu hóa và gradient có thể được tính toán trực tiếp từ hàm mất mát. Ngược lại, Mạng nơ-ron nhân tạo (ANN) có thể có nhiều lớp ẩn, mỗi lớp có các trọng số và độ lệch riêng, và sử dụng các hàm kích hoạt phi tuyến tính. Điều này tạo ra một cấu trúc phân cấp phức tạp, nơi đầu ra của một lớp trở thành đầu vào của lớp tiếp theo. Để tính toán gradient cho các trọng số trong các lớp ẩn, thuật toán lan truyền ngược (backpropagation) phải được sử dụng. Lan truyền ngược là một phương pháp ứng dụng quy tắc chuỗi để tính toán gradient của hàm mất mát đối với từng trọng số trong mạng, bắt đầu từ lớp đầu ra và đi ngược về các lớp đầu vào. Sự phức tạp này phát sinh trực tiếp từ việc có nhiều lớp và các hàm kích hoạt phi tuyến tính, làm cho mối quan hệ giữa trọng số và hàm mất mát trở nên không tuyến tính và phức tạp hơn để đạo hàm.\n\nCác yếu tố gây nhiễu là sai vì:\n\n*   **Việc sử dụng hàm mất mát entropy chéo thay vì hàm mất mát bình phương tối thiểu.** Hàm mất mát entropy chéo thường được sử dụng trong cả Hồi quy Logistic và ANN cho các bài toán phân loại. Mặc dù việc lựa chọn hàm mất mát ảnh hưởng đến công thức gradient, nhưng bản thân nó không phải là yếu tố chính làm cho việc tính toán gradient trong ANN phức tạp hơn đáng kể so với Hồi quy Logistic. Cả hai đều có thể sử dụng entropy chéo, và sự phức tạp chính trong ANN đến từ cấu trúc mạng.\n*   **Kích thước lớn hơn của tập dữ liệu huấn luyện và số lượng tham số cần tối ưu.** Kích thước tập dữ liệu và số lượng tham số (trọng số và độ lệch) chắc chắn làm tăng chi phí tính toán tổng thể và thời gian huấn luyện. Tuy nhiên, chúng không làm thay đổi bản chất cơ bản của phương pháp tính toán gradient. Dù có bao nhiêu tham số hay điểm dữ liệu, phương pháp cơ bản để tính toán gradient cho mỗi tham số vẫn là vấn đề chính. Sự phức tạp trong ANN không phải là do số lượng tham số mà là do cách các gradient đó được tính toán qua nhiều lớp.\n*   **Sự cần thiết phải chuẩn hóa đầu vào và sử dụng các thuật toán tối ưu hóa phức tạp hơn.** Chuẩn hóa đầu vào là một kỹ thuật tiền xử lý dữ liệu quan trọng cho cả Hồi quy Logistic và ANN để cải thiện hiệu suất và sự hội tụ. Các thuật toán tối ưu hóa phức tạp hơn (như Adam, RMSprop) có thể được sử dụng để tăng tốc độ hội tụ hoặc xử lý các vấn đề cụ thể, nhưng chúng là các cải tiến của Gradient Descent chứ không phải là nguyên nhân gốc rễ của sự phức tạp trong việc tính toán gradient cơ bản trong ANN. Sự phức tạp chính nằm ở việc tính toán gradient cho từng trọng số trong cấu trúc nhiều lớp, chứ không phải ở việc lựa chọn thuật toán tối ưu hóa.",
+      "topic": {
+        "name": "So sánh Gradient Descent trong Hồi quy và ANN",
+        "description": "Chủ đề này đánh giá khả năng của học sinh so sánh và phân tích cách thuật toán Gradient Descent, được giới thiệu ban đầu cho Hồi quy tuyến tính (Tuần 1) và Hồi quy Logistic (Tuần 2), được áp dụng để huấn luyện các trọng số trong Mạng nơ-ron nhân tạo (Tuần 7). Tập trung vào sự tương đồng và khác biệt trong cơ chế cập nhật trọng số và giảm thiểu hàm lỗi qua các loại mô hình.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Một Perceptron nhận đầu vào x\t= [0.5, 1.0] và các trọng số w = [0.6, 0.4]. Nếu độ lệch (bias) là -0.7 và hàm kích hoạt trả về 1 khi tổng có trọng số cộng độ lệch lớn hơn hoặc bằng 0, ngược lại trả về -1, thì đầu ra của Perceptron là bao nhiêu?",
+      "answer": "1",
+      "distractors": [
+        "-1",
+        "0.6",
+        "0.7"
+      ],
+      "explanation": "Đầu ra của Perceptron được tính bằng cách lấy tổng có trọng số của các đầu vào cộng với độ lệch, sau đó áp dụng hàm kích hoạt. Trong trường hợp này, tổng có trọng số là (0.5 * 0.6) + (1.0 * 0.4) = 0.3 + 0.4 = 0.7. Khi cộng độ lệch (-0.7) vào tổng này, ta được 0.7 + (-0.7) = 0. Vì hàm kích hoạt trả về 1 nếu tổng có trọng số cộng độ lệch lớn hơn hoặc bằng 0, và 0 bằng 0, nên đầu ra của Perceptron là 1.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n- **-1**: Đây sẽ là đầu ra nếu tổng có trọng số cộng độ lệch nhỏ hơn 0. Tuy nhiên, phép tính cho thấy kết quả là 0, không phải một số âm.\n- **0.6**: Đây là một trong các trọng số đầu vào và không phải là đầu ra của Perceptron.\n- **0.7**: Đây là tổng có trọng số của các đầu vào trước khi cộng độ lệch và áp dụng hàm kích hoạt. Nó không phải là đầu ra cuối cùng của Perceptron.",
+      "topic": {
+        "name": "Xác định đầu ra Perceptron",
+        "description": "Chủ đề này yêu cầu học sinh áp dụng công thức của Perceptron để tính toán đầu ra nhị phân (1 hoặc -1) dựa trên các trọng số và đầu vào đã cho. Nó kiểm tra khả năng áp dụng công thức cơ bản của Perceptron như một khối xây dựng của mạng nơ-ron, được giới thiệu trong Tuần 7.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong cơ chế lan truyền ngược (back-propagation) để huấn luyện mạng nơ-ron, quy tắc chuỗi được áp dụng nhằm mục đích chính nào trong quá trình điều chỉnh trọng số?",
+      "answer": "Tính toán gradient của hàm lỗi theo từng trọng số.",
+      "distractors": [
+        "Xác định tốc độ học (learning rate) tối ưu cho mỗi lớp.",
+        "Đảm bảo các nơ-ron được kích hoạt tuần tự từ lớp đầu vào đến lớp đầu ra.",
+        "Tổng hợp các lỗi từ tất cả các lớp để đưa ra một giá trị lỗi duy nhất."
+      ],
+      "explanation": "Trong cơ chế lan truyền ngược, quy tắc chuỗi được áp dụng để **tính toán gradient của hàm lỗi theo từng trọng số**. Đây là mục đích chính vì lan truyền ngược là một thuật toán tối ưu hóa dựa trên gradient. Để điều chỉnh trọng số nhằm giảm thiểu hàm lỗi, chúng ta cần biết hướng và độ lớn của sự thay đổi cần thiết cho mỗi trọng số. Quy tắc chuỗi cho phép chúng ta tính toán đạo hàm riêng của hàm lỗi đối với từng trọng số, ngay cả khi trọng số đó nằm ở các lớp sâu hơn và ảnh hưởng gián tiếp đến lỗi thông qua nhiều phép biến đổi. Các gradient này sau đó được sử dụng để cập nhật trọng số theo hướng ngược lại với gradient, giúp giảm lỗi.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Xác định tốc độ học (learning rate) tối ưu cho mỗi lớp:** Tốc độ học là một siêu tham số được đặt trước hoặc điều chỉnh thông qua các kỹ thuật khác (ví dụ: tìm kiếm lưới, tối ưu hóa siêu tham số), chứ không phải là kết quả trực tiếp của việc áp dụng quy tắc chuỗi trong quá trình tính toán gradient. Quy tắc chuỗi chỉ tập trung vào việc tính toán gradient.\n*   **Đảm bảo các nơ-ron được kích hoạt tuần tự từ lớp đầu vào đến lớp đầu ra:** Việc kích hoạt tuần tự các nơ-ron từ lớp đầu vào đến lớp đầu ra là quá trình truyền thẳng (forward propagation), nơi dữ liệu được xử lý để tạo ra đầu ra dự đoán. Quy tắc chuỗi được áp dụng trong giai đoạn lan truyền ngược (back-propagation), sau khi truyền thẳng, để tính toán cách lỗi lan truyền ngược qua mạng.\n*   **Tổng hợp các lỗi từ tất cả các lớp để đưa ra một giá trị lỗi duy nhất:** Hàm lỗi thường được tính toán một lần ở lớp đầu ra bằng cách so sánh đầu ra dự đoán với đầu ra thực tế, tạo ra một giá trị lỗi duy nhất cho toàn bộ mạng. Quy tắc chuỗi không tổng hợp lỗi mà thay vào đó phân phối và tính toán gradient của lỗi đó đối với từng trọng số riêng lẻ trong các lớp khác nhau.",
+      "topic": {
+        "name": "Cơ chế cập nhật trọng số của Lan truyền ngược",
+        "description": "Chủ đề này kiểm tra sự hiểu biết của học sinh về cơ chế hoạt động của thuật toán lan truyền ngược (Back-propagation) trong việc huấn luyện mạng nơ-ron. Cụ thể là cách nó sử dụng quy tắc chuỗi để tính toán gradient và điều chỉnh các trọng số nhằm giảm thiểu lỗi giữa đầu ra dự đoán và đầu ra thực tế, như đã học trong Tuần 7.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong bối cảnh Mạng nơ-ron đa lớp (MLP) học các mối quan hệ phi tuyến tính phức tạp và khắc phục các hạn chế của mô hình tuyến tính, đánh giá vai trò tích hợp của các hàm kích hoạt phi tuyến tính và thuật toán lan truyền ngược. Khả năng cốt lõi nào mà sự kết hợp này mang lại cho MLP để đạt được điều đó?",
+      "answer": "Chúng cùng nhau trang bị cho MLP khả năng xây dựng các biểu diễn phi tuyến tính và tối ưu hóa các trọng số để học các ánh xạ phức tạp.",
+      "distractors": [
+        "Chúng cho phép MLP thực hiện các phép biến đổi tuyến tính phức tạp hơn và điều chỉnh tốc độ học để tránh overfitting.",
+        "Chúng chủ yếu giúp MLP tăng cường khả năng phân loại dữ liệu tuyến tính và giảm thiểu lỗi bằng cách điều chỉnh ngưỡng kích hoạt.",
+        "Chúng cung cấp cơ chế để MLP tự động chọn kiến trúc mạng tối ưu và loại bỏ các đặc trưng không liên quan trong quá trình huấn luyện."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là \"Chúng cùng nhau trang bị cho MLP khả năng xây dựng các biểu diễn phi tuyến tính và tối ưu hóa các trọng số để học các ánh xạ phức tạp.\" là chính xác vì nó nắm bắt được vai trò cốt lõi của cả hàm kích hoạt phi tuyến tính và thuật toán lan truyền ngược trong MLP. Các hàm kích hoạt phi tuyến tính là yếu tố then chốt cho phép MLP học các mối quan hệ phi tuyến tính, vượt qua giới hạn của các mô hình tuyến tính. Nếu không có chúng, một MLP chỉ đơn thuần là một chuỗi các phép biến đổi tuyến tính, bất kể số lượng lớp. Thuật toán lan truyền ngược, mặt khác, là cơ chế chính để tối ưu hóa các trọng số và độ lệch của mạng. Nó tính toán gradient của hàm mất mát đối với các trọng số, cho phép mạng điều chỉnh các trọng số một cách hiệu quả để giảm thiểu lỗi và học các ánh xạ phức tạp từ dữ liệu đầu vào đến đầu ra mong muốn. Sự kết hợp của hai yếu tố này cho phép MLP không chỉ biểu diễn các mối quan hệ phi tuyến tính mà còn học cách tối ưu hóa các biểu diễn đó.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **\"Chúng cho phép MLP thực hiện các phép biến đổi tuyến tính phức tạp hơn và điều chỉnh tốc độ học để tránh overfitting.\"** Tùy chọn này sai vì các hàm kích hoạt phi tuyến tính không chỉ đơn thuần tạo ra \"các phép biến đổi tuyến tính phức tạp hơn\"; chúng giới thiệu tính phi tuyến tính cần thiết. Hơn nữa, mặc dù lan truyền ngược có liên quan đến quá trình học, việc điều chỉnh tốc độ học để tránh overfitting là một khía cạnh của các kỹ thuật tối ưu hóa và điều chuẩn (regularization) rộng hơn, không phải là khả năng cốt lõi trực tiếp của sự kết hợp giữa hàm kích hoạt và lan truyền ngược.\n\n*   **\"Chúng chủ yếu giúp MLP tăng cường khả năng phân loại dữ liệu tuyến tính và giảm thiểu lỗi bằng cách điều chỉnh ngưỡng kích hoạt.\"** Tùy chọn này sai vì mục đích chính của các hàm kích hoạt phi tuyến tính là cho phép MLP xử lý dữ liệu *phi tuyến tính*, không phải chỉ tăng cường phân loại dữ liệu tuyến tính. Mặc dù lan truyền ngược giúp giảm thiểu lỗi, nhưng việc \"điều chỉnh ngưỡng kích hoạt\" không phải là mô tả chính xác về cách nó hoạt động; nó điều chỉnh trọng số và độ lệch của mạng.\n\n*   **\"Chúng cung cấp cơ chế để MLP tự động chọn kiến trúc mạng tối ưu và loại bỏ các đặc trưng không liên quan trong quá trình huấn luyện.\"** Tùy chọn này sai vì việc chọn kiến trúc mạng tối ưu (ví dụ: số lớp, số nơ-ron mỗi lớp) thường là một quyết định thiết kế được thực hiện bởi người kỹ sư hoặc thông qua các kỹ thuật tìm kiếm kiến trúc tự động (NAS), không phải là một khả năng cốt lõi được cung cấp trực tiếp bởi các hàm kích hoạt và lan truyền ngược. Tương tự, việc loại bỏ các đặc trưng không liên quan thường được xử lý thông qua các kỹ thuật lựa chọn đặc trưng hoặc điều chuẩn, không phải là chức năng chính của sự kết hợp này.",
+      "topic": {
+        "name": "Đánh giá vai trò của Hàm kích hoạt và Lan truyền ngược trong MLP",
+        "description": "Chủ đề này yêu cầu học sinh đánh giá vai trò tích hợp của việc sử dụng các hàm kích hoạt phi tuyến tính (Tuần 7) và thuật toán lan truyền ngược (Tuần 7) để cho phép Mạng nơ-ron đa lớp (MLP) học và mô hình hóa các mối quan hệ phi tuyến tính phức tạp trong dữ liệu. Câu hỏi sẽ đòi hỏi phân tích sâu hơn về cách các yếu tố này giúp MLP vượt qua giới hạn của các mô hình tuyến tính đã học từ Tuần 1 và 2.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 7,
+      "course_code": "int3405"
+    }
+  ]
+}

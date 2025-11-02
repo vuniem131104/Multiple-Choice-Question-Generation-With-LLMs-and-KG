@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Khái niệm sắp xếp trong lập trình là gì?",
+            "answer": "Quá trình tổ chức mảng theo thứ tự tăng dần hoặc giảm dần.",
+            "distractors": [
+                "Quá trình phân tích dữ liệu",
+                "Quá trình lưu trữ dữ liệu",
+                "Quá trình xóa dữ liệu"
+            ],
+            "explanation": "Sắp xếp là một quy trình quan trọng trong lập trình, giúp tổ chức dữ liệu theo thứ tự nhất định, từ đó dễ dàng hơn trong việc tìm kiếm và xử lý."
+        },
+        {
+            "question": "Thứ tự toàn phần có đặc điểm nào sau đây?",
+            "answer": "Có tính phản đối xứng.",
+            "distractors": [
+                "Có tính đồng nhất",
+                "Có tính tuần tự",
+                "Có tính phân tán"
+            ],
+            "explanation": "Thứ tự toàn phần là một quan hệ có tính phản đối xứng, nghĩa là nếu a > b thì b < a."
+        },
+        {
+            "question": "Hàm sort() trong Java sử dụng để làm gì?",
+            "answer": "Sắp xếp các phần tử trong mảng.",
+            "distractors": [
+                "Tìm kiếm phần tử trong mảng",
+                "Xóa phần tử khỏi mảng",
+                "Thêm phần tử vào mảng"
+            ],
+            "explanation": "Hàm sort() được sử dụng để sắp xếp các phần tử trong mảng theo thứ tự tăng dần hoặc giảm dần."
+        },
+        {
+            "question": "Trong phương pháp sắp xếp chọn, số lần so sánh tối đa là bao nhiêu cho một mảng n phần tử?",
+            "answer": "n(n-1)/2",
+            "distractors": [
+                "n",
+                "n-1",
+                "n^2"
+            ],
+            "explanation": "Sắp xếp chọn có số lần so sánh tối đa là n(n-1)/2, vì mỗi phần tử sẽ được so sánh với tất cả các phần tử còn lại."
+        },
+        {
+            "question": "Sắp xếp chèn hoạt động như thế nào trong trường hợp tốt nhất?",
+            "answer": "Mảng đã được sắp xếp.",
+            "distractors": [
+                "Mảng hoàn toàn ngẫu nhiên",
+                "Mảng có nhiều phần tử giống nhau",
+                "Mảng sắp xếp theo thứ tự giảm dần"
+            ],
+            "explanation": "Trong trường hợp tốt nhất, sắp xếp chèn hoạt động hiệu quả nhất khi mảng đã được sắp xếp, chỉ cần so sánh và không cần hoán đổi."
+        },
+        {
+            "question": "Stack có thể được áp dụng trong thuật toán sắp xếp như thế nào?",
+            "answer": "Sử dụng để lưu trữ tạm thời các phần tử trong quá trình sắp xếp.",
+            "distractors": [
+                "Sử dụng để tìm kiếm phần tử",
+                "Sử dụng để xóa phần tử",
+                "Sử dụng để thêm phần tử"
+            ],
+            "explanation": "Stack có thể được sử dụng để lưu trữ tạm thời các phần tử trong quá trình sắp xếp, giúp quản lý thứ tự của các phần tử."
+        },
+        {
+            "question": "Shellsort so với sắp xếp nổi bật ở điểm nào?",
+            "answer": "Sử dụng khoảng cách để sắp xếp các phần tử không liền kề.",
+            "distractors": [
+                "Sử dụng thuật toán đệ quy",
+                "Sử dụng phương pháp chia để trị",
+                "Sử dụng sắp xếp chọn"
+            ],
+            "explanation": "Shellsort cải thiện hiệu suất bằng cách sắp xếp các phần tử không liền kề, giúp giảm số lần hoán đổi cần thiết."
+        },
+        {
+            "question": "Một trong những thực hành tốt nhất để xáo trộn dữ liệu là gì?",
+            "answer": "Sử dụng bộ tạo số ngẫu nhiên an toàn.",
+            "distractors": [
+                "Sử dụng số ngẫu nhiên từ máy tính",
+                "Sử dụng số ngẫu nhiên từ người dùng",
+                "Sử dụng số ngẫu nhiên từ một danh sách cố định"
+            ],
+            "explanation": "Sử dụng bộ tạo số ngẫu nhiên an toàn giúp đảm bảo tính ngẫu nhiên và bảo mật trong quá trình xáo trộn dữ liệu."
+        }
+    ]
+}

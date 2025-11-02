@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Đặc điểm cơ bản của Học sâu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more directly aligned with the topic and learning objectives, focusing on identifying key characteristics of deep learning. It is slightly clearer and has more plausible distractors compared to the baseline question, which introduces a negative phrasing ('NOT') that may confuse students. Both questions are appropriate for the Bloom level and difficulty, but the pipeline question edges out due to better clarity and relevance."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Cấu trúc Mạng nơ-ron nhân tạo",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly better in terms of clarity and relevance, as it directly asks about the output layer's role, which is central to the topic. The baseline question is also relevant but less focused, as it asks about the input layer, which is less critical for understanding ANN structure. Both questions have plausible distractors, but the pipeline question's distractors are slightly more aligned with the topic."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Mục đích Hàm kích hoạt",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly addresses the purpose of nonlinear activation functions, making it clearer and more relevant. The baseline question is slightly verbose and introduces distractors that are less plausible compared to the pipeline question. Both questions are appropriate for the Bloom level and difficulty, but the pipeline question is better overall due to its clarity and alignment with the topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Khác biệt giữa Học sâu và Học máy truyền thống",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more focused on the key difference in feature extraction between deep learning and traditional machine learning, which is central to the topic. The baseline question is relevant but less specific, as it focuses on advantages of deep learning in handling complex data. The pipeline question has slightly better distractor plausibility and clarity, making it the winner."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh Gradient Descent trong Hồi quy và ANN",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more detailed and nuanced comparison of gradient descent in logistic regression and ANN, aligning well with the Bloom level of analysis. The baseline question is relevant but less specific, and its distractors are slightly less plausible. The pipeline question also has better clarity and difficulty calibration, making it the better choice."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Xác định đầu ra Perceptron",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more aligned with the topic and provides a clear scenario for calculating the perceptron output, which is central to the learning objective. The baseline question is relevant but introduces distractors that are less plausible and slightly confusing. The pipeline question also has better clarity and difficulty calibration, making it the winner."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Cơ chế cập nhật trọng số của Lan truyền ngược",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more focused and directly addresses the role of the chain rule in back-propagation, which is central to the topic. The baseline question is relevant but less specific, and its distractors are slightly less plausible. The pipeline question also has better clarity and difficulty calibration, making it the better choice."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Đánh giá vai trò của Hàm kích hoạt và Lan truyền ngược trong MLP",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more comprehensive evaluation of the integrated roles of activation functions and back-propagation in MLPs, aligning well with the Bloom level of evaluation. The baseline question is relevant but less detailed, and its distractors are slightly less plausible. The pipeline question also has better clarity and difficulty calibration, making it the better choice."
+        }
+    ]
+}

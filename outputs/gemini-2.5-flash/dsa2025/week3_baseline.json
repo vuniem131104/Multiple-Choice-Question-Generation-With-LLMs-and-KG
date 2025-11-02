@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Nguyên lý hoạt động cốt lõi của thuật toán Mergesort là gì?",
+            "answer": "Chia mảng thành các nửa nhỏ hơn, sắp xếp đệ quy từng nửa, sau đó hợp nhất các nửa đã sắp xếp.",
+            "distractors": [
+                "So sánh từng cặp phần tử và hoán đổi nếu chúng không đúng thứ tự.",
+                "Tìm phần tử nhỏ nhất hoặc lớn nhất và đặt nó vào vị trí đúng, lặp lại cho các phần tử còn lại.",
+                "Sử dụng một bảng băm để lưu trữ các phần tử và truy xuất chúng theo thứ tự."
+            ],
+            "explanation": "Mergesort hoạt động dựa trên nguyên tắc 'chia để trị'. Nó chia mảng thành hai nửa, sắp xếp đệ quy từng nửa, và sau đó hợp nhất hai nửa đã sắp xếp lại với nhau để tạo thành một mảng đã sắp xếp hoàn chỉnh."
+        },
+        {
+            "question": "Một thuật toán sắp xếp được gọi là 'ổn định' khi nào?",
+            "answer": "Nó bảo toàn thứ tự tương đối của các phần tử có khóa bằng nhau sau khi sắp xếp.",
+            "distractors": [
+                "Nó luôn có độ phức tạp thời gian O(N log N).",
+                "Nó không yêu cầu thêm không gian bộ nhớ phụ.",
+                "Nó có thể sắp xếp các phần tử thuộc bất kỳ kiểu dữ liệu nào."
+            ],
+            "explanation": "Tính ổn định của một thuật toán sắp xếp đề cập đến việc nó có giữ nguyên thứ tự ban đầu của các phần tử có giá trị bằng nhau hay không. Nếu hai phần tử có cùng giá trị và phần tử A xuất hiện trước phần tử B trong mảng gốc, thì sau khi sắp xếp ổn định, A vẫn phải xuất hiện trước B."
+        },
+        {
+            "question": "Mục đích chính của giao diện `Comparable` trong Java là gì?",
+            "answer": "Để định nghĩa 'thứ tự tự nhiên' của các đối tượng, cho phép chúng được sắp xếp theo một thứ tự mặc định.",
+            "distractors": [
+                "Để cho phép các đối tượng được so sánh bằng toán tử `==`.",
+                "Để cung cấp một phương thức băm cho các đối tượng.",
+                "Để cho phép các đối tượng được sao chép một cách sâu sắc (deep copy)."
+            ],
+            "explanation": "Giao diện `Comparable` được sử dụng để định nghĩa một thứ tự sắp xếp 'tự nhiên' hoặc mặc định cho các đối tượng của một lớp. Bằng cách triển khai phương thức `compareTo()`, các đối tượng có thể được sắp xếp mà không cần cung cấp một `Comparator` bên ngoài."
+        },
+        {
+            "question": "Khi thực hiện thao tác hợp nhất tại chỗ (in-place merge) giữa hai mảng con đã sắp xếp, bước nào sau đây là cần thiết để đảm bảo tính ổn định và hiệu quả?",
+            "answer": "Sử dụng một mảng phụ để sao chép dữ liệu và sau đó hợp nhất các phần tử trở lại mảng gốc.",
+            "distractors": [
+                "Trực tiếp hoán đổi các phần tử trong mảng gốc mà không cần mảng phụ.",
+                "Chỉ so sánh các phần tử và di chuyển chúng mà không cần sao chép.",
+                "Sử dụng một cấu trúc dữ liệu Stack để tạm thời lưu trữ các phần tử."
+            ],
+            "explanation": "Để thực hiện hợp nhất một cách hiệu quả và ổn định, đặc biệt là trong Mergesort, người ta thường sử dụng một mảng phụ (auxiliary array). Các phần tử từ hai nửa đã sắp xếp được sao chép vào mảng phụ, sau đó được hợp nhất trở lại mảng gốc theo đúng thứ tự, đảm bảo tính ổn định."
+        },
+        {
+            "question": "Trong số các thuật toán sắp xếp cơ bản, tại sao Insertion Sort được coi là ổn định trong khi Selection Sort thì không?",
+            "answer": "Insertion Sort chỉ chèn phần tử vào vị trí thích hợp mà không thay đổi thứ tự tương đối của các phần tử bằng nhau, trong khi Selection Sort có thể hoán đổi một phần tử với một phần tử bằng nó ở vị trí xa hơn.",
+            "distractors": [
+                "Insertion Sort có độ phức tạp thời gian tốt hơn Selection Sort.",
+                "Selection Sort yêu cầu thêm không gian bộ nhớ phụ, còn Insertion Sort thì không.",
+                "Insertion Sort sử dụng phương pháp chia để trị, còn Selection Sort thì không."
+            ],
+            "explanation": "Insertion Sort là ổn định vì khi chèn một phần tử, nó chỉ di chuyển các phần tử lớn hơn sang phải, giữ nguyên thứ tự tương đối của các phần tử bằng nhau. Ngược lại, Selection Sort không ổn định vì nó tìm phần tử nhỏ nhất và hoán đổi nó với phần tử ở vị trí hiện tại. Nếu có nhiều phần tử bằng nhau, việc hoán đổi này có thể làm thay đổi thứ tự tương đối của chúng."
+        },
+        {
+            "question": "Độ phức tạp thời gian trường hợp xấu nhất của thuật toán Mergesort là gì và tại sao?",
+            "answer": "O(N log N), vì mỗi lần chia mảng và hợp nhất đều mất thời gian tuyến tính và quá trình này lặp lại log N lần.",
+            "distractors": [
+                "O(N^2), vì nó phải so sánh từng cặp phần tử.",
+                "O(N), vì nó chỉ cần một lần duyệt qua mảng.",
+                "O(log N), vì nó sử dụng phương pháp chia để trị."
+            ],
+            "explanation": "Mergesort có độ phức tạp thời gian trường hợp xấu nhất là O(N log N). Quá trình chia mảng tạo ra một cây đệ quy có độ sâu log N. Ở mỗi cấp độ của cây, thao tác hợp nhất (merge) mất thời gian tuyến tính O(N) để xử lý tất cả các phần tử. Do đó, tổng độ phức tạp là N * log N."
+        },
+        {
+            "question": "Để sắp xếp một danh sách các đối tượng `SinhVien` theo tên (tăng dần), sau đó theo điểm trung bình (giảm dần) nếu tên giống nhau, bạn sẽ sử dụng giao diện nào và triển khai như thế nào?",
+            "answer": "Sử dụng giao diện `Comparator` và tạo một lớp `SinhVienComparator` triển khai `compare()` để so sánh theo tên, sau đó theo điểm trung bình.",
+            "distractors": [
+                "Sử dụng giao diện `Comparable` và sửa đổi phương thức `compareTo()` trong lớp `SinhVien`.",
+                "Sử dụng một vòng lặp lồng nhau để so sánh và hoán đổi các đối tượng.",
+                "Sử dụng một cấu trúc dữ liệu `HashMap` để lưu trữ và sắp xếp."
+            ],
+            "explanation": "Khi cần sắp xếp theo nhiều tiêu chí hoặc theo một thứ tự khác với 'thứ tự tự nhiên' của đối tượng, giao diện `Comparator` là lựa chọn phù hợp. Bạn có thể tạo một hoặc nhiều lớp `Comparator` riêng biệt để định nghĩa các quy tắc sắp xếp khác nhau mà không cần sửa đổi lớp `SinhVien`."
+        },
+        {
+            "question": "Trong một hệ thống quản lý tác vụ, bạn cần sắp xếp các tác vụ theo mức độ ưu tiên (số nguyên từ 1 đến 5, 1 là cao nhất) và nếu cùng mức ưu tiên thì sắp xếp theo thời gian tạo (tác vụ cũ hơn lên trước). Cấu trúc dữ liệu nào sau đây, khi kết hợp với một thuật toán sắp xếp phù hợp, sẽ hiệu quả nhất để duy trì thứ tự này khi thêm/bớt tác vụ thường xuyên?",
+            "answer": "Một hàng đợi ưu tiên (Priority Queue) được triển khai bằng Heap, sử dụng một `Comparator` tùy chỉnh để định nghĩa thứ tự ưu tiên kép.",
+            "distractors": [
+                "Một danh sách liên kết đơn (Singly Linked List) và sử dụng Insertion Sort mỗi khi thêm tác vụ.",
+                "Một mảng động (Dynamic Array) và sử dụng Mergesort mỗi khi có thay đổi.",
+                "Một cấu trúc dữ liệu Stack để lưu trữ các tác vụ và sắp xếp khi cần."
+            ],
+            "explanation": "Hàng đợi ưu tiên (Priority Queue) được triển khai bằng Heap là lựa chọn tối ưu cho việc quản lý các phần tử cần được truy xuất theo thứ tự ưu tiên, đặc biệt khi có các thao tác thêm/bớt thường xuyên. Bằng cách sử dụng một `Comparator` tùy chỉnh, bạn có thể định nghĩa quy tắc ưu tiên kép (mức độ ưu tiên chính, thời gian tạo phụ) để đảm bảo các tác vụ luôn được sắp xếp đúng cách mà không cần sắp xếp lại toàn bộ cấu trúc dữ liệu mỗi lần thay đổi."
+        }
+    ]
+}

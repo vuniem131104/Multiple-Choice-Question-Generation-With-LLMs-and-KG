@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Lỗi thực tế và Lỗi thực nghiệm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it directly asks for the difference between True Error and Empirical Error, which aligns perfectly with the topic's focus on distinguishing between them. The correct answer clearly explains this distinction. The distractors are plausible and represent common misunderstandings. The Baseline question is also good, but it only asks for the definition of True Error, which is less comprehensive than the Pipeline's comparison. Its distractors are also reasonable, but the question itself is simpler."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Quá khớp và Dưới khớp trong mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it requires students to 'analyze' a scenario (high accuracy on training, low on test) to identify overfitting, which perfectly matches the 'Phân tích' Bloom level. The distractors are well-crafted to represent different model performance scenarios, making them highly plausible. The Baseline question is a simple 'Nhớ' level question asking for a definition, which is less challenging and doesn't fully meet the 'Phân tích' Bloom level expectation."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Đánh đổi giữa Độ lệch và Phương sai",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks about the *consequence* or *outcome* of the bias-variance trade-off, requiring a deeper understanding ('Hiểu') of its purpose in model optimization. The correct answer is comprehensive. The distractors are plausible but incorrect interpretations. The Baseline question is a straightforward definition recall, which is less challenging and doesn't fully capture the 'Hiểu' level as effectively as the Pipeline question."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Tối ưu hóa mô hình qua Lựa chọn đặc trưng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior as it requires students to 'Áp dụng' their knowledge to identify which method type (supervised) uses outcome information, aligning well with the expected Bloom level. The distractors are relevant but incorrect method types. The Baseline question, while relevant, asks to identify what is *not* a feature selection technique, which is more of a recall ('Nhớ') task rather than 'Áp dụng'. Its correct answer is also a general ML technique, making it a bit too broad as a distractor."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Điều chuẩn trong học máy",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it requires students to 'Đánh giá' which regularization method is most appropriate for a specific goal (reducing complexity while retaining variables), which perfectly matches the 'Đánh giá' Bloom level. The distractors are other regression types, making them plausible but incorrect choices for the specific criteria. The Baseline question is a simple recall ('Nhớ') of the purpose of regularization, which is too easy for the 'Khó' difficulty and 'Đánh giá' Bloom level."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Tập hợp mô hình với Bagging",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better because it provides a more comprehensive explanation of Bagging's purpose in its correct answer, going beyond just 'increasing accuracy' to 'combining multiple models'. This aligns well with the 'Nhớ' Bloom level but offers a richer recall. The distractors are also well-formed. The Baseline question is good but a bit more simplistic in its correct answer."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Boosting và AdaBoost trong Mô hình học máy",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it delves into the *mechanism* of AdaBoost (how it adjusts weights), requiring students to 'Áp dụng' their understanding of the algorithm's internal workings. This perfectly matches the 'Khó' difficulty and 'Áp dụng' Bloom level. The distractors are plausible but incorrect descriptions of weight adjustment. The Baseline question is a simple recall ('Nhớ') of what type of technique AdaBoost is, which is too easy for the expected difficulty and Bloom level."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tập hợp mô hình qua Stacking",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both Pipeline and Baseline questions are excellent and achieve similar quality. The Pipeline question describes the process of Stacking and asks for the technique name, while the Baseline question asks for a key differentiating feature of Stacking. Both effectively test the 'Nhớ' Bloom level and are appropriate for 'Trung bình' difficulty. The distractors in both are plausible and relevant to ensemble methods. It's a very close call, hence a tie."
+        }
+    ]
+}

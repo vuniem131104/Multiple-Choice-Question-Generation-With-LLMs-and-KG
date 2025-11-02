@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Tối ưu hóa trong kiểm soát không mô hình",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is better because it asks for a specific concept, 'Kiểm soát không mô hình', which directly aligns with the 'Nhớ' Bloom level and the topic description. The distractors are plausible and distinct. The Baseline question is more of a definition recall, and its distractors are less plausible, making it too easy and less effective for assessment. The clarity of the Pipeline question is also superior."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Học theo chính sách trong Học Tăng cường",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a slightly clearer and more precise definition of 'Học theo chính sách' in its correct answer. Its distractors are also more subtly incorrect, requiring a better understanding of the concept. The Baseline question is good, but its distractors are a bit more obviously wrong, making the question slightly less challenging for the 'Hiểu' Bloom level."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Phương pháp ε-Greedy trong thăm dò",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it requires the student to 'Áp dụng' the ε-Greedy formula by calculating a probability, which perfectly matches the expected Bloom level and difficulty. The distractors are numerical and plausible. The Baseline question, while relevant, only asks for a description ('Phân tích cách thức'), which is closer to 'Hiểu' or 'Nhớ' rather than 'Áp dụng', and its distractors are too easily distinguishable."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Đánh giá phương pháp Học Q (Q-Learning)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question effectively targets the 'Phân tích' Bloom level by asking about the specific components (alpha and gamma) that update the Q-value, requiring a deeper understanding of the Q-learning formula. The distractors are well-crafted and plausible. The Baseline question is a simple 'Nhớ' level definition, which is too easy for the 'Khó' difficulty and 'Phân tích' Bloom level, and its distractors are not very strong."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Học Monte-Carlo so với Học TD",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks for a comparative 'Đánh giá' of which method is better in a specific scenario (limited data), directly aligning with the expected Bloom level. The distractors are well-designed to test nuanced understanding. The Baseline question, while relevant, primarily asks for a descriptive difference, which is more 'Hiểu' than 'Đánh giá', and its distractors are less effective in challenging the student's comparative knowledge."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Khái-niệm về học Sarsa và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is excellent for the 'Áp dụng' Bloom level as it requires students to identify the correct Sarsa update formula, which is a direct application of their knowledge. The distractors are cleverly constructed variations of the formula, making them highly plausible. The Baseline question is too simplistic, asking 'how' Sarsa updates, which is more of a 'Hiểu' level question, and its distractors are not challenging."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Khái niệm Lặp lại chính sách tổng quát",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks for the name of the process, 'Lặp lại chính sách tổng quát', which is a perfect fit for the 'Nhớ' Bloom level and 'Dễ' difficulty. The distractors are plausible but incorrect terms. The Baseline question asks 'what it includes', which is also a 'Nhớ' level, but the phrasing is slightly less direct, and the distractors are a bit more obviously wrong, making the Pipeline question slightly stronger overall."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Mối quan hệ giữa Dấu vết đủ điều kiện và học n-Bước",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question effectively targets the 'Phân tích' Bloom level by asking for a deeper explanation of how 'Dấu vết đủ điều kiện' and 'học n-bước' relate from both forward and backward perspectives, requiring a comprehensive understanding. The distractors are well-designed to test this nuanced understanding. The Baseline question is too superficial, merely asking 'what is the relationship' and providing a very general correct answer, which is more 'Hiểu' than 'Phân tích', and its distractors are weak."
+        }
+    ]
+}

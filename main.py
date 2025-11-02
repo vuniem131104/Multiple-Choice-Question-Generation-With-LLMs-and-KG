@@ -1,9 +1,9 @@
-# from generation.domain.quiz_generation import QuizQuestion
-# import json 
+from passlib.context import CryptContext
 
-# with open('h.json', 'r', encoding='utf-8') as f:
-#     data = json.load(f)
-    
-# quiz_question = QuizQuestion(**data)
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# print(quiz_question)
+def get_password_hash(password: str) -> str:
+    """Hash a password."""
+    return pwd_context.hash(password)
+
+print(get_password_hash("cuongtv"))

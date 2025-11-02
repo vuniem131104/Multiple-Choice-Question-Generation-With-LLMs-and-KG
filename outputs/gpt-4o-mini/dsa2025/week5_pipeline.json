@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Hàng đợi ưu tiên là gì trong khoa học máy tính?",
+      "answer": "Một cấu trúc dữ liệu nơi các phần tử được xử lý theo thứ tự ưu tiên, khác với hàng đợi thông thường.",
+      "distractors": [
+        "Một cấu trúc dữ liệu nơi các phần tử được xử lý theo thứ tự ngẫu nhiên.",
+        "Một loại hàng đợi mà không có thứ tự xử lý nào được xác định.",
+        "Một cấu trúc dữ liệu giống như hàng đợi thông thường nhưng có thêm tính năng ưu tiên."
+      ],
+      "explanation": "Câu trả lời đúng là \"Một cấu trúc dữ liệu nơi các phần tử được xử lý theo thứ tự ưu tiên, khác với hàng đợi thông thường\" vì hàng đợi ưu tiên cho phép các phần tử được xử lý không chỉ dựa trên thứ tự mà chúng được thêm vào, mà còn dựa trên mức độ ưu tiên của chúng. Điều này có nghĩa là một phần tử có ưu tiên cao hơn có thể được xử lý trước một phần tử có ưu tiên thấp hơn, ngay cả khi phần tử đó được thêm vào sau.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Một cấu trúc dữ liệu nơi các phần tử được xử lý theo thứ tự ngẫu nhiên**: Tùy chọn này sai vì hàng đợi ưu tiên không xử lý các phần tử một cách ngẫu nhiên. Thay vào đó, nó xử lý theo thứ tự ưu tiên đã được xác định, không phải ngẫu nhiên.\n\n- **Một loại hàng đợi mà không có thứ tự xử lý nào được xác định**: Tùy chọn này cũng sai vì hàng đợi ưu tiên có một thứ tự xử lý rõ ràng dựa trên mức độ ưu tiên của các phần tử. Không có thứ tự nào được xác định sẽ mâu thuẫn với khái niệm hàng đợi ưu tiên.\n\n- **Một cấu trúc dữ liệu giống như hàng đợi thông thường nhưng có thêm tính năng ưu tiên**: Tùy chọn này không chính xác vì mặc dù hàng đợi ưu tiên có thể có một số điểm tương đồng với hàng đợi thông thường, nhưng nó không chỉ đơn thuần là một phiên bản cải tiến của hàng đợi thông thường. Hàng đợi ưu tiên có cách xử lý hoàn toàn khác biệt, tập trung vào ưu tiên thay vì thứ tự thêm vào.",
+      "topic": {
+        "name": "Hàng đợi ưu tiên và ứng dụng",
+        "description": "Chủ đề này tập trung vào khái niệm hàng đợi ưu tiên, cách thức hoạt động của nó và ứng dụng của nó trong khoa học máy tính như mô phỏng sự kiện và tối ưu hóa. Học sinh sẽ được đánh giá về hiểu biết của họ về các nguyên lý cơ bản và các ví dụ thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Phương thức nào được sử dụng để thêm một phần tử vào hàng đợi ưu tiên trong Java?",
+      "answer": "insert()",
+      "distractors": [
+        "addElement()",
+        "enqueue()",
+        "push()"
+      ],
+      "explanation": "Câu trả lời đúng là **insert()** vì đây là phương thức được sử dụng trong API hàng đợi ưu tiên của Java để thêm một phần tử vào hàng đợi. Phương thức này đảm bảo rằng phần tử mới được chèn vào đúng vị trí theo thứ tự ưu tiên, giúp duy trì cấu trúc của hàng đợi ưu tiên.\n\nCác yếu tố gây nhiễu:\n\n- **addElement()**: Đây là phương thức thuộc về lớp Vector trong Java, không phải là phương thức của hàng đợi ưu tiên. Nó được sử dụng để thêm phần tử vào Vector, không đảm bảo thứ tự ưu tiên.\n\n- **enqueue()**: Mặc dù từ này thường được sử dụng trong ngữ cảnh hàng đợi, nhưng trong Java, không có phương thức tên là enqueue() trong API hàng đợi ưu tiên. Thay vào đó, phương thức chính xác là insert().\n\n- **push()**: Phương thức này thường được sử dụng trong ngữ cảnh của Stack (ngăn xếp) để thêm phần tử vào đỉnh của ngăn xếp. Nó không liên quan đến hàng đợi ưu tiên và không đảm bảo thứ tự ưu tiên khi thêm phần tử.\n\nTóm lại, chỉ có **insert()** là phương thức chính xác để thêm phần tử vào hàng đợi ưu tiên trong Java, trong khi các tùy chọn khác không phù hợp với ngữ cảnh này.",
+      "topic": {
+        "name": "API của Hàng đợi ưu tiên",
+        "description": "Chủ đề này khám phá các phương thức và công thức của API hàng đợi ưu tiên trong Java, bao gồm cách tạo và sử dụng các hàng đợi ưu tiên. Kiến thức về các phép toán như delMax() và insert() sẽ được kiểm tra.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi thực hiện thao tác chèn một nút vào heap nhị phân, bước đầu tiên trong quy trình là gì?",
+      "answer": "Thêm nút mới vào vị trí trống trái nhất trong cây.",
+      "distractors": [
+        "Thêm nút mới vào vị trí cuối cùng của cây, sau đó điều chỉnh lại cấu trúc heap.",
+        "Chèn nút mới vào vị trí bất kỳ trong cây mà không cần kiểm tra vị trí.",
+        "Thay thế nút có giá trị nhỏ nhất bằng nút mới và điều chỉnh lại heap."
+      ],
+      "explanation": "Khi thực hiện thao tác chèn một nút vào heap nhị phân, bước đầu tiên là \"Thêm nút mới vào vị trí trống trái nhất trong cây.\" Đây là câu trả lời đúng vì heap nhị phân được tổ chức theo cấu trúc cây hoàn chỉnh, nghĩa là tất cả các cấp của cây đều được lấp đầy từ trái sang phải. Việc thêm nút mới vào vị trí trống trái nhất đảm bảo rằng cấu trúc cây vẫn được duy trì, từ đó giúp thực hiện các thao tác tiếp theo như điều chỉnh lại heap một cách hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Thêm nút mới vào vị trí cuối cùng của cây, sau đó điều chỉnh lại cấu trúc heap**: Mặc dù việc thêm nút vào vị trí cuối cùng có thể xảy ra, nhưng điều này không đảm bảo rằng vị trí đó là vị trí trống trái nhất. Việc thêm vào vị trí cuối cùng có thể làm mất đi tính chất của heap nhị phân, vì nó không tuân theo quy tắc lấp đầy từ trái sang phải.\n\n- **Chèn nút mới vào vị trí bất kỳ trong cây mà không cần kiểm tra vị trí**: Điều này hoàn toàn sai vì việc chèn nút vào vị trí bất kỳ có thể làm hỏng cấu trúc của heap. Để duy trì tính chất của heap nhị phân, nút mới phải được chèn vào vị trí trống trái nhất.\n\n- **Thay thế nút có giá trị nhỏ nhất bằng nút mới và điều chỉnh lại heap**: Đây là một thao tác không chính xác trong bối cảnh chèn nút. Thao tác này thường liên quan đến việc xóa nút trong heap, không phải là chèn. Khi chèn, chúng ta không thay thế nút mà chỉ thêm nút mới vào vị trí thích hợp.\n\nTóm lại, việc thêm nút mới vào vị trí trống trái nhất là cần thiết để duy trì cấu trúc của heap nhị phân, trong khi các yếu tố gây nhiễu đều không tuân theo quy tắc này.",
+      "topic": {
+        "name": "Hoạt động của Heap nhị phân",
+        "description": "Chủ đề này sẽ yêu cầu học sinh nắm bắt cách thức hoạt động của heap nhị phân, từ cách biểu diễn đến thuộc tính của nó. Học sinh cần phải hiểu được cách xếp hạng các nút trong heap và các thao tác cơ bản liên quan đến nó.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong quá trình chèn một phần tử mới vào heap nhị phân, thao tác nào đảm bảo cấu trúc heap vẫn được duy trì?",
+      "answer": "Bơi lên (heapify up)",
+      "distractors": [
+        "Chìm xuống (heapify down)",
+        "Thay thế phần tử gốc bằng phần tử cuối",
+        "Giữ nguyên vị trí của phần tử mới"
+      ],
+      "explanation": "Trong quá trình chèn một phần tử mới vào heap nhị phân, thao tác \"Bơi lên (heapify up)\" là câu trả lời đúng vì nó đảm bảo rằng cấu trúc heap vẫn được duy trì. Khi một phần tử mới được thêm vào, nó thường được đặt ở vị trí cuối cùng của heap. Để đảm bảo rằng heap vẫn tuân thủ quy tắc (mỗi nút cha lớn hơn hoặc bằng các nút con trong heap tối đa), chúng ta cần so sánh phần tử mới với nút cha của nó. Nếu phần tử mới lớn hơn nút cha, chúng ta sẽ hoán đổi vị trí của chúng và tiếp tục kiểm tra cho đến khi phần tử mới ở đúng vị trí, đảm bảo cấu trúc heap được duy trì.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Chìm xuống (heapify down)**: Đây là thao tác được sử dụng khi xóa phần tử gốc (thường là phần tử lớn nhất trong heap tối đa) và không phải là thao tác phù hợp khi chèn một phần tử mới. Chìm xuống giúp duy trì cấu trúc heap sau khi phần tử gốc bị xóa, không phải khi thêm phần tử mới.\n\n- **Thay thế phần tử gốc bằng phần tử cuối**: Thao tác này không đảm bảo cấu trúc heap được duy trì khi chèn. Việc thay thế phần tử gốc chỉ xảy ra trong quá trình xóa, và sau đó cần phải thực hiện \"chìm xuống\" để duy trì cấu trúc heap, không phải là một bước trong quá trình chèn.\n\n- **Giữ nguyên vị trí của phần tử mới**: Nếu giữ nguyên vị trí của phần tử mới mà không thực hiện \"bơi lên\", cấu trúc heap sẽ bị vi phạm, vì phần tử mới có thể không lớn hơn nút cha của nó. Điều này sẽ dẫn đến việc không duy trì được quy tắc của heap, do đó không thể giữ nguyên vị trí của phần tử mới.\n\nTóm lại, \"Bơi lên (heapify up)\" là thao tác cần thiết để duy trì cấu trúc heap khi chèn phần tử mới, trong khi các yếu tố gây nhiễu khác không phù hợp với quy trình này.",
+      "topic": {
+        "name": "Chèn và xóa trong Heap nhị phân",
+        "description": "Chủ đề này phân tích quy trình chèn và xóa mục tối đa trong heap nhị phân. Học sinh sẽ được yêu cầu mô tả các bước và cách hoạt động của việc 'bơi lên' và 'chìm xuống' để duy trì tính chính xác của heap.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong phân tích hiệu suất của thuật toán Heapsort, tỉ lệ số lần so sánh trong trường hợp xấu nhất là gì?",
+      "answer": "O(n log n)",
+      "distractors": [
+        "O(n^2)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về tỉ lệ số lần so sánh trong trường hợp xấu nhất của thuật toán Heapsort là O(n log n). Điều này đúng vì Heapsort sử dụng cấu trúc dữ liệu heap để thực hiện sắp xếp. Trong trường hợp xấu nhất, thuật toán cần phải thực hiện n lần chèn (insert) và mỗi lần chèn yêu cầu tối đa log n so sánh để duy trì tính chất của heap. Do đó, tổng số lần so sánh là O(n log n).\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n- **O(n^2)**: Tùy chọn này sai vì O(n^2) thường liên quan đến các thuật toán sắp xếp như Bubble Sort hoặc Selection Sort trong trường hợp xấu nhất. Heapsort không có độ phức tạp như vậy do cách thức hoạt động của nó với heap.\n\n- **O(n)**: Tùy chọn này cũng không chính xác vì O(n) chỉ cho thấy số lần so sánh tuyến tính, điều này không đủ để mô tả hiệu suất của Heapsort. Heapsort cần nhiều hơn n so sánh để hoàn thành quá trình sắp xếp, đặc biệt là khi xử lý các phần tử trong heap.\n\n- **O(log n)**: Tùy chọn này sai vì O(log n) chỉ phản ánh số lần so sánh cần thiết cho một lần chèn hoặc xóa trong heap, không phải cho toàn bộ quá trình sắp xếp. Heapsort cần thực hiện nhiều lần chèn và xóa, dẫn đến tổng số lần so sánh là O(n log n).\n\nTóm lại, O(n log n) là câu trả lời chính xác vì nó phản ánh đúng số lần so sánh cần thiết trong thuật toán Heapsort, trong khi các yếu tố gây nhiễu đều không chính xác do không mô tả đúng quy trình và độ phức tạp của thuật toán này.",
+      "topic": {
+        "name": "Heapsort và phân tích hiệu suất",
+        "description": "Chủ đề phân tích Heapsort, một thuật toán sắp xếp quan trọng, bao gồm cách thức hoạt động và quá trình sắp xếp. Học sinh sẽ cần phải nắm vững các thuật toán và độ phức tạp của chúng liên quan đến số lần so sánh và không gian nhớ.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong mô phỏng theo sự kiện, hàng đợi ưu tiên thường được sử dụng để quản lý đâu là các sự kiện sẽ được xử lý đầu tiên. Vậy yếu tố nào quyết định thứ tự xử lý các sự kiện trong hàng đợi ưu tiên?",
+      "answer": "Giá trị ưu tiên của mỗi sự kiện",
+      "distractors": [
+        "Thời gian xảy ra sự kiện trong mô phỏng",
+        "Thứ tự mà các sự kiện được thêm vào hàng đợi",
+        "Loại sự kiện trong mô phỏng"
+      ],
+      "explanation": "Câu trả lời đúng là \"Giá trị ưu tiên của mỗi sự kiện\" vì trong hàng đợi ưu tiên, các sự kiện được xử lý dựa trên giá trị ưu tiên mà chúng được gán. Giá trị này xác định thứ tự mà các sự kiện sẽ được lấy ra từ hàng đợi, với sự kiện có giá trị ưu tiên cao hơn sẽ được xử lý trước. Điều này cho phép mô phỏng hoạt động hiệu quả hơn bằng cách đảm bảo rằng các sự kiện quan trọng hơn được xử lý kịp thời.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Thời gian xảy ra sự kiện trong mô phỏng**: Mặc dù thời gian xảy ra có thể ảnh hưởng đến cách mà sự kiện được lên kế hoạch, nhưng trong hàng đợi ưu tiên, thứ tự xử lý không phụ thuộc vào thời gian mà sự kiện xảy ra mà là vào giá trị ưu tiên của nó.\n\n- **Thứ tự mà các sự kiện được thêm vào hàng đợi**: Thứ tự thêm sự kiện vào hàng đợi có thể không quyết định thứ tự xử lý. Nếu một sự kiện có giá trị ưu tiên cao hơn được thêm vào sau một sự kiện có giá trị ưu tiên thấp hơn, sự kiện có giá trị ưu tiên cao hơn vẫn sẽ được xử lý trước.\n\n- **Loại sự kiện trong mô phỏng**: Loại sự kiện có thể ảnh hưởng đến cách mà sự kiện được xử lý trong một số trường hợp, nhưng không phải là yếu tố quyết định trong hàng đợi ưu tiên. Thứ tự xử lý vẫn chủ yếu dựa vào giá trị ưu tiên, không phải loại sự kiện.\n\nTóm lại, câu trả lời đúng là giá trị ưu tiên của mỗi sự kiện, trong khi các yếu tố gây nhiễu không chính xác vì chúng không xác định thứ tự xử lý trong hàng đợi ưu tiên.",
+      "topic": {
+        "name": "Mô phỏng theo sự kiện với Hàng đợi ưu tiên",
+        "description": "Nhằm tạo ra cái nhìn tổng quan về các ứng dụng của hàng đợi ưu tiên trong mô phỏng. Học sinh sẽ được kiểm tra khả năng liên kết các khái niệm của hàng đợi ưu tiên với thực tế mô phỏng theo sự kiện.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "So với Mergesort, Heapsort có điểm nào khác biệt trong việc xử lý dữ liệu?",
+      "answer": "Heapsort sử dụng cấu trúc dữ liệu heap để thực hiện sắp xếp, trong khi Mergesort sử dụng phương pháp chia để trị.",
+      "distractors": [
+        "Heapsort sử dụng phương pháp chia để trị giống như Mergesort.",
+        "Mergesort sử dụng cấu trúc dữ liệu heap để thực hiện sắp xếp.",
+        "Heapsort có độ phức tạp thời gian tốt hơn Mergesort trong mọi trường hợp."
+      ],
+      "explanation": "Câu trả lời đúng là \"Heapsort sử dụng cấu trúc dữ liệu heap để thực hiện sắp xếp, trong khi Mergesort sử dụng phương pháp chia để trị.\" Điều này đúng vì Heapsort dựa vào cấu trúc dữ liệu heap (cụ thể là max-heap hoặc min-heap) để tổ chức và sắp xếp dữ liệu, cho phép nó thực hiện việc sắp xếp trong thời gian O(n log n). Ngược lại, Mergesort sử dụng phương pháp chia để trị, trong đó nó chia mảng thành các phần nhỏ hơn, sắp xếp chúng và sau đó hợp nhất lại, cũng với độ phức tạp O(n log n), nhưng không sử dụng heap.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Heapsort sử dụng phương pháp chia để trị giống như Mergesort**: Sai, vì Heapsort không chia dữ liệu mà sử dụng cấu trúc heap để sắp xếp, trong khi Mergesort thực hiện chia để trị.\n- **Mergesort sử dụng cấu trúc dữ liệu heap để thực hiện sắp xếp**: Sai, vì Mergesort không sử dụng heap mà sử dụng phương pháp chia để trị và hợp nhất các mảng đã sắp xếp.\n- **Heapsort có độ phức tạp thời gian tốt hơn Mergesort trong mọi trường hợp**: Sai, vì cả hai thuật toán đều có độ phức tạp thời gian trung bình và xấu nhất là O(n log n). Tuy nhiên, Mergesort có ưu điểm trong trường hợp dữ liệu lớn và không thể chứa trong bộ nhớ, trong khi Heapsort có thể có hiệu suất kém hơn trong một số trường hợp cụ thể do cách thức tổ chức dữ liệu.",
+      "topic": {
+        "name": "Phân tích chi tiết về Mergesort và Heapsort",
+        "description": "Chủ đề này kết hợp kiến thức từ tuần 3 và tuần 5, nhấn mạnh sự khác biệt và ưu điểm của Mergesort và Heapsort trong việc xử lý dữ liệu. Học sinh cần phân tích hiệu suất và các yếu tố của từng thuật toán để ứng dụng trong tình huống cụ thể.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Đâu là sự khác biệt chính giữa cấu trúc dữ liệu queue và heap trong việc quản lý và sắp xếp dữ liệu?",
+      "answer": "Queue thực hiện nguyên tắc FIFO (First In First Out), trong khi heap thực hiện nguyên tắc tổ chức cây nhị phân để truy cập nhanh nhất phần tử lớn nhất hoặc nhỏ nhất.",
+      "distractors": [
+        "Queue thực hiện nguyên tắc LIFO (Last In First Out) trong khi heap không có cấu trúc cây nhị phân.",
+        "Heap sử dụng nguyên tắc FIFO để quản lý dữ liệu, trong khi queue không có tổ chức cụ thể.",
+        "Queue có thể truy cập nhanh nhất phần tử lớn nhất, trong khi heap không có khả năng này."
+      ],
+      "explanation": "Câu trả lời đúng là \"Queue thực hiện nguyên tắc FIFO (First In First Out), trong khi heap thực hiện nguyên tắc tổ chức cây nhị phân để truy cập nhanh nhất phần tử lớn nhất hoặc nhỏ nhất.\" Đây là câu trả lời chính xác vì queue là một cấu trúc dữ liệu cho phép thêm phần tử vào cuối và lấy phần tử từ đầu, theo thứ tự mà chúng được thêm vào (FIFO). Ngược lại, heap là một cấu trúc dữ liệu dạng cây nhị phân, nơi mỗi nút cha lớn hơn (hoặc nhỏ hơn) các nút con, cho phép truy cập nhanh đến phần tử lớn nhất (max-heap) hoặc nhỏ nhất (min-heap).\n\nGiải thích về các yếu tố gây nhiễu:\n- **Queue thực hiện nguyên tắc LIFO (Last In First Out) trong khi heap không có cấu trúc cây nhị phân.**: Sai vì queue thực hiện nguyên tắc FIFO, không phải LIFO. LIFO là đặc trưng của stack, không phải queue. Hơn nữa, heap thực sự có cấu trúc cây nhị phân.\n  \n- **Heap sử dụng nguyên tắc FIFO để quản lý dữ liệu, trong khi queue không có tổ chức cụ thể.**: Sai vì heap không sử dụng nguyên tắc FIFO; nó sử dụng cấu trúc cây nhị phân để tổ chức dữ liệu. Queue có tổ chức rõ ràng theo nguyên tắc FIFO, cho phép quản lý dữ liệu theo thứ tự mà chúng được thêm vào.\n\n- **Queue có thể truy cập nhanh nhất phần tử lớn nhất, trong khi heap không có khả năng này.**: Sai vì queue không được thiết kế để truy cập nhanh phần tử lớn nhất; nó chỉ cho phép truy cập phần tử theo thứ tự thêm vào. Heap, ngược lại, được thiết kế để truy cập nhanh nhất phần tử lớn nhất (hoặc nhỏ nhất) nhờ vào cấu trúc cây nhị phân của nó.",
+      "topic": {
+        "name": "Các cấu trúc dữ liệu và thuật toán sắp xếp liên kết",
+        "description": "Chủ đề này kết hợp kiến thức từ các tuần trước về cấu trúc dữ liệu (đặc biệt là queue và heap) và thuật toán sắp xếp. Học sinh sẽ được yêu cầu so sánh các cấu trúc này và hiểu rõ về ứng dụng của chúng trong việc sắp xếp và quản lý dữ liệu.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Nhận thức"
+      },
+      "week_number": 5,
+      "course_code": "dsa2025"
+    }
+  ]
+}

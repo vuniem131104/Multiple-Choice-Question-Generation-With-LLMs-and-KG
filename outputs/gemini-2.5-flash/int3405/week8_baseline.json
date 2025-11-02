@@ -1,0 +1,91 @@
+{
+    "questions": [
+        {
+            "question": "Đặc điểm nào sau đây KHÔNG phải là một đặc điểm cơ bản của kiến trúc Mạng nơ-ron tích chập (CNN)?",
+            "answer": "Các lớp ẩn được kết nối hoàn toàn (fully connected) với tất cả các nơ-ron ở lớp trước.",
+            "distractors": [
+                "Sử dụng các lớp tích chập để trích xuất đặc trưng cục bộ từ dữ liệu đầu vào.",
+                "Các nơ-ron trong một lớp tích chập chỉ được kết nối với một vùng nhỏ của đầu vào, được gọi là trường tiếp nhận cục bộ.",
+                "Sử dụng chia sẻ trọng số (weight sharing) để giảm số lượng tham số và tăng hiệu quả học tập.",
+                "Có khả năng xử lý đầu vào có kích thước cố định, chẳng hạn như hình ảnh."
+            ],
+            "explanation": "CNN sử dụng các lớp tích chập với trường tiếp nhận cục bộ và chia sẻ trọng số. Các lớp ẩn trong CNN thường không được kết nối hoàn toàn như trong mạng nơ-ron truyền thống, mà chỉ kết nối với một vùng cục bộ của đầu vào. Các lớp kết nối hoàn toàn thường chỉ xuất hiện ở cuối kiến trúc CNN."
+        },
+        {
+            "question": "Chức năng chính của lớp gộp (Pooling Layer) trong Mạng nơ-ron tích chập (CNN) là gì?",
+            "answer": "Giảm chiều dữ liệu (downsampling) của bản đồ đặc trưng, giúp giảm số lượng tham số và kiểm soát overfitting.",
+            "distractors": [
+                "Thực hiện phép tích chập để trích xuất các đặc trưng cấp cao từ dữ liệu đầu vào.",
+                "Áp dụng hàm kích hoạt phi tuyến tính lên đầu ra của lớp tích chập.",
+                "Thêm thông tin ngữ cảnh từ các vùng khác nhau của hình ảnh vào bản đồ đặc trưng.",
+                "Tăng cường độ phân giải của bản đồ đặc trưng để phát hiện các chi tiết nhỏ hơn."
+            ],
+            "explanation": "Lớp gộp, như Max Pooling hoặc Average Pooling, có chức năng chính là giảm chiều dữ liệu của bản đồ đặc trưng. Điều này giúp giảm số lượng tham số trong mạng, làm cho mô hình hiệu quả hơn về mặt tính toán và quan trọng hơn là giúp kiểm soát overfitting bằng cách làm cho mô hình ít nhạy cảm hơn với các thay đổi nhỏ trong dữ liệu đầu vào."
+        },
+        {
+            "question": "Trong kiến trúc Bộ nhớ dài-ngắn hạn (LSTM), cổng nào chịu trách nhiệm quyết định thông tin nào từ trạng thái ô nhớ trước đó sẽ được quên đi?",
+            "answer": "Cổng quên (Forget Gate).",
+            "distractors": [
+                "Cổng đầu vào (Input Gate).",
+                "Cổng đầu ra (Output Gate).",
+                "Cổng cập nhật (Update Gate).",
+                "Cổng ghi nhớ (Memory Gate)."
+            ],
+            "explanation": "Cổng quên (Forget Gate) trong LSTM sử dụng một hàm sigmoid để tạo ra một vector có giá trị từ 0 đến 1. Giá trị này sau đó được nhân với trạng thái ô nhớ trước đó (Ct-1), quyết định mức độ thông tin nào sẽ được giữ lại (gần 1) và thông tin nào sẽ bị quên đi (gần 0)."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản nhất giữa Mạng nơ-ron tích chập (CNN) và Mạng nơ-ron hồi quy (RNN) nằm ở khả năng xử lý loại dữ liệu nào?",
+            "answer": "CNN tối ưu cho dữ liệu có cấu trúc không gian (ví dụ: hình ảnh), trong khi RNN tối ưu cho dữ liệu tuần tự (ví dụ: chuỗi thời gian, văn bản).",
+            "distractors": [
+                "CNN có khả năng học các phụ thuộc dài hạn tốt hơn RNN.",
+                "RNN yêu cầu đầu vào có kích thước cố định, còn CNN thì không.",
+                "CNN sử dụng các cổng để kiểm soát luồng thông tin, còn RNN thì không.",
+                "RNN chỉ có thể xử lý dữ liệu số, trong khi CNN có thể xử lý cả dữ liệu số và phi số."
+            ],
+            "explanation": "CNN được thiết kế để xử lý dữ liệu có cấu trúc không gian như hình ảnh, sử dụng các phép tích chập để trích xuất đặc trưng cục bộ. Ngược lại, RNN được thiết kế để xử lý dữ liệu tuần tự, nơi thứ tự của các phần tử là quan trọng, như chuỗi thời gian hoặc văn bản, bằng cách duy trì một trạng thái ẩn để truyền thông tin qua các bước thời gian."
+        },
+        {
+            "question": "Vấn đề gradient biến mất (Vanishing Gradient Problem) trong RNN xảy ra khi nào và gây ra hậu quả gì?",
+            "answer": "Xảy ra khi gradient trở nên quá nhỏ trong quá trình lan truyền ngược qua nhiều bước thời gian, khiến mạng khó học được các phụ thuộc dài hạn.",
+            "distractors": [
+                "Xảy ra khi gradient trở nên quá lớn, dẫn đến sự thay đổi trọng số không ổn định và làm cho quá trình huấn luyện phân kỳ.",
+                "Xảy ra khi mạng không thể xử lý được các chuỗi đầu vào có độ dài khác nhau.",
+                "Xảy ra khi các trọng số của mạng không được khởi tạo đúng cách, dẫn đến việc mạng không thể hội tụ.",
+                "Xảy ra khi hàm mất mát không thể giảm xuống dưới một ngưỡng nhất định, bất kể số lượng epoch huấn luyện."
+            ],
+            "explanation": "Vấn đề gradient biến mất xảy ra khi gradient của hàm mất mát đối với các trọng số ở các lớp đầu tiên trở nên cực kỳ nhỏ trong quá trình lan truyền ngược qua nhiều bước thời gian. Điều này làm cho việc cập nhật trọng số ở các lớp đầu trở nên không đáng kể, khiến mạng khó học được các phụ thuộc dài hạn trong dữ liệu tuần tự."
+        },
+        {
+            "question": "Để giảm thiểu overfitting trong các mô hình học sâu, kỹ thuật nào sau đây thường được sử dụng để ngẫu nhiên bỏ qua một số nơ-ron trong quá trình huấn luyện?",
+            "answer": "Dropout.",
+            "distractors": [
+                "Batch Normalization.",
+                "Early Stopping.",
+                "Weight Decay (L2 Regularization)."
+            ],
+            "explanation": "Dropout là một kỹ thuật điều chuẩn (regularization) phổ biến, trong đó một tỷ lệ ngẫu nhiên các nơ-ron (cùng với các kết nối của chúng) bị 'tắt' (đặt đầu ra bằng 0) trong quá trình huấn luyện. Điều này buộc mạng phải học các biểu diễn mạnh mẽ hơn, ít phụ thuộc vào bất kỳ nơ-ron cụ thể nào, từ đó giảm overfitting."
+        },
+        {
+            "question": "Khái niệm cốt lõi nào mô tả khả năng của Mạng nơ-ron hồi quy (RNN) trong việc truyền thông tin có chọn lọc qua các bước chuỗi, cho phép bộ nhớ của các đầu vào trước đó ảnh hưởng đến kết quả hiện tại?",
+            "answer": "Khả năng duy trì trạng thái ẩn (hidden state) hoặc bộ nhớ nội bộ qua các bước thời gian.",
+            "distractors": [
+                "Sử dụng các bộ lọc tích chập để trích xuất đặc trưng không gian.",
+                "Áp dụng cơ chế chú ý (attention mechanism) để tập trung vào các phần quan trọng của đầu vào.",
+                "Thực hiện phép gộp (pooling) để giảm chiều dữ liệu.",
+                "Sử dụng các lớp kết nối hoàn toàn (fully connected layers) để phân loại đầu ra."
+            ],
+            "explanation": "Khái niệm cốt lõi của RNN là khả năng duy trì một trạng thái ẩn (hidden state) hoặc bộ nhớ nội bộ. Trạng thái này được cập nhật ở mỗi bước thời gian dựa trên đầu vào hiện tại và trạng thái ẩn trước đó, cho phép mạng 'ghi nhớ' thông tin từ các đầu vào trước đó và sử dụng nó để ảnh hưởng đến đầu ra hiện tại."
+        },
+        {
+            "question": "Trong học sâu, Gradient Descent được sử dụng để tối ưu hóa tham số của mạng nơ-ron bằng cách nào?",
+            "answer": "Điều chỉnh các trọng số và độ lệch (bias) của mạng theo hướng ngược lại với gradient của hàm mất mát, nhằm giảm thiểu hàm mất mát.",
+            "distractors": [
+                "Tính toán đạo hàm bậc hai của hàm mất mát để tìm điểm cực tiểu toàn cục.",
+                "Tăng cường độ phức tạp của mô hình để đảm bảo khả năng học các đặc trưng phức tạp.",
+                "Ngẫu nhiên thay đổi các tham số của mạng cho đến khi đạt được hiệu suất mong muốn.",
+                "Sử dụng một hàm kích hoạt phi tuyến tính để giới thiệu tính phi tuyến vào mô hình."
+            ],
+            "explanation": "Gradient Descent là một thuật toán tối ưu hóa lặp đi lặp lại. Nó hoạt động bằng cách tính toán gradient của hàm mất mát (loss function) đối với các tham số của mạng (trọng số và độ lệch). Sau đó, các tham số được cập nhật bằng cách di chuyển một bước nhỏ theo hướng ngược lại với gradient, tức là hướng mà hàm mất mát giảm nhanh nhất. Mục tiêu là tìm ra tập hợp các tham số tối ưu giúp giảm thiểu hàm mất mát."
+        }
+    ]
+}

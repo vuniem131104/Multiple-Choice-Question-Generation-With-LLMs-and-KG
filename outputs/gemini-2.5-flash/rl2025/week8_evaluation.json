@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Cốt lõi về Khám phá và Khai thác",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant and appropriate for the 'Remember' Bloom level. The Pipeline question is slightly better because its distractors ('Cân bằng', 'Tối ưu hóa') are more plausible and directly related to the decision-making context than Baseline's 'Bỏ qua thông tin mới và chỉ dựa vào kinh nghiệm cũ', which is clearly incorrect. Pipeline's question also directly asks for the term, which aligns well with a 'Remember' level."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Giới thiệu Thuật toán Multi-Armed Bandit (MAB)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is superior. It provides a more precise and complete correct answer ('Tối đa hóa tổng phần thưởng tích lũy trong một chuỗi các lần thử') which fully captures the essence of MAB's objective. Pipeline's correct answer ('Tối đa hóa phần thưởng tích lũy') is correct but less specific. Baseline's distractors are also slightly more plausible and well-formed, making it a better 'Understand' level question."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "So sánh Thuật toán Tham lam và ε-Greedy",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is significantly better. It clearly and concisely asks for the key difference, and its correct answer directly contrasts the two algorithms. The distractors are also well-crafted, representing common misunderstandings. The Pipeline question's phrasing is a bit more convoluted ('thể hiện sự cải tiến đáng kể... thông qua cơ chế nào để giải quyết vấn đề bị khóa vào một hành động không tối ưu?') and its distractors are less plausible, making it less effective for an 'Analyze' level question."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Ứng dụng Khởi tạo lạc quan trong RL",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better because it directly asks how optimistic initialization is applied, providing a more concrete answer related to Q-values. The Pipeline question is a bit more abstract, asking how the agent is 'encouraged to act'. Baseline's distractors are also more relevant to the technical aspects of RL. Both are good for 'Apply' but Baseline is more precise."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Tính toán chỉ số UCB1 bằng Bất đẳng thức Hoeffding",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is significantly better. It clearly asks for the meaning of the UCB index in balancing exploration/exploitation, which is a core concept. Its correct answer is concise and accurate. The Pipeline question is overly verbose and complex, making it difficult to parse. Its distractors are also less distinct and plausible, reducing its effectiveness as an 'Analyze' level question. The clarity and conciseness of Baseline make it superior."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Mối quan hệ Regret và Lai và Robbins",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better because it defines 'total regret' which is a fundamental concept for an 'Understand' level question. The Pipeline question asks about the main objective, which is also relevant, but defining the term itself is more foundational. Baseline's distractors are also well-formed and plausible, making it a stronger question overall."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Thompson Sampling và Ưu điểm so với UCB",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better. It directly asks for the main advantage, and its correct answer clearly highlights the key aspects (posterior distribution, prior knowledge, Lai and Robbins lower bound). The Pipeline question's phrasing is a bit more complex and its distractors are less effective. Baseline provides a more direct and accurate assessment of understanding at the 'Analyze' level."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Áp dụng Contextual Bandits với Hồi quy Tuyến tính",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 1.0,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is slightly better due to its more concise and direct phrasing, and its correct answer more explicitly links the generalization capability to 'mở rộng khả năng của MAB truyền thống'. Both questions are very good and highly relevant for the 'Apply' level, but Baseline's clarity and precision give it a slight edge. Pipeline's distractors are also good, but Baseline's are marginally stronger."
+        }
+    ]
+}

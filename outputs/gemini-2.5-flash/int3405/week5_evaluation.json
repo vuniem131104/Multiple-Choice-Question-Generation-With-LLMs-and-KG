@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Định nghĩa Lỗi Thực tế và Lỗi Thực nghiệm",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and aligned with the topic, but the baseline question is slightly clearer in its phrasing, particularly in the correct answer. The distractors in the baseline question are also marginally more plausible, making it the better choice overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Nhận biết các ví dụ về Quá khớp và Dưới khớp",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question provides a more specific example (R-squared values) that enhances clarity and makes the distractors more plausible. This additional context slightly improves the educational value, making it the winner."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Các Phương pháp Lựa chọn Đặc trưng Không giám sát",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is slightly clearer and more specific in its phrasing, particularly in the correct answer. The distractors are also marginally more plausible, making it the better choice overall."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "So sánh L1 và L2 Regularization (Liên tuần: Tuần 1, Tuần 2, Tuần 5)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and aligned with the topic, but the baseline question is slightly clearer in its phrasing and provides more plausible distractors, making it the better choice overall."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Ảnh hưởng của Độ phức tạp Mô hình đến Lỗi (Liên tuần: Tuần 3, Tuần 4, Tuần 5)",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question provides a more detailed and nuanced explanation of the relationship between model complexity and error, making it slightly more relevant and clear. The distractors are also more plausible, leading to a better overall question."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Xác định Lỗi Ước tính và Lỗi Xấp xỉ",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question is slightly more detailed and precise in its explanation of estimation error, making it clearer and more aligned with the topic. The distractors are also marginally more plausible, leading to a better overall question."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Hiểu Biểu đồ Đánh đổi Độ lệch - Phương sai",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "The baseline question provides a more specific and detailed explanation of the bias-variance trade-off, making it clearer and more aligned with the topic. The distractors are also more plausible, leading to a better overall question."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Áp dụng Điều chuẩn để giải quyết Quá khớp (Liên tuần: Tuần 1, Tuần 2, Tuần 5)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and aligned with the topic, but the baseline question is slightly clearer in its phrasing and provides more plausible distractors, making it the better choice overall."
+        }
+    ]
+}

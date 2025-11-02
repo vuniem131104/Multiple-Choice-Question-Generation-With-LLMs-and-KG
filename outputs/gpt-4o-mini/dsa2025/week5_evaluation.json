@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Hàng đợi ưu tiên và ứng dụng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more comprehensive and accurate definition of a priority queue, explicitly contrasting it with a regular queue, which is a key distinguishing feature. The distractors are also more subtly incorrect, making them more plausible. The Baseline question's correct answer is slightly less precise, and one distractor ('Một thuật toán sắp xếp dữ liệu') is too obviously wrong."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "API của Hàng đợi ưu tiên",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and nearly identical in quality. They both clearly ask about the correct method for adding an element to a priority queue in Java and provide plausible distractors. The slight difference in wording ('addElement()' vs 'add()') for one distractor doesn't significantly impact the overall quality."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Hoạt động của Heap nhị phân",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "baseline",
+            "rationale": "The Baseline question is better because it directly addresses the representation of a binary heap, which is a fundamental concept for understanding its operation, aligning well with the 'Understand' aspect of Bloom's. The Pipeline question attempts to ask about the first step of insertion, which is more 'Apply', but its correct answer is slightly ambiguous ('vị trí trống trái nhất trong cây' isn't always the first step before 'swim up') and distractors are less plausible. The Baseline question's distractors are also more distinct and relevant to data structures."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Chèn và xóa trong Heap nhị phân",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and nearly identical. They both correctly identify 'bơi lên' (swim up/heapify up) as the key operation for maintaining heap property during insertion. The distractors are also very similar and plausible. Both questions effectively test the 'Apply' Bloom level."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Heapsort và phân tích hiệu suất",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.5
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is significantly better as it directly addresses the 'Phân tích hiệu suất' (performance analysis) aspect of the topic by asking about the worst-case time complexity, which aligns with the 'Analyze' Bloom level and 'Khó' difficulty. The Baseline question, while relevant, only asks for a basic definition of Heapsort, which is too easy and only tests 'Remember', not 'Analyze', making it misaligned with the expected difficulty and Bloom level."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Mô phỏng theo sự kiện với Hàng đợi ưu tiên",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it delves deeper into the 'why' and 'how' of priority queues in event-driven simulation, asking about the *factor* that determines processing order. This aligns better with the 'Đánh giá' (Evaluate) Bloom level and 'Trung bình' difficulty. The Baseline question is a simpler 'Understand' level question, asking only 'what for', and its distractors are less plausible."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Phân tích chi tiết về Mergesort và Heapsort",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent and very similar. They both effectively ask for the key difference between Mergesort and Heapsort, testing the 'Analyze' Bloom level and 'Khó' difficulty. The correct answers and distractors are well-formulated and plausible in both cases. The slight wording differences do not impact the overall quality significantly."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Các cấu trúc dữ liệu và thuật toán sắp xếp liên kết",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is superior because it asks for a direct comparison and key difference between Queue and Heap, which aligns perfectly with the 'Nhận thức' (Understand/Analyze) Bloom level and 'Trung bình' difficulty for comparing linked data structures. The Baseline question is too simplistic, merely asking which structure is *often* used for sorting, which is a 'Remember' level question and doesn't fully capture the comparative nature implied by the topic description. Its distractors are also less specific to the core difference."
+        }
+    ]
+}

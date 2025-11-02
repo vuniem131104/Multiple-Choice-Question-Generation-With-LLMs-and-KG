@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Đặc điểm cấu trúc của Cây tìm kiếm nhị phân (BST)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "baseline",
+            "rationale": "Both questions are highly relevant and aligned with the topic and Bloom level. However, the baseline question is slightly clearer in its wording and has slightly more plausible distractors, making it the better choice overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Thao tác tìm kiếm (get) trong BST",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly clearer and has more plausible distractors compared to the baseline question. Both questions are equally relevant and aligned with the Bloom level, but the pipeline question edges out due to better clarity and distractor quality."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Thao tác chèn (put) vào BST",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.75,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are equally relevant and aligned with the Bloom level, but the pipeline question has slightly more plausible distractors, making it the better choice overall."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Generics và Comparable trong triển khai BST (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are equally relevant, clear, and aligned with the Bloom level. The distractors and difficulty are also equally well-calibrated, resulting in a tie."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Phân tích hiệu suất trung bình của BST",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are equally relevant, clear, and aligned with the Bloom level. The distractors and difficulty are also equally well-calibrated, resulting in a tie."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Ý nghĩa của duyệt cây Inorder trong BST",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are equally relevant, clear, and aligned with the Bloom level. The distractors and difficulty are also equally well-calibrated, resulting in a tie."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "So sánh Heap nhị phân và BST (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are equally relevant, clear, and aligned with the Bloom level. The distractors and difficulty are also equally well-calibrated, resulting in a tie."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Đánh giá nhược điểm của Hibbard deletion và tương quan với Quicksort (Liên tuần)",
+            "pipeline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are equally relevant, clear, and aligned with the Bloom level. The distractors and difficulty are also equally well-calibrated, resulting in a tie."
+        }
+    ]
+}

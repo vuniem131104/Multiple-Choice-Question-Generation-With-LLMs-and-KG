@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Mạng Nơ-ron Tích chập (CNN) chủ yếu được sử dụng trong lĩnh vực nào?",
+            "answer": "Phân loại hình ảnh",
+            "distractors": [
+                "Dự đoán thời tiết",
+                "Xử lý ngôn ngữ tự nhiên",
+                "Phân tích dữ liệu lớn"
+            ],
+            "explanation": "CNN chủ yếu được thiết kế để xử lý và phân loại hình ảnh, nhờ vào khả năng nhận diện các đặc trưng không gian trong dữ liệu hình ảnh."
+        },
+        {
+            "question": "Lớp gộp tối đa (Max pooling) trong CNN có chức năng gì?",
+            "answer": "Giảm kích thước đầu ra và giữ lại các đặc trưng quan trọng",
+            "distractors": [
+                "Tăng kích thước đầu ra",
+                "Loại bỏ tất cả các đặc trưng",
+                "Tăng độ chính xác của mô hình"
+            ],
+            "explanation": "Max pooling giúp giảm kích thước đầu ra của dữ liệu, đồng thời giữ lại các đặc trưng quan trọng nhất, từ đó giúp mô hình học tốt hơn."
+        },
+        {
+            "question": "Gradient biến mất thường xảy ra trong trường hợp nào?",
+            "answer": "Khi sử dụng các hàm kích hoạt như sigmoid hoặc tanh với đầu vào lớn",
+            "distractors": [
+                "Khi sử dụng hàm kích hoạt ReLU",
+                "Khi mô hình quá đơn giản",
+                "Khi dữ liệu đầu vào không đủ lớn"
+            ],
+            "explanation": "Gradient biến mất xảy ra khi các giá trị đầu vào lớn dẫn đến gradient gần bằng 0, làm cho quá trình huấn luyện trở nên khó khăn."
+        },
+        {
+            "question": "LSTM được thiết kế để giải quyết vấn đề gì trong RNN?",
+            "answer": "Gradient biến mất",
+            "distractors": [
+                "Overfitting",
+                "Dữ liệu không đủ",
+                "Thời gian huấn luyện dài"
+            ],
+            "explanation": "LSTM sử dụng các cổng kiểm soát để duy trì thông tin qua nhiều bước thời gian, giúp khắc phục vấn đề gradient biến mất."
+        },
+        {
+            "question": "Mạng Nơ-ron Hồi quy (RNN) thường được sử dụng để làm gì?",
+            "answer": "Xử lý dữ liệu tuần tự như văn bản hoặc âm thanh",
+            "distractors": [
+                "Phân loại hình ảnh",
+                "Dự đoán giá cổ phiếu",
+                "Phân tích dữ liệu lớn"
+            ],
+            "explanation": "RNN được thiết kế để xử lý dữ liệu tuần tự, rất phù hợp cho các tác vụ như phân tích cảm xúc trong văn bản."
+        },
+        {
+            "question": "Khi kết hợp CNN và RNN, ứng dụng nào sau đây là phổ biến nhất?",
+            "answer": "Chú thích hình ảnh",
+            "distractors": [
+                "Dự đoán thời tiết",
+                "Phân loại văn bản",
+                "Phân tích dữ liệu lớn"
+            ],
+            "explanation": "Sự kết hợp giữa CNN và RNN cho phép mô hình vừa nhận diện hình ảnh vừa tạo ra mô tả cho hình ảnh đó, rất hữu ích trong chú thích hình ảnh."
+        },
+        {
+            "question": "Kỹ thuật nào sau đây không phải là một phương pháp giảm thiểu overfitting?",
+            "answer": "Tăng kích thước mô hình",
+            "distractors": [
+                "Dropout",
+                "Batch Normalization",
+                "Sử dụng dữ liệu huấn luyện nhiều hơn"
+            ],
+            "explanation": "Tăng kích thước mô hình có thể dẫn đến overfitting, trong khi các phương pháp như Dropout và Batch Normalization giúp cải thiện khả năng tổng quát của mô hình."
+        },
+        {
+            "question": "Early Stopping là gì trong quá trình huấn luyện mô hình?",
+            "answer": "Dừng huấn luyện khi hiệu suất trên tập kiểm tra không cải thiện",
+            "distractors": [
+                "Dừng huấn luyện khi đạt số epoch tối đa",
+                "Dừng huấn luyện khi mô hình đạt độ chính xác 100%",
+                "Dừng huấn luyện khi không còn dữ liệu huấn luyện"
+            ],
+            "explanation": "Early Stopping giúp ngăn chặn overfitting bằng cách dừng quá trình huấn luyện khi hiệu suất trên tập kiểm tra không còn cải thiện."
+        }
+    ]
+}

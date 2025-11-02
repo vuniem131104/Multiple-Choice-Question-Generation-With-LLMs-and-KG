@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong học máy, khái niệm 'overfitting' đề cập đến điều gì?",
+            "answer": "Mô hình học quá kỹ từ dữ liệu huấn luyện, dẫn đến hiệu suất kém trên dữ liệu mới.",
+            "distractors": [
+                "Mô hình không học được từ dữ liệu huấn luyện.",
+                "Mô hình có khả năng tổng quát cao.",
+                "Mô hình chỉ sử dụng một phần dữ liệu huấn luyện."
+            ],
+            "explanation": "Overfitting xảy ra khi mô hình quá phức tạp và học thuộc lòng dữ liệu huấn luyện, làm giảm khả năng tổng quát của nó trên dữ liệu chưa thấy."
+        },
+        {
+            "question": "Định lý Bayes cho phép chúng ta tính toán xác suất nào sau đây?",
+            "answer": "Xác suất hậu nghiệm dựa trên xác suất tiên nghiệm và xác suất khả dĩ.",
+            "distractors": [
+                "Xác suất của một sự kiện xảy ra mà không cần thông tin nào khác.",
+                "Xác suất của một sự kiện xảy ra trong tương lai.",
+                "Xác suất của một sự kiện xảy ra trong quá khứ."
+            ],
+            "explanation": "Định lý Bayes cho phép chúng ta cập nhật xác suất của một giả thuyết dựa trên thông tin mới, thông qua công thức xác suất hậu nghiệm."
+        },
+        {
+            "question": "Học tập Hậu nghiệm tối đa (MAP) được sử dụng để làm gì trong học máy?",
+            "answer": "Tìm giả thuyết tối ưu dựa trên dữ liệu và xác suất tiên nghiệm.",
+            "distractors": [
+                "Tối đa hóa độ chính xác của mô hình trên dữ liệu huấn luyện.",
+                "Giảm thiểu số chiều của dữ liệu đầu vào.",
+                "Tạo ra dữ liệu huấn luyện mới từ dữ liệu hiện có."
+            ],
+            "explanation": "MAP giúp tìm ra giả thuyết tốt nhất bằng cách kết hợp thông tin từ dữ liệu và xác suất tiên nghiệm, từ đó tối ưu hóa mô hình."
+        },
+        {
+            "question": "Ước lượng khả dĩ tối đa (MLE) là gì trong học máy?",
+            "answer": "Phương pháp tìm tham số mô hình bằng cách tối đa hóa xác suất của dữ liệu huấn luyện.",
+            "distractors": [
+                "Phương pháp ước lượng tham số bằng cách lấy trung bình của dữ liệu.",
+                "Phương pháp tìm tham số mô hình bằng cách tối thiểu hóa sai số.",
+                "Phương pháp ước lượng tham số dựa trên giả định độc lập."
+            ],
+            "explanation": "MLE tìm tham số mô hình sao cho xác suất của dữ liệu huấn luyện là lớn nhất, giúp cải thiện độ chính xác của mô hình."
+        },
+        {
+            "question": "Mô hình sinh xác suất thường được sử dụng trong tình huống nào?",
+            "answer": "Khi cần phân loại dữ liệu vào các lớp khác nhau dựa trên xác suất.",
+            "distractors": [
+                "Khi dữ liệu không có cấu trúc rõ ràng.",
+                "Khi chỉ có một lớp dữ liệu duy nhất.",
+                "Khi không cần tính toán xác suất."
+            ],
+            "explanation": "Mô hình sinh xác suất giúp phân loại dữ liệu bằng cách tính toán xác suất cho từng lớp, từ đó đưa ra quyết định phân loại."
+        },
+        {
+            "question": "Lời nguyền của chiều trong học máy có thể gây ra vấn đề gì?",
+            "answer": "Giảm hiệu suất của mô hình khi số chiều của dữ liệu quá cao.",
+            "distractors": [
+                "Tăng độ chính xác của mô hình.",
+                "Giảm kích thước của dữ liệu huấn luyện.",
+                "Tăng tốc độ xử lý dữ liệu."
+            ],
+            "explanation": "Lời nguyền của chiều xảy ra khi số chiều tăng lên, làm cho dữ liệu trở nên thưa thớt và khó khăn hơn cho mô hình học."
+        },
+        {
+            "question": "Bộ phân loại Naïve Bayes dựa trên giả định nào?",
+            "answer": "Giả định độc lập có điều kiện giữa các đặc trưng.",
+            "distractors": [
+                "Giả định rằng tất cả các đặc trưng đều phụ thuộc lẫn nhau.",
+                "Giả định rằng dữ liệu là phân phối chuẩn.",
+                "Giả định rằng không có đặc trưng nào là quan trọng."
+            ],
+            "explanation": "Bộ phân loại Naïve Bayes giả định rằng các đặc trưng là độc lập với nhau, điều này giúp đơn giản hóa tính toán xác suất."
+        },
+        {
+            "question": "So sánh mô hình phân biệt và mô hình sinh, điều nào sau đây là đúng?",
+            "answer": "Mô hình phân biệt tập trung vào việc phân loại dữ liệu, trong khi mô hình sinh tạo ra dữ liệu mới.",
+            "distractors": [
+                "Mô hình phân biệt không thể sử dụng cho dữ liệu không có nhãn.",
+                "Mô hình sinh luôn chính xác hơn mô hình phân biệt.",
+                "Mô hình phân biệt và sinh đều có cùng cách tiếp cận."
+            ],
+            "explanation": "Mô hình phân biệt học cách phân loại dữ liệu dựa trên các đặc trưng, trong khi mô hình sinh học cách tạo ra dữ liệu mới từ các lớp đã biết."
+        }
+    ]
+}

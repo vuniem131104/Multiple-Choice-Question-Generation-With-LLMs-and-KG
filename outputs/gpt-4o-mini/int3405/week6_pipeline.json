@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Phân tích cụm trong máy học chủ yếu được sử dụng để làm gì?",
+      "answer": "Gộp nhóm các đối tượng dựa trên các đặc điểm chung.",
+      "distractors": [
+        "Phân tích cụm chủ yếu được sử dụng để dự đoán giá trị của các đối tượng.",
+        "Phân tích cụm thường được áp dụng để phân loại các đối tượng theo thứ tự.",
+        "Phân tích cụm chủ yếu nhằm mục đích tìm kiếm các mối quan hệ giữa các đối tượng."
+      ],
+      "explanation": "Câu trả lời đúng \"Gộp nhóm các đối tượng dựa trên các đặc điểm chung\" là chính xác vì phân tích cụm (clustering) trong máy học chủ yếu được sử dụng để phân loại các đối tượng thành các nhóm (cụm) mà trong đó các đối tượng trong cùng một nhóm có sự tương đồng cao về các đặc điểm nhất định. Mục tiêu chính của phân tích cụm là tìm ra cấu trúc tiềm ẩn trong dữ liệu mà không cần biết trước nhãn của các đối tượng.\n\nCác yếu tố gây nhiễu:\n\n1. **Phân tích cụm chủ yếu được sử dụng để dự đoán giá trị của các đối tượng**: Sai, vì phân tích cụm không phải là một phương pháp dự đoán. Thay vào đó, nó tập trung vào việc phân nhóm dữ liệu mà không cần dự đoán giá trị cụ thể cho từng đối tượng.\n\n2. **Phân tích cụm thường được áp dụng để phân loại các đối tượng theo thứ tự**: Sai, vì phân tích cụm không liên quan đến việc phân loại theo thứ tự. Nó chỉ đơn thuần là gộp nhóm các đối tượng dựa trên sự tương đồng mà không có thứ tự hay phân cấp nào.\n\n3. **Phân tích cụm chủ yếu nhằm mục đích tìm kiếm các mối quan hệ giữa các đối tượng**: Sai, mặc dù phân tích cụm có thể giúp nhận diện các mối quan hệ gián tiếp thông qua việc nhóm các đối tượng tương tự, nhưng mục đích chính của nó là gộp nhóm chứ không phải tìm kiếm mối quan hệ. Mối quan hệ giữa các đối tượng thường được phân tích thông qua các phương pháp khác như phân tích tương quan hay hồi quy.\n\nTóm lại, phân tích cụm tập trung vào việc gộp nhóm các đối tượng dựa trên đặc điểm chung, trong khi các yếu tố gây nhiễu đều không phản ánh đúng bản chất và mục đích của phương pháp này.",
+      "topic": {
+        "name": "Phân tích cụm là gì?",
+        "description": "Kiểm tra sự hiểu biết của sinh viên về định nghĩa và mục đích của phân tích cụm trong máy học. Nội dung này sẽ yêu cầu sinh viên mô tả quá trình gộp nhóm các đối tượng và các ứng dụng thực tiễn của nó như phân đoạn khách hàng hay phát hiện bất thường.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Các yếu tố nào có thể ảnh hưởng đến kết quả của phân tích cụm?",
+      "answer": "Thuộc tính của dữ liệu, hình dạng cụm và thuật toán phân cụm.",
+      "distractors": [
+        "Chỉ có số lượng dữ liệu là yếu tố quan trọng trong phân tích cụm.",
+        "Các yếu tố bên ngoài như thời tiết và khí hậu cũng ảnh hưởng đến phân tích cụm.",
+        "Chỉ cần sử dụng một thuật toán phân cụm duy nhất là đủ để có kết quả chính xác."
+      ],
+      "explanation": "Câu trả lời đúng là \"Thuộc tính của dữ liệu, hình dạng cụm và thuật toán phân cụm\" vì ba yếu tố này đều có ảnh hưởng lớn đến kết quả của phân tích cụm. Thuộc tính của dữ liệu quyết định cách mà các điểm dữ liệu được phân loại và nhóm lại, hình dạng cụm ảnh hưởng đến cách mà các cụm được xác định (ví dụ: cụm hình tròn, hình elip), và thuật toán phân cụm (như K-means, DBSCAN) có thể cho ra các kết quả khác nhau tùy thuộc vào cách mà nó xử lý dữ liệu và xác định các cụm.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Chỉ có số lượng dữ liệu là yếu tố quan trọng trong phân tích cụm**: Đây là sai vì số lượng dữ liệu chỉ là một phần của bức tranh. Chất lượng và thuộc tính của dữ liệu cũng quan trọng không kém, vì dữ liệu có thể có nhiều thuộc tính khác nhau ảnh hưởng đến cách mà các cụm được hình thành.\n- **Các yếu tố bên ngoài như thời tiết và khí hậu cũng ảnh hưởng đến phân tích cụm**: Điều này không chính xác trong ngữ cảnh của phân tích cụm, vì phân tích cụm chủ yếu dựa vào các thuộc tính của dữ liệu mà không liên quan đến các yếu tố bên ngoài như thời tiết. Các yếu tố này có thể ảnh hưởng đến dữ liệu nhưng không phải là yếu tố chính trong quá trình phân tích.\n- **Chỉ cần sử dụng một thuật toán phân cụm duy nhất là đủ để có kết quả chính xác**: Đây là sai vì không có một thuật toán nào có thể áp dụng cho tất cả các loại dữ liệu và tình huống. Việc lựa chọn thuật toán phù hợp là rất quan trọng và có thể ảnh hưởng lớn đến kết quả phân tích. Sử dụng nhiều thuật toán có thể giúp xác nhận và cải thiện độ chính xác của các cụm được xác định.",
+      "topic": {
+        "name": "Các yếu tố ảnh hưởng đến phân tích cụm",
+        "description": "Đánh giá khả năng của sinh viên trong việc phân tích các yếu tố có thể ảnh hưởng đến kết quả của phân tích cụm. Sinh viên sẽ cần hiểu các thuộc tính của dữ liệu, hình dạng cụm và vai trò của thuật toán trong phân cụm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Phương pháp nào dưới đây được sử dụng để đo lường độ tương tự giữa hai điểm dữ liệu trong không gian đa chiều?",
+      "answer": "Khoảng cách Euclidean",
+      "distractors": [
+        "Khoảng cách Manhattan",
+        "Khoảng cách Cosine",
+        "Khoảng cách Hamming"
+      ],
+      "explanation": "Khoảng cách Euclidean là câu trả lời đúng vì nó là phương pháp phổ biến nhất để đo lường độ tương tự giữa hai điểm dữ liệu trong không gian đa chiều. Khoảng cách này được tính bằng công thức căn bậc hai của tổng bình phương các hiệu số giữa các tọa độ tương ứng của hai điểm. Điều này cho phép xác định khoảng cách thực tế giữa hai điểm trong không gian, phản ánh chính xác mức độ tương tự giữa chúng.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Khoảng cách Manhattan**: Mặc dù cũng là một phương pháp đo lường độ tương tự, khoảng cách Manhattan tính tổng các giá trị tuyệt đối của sự khác biệt giữa các tọa độ, không phản ánh khoảng cách thực tế trong không gian đa chiều như khoảng cách Euclidean. Nó thường được sử dụng trong các tình huống khác, nhưng không phải là phương pháp chính để đo lường độ tương tự.\n\n- **Khoảng cách Cosine**: Phương pháp này đo lường độ tương tự giữa hai vectơ bằng cách tính góc giữa chúng, không phải khoảng cách thực tế. Khoảng cách Cosine thường được sử dụng trong phân tích văn bản và các ứng dụng liên quan đến vectơ, nhưng không phải là cách đo lường khoảng cách trong không gian đa chiều.\n\n- **Khoảng cách Hamming**: Đây là phương pháp đo lường sự khác biệt giữa hai chuỗi nhị phân hoặc chuỗi ký tự bằng cách đếm số vị trí mà chúng khác nhau. Khoảng cách Hamming không áp dụng cho không gian đa chiều mà chỉ cho các chuỗi có cùng độ dài, do đó không phù hợp với câu hỏi về độ tương tự giữa các điểm dữ liệu trong không gian đa chiều.\n\nTóm lại, khoảng cách Euclidean là phương pháp chính xác nhất để đo lường độ tương tự giữa các điểm dữ liệu trong không gian đa chiều, trong khi các phương pháp khác có những ứng dụng và giới hạn riêng.",
+      "topic": {
+        "name": "Phương pháp đo lường độ tương tự",
+        "description": "Học sinh sẽ được yêu cầu nhận diện các phương pháp khác nhau để đo lường độ tương tự giữa các điểm dữ liệu như khoảng cách Euclidean, Manhattan và Cosine. Chủ đề này giúp củng cố kiến thức về các công thức và cách sử dụng chúng trong phân tích dữ liệu.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong phân cụm K-Means, cách nào là phương pháp phổ biến nhất để xác định số lượng cụm K trước khi chạy thuật toán?",
+      "answer": "Phương pháp Elbow",
+      "distractors": [
+        "Phương pháp Silhouette",
+        "Phương pháp phân tích thành phần chính (PCA)",
+        "Phương pháp phân cụm phân cấp"
+      ],
+      "explanation": "Câu trả lời đúng là \"Phương pháp Elbow\" vì đây là một kỹ thuật phổ biến để xác định số lượng cụm K trong phân cụm K-Means. Phương pháp này hoạt động bằng cách vẽ đồ thị của tổng bình phương khoảng cách (WCSS) so với số lượng cụm K. Khi K tăng, WCSS sẽ giảm, nhưng sau một điểm nhất định, sự giảm này sẽ chậm lại, tạo thành một \"cái khuỷu tay\" (elbow). Điểm này thường được chọn làm số lượng cụm tối ưu vì nó cân bằng giữa độ chính xác và độ phức tạp của mô hình.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phương pháp Silhouette**: Mặc dù phương pháp này cũng được sử dụng để đánh giá chất lượng của các cụm, nó không phải là phương pháp chính để xác định số lượng cụm K trước khi chạy thuật toán. Phương pháp Silhouette đo lường mức độ tương đồng của các điểm trong cùng một cụm so với các cụm khác, nhưng không cung cấp một cách trực tiếp để chọn K.\n\n- **Phương pháp phân tích thành phần chính (PCA)**: PCA là một kỹ thuật giảm chiều dữ liệu, không phải là một phương pháp để xác định số lượng cụm K. Nó giúp giảm số lượng biến trong dữ liệu nhưng không liên quan đến việc xác định số lượng cụm trong phân cụm K-Means.\n\n- **Phương pháp phân cụm phân cấp**: Phương pháp này là một kỹ thuật phân cụm khác, không phải là một cách để xác định số lượng cụm K cho K-Means. Phân cụm phân cấp tạo ra một cây phân cấp (dendrogram) để phân tích cấu trúc cụm, nhưng không cung cấp một phương pháp trực tiếp để chọn K cho K-Means.\n\nTóm lại, \"Phương pháp Elbow\" là lựa chọn chính xác nhất để xác định số lượng cụm K trong K-Means, trong khi các phương pháp khác không phù hợp cho mục đích này.",
+      "topic": {
+        "name": "Phân cụm K-Means",
+        "description": "Kiểm tra khả năng của sinh viên trong việc áp dụng thuật toán K-Means vào phân tích dữ liệu. Học sinh sẽ giải thích cách lựa chọn K, cách thuật toán này hoạt động và các chỉ số đánh giá như WCSS.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Ưu điểm nổi bật của thuật toán K-Means trong phân cụm là gì?",
+      "answer": "Tính đơn giản và tốc độ xử lý cao.",
+      "distractors": [
+        "K-Means có khả năng tự động xác định số lượng cụm tối ưu mà không cần can thiệp.",
+        "K-Means thường cho kết quả chính xác hơn khi dữ liệu có nhiều biến số.",
+        "K-Means có thể xử lý tốt các cụm không hình tròn và không đồng nhất."
+      ],
+      "explanation": "Câu trả lời đúng \"Tính đơn giản và tốc độ xử lý cao\" là chính xác vì thuật toán K-Means rất dễ hiểu và triển khai. Nó chỉ yêu cầu người dùng xác định số lượng cụm (k) trước, sau đó phân chia dữ liệu vào các cụm dựa trên khoảng cách đến tâm cụm. Điều này giúp K-Means trở thành một trong những thuật toán phân cụm phổ biến nhất, đặc biệt khi làm việc với tập dữ liệu lớn, nhờ vào tốc độ xử lý nhanh và khả năng mở rộng tốt.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **K-Means có khả năng tự động xác định số lượng cụm tối ưu mà không cần can thiệp**: Điều này không đúng vì K-Means yêu cầu người dùng phải xác định số lượng cụm (k) trước khi chạy thuật toán. Không có cơ chế tự động nào trong K-Means để tìm ra k tối ưu.\n\n- **K-Means thường cho kết quả chính xác hơn khi dữ liệu có nhiều biến số**: K-Means không nhất thiết cho kết quả chính xác hơn với nhiều biến số. Trên thực tế, khi số lượng biến số tăng lên, K-Means có thể gặp khó khăn trong việc phân cụm do hiện tượng \"curse of dimensionality\", dẫn đến việc các cụm trở nên khó phân biệt hơn.\n\n- **K-Means có thể xử lý tốt các cụm không hình tròn và không đồng nhất**: K-Means hoạt động tốt nhất với các cụm hình tròn và đồng nhất. Khi các cụm có hình dạng phức tạp hoặc không đồng nhất, K-Means có thể không phân chia chính xác, vì nó dựa vào khoảng cách Euclid để xác định các cụm, điều này không phù hợp với các hình dạng khác nhau. \n\nTóm lại, câu trả lời đúng nêu bật ưu điểm của K-Means, trong khi các yếu tố gây nhiễu đều chứa thông tin sai lệch về khả năng và cách thức hoạt động của thuật toán này.",
+      "topic": {
+        "name": "Ưu nhược điểm của K-Means",
+        "description": "Giúp sinh viên phân tích và đánh giá ưu điểm và nhược điểm của thuật toán K-Means trong các tình huống phân cụm khác nhau. Học sinh sẽ cần áp dụng kiến thức từ tuần hiện tại và tuần trước để đưa ra các lập luận.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Chỉ số nào được sử dụng để đánh giá mức độ tách biệt giữa các cụm trong phân cụm không giám sát, với giá trị lớn hơn 1 cho thấy chất lượng phân cụm tốt hơn?",
+      "answer": "Hệ số Silhouette",
+      "distractors": [
+        "Hệ số Davies-Bouldin",
+        "Hệ số Dunn",
+        "Giá trị trung bình của các khoảng cách giữa các cụm"
+      ],
+      "explanation": "Câu trả lời đúng là \"Hệ số Silhouette\" vì đây là chỉ số được sử dụng để đánh giá mức độ tách biệt giữa các cụm trong phân cụm không giám sát. Hệ số này tính toán độ tương đồng giữa một điểm và các điểm trong cùng cụm so với các điểm trong cụm khác. Giá trị của hệ số Silhouette nằm trong khoảng từ -1 đến 1, với giá trị lớn hơn 1 cho thấy rằng các cụm được phân tách rõ ràng và chất lượng phân cụm tốt hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Hệ số Davies-Bouldin**: Mặc dù đây cũng là một chỉ số đánh giá chất lượng phân cụm, nhưng nó không sử dụng giá trị lớn hơn 1 để chỉ ra chất lượng tốt hơn. Thay vào đó, hệ số này đo lường tỷ lệ giữa độ tương đồng trong cụm và độ tách biệt giữa các cụm, với giá trị nhỏ hơn cho thấy chất lượng phân cụm tốt hơn.\n\n- **Hệ số Dunn**: Hệ số này cũng không sử dụng giá trị lớn hơn 1 để đánh giá chất lượng phân cụm. Nó đo lường khoảng cách tối thiểu giữa các cụm so với khoảng cách tối đa trong cùng một cụm. Giá trị lớn hơn cho thấy phân cụm tốt hơn, nhưng không có quy tắc cụ thể như hệ số Silhouette.\n\n- **Giá trị trung bình của các khoảng cách giữa các cụm**: Đây không phải là một chỉ số chính thức để đánh giá chất lượng phân cụm. Mặc dù khoảng cách giữa các cụm có thể cung cấp thông tin về sự tách biệt, nhưng nó không cung cấp một thang đo cụ thể như hệ số Silhouette để đánh giá chất lượng phân cụm một cách trực tiếp và rõ ràng.\n\nTóm lại, \"Hệ số Silhouette\" là câu trả lời đúng vì nó cung cấp một thang đo rõ ràng cho chất lượng phân cụm, trong khi các yếu tố gây nhiễu khác không đáp ứng được tiêu chí này.",
+      "topic": {
+        "name": "Các chỉ số đánh giá phân cụm không giám sát",
+        "description": "Sinh viên sẽ được yêu cầu sử dụng và giải thích các chỉ số đánh giá như Davies-Bouldin, Dunn và hệ số Silhouette. Chủ đề này kiểm tra khả năng tổng hợp và phân tích hiệu suất của phân cụm trong các điều kiện khác nhau, kết nối với kiến thức từ những tuần trước.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Thuật toán phân cụm phân cấp chủ yếu được sử dụng để làm gì trong phân tích dữ liệu?",
+      "answer": "Nhóm các đối tượng tương tự thành các cụm theo cấu trúc phân cấp.",
+      "distractors": [
+        "Phân loại các đối tượng thành các nhóm khác nhau mà không có cấu trúc phân cấp.",
+        "Tìm kiếm các đối tượng khác nhau trong một tập dữ liệu lớn.",
+        "Tạo ra một mô hình dự đoán cho các đối tượng trong dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng \"Nhóm các đối tượng tương tự thành các cụm theo cấu trúc phân cấp.\" là chính xác vì thuật toán phân cụm phân cấp được thiết kế để tổ chức dữ liệu thành các nhóm (cụm) dựa trên sự tương đồng giữa các đối tượng. Phương pháp này tạo ra một cấu trúc phân cấp, cho phép người dùng dễ dàng nhận diện mối quan hệ giữa các cụm, từ cụm lớn đến cụm nhỏ hơn, giúp hiểu rõ hơn về cấu trúc của dữ liệu.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Phân loại các đối tượng thành các nhóm khác nhau mà không có cấu trúc phân cấp**: Tùy chọn này sai vì thuật toán phân cụm phân cấp cụ thể tạo ra cấu trúc phân cấp, trong khi phân loại thông thường không yêu cầu cấu trúc này.\n\n- **Tìm kiếm các đối tượng khác nhau trong một tập dữ liệu lớn**: Tùy chọn này không chính xác vì thuật toán phân cụm phân cấp không tập trung vào việc tìm kiếm các đối tượng khác nhau mà là nhóm các đối tượng tương tự lại với nhau.\n\n- **Tạo ra một mô hình dự đoán cho các đối tượng trong dữ liệu**: Tùy chọn này sai vì phân cụm phân cấp không phải là một phương pháp dự đoán mà là một kỹ thuật phân tích để tổ chức và phân loại dữ liệu dựa trên sự tương đồng, không nhằm mục đích dự đoán giá trị cho các đối tượng. \n\nTóm lại, câu trả lời đúng phản ánh chính xác chức năng của thuật toán phân cụm phân cấp, trong khi các yếu tố gây nhiễu không phù hợp với mục đích và cách thức hoạt động của nó.",
+      "topic": {
+        "name": "Phân cụm phân cấp là gì?",
+        "description": "Học sinh cần mô tả và giải thích thuật toán phân cụm phân cấp, cách hoạt động của nó và các biến thể của nó. Chủ đề này kết hợp kiến thức từ tuần hiện tại và trước đó về hình dạng và cấu trúc của dữ liệu.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    },
+    {
+      "question": "DBSCAN phân cụm dữ liệu dựa trên tiêu chí nào chính để xác định một cụm?",
+      "answer": "Mật độ điểm dữ liệu.",
+      "distractors": [
+        "Khoảng cách giữa các điểm dữ liệu.",
+        "Số lượng điểm dữ liệu trong một cụm.",
+        "Hình dạng của các cụm dữ liệu."
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Mật độ điểm dữ liệu.\" vì thuật toán DBSCAN (Density-Based Spatial Clustering of Applications with Noise) phân cụm dữ liệu dựa trên mật độ của các điểm dữ liệu trong không gian. Cụ thể, DBSCAN xác định một cụm khi có đủ số lượng điểm (được gọi là \"điểm lõi\") nằm trong một khoảng cách nhất định (được gọi là \"epsilon\") và có thể kết nối với nhau thông qua các điểm lân cận. Điều này cho phép DBSCAN phát hiện các cụm có hình dạng bất kỳ và có khả năng phân biệt giữa các cụm và nhiễu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Khoảng cách giữa các điểm dữ liệu**: Mặc dù khoảng cách là một yếu tố quan trọng trong DBSCAN, nó không phải là tiêu chí chính để xác định một cụm. DBSCAN sử dụng khoảng cách để xác định xem các điểm có nằm trong cùng một cụm hay không, nhưng chính mật độ điểm dữ liệu mới là yếu tố quyết định việc hình thành cụm.\n  \n- **Số lượng điểm dữ liệu trong một cụm**: Đây cũng không phải là tiêu chí chính. DBSCAN yêu cầu một số lượng điểm tối thiểu để xác định một điểm là điểm lõi, nhưng không phải là số lượng điểm trong một cụm. Một cụm có thể có nhiều điểm nhưng không nhất thiết phải có số lượng lớn, miễn là mật độ đủ cao.\n\n- **Hình dạng của các cụm dữ liệu**: DBSCAN có khả năng phát hiện các cụm có hình dạng bất kỳ, do đó hình dạng không phải là tiêu chí để xác định một cụm. Điều này là một trong những ưu điểm của DBSCAN so với các thuật toán phân cụm khác như K-means, nơi mà các cụm thường được giả định là hình tròn hoặc hình cầu.\n\nTóm lại, câu trả lời đúng là \"Mật độ điểm dữ liệu\" vì đây là yếu tố cốt lõi trong cách DBSCAN hoạt động, trong khi các yếu tố gây nhiễu khác không phản ánh đúng bản chất của thuật toán này.",
+      "topic": {
+        "name": "DBSCAN và ứng dụng của nó",
+        "description": "Khám phá ý tưởng chính của thuật toán phân cụm DBSCAN, bao gồm cách phát hiện các cụm dựa trên mật độ. Học sinh sẽ cần áp dụng kiến thức đã học về phân tách dữ liệu và kết hợp các khái niệm từ các tuần trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 6,
+      "course_code": "int3405"
+    }
+  ]
+}

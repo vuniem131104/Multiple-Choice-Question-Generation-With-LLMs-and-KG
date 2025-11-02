@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Cây tìm kiếm nhị phân (BST) là gì?",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a comprehensive and accurate definition of a BST, directly addressing the topic's core concept. Its distractors are plausible misconceptions related to BST properties. The Baseline question's correct answer is incomplete, only stating that a BST has at most two children, which is true for any binary tree, not specifically a BST. Its distractors are also too obviously incorrect (e.g., 'danh sách liên kết', 'cấu trúc dữ liệu tuyến tính'), making the question too easy and less effective for assessment. The Pipeline question better tests the 'Nhớ' Bloom level by requiring a more detailed recall of the definition."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Biểu diễn BST trong Java",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question effectively assesses understanding of the internal structure of a Node in a Java BST implementation, which is central to the topic. The distractors are well-designed, representing common misunderstandings about node components. The Baseline question is too simplistic, merely asking for the class name, which is a very basic recall and doesn't truly test the 'Hiểu' Bloom level as effectively. Its distractors are also less plausible, making the correct answer too obvious."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Chi phí tìm kiếm và chèn trong BST",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are good and relevant. The Pipeline question specifies 'trường hợp cây có độ cân bằng tối ưu' which aligns perfectly with the O(log n) answer and tests a more precise understanding of the 'Áp dụng' Bloom level. The Baseline question asks for 'trường hợp tốt nhất' which is similar but slightly less specific. The Pipeline's distractors are also slightly more varied in terms of complexity notations, making it a marginally better test of understanding the mathematical analysis."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Thiết kế thuật toán xóa trong BST",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses a critical step in the most complex case of BST deletion (node with two children), requiring students to 'Đánh giá' the correct procedure. Its distractors represent common incorrect approaches. The Baseline question, while relevant, asks which case *doesn't* need handling, and the correct answer ('Nút không có con') is actually a case that *does* need handling (it's the simplest case, but still a case). This makes the question confusing and potentially misleading, reducing its clarity and pedagogical value. The question itself is flawed in its premise."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Phân tích toán học của BST",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more specific and directly asks for the height of an optimal BST, which is a direct application of mathematical analysis. Its distractors are clearly distinct mathematical expressions. The Baseline question is a bit too general, asking 'Công thức nào sau đây được sử dụng để tính toán độ phức tạp của BST?'. While O(h) is correct, O(log n) is also often used for balanced BSTs, and O(n) for skewed ones, making the question slightly ambiguous without further context on the 'type' of complexity being asked. The Pipeline question is more precise for the 'Áp dụng' Bloom level."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh BST và Quicksort",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question provides a more nuanced and accurate comparison between BSTs and Quicksort, highlighting the dependency on tree balance for performance, which is crucial for the 'Phân tích' Bloom level. Its distractors are plausible oversimplifications or incorrect statements. The Baseline question's correct answer is somewhat vague ('có thể tối ưu hóa việc tìm kiếm hơn Quicksort trong một số trường hợp') and its distractors are too easily dismissed (e.g., 'BST không thể sắp xếp dữ liệu'). The Pipeline question demonstrates a deeper understanding of the comparative analysis."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Các phép toán thứ tự trong BST",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly asks for the result of a specific ordered operation (Min), which tests the 'Hiểu' Bloom level effectively. Its distractors are plausible incorrect interpretations. The Baseline question asks which operation is *not* an ordered operation. While 'Thêm nút' is indeed not an ordered operation in the same sense as Min/Max/Floor/Ceiling, the question structure is slightly less direct in assessing understanding of what ordered operations *are*. The Pipeline question is a more straightforward and effective assessment of the topic."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Duyệt cây theo thứ tự trong BST",
+            "pipeline_scores": {
+                "relevance": 0.95,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are very similar and effective in testing the 'Nhớ' Bloom level for inorder traversal. The Pipeline question's correct answer is slightly more descriptive ('Thứ tự các khóa sẽ được sắp xếp theo thứ tự tăng dần') compared to the Baseline's 'Tăng dần', providing a tiny bit more context. The distractors are equally plausible for both. The Pipeline question is marginally better due to the slightly more complete correct answer, but both are high quality."
+        }
+    ]
+}

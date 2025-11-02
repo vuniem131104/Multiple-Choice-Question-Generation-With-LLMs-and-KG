@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Đâu là một trong những vấn đề cốt lõi mà học máy hướng tới giải quyết?",
+      "answer": "Vấn đề tối ưu hóa",
+      "distractors": [
+        "Vấn đề thu thập dữ liệu",
+        "Vấn đề giao diện người dùng",
+        "Vấn đề bảo mật dữ liệu"
+      ],
+      "explanation": "**Giải thích:**\n\n**Vấn đề tối ưu hóa** là câu trả lời đúng vì trong học máy, mục tiêu chính là tìm ra một mô hình (tập hợp các tham số) có thể dự đoán hoặc phân loại dữ liệu một cách chính xác nhất. Điều này thường được thực hiện bằng cách tối thiểu hóa một hàm mất mát (loss function) hoặc tối đa hóa một hàm mục tiêu (objective function). Quá trình tìm kiếm các tham số tối ưu này chính là vấn đề tối ưu hóa.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Vấn đề thu thập dữ liệu:** Mặc dù thu thập dữ liệu là một bước quan trọng trong quy trình học máy, nhưng bản thân nó không phải là một vấn đề cốt lõi mà các thuật toán học máy trực tiếp giải quyết. Các thuật toán học máy hoạt động trên dữ liệu đã được thu thập và chuẩn bị.\n*   **Vấn đề giao diện người dùng:** Giao diện người dùng (UI) liên quan đến cách người dùng tương tác với hệ thống học máy, nhưng nó không phải là một vấn đề lý thuyết hay thuật toán cốt lõi mà học máy hướng tới giải quyết.\n*   **Vấn đề bảo mật dữ liệu:** Bảo mật dữ liệu là một mối quan tâm quan trọng khi làm việc với dữ liệu trong học máy, nhưng nó là một vấn đề liên quan đến đạo đức, pháp lý và kỹ thuật bảo mật thông tin, chứ không phải là một vấn đề cốt lõi mà các thuật toán học máy được thiết kế để giải quyết.",
+      "topic": {
+        "name": "Các vấn đề cốt lõi trong Học máy",
+        "description": "Chủ đề này kiểm tra khả năng nhận diện các thách thức cơ bản mà học máy hướng tới giải quyết, như việc xác định không gian giả thuyết, vấn đề tối ưu hóa, và lý thuyết tổng quát hóa để tránh overfitting. Học sinh cần nhớ các vấn đề chính được nêu.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong Định lý Bayes, thành phần nào đại diện cho niềm tin ban đầu về một giả thuyết trước khi quan sát bất kỳ bằng chứng mới nào?",
+      "answer": "Xác suất tiên nghiệm (Prior)",
+      "distractors": [
+        "Xác suất khả dĩ (Likelihood)",
+        "Xác suất hậu nghiệm (Posterior)",
+        "Bằng chứng (Evidence)"
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Xác suất tiên nghiệm (Prior)** vì trong Định lý Bayes, xác suất tiên nghiệm (P(H)) đại diện cho niềm tin ban đầu hoặc xác suất của một giả thuyết (H) trước khi bất kỳ bằng chứng mới nào được xem xét. Nó phản ánh kiến thức hoặc niềm tin hiện có của chúng ta về giả thuyết đó.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Xác suất khả dĩ (Likelihood)** (P(E|H)) là xác suất quan sát bằng chứng (E) nếu giả thuyết (H) là đúng. Nó đo lường mức độ bằng chứng hỗ trợ giả thuyết.\n*   **Xác suất hậu nghiệm (Posterior)** (P(H|E)) là xác suất của giả thuyết (H) sau khi đã xem xét bằng chứng (E). Đây là kết quả cuối cùng của Định lý Bayes, cập nhật niềm tin ban đầu dựa trên bằng chứng mới.\n*   **Bằng chứng (Evidence)** (P(E)) là xác suất tổng thể của việc quan sát bằng chứng (E), không phụ thuộc vào giả thuyết. Nó đóng vai trò là yếu tố chuẩn hóa trong Định lý Bayes.",
+      "topic": {
+        "name": "Thành phần của Định lý Bayes",
+        "description": "Chủ đề này yêu cầu xác định các thành phần chính của Định lý Bayes như xác suất tiên nghiệm (Prior), xác suất khả dĩ (Likelihood), xác suất hậu nghiệm (Posterior) và bằng chứng (Evidence). Học sinh cần biết vai trò của từng thành phần trong công thức Bayes.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Ước lượng Khả dĩ Tối đa (MLE) tìm cách tối đa hóa điều gì đối với dữ liệu huấn luyện?",
+      "answer": "Khả dĩ (likelihood) của dữ liệu huấn luyện",
+      "distractors": [
+        "Xác suất tiên nghiệm (prior probability) của các tham số mô hình",
+        "Hàm mất mát (loss function) của mô hình",
+        "Độ chính xác (accuracy) của mô hình trên dữ liệu huấn luyện"
+      ],
+      "explanation": "Ước lượng Khả dĩ Tối đa (MLE) là một phương pháp ước lượng các tham số của một mô hình thống kê bằng cách tìm các giá trị tham số tối đa hóa hàm khả dĩ. Hàm khả dĩ đo lường mức độ phù hợp của mô hình với dữ liệu quan sát. Do đó, câu trả lời đúng là **Khả dĩ (likelihood) của dữ liệu huấn luyện**.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Xác suất tiên nghiệm (prior probability) của các tham số mô hình**: Đây là khái niệm liên quan đến Ước lượng Khả dĩ Tối đa Hậu nghiệm (MAP) hoặc thống kê Bayes, nơi xác suất tiên nghiệm được kết hợp với khả dĩ để tạo ra xác suất hậu nghiệm. MLE không trực tiếp tối đa hóa xác suất tiên nghiệm; trên thực tế, nó thường được sử dụng khi không có thông tin tiên nghiệm hoặc khi giả định xác suất tiên nghiệm là đồng nhất.\n*   **Hàm mất mát (loss function) của mô hình**: Hàm mất mát được sử dụng để đo lường mức độ sai lệch giữa dự đoán của mô hình và giá trị thực tế. Các thuật toán học máy thường tìm cách *tối thiểu hóa* hàm mất mát, chứ không phải tối đa hóa. Mặc dù việc tối thiểu hóa hàm mất mát có thể tương đương với việc tối đa hóa khả dĩ trong một số trường hợp (ví dụ: hồi quy tuyến tính với lỗi Gaussian), nhưng bản thân MLE trực tiếp tối đa hóa khả dĩ.\n*   **Độ chính xác (accuracy) của mô hình trên dữ liệu huấn luyện**: Độ chính xác là một chỉ số hiệu suất đo lường tỷ lệ các dự đoán đúng của mô hình. Mặc dù một mô hình tốt sẽ có độ chính xác cao, nhưng MLE không trực tiếp tối đa hóa độ chính xác. Thay vào đó, nó tối ưu hóa các tham số để mô hình có khả năng tạo ra dữ liệu quan sát cao nhất, điều này gián tiếp dẫn đến hiệu suất tốt, bao gồm cả độ chính xác.",
+      "topic": {
+        "name": "Ước lượng Khả dĩ Tối đa (MLE)",
+        "description": "Chủ đề này tập trung vào khái niệm và công thức của Ước lượng Khả dĩ Tối đa (MLE). Học sinh cần hiểu khi nào MLE được sử dụng, đặc biệt là giả định về xác suất tiên nghiệm bằng nhau, và cách nó tối đa hóa khả dĩ của dữ liệu huấn luyện.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Theo 'Lời nguyền chiều dữ liệu', khi số chiều của tập dữ liệu tăng lên, hậu quả chính đối với các mẫu dữ liệu là gì?",
+      "answer": "Số lượng mẫu dữ liệu trở nên không đủ để bao phủ không gian dữ liệu một cách hiệu quả.",
+      "distractors": [
+        "Các thuật toán học máy trở nên hiệu quả hơn trong việc tìm kiếm các mẫu.",
+        "Dữ liệu trở nên dễ dàng hơn để trực quan hóa và phân tích.",
+        "Khoảng cách giữa các điểm dữ liệu trở nên nhỏ hơn và dễ quản lý hơn."
+      ],
+      "explanation": "Khi số chiều của tập dữ liệu tăng lên, hậu quả chính của 'Lời nguyền chiều dữ liệu' là **số lượng mẫu dữ liệu trở nên không đủ để bao phủ không gian dữ liệu một cách hiệu quả**. Điều này là do khi số chiều tăng, thể tích của không gian dữ liệu tăng theo cấp số nhân. Để duy trì cùng một mật độ mẫu trong không gian dữ liệu, số lượng mẫu cần thiết cũng phải tăng theo cấp số nhân. Trong thực tế, việc thu thập đủ mẫu để bao phủ không gian dữ liệu đa chiều một cách hiệu quả là không khả thi, dẫn đến các mẫu dữ liệu trở nên thưa thớt và nằm xa nhau.\n\nCác yếu tố gây nhiễu là không chính xác vì:\n*   **Các thuật toán học máy trở nên hiệu quả hơn trong việc tìm kiếm các mẫu.** Thực tế ngược lại. Với dữ liệu thưa thớt trong không gian đa chiều, các thuật toán học máy thường gặp khó khăn hơn trong việc tìm kiếm các mẫu có ý nghĩa và có thể dẫn đến hiệu suất kém hơn do nhiễu và sự không liên quan của các chiều.\n*   **Dữ liệu trở nên dễ dàng hơn để trực quan hóa và phân tích.** Điều này là sai. Việc trực quan hóa dữ liệu trở nên cực kỳ khó khăn khi số chiều tăng lên, vì chúng ta chỉ có thể dễ dàng hình dung dữ liệu trong 2 hoặc 3 chiều. Phân tích cũng trở nên phức tạp hơn do sự gia tăng của các mối quan hệ tiềm năng và sự thưa thớt của dữ liệu.\n*   **Khoảng cách giữa các điểm dữ liệu trở nên nhỏ hơn và dễ quản lý hơn.** Điều này cũng sai. Trong không gian đa chiều, khoảng cách giữa các điểm dữ liệu có xu hướng trở nên tương tự nhau (hiện tượng \"tập trung khoảng cách\"), khiến việc phân biệt các điểm dữ liệu dựa trên khoảng cách trở nên khó khăn hơn. Các điểm dữ liệu cũng có xu hướng nằm xa nhau hơn trong không gian tổng thể, không phải gần hơn.",
+      "topic": {
+        "name": "Hậu quả của Lời nguyền chiều dữ liệu",
+        "description": "Chủ đề này đánh giá sự hiểu biết về 'Lời nguyền của chiều dữ liệu' và tác động của nó. Cụ thể, học sinh cần nhận thức được rằng khi số chiều tăng lên, số lượng mẫu dữ liệu cần thiết để bao phủ không gian dữ liệu tăng theo cấp số nhân, dẫn đến không đủ mẫu.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Mục đích chính đằng sau giả định độc lập có điều kiện trong bộ phân loại Naïve Bayes là gì?",
+      "answer": "Để đơn giản hóa đáng kể việc tính toán xác suất p(x|Ck) cho dữ liệu có kích thước lớn.",
+      "distractors": [
+        "Để đảm bảo rằng mô hình không bị quá khớp với dữ liệu huấn luyện, tăng khả năng khái quát hóa.",
+        "Để cho phép bộ phân loại Naïve Bayes xử lý các loại dữ liệu khác nhau, bao gồm cả dữ liệu liên tục và rời rạc.",
+        "Để giảm thiểu độ phức tạp của mô hình, giúp mô hình dễ hiểu và giải thích hơn cho người dùng."
+      ],
+      "explanation": "Mục đích chính của giả định độc lập có điều kiện trong bộ phân loại Naïve Bayes là để đơn giản hóa đáng kể việc tính toán xác suất p(x|Ck) cho dữ liệu có kích thước lớn. Nếu không có giả định này, việc tính toán xác suất đồng thời của tất cả các đặc trưng cho mỗi lớp sẽ đòi hỏi một lượng lớn dữ liệu huấn luyện và tài nguyên tính toán, đặc biệt khi số lượng đặc trưng (chiều) tăng lên. Giả định này cho phép chúng ta tính toán p(x|Ck) bằng cách nhân các xác suất có điều kiện của từng đặc trưng riêng lẻ, tức là p(x|Ck) = p(x1|Ck) * p(x2|Ck) * ... * p(xn|Ck), điều này đơn giản hóa đáng kể bài toán.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Để đảm bảo rằng mô hình không bị quá khớp với dữ liệu huấn luyện, tăng khả năng khái quát hóa.** Mặc dù việc giảm độ phức tạp của mô hình có thể giúp giảm quá khớp, nhưng đây không phải là mục đích chính của giả định độc lập có điều kiện. Mục đích chính là để làm cho việc tính toán khả thi. Naïve Bayes vẫn có thể bị quá khớp trong một số trường hợp, và giả định này không phải là cơ chế chính để ngăn chặn quá khớp.\n*   **Để cho phép bộ phân loại Naïve Bayes xử lý các loại dữ liệu khác nhau, bao gồm cả dữ liệu liên tục và rời rạc.** Khả năng xử lý các loại dữ liệu khác nhau của Naïve Bayes đến từ việc sử dụng các hàm mật độ xác suất (ví dụ: phân phối Gaussian cho dữ liệu liên tục, phân phối đa thức cho dữ liệu rời rạc) chứ không phải từ giả định độc lập có điều kiện. Giả định này chỉ liên quan đến cách các xác suất của các đặc trưng được kết hợp.\n*   **Để giảm thiểu độ phức tạp của mô hình, giúp mô hình dễ hiểu và giải thích hơn cho người dùng.** Mặc dù giả định độc lập có điều kiện làm giảm độ phức tạp tính toán, nhưng mục đích chính của nó không phải là để làm cho mô hình dễ hiểu hơn cho người dùng. Sự đơn giản trong việc giải thích của Naïve Bayes chủ yếu đến từ việc nó là một mô hình xác suất dựa trên Định lý Bayes, chứ không phải trực tiếp từ giả định độc lập có điều kiện.",
+      "topic": {
+        "name": "Giả định cốt lõi của Naïve Bayes",
+        "description": "Chủ đề này kiểm tra sự hiểu biết về giả định độc lập có điều kiện là nền tảng của Bộ phân loại Naïve Bayes. Học sinh cần hiểu tại sao giả định này được đưa ra (để đơn giản hóa tính toán p(x|Ck) cho dữ liệu chiều cao) và nó ảnh hưởng đến hiệu suất của mô hình như thế nào.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong bối cảnh phân tích dữ liệu, sự khác biệt cốt lõi nào giữa Hồi quy tuyến tính và Hồi quy Logistic dẫn đến việc một mô hình thường được dùng để dự đoán giá trị liên tục trong khi mô hình kia được dùng để phân loại kết quả nhị phân, mặc dù cả hai đều có thể sử dụng Gradient Descent?",
+      "answer": "Bản chất của biến mục tiêu là liên tục hay rời rạc.",
+      "distractors": [
+        "Sự khác biệt về thuật toán tối ưu hóa được sử dụng để tìm các tham số mô hình.",
+        "Việc Hồi quy tuyến tính chỉ có thể xử lý dữ liệu liên tục trong khi Hồi quy Logistic có thể xử lý cả dữ liệu liên tục và rời rạc.",
+        "Hồi quy tuyến tính sử dụng hàm chi phí bình phương tối thiểu, còn Hồi quy Logistic sử dụng hàm chi phí entropy chéo."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Bản chất của biến mục tiêu là liên tục hay rời rạc.**\n\n*   **Tại sao đây là câu trả lời đúng:** Sự khác biệt cơ bản nhất giữa Hồi quy tuyến tính và Hồi quy Logistic nằm ở loại biến mục tiêu mà chúng được thiết kế để dự đoán. Hồi quy tuyến tính được sử dụng khi biến mục tiêu là một giá trị liên tục (ví dụ: giá nhà, nhiệt độ), trong khi Hồi quy Logistic được sử dụng khi biến mục tiêu là rời rạc, thường là nhị phân (ví dụ: có/không, đúng/sai, 0/1). Hồi quy Logistic sử dụng hàm sigmoid để ánh xạ đầu ra của mô hình tuyến tính thành xác suất nằm trong khoảng từ 0 đến 1, cho phép phân loại.\n\n*   **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **Sự khác biệt về thuật toán tối ưu hóa được sử dụng để tìm các tham số mô hình:** Cả Hồi quy tuyến tính và Hồi quy Logistic đều có thể sử dụng Gradient Descent (hoặc các biến thể của nó) để tối ưu hóa các tham số mô hình. Mặc dù chúng tối ưu hóa các hàm chi phí khác nhau, nhưng thuật toán tối ưu hóa cơ bản có thể giống nhau, do đó đây không phải là sự khác biệt cốt lõi dẫn đến mục đích sử dụng khác nhau.\n    *   **Việc Hồi quy tuyến tính chỉ có thể xử lý dữ liệu liên tục trong khi Hồi quy Logistic có thể xử lý cả dữ liệu liên tục và rời rạc:** Phát biểu này không chính xác. Cả hai mô hình đều có thể xử lý các biến đầu vào (đặc trưng) liên tục hoặc rời rạc. Sự khác biệt nằm ở bản chất của biến *mục tiêu* (biến đầu ra) mà chúng dự đoán, không phải các biến đầu vào.\n    *   **Hồi quy tuyến tính sử dụng hàm chi phí bình phương tối thiểu, còn Hồi quy Logistic sử dụng hàm chi phí entropy chéo:** Mặc dù đúng là Hồi quy tuyến tính thường sử dụng hàm chi phí bình phương tối thiểu (Mean Squared Error - MSE) và Hồi quy Logistic sử dụng hàm chi phí entropy chéo (Cross-Entropy), đây là hệ quả của bản chất biến mục tiêu và hàm đầu ra của chúng, chứ không phải là sự khác biệt cốt lõi *dẫn đến* việc một mô hình dự đoán giá trị liên tục và mô hình kia phân loại kết quả nhị phân. Hàm chi phí được chọn để phù hợp với loại đầu ra và phân phối xác suất của biến mục tiêu.",
+      "topic": {
+        "name": "So sánh Hồi quy tuyến tính và Hồi quy Logistic",
+        "description": "Chủ đề này yêu cầu học sinh so sánh Hồi quy tuyến tính (tuần 1) và Hồi quy Logistic (tuần 2). Cụ thể, so sánh mục đích sử dụng (dự đoán giá trị liên tục vs. phân loại), dạng hàm đầu ra, và phương pháp tối ưu hóa cơ bản (cả hai đều có thể dùng Gradient Descent nhưng cho các hàm chi phí khác nhau). Đây là một chủ đề liên tuần tích hợp kiến thức từ Tuần 1 và Tuần 2.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Xem xét các tiêu chí như yêu cầu dữ liệu, chi phí tính toán và tốc độ hội tụ, loại mô hình nào thường có yêu cầu dữ liệu lớn hơn, chi phí tính toán cao hơn và tốc độ hội tụ chậm hơn do cố gắng mô hình hóa phân phối đồng thời của dữ liệu?",
+      "answer": "Mô hình sinh (Generative Model)",
+      "distractors": [
+        "Mô hình phân biệt (Discriminative Model)",
+        "Mô hình hồi quy tuyến tính (Linear Regression Model)",
+        "Mô hình cây quyết định (Decision Tree Model)"
+      ],
+      "explanation": "**Giải thích:**\n\n**Mô hình sinh (Generative Model)** là câu trả lời đúng vì chúng cố gắng mô hình hóa phân phối đồng thời của dữ liệu, tức là $P(X, Y)$. Để làm được điều này, mô hình sinh cần một lượng lớn dữ liệu để học được cấu trúc phức tạp của phân phối này. Việc học phân phối đồng thời cũng dẫn đến chi phí tính toán cao hơn và tốc độ hội tụ chậm hơn so với các mô hình chỉ tập trung vào việc phân biệt.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **Mô hình phân biệt (Discriminative Model)**: Các mô hình phân biệt tập trung vào việc học ranh giới quyết định giữa các lớp, tức là $P(Y|X)$. Chúng không cố gắng mô hình hóa phân phối đồng thời của dữ liệu, do đó thường có yêu cầu dữ liệu ít hơn, chi phí tính toán thấp hơn và tốc độ hội tụ nhanh hơn so với mô hình sinh.\n\n*   **Mô hình hồi quy tuyến tính (Linear Regression Model)**: Đây là một loại mô hình phân biệt được sử dụng cho các bài toán hồi quy (dự đoán giá trị liên tục), không phải phân loại. Mặc dù có thể được điều chỉnh cho phân loại (ví dụ: Hồi quy Logistic), nhưng nó không phải là một mô hình sinh và có cấu trúc đơn giản hơn nhiều, yêu cầu dữ liệu ít hơn và chi phí tính toán thấp hơn đáng kể so với mô hình sinh.\n\n*   **Mô hình cây quyết định (Decision Tree Model)**: Đây cũng là một loại mô hình phân biệt, được sử dụng cho cả phân loại và hồi quy. Cây quyết định học một chuỗi các quy tắc để phân chia dữ liệu. Mặc dù có thể trở nên phức tạp, nhưng chúng không cố gắng mô hình hóa phân phối đồng thời của dữ liệu và thường có yêu cầu dữ liệu, chi phí tính toán và tốc độ hội tụ khác biệt so với mô hình sinh.\n",
+      "topic": {
+        "name": "Đặc điểm mô hình sinh và mô hình phân biệt",
+        "description": "Chủ đề này tập trung vào việc so sánh và đối chiếu các ưu, nhược điểm của mô hình sinh (Generative Models) và mô hình phân biệt (Discriminative Models) dựa trên các tiêu chí như yêu cầu dữ liệu, tính mạnh mẽ với dữ liệu nhiễu, tốc độ hội tụ và chi phí tính toán.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Để tối thiểu hóa hàm chi phí (log-likelihood) trong Hồi quy Logistic bằng Gradient Descent, nếu đạo hàm riêng của hàm chi phí theo một tham số mô hình là dương, thuật toán sẽ thực hiện điều chỉnh tham số đó như thế nào trong bước tiếp theo?",
+      "answer": "Giảm giá trị của tham số.",
+      "distractors": [
+        "Tăng giá trị của tham số.",
+        "Giữ nguyên giá trị của tham số.",
+        "Đảo ngược dấu của đạo hàm riêng trước khi cập nhật."
+      ],
+      "explanation": "Để tối thiểu hóa hàm chi phí bằng Gradient Descent, thuật toán sẽ điều chỉnh các tham số theo hướng ngược lại với gradient. Nếu đạo hàm riêng của hàm chi phí theo một tham số là dương, điều này có nghĩa là việc tăng giá trị của tham số đó sẽ làm tăng hàm chi phí. Do đó, để giảm hàm chi phí, thuật toán cần giảm giá trị của tham số đó. Công thức cập nhật tham số trong Gradient Descent là $\\theta_{new} = \\theta_{old} - \\alpha \\cdot \\frac{\\partial J}{\\partial \\theta}$, trong đó $\\alpha$ là tốc độ học (learning rate) và $\\frac{\\partial J}{\\partial \\theta}$ là đạo hàm riêng của hàm chi phí $J$ theo tham số $\\theta$. Nếu $\\frac{\\partial J}{\\partial \\theta} > 0$, thì $\\theta_{new} = \\theta_{old} - (\\text{một số dương})$, dẫn đến việc giảm giá trị của $\\theta$.\n\nCác yếu tố gây nhiễu không chính xác vì:\n- **Tăng giá trị của tham số**: Nếu đạo hàm riêng là dương, việc tăng giá trị của tham số sẽ làm tăng hàm chi phí, đi ngược lại mục tiêu tối thiểu hóa.\n- **Giữ nguyên giá trị của tham số**: Giữ nguyên giá trị của tham số sẽ không giúp tối thiểu hóa hàm chi phí khi đạo hàm riêng khác 0, vì điều đó có nghĩa là vẫn còn \"độ dốc\" để di chuyển xuống.\n- **Đảo ngược dấu của đạo hàm riêng trước khi cập nhật**: Công thức cập nhật của Gradient Descent đã bao gồm việc trừ đi gradient (tức là di chuyển theo hướng ngược lại với gradient). Việc đảo ngược dấu của đạo hàm riêng một lần nữa trước khi trừ sẽ tương đương với việc cộng gradient, dẫn đến việc tăng hàm chi phí thay vì giảm.\n",
+      "topic": {
+        "name": "Ứng dụng Gradient Descent trong Hồi quy Logistic",
+        "description": "Chủ đề này yêu cầu học sinh áp dụng kiến thức về Gradient Descent (tuần 1) để hiểu cách nó hoạt động trong việc tìm các tham số tối ưu cho Hồi quy Logistic (tuần 2). Học sinh cần hiểu tại sao Gradient Descent cần thiết cho Hồi quy Logistic do thiếu giải pháp dạng đóng và cách các tham số được cập nhật để tối thiểu hóa hàm chi phí (log-likelihood). Đây là một chủ đề liên tuần tích hợp sâu kiến thức tối ưu hóa từ Tuần 1 vào mô hình của Tuần 2.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "int3405"
+    }
+  ]
+}

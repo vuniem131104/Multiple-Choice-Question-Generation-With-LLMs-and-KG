@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Hàng đợi ưu tiên là gì?",
+            "answer": "Một cấu trúc dữ liệu cho phép truy cập đến phần tử có độ ưu tiên cao nhất trước.",
+            "distractors": [
+                "Một cấu trúc dữ liệu cho phép truy cập đến phần tử đầu tiên.",
+                "Một thuật toán sắp xếp dữ liệu.",
+                "Một loại hàng đợi thông thường không có ưu tiên."
+            ],
+            "explanation": "Hàng đợi ưu tiên cho phép các phần tử được xử lý dựa trên độ ưu tiên của chúng, không chỉ theo thứ tự vào ra như hàng đợi thông thường."
+        },
+        {
+            "question": "Trong Java, phương thức nào được sử dụng để thêm một phần tử vào hàng đợi ưu tiên?",
+            "answer": "insert()",
+            "distractors": [
+                "add()",
+                "enqueue()",
+                "push()"
+            ],
+            "explanation": "Phương thức insert() được sử dụng để thêm phần tử vào hàng đợi ưu tiên, trong khi các phương thức khác không phải là một phần của API hàng đợi ưu tiên."
+        },
+        {
+            "question": "Heap nhị phân được biểu diễn như thế nào?",
+            "answer": "Dưới dạng cây nhị phân với các nút cha lớn hơn hoặc nhỏ hơn các nút con.",
+            "distractors": [
+                "Dưới dạng danh sách liên kết.",
+                "Dưới dạng mảng một chiều.",
+                "Dưới dạng cây đa cấp."
+            ],
+            "explanation": "Heap nhị phân được biểu diễn dưới dạng cây nhị phân, nơi mỗi nút cha có giá trị lớn hơn (hoặc nhỏ hơn) các nút con, tùy thuộc vào loại heap."
+        },
+        {
+            "question": "Khi chèn một phần tử vào heap nhị phân, thao tác nào được thực hiện để duy trì tính chính xác của heap?",
+            "answer": "Bơi lên (swim up)",
+            "distractors": [
+                "Chìm xuống (sink down)",
+                "Sắp xếp lại (rearrange)",
+                "Thay thế (replace)"
+            ],
+            "explanation": "Khi chèn một phần tử mới vào heap, nó sẽ 'bơi lên' để đảm bảo rằng cấu trúc heap vẫn được duy trì."
+        },
+        {
+            "question": "Heapsort là gì?",
+            "answer": "Một thuật toán sắp xếp sử dụng cấu trúc heap để sắp xếp dữ liệu.",
+            "distractors": [
+                "Một thuật toán tìm kiếm.",
+                "Một phương pháp phân loại dữ liệu.",
+                "Một thuật toán tối ưu hóa."
+            ],
+            "explanation": "Heapsort là một thuật toán sắp xếp hiệu quả, sử dụng cấu trúc heap để thực hiện việc sắp xếp."
+        },
+        {
+            "question": "Mô phỏng theo sự kiện sử dụng hàng đợi ưu tiên để làm gì?",
+            "answer": "Quản lý các sự kiện theo thứ tự ưu tiên.",
+            "distractors": [
+                "Lưu trữ dữ liệu tạm thời.",
+                "Thực hiện các phép toán số học.",
+                "Tạo ra các báo cáo thống kê."
+            ],
+            "explanation": "Hàng đợi ưu tiên cho phép quản lý các sự kiện theo thứ tự ưu tiên, giúp mô phỏng diễn ra một cách hiệu quả."
+        },
+        {
+            "question": "Mergesort và Heapsort khác nhau ở điểm nào?",
+            "answer": "Mergesort sử dụng phương pháp chia để trị, trong khi Heapsort sử dụng cấu trúc heap.",
+            "distractors": [
+                "Cả hai đều sử dụng cấu trúc cây.",
+                "Mergesort nhanh hơn Heapsort trong mọi trường hợp.",
+                "Heapsort không cần bộ nhớ bổ sung."
+            ],
+            "explanation": "Mergesort và Heapsort là hai thuật toán sắp xếp khác nhau, với Mergesort dựa trên phương pháp chia để trị và Heapsort dựa trên cấu trúc heap."
+        },
+        {
+            "question": "Cấu trúc dữ liệu nào thường được sử dụng để thực hiện thuật toán sắp xếp?",
+            "answer": "Heap",
+            "distractors": [
+                "Danh sách liên kết",
+                "Mảng",
+                "Cây nhị phân tìm kiếm"
+            ],
+            "explanation": "Heap là một cấu trúc dữ liệu rất hiệu quả cho việc thực hiện các thuật toán sắp xếp như Heapsort."
+        }
+    ]
+}

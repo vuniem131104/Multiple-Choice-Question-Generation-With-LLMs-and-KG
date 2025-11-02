@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Các thành phần chính của cây quyết định gồm những gì?",
+      "answer": "Nút quyết định, nút gốc và nút lá.",
+      "distractors": [
+        "Nút phân nhánh, nút gốc và nút lá.",
+        "Nút quyết định, nút lá và nút phụ.",
+        "Nút gốc, nút quyết định và nút trung gian."
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về các thành phần chính của cây quyết định là \"Nút quyết định, nút gốc và nút lá.\" Đây là ba thành phần cơ bản trong cấu trúc của cây quyết định. Nút gốc là điểm bắt đầu của cây, nơi chứa thông tin đầu vào. Nút quyết định là các điểm trong cây nơi mà quyết định được đưa ra dựa trên các điều kiện cụ thể. Cuối cùng, nút lá là các điểm kết thúc, nơi mà kết quả cuối cùng hoặc phân loại được xác định.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Nút phân nhánh, nút gốc và nút lá**: Nút phân nhánh không phải là một thành phần chính của cây quyết định. Thay vào đó, nó chỉ là một khái niệm mô tả cách mà cây chia nhánh từ nút quyết định, không phải là một loại nút riêng biệt.\n- **Nút quyết định, nút lá và nút phụ**: Nút phụ không phải là một thành phần chính trong cây quyết định. Cây quyết định chỉ bao gồm nút gốc, nút quyết định và nút lá, không có khái niệm về nút phụ.\n- **Nút gốc, nút quyết định và nút trung gian**: Nút trung gian không phải là một thành phần chính trong cây quyết định. Cây quyết định chỉ có nút gốc, nút quyết định và nút lá, trong khi nút trung gian không được công nhận như một phần của cấu trúc cây quyết định.\n\nTóm lại, câu trả lời đúng xác định chính xác các thành phần cơ bản của cây quyết định, trong khi các yếu tố gây nhiễu đều chứa các thuật ngữ không chính xác hoặc không liên quan đến cấu trúc của cây quyết định.",
+      "topic": {
+        "name": "Cây Quyết Định: Định Nghĩa và Ứng Dụng",
+        "description": "Khảo sát về cây quyết định như một mô hình phân loại. Học sinh cần hiểu cấu trúc của cây quyết định, bao gồm các nút quyết định, nút gốc và nút lá. Các câu hỏi sẽ tập trung vào việc xác định các thành phần của cây quyết định và đưa ra ví dụ thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Thuật toán Hunt được sử dụng chủ yếu để làm gì trong học máy?",
+      "answer": "Xây dựng cây quyết định.",
+      "distractors": [
+        "Xây dựng mạng nơ-ron.",
+        "Phân loại dữ liệu bằng hồi quy.",
+        "Tối ưu hóa hàm mục tiêu."
+      ],
+      "explanation": "Câu trả lời đúng là \"Xây dựng cây quyết định\" vì thuật toán Hunt được thiết kế đặc biệt để tạo ra cây quyết định, một cấu trúc dữ liệu giúp phân loại và dự đoán dựa trên các thuộc tính của dữ liệu. Thuật toán này hoạt động bằng cách chia nhỏ không gian dữ liệu thành các nhánh, giúp xác định các quyết định dựa trên các điều kiện cụ thể, từ đó tạo ra một mô hình dễ hiểu và trực quan.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Xây dựng mạng nơ-ron**: Thuật toán Hunt không liên quan đến mạng nơ-ron, mà là một phương pháp khác trong học máy. Mạng nơ-ron sử dụng các nơ-ron kết nối để học từ dữ liệu, trong khi thuật toán Hunt tập trung vào việc phân chia dữ liệu thành các nhánh để tạo ra cây quyết định.\n\n- **Phân loại dữ liệu bằng hồi quy**: Hồi quy là một phương pháp khác trong học máy, chủ yếu được sử dụng để dự đoán giá trị liên tục, không phải để phân loại. Thuật toán Hunt không sử dụng hồi quy mà thay vào đó là phân loại thông qua cây quyết định.\n\n- **Tối ưu hóa hàm mục tiêu**: Mặc dù tối ưu hóa hàm mục tiêu là một phần quan trọng trong nhiều thuật toán học máy, thuật toán Hunt không trực tiếp tối ưu hóa hàm mục tiêu mà tập trung vào việc xây dựng cây quyết định thông qua việc phân chia dữ liệu. Tối ưu hóa thường liên quan đến việc điều chỉnh tham số trong các mô hình khác như hồi quy hoặc mạng nơ-ron.\n\nTóm lại, câu trả lời đúng là \"Xây dựng cây quyết định\" vì thuật toán Hunt chuyên về việc tạo ra cây quyết định, trong khi các yếu tố gây nhiễu đều liên quan đến các phương pháp khác không phải là mục tiêu chính của thuật toán này.",
+      "topic": {
+        "name": "Thuật Toán Hunt: Quy Trình và Ứng Dụng",
+        "description": "Giới thiệu về thuật toán Hunt dùng để xây dựng cây quyết định. Học sinh sẽ được kiểm tra hiểu biết về quy trình và từng bước trong thuật toán này. Các câu hỏi có thể yêu cầu thực hành về việc áp dụng thuật toán trong các tình huống thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong cây quyết định, khi nào thì sử dụng chỉ số Gini thay vì Entropy để đo độ không thuần khiết của nút?",
+      "answer": "Khi cần tính toán sự phân bố thông tin nhanh chóng.",
+      "distractors": [
+        "Khi cần tính toán độ chính xác cao hơn cho mô hình.",
+        "Khi muốn giảm thiểu số lượng nút trong cây quyết định.",
+        "Khi dữ liệu có nhiều thuộc tính không liên quan."
+      ],
+      "explanation": "Câu trả lời đúng \"Khi cần tính toán sự phân bố thông tin nhanh chóng\" là chính xác vì chỉ số Gini thường được tính toán nhanh hơn so với Entropy. Gini chỉ cần tính toán tần suất của các lớp trong dữ liệu, trong khi Entropy yêu cầu tính toán logarit, điều này làm cho Gini trở thành lựa chọn ưu việt khi cần xử lý dữ liệu lớn hoặc khi tốc độ tính toán là yếu tố quan trọng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Khi cần tính toán độ chính xác cao hơn cho mô hình**: Cả Gini và Entropy đều có thể dẫn đến các mô hình có độ chính xác tương đương. Việc chọn Gini không nhất thiết mang lại độ chính xác cao hơn, mà chủ yếu là về tốc độ tính toán.\n\n- **Khi muốn giảm thiểu số lượng nút trong cây quyết định**: Số lượng nút trong cây quyết định phụ thuộc vào cách chia tách dữ liệu, không chỉ dựa vào chỉ số Gini hay Entropy. Cả hai chỉ số có thể tạo ra cây quyết định với số lượng nút khác nhau tùy thuộc vào dữ liệu và cách thức phân chia.\n\n- **Khi dữ liệu có nhiều thuộc tính không liên quan**: Việc sử dụng Gini hay Entropy không phụ thuộc vào số lượng thuộc tính không liên quan. Cả hai chỉ số đều có thể bị ảnh hưởng bởi thuộc tính không liên quan, và việc chọn chỉ số nào không giải quyết được vấn đề này.\n\nTóm lại, câu trả lời đúng tập trung vào tốc độ tính toán, trong khi các yếu tố gây nhiễu không chính xác vì chúng không phản ánh đúng bản chất của việc lựa chọn giữa Gini và Entropy trong bối cảnh cây quyết định.",
+      "topic": {
+        "name": "Đo Lường Độ Không Thuần Khiết: Chỉ Số Gini và Entropy",
+        "description": "Tìm hiểu về các phương pháp đo độ không thuần khiết của nút trong cây quyết định bằng các chỉ số như Gini và Entropy. Câu hỏi sẽ yêu cầu so sánh hai phương pháp và tính toán chỉ số cho các ví dụ cụ thể.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Gain Ratio đóng vai trò gì trong thuật toán C4.5 so với Information Gain?",
+      "answer": "Điều chỉnh để giảm thiểu độ thiên lệch với các thuộc tính có nhiều giá trị.",
+      "distractors": [
+        "Điều chỉnh để tăng cường độ thiên lệch với các thuộc tính có ít giá trị.",
+        "Giảm thiểu độ thiên lệch bằng cách loại bỏ các thuộc tính không quan trọng.",
+        "Tăng cường độ chính xác của Information Gain mà không cần điều chỉnh."
+      ],
+      "explanation": "Câu trả lời đúng \"Điều chỉnh để giảm thiểu độ thiên lệch với các thuộc tính có nhiều giá trị\" là chính xác vì Gain Ratio được thiết kế để khắc phục nhược điểm của Information Gain, đó là thiên lệch đối với các thuộc tính có nhiều giá trị. Khi một thuộc tính có nhiều giá trị, Information Gain có thể đánh giá cao thuộc tính đó mặc dù nó không thực sự mang lại thông tin hữu ích. Gain Ratio tính đến số lượng giá trị của thuộc tính, từ đó điều chỉnh giá trị của Information Gain để đảm bảo rằng các thuộc tính có nhiều giá trị không được ưu tiên một cách không công bằng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- \"Điều chỉnh để tăng cường độ thiên lệch với các thuộc tính có ít giá trị\": Tùy chọn này sai vì Gain Ratio không tăng cường thiên lệch mà ngược lại, nó điều chỉnh để giảm thiểu thiên lệch, đặc biệt là với các thuộc tính có nhiều giá trị, nhằm đảm bảo tính công bằng trong việc lựa chọn thuộc tính.\n\n- \"Giảm thiểu độ thiên lệch bằng cách loại bỏ các thuộc tính không quan trọng\": Tùy chọn này không chính xác vì Gain Ratio không loại bỏ thuộc tính mà chỉ điều chỉnh cách đánh giá thuộc tính dựa trên thông tin mà nó cung cấp. Gain Ratio vẫn xem xét tất cả các thuộc tính, chỉ điều chỉnh cách tính toán để giảm thiểu thiên lệch.\n\n- \"Tăng cường độ chính xác của Information Gain mà không cần điều chỉnh\": Tùy chọn này sai vì Gain Ratio không chỉ đơn thuần là việc tăng cường độ chính xác của Information Gain mà là một phương pháp điều chỉnh để đảm bảo rằng các thuộc tính được đánh giá một cách công bằng hơn, đặc biệt là trong trường hợp có nhiều giá trị. \n\nTóm lại, Gain Ratio là một công cụ quan trọng trong thuật toán C4.5 để đảm bảo rằng các thuộc tính được đánh giá một cách công bằng và chính xác hơn.",
+      "topic": {
+        "name": "Gain Ratio: Khắc Phục Nhược Điểm của Information Gain",
+        "description": "Khám phá Gain Ratio và cách nó điều chỉnh Information Gain. Học sinh sẽ kiểm tra hiểu biết về lý thuyết và cách áp dụng Gain Ratio trong thuật toán C4.5.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Sai số phân loại tại một nút trong cây quyết định được tính bằng công thức nào?",
+      "answer": "1 - max(p1, p2, ..., pk)",
+      "distractors": [
+        "1 - min(p1, p2, ..., pk)",
+        "1 - (p1 + p2 + ... + pk) / k",
+        "1 - p1"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về sai số phân loại tại một nút trong cây quyết định là \"1 - max(p1, p2, ..., pk)\". Công thức này đúng vì sai số phân loại được tính bằng 1 trừ đi xác suất của lớp chiếm ưu thế nhất trong nút. Nếu p1, p2, ..., pk là xác suất của các lớp khác nhau, thì max(p1, p2, ..., pk) sẽ cho ta xác suất cao nhất, tức là xác suất của lớp mà có nhiều mẫu nhất. Do đó, 1 trừ đi xác suất này sẽ cho ta tỷ lệ mẫu không thuộc lớp chiếm ưu thế, tức là sai số phân loại.\n\nGiải thích về các yếu tố gây nhiễu:\n- **1 - min(p1, p2, ..., pk)**: Tùy chọn này sai vì nó tính toán sai số dựa trên xác suất của lớp có tần suất thấp nhất, điều này không phản ánh đúng sai số phân loại. Sai số phân loại cần dựa vào lớp chiếm ưu thế, không phải lớp ít mẫu.\n  \n- **1 - (p1 + p2 + ... + pk) / k**: Tùy chọn này cũng sai vì nó tính trung bình xác suất của tất cả các lớp và sau đó trừ đi từ 1. Điều này không phản ánh đúng cách tính sai số phân loại, vì nó không xem xét lớp chiếm ưu thế mà chỉ đơn giản là trung bình các xác suất.\n\n- **1 - p1**: Tùy chọn này sai vì nó chỉ xem xét xác suất của một lớp cụ thể (p1) mà không tính đến các lớp khác. Sai số phân loại cần phải xem xét tất cả các lớp để xác định lớp chiếm ưu thế, không chỉ một lớp đơn lẻ.\n\nTóm lại, câu trả lời đúng \"1 - max(p1, p2, ..., pk)\" phản ánh chính xác cách tính sai số phân loại, trong khi các yếu tố gây nhiễu đều không chính xác vì không xem xét đúng cách xác suất của lớp chiếm ưu thế.",
+      "topic": {
+        "name": "Sai Số Phân Loại: Định Nghĩa và Tính Toán",
+        "description": "Tìm hiểu về sai số phân loại tại một nút trong cây quyết định. Câu hỏi sẽ yêu cầu học sinh tính toán sai số phân loại dựa trên tần suất của các lớp trong nút.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong việc phân loại khách hàng vỡ nợ bằng cây quyết định, yếu tố nào quyết định độ chính xác của mô hình?",
+      "answer": "Tối ưu hóa các tham số và điều kiện tại mỗi nút phân tách.",
+      "distractors": [
+        "Sử dụng số lượng lớn dữ liệu để cải thiện độ chính xác.",
+        "Chọn ngẫu nhiên các thuộc tính để phân tách.",
+        "Giảm số lượng nút phân tách trong mô hình."
+      ],
+      "explanation": "Câu trả lời đúng là \"Tối ưu hóa các tham số và điều kiện tại mỗi nút phân tách\" vì trong cây quyết định, mỗi nút phân tách cần được tối ưu hóa để đảm bảo rằng các quyết định được đưa ra là chính xác nhất có thể. Việc tối ưu hóa này liên quan đến việc chọn các thuộc tính phù hợp và xác định ngưỡng phân tách tốt nhất, từ đó giúp mô hình phân loại khách hàng vỡ nợ đạt được độ chính xác cao hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng số lượng lớn dữ liệu để cải thiện độ chính xác**: Mặc dù việc có nhiều dữ liệu có thể giúp cải thiện độ chính xác, nhưng nếu không tối ưu hóa các tham số và điều kiện tại mỗi nút phân tách, mô hình vẫn có thể không chính xác. Số lượng dữ liệu không phải là yếu tố quyết định chính mà là cách dữ liệu được sử dụng và phân tích.\n\n- **Chọn ngẫu nhiên các thuộc tính để phân tách**: Việc chọn ngẫu nhiên các thuộc tính không đảm bảo rằng các quyết định tại mỗi nút phân tách là tối ưu. Cần phải có một quy trình chọn lựa có hệ thống để đảm bảo rằng các thuộc tính được chọn thực sự có ảnh hưởng đến kết quả phân loại.\n\n- **Giảm số lượng nút phân tách trong mô hình**: Giảm số lượng nút phân tách có thể dẫn đến việc mất đi thông tin quan trọng và làm giảm khả năng phân loại chính xác. Thay vì giảm số lượng nút, việc tối ưu hóa các tham số tại mỗi nút là cần thiết để cải thiện độ chính xác của mô hình.\n\nTóm lại, việc tối ưu hóa các tham số và điều kiện tại mỗi nút phân tách là yếu tố quyết định chính trong việc nâng cao độ chính xác của mô hình phân loại khách hàng vỡ nợ.",
+      "topic": {
+        "name": "Ứng Dụng Cây Quyết Định Trong Phân Loại",
+        "description": "Khảo sát các ứng dụng thực tế của cây quyết định trong việc phân loại, như phân loại khách hàng vỡ nợ. Các câu hỏi sẽ yêu cầu phân tích tình huống và đưa ra nhận xét về hiệu suất của mô hình.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong việc phân loại, ưu điểm chính của hồi quy logistic so với cây quyết định là gì?",
+      "answer": "Hồi quy logistic có khả năng cung cấp xác suất cho từng kết quả.",
+      "distractors": [
+        "Hồi quy logistic không thể xử lý các biến phân loại.",
+        "Cây quyết định cung cấp xác suất cho từng kết quả.",
+        "Hồi quy logistic thường phức tạp hơn cây quyết định trong việc giải thích."
+      ],
+      "explanation": "Câu trả lời đúng là \"Hồi quy logistic có khả năng cung cấp xác suất cho từng kết quả\" vì hồi quy logistic không chỉ phân loại các kết quả mà còn tính toán xác suất cho mỗi lớp, cho phép người dùng hiểu rõ hơn về độ tin cậy của dự đoán. Điều này rất hữu ích trong các tình huống mà việc đánh giá mức độ chắc chắn của một dự đoán là quan trọng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Hồi quy logistic không thể xử lý các biến phân loại**: Sai, vì hồi quy logistic thực sự có thể xử lý các biến phân loại bằng cách mã hóa chúng thành các biến nhị phân hoặc sử dụng các kỹ thuật như one-hot encoding.\n\n- **Cây quyết định cung cấp xác suất cho từng kết quả**: Sai, mặc dù cây quyết định có thể cung cấp xác suất cho các lớp thông qua tỷ lệ phần trăm của các mẫu trong lá cuối cùng, nhưng nó không trực tiếp tính toán xác suất như hồi quy logistic, mà chỉ đưa ra quyết định dựa trên các quy tắc phân chia.\n\n- **Hồi quy logistic thường phức tạp hơn cây quyết định trong việc giải thích**: Sai, hồi quy logistic thường dễ giải thích hơn vì nó cung cấp các hệ số rõ ràng cho từng biến, cho phép người dùng hiểu được ảnh hưởng của từng biến đến xác suất kết quả, trong khi cây quyết định có thể trở nên phức tạp và khó theo dõi khi có nhiều nhánh. \n\nTóm lại, câu trả lời đúng nêu bật ưu điểm của hồi quy logistic trong việc cung cấp xác suất, trong khi các yếu tố gây nhiễu đều không chính xác vì lý do cụ thể đã nêu.",
+      "topic": {
+        "name": "So Sánh Mô Hình Hồi Quy Logistic và Cây Quyết Định",
+        "description": "Khảo sát sự khác biệt và tương đồng giữa hồi quy logistic và cây quyết định trong phân loại. Câu hỏi sẽ tập trung vào hiểu biết về ưu và nhược điểm của cả hai phương pháp đã học từ tuần trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    },
+    {
+      "question": "Trong tối ưu hóa, thuật toán nào được sử dụng để cập nhật các trọng số của hàm mục tiêu trong hồi quy tuyến tính?",
+      "answer": "Gradient Descent",
+      "distractors": [
+        "Hồi quy logistic",
+        "Phương pháp tối ưu hóa toàn cục",
+        "Phương pháp Newton"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"Gradient Descent\" vì đây là thuật toán phổ biến được sử dụng để cập nhật các trọng số trong hồi quy tuyến tính. Gradient Descent hoạt động bằng cách tính toán đạo hàm của hàm mục tiêu (thường là hàm mất mát) và điều chỉnh các trọng số theo hướng giảm dần của gradient, nhằm tối thiểu hóa sai số giữa giá trị dự đoán và giá trị thực tế.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Hồi quy logistic**: Đây là một phương pháp hồi quy được sử dụng cho các bài toán phân loại nhị phân, không phải cho hồi quy tuyến tính. Hồi quy logistic sử dụng hàm logistic để dự đoán xác suất, và mặc dù có thể sử dụng Gradient Descent để tối ưu hóa, nhưng nó không phải là thuật toán cập nhật trọng số cho hồi quy tuyến tính.\n\n- **Phương pháp tối ưu hóa toàn cục**: Đây là một thuật ngữ chung cho các phương pháp tìm kiếm tối ưu hóa trên toàn bộ không gian tìm kiếm, nhưng không cụ thể cho việc cập nhật trọng số trong hồi quy tuyến tính. Các phương pháp tối ưu hóa toàn cục có thể bao gồm nhiều kỹ thuật khác nhau, nhưng không phải là thuật toán cụ thể như Gradient Descent.\n\n- **Phương pháp Newton**: Đây là một phương pháp tối ưu hóa dựa trên việc sử dụng đạo hàm bậc hai để tìm điểm cực trị của hàm mục tiêu. Mặc dù nó có thể được sử dụng trong hồi quy, nhưng nó không phải là thuật toán chính được sử dụng để cập nhật trọng số trong hồi quy tuyến tính, mà thường được xem là một phương pháp phức tạp hơn và không phổ biến bằng Gradient Descent.\n\nTóm lại, \"Gradient Descent\" là câu trả lời đúng vì nó là thuật toán chủ yếu cho việc cập nhật trọng số trong hồi quy tuyến tính, trong khi các yếu tố gây nhiễu khác không phù hợp với ngữ cảnh của câu hỏi.",
+      "topic": {
+        "name": "Tối ưu Hóa: Ứng Dụng từ Hồi Quy Đến Cây Quyết Định",
+        "description": "Kết nối các khái niệm tối ưu hóa từ hồi quy tuyến tính đến cây quyết định. Học sinh sẽ kiểm tra hiểu biết về cách tối ưu hóa hàm mục tiêu trong cả hai mô hình, tập trung vào Gradient Descent và độ không thuần khiết trong cây quyết định.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "int3405"
+    }
+  ]
+}

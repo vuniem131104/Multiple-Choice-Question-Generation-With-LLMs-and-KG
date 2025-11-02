@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Quicksort bao gồm bao nhiêu bước chính trong quá trình thực hiện thuật toán?",
+      "answer": "Ba bước chính: xáo trộn, phân vùng và sắp xếp đệ quy.",
+      "distractors": [
+        "Hai bước chính: phân vùng và sắp xếp.",
+        "Bốn bước chính: xáo trộn, phân vùng, sắp xếp và kết hợp.",
+        "Chỉ một bước chính: sắp xếp."
+      ],
+      "explanation": "Câu trả lời đúng là \"Ba bước chính: xáo trộn, phân vùng và sắp xếp đệ quy\" vì thuật toán Quicksort hoạt động qua ba giai đoạn quan trọng. Đầu tiên, bước xáo trộn chọn một phần tử làm pivot (điểm chốt) để phân chia mảng. Tiếp theo, bước phân vùng sắp xếp các phần tử xung quanh pivot, đảm bảo rằng các phần tử nhỏ hơn nằm bên trái và lớn hơn nằm bên phải. Cuối cùng, bước sắp xếp đệ quy áp dụng lại thuật toán cho các phân vùng đã tạo ra cho đến khi toàn bộ mảng được sắp xếp.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Hai bước chính: phân vùng và sắp xếp**: Tùy chọn này sai vì nó bỏ qua bước xáo trộn, một bước quan trọng trong việc chọn pivot và thiết lập phân vùng ban đầu.\n- **Bốn bước chính: xáo trộn, phân vùng, sắp xếp và kết hợp**: Tùy chọn này không chính xác vì Quicksort không có bước kết hợp; nó thực hiện sắp xếp trực tiếp qua phân vùng và đệ quy mà không cần kết hợp các mảng.\n- **Chỉ một bước chính: sắp xếp**: Tùy chọn này sai vì nó đơn giản hóa quá mức quá trình của Quicksort, không phản ánh đầy đủ các bước cần thiết để thực hiện thuật toán. Sắp xếp chỉ là một phần của quy trình, không phải là bước duy nhất.",
+      "topic": {
+        "name": "Tổng quan về Quicksort",
+        "description": "Khái niệm tổng quan về Quicksort, một trong những thuật toán sắp xếp cổ điển, bao gồm cách hoạt động của nó qua ba bước chính. Học sinh nên biết cách thuật toán thực hiện xáo trộn, phân vùng và sắp xếp đệ quy. Nội dung có thể được kiểm tra thông qua định nghĩa và mô tả các bước của thuật toán.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Quy trình phân vùng trong thuật toán Quicksort chủ yếu sử dụng các con trỏ để thực hiện hành động gì trên mảng?",
+      "answer": "Hoán đổi các phần tử trong mảng.",
+      "distractors": [
+        "Thực hiện sắp xếp các phần tử theo thứ tự tăng dần.",
+        "Chỉ định vị trí của các phần tử trong mảng.",
+        "Tạo một mảng mới từ các phần tử đã phân vùng."
+      ],
+      "explanation": "Câu trả lời đúng là \"Hoán đổi các phần tử trong mảng\" vì quy trình phân vùng trong thuật toán Quicksort chủ yếu thực hiện việc phân chia mảng thành hai phần: các phần tử nhỏ hơn và lớn hơn một giá trị pivot (điểm chốt). Để thực hiện điều này, thuật toán sử dụng các con trỏ để quét qua mảng và hoán đổi các phần tử khi cần thiết, nhằm đảm bảo rằng các phần tử được sắp xếp đúng vị trí tương ứng với pivot.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Thực hiện sắp xếp các phần tử theo thứ tự tăng dần**: Mặc dù Quicksort cuối cùng sẽ sắp xếp mảng theo thứ tự tăng dần, nhưng quy trình phân vùng không thực hiện việc sắp xếp mà chỉ phân chia mảng. Sắp xếp thực sự xảy ra sau khi phân vùng hoàn tất.\n\n- **Chỉ định vị trí của các phần tử trong mảng**: Quy trình phân vùng không chỉ định vị trí mà thực hiện hoán đổi các phần tử để chúng nằm ở đúng vị trí tương ứng với pivot. Việc chỉ định vị trí không phải là mục tiêu chính của phân vùng.\n\n- **Tạo một mảng mới từ các phần tử đã phân vùng**: Quicksort là một thuật toán sắp xếp tại chỗ, nghĩa là nó không tạo ra một mảng mới mà thay vào đó hoán đổi các phần tử trong mảng hiện tại. Do đó, việc tạo ra một mảng mới không phải là một phần của quy trình phân vùng.\n\nTóm lại, quy trình phân vùng trong Quicksort chủ yếu liên quan đến việc hoán đổi các phần tử trong mảng để phân chia chúng theo pivot, trong khi các yếu tố gây nhiễu khác không phản ánh đúng chức năng của quy trình này.",
+      "topic": {
+        "name": "Quy trình phân vùng trong Quicksort",
+        "description": "Thảo luận về quy trình phân vùng trong thuật toán Quicksort, bao gồm cách sử dụng các con trỏ để quét mảng và hoán đổi các phần tử. Học sinh cần hiểu rõ các bước thực hiện phân vùng và tối ưu hóa sử dụng trong mã Java để thực hiện điều này. Nội dung có thể được kiểm tra thông qua phân tích và mô tả quy trình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong phân tích hiệu suất Quicksort, công thức nào được sử dụng để tính số lần so sánh trong trường hợp xấu nhất?",
+      "answer": "O(n^2)",
+      "distractors": [
+        "O(n log n)",
+        "O(n^3)",
+        "O(n)"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi về số lần so sánh trong trường hợp xấu nhất của thuật toán Quicksort là O(n^2). Điều này xảy ra khi thuật toán chọn một phần tử pivot không tối ưu, dẫn đến việc phân chia không đồng đều, ví dụ như khi mảng đã được sắp xếp hoặc gần như sắp xếp. Trong trường hợp này, mỗi lần phân chia chỉ giảm kích thước mảng một cách tối thiểu, dẫn đến việc thực hiện n lần so sánh cho mỗi lần phân chia, tổng cộng là n + (n-1) + (n-2) + ... + 1 = O(n^2).\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n- **O(n log n)**: Đây là độ phức tạp thời gian trong trường hợp tốt nhất hoặc trung bình của Quicksort, khi pivot được chọn một cách tối ưu, dẫn đến các phân chia gần như đều. Tuy nhiên, trong trường hợp xấu nhất, số lần so sánh không đạt được hiệu suất này, vì vậy đây không phải là câu trả lời chính xác.\n\n- **O(n^3)**: Độ phức tạp này không liên quan đến Quicksort. O(n^3) thường xuất hiện trong các thuật toán khác, chẳng hạn như một số thuật toán sắp xếp kém hơn hoặc trong các trường hợp đặc biệt của các thuật toán khác. Quicksort không bao giờ đạt đến độ phức tạp này trong bất kỳ trường hợp nào, do đó đây không phải là câu trả lời đúng.\n\n- **O(n)**: Đây là độ phức tạp thời gian cho các thuật toán sắp xếp khác như Sắp xếp đếm (Counting Sort) hoặc Sắp xếp theo phân loại (Bucket Sort) trong các trường hợp đặc biệt. Tuy nhiên, Quicksort không thể đạt được hiệu suất O(n) trong trường hợp xấu nhất, vì nó cần phải thực hiện nhiều hơn n lần so sánh để hoàn thành việc sắp xếp. Do đó, đây cũng không phải là câu trả lời chính xác.\n\nTóm lại, O(n^2) là câu trả lời đúng vì nó phản ánh chính xác số lần so sánh trong trường hợp xấu nhất của Quicksort, trong khi các yếu tố gây nhiễu khác không phù hợp với phân tích hiệu suất của thuật toán này.",
+      "topic": {
+        "name": "Phân tích hiệu suất Quicksort",
+        "description": "Đánh giá hiệu suất của Quicksort bằng cách phân tích các trường hợp tốt nhất, xấu nhất và trung bình. Học sinh sẽ cần biết công thức và cách tính toán số lần so sánh trong từng trường hợp. Nội dung này bổ sung kiến thức về Mergesort từ tuần trước để so sánh hiệu suất và ứng dụng thực tế.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Quicksort là một thuật toán không ổn định, điều này có nghĩa là điều gì trong việc sắp xếp các phần tử trùng lặp?",
+      "answer": "Quicksort không đảm bảo giữ nguyên thứ tự của các phần tử trùng lặp.",
+      "distractors": [
+        "Quicksort giữ nguyên thứ tự của các phần tử trùng lặp trong quá trình sắp xếp.",
+        "Quicksort sẽ sắp xếp các phần tử trùng lặp theo thứ tự ngẫu nhiên.",
+        "Quicksort là một thuật toán ổn định, cho phép giữ nguyên thứ tự của các phần tử giống nhau."
+      ],
+      "explanation": "Câu trả lời đúng \"Quicksort không đảm bảo giữ nguyên thứ tự của các phần tử trùng lặp.\" là chính xác vì thuật toán Quicksort phân chia các phần tử dựa trên một phần tử pivot mà không quan tâm đến thứ tự ban đầu của các phần tử trùng lặp. Khi thực hiện sắp xếp, các phần tử có giá trị giống nhau có thể bị hoán đổi vị trí với nhau, dẫn đến việc thứ tự ban đầu của chúng không được bảo toàn. Điều này có nghĩa là nếu có nhiều phần tử giống nhau, Quicksort có thể sắp xếp chúng theo thứ tự khác với thứ tự mà chúng xuất hiện ban đầu.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Quicksort giữ nguyên thứ tự của các phần tử trùng lặp trong quá trình sắp xếp.**: Tùy chọn này sai vì Quicksort không có cơ chế nào để đảm bảo rằng các phần tử trùng lặp sẽ giữ nguyên thứ tự của chúng. Việc hoán đổi có thể xảy ra trong quá trình phân chia.\n  \n- **Quicksort sẽ sắp xếp các phần tử trùng lặp theo thứ tự ngẫu nhiên.**: Tùy chọn này cũng không chính xác. Mặc dù thứ tự của các phần tử trùng lặp không được bảo toàn, nhưng chúng không được sắp xếp theo thứ tự ngẫu nhiên. Thay vào đó, chúng sẽ được sắp xếp theo giá trị, nhưng thứ tự ban đầu không được giữ.\n\n- **Quicksort là một thuật toán ổn định, cho phép giữ nguyên thứ tự của các phần tử giống nhau.**: Tùy chọn này sai hoàn toàn vì Quicksort là một thuật toán không ổn định. Định nghĩa của thuật toán ổn định là nó giữ nguyên thứ tự của các phần tử trùng lặp, điều này không đúng với Quicksort.\n\nTóm lại, Quicksort không đảm bảo giữ nguyên thứ tự của các phần tử trùng lặp, và các yếu tố gây nhiễu đều sai vì chúng không phản ánh đúng tính chất của thuật toán này.",
+      "topic": {
+        "name": "Các thuộc tính của Quicksort",
+        "description": "Khám phá các thuộc tính quan trọng của Quicksort, bao gồm độ sâu đệ quy, không gian phụ và tính không ổn định của thuật toán. Học sinh nên hiểu các ảnh hưởng của các thuộc tính này đến hiệu suất và ứng dụng thực tế của Quicksort. Nội dung này có thể kiểm tra bằng cách so sánh các thuộc tính với Mergesort từ tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.68,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi cải thiện hiệu suất của Quicksort, việc nào được coi là tối ưu cho các mảng con nhỏ?",
+      "answer": "Sử dụng thuật toán sắp xếp chèn.",
+      "distractors": [
+        "Sử dụng thuật toán sắp xếp nhanh hơn cho các mảng con nhỏ.",
+        "Sử dụng thuật toán sắp xếp chọn để tối ưu hóa hiệu suất.",
+        "Sử dụng thuật toán sắp xếp trộn cho các mảng con nhỏ."
+      ],
+      "explanation": "Câu trả lời đúng là \"Sử dụng thuật toán sắp xếp chèn\" vì thuật toán sắp xếp chèn (insertion sort) có hiệu suất rất tốt cho các mảng con nhỏ. Khi kích thước mảng giảm xuống dưới một ngưỡng nhất định (thường là từ 10 đến 20 phần tử), sắp xếp chèn có thể thực hiện nhanh hơn so với Quicksort do chi phí overhead của việc phân chia và gọi đệ quy trong Quicksort. Sắp xếp chèn có độ phức tạp thời gian trung bình là O(n^2), nhưng với các mảng nhỏ, nó thường hoạt động gần như O(n), làm cho nó trở thành lựa chọn tối ưu.\n\nGiải thích về các yếu tố gây nhiễu:\n\n- **Sử dụng thuật toán sắp xếp nhanh hơn cho các mảng con nhỏ**: Đây là một tuyên bố không chính xác vì không có thuật toán sắp xếp nào được coi là \"nhanh hơn\" một cách tổng quát cho tất cả các trường hợp. Mặc dù có thể có các thuật toán khác, nhưng sắp xếp chèn đã được chứng minh là hiệu quả nhất cho các mảng nhỏ trong thực tế.\n\n- **Sử dụng thuật toán sắp xếp chọn để tối ưu hóa hiệu suất**: Sắp xếp chọn (selection sort) có độ phức tạp thời gian O(n^2) và không cải thiện hiệu suất so với Quicksort cho các mảng con nhỏ. Thực tế, sắp xếp chọn thường chậm hơn sắp xếp chèn cho các mảng nhỏ, vì nó không tận dụng được các đặc điểm của dữ liệu đã được sắp xếp một phần.\n\n- **Sử dụng thuật toán sắp xếp trộn cho các mảng con nhỏ**: Sắp xếp trộn (merge sort) có độ phức tạp thời gian O(n log n) và mặc dù nó là một thuật toán hiệu quả cho các mảng lớn, nhưng nó không phải là lựa chọn tối ưu cho các mảng con nhỏ do chi phí overhead của việc tạo ra các mảng phụ và hợp nhất chúng. Sắp xếp chèn lại đơn giản và nhanh hơn cho kích thước nhỏ.\n\nTóm lại, sắp xếp chèn là lựa chọn tối ưu cho các mảng con nhỏ trong khi các yếu tố gây nhiễu khác không đáp ứng được yêu cầu về hiệu suất trong trường hợp này.",
+      "topic": {
+        "name": "Cải tiến Quicksort cho hiệu suất tốt hơn",
+        "description": "Đi sâu vào những cải tiến thực tiễn cho Quicksort, chẳng hạn như sắp xếp chèn cho các mảng con nhỏ và việc sử dụng median. Học sinh cần hiểu rõ về các chiến lược này và ảnh hưởng của chúng đến hiệu suất. Nội dung có thể được kiểm tra thông qua áp dụng các cải tiến vào tình huống cụ thể, liên kết với kiến thức từ tuần 2.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong bối cảnh phân vùng 3 chiều của vấn đề cờ Hà Lan, điều gì là yếu tố quyết định để tối ưu hóa thuật toán Quicksort khi xử lý ba màu?",
+      "answer": "Áp dụng phương pháp phân vùng để phân loại các phần tử thành ba tập hợp dựa trên giá trị của chúng.",
+      "distractors": [
+        "Sử dụng thuật toán sắp xếp thông thường mà không cần phân vùng.",
+        "Phân loại các phần tử thành hai tập hợp dựa trên giá trị của chúng.",
+        "Áp dụng phương pháp phân vùng cho từng màu riêng biệt mà không kết hợp chúng."
+      ],
+      "explanation": "Câu trả lời đúng là \"Áp dụng phương pháp phân vùng để phân loại các phần tử thành ba tập hợp dựa trên giá trị của chúng\" vì phương pháp phân vùng 3 chiều trong vấn đề cờ Hà Lan cho phép chúng ta phân loại các phần tử thành ba nhóm tương ứng với ba màu (thường là đỏ, trắng, xanh) một cách hiệu quả. Điều này giúp tối ưu hóa thuật toán Quicksort bằng cách giảm thiểu số lần so sánh và hoán đổi cần thiết, từ đó cải thiện hiệu suất sắp xếp.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng thuật toán sắp xếp thông thường mà không cần phân vùng**: Điều này sai vì thuật toán sắp xếp thông thường không tối ưu cho việc xử lý ba màu. Nó có thể dẫn đến hiệu suất kém do không tận dụng được đặc điểm của ba tập hợp màu sắc, làm tăng số lần so sánh và hoán đổi.\n\n- **Phân loại các phần tử thành hai tập hợp dựa trên giá trị của chúng**: Tùy chọn này không chính xác vì vấn đề cờ Hà Lan yêu cầu phân loại thành ba tập hợp. Việc chỉ phân loại thành hai tập hợp sẽ không giải quyết được bài toán một cách đầy đủ và sẽ bỏ qua một trong các màu sắc.\n\n- **Áp dụng phương pháp phân vùng cho từng màu riêng biệt mà không kết hợp chúng**: Tùy chọn này sai vì nếu phân vùng từng màu riêng biệt, chúng ta sẽ không đạt được sự tối ưu trong việc sắp xếp ba màu cùng một lúc. Phương pháp phân vùng cần phải kết hợp tất cả các màu để đạt được hiệu quả tối ưu trong việc sắp xếp. \n\nTóm lại, câu trả lời đúng là phương pháp phân vùng ba chiều, trong khi các yếu tố gây nhiễu đều không đáp ứng được yêu cầu của bài toán cờ Hà Lan.",
+      "topic": {
+        "name": "Vấn đề cờ Hà Lan và phân vùng 3 chiều",
+        "description": "Giới thiệu về vấn đề cờ Hà Lan trong sắp xếp ba màu và cách thực hiện phân vùng 3 chiều để tối ưu hóa Quicksort. Học sinh cần biết cách xử lý tình huống đặc biệt này và cách áp dụng nó vào thuật toán. Nội dung liên quan đến các khái niệm từ tuần 1 và 2 về tối ưu hóa thuật toán, kiểm tra sự hiểu biết sâu hơn.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi áp dụng Quicksort với ba chốt, phương pháp phân vùng hoạt động như thế nào trong việc xử lý các phần tử có giá trị trung bình?",
+      "answer": "Phương pháp phân vùng với ba chốt chia mảng dựa trên ba giá trị: nhỏ hơn, bằng và lớn hơn chốt trung bình.",
+      "distractors": [
+        "Phương pháp phân vùng với ba chốt chỉ sử dụng hai giá trị chốt để phân chia mảng.",
+        "Quicksort ba chốt không cần phân vùng cho các phần tử có giá trị trung bình.",
+        "Phương pháp phân vùng với ba chốt chỉ tạo ra hai nhóm: nhỏ hơn và lớn hơn chốt trung bình."
+      ],
+      "explanation": "Phương pháp phân vùng với ba chốt trong Quicksort chia mảng dựa trên ba giá trị: nhỏ hơn, bằng và lớn hơn chốt trung bình. Điều này có nghĩa là khi thực hiện phân vùng, các phần tử được phân loại thành ba nhóm: những phần tử có giá trị nhỏ hơn chốt, những phần tử có giá trị bằng chốt, và những phần tử có giá trị lớn hơn chốt. Cách tiếp cận này giúp tối ưu hóa quá trình sắp xếp, đặc biệt là khi có nhiều phần tử có giá trị trung bình giống nhau, vì nó giảm thiểu số lần so sánh và hoán đổi cần thiết.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Phương pháp phân vùng với ba chốt chỉ sử dụng hai giá trị chốt để phân chia mảng.**: Điều này sai vì phương pháp ba chốt thực sự sử dụng ba giá trị để phân chia thành ba nhóm, không chỉ hai. Việc chỉ sử dụng hai giá trị sẽ không phản ánh đúng cách hoạt động của phương pháp này.\n  \n- **Quicksort ba chốt không cần phân vùng cho các phần tử có giá trị trung bình.**: Đây là một hiểu lầm. Phương pháp ba chốt vẫn cần phân vùng cho các phần tử có giá trị trung bình, vì chúng cần được phân loại vào nhóm \"bằng\" để đảm bảo rằng tất cả các phần tử có giá trị trung bình được xử lý đúng cách trong quá trình sắp xếp.\n\n- **Phương pháp phân vùng với ba chốt chỉ tạo ra hai nhóm: nhỏ hơn và lớn hơn chốt trung bình.**: Điều này không chính xác vì phương pháp này tạo ra ba nhóm: nhỏ hơn, bằng và lớn hơn chốt trung bình. Việc chỉ tạo ra hai nhóm sẽ không tận dụng được lợi ích của việc phân vùng ba chốt, dẫn đến hiệu suất kém hơn trong một số trường hợp.",
+      "topic": {
+        "name": "Quicksort hai chốt và ba chốt",
+        "description": "Khám phá các biến thể của Quicksort sử dụng hai và ba phần tử chốt để cải thiện hiệu suất. Học sinh cần hiểu cách mà những biến thể này thực hiện phân vùng và áp dụng chúng trong các trường hợp thực tế. Nội dung này có thể kiểm tra sự hiểu biết về các phương pháp tối ưu trong sắp xếp, liên kết với Mergesort từ tuần 3.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Phương thức nào được sử dụng để sắp xếp mảng trong Java 7?",
+      "answer": "Arrays.sort()",
+      "distractors": [
+        "Collections.sort()",
+        "Arrays.order()",
+        "List.sort()"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi \"Phương thức nào được sử dụng để sắp xếp mảng trong Java 7?\" là **Arrays.sort()**. Phương thức này được thiết kế đặc biệt để sắp xếp các mảng trong Java, sử dụng thuật toán quicksort hai chốt, giúp tối ưu hóa hiệu suất sắp xếp cho các mảng. Đây là phương thức chính thức và được khuyến nghị để sắp xếp mảng trong Java 7.\n\nCác yếu tố gây nhiễu như sau:\n\n- **Collections.sort()**: Phương thức này được sử dụng để sắp xếp các danh sách (List) trong Java, không phải mảng. Do đó, nó không thể được sử dụng để sắp xếp mảng trực tiếp, mà chỉ hoạt động với các cấu trúc dữ liệu thuộc loại Collection.\n\n- **Arrays.order()**: Đây là một phương thức không tồn tại trong Java. Không có phương thức nào có tên là `order` trong lớp Arrays, vì vậy tùy chọn này là sai.\n\n- **List.sort()**: Tương tự như Collections.sort(), phương thức này được sử dụng để sắp xếp các danh sách (List) và không áp dụng cho mảng. Do đó, nó không phải là phương thức phù hợp để sắp xếp mảng trong Java 7.\n\nTóm lại, chỉ có **Arrays.sort()** là phương thức chính xác để sắp xếp mảng trong Java 7, trong khi các tùy chọn khác đều không phù hợp với yêu cầu của câu hỏi.",
+      "topic": {
+        "name": "Sử dụng sắp xếp hệ thống trong Java 7",
+        "description": "Tìm hiểu cách thức hoạt động của phương thức Arrays.sort() trong Java 7 và sự khác biệt giữa việc sử dụng quicksort hai chốt và Timsort. Học sinh nên biết khi nào sử dụng các phương thức nào để đạt hiệu suất tối ưu trong thực tiễn. Nội dung liên quan đến việc hiểu rõ các ứng dụng từ kiến thức học được ở tuần 2 và tuần 3.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.78,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 4,
+      "course_code": "dsa2025"
+    }
+  ]
+}

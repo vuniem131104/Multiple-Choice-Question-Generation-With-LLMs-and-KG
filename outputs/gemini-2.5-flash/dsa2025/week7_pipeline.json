@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Theo định nghĩa, một trong những mục tiêu lý tưởng của hàm băm là gì?",
+      "answer": "Xáo trộn các khóa một cách đồng đều",
+      "distractors": [
+        "Đảm bảo các khóa có thứ tự tăng dần",
+        "Giảm thiểu không gian lưu trữ cần thiết",
+        "Tạo ra các giá trị băm duy nhất cho mọi khóa"
+      ],
+      "explanation": "**Giải thích:**\n\nMục tiêu lý tưởng của hàm băm là **xáo trộn các khóa một cách đồng đều**. Điều này có nghĩa là hàm băm nên phân phối các khóa đầu vào vào các vị trí khác nhau trong bảng băm một cách ngẫu nhiên và đồng đều nhất có thể. Việc phân phối đồng đều giúp giảm thiểu số lượng xung đột (khi hai khóa khác nhau tạo ra cùng một giá trị băm), từ đó cải thiện hiệu suất của các thao tác tìm kiếm, chèn và xóa trong bảng băm.\n\nCác yếu tố gây nhiễu không phải là mục tiêu lý tưởng của hàm băm vì:\n\n*   **Đảm bảo các khóa có thứ tự tăng dần:** Hàm băm không có mục đích sắp xếp các khóa. Chức năng chính của nó là ánh xạ khóa tới một chỉ mục, không phải để duy trì thứ tự.\n*   **Giảm thiểu không gian lưu trữ cần thiết:** Mặc dù hiệu quả không gian là một yếu tố quan trọng trong thiết kế cấu trúc dữ liệu, nhưng mục tiêu chính của hàm băm không phải là giảm thiểu không gian lưu trữ của chính các khóa hoặc bảng băm. Mục tiêu của nó là ánh xạ khóa hiệu quả.\n*   **Tạo ra các giá trị băm duy nhất cho mọi khóa:** Mặc dù đây là một thuộc tính mong muốn (không có xung đột), nhưng trong thực tế, việc tạo ra các giá trị băm hoàn toàn duy nhất cho mọi khóa là không thể đối với hầu hết các hàm băm, đặc biệt khi số lượng khóa lớn hơn kích thước của bảng băm hoặc phạm vi giá trị băm. Mục tiêu thực tế là giảm thiểu xung đột, chứ không phải loại bỏ hoàn toàn chúng.\n",
+      "topic": {
+        "name": "Khái niệm và Mục tiêu Hàm băm",
+        "description": "Chủ đề này kiểm tra định nghĩa của hàm băm, các mục tiêu lý tưởng của nó như xáo trộn khóa đồng đều và tính toán hiệu quả. Nó cũng bao gồm các vấn đề cơ bản liên quan đến hàm băm như tính toán, kiểm tra sự bằng nhau giữa các khóa và giải quyết xung đột. Học sinh nên có thể xác định các thuộc tính chính của một hàm băm lý tưởng.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Theo quy ước mã băm của Java, điều kiện bắt buộc nào sau đây phải đúng đối với phương thức hashCode() khi so sánh với phương thức equals()?",
+      "answer": "Nếu hai đối tượng bằng nhau theo phương thức equals(), thì mã băm của chúng phải giống nhau.",
+      "distractors": [
+        "Nếu hai đối tượng có mã băm giống nhau, thì chúng phải bằng nhau theo phương thức equals().",
+        "Phương thức hashCode() phải luôn trả về một giá trị duy nhất cho mỗi đối tượng.",
+        "Mã băm của hai đối tượng có thể khác nhau ngay cả khi chúng bằng nhau theo phương thức equals()."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **\"Nếu hai đối tượng bằng nhau theo phương thức equals(), thì mã băm của chúng phải giống nhau.\"** Điều này là một quy ước bắt buộc trong Java để đảm bảo các cấu trúc dữ liệu dựa trên băm (như `HashMap` và `HashSet`) hoạt động chính xác. Khi hai đối tượng được coi là bằng nhau bởi phương thức `equals()`, chúng phải có cùng mã băm để có thể được tìm thấy hoặc lưu trữ đúng cách trong các cấu trúc này. Nếu mã băm khác nhau, một đối tượng bằng nhau có thể không được tìm thấy khi tìm kiếm bằng một đối tượng bằng nhau khác.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **\"Nếu hai đối tượng có mã băm giống nhau, thì chúng phải bằng nhau theo phương thức equals().\"** Điều này là sai. Hai đối tượng có thể có cùng mã băm nhưng không bằng nhau. Đây được gọi là \"va chạm băm\" (hash collision) và là một hiện tượng bình thường trong các hàm băm. Hàm băm cố gắng phân phối các đối tượng một cách đồng đều, nhưng không thể đảm bảo tính duy nhất cho mọi đối tượng khác nhau. Do đó, khi hai đối tượng có cùng mã băm, phương thức `equals()` vẫn cần được gọi để xác định xem chúng có thực sự bằng nhau hay không.\n\n*   **\"Phương thức hashCode() phải luôn trả về một giá trị duy nhất cho mỗi đối tượng.\"** Điều này là sai. Như đã giải thích ở trên, va chạm băm là có thể xảy ra và được chấp nhận. Mục đích của `hashCode()` là cung cấp một giá trị băm để phân phối các đối tượng vào các \"thùng\" (buckets) trong các cấu trúc dữ liệu băm, không phải để cung cấp một định danh duy nhất cho mỗi đối tượng.\n\n*   **\"Mã băm của hai đối tượng có thể khác nhau ngay cả khi chúng bằng nhau theo phương thức equals().\"** Điều này là sai và mâu thuẫn trực tiếp với quy ước bắt buộc. Nếu hai đối tượng bằng nhau theo `equals()` nhưng có mã băm khác nhau, các cấu trúc dữ liệu băm sẽ không thể hoạt động đúng cách, dẫn đến các lỗi logic như không tìm thấy đối tượng đã được thêm vào.\n",
+      "topic": {
+        "name": "Quy ước mã băm của Java",
+        "description": "Chủ đề này tập trung vào các quy ước quan trọng của phương thức hashCode() trong Java. Học sinh cần hiểu yêu cầu bắt buộc rằng nếu hai đối tượng bằng nhau (theo equals()), thì mã băm của chúng phải giống nhau, cũng như mong muốn hai đối tượng không bằng nhau có mã băm khác nhau. Các ví dụ về triển khai mặc định và cho các kiểu dữ liệu cơ bản cũng được bao gồm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Cấu trúc cơ bản của một bảng băm chuỗi riêng biệt (Separate-Chaining) bao gồm những gì?",
+      "answer": "Một mảng các danh sách liên kết",
+      "distractors": [
+        "Một mảng các cây nhị phân tìm kiếm",
+        "Một danh sách liên kết các mảng",
+        "Một mảng các bảng băm khác"
+      ],
+      "explanation": "Giải thích:\n\n**Câu trả lời đúng là \"Một mảng các danh sách liên kết\"** vì đây là cấu trúc cơ bản của một bảng băm chuỗi riêng biệt (Separate-Chaining). Trong phương pháp này, bảng băm được triển khai dưới dạng một mảng, và mỗi vị trí (hoặc \"ô\") trong mảng đó chứa một danh sách liên kết. Khi có xung đột băm (hai khóa băm vào cùng một vị trí), các phần tử này được thêm vào danh sách liên kết tại vị trí đó. Điều này cho phép nhiều phần tử được lưu trữ tại cùng một chỉ mục trong mảng mà không ghi đè lên nhau.\n\n**Các yếu tố gây nhiễu là sai vì:**\n\n*   **\"Một mảng các cây nhị phân tìm kiếm\"** là một cách giải quyết xung đột băm khác, thường được sử dụng trong các triển khai bảng băm nâng cao hơn (ví dụ: trong Java 8 trở lên, khi danh sách liên kết quá dài, nó có thể chuyển thành cây nhị phân tìm kiếm để cải thiện hiệu suất). Tuy nhiên, cấu trúc cơ bản và phổ biến nhất của chuỗi riêng biệt là sử dụng danh sách liên kết, không phải cây nhị phân tìm kiếm ngay từ đầu.\n*   **\"Một danh sách liên kết các mảng\"** đảo ngược cấu trúc cơ bản. Bảng băm chuỗi riêng biệt bắt đầu bằng một mảng có kích thước cố định, và mỗi phần tử của mảng đó là một cấu trúc dữ liệu động (danh sách liên kết) để chứa các phần tử bị xung đột. Một danh sách liên kết các mảng sẽ không cung cấp hiệu quả truy cập ngẫu nhiên dựa trên chỉ mục băm như một mảng các danh sách liên kết.\n*   **\"Một mảng các bảng băm khác\"** sẽ tạo ra một cấu trúc lồng nhau không cần thiết và phức tạp hơn nhiều so với yêu cầu của phương pháp chuỗi riêng biệt. Mục đích của chuỗi riêng biệt là giải quyết xung đột bằng cách sử dụng một cấu trúc dữ liệu đơn giản hơn (danh sách liên kết) tại mỗi vị trí trong mảng chính, chứ không phải bằng cách tạo ra các bảng băm con.",
+      "topic": {
+        "name": "Cơ chế của Bảng băm chuỗi riêng biệt",
+        "description": "Chủ đề này đánh giá sự hiểu biết về cơ chế hoạt động của bảng băm chuỗi riêng biệt (Separate-Chaining). Học sinh cần biết cấu trúc của nó (mảng các danh sách liên kết) và cách các hoạt động chèn, tìm kiếm và xóa được thực hiện, cùng với cách nó giải quyết xung đột bằng cách sử dụng các chuỗi. Đây là một khái niệm cốt lõi trong Tuần 7.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Nguyên tắc hoạt động nào mô tả cấu trúc dữ liệu Stack?",
+      "answer": "LIFO (Last-In, First-Out)",
+      "distractors": [
+        "FIFO (First-In, First-Out)",
+        "FILO (First-In, Last-Out)",
+        "LILO (Last-In, Last-Out)"
+      ],
+      "explanation": "**Giải thích:**\n\nNguyên tắc hoạt động của cấu trúc dữ liệu Stack là **LIFO (Last-In, First-Out)**. Điều này có nghĩa là phần tử được thêm vào Stack cuối cùng sẽ là phần tử được lấy ra đầu tiên. Hãy hình dung một chồng đĩa: đĩa bạn đặt lên trên cùng (cuối cùng) sẽ là đĩa bạn lấy ra đầu tiên khi muốn lấy một đĩa.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n*   **FIFO (First-In, First-Out)**: Đây là nguyên tắc hoạt động của cấu trúc dữ liệu Queue (hàng đợi), nơi phần tử được thêm vào đầu tiên sẽ là phần tử được lấy ra đầu tiên, giống như một hàng người chờ đợi.\n*   **FILO (First-In, Last-Out)**: Tùy chọn này không phải là một nguyên tắc hoạt động chuẩn cho bất kỳ cấu trúc dữ liệu cơ bản nào. Nó mâu thuẫn với cả Stack và Queue.\n*   **LILO (Last-In, Last-Out)**: Tương tự như FILO, tùy chọn này cũng không phải là một nguyên tắc hoạt động chuẩn và không mô tả chính xác cách thức hoạt động của Stack hay Queue.",
+      "topic": {
+        "name": "So sánh Stack và Queue",
+        "description": "Chủ đề liên tuần này kiểm tra kiến thức của học sinh về hai kiểu dữ liệu cơ bản được giới thiệu trong Tuần 1: Stack và Queue. Học sinh cần phân biệt được nguyên tắc LIFO (Last-In, First-Out) của Stack và FIFO (First-In, First-Out) của Queue, cũng như các ứng dụng chung của chúng. Chủ đề này kết nối kiến thức nền tảng về cấu trúc dữ liệu từ Tuần 1.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Sử dụng phương pháp Horner để tính mã băm cho chuỗi \"ab\". Giả sử giá trị cơ sở (base) là 31 và phép toán modulo là 101. Mỗi ký tự được biểu diễn bằng giá trị ASCII thập phân của nó.",
+      "answer": "75",
+      "distractors": [
+        "29",
+        "106",
+        "68"
+      ],
+      "explanation": "Để tính mã băm cho chuỗi \"ab\" bằng phương pháp Horner, chúng ta thực hiện các bước sau:\n\n1.  **Chuyển đổi ký tự thành giá trị ASCII**:\n    *   'a' có giá trị ASCII là 97.\n    *   'b' có giá trị ASCII là 98.\n\n2.  **Áp dụng phương pháp Horner**: Công thức tổng quát là $H = ((\\dots((c_0 \\cdot \\text{base} + c_1) \\cdot \\text{base} + c_2) \\dots) \\cdot \\text{base} + c_n) \\pmod{\\text{modulo}}$.\n    *   Với chuỗi \"ab\", ta có $c_0 = 97$ và $c_1 = 98$.\n    *   Giá trị cơ sở (base) là 31.\n    *   Phép toán modulo là 101.\n\n    Thực hiện tính toán:\n    *   Bước 1: $H_0 = c_0 = 97$.\n    *   Bước 2: $H_1 = (H_0 \\cdot \\text{base} + c_1) \\pmod{\\text{modulo}}$\n        $H_1 = (97 \\cdot 31 + 98) \\pmod{101}$\n        $H_1 = (3007 + 98) \\pmod{101}$\n        $H_1 = 3105 \\pmod{101}$\n\n    Để tính $3105 \\pmod{101}$:\n    $3105 = 30 \\cdot 101 + 75$\n    Vậy, $3105 \\pmod{101} = 75$.\n\n**Tại sao 75 là câu trả lời đúng**:\nNhư đã tính toán ở trên, áp dụng đúng phương pháp Horner với các giá trị ASCII của 'a' (97) và 'b' (98), giá trị cơ sở 31 và modulo 101, kết quả cuối cùng là 75.\n\n**Tại sao các yếu tố gây nhiễu là sai**:\n*   **29**: Giá trị này có thể xuất hiện nếu có lỗi trong phép tính modulo hoặc nếu một trong các giá trị ký tự hoặc cơ sở bị nhầm lẫn. Ví dụ, nếu tính $(97 \\cdot 31 + 98) = 3105$, nhưng sau đó chia nhầm hoặc lấy phần dư sai.\n*   **106**: Giá trị này lớn hơn modulo (101), cho thấy phép toán modulo chưa được thực hiện hoặc thực hiện sai. Mã băm phải luôn nằm trong khoảng từ 0 đến modulo - 1.\n*   **68**: Giá trị này có thể xuất hiện nếu có lỗi trong việc chuyển đổi ký tự sang ASCII (ví dụ, sử dụng giá trị khác cho 'a' hoặc 'b'), hoặc lỗi trong phép nhân/cộng trước khi lấy modulo. Ví dụ, nếu tính $(97 \\cdot 31 + 98) = 3105$, nhưng sau đó lấy modulo sai hoặc sử dụng một giá trị cơ sở/ký tự khác.",
+      "topic": {
+        "name": "Triển khai Mã băm cho Chuỗi bằng Horner",
+        "description": "Chủ đề này yêu cầu học sinh áp dụng công thức của phương pháp Horner để tính toán mã băm cho một chuỗi cụ thể và hiểu nguyên tắc tối ưu hóa hiệu suất bằng cách lưu trữ giá trị băm. Câu hỏi trắc nghiệm có thể liên quan đến việc xác định giá trị băm chính xác hoặc các bước trong quy trình. Đây là kiến thức áp dụng cụ thể từ Tuần 7 (Concept 3).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi phân tích sự khác biệt giữa Chuỗi riêng biệt và Thăm dò tuyến tính trong việc giải quyết xung đột bảng băm, cơ chế nào trong Thăm dò tuyến tính trực tiếp góp phần gây ra hiện tượng phân cụm chính (primary clustering), một vấn đề mà Chuỗi riêng biệt ít gặp phải?",
+      "answer": "Thăm dò tuyến tính tìm kiếm các ô liên tiếp sau vị trí băm ban đầu khi có va chạm.",
+      "distractors": [
+        "Thăm dò tuyến tính sử dụng hàm băm phụ để tính toán vị trí mới khi có va chạm.",
+        "Thăm dò tuyến tính tạo ra các danh sách liên kết tại mỗi vị trí băm để lưu trữ các phần tử va chạm.",
+        "Thăm dò tuyến tính tăng kích thước bảng băm mỗi khi có va chạm để tránh phân cụm."
+      ],
+      "explanation": "Khi phân tích sự khác biệt giữa Chuỗi riêng biệt và Thăm dò tuyến tính trong việc giải quyết xung đột bảng băm, cơ chế trong Thăm dò tuyến tính trực tiếp góp phần gây ra hiện tượng phân cụm chính (primary clustering) là việc **Thăm dò tuyến tính tìm kiếm các ô liên tiếp sau vị trí băm ban đầu khi có va chạm.**\n\n**Giải thích:**\n\n*   **Tại sao \"Thăm dò tuyến tính tìm kiếm các ô liên tiếp sau vị trí băm ban đầu khi có va chạm\" là đúng:**\n    Thăm dò tuyến tính giải quyết xung đột bằng cách kiểm tra các vị trí tiếp theo trong bảng băm (tức là `(hash(key) + 1) % table_size`, `(hash(key) + 2) % table_size`, v.v.) cho đến khi tìm thấy một ô trống. Cơ chế tìm kiếm tuần tự này có nghĩa là nếu một va chạm xảy ra, phần tử mới sẽ được đặt gần phần tử đã gây ra va chạm. Khi nhiều va chạm xảy ra ở các vị trí gần nhau, chúng có xu hướng tạo thành các \"khối\" hoặc \"cụm\" các ô bị chiếm dụng liên tiếp. Các cụm này càng lớn, khả năng các phần tử mới băm vào một vị trí trong cụm hoặc ngay sau cụm càng cao, làm cho cụm tiếp tục phát triển. Đây chính là hiện tượng phân cụm chính (primary clustering), một vấn đề đặc trưng của Thăm dò tuyến tính mà Chuỗi riêng biệt không gặp phải vì Chuỗi riêng biệt lưu trữ các phần tử va chạm trong các danh sách liên kết độc lập tại mỗi vị trí băm.\n\n*   **Tại sao các yếu tố gây nhiễu là sai:**\n    *   **Thăm dò tuyến tính sử dụng hàm băm phụ để tính toán vị trí mới khi có va chạm:** Đây là mô tả của Thăm dò kép (Double Hashing), không phải Thăm dò tuyến tính. Thăm dò tuyến tính chỉ đơn giản tăng chỉ số theo một bước cố định (thường là 1) sau mỗi lần thăm dò.\n    *   **Thăm dò tuyến tính tạo ra các danh sách liên kết tại mỗi vị trí băm để lưu trữ các phần tử va chạm:** Đây là cơ chế của Chuỗi riêng biệt (Separate Chaining). Thăm dò tuyến tính không sử dụng danh sách liên kết mà tìm kiếm một ô trống khác trong chính mảng bảng băm.\n    *   **Thăm dò tuyến tính tăng kích thước bảng băm mỗi khi có va chạm để tránh phân cụm:** Việc tăng kích thước bảng băm (rehash) thường được thực hiện khi hệ số tải (load factor) đạt đến một ngưỡng nhất định để duy trì hiệu suất, không phải mỗi khi có va chạm. Hơn nữa, việc này không phải là cơ chế trực tiếp giải quyết hoặc ngăn chặn phân cụm chính mà là một chiến lược quản lý bảng băm tổng thể. Phân cụm chính vẫn có thể xảy ra trước khi rehash.",
+      "topic": {
+        "name": "Phân tích Phân giải xung đột: Chuỗi riêng biệt và Thăm dò tuyến tính",
+        "description": "Chủ đề này yêu cầu học sinh phân tích và so sánh hai phương pháp giải quyết xung đột chính trong bảng băm: Chuỗi riêng biệt (Separate Chaining) và Thăm dò tuyến tính (Linear Probing), đã được thảo luận trong Tuần 7 (Concept 8 và 13). Học sinh cần hiểu sự khác biệt về cấu trúc, cơ chế hoạt động, lợi ích và hạn chế (như hiện tượng phân cụm) của mỗi phương pháp.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Giả định Băm Đồng nhất (Uniform Hashing Assumption), khi được minh họa qua Vấn đề sinh nhật (Birthday Problem), làm nổi bật khía cạnh quan trọng nào của xung đột (collisions) trong bảng băm?",
+      "answer": "Khả năng xảy ra xung đột cao hơn dự kiến ngay cả khi các khóa được băm đồng đều.",
+      "distractors": [
+        "Xung đột hoàn toàn có thể tránh được nếu hàm băm phân phối các khóa đồng đều.",
+        "Giả định Băm Đồng nhất đảm bảo rằng xung đột sẽ không bao giờ xảy ra trong thực tế.",
+        "Số lượng xung đột luôn tỷ lệ thuận với kích thước của bảng băm."
+      ],
+      "explanation": "**Giải thích:**\n\nCâu trả lời đúng là **Khả năng xảy ra xung đột cao hơn dự kiến ngay cả khi các khóa được băm đồng đều.** là đúng vì Vấn đề sinh nhật minh họa rằng ngay cả khi hàm băm phân phối các khóa một cách đồng nhất (tức là mỗi vị trí trong bảng băm có khả năng được chọn như nhau), xác suất xảy ra xung đột (hai khóa băm vào cùng một vị trí) tăng lên đáng ngạc nhiên nhanh chóng khi số lượng khóa tăng lên. Điều này là do có nhiều cặp khóa tiềm năng có thể xung đột, và chỉ cần một cặp xung đột là đủ để xảy ra vấn đề.\n\nCác yếu tố gây nhiễu là sai vì:\n\n*   **Xung đột hoàn toàn có thể tránh được nếu hàm băm phân phối các khóa đồng đều.** là sai. Giả định Băm Đồng nhất chỉ nói rằng mỗi vị trí trong bảng băm có khả năng được chọn như nhau, nhưng nó không loại bỏ khả năng xảy ra xung đột. Vấn đề sinh nhật chính là minh chứng cho điều này: ngay cả với sự phân phối đồng đều, xung đột vẫn rất có khả năng xảy ra.\n*   **Giả định Băm Đồng nhất đảm bảo rằng xung đột sẽ không bao giờ xảy ra trong thực tế.** là sai. Giả định Băm Đồng nhất là một mô hình lý tưởng hóa để phân tích hiệu suất của bảng băm. Trong thực tế, xung đột là một phần không thể tránh khỏi của bảng băm và các thuật toán xử lý xung đột là cần thiết.\n*   **Số lượng xung đột luôn tỷ lệ thuận với kích thước của bảng băm.** là sai. Số lượng xung đột chủ yếu phụ thuộc vào số lượng khóa được chèn và tỷ lệ tải (số khóa chia cho kích thước bảng băm), chứ không phải chỉ riêng kích thước của bảng băm. Vấn đề sinh nhật cho thấy rằng xung đột có thể xảy ra sớm hơn nhiều so với khi số lượng khóa đạt đến kích thước của bảng băm.\n",
+      "topic": {
+        "name": "Ứng dụng của Giả định Băm Đồng nhất",
+        "description": "Chủ đề này tập trung vào sự hiểu biết của học sinh về Giả định Băm Đồng nhất (Uniform Hashing Assumption) và ảnh hưởng của nó đến hiệu suất của bảng băm. Học sinh cần hiểu ý nghĩa của nó thông qua các vấn đề như Vấn đề sinh nhật (Birthday Problem), Người thu thập phiếu giảm giá (Coupon Collector) và Cân bằng tải (Load Balancing), và cách chúng mô tả hành vi của xung đột. Đây là kiến thức từ Tuần 7 (Concept 6).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong bối cảnh phát triển một hệ thống quản lý dữ liệu yêu cầu khả năng lưu trữ và truy xuất dữ liệu hiệu quả. Yêu cầu nghiệp vụ chính của hệ thống là không chỉ cung cấp tốc độ trung bình O(1) cho các thao tác thêm, xóa, tìm kiếm mà còn cần thường xuyên thực hiện các truy vấn phức tạp như tìm kiếm phần tử nhỏ nhất, lớn nhất, hoặc duyệt qua các phần tử theo một thứ tự xác định. Giữa Bảng băm (Hash Table) và Cây tìm kiếm nhị phân cân bằng (Balanced Binary Search Tree), cấu trúc dữ liệu nào sẽ là lựa chọn tổng thể phù hợp hơn để đáp ứng đầy đủ và tối ưu các yêu cầu đa chiều này?",
+      "answer": "Cây tìm kiếm nhị phân cân bằng.",
+      "distractors": [
+        "Bảng băm, vì tốc độ trung bình O(1) của nó là ưu tiên hàng đầu cho các thao tác cơ bản, vượt trội hơn các yêu cầu truy vấn phức tạp.",
+        "Cả hai cấu trúc dữ liệu đều không phù hợp hoàn toàn, vì không có cấu trúc nào có thể đáp ứng đồng thời cả O(1) và các truy vấn theo thứ tự một cách tối ưu.",
+        "Bảng băm, vì khả năng mở rộng và quản lý bộ nhớ hiệu quả của nó làm cho nó trở thành lựa chọn tốt hơn cho hệ thống quản lý dữ liệu lớn."
+      ],
+      "explanation": "**Giải thích:**\n\n**Cây tìm kiếm nhị phân cân bằng** là lựa chọn tổng thể phù hợp hơn vì nó có thể đáp ứng cả yêu cầu về tốc độ trung bình O(log n) cho các thao tác thêm, xóa, tìm kiếm (gần với O(1) trong thực tế đối với nhiều trường hợp, đặc biệt khi so sánh với các truy vấn phức tạp) và quan trọng hơn là hỗ trợ hiệu quả các truy vấn phức tạp yêu cầu thứ tự như tìm phần tử nhỏ nhất, lớn nhất, hoặc duyệt qua các phần tử theo thứ tự xác định. Các thao tác này có thể được thực hiện trong thời gian O(log n) hoặc O(n) (đối với duyệt toàn bộ) trên cây tìm kiếm nhị phân cân bằng.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Bảng băm, vì tốc độ trung bình O(1) của nó là ưu tiên hàng đầu cho các thao tác cơ bản, vượt trội hơn các yêu cầu truy vấn phức tạp.** Mặc dù Bảng băm cung cấp tốc độ trung bình O(1) cho các thao tác thêm, xóa, tìm kiếm, nhưng nó không hỗ trợ hiệu quả các truy vấn yêu cầu thứ tự như tìm phần tử nhỏ nhất, lớn nhất, hoặc duyệt qua các phần tử theo một thứ tự xác định. Để thực hiện các thao tác này trên Bảng băm, có thể cần duyệt toàn bộ bảng, dẫn đến độ phức tạp O(n), kém hiệu quả hơn nhiều so với Cây tìm kiếm nhị phân cân bằng. Yêu cầu nghiệp vụ đã nêu rõ cần thường xuyên thực hiện các truy vấn phức tạp này, do đó Bảng băm không phải là lựa chọn tối ưu.\n\n*   **Cả hai cấu trúc dữ liệu đều không phù hợp hoàn toàn, vì không có cấu trúc nào có thể đáp ứng đồng thời cả O(1) và các truy vấn theo thứ tự một cách tối ưu.** Phát biểu này không chính xác. Mặc dù không có cấu trúc nào đạt được O(1) cho tất cả các loại thao tác và truy vấn theo thứ tự, Cây tìm kiếm nhị phân cân bằng cung cấp sự cân bằng tốt nhất giữa hiệu suất cho các thao tác cơ bản (O(log n)) và khả năng hỗ trợ các truy vấn theo thứ tự (O(log n) hoặc O(n)). Trong bối cảnh các yêu cầu đa chiều, Cây tìm kiếm nhị phân cân bằng là lựa chọn phù hợp nhất.\n\n*   **Bảng băm, vì khả năng mở rộng và quản lý bộ nhớ hiệu quả của nó làm cho nó trở thành lựa chọn tốt hơn cho hệ thống quản lý dữ liệu lớn.** Khả năng mở rộng và quản lý bộ nhớ của Bảng băm có thể hiệu quả trong một số trường hợp, nhưng không phải là yếu tố quyết định khi hệ thống có yêu cầu mạnh mẽ về các truy vấn theo thứ tự. Đối với dữ liệu lớn, việc thiếu khả năng hỗ trợ truy vấn theo thứ tự của Bảng băm sẽ trở thành một hạn chế nghiêm trọng, bất kể hiệu quả về bộ nhớ hay khả năng mở rộng của nó. Cây tìm kiếm nhị phân cân bằng cũng có khả năng mở rộng tốt và quản lý bộ nhớ hợp lý, đồng thời vượt trội trong việc hỗ trợ các truy vấn phức tạp được yêu cầu.",
+      "topic": {
+        "name": "So sánh Bảng băm và Cây tìm kiếm nhị phân",
+        "description": "Chủ đề liên tuần này yêu cầu học sinh đánh giá và so sánh toàn diện Bảng băm (Hash Tables) từ Tuần 7 và Cây tìm kiếm nhị phân (Binary Search Trees - BSTs) từ Tuần 6. Học sinh cần hiểu ưu điểm, nhược điểm, trường hợp sử dụng phù hợp, các loại phép toán được hỗ trợ (ví dụ: các phép toán có thứ tự của BST), tính hiệu quả về thời gian và không gian, cũng như sự khác biệt trong việc triển khai Java của cả hai.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.4,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 7,
+      "course_code": "dsa2025"
+    }
+  ]
+}

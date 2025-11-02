@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Vai trò cơ bản của Quá trình Quyết định Markov (MDP) trong học tăng cường là gì?",
+      "answer": "Hình thức hóa hầu hết các bài toán học tăng cường",
+      "distractors": [
+        "Cung cấp một phương pháp để trực tiếp tìm ra chính sách tối ưu",
+        "Đơn giản hóa các bài toán học tăng cường bằng cách loại bỏ trạng thái",
+        "Xác định các phương pháp học tăng cường cụ thể cần sử dụng"
+      ],
+      "explanation": "**Giải thích:**\n\nVai trò cơ bản của Quá trình Quyết định Markov (MDP) trong học tăng cường là **hình thức hóa hầu hết các bài toán học tăng cường**. MDP cung cấp một khuôn khổ toán học để mô tả các bài toán học tăng cường, nơi một tác nhân tương tác với môi trường theo từng bước thời gian, nhận được phần thưởng và chuyển đổi giữa các trạng thái. Khung này bao gồm các trạng thái, hành động, xác suất chuyển đổi và phần thưởng, cho phép chúng ta định nghĩa rõ ràng cấu trúc của bài toán.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n\n*   **Cung cấp một phương pháp để trực tiếp tìm ra chính sách tối ưu:** Mặc dù MDP là nền tảng để tìm ra chính sách tối ưu, bản thân nó không phải là một phương pháp để trực tiếp tìm ra chính sách đó. Các thuật toán học tăng cường (như Q-learning, SARSA, Value Iteration, Policy Iteration) sử dụng khung MDP để tìm ra chính sách tối ưu.\n*   **Đơn giản hóa các bài toán học tăng cường bằng cách loại bỏ trạng thái:** Ngược lại, MDPs dựa trên khái niệm trạng thái và sự chuyển đổi giữa chúng. Trạng thái là một thành phần cốt lõi của MDP, mô tả đầy đủ tình hình hiện tại của môi trường mà tác nhân đang tương tác.\n*   **Xác định các phương pháp học tăng cường cụ thể cần sử dụng:** MDP là một mô hình khái niệm, không phải là một công cụ để lựa chọn thuật toán. Nó cung cấp cấu trúc cho bài toán, nhưng việc lựa chọn phương pháp học tăng cường cụ thể (ví dụ: học dựa trên giá trị, học dựa trên chính sách) phụ thuộc vào đặc điểm của bài toán và các ràng buộc tính toán.",
+      "topic": {
+        "name": "Đặc điểm cơ bản của MDPs",
+        "description": "Kiểm tra khả năng nhận biết các yếu tố định nghĩa một Quá trình Quyết định Markov (MDP), bao gồm môi trường quan sát hoàn toàn và khả năng hình thức hóa hầu hết các bài toán RL thành MDPs. Học sinh nên nhớ các thành phần cốt lõi của một MDP.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Theo Thuộc tính Markov, trạng thái tương lai của một hệ thống phụ thuộc vào yếu tố nào?",
+      "answer": "Trạng thái hiện tại.",
+      "distractors": [
+        "Toàn bộ lịch sử các trạng thái trước đó.",
+        "Trạng thái ban đầu của hệ thống.",
+        "Các trạng thái tương lai có thể xảy ra."
+      ],
+      "explanation": "Theo Thuộc tính Markov, trạng thái tương lai của một hệ thống chỉ phụ thuộc vào **trạng thái hiện tại**. Đây là định nghĩa cốt lõi của Thuộc tính Markov, trong đó trạng thái hiện tại được coi là \"thống kê đủ\" để dự đoán tương lai, nghĩa là nó chứa tất cả thông tin cần thiết từ quá khứ.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Toàn bộ lịch sử các trạng thái trước đó** là sai vì Thuộc tính Markov loại bỏ sự phụ thuộc vào toàn bộ lịch sử. Nếu tương lai phụ thuộc vào toàn bộ lịch sử, đó sẽ không phải là một quá trình Markov.\n*   **Trạng thái ban đầu của hệ thống** là sai vì mặc dù trạng thái ban đầu là một phần của lịch sử, nhưng nó không phải là yếu tố duy nhất quyết định tương lai theo Thuộc tính Markov. Trạng thái hiện tại, bất kể nó đến từ đâu, là yếu tố quyết định.\n*   **Các trạng thái tương lai có thể xảy ra** là sai vì các trạng thái tương lai là những gì chúng ta đang cố gắng dự đoán, chứ không phải là yếu tố quyết định trạng thái tương lai. Chúng là kết quả của sự phụ thuộc vào trạng thái hiện tại.",
+      "topic": {
+        "name": "Khái niệm Thuộc tính Markov",
+        "description": "Đánh giá sự hiểu biết về định nghĩa của Thuộc tính Markov, tức là tương lai chỉ phụ thuộc vào hiện tại chứ không phụ thuộc vào quá khứ. Học sinh cần nhớ ý nghĩa của việc trạng thái hiện tại là một thống kê đủ, cho phép loại bỏ lịch sử khi trạng thái đã biết.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.9,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một Quá trình Thưởng Markov (MRP) được xác định bởi bao nhiêu thành phần cơ bản?",
+      "answer": "Bốn",
+      "distractors": [
+        "Hai",
+        "Ba",
+        "Năm"
+      ],
+      "explanation": "Một Quá trình Thưởng Markov (MRP) được xác định bởi bốn thành phần cơ bản. Bốn thành phần này bao gồm: tập hợp các trạng thái ($S$), ma trận xác suất chuyển đổi trạng thái ($P$), hàm thưởng ($R$), và hệ số chiết khấu ($\\gamma$). Tập hợp các trạng thái ($S$) định nghĩa tất cả các trạng thái có thể có trong môi trường. Ma trận xác suất chuyển đổi trạng thái ($P$) mô tả xác suất chuyển đổi từ trạng thái này sang trạng thái khác. Hàm thưởng ($R$) xác định phần thưởng nhận được khi ở một trạng thái cụ thể (hoặc chuyển đổi giữa các trạng thái). Cuối cùng, hệ số chiết khấu ($\\gamma$) là một giá trị từ 0 đến 1, xác định tầm quan trọng của các phần thưởng trong tương lai.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Hai**: Hai thành phần là không đủ để định nghĩa một MRP. Một Quá trình Markov (MP) chỉ có hai thành phần (tập hợp các trạng thái và ma trận xác suất chuyển đổi), nhưng MRP bổ sung thêm phần thưởng và chiết khấu.\n*   **Ba**: Ba thành phần vẫn chưa đủ. Mặc dù nó có thể bao gồm các trạng thái, chuyển đổi và phần thưởng, nhưng nó bỏ qua hệ số chiết khấu, một yếu tố quan trọng để đánh giá các phần thưởng trong tương lai trong học tăng cường.\n*   **Năm**: Năm thành phần là quá nhiều. Không có thành phần thứ năm tiêu chuẩn nào được sử dụng để định nghĩa một MRP. Việc thêm một thành phần thứ năm sẽ không chính xác theo định nghĩa tiêu chuẩn của MRP.",
+      "topic": {
+        "name": "Thành phần của Quá trình Thưởng Markov (MRP)",
+        "description": "Kiểm tra kiến thức về các thành phần định nghĩa một Quá trình Thưởng Markov (MRP). Học sinh cần xác định tập hợp các trạng thái (S), ma trận xác suất chuyển đổi trạng thái (P), hàm thưởng (R) và hệ số chiết khấu (γ) là những yếu tố cấu thành nên một MRP.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong học tăng cường, một giá trị hệ số chiết khấu (γ) gần 0 chỉ ra rằng tác nhân có xu hướng ưu tiên điều gì?",
+      "answer": "Phần thưởng tức thì.",
+      "distractors": [
+        "Phần thưởng tương lai.",
+        "Cân bằng giữa khám phá và khai thác.",
+        "Trạng thái môi trường hiện tại."
+      ],
+      "explanation": "Hệ số chiết khấu (γ) trong học tăng cường xác định tầm quan trọng tương đối của phần thưởng tức thì so với phần thưởng tương lai. Khi γ gần 0, tác nhân đánh giá phần thưởng tức thì cao hơn nhiều so với phần thưởng tương lai. Điều này có nghĩa là tác nhân sẽ ưu tiên các hành động mang lại phần thưởng ngay lập tức, ngay cả khi những hành động đó có thể dẫn đến phần thưởng tổng thể thấp hơn về lâu dài.\n\n*   **Phần thưởng tức thì** là câu trả lời đúng vì một giá trị γ gần 0 làm giảm đáng kể giá trị của phần thưởng tương lai. Điều này khiến tác nhân tập trung vào việc tối đa hóa phần thưởng nhận được ngay lập tức, vì phần thưởng trong tương lai bị chiết khấu mạnh và do đó ít ảnh hưởng đến quyết định của tác nhân.\n\n*   **Phần thưởng tương lai** là sai vì một giá trị γ gần 1 mới là yếu tố khiến tác nhân ưu tiên phần thưởng tương lai. Khi γ gần 0, phần thưởng tương lai bị chiết khấu rất mạnh, khiến chúng ít có giá trị hơn đối với tác nhân.\n\n*   **Cân bằng giữa khám phá và khai thác** là sai vì hệ số chiết khấu không trực tiếp kiểm soát sự cân bằng giữa khám phá (thử các hành động mới) và khai thác (sử dụng các hành động đã biết để tối đa hóa phần thưởng). Sự cân bằng này thường được quản lý bởi các chiến lược lựa chọn hành động như epsilon-greedy hoặc các phương pháp dựa trên sự tự tin.\n\n*   **Trạng thái môi trường hiện tại** là sai vì mặc dù trạng thái môi trường hiện tại là thông tin quan trọng để tác nhân đưa ra quyết định, nhưng hệ số chiết khấu không chỉ ra rằng tác nhân ưu tiên trạng thái môi trường hiện tại. Thay vào đó, nó điều chỉnh cách tác nhân đánh giá phần thưởng nhận được từ các hành động trong các trạng thái đó theo thời gian.",
+      "topic": {
+        "name": "Vai trò của Hệ số Chiết khấu",
+        "description": "Đánh giá sự hiểu biết về vai trò của hệ số chiết khấu (γ) trong học tăng cường, đặc biệt là cách nó ảnh hưởng đến việc đánh giá phần thưởng tức thì so với phần thưởng tương lai. Học sinh cần hiểu tác động của các giá trị γ khác nhau (gần 0 hoặc gần 1) đối với hành vi của tác nhân.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Để một Chuỗi Markov được mở rộng thành Quá trình Thưởng Markov (MRP), những yếu tố nào phải được bổ sung?",
+      "answer": "Hàm thưởng và hệ số chiết khấu.",
+      "distractors": [
+        "Hàm chuyển đổi trạng thái và chính sách.",
+        "Trạng thái kết thúc và hàm giá trị.",
+        "Hàm chuyển đổi trạng thái và hàm thưởng."
+      ],
+      "explanation": "Để một Chuỗi Markov (Markov Chain) được mở rộng thành Quá trình Thưởng Markov (Markov Reward Process - MRP), cần bổ sung thêm **hàm thưởng** và **hệ số chiết khấu**. Một Chuỗi Markov chỉ mô tả sự chuyển đổi giữa các trạng thái dựa trên xác suất. Khi bổ sung hàm thưởng, chúng ta gán một giá trị (thưởng) cho mỗi trạng thái hoặc mỗi lần chuyển đổi trạng thái, cho biết lợi ích thu được. Hệ số chiết khấu được sử dụng để điều chỉnh giá trị của các phần thưởng trong tương lai, phản ánh rằng phần thưởng nhận được sớm hơn thường có giá trị hơn phần thưởng nhận được muộn hơn. Hai yếu tố này là cốt lõi để định lượng giá trị tích lũy trong một quá trình.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Hàm chuyển đổi trạng thái và chính sách**: Hàm chuyển đổi trạng thái đã là một phần của Chuỗi Markov. Chính sách là một khái niệm được thêm vào để mở rộng MRP thành Quá trình Quyết định Markov (Markov Decision Process - MDP), không phải MRP.\n*   **Trạng thái kết thúc và hàm giá trị**: Trạng thái kết thúc có thể tồn tại trong một Chuỗi Markov hoặc MRP, nhưng không phải là yếu tố bổ sung để biến Chuỗi Markov thành MRP. Hàm giá trị là một kết quả được tính toán từ MRP (sử dụng hàm thưởng và hệ số chiết khấu), không phải là yếu tố bổ sung để định nghĩa MRP.\n*   **Hàm chuyển đổi trạng thái và hàm thưởng**: Như đã đề cập, hàm chuyển đổi trạng thái đã có trong Chuỗi Markov. Mặc dù hàm thưởng là đúng, nhưng tùy chọn này thiếu hệ số chiết khấu, một yếu tố quan trọng để định nghĩa MRP.",
+      "topic": {
+        "name": "Mối quan hệ giữa Chuỗi Markov và MRP",
+        "description": "Phân tích mối quan hệ giữa một Chuỗi Markov và Quá trình Thưởng Markov (MRP). Học sinh cần hiểu rằng một MRP là một Chuỗi Markov được mở rộng thêm yếu tố hàm thưởng và hệ số chiết khấu, thể hiện sự phát triển khái niệm từ nền tảng (Tuần 1: Concept 4 & 5).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Một agent nhận được chuỗi phần thưởng sau từ trạng thái s_t: R_{t+1} = 10, R_{t+2} = 8, R_{t+3} = 5. Với hệ số chiết khấu (gamma) là 0.5, hãy tính Giá trị trả về (G_t) từ trạng thái s_t.",
+      "answer": "15.25",
+      "distractors": [
+        "23.0",
+        "11.5",
+        "18.0"
+      ],
+      "explanation": "Giá trị trả về (G_t) từ trạng thái s_t được tính bằng tổng các phần thưởng chiết khấu trong tương lai. Công thức là: G_t = R_{t+1} + \\gamma R_{t+2} + \\gamma^2 R_{t+3} + ...\n\n**Tại sao 15.25 là câu trả lời đúng:**\nÁp dụng công thức với các giá trị đã cho:\nR_{t+1} = 10\nR_{t+2} = 8\nR_{t+3} = 5\n\\gamma = 0.5\n\nG_t = 10 + (0.5 * 8) + (0.5^2 * 5)\nG_t = 10 + 4 + (0.25 * 5)\nG_t = 10 + 4 + 1.25\nG_t = 15.25\n\n**Tại sao các yếu tố gây nhiễu là không chính xác:**\n\n*   **23.0**: Giá trị này sẽ đúng nếu không có chiết khấu (\\gamma = 1). Khi đó, G_t = 10 + 8 + 5 = 23.0. Tuy nhiên, bài toán đã cho hệ số chiết khấu là 0.5.\n*   **11.5**: Giá trị này có thể xuất hiện nếu chỉ chiết khấu R_{t+2} và không chiết khấu R_{t+3} hoặc chiết khấu sai. Ví dụ, nếu chỉ tính G_t = R_{t+1} + \\gamma R_{t+2} = 10 + (0.5 * 8) = 10 + 4 = 14, hoặc một lỗi tính toán khác.\n*   **18.0**: Giá trị này có thể xuất hiện nếu chiết khấu R_{t+3} sai hoặc bỏ qua. Ví dụ, nếu tính G_t = 10 + (0.5 * 8) + (0.5 * 5) = 10 + 4 + 2.5 = 16.5, hoặc một lỗi tính toán khác. Cụ thể, nếu chỉ chiết khấu R_{t+2} và R_{t+3} với cùng một hệ số chiết khấu 0.5 (không lũy thừa), G_t = 10 + (0.5 * 8) + (0.5 * 5) = 10 + 4 + 2.5 = 16.5. Hoặc nếu chỉ chiết khấu R_{t+2} và R_{t+3} với 0.5^2, G_t = 10 + (0.25 * 8) + (0.25 * 5) = 10 + 2 + 1.25 = 13.25. Không có cách tính hợp lý nào dẫn đến 18.0.\n",
+      "topic": {
+        "name": "Tính toán Giá trị trả về theo công thức",
+        "description": "Áp dụng công thức Giá trị trả về (Gt) để tính toán tổng phần thưởng chiết khấu từ một chuỗi phần thưởng cho trước và một hệ số chiết khấu cụ thể. Câu hỏi sẽ yêu cầu khả năng thay thế giá trị vào công thức và thực hiện phép tính cơ bản để tìm Gt (Tuần 1: Concept 6).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi một chính sách (policy) được áp dụng cho một Quá trình Quyết định Markov (MDP), kết quả cụ thể nào được tạo ra, thể hiện mối quan hệ giữa hành vi của tác nhân và môi trường?",
+      "answer": "Việc kết hợp chính sách với MDP cảm ứng tạo ra một Quá trình Thưởng Markov (MRP).",
+      "distractors": [
+        "Việc kết hợp chính sách với MDP cảm ứng tạo ra một Quá trình Markov (MP).",
+        "Việc kết hợp chính sách với MDP cảm ứng tạo ra một Hàm Giá trị (Value Function).",
+        "Việc kết hợp chính sách với MDP cảm ứng tạo ra một Mô hình Môi trường (Environment Model)."
+      ],
+      "explanation": "Khi một chính sách được áp dụng cho một Quá trình Quyết định Markov (MDP), kết quả cụ thể được tạo ra là một Quá trình Thưởng Markov (MRP). Điều này là do MDP mô tả môi trường với các trạng thái, hành động, xác suất chuyển đổi và phần thưởng, trong khi chính sách định nghĩa cách tác nhân chọn hành động trong mỗi trạng thái. Khi một chính sách được cố định, hành động của tác nhân trở nên xác định (hoặc được phân phối xác suất cố định), loại bỏ yếu tố \"quyết định\" khỏi MDP. Với các hành động được chọn theo chính sách, hệ thống chỉ còn lại các trạng thái, xác suất chuyển đổi giữa các trạng thái (do hành động đã được chọn) và phần thưởng liên quan đến các chuyển đổi đó, chính xác là định nghĩa của một MRP.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Việc kết hợp chính sách với MDP cảm ứng tạo ra một Quá trình Markov (MP)**: Một Quá trình Markov (MP) chỉ bao gồm các trạng thái và xác suất chuyển đổi giữa chúng, không bao gồm phần thưởng. Khi một chính sách được áp dụng cho MDP, thông tin về phần thưởng vẫn được giữ lại, do đó kết quả là một MRP chứ không phải chỉ là một MP.\n*   **Việc kết hợp chính sách với MDP cảm ứng tạo ra một Hàm Giá trị (Value Function)**: Hàm Giá trị là một kết quả của việc đánh giá một chính sách trong một MDP (hoặc MRP), nó biểu thị tổng phần thưởng kỳ vọng từ một trạng thái cụ thể theo một chính sách nhất định. Nó không phải là cấu trúc cơ bản được tạo ra khi chính sách được áp dụng cho MDP; thay vào đó, MRP là cấu trúc mà từ đó hàm giá trị có thể được tính toán.\n*   **Việc kết hợp chính sách với MDP cảm ứng tạo ra một Mô hình Môi trường (Environment Model)**: Mô hình Môi trường là một mô tả về cách môi trường hoạt động, bao gồm các xác suất chuyển đổi trạng thái và phần thưởng. MDP *chính nó* đã là một mô hình môi trường. Việc áp dụng một chính sách không tạo ra một mô hình môi trường mới mà thay đổi cách tác nhân tương tác với mô hình môi trường hiện có, dẫn đến một MRP.",
+      "topic": {
+        "name": "Phân biệt MDP và Chính sách",
+        "description": "Phân tích sự khác biệt giữa Quá trình Quyết định Markov (MDP) và khái niệm Chính sách (Policy). Học sinh cần hiểu rằng MDP là mô tả môi trường có hành động, trong khi chính sách định nghĩa cách tác nhân hành động trong môi trường đó, và việc kết hợp chính sách với MDP cảm ứng tạo ra MRP (Tuần 1: Concept 9 & 10).",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Khi phân tích Phương trình Bellman Tối ưu so với Phương trình Bellman kỳ vọng, đặc điểm nào về cấu trúc toán học của Phương trình Bellman Tối ưu trực tiếp yêu cầu một cách tiếp cận khác để xác định hàm giá trị tối ưu và chính sách tối ưu?",
+      "answer": "Phương trình Bellman Tối ưu chứa toán tử tối đa (max operator) làm cho hệ thống trở nên phi tuyến tính.",
+      "distractors": [
+        "Phương trình Bellman Tối ưu yêu cầu một không gian trạng thái liên tục, điều này làm cho việc giải quyết bằng các phương pháp lặp trở nên phức tạp hơn.",
+        "Phương trình Bellman Tối ưu thiếu một hàm chính sách rõ ràng để tối ưu hóa, đòi hỏi phải tìm kiếm chính sách một cách gián tiếp.",
+        "Phương trình Bellman Tối ưu có nhiều nghiệm tối ưu cục bộ, làm cho việc tìm kiếm nghiệm tối ưu toàn cục trở nên khó khăn."
+      ],
+      "explanation": "Phương trình Bellman Tối ưu chứa toán tử tối đa (max operator) làm cho hệ thống trở nên phi tuyến tính, đây là lý do chính yêu cầu một cách tiếp cận khác để xác định hàm giá trị tối ưu và chính sách tối ưu. Toán tử tối đa này giới thiệu một sự phụ thuộc phi tuyến tính vào hàm giá trị, nghĩa là các phương pháp giải hệ phương trình tuyến tính (như trong Phương trình Bellman kỳ vọng) không thể áp dụng trực tiếp. Thay vào đó, các thuật toán lặp như lặp giá trị (value iteration) hoặc lặp chính sách (policy iteration) thường được sử dụng để hội tụ đến nghiệm tối ưu.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Phương trình Bellman Tối ưu yêu cầu một không gian trạng thái liên tục, điều này làm cho việc giải quyết bằng các phương pháp lặp trở nên phức tạp hơn.** Đây là một tuyên bố sai. Phương trình Bellman Tối ưu có thể được áp dụng cho cả không gian trạng thái rời rạc và liên tục. Mặc dù không gian trạng thái liên tục có thể làm cho việc giải quyết phức tạp hơn, nhưng đây không phải là đặc điểm cấu trúc toán học trực tiếp của Phương trình Bellman Tối ưu phân biệt nó với Phương trình Bellman kỳ vọng về mặt tuyến tính/phi tuyến tính.\n*   **Phương trình Bellman Tối ưu thiếu một hàm chính sách rõ ràng để tối ưu hóa, đòi hỏi phải tìm kiếm chính sách một cách gián tiếp.** Đây là một tuyên bố sai. Phương trình Bellman Tối ưu *trực tiếp* xác định chính sách tối ưu bằng cách chọn hành động tối đa hóa giá trị kỳ vọng. Chính sách tối ưu có thể được suy ra trực tiếp từ hàm giá trị tối ưu.\n*   **Phương trình Bellman Tối ưu có nhiều nghiệm tối ưu cục bộ, làm cho việc tìm kiếm nghiệm tối ưu toàn cục trở nên khó khăn.** Đây là một tuyên bố sai. Đối với các Bài toán Quyết định Markov (MDP) có không gian trạng thái và hành động hữu hạn, Phương trình Bellman Tối ưu được đảm bảo có một nghiệm tối ưu toàn cục duy nhất cho hàm giá trị. Các thuật toán như lặp giá trị sẽ hội tụ đến nghiệm tối ưu toàn cục này.\n",
+      "topic": {
+        "name": "Phân tích Phương trình Bellman Tối ưu và Chính sách Tối ưu",
+        "description": "Đánh giá khả năng phân tích Phương trình Bellman Tối ưu (phi tuyến tính) và cách nó liên quan đến việc xác định Hàm giá trị tối ưu và Chính sách tối ưu trong MDP. Học sinh cần phân biệt sự khác biệt so với các Phương trình Bellman kỳ vọng (Tuần 1: Concept 14 & 15).",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.35,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "rl2025"
+    }
+  ]
+}

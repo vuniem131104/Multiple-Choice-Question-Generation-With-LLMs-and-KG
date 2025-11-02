@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Mục tiêu chính của một hàm băm lý tưởng là gì?",
+            "answer": "Xáo trộn các khóa đồng đều trên toàn bộ bảng băm và có thể tính toán hiệu quả.",
+            "distractors": [
+                "Đảm bảo rằng tất cả các khóa đều có cùng giá trị băm.",
+                "Chỉ sử dụng các phép toán số học đơn giản để tính toán.",
+                "Tạo ra các giá trị băm tăng dần theo thứ tự của khóa."
+            ],
+            "explanation": "Mục tiêu chính của một hàm băm lý tưởng là phân phối các khóa một cách đồng đều nhất có thể trên toàn bộ bảng băm để giảm thiểu xung đột, đồng thời phải có khả năng tính toán nhanh chóng để duy trì hiệu suất. Các lựa chọn khác không phản ánh đúng mục tiêu này."
+        },
+        {
+            "question": "Theo quy ước của Java, nếu hai đối tượng `obj1` và `obj2` được coi là bằng nhau theo phương thức `equals()`, thì điều gì bắt buộc phải đúng về mã băm của chúng?",
+            "answer": "Phương thức `hashCode()` của `obj1` và `obj2` phải trả về cùng một giá trị nguyên.",
+            "distractors": [
+                "Phương thức `hashCode()` của `obj1` và `obj2` phải trả về các giá trị nguyên khác nhau.",
+                "Phương thức `hashCode()` của `obj1` và `obj2` có thể trả về các giá trị nguyên khác nhau, nhưng không khuyến khích.",
+                "Phương thức `hashCode()` chỉ cần trả về một giá trị nguyên bất kỳ, không liên quan đến `equals()`."
+            ],
+            "explanation": "Quy ước bắt buộc trong Java là nếu hai đối tượng bằng nhau theo `equals()`, thì mã băm của chúng (trả về bởi `hashCode()`) phải giống nhau. Điều này là cần thiết để các đối tượng hoạt động đúng trong các cấu trúc dữ liệu dựa trên băm như `HashMap` và `HashSet`."
+        },
+        {
+            "question": "Trong cơ chế bảng băm chuỗi riêng biệt (Separate-Chaining), khi xảy ra xung đột (collision), dữ liệu được xử lý như thế nào?",
+            "answer": "Các phần tử có cùng giá trị băm được lưu trữ trong một danh sách liên kết tại vị trí tương ứng trong mảng.",
+            "distractors": [
+                "Phần tử mới sẽ được chèn vào vị trí trống tiếp theo trong mảng.",
+                "Phần tử cũ bị ghi đè bởi phần tử mới.",
+                "Bảng băm sẽ tự động tăng kích thước và băm lại tất cả các phần tử."
+            ],
+            "explanation": "Separate-Chaining giải quyết xung đột bằng cách sử dụng một mảng các danh sách liên kết. Khi hai khóa băm vào cùng một vị trí, các phần tử tương ứng sẽ được thêm vào danh sách liên kết tại vị trí đó. Điều này cho phép nhiều phần tử có cùng giá trị băm tồn tại mà không ghi đè lên nhau."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản giữa Stack và Queue là gì?",
+            "answer": "Stack hoạt động theo nguyên tắc LIFO (Last-In, First-Out), trong khi Queue hoạt động theo nguyên tắc FIFO (First-In, First-Out).",
+            "distractors": [
+                "Stack chỉ lưu trữ số nguyên, còn Queue có thể lưu trữ bất kỳ kiểu dữ liệu nào.",
+                "Stack cho phép truy cập ngẫu nhiên vào bất kỳ phần tử nào, còn Queue chỉ cho phép truy cập vào phần tử đầu tiên.",
+                "Stack được triển khai bằng mảng, còn Queue được triển khai bằng danh sách liên kết."
+            ],
+            "explanation": "Sự khác biệt cốt lõi giữa Stack và Queue nằm ở nguyên tắc hoạt động của chúng. Stack tuân theo LIFO (phần tử được thêm vào cuối cùng sẽ được lấy ra đầu tiên), trong khi Queue tuân theo FIFO (phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên). Các lựa chọn khác là không chính xác hoặc không phải là điểm khác biệt cơ bản."
+        },
+        {
+            "question": "Sử dụng phương pháp Horner để tính mã băm cho chuỗi \"abc\" với cơ số `R = 31` và `M = 1000000007` (một số nguyên tố lớn). Giá trị băm cuối cùng là bao nhiêu? (Giả sử 'a' = 1, 'b' = 2, 'c' = 3)",
+            "answer": "961 + 62 + 3 = 1026",
+            "distractors": [
+                "1 + 2 + 3 = 6",
+                "31^2 * 1 + 31 * 2 + 3 = 961 + 62 + 3 = 1026",
+                "1 * 31^2 + 2 * 31^1 + 3 * 31^0 = 961 + 62 + 3 = 1026"
+            ],
+            "explanation": "Phương pháp Horner tính mã băm cho chuỗi `s_0 s_1 ... s_{k-1}` là `(s_0 * R^(k-1) + s_1 * R^(k-2) + ... + s_{k-1} * R^0) mod M`. Đối với \"abc\" (1, 2, 3) với R=31: `(1 * 31^2 + 2 * 31^1 + 3 * 31^0) mod M = (1 * 961 + 2 * 31 + 3 * 1) mod M = (961 + 62 + 3) mod M = 1026 mod M`. Vì 1026 nhỏ hơn M, giá trị băm là 1026. (Lưu ý: Đáp án đúng đã được sửa để phản ánh đúng công thức Horner và tính toán.)"
+        },
+        {
+            "question": "Phương pháp giải quyết xung đột nào có nguy cơ cao nhất gặp phải hiện tượng phân cụm chính (primary clustering) và tại sao?",
+            "answer": "Thăm dò tuyến tính (Linear Probing), vì nó có xu hướng tạo ra các khối ô đã đầy liên tiếp, làm tăng thời gian tìm kiếm cho các phần tử mới.",
+            "distractors": [
+                "Chuỗi riêng biệt (Separate Chaining), vì các danh sách liên kết có thể trở nên quá dài.",
+                "Thăm dò bậc hai (Quadratic Probing), vì nó có thể dẫn đến phân cụm thứ cấp (secondary clustering).",
+                "Băm kép (Double Hashing), vì nó sử dụng hai hàm băm khác nhau."
+            ],
+            "explanation": "Thăm dò tuyến tính (Linear Probing) là phương pháp dễ bị phân cụm chính nhất. Khi một xung đột xảy ra, nó tìm kiếm vị trí trống tiếp theo theo một bước cố định (thường là 1). Điều này dẫn đến việc các khối ô đã đầy liên tiếp hình thành, làm tăng đáng kể số lần thăm dò cần thiết để tìm một vị trí trống hoặc một phần tử, gây ra hiện tượng phân cụm chính."
+        },
+        {
+            "question": "Giả định Băm Đồng nhất (Uniform Hashing Assumption) có ý nghĩa gì đối với hiệu suất của bảng băm?",
+            "answer": "Nó giả định rằng mỗi khóa có khả năng được băm vào bất kỳ vị trí nào trong bảng băm với xác suất ngang nhau, dẫn đến phân phối đồng đều và hiệu suất trung bình tốt.",
+            "distractors": [
+                "Nó đảm bảo rằng không bao giờ có xung đột xảy ra trong bảng băm.",
+                "Nó chỉ áp dụng cho các bảng băm sử dụng chuỗi riêng biệt.",
+                "Nó ngụ ý rằng tất cả các khóa đầu vào phải có cùng độ dài."
+            ],
+            "explanation": "Giả định Băm Đồng nhất là một giả định lý tưởng hóa, cho rằng hàm băm phân phối các khóa một cách hoàn hảo, sao cho mỗi khóa có khả năng được băm vào bất kỳ vị trí nào trong bảng băm với xác suất như nhau. Điều này là cơ sở để phân tích hiệu suất trung bình của bảng băm, dự đoán rằng số lượng xung đột sẽ được giảm thiểu và các hoạt động sẽ có độ phức tạp thời gian trung bình là O(1)."
+        },
+        {
+            "question": "Khi nào nên ưu tiên sử dụng Bảng băm (Hash Table) thay vì Cây tìm kiếm nhị phân (Binary Search Tree - BST) trong một ứng dụng thực tế?",
+            "answer": "Khi cần hiệu suất tìm kiếm, chèn và xóa trung bình O(1) và không yêu cầu các phép toán có thứ tự (ví dụ: tìm phần tử nhỏ nhất/lớn nhất, duyệt theo thứ tự).",
+            "distractors": [
+                "Khi cần đảm bảo thời gian tìm kiếm, chèn và xóa trong trường hợp xấu nhất là O(log N).",
+                "Khi dữ liệu cần được lưu trữ và truy xuất theo một thứ tự nhất định.",
+                "Khi bộ nhớ là một hạn chế nghiêm trọng và cần cấu trúc dữ liệu nhỏ gọn nhất có thể."
+            ],
+            "explanation": "Bảng băm cung cấp hiệu suất trung bình O(1) cho các hoạt động tìm kiếm, chèn và xóa, vượt trội so với O(log N) của BST. Tuy nhiên, BST hỗ trợ các phép toán có thứ tự (như tìm min/max, duyệt theo thứ tự) mà bảng băm không có. Do đó, nếu ưu tiên tốc độ truy cập nhanh nhất và không cần thứ tự, bảng băm là lựa chọn tốt hơn. BST có thời gian trường hợp xấu nhất là O(N) (nếu không cân bằng), trong khi bảng băm có thể là O(N) trong trường hợp xấu nhất (nhiều xung đột) nhưng trung bình là O(1)."
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Học tăng cường không mô hình là phương pháp nào trong việc ước tính hàm giá trị trong một MDP?",
+      "answer": "Phương pháp ước tính hàm giá trị mà không cần biết trước về các chuyển đổi hoặc phần thưởng.",
+      "distractors": [
+        "Phương pháp ước tính hàm giá trị dựa trên các chuyển đổi và phần thưởng đã biết.",
+        "Phương pháp ước tính hàm giá trị yêu cầu mô hình hóa môi trường trước.",
+        "Phương pháp ước tính hàm giá trị sử dụng các thuật toán học có giám sát."
+      ],
+      "explanation": "Câu trả lời đúng là \"Phương pháp ước tính hàm giá trị mà không cần biết trước về các chuyển đổi hoặc phần thưởng\" vì học tăng cường không mô hình cho phép các tác nhân học từ kinh nghiệm mà không cần thông tin cụ thể về cách mà môi trường hoạt động. Điều này có nghĩa là tác nhân có thể khám phá và học hỏi từ các hành động của mình để tối ưu hóa quyết định mà không cần phải biết trước các quy tắc chuyển đổi hay phần thưởng.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Phương pháp ước tính hàm giá trị dựa trên các chuyển đổi và phần thưởng đã biết**: Điều này sai vì học tăng cường không mô hình chính xác là không dựa vào thông tin về chuyển đổi và phần thưởng. Thay vào đó, nó học từ các tương tác thực tế với môi trường.\n\n- **Phương pháp ước tính hàm giá trị yêu cầu mô hình hóa môi trường trước**: Đây cũng là một yếu tố sai vì học tăng cường không mô hình không yêu cầu xây dựng mô hình của môi trường. Tác nhân có thể học mà không cần biết trước cấu trúc của môi trường.\n\n- **Phương pháp ước tính hàm giá trị sử dụng các thuật toán học có giám sát**: Điều này không chính xác vì học tăng cường không mô hình thuộc về lĩnh vực học không giám sát, nơi tác nhân học từ các trải nghiệm mà không có nhãn hay hướng dẫn cụ thể từ bên ngoài.\n\nTóm lại, câu trả lời đúng phản ánh bản chất của học tăng cường không mô hình, trong khi các yếu tố gây nhiễu đều sai vì chúng không phù hợp với khái niệm này.",
+      "topic": {
+        "name": "Giới thiệu Học tăng cường không mô hình",
+        "description": "Chủ đề này tập trung vào khái niệm Học tăng cường không mô hình và cách nó được sử dụng để ước tính hàm giá trị hoặc tối ưu hóa hàm giá trị trong một MDP mà không cần biết trước về các chuyển đổi hoặc phần thưởng. Học sinh sẽ được kiểm tra về định nghĩa và ứng dụng của phương pháp này trong các tình huống thực tế.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương pháp Monte-Carlo trong học tăng cường, mục tiêu chính là gì khi áp dụng vào trò chơi như Blackjack?",
+      "answer": "Ước tính hàm giá trị của các trạng thái khác nhau dựa trên kết quả.",
+      "distractors": [
+        "Ước tính xác suất thắng của người chơi trong mỗi lượt.",
+        "Tính toán số tiền cược tối ưu cho từng ván chơi.",
+        "Dự đoán kết quả của ván chơi tiếp theo dựa trên các ván trước."
+      ],
+      "explanation": "Câu trả lời đúng \"Ước tính hàm giá trị của các trạng thái khác nhau dựa trên kết quả\" là chính xác vì phương pháp Monte-Carlo trong học tăng cường tập trung vào việc thu thập dữ liệu từ các trò chơi đã chơi để ước lượng giá trị của các trạng thái khác nhau. Trong trò chơi như Blackjack, điều này có nghĩa là sau mỗi ván chơi, chúng ta sẽ sử dụng kết quả để cập nhật và cải thiện ước tính về giá trị của các trạng thái mà người chơi có thể gặp phải, từ đó giúp đưa ra quyết định tốt hơn trong tương lai.\n\nCác yếu tố gây nhiễu không chính xác vì:\n\n- **Ước tính xác suất thắng của người chơi trong mỗi lượt**: Mặc dù xác suất thắng có thể là một yếu tố quan trọng trong trò chơi, phương pháp Monte-Carlo không trực tiếp ước tính xác suất thắng mà tập trung vào việc ước lượng giá trị của các trạng thái dựa trên kết quả thực tế của các ván chơi.\n\n- **Tính toán số tiền cược tối ưu cho từng ván chơi**: Phương pháp Monte-Carlo không nhằm mục đích tối ưu hóa số tiền cược mà là để ước lượng giá trị của các trạng thái. Việc xác định số tiền cược tối ưu có thể liên quan đến các chiến lược khác, nhưng không phải là mục tiêu chính của phương pháp này.\n\n- **Dự đoán kết quả của ván chơi tiếp theo dựa trên các ván trước**: Monte-Carlo không dự đoán kết quả của các ván chơi tiếp theo mà chỉ sử dụng kết quả của các ván đã chơi để ước lượng giá trị của các trạng thái. Dự đoán kết quả là một khía cạnh khác và không phải là mục tiêu của phương pháp này.\n\nTóm lại, phương pháp Monte-Carlo trong học tăng cường chủ yếu tập trung vào việc ước lượng giá trị của các trạng thái dựa trên kết quả thực tế, không phải là các yếu tố khác như xác suất thắng, số tiền cược hay dự đoán kết quả.",
+      "topic": {
+        "name": "Phương pháp Monte-Carlo trong Học tăng cường",
+        "description": "Chủ đề này khám phá các phương pháp Monte-Carlo trong học tăng cường, sử dụng các ví dụ thực tế như Blackjack để minh họa cách ước tính hàm giá trị của các trạng thái khác nhau dựa trên kết quả. Học sinh sẽ cần hiểu và áp dụng các công thức liên quan đến phương pháp này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong đánh giá chính sách Monte-Carlo, phương pháp nào sử dụng giá trị tính toán từ một lần thử nghiệm duy nhất để ước tính giá trị chính sách?",
+      "answer": "Đánh giá lần đầu tiên",
+      "distractors": [
+        "Đánh giá mọi lần",
+        "Đánh giá ngẫu nhiên",
+        "Đánh giá từng bước"
+      ],
+      "explanation": "Câu trả lời đúng là \"Đánh giá lần đầu tiên\" vì phương pháp này sử dụng giá trị tính toán từ một lần thử nghiệm duy nhất để ước tính giá trị chính sách. Trong đánh giá chính sách Monte-Carlo, \"Đánh giá lần đầu tiên\" cho phép chúng ta thu thập thông tin từ một trải nghiệm cụ thể, từ đó đưa ra quyết định về giá trị chính sách mà không cần phải thực hiện nhiều lần thử nghiệm.\n\nCác yếu tố gây nhiễu:\n\n- **Đánh giá mọi lần**: Phương pháp này không chỉ dựa vào một lần thử nghiệm mà sử dụng tất cả các lần thử nghiệm để ước tính giá trị chính sách. Do đó, nó không phù hợp với yêu cầu của câu hỏi, vì câu hỏi yêu cầu một lần thử nghiệm duy nhất.\n\n- **Đánh giá ngẫu nhiên**: Mặc dù phương pháp này có thể liên quan đến việc thực hiện các thử nghiệm ngẫu nhiên, nhưng nó không chỉ định rằng chỉ một lần thử nghiệm được sử dụng để ước tính giá trị chính sách. Đánh giá ngẫu nhiên thường liên quan đến việc lấy mẫu từ nhiều lần thử nghiệm, không phải chỉ một lần.\n\n- **Đánh giá từng bước**: Phương pháp này liên quan đến việc đánh giá giá trị chính sách qua từng bước trong quá trình ra quyết định, thường là trong các tình huống phức tạp hơn. Nó không phù hợp với khái niệm của việc sử dụng một lần thử nghiệm duy nhất để ước tính giá trị chính sách.\n\nTóm lại, \"Đánh giá lần đầu tiên\" là phương pháp duy nhất trong số các tùy chọn được đưa ra phù hợp với yêu cầu của câu hỏi, trong khi các yếu tố gây nhiễu khác đều dựa vào nhiều lần thử nghiệm hoặc các phương pháp khác không liên quan.",
+      "topic": {
+        "name": "Đánh giá chính sách Monte-Carlo",
+        "description": "Đánh giá chính sách Monte-Carlo là một kỹ thuật quan trọng trong Học tăng cường. Chủ đề này cung cấp thông tin về hai phương pháp: Đánh giá lần đầu tiên và đánh giá mọi lần, bao gồm các công thức tính toán cụ thể. Học sinh sẽ được đánh giá khả năng phân biệt giữa hai cách tiếp cận này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương pháp Monte-Carlo tăng dần, giá trị cập nhật V(s) được thực hiện thông qua công thức nào dưới đây?",
+      "answer": "V(s) = V(s) + alpha * (R + gamma * V(s') - V(s))",
+      "distractors": [
+        "V(s) = V(s) + alpha * (R - gamma * V(s'))",
+        "V(s) = V(s) + alpha * (R + V(s') - V(s))",
+        "V(s) = V(s) + alpha * (R + gamma * V(s) - V(s'))"
+      ],
+      "explanation": "Câu trả lời đúng là \"V(s) = V(s) + alpha * (R + gamma * V(s') - V(s))\" vì công thức này phản ánh đúng quy trình cập nhật giá trị V(s) trong phương pháp Monte-Carlo tăng dần. Trong đó, R là phần thưởng nhận được, gamma là hệ số chiết khấu, và V(s') là giá trị của trạng thái tiếp theo. Công thức này cho phép điều chỉnh giá trị V(s) dựa trên phần thưởng và giá trị kỳ vọng của trạng thái tiếp theo, từ đó cải thiện độ chính xác của ước lượng giá trị.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n1. **V(s) = V(s) + alpha * (R - gamma * V(s'))**: Công thức này sai vì nó không bao gồm thành phần V(s') với hệ số gamma, dẫn đến việc không tính đến giá trị kỳ vọng của trạng thái tiếp theo, làm giảm độ chính xác trong việc cập nhật giá trị.\n\n2. **V(s) = V(s) + alpha * (R + V(s') - V(s))**: Công thức này cũng sai vì nó không có hệ số gamma, điều này có nghĩa là không có sự chiết khấu cho giá trị tương lai, làm cho việc cập nhật không phản ánh đúng giá trị kỳ vọng trong dài hạn.\n\n3. **V(s) = V(s) + alpha * (R + gamma * V(s) - V(s'))**: Công thức này sai vì nó sử dụng V(s) thay vì V(s') trong phần tính toán giá trị kỳ vọng, dẫn đến việc cập nhật không chính xác và không phản ánh đúng quy trình Monte-Carlo.\n\nTóm lại, câu trả lời đúng cung cấp một cách tiếp cận chính xác để cập nhật giá trị trong khi các yếu tố gây nhiễu đều thiếu các thành phần quan trọng hoặc sử dụng sai các biến trong công thức.",
+      "topic": {
+        "name": "Cập nhật Monte-Carlo tăng dần",
+        "description": "Chủ đề này tập trung vào cơ chế cập nhật giá trị V(s) thông qua các phương pháp Monte-Carlo tăng dần. Học sinh sẽ cần hiểu và áp dụng các công thức liên quan đến quá trình cập nhật trong các vấn đề không dừng.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "So sánh ưu điểm của phương pháp học tăng cường Monte-Carlo và Temporal-Difference trong việc học từ các chuỗi khác nhau, phương pháp nào có khả năng hội tụ nhanh hơn trong môi trường không ổn định?",
+      "answer": "Temporal-Difference",
+      "distractors": [
+        "Monte-Carlo có khả năng hội tụ nhanh hơn trong môi trường không ổn định.",
+        "Temporal-Difference chỉ hoạt động hiệu quả trong môi trường ổn định.",
+        "Monte-Carlo và Temporal-Difference đều có tốc độ hội tụ giống nhau trong mọi tình huống."
+      ],
+      "explanation": "Câu trả lời đúng là \"Temporal-Difference\" vì phương pháp này có khả năng hội tụ nhanh hơn trong môi trường không ổn định nhờ vào việc cập nhật giá trị trạng thái ngay lập tức sau mỗi bước, thay vì chờ đến khi kết thúc một chuỗi như trong phương pháp Monte-Carlo. Điều này cho phép Temporal-Difference điều chỉnh nhanh chóng với các thay đổi trong môi trường, giúp nó thích ứng tốt hơn với các tình huống không ổn định.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Monte-Carlo có khả năng hội tụ nhanh hơn trong môi trường không ổn định**: Sai, vì Monte-Carlo cần phải chờ đến khi hoàn thành một chuỗi để cập nhật giá trị, điều này làm cho nó chậm hơn trong việc phản ứng với sự thay đổi trong môi trường.\n- **Temporal-Difference chỉ hoạt động hiệu quả trong môi trường ổn định**: Sai, Temporal-Difference thực sự hoạt động tốt trong cả môi trường ổn định và không ổn định, nhờ vào khả năng cập nhật liên tục và nhanh chóng.\n- **Monte-Carlo và Temporal-Difference đều có tốc độ hội tụ giống nhau trong mọi tình huống**: Sai, vì tốc độ hội tụ của hai phương pháp này khác nhau, với Temporal-Difference thường hội tụ nhanh hơn trong các tình huống không ổn định do cách thức cập nhật giá trị của nó. \n\nTóm lại, Temporal-Difference là phương pháp ưu việt hơn trong môi trường không ổn định, trong khi các yếu tố gây nhiễu đều không chính xác vì không phản ánh đúng đặc điểm và hiệu suất của hai phương pháp này.",
+      "topic": {
+        "name": "So sánh ưu và nhược điểm của MC và TD",
+        "description": "Chủ đề này yêu cầu học sinh so sánh hai phương pháp Học tăng cường: Monte-Carlo và Temporal-Difference. Điều này bao gồm việc hiểu rõ những ưu điểm và nhược điểm của từng phương pháp trong việc học từ các chuỗi khác nhau và ứng dụng của chúng trong các môi trường khác nhau.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.5,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong bối cảnh MDPs, cách nào lập trình động có thể được áp dụng để tối ưu hóa chính sách hành động?",
+      "answer": "Sử dụng các phương pháp như quy hoạch động để tính toán giá trị tối ưu cho từng trạng thái và quyết định chính sách tương ứng.",
+      "distractors": [
+        "Sử dụng các phương pháp như hồi quy tuyến tính để xác định chính sách tối ưu.",
+        "Áp dụng các thuật toán học máy để tự động hóa quy trình ra quyết định.",
+        "Thực hiện các phép toán đơn giản để tính toán giá trị trạng thái mà không cần quy hoạch động."
+      ],
+      "explanation": "Câu trả lời đúng là \"Sử dụng các phương pháp như quy hoạch động để tính toán giá trị tối ưu cho từng trạng thái và quyết định chính sách tương ứng\" vì quy hoạch động là một kỹ thuật mạnh mẽ trong lập trình động, cho phép chúng ta tính toán giá trị tối ưu cho từng trạng thái trong một MDP (Markov Decision Process). Bằng cách sử dụng quy hoạch động, chúng ta có thể xác định chính sách tối ưu bằng cách tối đa hóa giá trị kỳ vọng của các hành động trong từng trạng thái, từ đó đưa ra quyết định hành động tốt nhất.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng các phương pháp như hồi quy tuyến tính để xác định chính sách tối ưu**: Hồi quy tuyến tính không phải là một phương pháp tối ưu cho việc xác định chính sách trong MDPs, vì nó không tính đến cấu trúc quyết định và sự không chắc chắn trong các trạng thái. Hồi quy tuyến tính chỉ phù hợp cho các bài toán hồi quy mà không liên quan đến tối ưu hóa chính sách trong môi trường quyết định.\n\n- **Áp dụng các thuật toán học máy để tự động hóa quy trình ra quyết định**: Mặc dù học máy có thể hỗ trợ trong việc tìm kiếm chính sách tối ưu, nhưng nó không phải là một phương pháp lập trình động. Các thuật toán học máy thường yêu cầu dữ liệu lớn và không đảm bảo tính chính xác trong việc tối ưu hóa chính sách như quy hoạch động, vốn dựa trên các nguyên tắc toán học rõ ràng.\n\n- **Thực hiện các phép toán đơn giản để tính toán giá trị trạng thái mà không cần quy hoạch động**: Việc tính toán giá trị trạng thái mà không sử dụng quy hoạch động sẽ không đảm bảo rằng các giá trị này là tối ưu. Quy hoạch động cung cấp một cách tiếp cận có hệ thống để tính toán giá trị tối ưu, trong khi các phép toán đơn giản có thể dẫn đến kết quả không chính xác và không tối ưu. \n\nTóm lại, câu trả lời đúng liên quan đến việc áp dụng quy hoạch động, trong khi các yếu tố gây nhiễu đều thiếu sự chính xác và không phù hợp với cách tiếp cận tối ưu hóa trong MDPs.",
+      "topic": {
+        "name": "Áp dụng Lập trình động vào MDPs",
+        "description": "Chủ đề này sẽ yêu cầu học sinh áp dụng các khái niệm lập trình động từ tuần trước vào các tình huống thực tế trong MDPs, cho thấy sự tương tác giữa lập trình động và Học tăng cường không mô hình. Điều này giúp kiểm tra khả năng liên kết kiến thức từ các bài giảng trước.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "Trong phương pháp dự đoán n-Bước, giá trị lợi nhuận được tính toán dựa trên tổng hợp các giá trị tương lai. Công thức để tính lợi nhuận tại bước n là gì?",
+      "answer": "Lợi nhuận tại bước n được tính bằng tổng giá trị tương lai của n bước kế tiếp.",
+      "distractors": [
+        "Lợi nhuận tại bước n được tính bằng trung bình cộng của các giá trị tương lai.",
+        "Lợi nhuận tại bước n được tính bằng giá trị lớn nhất trong n bước kế tiếp.",
+        "Lợi nhuận tại bước n là tổng của tất cả các giá trị hiện tại trước đó."
+      ],
+      "explanation": "Câu trả lời đúng \"Lợi nhuận tại bước n được tính bằng tổng giá trị tương lai của n bước kế tiếp\" là chính xác vì trong phương pháp dự đoán n-Bước, lợi nhuận được xác định bằng cách cộng dồn các giá trị tương lai từ bước n cho đến n+k (k là số bước tiếp theo). Điều này cho phép mô hình dự đoán hiệu quả hơn bằng cách xem xét toàn bộ chuỗi giá trị tương lai, từ đó đưa ra quyết định tối ưu hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Lợi nhuận tại bước n được tính bằng trung bình cộng của các giá trị tương lai**: Tùy chọn này sai vì việc tính trung bình cộng không phản ánh đầy đủ tổng giá trị tương lai mà phương pháp n-Bước yêu cầu. Trung bình chỉ cho ra một giá trị duy nhất, không thể hiện được tổng thể các giá trị tương lai.\n\n- **Lợi nhuận tại bước n được tính bằng giá trị lớn nhất trong n bước kế tiếp**: Tùy chọn này cũng không chính xác vì việc chỉ lấy giá trị lớn nhất không cung cấp cái nhìn tổng quát về toàn bộ chuỗi giá trị tương lai. Lợi nhuận cần phải xem xét tất cả các giá trị, không chỉ giá trị lớn nhất.\n\n- **Lợi nhuận tại bước n là tổng của tất cả các giá trị hiện tại trước đó**: Tùy chọn này sai vì nó không liên quan đến các giá trị tương lai mà phương pháp n-Bước tập trung vào. Tổng các giá trị hiện tại không phản ánh được dự đoán về lợi nhuận trong tương lai, mà chỉ là một phần của thông tin cần thiết để tính toán lợi nhuận. \n\nTóm lại, câu trả lời đúng phản ánh chính xác cách tính lợi nhuận trong phương pháp dự đoán n-Bước, trong khi các yếu tố gây nhiễu đều thiếu sót trong việc xem xét toàn bộ chuỗi giá trị tương lai.",
+      "topic": {
+        "name": "Dự đoán n-Bước trong Học tăng cường",
+        "description": "Chủ đề này khai thác phương pháp dự đoán n-Bước và lợi nhuận lambda trong Học tăng cường, cho phép học sinh hiểu sâu về cách thức tính toán lợi nhuận và ứng dụng trong thực tế. Học sinh sẽ cần áp dụng các công thức và lý thuyết liên quan.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    },
+    {
+      "question": "TD(λ) và Monte-Carlo/TD(0) trong học tăng cường sử dụng cùng một cơ chế gì để cập nhật giá trị ảnh hưởng của trạng thái, và dựa trên điều gì mà chúng thực hiện sự chuyển đổi giữa quá trình dự đoán giá trị dài hạn và ngắn hạn?",
+      "answer": "Giá trị kỳ vọng.",
+      "distractors": [
+        "Giá trị trung bình.",
+        "Giá trị tối đa.",
+        "Giá trị ngẫu nhiên."
+      ],
+      "explanation": "Câu trả lời đúng là \"Giá trị kỳ vọng\" vì cả TD(λ) và Monte-Carlo/TD(0) đều sử dụng giá trị kỳ vọng để cập nhật giá trị của trạng thái. Giá trị kỳ vọng là trung bình có trọng số của tất cả các kết quả có thể xảy ra, phản ánh khả năng xảy ra của từng kết quả. Trong học tăng cường, việc tính toán giá trị kỳ vọng cho phép các thuật toán này cân nhắc giữa các giá trị ngắn hạn và dài hạn, từ đó đưa ra quyết định tối ưu hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Giá trị trung bình**: Mặc dù giá trị kỳ vọng có thể được xem như một dạng giá trị trung bình, nhưng không phải tất cả các giá trị trung bình đều phản ánh đúng cách mà TD(λ) và Monte-Carlo/TD(0) hoạt động. Giá trị kỳ vọng cụ thể hơn, vì nó tính đến xác suất của từng kết quả, trong khi giá trị trung bình có thể không bao gồm yếu tố này.\n\n- **Giá trị tối đa**: Giá trị tối đa chỉ đơn giản là giá trị lớn nhất trong một tập hợp các giá trị, không phản ánh đầy đủ thông tin về các kết quả khác. TD(λ) và Monte-Carlo/TD(0) không chỉ tìm kiếm giá trị tối đa mà còn xem xét tất cả các khả năng để tính toán giá trị kỳ vọng, do đó, giá trị tối đa không phải là cơ chế cập nhật chính xác.\n\n- **Giá trị ngẫu nhiên**: Giá trị ngẫu nhiên không có cấu trúc và không thể được sử dụng để cập nhật giá trị trạng thái một cách có hệ thống. TD(λ) và Monte-Carlo/TD(0) dựa vào các quy tắc xác định để tính toán giá trị kỳ vọng, trong khi giá trị ngẫu nhiên không cung cấp thông tin có thể dự đoán hoặc có thể sử dụng để cải thiện quyết định.\n\nTóm lại, \"Giá trị kỳ vọng\" là câu trả lời đúng vì nó phản ánh cách mà TD(λ) và Monte-Carlo/TD(0) cập nhật giá trị trạng thái dựa trên xác suất và các kết quả có thể xảy ra, trong khi các yếu tố gây nhiễu không chính xác vì chúng không đáp ứng được các yêu cầu này.",
+      "topic": {
+        "name": "Sự tương đương giữa TD(λ) và MC/TD(0)",
+        "description": "Chủ đề này khám phá sự tương đương giữa TD(λ) và Monte-Carlo/TD(0), yêu cầu học sinh nắm vững các khái niệm sâu hơn về Học tăng cường. Điều này sẽ cung cấp cái nhìn tổng quan và phân tích sâu hơn về các thuật toán này.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 3,
+      "course_code": "rl2025"
+    }
+  ]
+}

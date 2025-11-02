@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Sắp xếp trong lập trình thường được sử dụng để làm gì?",
+      "answer": "Tổ chức mảng theo thứ tự tăng dần.",
+      "distractors": [
+        "Sắp xếp được sử dụng để tìm kiếm dữ liệu trong mảng.",
+        "Sắp xếp giúp giảm kích thước của mảng.",
+        "Sắp xếp chỉ áp dụng cho các số nguyên trong lập trình."
+      ],
+      "explanation": "Câu trả lời đúng \"Tổ chức mảng theo thứ tự tăng dần\" là chính xác vì sắp xếp là một quy trình trong lập trình nhằm tổ chức các phần tử trong một mảng theo một thứ tự nhất định, thường là thứ tự tăng dần. Việc sắp xếp giúp cho việc truy cập và xử lý dữ liệu trở nên dễ dàng hơn, đồng thời cải thiện hiệu suất của các thuật toán tìm kiếm.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sắp xếp được sử dụng để tìm kiếm dữ liệu trong mảng**: Đây là một sự nhầm lẫn. Mặc dù sắp xếp có thể hỗ trợ cho việc tìm kiếm (như trong thuật toán tìm kiếm nhị phân), nhưng mục đích chính của sắp xếp không phải là tìm kiếm mà là tổ chức dữ liệu.\n\n- **Sắp xếp giúp giảm kích thước của mảng**: Điều này không đúng. Sắp xếp không làm giảm kích thước của mảng; nó chỉ thay đổi thứ tự của các phần tử trong mảng mà thôi. Kích thước của mảng vẫn giữ nguyên.\n\n- **Sắp xếp chỉ áp dụng cho các số nguyên trong lập trình**: Đây là một quan niệm sai lầm. Sắp xếp có thể áp dụng cho nhiều loại dữ liệu khác nhau, bao gồm số thực, chuỗi, và các đối tượng phức tạp, không chỉ giới hạn ở số nguyên.\n\nTóm lại, câu trả lời đúng phản ánh đúng bản chất của sắp xếp trong lập trình, trong khi các yếu tố gây nhiễu đều chứa những hiểu lầm về chức năng và ứng dụng của sắp xếp.",
+      "topic": {
+        "name": "Khái niệm sắp xếp và ứng dụng",
+        "description": "Chủ đề này khám phá khái niệm sắp xếp như một quy trình tổ chức mảng theo thứ tự tăng dần. Học sinh cần hiểu các ví dụ thực tế về sắp xếp như sắp xếp hồ sơ sinh viên và dữ liệu trong thư mục. Các câu hỏi có thể kiểm tra định nghĩa và ứng dụng của sắp xếp trong lập trình.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong các thuộc tính của thứ tự toàn phần, thuộc tính nào được cho là đảm bảo rằng nếu a < b và b < c thì a < c?",
+      "answer": "Đặc tính bắc cầu",
+      "distractors": [
+        "Đặc tính phản xứng",
+        "Đặc tính toàn bộ",
+        "Đặc tính đồng nhất"
+      ],
+      "explanation": "Câu trả lời đúng là \"Đặc tính bắc cầu\" vì đây là một trong những thuộc tính cơ bản của thứ tự toàn phần. Đặc tính bắc cầu khẳng định rằng nếu a < b và b < c thì nhất thiết phải có a < c. Điều này đảm bảo rằng thứ tự giữa các phần tử là nhất quán và không có sự mâu thuẫn trong việc so sánh.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Đặc tính phản xứng**: Đặc tính này nói rằng nếu a < b thì không thể có b < a. Tuy nhiên, nó không liên quan đến việc so sánh ba phần tử như trong câu hỏi, mà chỉ liên quan đến hai phần tử. Do đó, đây không phải là thuộc tính đảm bảo a < c khi a < b và b < c.\n\n- **Đặc tính toàn bộ**: Đặc tính này chỉ ra rằng với bất kỳ hai phần tử a và b, một trong hai điều sau sẽ đúng: a < b hoặc b < a hoặc a = b. Mặc dù nó liên quan đến việc so sánh, nhưng nó không đảm bảo tính bắc cầu giữa ba phần tử, vì vậy không phải là câu trả lời đúng cho câu hỏi.\n\n- **Đặc tính đồng nhất**: Đặc tính này khẳng định rằng nếu a = b thì không thể có a < b hoặc b < a. Tương tự như đặc tính phản xứng, nó không liên quan đến việc so sánh ba phần tử và không đảm bảo tính bắc cầu, do đó không phải là câu trả lời đúng.\n\nTóm lại, \"Đặc tính bắc cầu\" là câu trả lời chính xác vì nó mô tả mối quan hệ giữa ba phần tử, trong khi các yếu tố gây nhiễu chỉ liên quan đến các mối quan hệ giữa hai phần tử hoặc không đảm bảo tính bắc cầu.",
+      "topic": {
+        "name": "Thứ tự toàn phần và đặc điểm",
+        "description": "Chủ đề này tập trung vào hiểu biết về thứ tự toàn phần, bao gồm các thuộc tính như phản đối xứng, bắc cầu và toàn bộ. Học sinh sẽ cần xác định các ví dụ cụ thể và áp dụng các thuộc tính này trong bối cảnh khác nhau. Các câu hỏi sẽ kiểm tra khả năng nhận diện và ví dụ của thứ tự toàn phần.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Hàm nào trong Java có thể nhận một hàm gọi lại (callback) để xác định cách thức sắp xếp các phần tử trong một mảng?",
+      "answer": "sort()",
+      "distractors": [
+        "filter()",
+        "map()",
+        "reduce()"
+      ],
+      "explanation": "Câu trả lời đúng là **sort()** vì đây là hàm trong Java được sử dụng để sắp xếp các phần tử trong một mảng hoặc danh sách. Hàm này cho phép người dùng truyền vào một hàm gọi lại (callback) để xác định cách thức sắp xếp, ví dụ như sắp xếp theo thứ tự tăng dần hoặc giảm dần dựa trên các tiêu chí cụ thể. Điều này giúp linh hoạt trong việc xử lý dữ liệu mà không cần phải viết lại logic sắp xếp từ đầu.\n\nCác yếu tố gây nhiễu như sau:\n\n- **filter()**: Hàm này được sử dụng để lọc các phần tử trong một mảng dựa trên một điều kiện nhất định. Nó không thực hiện sắp xếp mà chỉ trả về một mảng mới chứa các phần tử thỏa mãn điều kiện, do đó không liên quan đến việc xác định cách thức sắp xếp.\n\n- **map()**: Hàm này dùng để biến đổi các phần tử trong một mảng thành một mảng mới bằng cách áp dụng một hàm cho mỗi phần tử. Mặc dù nó cho phép thay đổi giá trị của các phần tử, nhưng không thực hiện sắp xếp chúng, vì vậy không phù hợp với yêu cầu của câu hỏi.\n\n- **reduce()**: Hàm này được sử dụng để giảm một mảng thành một giá trị duy nhất bằng cách áp dụng một hàm cho từng phần tử. Nó không liên quan đến việc sắp xếp các phần tử mà chỉ tổng hợp chúng lại, do đó không phải là lựa chọn đúng cho câu hỏi về sắp xếp.\n\nTóm lại, chỉ có **sort()** là hàm phù hợp để nhận một hàm gọi lại nhằm xác định cách thức sắp xếp các phần tử trong một mảng, trong khi các hàm còn lại không thực hiện chức năng này.",
+      "topic": {
+        "name": "Cách sử dụng Callbacks trong sắp xếp",
+        "description": "Chủ đề này tìm hiểu về hàm gọi lại (callbacks) và cách chúng được sử dụng trong việc sắp xếp các loại dữ liệu khác nhau mà không cần thông tin cụ thể. Học sinh sẽ cần hiểu nguyên lý hoạt động của hàm sort() và các giao diện tương ứng. Câu hỏi có thể kiểm tra sự hiểu biết về cách thức các hàm này hoạt động trong Java và các ngôn ngữ khác.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong phương pháp sắp xếp chọn (Selection Sort), số lần so sánh tối đa cần thiết để sắp xếp một mảng gồm n phần tử là bao nhiêu?",
+      "answer": "n(n-1)/2",
+      "distractors": [
+        "n(n+1)/2",
+        "n^2-1",
+        "n(n-2)/2"
+      ],
+      "explanation": "Trong phương pháp sắp xếp chọn (Selection Sort), để sắp xếp một mảng gồm n phần tử, thuật toán sẽ thực hiện n-1 lần tìm kiếm phần tử nhỏ nhất trong số các phần tử chưa được sắp xếp. Mỗi lần tìm kiếm này yêu cầu so sánh với tất cả các phần tử còn lại, dẫn đến tổng số lần so sánh là:\n\n- Lần đầu tiên: n-1 so sánh\n- Lần thứ hai: n-2 so sánh\n- ...\n- Lần cuối cùng: 1 so sánh\n\nTổng số lần so sánh sẽ là (n-1) + (n-2) + ... + 1 = n(n-1)/2. Do đó, câu trả lời đúng là n(n-1)/2.\n\nBây giờ, hãy xem xét các yếu tố gây nhiễu:\n\n1. **n(n+1)/2**: Đây là công thức tính tổng của n số nguyên đầu tiên, không liên quan đến số lần so sánh trong Selection Sort. Công thức này sẽ cho ra số lần so sánh nhiều hơn thực tế cần thiết, vì nó tính cả số phần tử đã được sắp xếp.\n\n2. **n^2-1**: Công thức này không chính xác vì nó không phản ánh đúng số lần so sánh trong Selection Sort. Số lần so sánh tối đa không thể lớn hơn n(n-1)/2, và n^2-1 sẽ cho ra một giá trị lớn hơn số lần so sánh thực tế.\n\n3. **n(n-2)/2**: Công thức này cũng không chính xác vì nó không tính đúng số lần so sánh. Số lần so sánh trong Selection Sort không thể giảm xuống như vậy, vì mỗi lần tìm kiếm phần tử nhỏ nhất vẫn cần so sánh với tất cả các phần tử còn lại.\n\nTóm lại, câu trả lời đúng n(n-1)/2 phản ánh chính xác số lần so sánh cần thiết trong Selection Sort, trong khi các yếu tố gây nhiễu đều không chính xác vì không phản ánh đúng quy trình và số lượng so sánh thực tế.",
+      "topic": {
+        "name": "Phương pháp sắp xếp chọn và ứng dụng",
+        "description": "Chủ đề này xem xét kỹ thuật sắp xếp chọn (Selection Sort), quy trình hoạt động và ứng dụng của nó. Học sinh sẽ phân tích số lượng so sánh và hoán đổi trong quá trình sắp xếp. Các câu hỏi sẽ kiểm tra cách tính toán số lần so sánh và cách sắp xếp hoạt động trong bài thực hành.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi so sánh các thuật toán sắp xếp, thuật toán nào có độ phức tạp thời gian tốt nhất trong trường hợp tốt nhất là O(n) và thường được sử dụng cho danh sách đã sắp xếp gần đúng?",
+      "answer": "Sắp xếp chèn (Insertion Sort)",
+      "distractors": [
+        "Sắp xếp chọn (Selection Sort)",
+        "Sắp xếp nhanh (Quick Sort)",
+        "Sắp xếp nổi bọt (Bubble Sort)"
+      ],
+      "explanation": "Sắp xếp chèn (Insertion Sort) là câu trả lời đúng vì trong trường hợp tốt nhất, thuật toán này có độ phức tạp thời gian là O(n), điều này xảy ra khi danh sách đã gần như được sắp xếp. Thuật toán hoạt động bằng cách lặp qua từng phần tử và chèn nó vào vị trí thích hợp trong phần đã sắp xếp, do đó rất hiệu quả với các danh sách đã sắp xếp gần đúng.\n\nCác yếu tố gây nhiễu:\n\n- **Sắp xếp chọn (Selection Sort)**: Độ phức tạp thời gian của thuật toán này là O(n^2) trong cả ba trường hợp (tốt nhất, xấu nhất, trung bình). Nó không tận dụng được thông tin về danh sách đã sắp xếp, do đó không thể đạt được hiệu suất tốt hơn O(n).\n\n- **Sắp xếp nhanh (Quick Sort)**: Mặc dù Quick Sort có độ phức tạp thời gian trung bình là O(n log n), nhưng trong trường hợp xấu nhất, nó có thể lên đến O(n^2). Quick Sort không được tối ưu cho danh sách đã sắp xếp gần đúng, vì nó không đảm bảo hiệu suất tốt trong trường hợp tốt nhất như Sắp xếp chèn.\n\n- **Sắp xếp nổi bọt (Bubble Sort)**: Giống như Sắp xếp chọn, Sắp xếp nổi bọt cũng có độ phức tạp thời gian là O(n^2) trong cả ba trường hợp. Mặc dù có thể cải thiện một chút trong trường hợp đã sắp xếp, nhưng nó vẫn không đạt được hiệu suất O(n) như Sắp xếp chèn.\n\nTóm lại, Sắp xếp chèn là lựa chọn tối ưu cho danh sách đã sắp xếp gần đúng với độ phức tạp thời gian tốt nhất là O(n), trong khi các thuật toán khác không đạt được hiệu suất tương tự.",
+      "topic": {
+        "name": "Sắp xếp chèn và tối ưu hóa",
+        "description": "Chủ đề này trình bày về sắp xếp chèn (Insertion Sort), quy trình và các trường hợp hoạt động (tốt nhất, xấu nhất, trung bình). Học sinh sẽ cần tính toán số lần so sánh và hoán đổi trong các trường hợp khác nhau. Câu hỏi sẽ kiểm tra khả năng phân tích và so sánh hiệu suất của các loại sắp xếp khác nhau.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong thuật toán sắp xếp nào dưới đây, cấu trúc dữ liệu Stack được sử dụng để quản lý thứ tự của các phần tử trong quá trình thực hiện?",
+      "answer": "Sắp xếp nổi bọt (Bubble Sort)",
+      "distractors": [
+        "Sắp xếp chọn (Selection Sort)",
+        "Sắp xếp nhanh (Quick Sort)",
+        "Sắp xếp chèn (Insertion Sort)"
+      ],
+      "explanation": "Câu trả lời đúng là \"Sắp xếp nổi bọt (Bubble Sort)\" vì trong thuật toán này, mặc dù không sử dụng Stack một cách trực tiếp, nhưng có thể mô phỏng việc quản lý thứ tự của các phần tử bằng cách sử dụng Stack để lưu trữ các phần tử tạm thời trong quá trình so sánh và hoán đổi. Sắp xếp nổi bọt hoạt động bằng cách lặp qua danh sách và so sánh từng cặp phần tử liền kề, hoán đổi chúng nếu chúng không theo thứ tự. Việc sử dụng Stack có thể giúp theo dõi các phần tử cần được so sánh và hoán đổi, mặc dù thuật toán này chủ yếu được thực hiện bằng cách sử dụng vòng lặp.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Sắp xếp chọn (Selection Sort)**: Thuật toán này không sử dụng Stack mà thay vào đó chọn phần tử nhỏ nhất (hoặc lớn nhất) từ danh sách chưa sắp xếp và hoán đổi nó với phần tử đầu tiên. Quá trình này lặp lại cho đến khi danh sách được sắp xếp, không cần quản lý thứ tự bằng Stack.\n  \n- **Sắp xếp nhanh (Quick Sort)**: Thuật toán này sử dụng phương pháp phân chia và chinh phục, trong đó một phần tử được chọn làm \"pivot\" và danh sách được chia thành hai phần. Mặc dù Quick Sort có thể sử dụng Stack trong quá trình đệ quy để lưu trữ các chỉ số của các phân đoạn cần được sắp xếp, nhưng nó không sử dụng Stack để quản lý thứ tự của các phần tử trong quá trình thực hiện sắp xếp.\n\n- **Sắp xếp chèn (Insertion Sort)**: Thuật toán này hoạt động bằng cách xây dựng dần dần một danh sách đã sắp xếp bằng cách chèn từng phần tử vào vị trí thích hợp trong danh sách đã sắp xếp. Nó không sử dụng Stack để quản lý thứ tự, mà thay vào đó sử dụng một cách tiếp cận tuần tự để chèn các phần tử.\n\nTóm lại, \"Sắp xếp nổi bọt\" là câu trả lời đúng vì có thể sử dụng Stack để hỗ trợ trong quá trình sắp xếp, trong khi các thuật toán khác không áp dụng cấu trúc dữ liệu này để quản lý thứ tự của các phần tử.",
+      "topic": {
+        "name": "Kết hợp kiến thức về Stack với sắp xếp",
+        "description": "Chủ đề này tích hợp kiến thức từ tuần trước về Stack và Queue với các phương pháp sắp xếp. Học sinh sẽ cần liên kết cách Stack có thể được áp dụng trong các thuật toán sắp xếp và phân tích hiệu suất. Câu hỏi sẽ kiểm tra kỹ năng áp dụng và phân tích giữa hai khái niệm.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi so sánh hiệu suất giữa thuật toán Shellsort và QuickSort trong trường hợp dữ liệu đã sắp xếp, thuật toán nào thường hoạt động tốt hơn và lý do là gì?",
+      "answer": "Shellsort",
+      "distractors": [
+        "QuickSort thường hoạt động tốt hơn trong trường hợp dữ liệu đã sắp xếp.",
+        "Shellsort không thể xử lý dữ liệu đã sắp xếp hiệu quả.",
+        "QuickSort có độ phức tạp thời gian tốt hơn Shellsort cho mọi trường hợp."
+      ],
+      "explanation": "Câu trả lời đúng là \"Shellsort\" vì thuật toán này được thiết kế để cải thiện hiệu suất sắp xếp cho các trường hợp dữ liệu đã sắp xếp. Khi dữ liệu đã được sắp xếp, Shellsort có thể tận dụng cấu trúc của dữ liệu để giảm thiểu số lần so sánh và hoán đổi, dẫn đến hiệu suất tốt hơn so với nhiều thuật toán sắp xếp khác, bao gồm cả QuickSort. Shellsort sử dụng các khoảng cách (gap) để sắp xếp các phần tử, cho phép nó hoạt động hiệu quả hơn trong các trường hợp mà dữ liệu gần như đã sắp xếp.\n\nGiải thích về các yếu tố gây nhiễu:\n- **QuickSort thường hoạt động tốt hơn trong trường hợp dữ liệu đã sắp xếp**: Điều này không chính xác vì QuickSort có thể gặp phải tình trạng xấu khi dữ liệu đã sắp xếp, dẫn đến độ phức tạp thời gian O(n^2) trong trường hợp xấu nhất. Ngược lại, Shellsort có thể duy trì hiệu suất tốt hơn trong tình huống này.\n  \n- **Shellsort không thể xử lý dữ liệu đã sắp xếp hiệu quả**: Đây là một quan niệm sai lầm. Shellsort thực sự hoạt động rất hiệu quả với dữ liệu đã sắp xếp, nhờ vào cách mà nó tổ chức và giảm khoảng cách giữa các phần tử trong quá trình sắp xếp, giúp giảm thiểu số lần so sánh và hoán đổi.\n\n- **QuickSort có độ phức tạp thời gian tốt hơn Shellsort cho mọi trường hợp**: Mặc dù QuickSort có độ phức tạp thời gian trung bình O(n log n), nhưng điều này không áp dụng cho tất cả các trường hợp. Trong trường hợp dữ liệu đã sắp xếp, QuickSort có thể trở nên kém hiệu quả hơn, trong khi Shellsort vẫn duy trì hiệu suất tốt. Do đó, không thể khẳng định rằng QuickSort luôn tốt hơn Shellsort trong mọi tình huống.",
+      "topic": {
+        "name": "Phân tích Shellsort và sắp xếp ngẫu nhiên",
+        "description": "Chủ đề này so sánh thuật toán Shellsort với các phương pháp sắp xếp khác, đồng thời giới thiệu cách thực hiện sắp xếp ngẫu nhiên trong lập trình. Học sinh sẽ phân tích hiệu suất trong các trường hợp khác nhau. Các câu hỏi sẽ tập trung vào việc so sánh hiệu suất và ứng dụng giữa Shellsort và các cách sắp xếp khác.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Một trong những thực hành tốt nhất nào để đảm bảo tính ngẫu nhiên trong việc xáo trộn dữ liệu là gì?",
+      "answer": "Sử dụng bộ tạo số ngẫu nhiên an toàn.",
+      "distractors": [
+        "Sử dụng số ngẫu nhiên từ một nguồn không đáng tin cậy.",
+        "Xáo trộn dữ liệu bằng cách sử dụng các số nguyên tố.",
+        "Sử dụng một thuật toán xáo trộn đơn giản mà không kiểm tra tính ngẫu nhiên."
+      ],
+      "explanation": "Câu trả lời đúng là \"Sử dụng bộ tạo số ngẫu nhiên an toàn\" vì bộ tạo này đảm bảo rằng các số ngẫu nhiên được sinh ra có tính ngẫu nhiên cao và không thể dự đoán, điều này rất quan trọng trong việc xáo trộn dữ liệu để tránh thiên lệch và đảm bảo tính chính xác trong các phân tích sau này. Bộ tạo số ngẫu nhiên an toàn thường sử dụng các nguồn entropy mạnh mẽ, giúp tạo ra các giá trị ngẫu nhiên đáng tin cậy.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Sử dụng số ngẫu nhiên từ một nguồn không đáng tin cậy**: Điều này sai vì nguồn không đáng tin cậy có thể tạo ra các số ngẫu nhiên có tính chất không ngẫu nhiên, dẫn đến việc xáo trộn dữ liệu không hiệu quả và có thể gây ra thiên lệch trong kết quả.\n\n- **Xáo trộn dữ liệu bằng cách sử dụng các số nguyên tố**: Đây là một phương pháp không chính xác vì số nguyên tố không đảm bảo tính ngẫu nhiên. Việc sử dụng các số nguyên tố có thể tạo ra các mẫu lặp lại hoặc quy luật, làm giảm tính ngẫu nhiên trong xáo trộn.\n\n- **Sử dụng một thuật toán xáo trộn đơn giản mà không kiểm tra tính ngẫu nhiên**: Phương pháp này cũng không chính xác vì thuật toán đơn giản có thể không đủ mạnh để tạo ra sự ngẫu nhiên thực sự. Nếu không kiểm tra tính ngẫu nhiên, có thể dẫn đến việc xáo trộn không hiệu quả và không đáng tin cậy.\n\nTóm lại, việc sử dụng bộ tạo số ngẫu nhiên an toàn là phương pháp tốt nhất để đảm bảo tính ngẫu nhiên trong việc xáo trộn dữ liệu, trong khi các phương pháp khác đều có những điểm yếu nghiêm trọng.",
+      "topic": {
+        "name": "Thực hành tốt nhất để xáo trộn",
+        "description": "Chủ đề này trình bày về các thực hành tốt nhất trong việc xáo trộn dữ liệu, bao gồm việc sử dụng bộ tạo số ngẫu nhiên an toàn. Học sinh cần nhận diện các nguy cơ và chiến lược để cải thiện hiệu suất xáo trộn. Câu hỏi sẽ kiểm tra khả năng đánh giá và tạo ra các phương pháp tốt nhất cho việc randomization.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 2,
+      "course_code": "dsa2025"
+    }
+  ]
+}

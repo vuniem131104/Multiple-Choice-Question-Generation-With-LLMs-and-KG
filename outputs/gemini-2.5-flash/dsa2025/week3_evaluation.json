@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Nguyên lý hoạt động của Mergesort",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more specific and directly aligned with the topic description, focusing on the 'divide and conquer' principle. It is clearer and has slightly more plausible distractors, making it better overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Định nghĩa tính ổn định của thuật toán sắp xếp",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant and appropriate for the topic, but the pipeline question is slightly clearer and has more plausible distractors, giving it a slight edge."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Mục đích của giao diện Comparable",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is slightly clearer and has more plausible distractors, making it better overall despite both questions being highly relevant and aligned with the topic."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Các bước thực hiện hợp nhất trừu tượng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more specific and clearer, with slightly better distractor plausibility, making it the better choice overall."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "So sánh tính ổn định: Insertion Sort và Selection Sort",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more detailed explanation of the instability in Selection Sort, making it clearer and more aligned with the topic's analytical focus."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Độ phức tạp trường hợp xấu nhất của Mergesort",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more specific and provides better distractor plausibility, making it the better choice for testing understanding of Mergesort's complexity."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ứng dụng giao diện Comparator cho sắp xếp đa tiêu chí",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more aligned with the topic's focus on multi-criteria sorting and provides clearer and more plausible distractors, making it the better choice."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tổng hợp đặc điểm cấu trúc dữ liệu và độ phức tạp sắp xếp",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more specific and directly aligned with the topic, with clearer language and better distractor plausibility, making it the better choice overall."
+        }
+    ]
+}

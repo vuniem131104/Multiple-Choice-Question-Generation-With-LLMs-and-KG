@@ -1,50 +1,3 @@
-quiz:
-  model: "gemini-2.5-flash"
-  temperature: 0.0
-  top_p: 1.0
-  n: 1
-  frequency_penalty: 0.0
-  max_completion_tokens: 30000
-  reasoning_effort: "medium"
-
-quiz_validator:
-  model: "llama-4"
-  temperature: 0.0
-  top_p: 1.0
-  n: 1
-  frequency_penalty: 0.0
-  max_completion_tokens: 8192
-
-parser:
-  upload_folder_path: "app/files"
-  image_descriptor:
-    model: "gemini-2.5-flash"
-    temperature: 0.0
-    top_p: 1.0
-    n: 1
-    frequency_penalty: 0.0
-    max_completion_tokens: 2048
-  concept_card_extractor:
-    model: "gemini-2.5-flash"
-    temperature: 0.0
-    top_p: 1.0
-    n: 1
-    frequency_penalty: 0.0
-    max_completion_tokens: 8192
-    reasoning_effort: "disable"
-
-exam:
-  max_concurrent_tasks: 5 
-  model: "gemini-2.5-flash"
-  temperature: 0.0
-  top_p: 1.0
-  n: 1
-  frequency_penalty: 0.0
-  max_completion_tokens: 50000
-  reasoning_effort: "medium"
-  chroma_db: /home/vuiem/KLTN/chroma_db
-  collection: kltn_test
-
 litellm:
   model: "gemini-2.5-flash"
   temperature: 0.0
@@ -52,6 +5,86 @@ litellm:
   n: 1
   frequency_penalty: 0.0
   max_completion_tokens: 10000
-  reasoning_effort: "disable"
-  dimension: 1536 
+  dimension: 1536
   embedding_model: "gemini-embedding"
+
+quiz: 
+  concept_card_extractor:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+
+  topic_generator:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+    reasoning_effort: "medium"
+
+  question_answer_generator:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+    collection_name: "questions"
+
+  distractors_generator:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+
+  explanation_generator:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+
+  validator:
+    factual:
+      model: "gemini-2.5-flash"
+      temperature: 0.0
+      top_p: 1.0
+      n: 1
+      frequency_penalty: 0.0
+      max_completion_tokens: 10000
+    pedagogical:
+      model: "gemini-2.5-flash"
+      temperature: 0.0
+      top_p: 1.0
+      n: 1
+      frequency_penalty: 0.0
+      max_completion_tokens: 10000
+    psychometric:
+      model: "gemini-2.5-flash"
+      temperature: 0.0
+      top_p: 1.0
+      n: 1
+      frequency_penalty: 0.0
+      max_completion_tokens: 10000
+
+  correction:
+    model: "gemini-2.5-flash"
+    temperature: 0.0
+    top_p: 1.0
+    n: 1
+    frequency_penalty: 0.0
+    max_completion_tokens: 10000
+    reasoning_effort: "medium"
+
+  max_feedback_attempts: 3
+
+  acceptance_score_threshold: 70
+
+  max_concurrent_tasks: 8

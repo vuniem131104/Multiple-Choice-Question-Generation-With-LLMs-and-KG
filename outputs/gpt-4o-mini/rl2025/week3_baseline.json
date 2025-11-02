@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Học tăng cường không mô hình là gì?",
+            "answer": "Một phương pháp ước tính hàm giá trị mà không cần biết trước về các chuyển đổi hoặc phần thưởng.",
+            "distractors": [
+                "Một phương pháp học có giám sát",
+                "Một phương pháp học không giám sát",
+                "Một phương pháp tối ưu hóa hàm mục tiêu"
+            ],
+            "explanation": "Học tăng cường không mô hình tập trung vào việc ước tính hàm giá trị mà không cần thông tin về chuyển đổi hoặc phần thưởng, điều này giúp nó linh hoạt hơn trong nhiều tình huống."
+        },
+        {
+            "question": "Trong phương pháp Monte-Carlo, hàm giá trị của một trạng thái được ước tính dựa trên điều gì?",
+            "answer": "Kết quả của các lần chơi thử nghiệm.",
+            "distractors": [
+                "Giá trị trung bình của tất cả các trạng thái",
+                "Giá trị tối ưu của trạng thái đó",
+                "Giá trị của trạng thái kế tiếp"
+            ],
+            "explanation": "Phương pháp Monte-Carlo ước tính hàm giá trị dựa trên kết quả thực tế từ các lần chơi thử nghiệm, cho phép học từ kinh nghiệm."
+        },
+        {
+            "question": "Đánh giá chính sách Monte-Carlo lần đầu tiên và mọi lần khác nhau ở điểm nào?",
+            "answer": "Cách thức thu thập và sử dụng dữ liệu để ước tính hàm giá trị.",
+            "distractors": [
+                "Thời gian thực hiện",
+                "Số lượng trạng thái cần đánh giá",
+                "Độ chính xác của kết quả"
+            ],
+            "explanation": "Đánh giá lần đầu tiên chỉ sử dụng dữ liệu từ lần đầu tiên gặp trạng thái, trong khi đánh giá mọi lần sử dụng tất cả dữ liệu có sẵn, dẫn đến độ chính xác cao hơn."
+        },
+        {
+            "question": "Cập nhật giá trị V(s) trong Monte-Carlo tăng dần được thực hiện như thế nào?",
+            "answer": "Bằng cách sử dụng các kết quả từ các lần chơi thử nghiệm liên tiếp.",
+            "distractors": [
+                "Bằng cách tính toán giá trị trung bình của tất cả các trạng thái",
+                "Bằng cách sử dụng một hàm tối ưu hóa",
+                "Bằng cách áp dụng các quy tắc học có giám sát"
+            ],
+            "explanation": "Cập nhật Monte-Carlo tăng dần sử dụng kết quả từ các lần chơi thử nghiệm liên tiếp để điều chỉnh giá trị V(s), giúp cải thiện độ chính xác theo thời gian."
+        },
+        {
+            "question": "Ưu điểm lớn nhất của phương pháp Monte-Carlo so với Temporal-Difference là gì?",
+            "answer": "Monte-Carlo không yêu cầu thông tin về trạng thái kế tiếp.",
+            "distractors": [
+                "Monte-Carlo nhanh hơn trong việc học",
+                "Monte-Carlo dễ áp dụng hơn trong mọi tình huống",
+                "Monte-Carlo có độ chính xác cao hơn trong mọi trường hợp"
+            ],
+            "explanation": "Monte-Carlo không yêu cầu thông tin về trạng thái kế tiếp, điều này làm cho nó linh hoạt hơn trong nhiều tình huống, trong khi TD cần thông tin này."
+        },
+        {
+            "question": "Khi nào thì nên áp dụng lập trình động vào MDPs?",
+            "answer": "Khi cần tối ưu hóa quyết định trong môi trường không chắc chắn.",
+            "distractors": [
+                "Khi có đủ thông tin về các chuyển đổi",
+                "Khi không có dữ liệu lịch sử",
+                "Khi chỉ cần một giải pháp tạm thời"
+            ],
+            "explanation": "Lập trình động rất hữu ích trong việc tối ưu hóa quyết định trong môi trường không chắc chắn, cho phép tìm ra các chính sách tốt nhất."
+        },
+        {
+            "question": "Dự đoán n-Bước trong Học tăng cường cho phép học sinh làm gì?",
+            "answer": "Tính toán lợi nhuận từ nhiều bước trong quá trình học.",
+            "distractors": [
+                "Chỉ tính toán lợi nhuận từ một bước",
+                "Dự đoán kết quả của một hành động cụ thể",
+                "Tối ưu hóa hàm giá trị ngay lập tức"
+            ],
+            "explanation": "Dự đoán n-Bước cho phép học sinh tính toán lợi nhuận từ nhiều bước, giúp cải thiện khả năng học từ các chuỗi hành động."
+        },
+        {
+            "question": "Sự tương đương giữa TD(λ) và Monte-Carlo/TD(0) có ý nghĩa gì?",
+            "answer": "Chúng cho thấy mối liên hệ giữa các phương pháp học khác nhau trong Học tăng cường.",
+            "distractors": [
+                "Chúng là các phương pháp hoàn toàn khác nhau",
+                "Chúng chỉ áp dụng cho các bài toán đơn giản",
+                "Chúng không có ứng dụng thực tế"
+            ],
+            "explanation": "Sự tương đương giữa TD(λ) và Monte-Carlo/TD(0) cho thấy rằng các phương pháp này có thể được sử dụng để giải quyết các bài toán tương tự trong Học tăng cường."
+        }
+    ]
+}

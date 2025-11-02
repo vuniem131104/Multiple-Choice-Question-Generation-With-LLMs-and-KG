@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Đặc điểm cơ bản của MDPs",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are highly relevant to the topic and align well with the learning objectives. The Pipeline question focuses on the role of MDPs, while the Baseline question tests knowledge of core components. The Baseline question has slightly clearer wording, but the Pipeline question has slightly better alignment with Bloom's taxonomy. Distractors are plausible in both cases, and difficulty is appropriate for the 'Remember' level. Overall, the quality is very close, leading to a tie."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Khái niệm Thuộc tính Markov",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are well-aligned with the topic and test the definition of the Markov property effectively. The Pipeline question is slightly more direct in testing the dependency on the current state, while the Baseline question provides a broader definition. The Baseline question has slightly clearer wording, but both have plausible distractors and appropriate difficulty for the 'Remember' level. The overall quality is very close, resulting in a tie."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Thành phần của Quá trình Thưởng Markov (MRP)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are relevant to the topic and test knowledge of MRP components effectively. The Pipeline question focuses on the number of components, while the Baseline question tests identification of specific components. The Baseline question has slightly clearer wording, but both have plausible distractors and appropriate difficulty for the 'Remember' level. The overall quality is very close, leading to a tie."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Vai trò của Hệ số Chiết khấu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are relevant to the topic and test understanding of the discount factor's role effectively. The Pipeline question focuses on immediate rewards, while the Baseline question emphasizes future rewards. The Baseline question has slightly clearer wording, but both have plausible distractors and appropriate difficulty for the 'Understand' level. The overall quality is very close, resulting in a tie."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Mối quan hệ giữa Chuỗi Markov và MRP",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "tie",
+            "rationale": "Both questions are relevant to the topic and test understanding of the relationship between Markov Chains and MRP effectively. The Pipeline question focuses on the elements added to a Markov Chain, while the Baseline question provides a broader explanation. The Baseline question has slightly clearer wording, but both have plausible distractors and appropriate difficulty for the 'Understand' level. The overall quality is very close, leading to a tie."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Tính toán Giá trị trả về theo công thức",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better overall due to its more challenging distractors and higher difficulty alignment with the 'Apply' level. Both questions are relevant and clear, but the Pipeline question requires more precise calculation, making it slightly more effective for testing application skills. The Baseline question is also strong but slightly easier, leading to the Pipeline question being the winner."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Phân biệt MDP và Chính sách",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better overall due to its focus on the outcome of combining a policy with an MDP, which aligns well with the 'Analyze' level. Both questions are relevant and clear, but the Pipeline question has slightly more challenging distractors and better alignment with Bloom's taxonomy. The Baseline question is also strong but slightly less analytical, leading to the Pipeline question being the winner."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Phân tích Phương trình Bellman Tối ưu và Chính sách Tối ưu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is slightly better overall due to its focus on the mathematical structure of the Bellman Optimal Equation, which aligns well with the 'Analyze' level. Both questions are relevant and clear, but the Pipeline question has slightly more challenging distractors and better alignment with Bloom's taxonomy. The Baseline question is also strong but slightly less analytical, leading to the Pipeline question being the winner."
+        }
+    ]
+}

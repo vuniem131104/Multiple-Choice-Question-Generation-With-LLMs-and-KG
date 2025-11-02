@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Điểm khác biệt cốt lõi giữa Học tăng cường dựa trên mô hình (Model-Based RL) và Học tăng cường không dựa trên mô hình (Model-Free RL) là gì?",
+            "answer": "Học tăng cường dựa trên mô hình xây dựng và sử dụng một mô hình của môi trường để lập kế hoạch, trong khi Học tăng cường không dựa trên mô hình học trực tiếp từ kinh nghiệm mà không cần xây dựng mô hình môi trường.",
+            "distractors": [
+                "Học tăng cường dựa trên mô hình luôn hiệu quả hơn về mặt tính toán so với Học tăng cường không dựa trên mô hình.",
+                "Học tăng cường không dựa trên mô hình yêu cầu lượng dữ liệu lớn hơn đáng kể để đạt được hiệu suất tương đương.",
+                "Học tăng cường dựa trên mô hình chỉ áp dụng cho các môi trường có không gian trạng thái và hành động rời rạc."
+            ],
+            "explanation": "Điểm khác biệt cơ bản nhất giữa hai phương pháp này nằm ở việc có hay không có mô hình của môi trường. Model-Based RL cố gắng học một mô hình của môi trường (chuyển đổi trạng thái và phần thưởng) và sử dụng mô hình đó để lập kế hoạch và đưa ra quyết định. Ngược lại, Model-Free RL học trực tiếp từ các tương tác với môi trường mà không cần xây dựng một mô hình tường minh."
+        },
+        {
+            "question": "Trong Học tăng cường, một mô hình M của môi trường được định nghĩa bởi các thành phần nào?",
+            "answer": "Xác suất chuyển đổi trạng thái Pη(s'|s,a) và hàm phần thưởng Rη(s,a).",
+            "distractors": [
+                "Không gian trạng thái S và không gian hành động A.",
+                "Hàm giá trị V(s) và hàm Q-value Q(s,a).",
+                "Chính sách π(a|s) và hệ số chiết khấu γ."
+            ],
+            "explanation": "Theo định nghĩa trong Học tăng cường, một mô hình M của môi trường bao gồm hai thành phần chính: Pη(s'|s,a) là xác suất chuyển đổi từ trạng thái s sang trạng thái s' khi thực hiện hành động a, và Rη(s,a) là phần thưởng dự kiến nhận được khi thực hiện hành động a từ trạng thái s. Không gian trạng thái và hành động là các thuộc tính của môi trường, không phải là thành phần của mô hình môi trường."
+        },
+        {
+            "question": "Làm thế nào một Mô hình tra cứu bảng (Table Lookup Model) ước tính xác suất chuyển đổi trạng thái (P̂s,s'a) và hàm phần thưởng (R̂sa) trong Học tăng cường?",
+            "answer": "Bằng cách đếm số lần truy cập và trung bình hóa các kinh nghiệm đã quan sát được.",
+            "distractors": [
+                "Sử dụng mạng nơ-ron để xấp xỉ các giá trị này.",
+                "Dựa vào kiến thức tiên nghiệm về môi trường được cung cấp bởi người thiết kế.",
+                "Thực hiện một quá trình tối ưu hóa lặp để tìm ra các giá trị chính xác."
+            ],
+            "explanation": "Trong một Mô hình tra cứu bảng, việc ước tính xác suất chuyển đổi trạng thái và hàm phần thưởng được thực hiện một cách đơn giản bằng cách ghi lại và đếm số lần các sự kiện cụ thể xảy ra. Ví dụ, P̂s,s'a được ước tính bằng cách đếm số lần chuyển từ (s,a) sang s' chia cho tổng số lần thực hiện (s,a). Tương tự, R̂sa được ước tính bằng cách lấy trung bình các phần thưởng đã quan sát được khi thực hiện hành động a từ trạng thái s."
+        },
+        {
+            "question": "Thứ tự các bước trong thuật toán Dyna-Q là gì?",
+            "answer": "Chọn hành động, thực hiện hành động, quan sát phần thưởng và trạng thái mới, cập nhật Q-value dựa trên kinh nghiệm thực tế, cập nhật mô hình, thực hiện n bước lập kế hoạch dựa trên mô hình.",
+            "distractors": [
+                "Cập nhật mô hình, chọn hành động, thực hiện hành động, cập nhật Q-value, quan sát phần thưởng và trạng thái mới, thực hiện n bước lập kế hoạch.",
+                "Thực hiện n bước lập kế hoạch, chọn hành động, thực hiện hành động, quan sát phần thưởng và trạng thái mới, cập nhật Q-value, cập nhật mô hình.",
+                "Chọn hành động, thực hiện hành động, cập nhật Q-value, cập nhật mô hình, quan sát phần thưởng và trạng thái mới, thực hiện n bước lập kế hoạch."
+            ],
+            "explanation": "Thuật toán Dyna-Q tích hợp học trực tiếp từ kinh nghiệm thực tế với lập kế hoạch dựa trên mô hình. Quy trình chuẩn bao gồm: (1) Chọn hành động theo chính sách hiện tại (ví dụ: ε-greedy). (2) Thực hiện hành động trong môi trường. (3) Quan sát phần thưởng và trạng thái mới. (4) Cập nhật Q-value dựa trên kinh nghiệm thực tế (ví dụ: Q-learning). (5) Cập nhật mô hình của môi trường dựa trên kinh nghiệm này. (6) Thực hiện n bước lập kế hoạch, trong đó các kinh nghiệm mô phỏng được tạo ra từ mô hình và được sử dụng để cập nhật Q-value."
+        },
+        {
+            "question": "Trong bối cảnh lập kế hoạch dựa trên mẫu (Sample-Based Planning), làm thế nào một mô hình đã học được sử dụng kết hợp với các thuật toán kiểm soát không mô hình như Q-learning?",
+            "answer": "Mô hình đã học được sử dụng để tạo ra các mẫu kinh nghiệm mô phỏng, sau đó các thuật toán kiểm soát không mô hình được áp dụng trên các mẫu này để cập nhật hàm giá trị hoặc chính sách.",
+            "distractors": [
+                "Mô hình đã học thay thế hoàn toàn nhu cầu sử dụng các thuật toán kiểm soát không mô hình.",
+                "Các thuật toán kiểm soát không mô hình được sử dụng để học mô hình, sau đó mô hình này được dùng để đưa ra quyết định trực tiếp.",
+                "Mô hình đã học chỉ được sử dụng để đánh giá hiệu suất của các thuật toán kiểm soát không mô hình, không tham gia vào quá trình học."
+            ],
+            "explanation": "Lập kế hoạch dựa trên mẫu là một phương pháp mạnh mẽ trong đó một mô hình của môi trường (có thể được học từ kinh nghiệm thực tế) được sử dụng để tạo ra các 'kinh nghiệm' mô phỏng. Sau đó, các thuật toán kiểm soát không mô hình (như Q-learning, Sarsa, Monte-Carlo) được áp dụng trên các kinh nghiệm mô phỏng này, giống như chúng được áp dụng trên kinh nghiệm thực tế. Điều này cho phép các thuật toán học cải thiện hàm giá trị hoặc chính sách mà không cần tương tác trực tiếp với môi trường thực, giúp tăng tốc quá trình học và khám phá."
+        },
+        {
+            "question": "Kiến trúc Dyna tích hợp học và lập kế hoạch như thế nào để liên tục cải thiện chính sách?",
+            "answer": "Dyna học một mô hình của môi trường từ kinh nghiệm thực tế và sử dụng mô hình đó để tạo ra các kinh nghiệm mô phỏng, sau đó áp dụng các thuật toán học không mô hình trên cả kinh nghiệm thực tế và kinh nghiệm mô phỏng để cập nhật hàm giá trị/chính sách.",
+            "distractors": [
+                "Dyna chỉ sử dụng mô hình để lập kế hoạch và không học trực tiếp từ kinh nghiệm thực tế.",
+                "Dyna sử dụng các thuật toán học không mô hình để học chính sách, và mô hình chỉ được dùng để dự đoán phần thưởng.",
+                "Dyna tách biệt hoàn toàn quá trình học và lập kế hoạch, không có sự tương tác giữa chúng."
+            ],
+            "explanation": "Kiến trúc Dyna là một ví dụ điển hình về việc tích hợp học và lập kế hoạch. Nó hoạt động bằng cách: (1) Học một mô hình của môi trường từ các tương tác thực tế. (2) Sử dụng mô hình đã học để tạo ra các kinh nghiệm mô phỏng (lập kế hoạch). (3) Áp dụng một thuật toán học không mô hình (ví dụ: Q-learning) để cập nhật hàm giá trị hoặc chính sách, sử dụng cả kinh nghiệm thực tế và kinh nghiệm mô phỏng. Quá trình này diễn ra liên tục, cho phép tác nhân cải thiện chính sách hiệu quả hơn bằng cách tận dụng cả dữ liệu thực và dữ liệu được tạo ra từ mô hình."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa Tìm kiếm Monte-Carlo đơn giản (Simple Monte-Carlo Search) và Tìm kiếm cây Monte-Carlo (MCTS) là gì?",
+            "answer": "MCTS cải thiện chính sách mô phỏng (chính sách cây) trong quá trình tìm kiếm thông qua các giai đoạn trong cây và ngoài cây, trong khi Tìm kiếm Monte-Carlo đơn giản chỉ sử dụng một chính sách mô phỏng cố định.",
+            "distractors": [
+                "Tìm kiếm Monte-Carlo đơn giản luôn yêu cầu một mô hình môi trường tường minh, còn MCTS thì không.",
+                "MCTS chỉ áp dụng cho các trò chơi có thông tin hoàn hảo, trong khi Tìm kiếm Monte-Carlo đơn giản có thể dùng cho bất kỳ môi trường nào.",
+                "Tìm kiếm Monte-Carlo đơn giản thực hiện nhiều lần mô phỏng hơn MCTS để đạt được kết quả tương tự."
+            ],
+            "explanation": "Điểm khác biệt cốt lõi là MCTS là một thuật toán tìm kiếm cây thông minh hơn. Nó không chỉ thực hiện các lần mô phỏng (rollouts) mà còn sử dụng kết quả của các lần mô phỏng đó để cập nhật thống kê của các nút trong cây tìm kiếm và cải thiện chính sách được sử dụng cho các lần mô phỏng tiếp theo (chính sách cây). Điều này được thực hiện thông qua các giai đoạn Selection, Expansion, Simulation và Backpropagation. Ngược lại, Tìm kiếm Monte-Carlo đơn giản thường chỉ thực hiện các lần mô phỏng từ trạng thái hiện tại theo một chính sách cố định mà không có cơ chế cải thiện chính sách trong quá trình tìm kiếm."
+        },
+        {
+            "question": "Làm thế nào các khái niệm n-bước và dấu vết đủ điều kiện (eligibility traces) có thể được mở rộng hoặc áp dụng trong các phương pháp tìm kiếm dựa trên mô hình như Tìm kiếm khác biệt thời gian (TD Search) để cải thiện hiệu quả?",
+            "answer": "Các phương pháp n-bước và dấu vết đủ điều kiện có thể được sử dụng để kết hợp thông tin từ nhiều bước trong tương lai (n-step returns hoặc λ-returns) khi cập nhật giá trị trạng thái/hành động trong quá trình lập kế hoạch dựa trên mô hình, giúp giảm phương sai và tăng tốc hội tụ.",
+            "distractors": [
+                "Các khái niệm này chỉ áp dụng cho học không mô hình và không có liên quan đến tìm kiếm dựa trên mô hình.",
+                "Chúng được sử dụng để thay thế hoàn toàn mô hình môi trường bằng một hàm xấp xỉ.",
+                "Chúng giúp xác định chính xác mô hình môi trường mà không cần tương tác thực tế."
+            ],
+            "explanation": "Mặc dù n-bước và dấu vết đủ điều kiện (TD(λ)) thường được giới thiệu trong bối cảnh học không mô hình, chúng có thể được mở rộng sang các phương pháp tìm kiếm dựa trên mô hình như TD Search. Trong TD Search, thay vì chỉ sử dụng một bước chuyển đổi từ mô hình để cập nhật giá trị (như trong lập trình động), chúng ta có thể sử dụng n-step returns hoặc λ-returns được tạo ra từ mô hình. Điều này cho phép các cập nhật giá trị kết hợp thông tin từ một chuỗi các trạng thái/hành động trong tương lai được mô phỏng, giúp cân bằng giữa độ lệch (bias) và phương sai (variance), từ đó cải thiện hiệu quả của quá trình lập kế hoạch và tăng tốc hội tụ đến chính sách tối ưu."
+        }
+    ]
+}

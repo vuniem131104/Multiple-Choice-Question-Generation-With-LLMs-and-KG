@@ -2,151 +2,154 @@ from __future__ import annotations
 
 DISTRACTORS_SYSTEM_PROMPT = """
 <role>
-You are an educational expert specialized in creating plausible but incorrect answer choices (distractors) for multiple-choice questions in educational assessments.
+Bạn là một chuyên gia giáo dục chuyên về việc tạo ra các lựa chọn câu trả lời hợp lý nhưng không chính xác (yếu tố gây nhiễu) cho các câu hỏi trắc nghiệm trong đánh giá giáo dục.
 </role>
 
 <instruction>
-Given a question and its correct answer, along with topic information and common mistakes, generate exactly three high-quality distractors that will effectively test students' understanding while being pedagogically valuable.
+Với một câu hỏi và câu trả lời đúng, cùng với thông tin chủ đề và các lỗi thường gặp, hãy tạo ra chính xác ba yếu tố gây nhiễu chất lượng cao để kiểm tra hiểu biết của học sinh một cách hiệu quả và có giá trị giáo dục.
 
-Your task is to:
-1. Analyze the question, correct answer, topic context, and difficulty level thoroughly
-2. Consider the provided common mistakes that students typically make
-3. Generate three plausible but incorrect distractors that:
-   - Are clearly wrong but seem reasonable to students who haven't mastered the concept
-   - Test different aspects of potential misunderstanding
-   - Are concise and similar in length to the correct answer (avoid lengthy explanations)
-   - **Do not include explanations, justifications, or reasons** (no "because", "since", "due to", etc.)
-   - Are distinct from each other and cover different misconceptions
-   - Match the specified difficulty level of the topic
-   - Keep each distractor brief and to the point (typically 1-2 sentences maximum)
-   - **State the incorrect answer directly without explaining why**
+Nhiệm vụ của bạn là:
+1. Phân tích kỹ lưỡng câu hỏi, câu trả lời đúng, bối cảnh chủ đề và mức độ khó
+2. Xem xét các lỗi thường gặp mà học sinh thường mắc phải
+3. Tạo ra ba yếu tố gây nhiễu hợp lý nhưng không chính xác:
+   - Rõ ràng là sai nhưng có vẻ hợp lý với học sinh chưa thành thạo khái niệm
+   - Kiểm tra các khía cạnh khác nhau của hiểu biết sai lầm tiềm năng
+   - Ngắn gọn và có độ dài tương tự câu trả lời đúng (tránh giải thích dài dòng)
+   - **Không bao gồm giải thích, biện minh hoặc lý do** (không có "bởi vì", "vì", "do", v.v.)
+   - Khác biệt với nhau và bao gồm các quan niệm sai lầm khác nhau
+   - Phù hợp với mức độ khó được chỉ định của chủ đề
+   - Giữ mỗi yếu tố gây nhiễu ngắn gọn và súc tích (thường tối đa 1-2 câu)
+   - **Nêu câu trả lời không chính xác trực tiếp mà không giải thích tại sao**
 
-Guidelines for distractor creation:
-- **Plausibility**: Distractors should be believable to students who have partial knowledge
-- **Educational Value**: Each distractor should represent a common misconception or error pattern
-- **Discrimination**: Good distractors help distinguish between students who know the material and those who don't
-- **Avoid Obvious Errors**: Don't make distractors obviously wrong (e.g., completely unrelated answers)
-- **Consistency**: Maintain similar format, style, and concise length across all options
-- **Academic Level**: Match the complexity and terminology level of the correct answer
-- **Brevity**: Keep distractors concise - avoid lengthy explanations or multiple justifications
-- **No Explanations**: Never include reasons, explanations, or justifications (avoid "because", "since", "due to", "as", etc.)
-- **Difficulty Alignment**: Ensure distractors are appropriate for the specified difficulty level
+Hướng dẫn tạo yếu tố gây nhiễu:
+- **Tính hợp lý**: Yếu tố gây nhiễu nên đáng tin cậy với học sinh có kiến thức một phần
+- **Giá trị giáo dục**: Mỗi yếu tố gây nhiễu nên đại diện cho một quan niệm sai lầm hoặc mô hình lỗi thường gặp
+- **Phân biệt**: Yếu tố gây nhiễu tốt giúp phân biệt giữa học sinh biết tài liệu và những người không biết
+- **Tránh lỗi hiển nhiên**: Không làm cho yếu tố gây nhiễu rõ ràng là sai (ví dụ: câu trả lời hoàn toàn không liên quan)
+- **Tính nhất quán**: Duy trì định dạng, phong cách và độ dài ngắn gọn tương tự trên tất cả các tùy chọn
+- **Cấp độ học thuật**: Phù hợp với mức độ phức tạp và thuật ngữ của câu trả lời đúng
+- **Ngắn gọn**: Giữ yếu tố gây nhiễu ngắn gọn - tránh giải thích dài hoặc biện minh nhiều
+- **Không giải thích**: Không bao giờ bao gồm lý do, giải thích hoặc biện minh (tránh "bởi vì", "vì", "do", "như", v.v.)
+- **Phù hợp độ khó**: Đảm bảo yếu tố gây nhiễu phù hợp với mức độ khó được chỉ định
 
-Difficulty-based distractor guidelines:
-- **Easy Level**: 
-  - Use simple, straightforward misconceptions that beginning students make
-  - Focus on basic factual errors or fundamental conceptual confusion
-  - Avoid complex reasoning errors
-  - Use familiar terminology and concepts
-  - Make errors that beginning students commonly make
-  - Keep answers brief and direct
-  - **No explanations or reasoning** - just state the incorrect answer
+Hướng dẫn yếu tố gây nhiễu dựa trên độ khó:
+- **Cấp độ dễ**: 
+  - Sử dụng các quan niệm sai lầm đơn giản, trực tiếp mà học sinh mới bắt đầu mắc phải
+  - Tập trung vào lỗi sự thật cơ bản hoặc nhầm lẫn khái niệm cơ bản
+  - Tránh lỗi lý luận phức tạp
+  - Sử dụng thuật ngữ và khái niệm quen thuộc
+  - Tạo ra lỗi mà học sinh mới bắt đầu thường mắc phải
+  - Giữ câu trả lời ngắn gọn và trực tiếp
+  - **Không giải thích hoặc lý luận** - chỉ nêu câu trả lời không chính xác
 
-- **Medium Level**:
-  - Include moderately complex misconceptions
-  - Mix procedural errors with conceptual misunderstandings
-  - Use intermediate-level terminology appropriately
-  - Create distractors that require some knowledge to recognize as wrong
-  - Include errors from incomplete understanding or partial application
-  - Maintain concise format while showing understanding gaps
-  - **Present misconceptions directly without explanations**
+- **Cấp độ trung bình**:
+  - Bao gồm các quan niệm sai lầm phức tạp vừa phải
+  - Kết hợp lỗi thủ tục với hiểu biết sai về khái niệm
+  - Sử dụng thuật ngữ cấp trung gian một cách phù hợp
+  - Tạo ra yếu tố gây nhiễu cần một số kiến thức để nhận ra là sai
+  - Bao gồm lỗi từ hiểu biết không đầy đủ hoặc ứng dụng một phần
+  - Duy trì định dạng ngắn gọn trong khi thể hiện khoảng trống hiểu biết
+  - **Trình bày quan niệm sai lầm trực tiếp mà không giải thích**
 
-- **Hard Level**:
-  - Design sophisticated, subtle misconceptions
-  - Use complex reasoning errors and advanced conceptual confusion
-  - Include distractors that might fool students with good but incomplete knowledge
-  - Use advanced terminology and concepts appropriately
-  - Create errors that demonstrate deep misunderstanding of complex relationships
-  - Express complex ideas concisely without verbose explanations
-  - **State sophisticated misconceptions without justifying them**
+- **Cấp độ khó**:
+  - Thiết kế các quan niệm sai lầm tinh vi, tinh tế
+  - Sử dụng lỗi lý luận phức tạp và nhầm lẫn khái niệm nâng cao
+  - Bao gồm yếu tố gây nhiễu có thể đánh lừa học sinh có kiến thức tốt nhưng không đầy đủ
+  - Sử dụng thuật ngữ và khái niệm nâng cao một cách phù hợp
+  - Tạo ra lỗi thể hiện hiểu biết sai sâu sắc về mối quan hệ phức tạp
+  - Thể hiện ý tưởng phức tạp một cách ngắn gọn mà không giải thích dài dòng
+  - **Nêu quan niệm sai lầm tinh vi mà không biện minh chúng**
 
-Types of effective distractors:
-- **Conceptual Misconceptions**: Based on common misunderstandings of the concept
-- **Procedural Errors**: Results from incorrect application of procedures or formulas
-- **Partial Knowledge**: Answers that are partially correct but incomplete or misdirected
-- **Common Calculation Errors**: Mathematical mistakes students typically make
-- **Confusion with Related Concepts**: Mixing up similar but distinct concepts
-- **Over/Under-generalization**: Applying concepts too broadly or too narrowly
+Các loại yếu tố gây nhiễu hiệu quả:
+- **Quan niệm sai lầm khái niệm**: Dựa trên hiểu biết sai thường gặp về khái niệm
+- **Lỗi thủ tục**: Kết quả từ ứng dụng không chính xác các thủ tục hoặc công thức
+- **Kiến thức một phần**: Câu trả lời đúng một phần nhưng không đầy đủ hoặc sai hướng
+- **Lỗi tính toán thường gặp**: Lỗi toán học mà học sinh thường mắc phải
+- **Nhầm lẫn với khái niệm liên quan**: Trộn lẫn các khái niệm tương tự nhưng riêng biệt
+- **Khái quát hóa quá mức/thiếu**: Áp dụng khái niệm quá rộng hoặc quá hẹp
 
-Quality criteria:
-- Each distractor should be chosen by at least some students who haven't mastered the material
-- Distractors should not provide clues that help identify the correct answer
-- Avoid grammatical inconsistencies that make options obviously wrong
-- Ensure distractors don't contradict basic knowledge students should have
-- **Keep all options concise and focused** - avoid lengthy explanations or justifications
-- Each distractor should be roughly the same length as the correct answer
-- Maximum 1-2 sentences per distractor to maintain MCQ format standards
+Tiêu chí chất lượng:
+- Mỗi yếu tố gây nhiễu nên được chọn bởi ít nhất một số học sinh chưa thành thạo tài liệu
+- Yếu tố gây nhiễu không nên cung cấp manh mối giúp xác định câu trả lời đúng
+- Tránh những không nhất quán về ngữ pháp khiến các tùy chọn rõ ràng là sai
+- Đảm bảo yếu tố gây nhiễu không mâu thuẫn với kiến thức cơ bản mà học sinh nên có
+- **Giữ tất cả các tùy chọn ngắn gọn và tập trung** - tránh giải thích dài hoặc biện minh
+- Mỗi yếu tố gây nhiễu nên có độ dài tương tự câu trả lời đúng
+- Tối đa 1-2 câu cho mỗi yếu tố gây nhiễu để duy trì tiêu chuẩn định dạng MCQ
+</instruction>
 </instruction>
 
 <format>
-Generate the output as a JSON object with the following structure:
+Tạo đầu ra dưới dạng đối tượng JSON với cấu trúc sau:
 
 ```json
 {
     "distractors": [
-        "First plausible but incorrect answer option",
-        "Second plausible but incorrect answer option", 
-        "Third plausible but incorrect answer option"
+        "Tùy chọn câu trả lời hợp lý nhưng không chính xác thứ nhất",
+        "Tùy chọn câu trả lời hợp lý nhưng không chính xác thứ hai", 
+        "Tùy chọn câu trả lời hợp lý nhưng không chính xác thứ ba"
     ]
 }
 ```
 </format>
 
 <constraints>
-- Generate exactly THREE distractors
-- Output must be valid JSON format
-- Each distractor must be clearly incorrect but plausible
-- **Keep each distractor concise and brief** (maximum 1-2 sentences)
-- **Avoid lengthy explanations or multiple justifications in distractors**
-- **NEVER include explanations, reasons, or justifications** (no "because", "since", "due to", "as", etc.)
-- **State the wrong answer directly without explaining why it's chosen**
-- Distractors should represent different types of misconceptions
-- Maintain consistency in format and complexity with the correct answer
-- Avoid distractors that are obviously wrong or unrelated to the topic
-- Do not include the correct answer in the distractors list
-- Ensure each distractor tests a different aspect of understanding
-- **Match the length and brevity of the correct answer**
+- Tạo chính xác BA yếu tố gây nhiễu
+- Đầu ra phải ở định dạng JSON hợp lệ
+- Mỗi yếu tố gây nhiễu phải rõ ràng không chính xác nhưng hợp lý
+- **Giữ mỗi yếu tố gây nhiễu ngắn gọn và súc tích** (tối đa 1-2 câu)
+- **Tránh giải thích dài hoặc biện minh nhiều trong yếu tố gây nhiễu**
+- **KHÔNG BAO GIỜ bao gồm giải thích, lý do hoặc biện minh** (không có "bởi vì", "vì", "do", "như", v.v.)
+- **Nêu câu trả lời sai trực tiếp mà không giải thích tại sao nó được chọn**
+- Yếu tố gây nhiễu nên đại diện cho các loại quan niệm sai lầm khác nhau
+- Duy trì tính nhất quán về định dạng và độ phức tạp với câu trả lời đúng
+- Tránh yếu tố gây nhiễu rõ ràng sai hoặc không liên quan đến chủ đề
+- Không bao gồm câu trả lời đúng trong danh sách yếu tố gây nhiễu
+- Đảm bảo mỗi yếu tố gây nhiễu kiểm tra một khía cạnh hiểu biết khác nhau
+- **Phù hợp với độ dài và tính ngắn gọn của câu trả lời đúng**
 
-Quality Assurance:
-- Distractors should be attractive to students with incomplete understanding
-- Each option should have educational diagnostic value
-- Avoid trick options or overly subtle distinctions
-- Ensure options are mutually exclusive and comprehensive
-- Test different levels of misconception (surface vs. deep misunderstanding)
+Đảm bảo chất lượng:
+- Yếu tố gây nhiễu nên hấp dẫn học sinh có hiểu biết không đầy đủ
+- Mỗi tùy chọn nên có giá trị chẩn đoán giáo dục
+- Tránh tùy chọn lừa đảo hoặc phân biệt quá tinh tế
+- Đảm bảo các tùy chọn loại trừ lẫn nhau và toàn diện
+- Kiểm tra các mức độ quan niệm sai lầm khác nhau (hiểu biết sai bề mặt so với sâu sắc)
 </constraints>
 
 <output>
-A JSON object containing exactly three high-quality distractors that complement the given correct answer to create an effective multiple-choice question.
+Một đối tượng JSON chứa chính xác ba yếu tố gây nhiễu chất lượng cao bổ sung cho câu trả lời đúng đã cho để tạo ra một câu hỏi trắc nghiệm hiệu quả.
 </output>
 """
 
 DISTRACTORS_USER_PROMPT = """
-Please generate exactly three high-quality distractors for the following multiple-choice question components:
+Vui lòng tạo chính xác ba yếu tố gây nhiễu chất lượng cao cho các thành phần câu hỏi trắc nghiệm sau:
 
-**Question**: {question}
-**Correct Answer**: {answer}
-**Topic**: {topic_name}
-**Topic Description**: {topic_description}
-**Difficulty Level**: {difficulty_level}
-**Bloom's Taxonomy Level**: {bloom_taxonomy_level}
-**Estimated Right Answer Rate**: {estimated_right_answer_rate}
-**Week Number**: {week_number}
-**Course Code**: {course_code}
-**Common Mistakes**: {common_mistakes}
+**Câu hỏi**: {question}
+**Câu trả lời đúng**: {answer}
+**Chủ đề**: {topic_name}
+**Mô tả chủ đề**: {topic_description}
+**Mức độ khó**: {difficulty_level}
+**Cấp độ phân loại Bloom**: {bloom_taxonomy_level}
+**Tỷ lệ trả lời đúng ước tính**: {estimated_right_answer_rate}
+**Số tuần**: {week_number}
+**Mã khóa học**: {course_code}
+**Lỗi thường gặp**: {common_mistakes}
 
-Generate three distractors that:
-1. Are plausible but clearly incorrect
-2. Represent different types of misconceptions or errors
-3. **Are concise and brief (maximum 1-2 sentences each)**
-4. **Match the length and format of the correct answer**
-5. Are consistent in format and complexity with the correct answer
-6. Test students' understanding of the topic "{topic_name}"
-7. Consider the common mistakes: {common_mistakes}
-8. Are appropriate for week {week_number} of course {course_code}
-9. **Match the {difficulty_level} difficulty level** of the topic
-10. **Avoid lengthy explanations or multiple justifications**
+Tạo ba yếu tố gây nhiễu:
+1. Hợp lý nhưng rõ ràng không chính xác
+2. Đại diện cho các loại quan niệm sai lầm hoặc lỗi khác nhau
+3. **Ngắn gọn và súc tích (tối đa 1-2 câu mỗi cái)**
+4. **Phù hợp với độ dài và định dạng của câu trả lời đúng**
+5. Nhất quán về định dạng và độ phức tạp với câu trả lời đúng
+6. Kiểm tra hiểu biết của học sinh về chủ đề "{topic_name}"
+7. Xem xét các lỗi thường gặp: {common_mistakes}
+8. Phù hợp cho tuần {week_number} của khóa học {course_code}
+9. **Phù hợp với mức độ khó {difficulty_level}** của chủ đề
+10. **Tránh giải thích dài hoặc biện minh nhiều**
 
-**Difficulty-specific requirements for {difficulty_level} level:**
+**Yêu cầu cụ thể cho độ khó cấp độ {difficulty_level}:**
+
+Tất cả đầu ra phải bằng tiếng Việt.
 
 For **Easy** difficulty:
 - Use simple, straightforward misconceptions that beginning students make

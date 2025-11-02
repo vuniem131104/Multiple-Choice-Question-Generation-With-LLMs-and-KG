@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Kiểu dữ liệu nào tuân theo nguyên tắc LIFO?",
+            "answer": "Stack",
+            "distractors": [
+                "Queue",
+                "Mảng",
+                "Danh sách liên kết"
+            ],
+            "explanation": "Stack là kiểu dữ liệu tuân theo nguyên tắc LIFO (Last In, First Out), nghĩa là phần tử được thêm vào cuối cùng sẽ được lấy ra đầu tiên."
+        },
+        {
+            "question": "Trong các thao tác của Stack, thao tác nào được sử dụng để thêm phần tử vào Stack?",
+            "answer": "Push",
+            "distractors": [
+                "Pop",
+                "Enqueue",
+                "Dequeue"
+            ],
+            "explanation": "Thao tác 'Push' được sử dụng để thêm phần tử vào Stack, trong khi 'Pop' được sử dụng để lấy phần tử ra."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa Stack được triển khai bằng mảng và danh sách liên kết là gì?",
+            "answer": "Thời gian truy cập phần tử",
+            "distractors": [
+                "Số lượng phần tử tối đa",
+                "Độ phức tạp của thao tác Push",
+                "Cách thức lưu trữ"
+            ],
+            "explanation": "Stack triển khai bằng mảng có thời gian truy cập phần tử nhanh hơn so với danh sách liên kết, nhưng danh sách liên kết không bị giới hạn bởi kích thước cố định."
+        },
+        {
+            "question": "Khi nào thì việc sử dụng danh sách liên kết để triển khai Stack là hợp lý nhất?",
+            "answer": "Khi số lượng phần tử không xác định trước",
+            "distractors": [
+                "Khi cần truy cập ngẫu nhiên",
+                "Khi cần hiệu suất cao cho thao tác Push",
+                "Khi cần sử dụng ít bộ nhớ"
+            ],
+            "explanation": "Danh sách liên kết cho phép thêm và xóa phần tử mà không cần biết trước số lượng phần tử, điều này rất hữu ích khi số lượng phần tử thay đổi liên tục."
+        },
+        {
+            "question": "Thao tác 'Pop' trong Stack thực hiện chức năng gì?",
+            "answer": "Lấy phần tử ra khỏi Stack",
+            "distractors": [
+                "Thêm phần tử vào Stack",
+                "Kiểm tra phần tử trên đỉnh Stack",
+                "Xóa toàn bộ phần tử trong Stack"
+            ],
+            "explanation": "Thao tác 'Pop' được sử dụng để lấy phần tử ra khỏi Stack, cụ thể là phần tử ở đỉnh của Stack."
+        },
+        {
+            "question": "Khi nào thì việc sử dụng mảng có thể thay đổi kích thước cho Stack là cần thiết?",
+            "answer": "Khi cần mở rộng dung lượng của Stack",
+            "distractors": [
+                "Khi cần giảm kích thước của Stack",
+                "Khi cần truy cập phần tử ngẫu nhiên",
+                "Khi cần thực hiện thao tác Push nhanh hơn"
+            ],
+            "explanation": "Mảng có thể thay đổi kích thước cho phép Stack mở rộng dung lượng khi cần thiết, điều này giúp tránh tình trạng tràn bộ nhớ."
+        },
+        {
+            "question": "Autoboxing trong Stack tham số hóa giúp giảm thiểu lỗi nào?",
+            "answer": "Lỗi thời gian chạy do ép kiểu thủ công",
+            "distractors": [
+                "Lỗi cú pháp",
+                "Lỗi logic",
+                "Lỗi tràn bộ nhớ"
+            ],
+            "explanation": "Autoboxing tự động chuyển đổi giữa kiểu nguyên thủy và kiểu đối tượng, giúp giảm thiểu lỗi thời gian chạy do ép kiểu thủ công."
+        },
+        {
+            "question": "Thuật toán hai Stack của Dijkstra được sử dụng để làm gì?",
+            "answer": "Đánh giá biểu thức số học",
+            "distractors": [
+                "Sắp xếp danh sách",
+                "Tìm kiếm phần tử",
+                "Quản lý bộ nhớ"
+            ],
+            "explanation": "Thuật toán hai Stack của Dijkstra được sử dụng để đánh giá biểu thức số học, giúp xử lý các toán tử và giá trị một cách hiệu quả."
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong thuật toán tìm đường đi ngắn nhất, quá trình 'relax cạnh' (edge relaxation) được thực hiện khi nào?",
+            "answer": "Khi tìm thấy một đường đi từ đỉnh nguồn đến đỉnh v thông qua đỉnh w ngắn hơn đường đi hiện tại đến v.",
+            "distractors": [
+                "Khi tất cả các đỉnh kề của một đỉnh đã được thăm.",
+                "Khi một cạnh được thêm vào đồ thị.",
+                "Khi một đỉnh được đưa vào hàng đợi ưu tiên."
+            ],
+            "explanation": "Quá trình relax cạnh xảy ra khi thuật toán phát hiện ra một đường đi ngắn hơn đến một đỉnh v thông qua một đỉnh w đã được xử lý. Cụ thể, nếu distTo[w] + weight(w, v) < distTo[v], thì distTo[v] được cập nhật và edgeTo[v] được đặt là w."
+        },
+        {
+            "question": "Thuật toán Dijkstra có thể được áp dụng hiệu quả nhất trong trường hợp nào sau đây?",
+            "answer": "Tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác trong đồ thị có hướng với trọng số cạnh không âm.",
+            "distractors": [
+                "Tìm đường đi ngắn nhất trong đồ thị có trọng số âm.",
+                "Tìm chu trình âm trong đồ thị.",
+                "Tìm đường đi ngắn nhất trong đồ thị vô hướng với trọng số âm."
+            ],
+            "explanation": "Thuật toán Dijkstra được thiết kế để tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác trong đồ thị có hướng (hoặc vô hướng) với điều kiện tất cả các trọng số cạnh phải không âm. Nó không hoạt động chính xác với trọng số âm và không thể phát hiện chu trình âm."
+        },
+        {
+            "question": "Trong bài toán đường đi ngắn nhất, mảng `distTo[]` và `edgeTo[]` được cập nhật như thế nào trong quá trình thư giãn cạnh?",
+            "answer": "Nếu `distTo[w] + weight(w, v) < distTo[v]`, thì `distTo[v]` được cập nhật thành `distTo[w] + weight(w, v)` và `edgeTo[v]` được đặt là `w`.",
+            "distractors": [
+                "Nếu `distTo[w] + weight(w, v) > distTo[v]`, thì `distTo[v]` được cập nhật thành `distTo[w] + weight(w, v)` và `edgeTo[v]` được đặt là `w`.",
+                "Nếu `distTo[v] + weight(v, w) < distTo[w]`, thì `distTo[w]` được cập nhật thành `distTo[v] + weight(v, w)` và `edgeTo[w]` được đặt là `v`.",
+                "Mảng `distTo[]` và `edgeTo[]` chỉ được khởi tạo một lần và không thay đổi trong quá trình thư giãn cạnh."
+            ],
+            "explanation": "Quá trình thư giãn cạnh nhằm mục đích tìm một đường đi ngắn hơn đến đỉnh v. Nếu tổng độ dài đường đi từ nguồn đến w cộng với trọng số cạnh (w, v) nhỏ hơn độ dài đường đi hiện tại đến v, thì chúng ta đã tìm thấy một đường đi ngắn hơn. Khi đó, `distTo[v]` được cập nhật với giá trị mới và `edgeTo[v]` được đặt là `w` để ghi nhớ đỉnh trước đó trên đường đi ngắn nhất."
+        },
+        {
+            "question": "Ưu điểm chính của thuật toán Bellman-Ford so với Dijkstra là gì?",
+            "answer": "Bellman-Ford có thể xử lý đồ thị có trọng số cạnh âm và phát hiện chu trình âm.",
+            "distractors": [
+                "Bellman-Ford luôn nhanh hơn Dijkstra trong mọi trường hợp.",
+                "Bellman-Ford yêu cầu ít bộ nhớ hơn Dijkstra.",
+                "Bellman-Ford có thể tìm đường đi ngắn nhất trong đồ thị vô hướng."
+            ],
+            "explanation": "Ưu điểm nổi bật của Bellman-Ford là khả năng xử lý các đồ thị có trọng số cạnh âm, điều mà Dijkstra không thể làm được. Ngoài ra, nó còn có khả năng phát hiện sự tồn tại của chu trình âm, một tính năng quan trọng trong nhiều ứng dụng."
+        },
+        {
+            "question": "Khi triển khai thuật toán Dijkstra sử dụng hàng đợi ưu tiên (Priority Queue) dựa trên đống nhị phân (binary heap), độ phức tạp thời gian trong trường hợp xấu nhất là gì?",
+            "answer": "O(E log V)",
+            "distractors": [
+                "O(V^2)",
+                "O(E + V log V)",
+                "O(V log E)"
+            ],
+            "explanation": "Với hàng đợi ưu tiên dựa trên đống nhị phân, mỗi thao tác `insert` và `delete-min` mất O(log V) thời gian. Thuật toán Dijkstra thực hiện V lần `delete-min` (mỗi đỉnh một lần) và E lần `decrease-key` (mỗi cạnh một lần, tương đương với `insert` và `delete` trong một số triển khai). Do đó, độ phức tạp tổng thể là O(E log V)."
+        },
+        {
+            "question": "Làm thế nào thuật toán Bellman-Ford có thể xác định sự tồn tại của một chu trình âm trong đồ thị?",
+            "answer": "Nếu sau V-1 lần lặp, vẫn có thể thư giãn một cạnh (tức là `distTo[w] + weight(w, v) < distTo[v]`), thì tồn tại một chu trình âm.",
+            "distractors": [
+                "Nếu `distTo[s]` (s là đỉnh nguồn) trở thành âm sau V lần lặp.",
+                "Nếu tất cả các giá trị `distTo[]` đều dương sau V-1 lần lặp.",
+                "Nếu thuật toán không thể tìm thấy đường đi đến một đỉnh nào đó sau V-1 lần lặp."
+            ],
+            "explanation": "Thuật toán Bellman-Ford đảm bảo tìm được đường đi ngắn nhất sau tối đa V-1 lần lặp nếu không có chu trình âm. Nếu sau V-1 lần lặp, thuật toán vẫn có thể thư giãn một cạnh (tức là tìm thấy một đường đi ngắn hơn), điều đó chứng tỏ có một chu trình âm mà qua đó đường đi có thể được rút ngắn vô hạn."
+        },
+        {
+            "question": "Để mô hình hóa bài toán phát hiện chênh lệch giá (arbitrage detection) bằng cách sử dụng chu trình âm trong đồ thị, trọng số của các cạnh được tính như thế nào từ tỷ giá hối đoái?",
+            "answer": "Trọng số cạnh từ tiền tệ A sang tiền tệ B là `-ln(tỷ giá hối đoái từ A sang B)`.",
+            "distractors": [
+                "Trọng số cạnh từ tiền tệ A sang tiền tệ B là `tỷ giá hối đoái từ A sang B`.",
+                "Trọng số cạnh từ tiền tệ A sang tiền tệ B là `1 / tỷ giá hối đoái từ A sang B`.",
+                "Trọng số cạnh từ tiền tệ A sang tiền tệ B là `ln(tỷ giá hối đoái từ A sang B)`."
+            ],
+            "explanation": "Bài toán arbitrage liên quan đến việc tìm một chu trình mà tích các tỷ giá hối đoái lớn hơn 1. Để chuyển đổi thành bài toán tìm chu trình âm (tổng trọng số âm), chúng ta sử dụng logarit tự nhiên âm. Cụ thể, nếu có tỷ giá `rate(A, B)`, thì trọng số cạnh là `-ln(rate(A, B))`. Khi đó, một chu trình âm sẽ tương ứng với một chu trình mà tích các tỷ giá lớn hơn 1."
+        },
+        {
+            "question": "Điểm khác biệt cơ bản trong cách tìm đường đi ngắn nhất giữa Đồ thị có hướng không có chu trình (DAG) và Đồ thị có hướng tổng quát có trọng số âm là gì?",
+            "answer": "Trên DAG, có thể tìm đường đi ngắn nhất bằng cách sắp xếp cấu trúc và thư giãn các cạnh theo thứ tự đó, trong khi đồ thị tổng quát với trọng số âm cần Bellman-Ford.",
+            "distractors": [
+                "Dijkstra có thể được sử dụng cho cả DAG và đồ thị tổng quát có trọng số âm.",
+                "Bellman-Ford là thuật toán duy nhất có thể tìm đường đi ngắn nhất trên DAG.",
+                "Trên DAG, đường đi ngắn nhất luôn là đường đi có ít cạnh nhất."
+            ],
+            "explanation": "Đối với DAG, chúng ta có thể sử dụng sắp xếp cấu trúc (topological sort) để xử lý các đỉnh theo một thứ tự mà không có cạnh nào đi ngược lại. Sau đó, thư giãn các cạnh theo thứ tự này sẽ tìm ra đường đi ngắn nhất trong thời gian tuyến tính O(V+E). Đối với đồ thị tổng quát có trọng số âm, Dijkstra không hoạt động, và Bellman-Ford là thuật toán cần thiết để xử lý các trọng số âm và phát hiện chu trình âm, với độ phức tạp cao hơn O(VE)."
+        }
+    ]
+}

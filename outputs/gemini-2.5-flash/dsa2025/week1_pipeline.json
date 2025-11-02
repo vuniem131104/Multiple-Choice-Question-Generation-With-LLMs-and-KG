@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Nguyên tắc hoạt động cơ bản của một cấu trúc dữ liệu Stack là gì?",
+      "answer": "Phần tử cuối cùng được thêm vào sẽ là phần tử đầu tiên được lấy ra.",
+      "distractors": [
+        "Phần tử đầu tiên được thêm vào sẽ là phần tử đầu tiên được lấy ra.",
+        "Các phần tử có thể được lấy ra từ bất kỳ vị trí nào trong cấu trúc.",
+        "Phần tử cuối cùng được thêm vào sẽ là phần tử cuối cùng được lấy ra."
+      ],
+      "explanation": "Giải thích:\n\nNguyên tắc hoạt động cơ bản của một cấu trúc dữ liệu Stack là **Phần tử cuối cùng được thêm vào sẽ là phần tử đầu tiên được lấy ra.** Điều này được gọi là nguyên tắc LIFO (Last In, First Out). Tương tự như một chồng đĩa, đĩa bạn đặt lên trên cùng (cuối cùng được thêm vào) sẽ là đĩa đầu tiên bạn lấy ra.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Phần tử đầu tiên được thêm vào sẽ là phần tử đầu tiên được lấy ra.** Đây là nguyên tắc FIFO (First In, First Out), đặc trưng của cấu trúc dữ liệu Queue (Hàng đợi), không phải Stack.\n*   **Các phần tử có thể được lấy ra từ bất kỳ vị trí nào trong cấu trúc.** Stack là một cấu trúc dữ liệu hạn chế, chỉ cho phép thêm và xóa phần tử ở một đầu duy nhất, thường được gọi là \"đỉnh\" (top). Việc truy cập và xóa ở các vị trí tùy ý là đặc điểm của các cấu trúc như mảng hoặc danh sách liên kết, không phải Stack.\n*   **Phần tử cuối cùng được thêm vào sẽ là phần tử cuối cùng được lấy ra.** Tùy chọn này không mô tả một nguyên tắc hoạt động tiêu chuẩn của bất kỳ cấu trúc dữ liệu cơ bản nào. Nó mâu thuẫn với cả LIFO và FIFO.",
+      "topic": {
+        "name": "Đặc điểm cơ bản của Stack",
+        "description": "Kiểm tra hiểu biết về định nghĩa của Stack, nguyên tắc Last In First Out (LIFO) và các thao tác cốt lõi như push và pop. Học sinh cần phân biệt Stack với các cấu trúc dữ liệu khác dựa trên nguyên tắc này.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Nguyên tắc cơ bản nào mô tả thứ tự xử lý các phần tử trong một Queue?",
+      "answer": "First In First Out (FIFO)",
+      "distractors": [
+        "Last In First Out (LIFO)",
+        "Random In Random Out (RIRO)",
+        "First In Last Out (FILO)"
+      ],
+      "explanation": "**Giải thích:**\n\nNguyên tắc cơ bản mô tả thứ tự xử lý các phần tử trong một Queue là **First In First Out (FIFO)**. Điều này có nghĩa là phần tử được thêm vào hàng đợi đầu tiên sẽ là phần tử đầu tiên được lấy ra khỏi hàng đợi. Hãy hình dung một hàng người xếp hàng chờ mua vé: người đến trước sẽ được phục vụ trước.\n\nCác lựa chọn khác không chính xác vì:\n\n*   **Last In First Out (LIFO)** là nguyên tắc hoạt động của một Stack, không phải Queue. Trong một Stack, phần tử được thêm vào cuối cùng sẽ là phần tử đầu tiên được lấy ra (giống như một chồng đĩa, đĩa đặt lên trên cùng sẽ được lấy ra đầu tiên).\n*   **Random In Random Out (RIRO)** không phải là một nguyên tắc xử lý dữ liệu tiêu chuẩn trong cấu trúc dữ liệu. Cả Queue và Stack đều tuân theo các quy tắc nghiêm ngặt để đảm bảo tính nhất quán và dự đoán được.\n*   **First In Last Out (FILO)** là một cách diễn đạt khác của LIFO, và cũng là nguyên tắc của Stack, không phải Queue.\n",
+      "topic": {
+        "name": "Đặc điểm cơ bản của Queue",
+        "description": "Đánh giá kiến thức về định nghĩa của Queue, nguyên tắc First In First Out (FIFO) và các thao tác chính như enqueue và dequeue. Học sinh cần hiểu sự khác biệt cơ bản giữa Stack và Queue.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Lợi ích chính nào của việc tách biệt giao diện và triển khai trong thiết kế phần mềm giúp client ít bị ảnh hưởng hơn khi chi tiết triển khai thay đổi?",
+      "answer": "Giảm sự phụ thuộc của client vào chi tiết triển khai",
+      "distractors": [
+        "Tăng cường hiệu suất tổng thể của hệ thống",
+        "Giúp giảm số lượng dòng mã cần viết",
+        "Đơn giản hóa quá trình gỡ lỗi và kiểm thử"
+      ],
+      "explanation": "Việc tách biệt giao diện và triển khai trong thiết kế phần mềm có lợi ích chính là **giảm sự phụ thuộc của client vào chi tiết triển khai**. Giao diện định nghĩa cách client tương tác với một thành phần mà không tiết lộ cách thành phần đó hoạt động bên trong. Điều này có nghĩa là client chỉ cần biết giao diện để sử dụng thành phần, và nếu chi tiết triển khai bên trong thay đổi (ví dụ: thuật toán được cải thiện, cấu trúc dữ liệu được tối ưu), client sẽ không bị ảnh hưởng miễn là giao diện vẫn giữ nguyên. Điều này giúp tăng tính linh hoạt và khả năng bảo trì của hệ thống.\n\nCác lựa chọn khác không phải là lợi ích chính trực tiếp của việc tách biệt giao diện và triển khai trong ngữ cảnh này:\n*   **Tăng cường hiệu suất tổng thể của hệ thống** không phải là lợi ích trực tiếp của việc tách biệt giao diện và triển khai. Mặc dù việc thiết kế tốt có thể gián tiếp dẫn đến hiệu suất tốt hơn, nhưng bản thân việc tách biệt không đảm bảo tăng hiệu suất. Hiệu suất phụ thuộc nhiều hơn vào chất lượng của triển khai cụ thể.\n*   **Giúp giảm số lượng dòng mã cần viết** là không chính xác. Trên thực tế, việc tách biệt giao diện và triển khai thường yêu cầu viết thêm mã (ví dụ: định nghĩa giao diện, lớp trừu tượng) so với việc viết mã trực tiếp mà không có sự tách biệt rõ ràng. Lợi ích nằm ở khả năng bảo trì và mở rộng, không phải ở việc giảm số lượng mã ban đầu.\n*   **Đơn giản hóa quá trình gỡ lỗi và kiểm thử** không phải là lợi ích chính trực tiếp. Mặc dù việc có các thành phần được định nghĩa rõ ràng có thể hỗ trợ gỡ lỗi và kiểm thử bằng cách cho phép kiểm thử từng đơn vị một cách độc lập, nhưng đây là một lợi ích gián tiếp. Lợi ích chính của việc tách biệt là giảm sự phụ thuộc và tăng tính linh hoạt, từ đó mới hỗ trợ các hoạt động khác như kiểm thử.",
+      "topic": {
+        "name": "Lợi ích tách biệt Giao diện & Triển khai",
+        "description": "Kiểm tra sự hiểu biết về lợi ích của việc tách biệt giao diện và triển khai trong thiết kế phần mềm, bao gồm khả năng tái sử dụng mã, giảm sự phụ thuộc của client vào chi tiết triển khai và tính mô-đun. Học sinh cần nhận diện vai trò của client, giao diện và triển khai.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Mục đích chính của Autoboxing trong Java là gì?",
+      "answer": "Nó tự động chuyển đổi giữa các kiểu nguyên thủy và các đối tượng wrapper tương ứng.",
+      "distractors": [
+        "Nó cho phép sử dụng các kiểu dữ liệu tổng quát với các kiểu nguyên thủy.",
+        "Nó tự động chuyển đổi các đối tượng thành các kiểu nguyên thủy tương ứng.",
+        "Nó cung cấp một cách để tạo các lớp chung cho bất kỳ kiểu dữ liệu nào."
+      ],
+      "explanation": "Mục đích chính của Autoboxing trong Java là tự động chuyển đổi giữa các kiểu nguyên thủy (như `int`, `char`, `double`) và các đối tượng wrapper tương ứng của chúng (như `Integer`, `Character`, `Double`). Điều này giúp đơn giản hóa mã và giảm nhu cầu chuyển đổi thủ công, đặc biệt khi làm việc với các bộ sưu tập Java (collections) hoặc các kiểu dữ liệu tổng quát (generics) yêu cầu đối tượng.\n\nCác yếu tố gây nhiễu không chính xác vì những lý do sau:\n*   **Nó cho phép sử dụng các kiểu dữ liệu tổng quát với các kiểu nguyên thủy.** Đây là một lợi ích gián tiếp của Autoboxing, nhưng không phải là mục đích chính của nó. Các kiểu dữ liệu tổng quát (Generics) trong Java không thể trực tiếp làm việc với các kiểu nguyên thủy; chúng yêu cầu các đối tượng. Autoboxing cho phép chúng ta viết mã như thể chúng ta đang sử dụng các kiểu nguyên thủy với Generics bằng cách tự động chuyển đổi chúng thành các đối tượng wrapper.\n*   **Nó tự động chuyển đổi các đối tượng thành các kiểu nguyên thủy tương ứng.** Đây là mô tả của Unboxing, quá trình ngược lại với Autoboxing. Unboxing là khi một đối tượng wrapper được tự động chuyển đổi trở lại thành kiểu nguyên thủy tương ứng của nó.\n*   **Nó cung cấp một cách để tạo các lớp chung cho bất kỳ kiểu dữ liệu nào.** Đây là mục đích của Generics (kiểu dữ liệu tổng quát), không phải Autoboxing. Generics cho phép chúng ta tạo các lớp, giao diện và phương thức hoạt động với các kiểu dữ liệu khác nhau mà không cần viết lại mã cho từng kiểu.",
+      "topic": {
+        "name": "Autoboxing và Generics cơ bản",
+        "description": "Đánh giá kiến thức về mục đích của Java Generics trong việc tạo các cấu trúc dữ liệu tổng quát và cách Autoboxing giúp tự động chuyển đổi giữa các kiểu nguyên thủy và đối tượng wrapper tương ứng. Học sinh cần hiểu cú pháp và lợi ích cơ bản.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi thực hiện thao tác 'pop' trên một Stack không rỗng được triển khai bằng danh sách liên kết đơn, những hành động nào là bắt buộc để cập nhật con trỏ 'first' của Stack và ngăn chặn hiện tượng rò rỉ tham chiếu (loitering)?",
+      "answer": "Gán con trỏ 'first' bằng phần tử tiếp theo của nó và đặt tham chiếu 'next' của nút vừa bị pop thành null.",
+      "distractors": [
+        "Gán con trỏ 'first' bằng phần tử tiếp theo của nút vừa bị pop và đặt tham chiếu 'next' của nút đó thành null.",
+        "Chỉ cần gán con trỏ 'first' bằng phần tử tiếp theo của nó, không cần đặt tham chiếu 'next' thành null.",
+        "Đặt tham chiếu 'next' của nút vừa bị pop thành null và sau đó gán con trỏ 'first' bằng phần tử tiếp theo của nút đó."
+      ],
+      "explanation": "Khi thực hiện thao tác 'pop' trên một Stack không rỗng được triển khai bằng danh sách liên kết đơn, mục tiêu là loại bỏ phần tử trên cùng (phần tử mà con trỏ 'first' đang trỏ tới), cập nhật con trỏ 'first' để trỏ đến phần tử tiếp theo, và ngăn chặn hiện tượng rò rỉ tham chiếu (loitering).\n\n**Tại sao \"Gán con trỏ 'first' bằng phần tử tiếp theo của nó và đặt tham chiếu 'next' của nút vừa bị pop thành null.\" là đúng:**\n\n1.  **Gán con trỏ 'first' bằng phần tử tiếp theo của nó**: Đây là bước cần thiết để cập nhật Stack. Khi phần tử hiện tại mà 'first' đang trỏ tới bị loại bỏ, 'first' phải được chuyển sang trỏ đến phần tử kế tiếp trong danh sách để phần tử đó trở thành phần tử trên cùng mới của Stack.\n2.  **Đặt tham chiếu 'next' của nút vừa bị pop thành null**: Bước này là cực kỳ quan trọng để ngăn chặn hiện tượng rò rỉ tham chiếu (loitering). Nếu tham chiếu 'next' của nút bị pop không được đặt thành null, nút đó vẫn có thể giữ một tham chiếu đến phần tử tiếp theo trong danh sách. Điều này có nghĩa là ngay cả khi nút bị pop không còn được sử dụng bởi Stack, nó vẫn giữ một tham chiếu đến một đối tượng khác, ngăn cản bộ thu gom rác (garbage collector) giải phóng bộ nhớ của đối tượng đó, dẫn đến rò rỉ bộ nhớ tiềm ẩn.\n\n**Tại sao các yếu tố gây nhiễu là sai:**\n\n*   **Gán con trỏ 'first' bằng phần tử tiếp theo của nút vừa bị pop và đặt tham chiếu 'next' của nút đó thành null.**\n    *   Phần đầu của câu trả lời này không chính xác. Con trỏ 'first' phải được gán bằng phần tử tiếp theo của *chính nó* (tức là phần tử mà 'first' đang trỏ tới trước khi pop), chứ không phải phần tử tiếp theo của nút *vừa bị pop* (nút này đã được lưu trữ tạm thời để trả về). Về cơ bản, chúng ta cần cập nhật 'first' để trỏ đến phần tử thứ hai trong Stack ban đầu.\n\n*   **Chỉ cần gán con trỏ 'first' bằng phần tử tiếp theo của nó, không cần đặt tham chiếu 'next' thành null.**\n    *   Tùy chọn này bỏ qua bước quan trọng là đặt tham chiếu 'next' của nút bị pop thành null. Như đã giải thích ở trên, việc không đặt tham chiếu 'next' thành null sẽ dẫn đến hiện tượng rò rỉ tham chiếu (loitering), giữ các đối tượng không cần thiết trong bộ nhớ và ngăn cản bộ thu gom rác hoạt động hiệu quả.\n\n*   **Đặt tham chiếu 'next' của nút vừa bị pop thành null và sau đó gán con trỏ 'first' bằng phần tử tiếp theo của nút đó.**\n    *   Thứ tự các thao tác là không chính xác và phần thứ hai của câu trả lời cũng sai. Nếu bạn đặt tham chiếu 'next' của nút bị pop thành null *trước* khi cập nhật 'first', bạn có thể mất tham chiếu đến phần tử tiếp theo mà 'first' cần trỏ tới. Hơn nữa, 'first' cần trỏ đến phần tử tiếp theo của *nút mà nó đang trỏ tới ban đầu*, không phải phần tử tiếp theo của *nút vừa bị pop* (nút này đã được tách ra khỏi danh sách).",
+      "topic": {
+        "name": "Thao tác Pop trong Stack Danh sách liên kết",
+        "description": "Kiểm tra sự hiểu biết chi tiết về cơ chế thực hiện thao tác 'pop' khi Stack được triển khai bằng danh sách liên kết đơn. Học sinh cần biết cách con trỏ 'first' được cập nhật và cách tránh 'loitering' trong quá trình này.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong triển khai Stack sử dụng mảng có dung lượng cố định, vấn đề chính dẫn đến tràn stack khi thao tác push là gì và giải pháp nào sau đây trực tiếp khắc phục được nguyên nhân gốc rễ của vấn đề này?",
+      "answer": "Sử dụng mảng có khả năng điều chỉnh kích thước linh hoạt theo nhu cầu lưu trữ.",
+      "distractors": [
+        "Tăng kích thước mảng cố định lên một giá trị lớn hơn nhiều so với dự kiến.",
+        "Kiểm tra kích thước stack trước mỗi thao tác push và từ chối nếu stack đầy.",
+        "Sử dụng danh sách liên kết thay vì mảng để triển khai stack."
+      ],
+      "explanation": "Giải thích:\n\nCâu trả lời đúng là **Sử dụng mảng có khả năng điều chỉnh kích thước linh hoạt theo nhu cầu lưu trữ.** vì vấn đề chính của tràn stack khi sử dụng mảng có dung lượng cố định là do mảng không thể chứa thêm phần tử khi đã đạt đến giới hạn kích thước ban đầu. Việc sử dụng mảng có khả năng điều chỉnh kích thước (ví dụ: `ArrayList` trong Java hoặc `std::vector` trong C++) cho phép mảng tự động mở rộng dung lượng khi cần thiết, trực tiếp giải quyết nguyên nhân gốc rễ của việc tràn stack do giới hạn kích thước cố định.\n\nCác yếu tố gây nhiễu không chính xác vì:\n*   **Tăng kích thước mảng cố định lên một giá trị lớn hơn nhiều so với dự kiến.** Đây chỉ là một giải pháp tạm thời và không giải quyết được nguyên nhân gốc rễ. Mặc dù nó có thể trì hoãn việc tràn stack, nhưng nếu số lượng phần tử vượt quá kích thước mới này, vấn đề tràn stack vẫn sẽ xảy ra. Nó không cung cấp khả năng thích ứng linh hoạt với nhu cầu lưu trữ không xác định.\n*   **Kiểm tra kích thước stack trước mỗi thao tác push và từ chối nếu stack đầy.** Đây là một biện pháp phòng ngừa cần thiết để tránh lỗi tràn stack, nhưng nó không phải là giải pháp cho nguyên nhân gốc rễ của vấn đề. Việc từ chối thao tác push khi stack đầy chỉ thông báo rằng stack không thể chứa thêm phần tử, chứ không giải quyết được việc stack bị giới hạn bởi kích thước cố định của mảng. Nó không cho phép stack mở rộng để chứa thêm dữ liệu.\n*   **Sử dụng danh sách liên kết thay vì mảng để triển khai stack.** Mặc dù danh sách liên kết là một giải pháp hiệu quả để triển khai stack mà không gặp vấn đề tràn stack do giới hạn kích thước (vì nó có thể mở rộng động), nhưng câu hỏi yêu cầu giải pháp trực tiếp khắc phục nguyên nhân gốc rễ của vấn đề tràn stack *khi triển khai Stack sử dụng mảng có dung lượng cố định*. Việc chuyển sang một cấu trúc dữ liệu hoàn toàn khác (danh sách liên kết) không phải là giải pháp trực tiếp cho vấn đề của *mảng cố định*, mà là một cách thay thế hoàn toàn. Giải pháp trực tiếp cho vấn đề của mảng cố định là làm cho mảng có thể điều chỉnh kích thước.",
+      "topic": {
+        "name": "Vấn đề Tràn Stack Mảng cố định và giải pháp",
+        "description": "Đánh giá khả năng hiểu về nhược điểm chính của triển khai Stack bằng mảng có dung lượng cố định (tràn stack) và nhận diện giải pháp cho vấn đề này thông qua việc sử dụng mảng có thể thay đổi kích thước. Chủ đề này kết nối từ Concept 6 đến Concept 8.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khái niệm phân tích khấu hao trong ngữ cảnh Stack mảng co giãn chủ yếu làm sáng tỏ điều gì về hiệu suất của các thao tác?",
+      "answer": "Các thao tác có thời gian chạy trung bình (average running time) là hằng số.",
+      "distractors": [
+        "Các thao tác có thời gian chạy tệ nhất (worst-case running time) là hằng số.",
+        "Hiệu suất của các thao tác giảm tuyến tính khi kích thước mảng tăng lên.",
+        "Phân tích khấu hao chỉ áp dụng cho việc sử dụng bộ nhớ, không phải thời gian chạy."
+      ],
+      "explanation": "Phân tích khấu hao trong ngữ cảnh Stack mảng co giãn làm sáng tỏ rằng **các thao tác có thời gian chạy trung bình (average running time) là hằng số**. Điều này là do mặc dù một số thao tác (như thay đổi kích thước mảng) có thể tốn kém về mặt thời gian chạy trong trường hợp tệ nhất, nhưng chúng xảy ra không thường xuyên. Khi chi phí của các thao tác tốn kém này được \"khấu hao\" hoặc trải đều trên một chuỗi dài các thao tác, thời gian chạy trung bình cho mỗi thao tác sẽ trở thành hằng số (O(1)).\n\nCác tùy chọn khác không chính xác vì:\n*   **Các thao tác có thời gian chạy tệ nhất (worst-case running time) là hằng số** là sai. Các thao tác thay đổi kích thước mảng trong Stack mảng co giãn có thể có thời gian chạy tệ nhất là O(N), trong đó N là kích thước của mảng, không phải là hằng số. Phân tích khấu hao giải quyết vấn đề này bằng cách xem xét hiệu suất trung bình theo thời gian.\n*   **Hiệu suất của các thao tác giảm tuyến tính khi kích thước mảng tăng lên** là sai. Ngược lại, phân tích khấu hao cho thấy rằng hiệu suất trung bình vẫn là hằng số, ngay cả khi kích thước mảng tăng lên, nhờ vào chiến lược thay đổi kích thước mảng hiệu quả.\n*   **Phân tích khấu hao chỉ áp dụng cho việc sử dụng bộ nhớ, không phải thời gian chạy** là sai. Phân tích khấu hao là một kỹ thuật phân tích hiệu suất được sử dụng rộng rãi để đánh giá cả thời gian chạy và việc sử dụng bộ nhớ của các thuật toán và cấu trúc dữ liệu, đặc biệt là khi có các thao tác tốn kém không thường xuyên.",
+      "topic": {
+        "name": "Khái niệm Khấu hao và Bộ nhớ Stack mảng co giãn",
+        "description": "Kiểm tra sự hiểu biết về khái niệm phân tích khấu hao trong ngữ cảnh Stack mảng có thể thay đổi kích thước, đặc biệt là cách nó ảnh hưởng đến thời gian chạy trung bình của các thao tác. Ngoài ra, đánh giá kiến thức về phạm vi sử dụng bộ nhớ (từ ~8N đến ~32N byte) của triển khai này. Chủ đề này liên quan trực tiếp đến Concept 9.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi triển khai một Stack chung (generic Stack) trong Java bằng mảng có thể thay đổi kích thước, tại sao việc khởi tạo mảng yếu tố với cú pháp `(E[]) new Object[capacity]` lại yêu cầu một 'unchecked cast' và không thể thực hiện trực tiếp ví dụ như `new E[capacity]`?",
+      "answer": "Java thực hiện xóa kiểu (type erasure) cho generics nhưng mảng là kiểu dữ liệu được giữ lại tại thời gian chạy (reified), không cho phép tạo mảng trực tiếp của kiểu tham số chung.",
+      "distractors": [
+        "Trình biên dịch Java không thể xác định kích thước chính xác của mảng tại thời gian biên dịch cho kiểu chung, dẫn đến lỗi biên dịch nếu không có ép kiểu.",
+        "Việc tạo mảng trực tiếp của kiểu chung sẽ vi phạm an toàn kiểu của Java, cho phép gán các kiểu không tương thích vào mảng tại thời gian chạy.",
+        "Mảng trong Java chỉ có thể được khởi tạo với các kiểu cụ thể, không phải kiểu tham số chung, do đó cần ép kiểu để phù hợp với khai báo."
+      ],
+      "explanation": "Giải thích:\n\n**Tại sao câu trả lời đúng là đúng:**\n\nCâu trả lời đúng là \"Java thực hiện xóa kiểu (type erasure) cho generics nhưng mảng là kiểu dữ liệu được giữ lại tại thời gian chạy (reified), không cho phép tạo mảng trực tiếp của kiểu tham số chung.\"\n\nLý do chính là sự khác biệt trong cách Java xử lý generics và mảng. Java thực hiện **xóa kiểu (type erasure)** cho generics, có nghĩa là thông tin về kiểu tham số chung (ví dụ: `E` trong `Stack<E>`) bị xóa tại thời gian biên dịch và không có sẵn tại thời gian chạy. Tại thời gian chạy, `Stack<E>` trở thành `Stack<Object>`.\n\nNgược lại, **mảng là kiểu dữ liệu được giữ lại tại thời gian chạy (reified)**. Điều này có nghĩa là thông tin về kiểu thành phần của mảng (ví dụ: `String[]` biết nó chứa `String`) được giữ lại và kiểm tra tại thời gian chạy.\n\nDo sự khác biệt này, bạn không thể tạo một mảng trực tiếp của kiểu tham số chung như `new E[capacity]` vì tại thời gian chạy, Java không biết `E` là gì. Nó chỉ biết `E` là `Object`. Nếu điều này được phép, nó sẽ vi phạm an toàn kiểu của mảng. Để giải quyết vấn đề này, chúng ta phải tạo một mảng `Object` và sau đó ép kiểu nó thành `(E[])`, điều này tạo ra một cảnh báo 'unchecked cast' vì trình biên dịch không thể đảm bảo an toàn kiểu tại thời gian biên dịch do xóa kiểu.\n\n**Tại sao mỗi yếu tố gây nhiễu là sai:**\n\n*   **\"Trình biên dịch Java không thể xác định kích thước chính xác của mảng tại thời gian biên dịch cho kiểu chung, dẫn đến lỗi biên dịch nếu không có ép kiểu.\"**\n    *   Đây là sai. Kích thước của mảng (`capacity`) là một giá trị đã biết tại thời gian biên dịch hoặc thời gian chạy (nếu nó là một biến). Vấn đề không phải là kích thước mà là kiểu của các phần tử trong mảng. Trình biên dịch biết kích thước cần thiết, nhưng không biết kiểu cụ thể của `E` tại thời gian biên dịch do xóa kiểu.\n\n*   **\"Việc tạo mảng trực tiếp của kiểu chung sẽ vi phạm an toàn kiểu của Java, cho phép gán các kiểu không tương thích vào mảng tại thời gian chạy.\"**\n    *   Mặc dù việc tạo mảng trực tiếp của kiểu chung *sẽ* dẫn đến các vấn đề về an toàn kiểu, nhưng đây không phải là lý do *trực tiếp* tại sao nó không thể được thực hiện. Lý do chính là sự không tương thích giữa xóa kiểu của generics và tính chất được giữ lại của mảng. Nếu Java cho phép `new E[capacity]`, nó sẽ phải thực hiện kiểm tra kiểu tại thời gian chạy cho mỗi lần gán, điều này mâu thuẫn với cách generics được thiết kế (xóa kiểu để tương thích ngược và hiệu suất). Vấn đề an toàn kiểu là hậu quả của sự không tương thích cơ bản này, không phải là nguyên nhân chính của việc không thể tạo mảng trực tiếp.\n\n*   **\"Mảng trong Java chỉ có thể được khởi tạo với các kiểu cụ thể, không phải kiểu tham số chung, do đó cần ép kiểu để phù hợp với khai báo.\"**\n    *   Phần đầu của câu này là đúng: mảng chỉ có thể được khởi tạo với các kiểu cụ thể (ví dụ: `new String[10]`, `new Integer[5]`). Tuy nhiên, lý do tại sao kiểu tham số chung không được coi là \"kiểu cụ thể\" trong ngữ cảnh này là do **xóa kiểu**. Tại thời gian chạy, `E` không còn là một kiểu cụ thể mà là `Object`. Do đó, việc ép kiểu `(E[]) new Object[capacity]` là để \"lừa\" trình biên dịch rằng mảng `Object` này sẽ chỉ chứa các đối tượng thuộc kiểu `E`, mặc dù trình biên dịch không thể xác minh điều đó hoàn toàn tại thời gian biên dịch.",
+      "topic": {
+        "name": "So sánh Triển khai Stack và Unchecked Cast",
+        "description": "Đánh giá khả năng so sánh ưu nhược điểm của triển khai Stack bằng danh sách liên kết và mảng có thể thay đổi kích thước về mặt thời gian chạy (trường hợp xấu nhất so với khấu hao) và hiệu quả sử dụng bộ nhớ. Đồng thời, kiểm tra sự hiểu biết về 'unchecked cast' khi triển khai Stack chung bằng mảng và lý do Java yêu cầu nó (kết hợp Concept 5, 10, 14).",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.45,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    }
+  ]
+}

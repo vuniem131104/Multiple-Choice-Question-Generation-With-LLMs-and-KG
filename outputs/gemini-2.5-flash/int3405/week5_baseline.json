@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Định nghĩa nào sau đây mô tả chính xác Lỗi Thực tế (True Error/Risk) trong Học máy?",
+            "answer": "Lỗi thực tế là kỳ vọng của hàm mất mát trên toàn bộ phân phối dữ liệu chưa biết, đại diện cho hiệu suất thực sự của mô hình.",
+            "distractors": [
+                "Lỗi thực tế là lỗi của mô hình trên tập dữ liệu huấn luyện.",
+                "Lỗi thực tế là lỗi của mô hình trên tập dữ liệu kiểm tra đã biết.",
+                "Lỗi thực tế là tổng của lỗi ước tính và lỗi xấp xỉ trên tập huấn luyện."
+            ],
+            "explanation": "Lỗi Thực tế (True Error/Risk) là một khái niệm lý thuyết, đại diện cho hiệu suất trung bình của mô hình trên toàn bộ phân phối dữ liệu tiềm năng, bao gồm cả dữ liệu chưa từng thấy. Nó là kỳ vọng của hàm mất mát trên phân phối dữ liệu thực tế P(x,y). Các lựa chọn khác mô tả lỗi trên tập huấn luyện hoặc kiểm tra, hoặc là các thành phần của lỗi tổng thể nhưng không phải định nghĩa chính xác của lỗi thực tế."
+        },
+        {
+            "question": "Một mô hình hồi quy tuyến tính được huấn luyện trên một tập dữ liệu nhỏ và cho kết quả R-squared rất cao trên tập huấn luyện (0.98), nhưng khi áp dụng vào dữ liệu mới, R-squared giảm đáng kể (0.45). Hiện tượng này có khả năng nhất là gì?",
+            "answer": "Quá khớp (Overfitting)",
+            "distractors": [
+                "Dưới khớp (Underfitting)",
+                "Độ lệch cao (High Bias)",
+                "Phương sai thấp (Low Variance)"
+            ],
+            "explanation": "Quá khớp xảy ra khi mô hình học quá kỹ các nhiễu và chi tiết cụ thể của dữ liệu huấn luyện, dẫn đến hiệu suất rất tốt trên tập huấn luyện nhưng kém trên dữ liệu mới chưa thấy. R-squared cao trên tập huấn luyện và thấp trên dữ liệu mới là dấu hiệu rõ ràng của quá khớp. Dưới khớp sẽ có R-squared thấp trên cả hai tập. Độ lệch cao thường liên quan đến dưới khớp, và phương sai thấp thường liên quan đến dưới khớp hoặc mô hình quá đơn giản."
+        },
+        {
+            "question": "Trong các phương pháp lựa chọn đặc trưng không giám sát, kỹ thuật nào sau đây thường được sử dụng để loại bỏ các đặc trưng có phương sai gần bằng 0?",
+            "answer": "Loại bỏ các đặc trưng có phương sai thấp (Low Variance Feature Removal)",
+            "distractors": [
+                "Phân tích thành phần chính (Principal Component Analysis - PCA)",
+                "Lựa chọn đặc trưng dựa trên tương quan (Correlation-based Feature Selection)",
+                "Lựa chọn đặc trưng dựa trên thông tin tương hỗ (Mutual Information Feature Selection)"
+            ],
+            "explanation": "Loại bỏ các đặc trưng có phương sai thấp là một phương pháp không giám sát đơn giản nhưng hiệu quả để loại bỏ các đặc trưng mà giá trị của chúng ít thay đổi trong tập dữ liệu, do đó không mang lại nhiều thông tin hữu ích cho mô hình. PCA là kỹ thuật giảm chiều, không phải lựa chọn đặc trưng theo nghĩa loại bỏ trực tiếp. Lựa chọn đặc trưng dựa trên tương quan và thông tin tương hỗ là các phương pháp có giám sát hoặc bán giám sát, thường yêu cầu thông tin về biến mục tiêu."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa Điều chuẩn L1 (Lasso) và L2 (Ridge) trong hồi quy tuyến tính là gì?",
+            "answer": "L1 có xu hướng đưa các hệ số về 0, thực hiện lựa chọn đặc trưng, trong khi L2 chỉ thu nhỏ các hệ số.",
+            "distractors": [
+                "L1 chỉ áp dụng cho hồi quy tuyến tính, còn L2 áp dụng cho hồi quy logistic.",
+                "L1 làm tăng độ phức tạp của mô hình, còn L2 làm giảm độ phức tạp.",
+                "L1 sử dụng tổng bình phương các hệ số, còn L2 sử dụng tổng giá trị tuyệt đối các hệ số."
+            ],
+            "explanation": "Điều chuẩn L1 (Lasso) thêm một hình phạt bằng tổng giá trị tuyệt đối của các hệ số vào hàm mất mát, có tác dụng đưa một số hệ số về 0, từ đó thực hiện lựa chọn đặc trưng. Điều chuẩn L2 (Ridge) thêm một hình phạt bằng tổng bình phương các hệ số, có tác dụng thu nhỏ các hệ số nhưng hiếm khi đưa chúng về 0. Cả hai đều có thể áp dụng cho cả hồi quy tuyến tính và logistic. Cả L1 và L2 đều làm giảm độ phức tạp của mô hình bằng cách hạn chế kích thước của các hệ số."
+        },
+        {
+            "question": "Khi tăng độ sâu tối đa của một cây quyết định (Decision Tree) trong quá trình huấn luyện, điều gì có khả năng xảy ra nhất đối với lỗi thực nghiệm và lỗi thực tế?",
+            "answer": "Lỗi thực nghiệm có thể giảm, nhưng lỗi thực tế có thể tăng do quá khớp.",
+            "distractors": [
+                "Cả lỗi thực nghiệm và lỗi thực tế đều sẽ giảm.",
+                "Cả lỗi thực nghiệm và lỗi thực tế đều sẽ tăng.",
+                "Lỗi thực nghiệm sẽ tăng, còn lỗi thực tế sẽ giảm."
+            ],
+            "explanation": "Tăng độ sâu tối đa của cây quyết định làm tăng độ phức tạp của mô hình. Một mô hình phức tạp hơn có khả năng học được các chi tiết và nhiễu trong dữ liệu huấn luyện tốt hơn, dẫn đến giảm lỗi thực nghiệm (lỗi trên tập huấn luyện). Tuy nhiên, điều này cũng làm tăng nguy cơ quá khớp (overfitting), khiến mô hình hoạt động kém trên dữ liệu mới chưa thấy, do đó lỗi thực tế (lỗi trên dữ liệu chưa biết) có thể tăng lên."
+        },
+        {
+            "question": "Lỗi ước tính (Estimation Error) trong phân tích rủi ro của Học máy chủ yếu phát sinh từ đâu?",
+            "answer": "Việc sử dụng một tập dữ liệu huấn luyện hữu hạn thay vì toàn bộ phân phối dữ liệu.",
+            "distractors": [
+                "Giới hạn của lớp mô hình được chọn (ví dụ: mô hình tuyến tính cho dữ liệu phi tuyến).",
+                "Nhiễu ngẫu nhiên trong dữ liệu huấn luyện.",
+                "Việc lựa chọn sai thuật toán tối ưu hóa."
+            ],
+            "explanation": "Lỗi ước tính (Estimation Error) là phần lỗi phát sinh do chúng ta chỉ có thể huấn luyện mô hình trên một tập dữ liệu hữu hạn (tập huấn luyện) thay vì toàn bộ phân phối dữ liệu thực tế. Điều này dẫn đến việc ước lượng hàm mục tiêu không hoàn hảo. Giới hạn của lớp mô hình gây ra lỗi xấp xỉ (Approximation Error). Nhiễu ngẫu nhiên có thể ảnh hưởng đến cả hai loại lỗi nhưng không phải là nguyên nhân chính của lỗi ước tính theo định nghĩa này. Lựa chọn thuật toán tối ưu hóa sai có thể dẫn đến không đạt được nghiệm tối ưu, nhưng không phải là nguồn gốc chính của lỗi ước tính."
+        },
+        {
+            "question": "Trên biểu đồ đánh đổi Độ lệch - Phương sai (Bias-Variance Trade-off), một mô hình có độ lệch cao (High Bias) và phương sai thấp (Low Variance) thường biểu thị điều gì?",
+            "answer": "Mô hình dưới khớp (Underfitting), quá đơn giản để nắm bắt mối quan hệ trong dữ liệu.",
+            "distractors": [
+                "Mô hình quá khớp (Overfitting), học quá kỹ nhiễu trong dữ liệu.",
+                "Mô hình tối ưu, cân bằng tốt giữa độ lệch và phương sai.",
+                "Mô hình có hiệu suất tốt trên tập huấn luyện nhưng kém trên tập kiểm tra."
+            ],
+            "explanation": "Độ lệch cao (High Bias) có nghĩa là mô hình đưa ra các giả định quá đơn giản về dữ liệu, dẫn đến việc không thể nắm bắt được các mối quan hệ phức tạp. Phương sai thấp (Low Variance) có nghĩa là mô hình ít nhạy cảm với các thay đổi nhỏ trong dữ liệu huấn luyện. Sự kết hợp này thường dẫn đến dưới khớp (Underfitting), nơi mô hình hoạt động kém trên cả tập huấn luyện và tập kiểm tra. Mô hình quá khớp sẽ có độ lệch thấp và phương sai cao. Mô hình tối ưu sẽ có sự cân bằng giữa độ lệch và phương sai."
+        },
+        {
+            "question": "Để giải quyết vấn đề quá khớp trong một mô hình hồi quy logistic, kỹ thuật điều chuẩn nào sau đây là phù hợp nhất nếu mục tiêu là vừa giảm quá khớp vừa thực hiện lựa chọn đặc trưng bằng cách đưa một số hệ số về 0?",
+            "answer": "Điều chuẩn L1 (Lasso Regularization)",
+            "distractors": [
+                "Điều chuẩn L2 (Ridge Regularization)",
+                "Tăng kích thước tập dữ liệu huấn luyện",
+                "Giảm độ phức tạp của mô hình bằng cách loại bỏ các đặc trưng thủ công"
+            ],
+            "explanation": "Điều chuẩn L1 (Lasso Regularization) thêm một hình phạt bằng tổng giá trị tuyệt đối của các hệ số vào hàm mất mát. Đặc tính này khiến L1 có khả năng đưa một số hệ số của các đặc trưng ít quan trọng về 0, từ đó thực hiện lựa chọn đặc trưng tự động và giảm quá khớp. Điều chuẩn L2 (Ridge) cũng giảm quá khớp nhưng chỉ thu nhỏ các hệ số chứ không đưa chúng về 0. Tăng kích thước tập dữ liệu huấn luyện là một cách tốt để giảm quá khớp nhưng không phải là kỹ thuật điều chuẩn. Loại bỏ đặc trưng thủ công là một phương pháp khác nhưng không phải là điều chuẩn theo định nghĩa."
+        }
+    ]
+}

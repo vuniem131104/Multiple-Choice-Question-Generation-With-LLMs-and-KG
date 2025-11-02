@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Kiến trúc Cơ bản của CNN",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly tests the core concept of CNN architecture, aligning perfectly with the Bloom level of 'Remember.' The baseline question is slightly less focused, as it includes distractors that are broader and less specific to the topic. Both questions are clear, but the pipeline question edges out due to its tighter alignment with the learning objectives."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Chức năng của Lớp Gộp (Pooling Layers)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more precise and focused explanation of the purpose of pooling layers, aligning well with the Bloom level of 'Understand.' The baseline question introduces additional concepts like overfitting control, which, while relevant, slightly dilutes the focus on the primary function of pooling layers. Both questions are clear, but the pipeline question is better aligned with the topic."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Cổng trong Bộ nhớ dài-ngắn hạn (LSTM)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly tests the function of the Forget Gate in LSTM, aligning perfectly with the Bloom level of 'Understand.' The baseline question is slightly less focused, as it includes distractors that are broader and less specific to the topic. Both questions are clear, but the pipeline question edges out due to its tighter alignment with the learning objectives."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "So sánh CNN và RNN",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question focuses on a specific limitation of CNNs in handling sequential data, which aligns well with the Bloom level of 'Analyze.' The baseline question, while relevant, is broader and less focused on the specific comparison between CNN and RNN. Both questions are clear, but the pipeline question provides a more targeted analysis."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Vấn đề Gradient biến mất trong RNN",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more precise explanation of the vanishing gradient problem and its impact on learning long-term dependencies, aligning well with the Bloom level of 'Understand.' The baseline question, while relevant, includes distractors that are broader and less specific to the topic. Both questions are clear, but the pipeline question is better aligned with the topic."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Kiểm soát Overfitting trong Học sâu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question focuses on a specific scenario of overfitting and suggests a targeted solution (Early Stopping), aligning well with the Bloom level of 'Apply.' The baseline question, while relevant, is broader and less focused on the specific techniques for controlling overfitting. Both questions are clear, but the pipeline question provides a more targeted application."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Khái niệm Mạng nơ-ron hồi quy (RNN)",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.75,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more concise and directly tests the core concept of RNNs, aligning perfectly with the Bloom level of 'Remember.' The baseline question is slightly less focused, as it includes distractors that are broader and less specific to the topic. Both questions are clear, but the pipeline question edges out due to its tighter alignment with the learning objectives."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Ứng dụng của Gradient Descent trong Học sâu",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.85,
+                "difficulty": 0.85,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.85,
+                "clarity": 0.85,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.85
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question provides a more detailed analysis of the impact of activation functions on gradient descent, aligning well with the Bloom level of 'Analyze.' The baseline question, while relevant, is broader and less focused on the specific challenges of gradient descent in deep learning. Both questions are clear, but the pipeline question provides a more targeted analysis."
+        }
+    ]
+}

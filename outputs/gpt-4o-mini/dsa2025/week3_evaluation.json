@@ -1,0 +1,144 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Khái niệm Mergesort và nguyên tắc chính",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant and clear, and appropriately test the 'Nhớ' Bloom level. The Pipeline question's distractors are slightly more plausible as they relate to other sorting algorithm principles, making them more challenging than the Baseline's distractors which include non-sorting algorithms."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Triển khai Mergesort bằng Java",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly relevant to the topic 'Triển khai Mergesort bằng Java' by asking about a specific method used in its Java implementation. The Baseline question, however, asks about the general principle of Mergesort, which is covered in a different topic ('Khái niệm Mergesort và nguyên tắc chính'), making it irrelevant to the stated topic for this pair. This significantly lowers its relevance and Bloom level appropriateness scores."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "So sánh độ phức tạp Mergesort với các thuật toán khác",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the comparison of Mergesort's complexity and stability with other algorithms, aligning perfectly with the topic. The Baseline question, similar to pair 2, asks about a Java implementation detail ('phương thức merge()') which is irrelevant to the topic of comparing complexities. This makes the Pipeline question superior in relevance and Bloom level appropriateness."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Hợp nhất hai mảng con trong Mergesort",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is highly relevant, clear, and has plausible distractors, directly focusing on the 'Hợp nhất hai mảng con trong Mergesort' process. The Baseline question, however, asks about the time complexity of Mergesort, which belongs to a different topic ('Phân tích số lần so sánh trong Mergesort' or 'So sánh độ phức tạp Mergesort với các thuật toán khác'), making it irrelevant to the current topic. This leads to a significantly lower score for the Baseline question."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Phân tích số lần so sánh trong Mergesort",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the comparison of comparison counts in Mergesort, which is central to the topic 'Phân tích số lần so sánh trong Mergesort'. The Baseline question asks about the stability of Mergesort, which is covered in a separate topic ('Tính ổn định của Mergesort và các thuật toán sắp xếp khác'), making it irrelevant here. The Pipeline question is therefore much stronger in relevance and Bloom level appropriateness."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Giới hạn dưới dựa trên so sánh cho sắp xếp",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly aligned with the topic 'Giới hạn dưới dựa trên so sánh cho sắp xếp', asking for the exact lower bound. Its distractors are mathematically plausible alternatives. The Baseline question, however, compares Mergesort with Insertion Sort, which belongs to the topic 'So sánh độ phức tạp Mergesort với các thuật toán khác', making it irrelevant to the current topic. This makes the Pipeline question significantly better."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Tính ổn định của Mergesort và các thuật toán sắp xếp khác",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.4,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.4
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the stability of Mergesort in comparison to other algorithms, which is the core of the topic. The Baseline question asks about the lower bound for comparison-based sorting, which is a different topic ('Giới hạn dưới dựa trên so sánh cho sắp xếp'). Consequently, the Pipeline question is highly relevant and appropriate, while the Baseline question is not."
+        }
+    ]
+}

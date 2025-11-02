@@ -1,0 +1,84 @@
+{
+    "questions": [
+        {
+            "question": "Trong mô hình Perceptron, siêu phẳng phân tách được sử dụng để làm gì?",
+            "answer": "Phân chia dữ liệu thành hai lớp (+1 và -1).",
+            "distractors": [
+                "Giảm chiều dữ liệu.",
+                "Tăng cường độ phức tạp của mô hình.",
+                "Tính toán xác suất của các lớp."
+            ],
+            "explanation": "Perceptron là một bộ phân loại tuyến tính đơn giản, sử dụng một siêu phẳng để phân tách dữ liệu đầu vào thành hai lớp riêng biệt, thường được gán nhãn là +1 và -1. Mục tiêu chính của nó là tìm ra siêu phẳng này."
+        },
+        {
+            "question": "Mục tiêu chính của Máy Vector Hỗ trợ (SVM) biên cứng là gì?",
+            "answer": "Tìm siêu phẳng phân tách tối đa hóa biên (margin) giữa các lớp dữ liệu.",
+            "distractors": [
+                "Giảm thiểu lỗi phân loại trên tập huấn luyện.",
+                "Tối thiểu hóa tổng khoảng cách từ các điểm dữ liệu đến siêu phẳng.",
+                "Tìm một siêu phẳng đi qua càng nhiều điểm dữ liệu càng tốt."
+            ],
+            "explanation": "SVM biên cứng (Hard Margin SVM) có mục tiêu cốt lõi là tìm một siêu phẳng phân tách hai lớp dữ liệu sao cho khoảng cách nhỏ nhất từ bất kỳ điểm dữ liệu nào đến siêu phẳng (biên) là lớn nhất. Điều này giúp tăng cường khả năng tổng quát hóa của mô hình."
+        },
+        {
+            "question": "Chức năng chính của Kernel Trick trong SVM phi tuyến tính là gì?",
+            "answer": "Thay thế tích vô hướng trong không gian đặc trưng cao chiều bằng một hàm kernel để tránh tính toán tường minh các vector đặc trưng.",
+            "distractors": [
+                "Giảm số lượng Support Vectors.",
+                "Chuyển đổi dữ liệu sang không gian có chiều thấp hơn.",
+                "Tăng tốc độ hội tụ của thuật toán tối ưu hóa."
+            ],
+            "explanation": "Kernel Trick cho phép SVM xử lý các bài toán phân loại phi tuyến tính bằng cách ánh xạ dữ liệu vào một không gian đặc trưng có chiều cao hơn (thậm chí vô hạn) mà không cần tính toán tường minh các tọa độ trong không gian mới. Thay vào đó, nó sử dụng một hàm kernel để tính tích vô hướng giữa các vector trong không gian đặc trưng đó, giúp giải quyết vấn đề chiều dữ liệu lớn một cách hiệu quả."
+        },
+        {
+            "question": "Phương pháp 'Một-chống-phần còn lại' (One-vs-Rest) trong SVM hoạt động như thế nào để giải quyết bài toán phân loại đa lớp?",
+            "answer": "Huấn luyện k bộ phân loại nhị phân, mỗi bộ phân biệt một lớp với tất cả các lớp còn lại.",
+            "distractors": [
+                "Huấn luyện một bộ phân loại duy nhất có k đầu ra.",
+                "Huấn luyện k(k-1)/2 bộ phân loại nhị phân, mỗi bộ phân biệt một cặp lớp.",
+                "Sử dụng một cây quyết định để phân loại các lớp."
+            ],
+            "explanation": "Trong phương pháp 'Một-chống-phần còn lại' (One-vs-Rest hay One-vs-All), nếu có k lớp, chúng ta sẽ huấn luyện k bộ phân loại nhị phân. Mỗi bộ phân loại được huấn luyện để phân biệt một lớp cụ thể (ví dụ: lớp 1) với tất cả các lớp còn lại (lớp 2, 3, ..., k). Khi dự đoán, lớp có điểm số cao nhất từ các bộ phân loại sẽ được chọn."
+        },
+        {
+            "question": "Bài toán tối ưu hóa biên cứng (primal problem) của SVM có dạng như thế nào?",
+            "answer": "Tối thiểu hóa 1/2 ||w||^2 với ràng buộc y_i(w^T x_i + b) >= 1.",
+            "distractors": [
+                "Tối đa hóa 1/2 ||w||^2 với ràng buộc y_i(w^T x_i + b) <= 1.",
+                "Tối thiểu hóa tổng lỗi phân loại với ràng buộc ||w||^2 <= C.",
+                "Tối đa hóa biên với ràng buộc ||w||^2 = 1."
+            ],
+            "explanation": "Bài toán tối ưu hóa biên cứng của SVM là một bài toán lập trình bậc hai (Quadratic Programming). Mục tiêu là tối thiểu hóa 1/2 ||w||^2 (tương đương với tối đa hóa biên 2/||w||) với các ràng buộc y_i(w^T x_i + b) >= 1, đảm bảo rằng tất cả các điểm dữ liệu được phân loại đúng và nằm ngoài biên."
+        },
+        {
+            "question": "Điểm khác biệt chính giữa SVM biên cứng (Hard Margin SVM) và SVM biên mềm (Soft Margin SVM) là gì?",
+            "answer": "SVM biên mềm cho phép một số điểm dữ liệu nằm sai phía của biên hoặc thậm chí sai phía của siêu phẳng phân tách, sử dụng biến slack và tham số C để điều hòa.",
+            "distractors": [
+                "SVM biên cứng chỉ áp dụng cho dữ liệu phân tách tuyến tính, trong khi SVM biên mềm áp dụng cho dữ liệu phi tuyến tính.",
+                "SVM biên cứng sử dụng Kernel Trick, còn SVM biên mềm thì không.",
+                "SVM biên cứng tối ưu hóa biên, còn SVM biên mềm tối ưu hóa độ chính xác."
+            ],
+            "explanation": "SVM biên cứng yêu cầu dữ liệu phải phân tách tuyến tính hoàn hảo và không cho phép bất kỳ điểm dữ liệu nào nằm trong biên hoặc sai phía siêu phẳng. Ngược lại, SVM biên mềm được thiết kế để xử lý dữ liệu không phân tách tuyến tính hoặc có nhiễu bằng cách cho phép một mức độ vi phạm biên nhất định thông qua việc giới thiệu các biến slack (ξ_i) và tham số điều hòa C, cân bằng giữa việc tối đa hóa biên và giảm thiểu lỗi phân loại."
+        },
+        {
+            "question": "So với Gradient Descent và Normal Equation, bài toán tối ưu hóa SVM (biên cứng và biên mềm) thường được giải quyết bằng phương pháp nào?",
+            "answer": "Lập trình bậc hai (Quadratic Programming - QP).",
+            "distractors": [
+                "Phương pháp bình phương nhỏ nhất (Least Squares Method).",
+                "Thuật toán di truyền (Genetic Algorithm).",
+                "Phương pháp Newton-Raphson."
+            ],
+            "explanation": "Bài toán tối ưu hóa SVM, đặc biệt là trong dạng đối ngẫu (dual problem), có cấu trúc là một bài toán Lập trình bậc hai (Quadratic Programming - QP). Các thuật toán chuyên biệt cho QP được sử dụng để tìm ra các trọng số w và bias b tối ưu, khác với Gradient Descent (phương pháp lặp) hay Normal Equation (giải pháp đóng) thường dùng trong Hồi quy tuyến tính."
+        },
+        {
+            "question": "Làm thế nào Kernel Trick trong SVM giúp giải quyết 'Lời nguyền của chiều dữ liệu' (Curse of Dimensionality)?",
+            "answer": "Nó cho phép xử lý dữ liệu trong không gian đặc trưng cao chiều mà không cần tính toán tường minh các vector đặc trưng, tránh được sự thưa thớt dữ liệu và chi phí tính toán cao.",
+            "distractors": [
+                "Nó giảm số lượng chiều của dữ liệu trước khi huấn luyện mô hình.",
+                "Nó chỉ chọn các đặc trưng quan trọng nhất để tránh chiều dữ liệu cao.",
+                "Nó biến đổi dữ liệu thành một không gian có chiều thấp hơn, nơi dữ liệu trở nên dày đặc hơn."
+            ],
+            "explanation": "'Lời nguyền của chiều dữ liệu' đề cập đến việc dữ liệu trở nên thưa thớt một cách đáng kể khi số chiều tăng lên, gây khó khăn cho việc học và tổng quát hóa. Kernel Trick giải quyết vấn đề này bằng cách cho phép SVM hoạt động hiệu quả trong không gian đặc trưng cao chiều (nơi dữ liệu có thể phân tách tuyến tính) mà không cần phải tính toán tường minh các tọa độ của dữ liệu trong không gian đó. Điều này tránh được chi phí tính toán khổng lồ và vấn đề thưa thớt dữ liệu liên quan đến việc biểu diễn tường minh trong không gian chiều cao."
+        }
+    ]
+}

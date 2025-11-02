@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "question": "Nguyên tắc chính mà Stack tuân theo là gì?",
+      "answer": "LIFO (Last In, First Out)",
+      "distractors": [
+        "FIFO (First In, First Out)",
+        "LILO (Last In, Last Out)",
+        "LIFO chỉ áp dụng cho hàng đợi (Queue)"
+      ],
+      "explanation": "Câu trả lời đúng cho câu hỏi này là \"LIFO (Last In, First Out)\" vì nguyên tắc chính của kiểu dữ liệu Stack là phần tử được thêm vào cuối cùng sẽ được lấy ra đầu tiên. Điều này có nghĩa là khi bạn thực hiện thao tác \"pop\" trên Stack, bạn sẽ nhận được phần tử mà bạn đã \"push\" vào gần đây nhất. Nguyên tắc này rất quan trọng trong việc quản lý dữ liệu, đặc biệt trong các ứng dụng như quản lý bộ nhớ và xử lý các hàm đệ quy.\n\nGiờ đây, hãy xem xét các yếu tố gây nhiễu:\n\n- **FIFO (First In, First Out)**: Đây là nguyên tắc của kiểu dữ liệu Queue, không phải Stack. Trong Queue, phần tử được thêm vào đầu tiên sẽ được lấy ra đầu tiên, điều này hoàn toàn trái ngược với nguyên tắc LIFO của Stack.\n\n- **LILO (Last In, Last Out)**: Đây không phải là một nguyên tắc chính thức trong cấu trúc dữ liệu. LILO sẽ có nghĩa là phần tử được thêm vào cuối cùng sẽ được lấy ra cuối cùng, điều này không phản ánh đúng cách hoạt động của Stack, nơi mà phần tử cuối cùng được thêm vào sẽ là phần tử đầu tiên được lấy ra.\n\n- **LIFO chỉ áp dụng cho hàng đợi (Queue)**: Đây là một sự nhầm lẫn lớn. LIFO là nguyên tắc đặc trưng cho Stack, trong khi Queue tuân theo nguyên tắc FIFO. Do đó, việc nói rằng LIFO áp dụng cho hàng đợi là hoàn toàn sai.\n\nTóm lại, LIFO là nguyên tắc chính của Stack, trong khi các yếu tố gây nhiễu đều không chính xác vì chúng không phản ánh đúng cách hoạt động của Stack hoặc nhầm lẫn giữa các kiểu dữ liệu khác nhau.",
+      "topic": {
+        "name": "Kiểu dữ liệu Stack và Queue",
+        "description": "Tìm hiểu về hai kiểu dữ liệu cơ bản: Stack và Queue. Chủ đề này bao gồm nguyên tắc LIFO và FIFO, cũng như các thao tác chủ yếu như push, pop, enqueue và dequeue. Học sinh sẽ có thể so sánh và phân biệt giữa hai loại cấu trúc dữ liệu này thông qua câu hỏi trắc nghiệm.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.85,
+        "bloom_taxonomy_level": "Nhớ"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi so sánh hai cách triển khai Stack là danh sách liên kết và mảng, yếu tố nào là ưu điểm của danh sách liên kết so với mảng trong ngữ cảnh thao tác chèn và xóa phần tử?",
+      "answer": "Chèn và xóa phần tử có thể thực hiện nhanh chóng mà không cần dịch chuyển các phần tử khác.",
+      "distractors": [
+        "Chèn và xóa phần tử trong mảng nhanh hơn danh sách liên kết.",
+        "Danh sách liên kết yêu cầu nhiều bộ nhớ hơn so với mảng.",
+        "Mảng cho phép chèn và xóa phần tử mà không cần thay đổi kích thước."
+      ],
+      "explanation": "Câu trả lời đúng là \"Chèn và xóa phần tử có thể thực hiện nhanh chóng mà không cần dịch chuyển các phần tử khác\" vì trong danh sách liên kết, các thao tác chèn và xóa chỉ yêu cầu thay đổi các liên kết giữa các nút mà không cần phải dịch chuyển các phần tử khác. Điều này giúp tiết kiệm thời gian và tài nguyên, đặc biệt khi thao tác với các phần tử ở giữa hoặc đầu danh sách.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Chèn và xóa phần tử trong mảng nhanh hơn danh sách liên kết**: Điều này không chính xác vì trong mảng, để chèn hoặc xóa một phần tử, bạn cần phải dịch chuyển các phần tử khác để duy trì thứ tự, điều này có thể tốn thời gian hơn so với việc chỉ thay đổi các liên kết trong danh sách liên kết.\n- **Danh sách liên kết yêu cầu nhiều bộ nhớ hơn so với mảng**: Mặc dù danh sách liên kết có thể yêu cầu nhiều bộ nhớ hơn do cần lưu trữ các con trỏ, nhưng điều này không liên quan đến ưu điểm của danh sách liên kết trong việc chèn và xóa. Hơn nữa, mảng có thể lãng phí bộ nhớ nếu không sử dụng hết kích thước đã cấp phát.\n- **Mảng cho phép chèn và xóa phần tử mà không cần thay đổi kích thước**: Điều này không chính xác vì mặc dù mảng có thể không cần thay đổi kích thước ngay lập tức, nhưng việc chèn và xóa vẫn yêu cầu dịch chuyển các phần tử khác trong mảng, điều này làm cho thao tác trở nên chậm hơn so với danh sách liên kết.\n\nTóm lại, danh sách liên kết có ưu điểm rõ ràng trong việc chèn và xóa phần tử mà không cần dịch chuyển các phần tử khác, trong khi các yếu tố gây nhiễu đều không chính xác trong ngữ cảnh này.",
+      "topic": {
+        "name": "So sánh triển khai Stack: Danh sách liên kết và Mảng",
+        "description": "Khám phá những khác biệt và điểm mạnh của hai cách triển khai Stack: danh sách liên kết và mảng cố định. Chủ đề này giúp học sinh hiểu thời gian thao tác và bộ nhớ sử dụng cho mỗi phương pháp, qua đó cải thiện khả năng phân tích lựa chọn triển khai.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.7,
+        "bloom_taxonomy_level": "Phân tích"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong mô hình Stack, thao tác nào được sử dụng để thêm một phần tử vào đỉnh của Stack?",
+      "answer": "push",
+      "distractors": [
+        "pop",
+        "enqueue",
+        "insert"
+      ],
+      "explanation": "Trong mô hình Stack, thao tác \"push\" được sử dụng để thêm một phần tử vào đỉnh của Stack. Khi thực hiện thao tác này, phần tử mới sẽ được đặt lên trên phần tử hiện có ở đỉnh, làm cho nó trở thành phần tử đầu tiên được truy cập trong các thao tác tiếp theo. Điều này phù hợp với nguyên tắc LIFO (Last In, First Out) của Stack, nơi phần tử được thêm vào sau cùng sẽ được lấy ra trước tiên.\n\nCác yếu tố gây nhiễu:\n\n- **Pop**: Đây là thao tác ngược lại với \"push\". Thao tác \"pop\" được sử dụng để loại bỏ phần tử ở đỉnh của Stack, không phải để thêm phần tử. Do đó, \"pop\" không phải là câu trả lời đúng cho câu hỏi về việc thêm phần tử.\n\n- **Enqueue**: Thao tác này liên quan đến hàng đợi (Queue), không phải Stack. \"Enqueue\" được sử dụng để thêm phần tử vào cuối hàng đợi, trong khi Stack chỉ cho phép thêm phần tử ở đỉnh. Vì vậy, \"enqueue\" không phải là thao tác phù hợp cho Stack.\n\n- **Insert**: Mặc dù \"insert\" có thể được sử dụng trong một số cấu trúc dữ liệu khác, nhưng trong ngữ cảnh của Stack, thao tác này không chính xác. \"Insert\" không chỉ định rõ vị trí nào để thêm phần tử, trong khi \"push\" rõ ràng chỉ định việc thêm phần tử vào đỉnh của Stack.\n\nTóm lại, \"push\" là thao tác chính xác để thêm phần tử vào Stack, trong khi các tùy chọn khác đều không phù hợp với chức năng này.",
+      "topic": {
+        "name": "Cách thức hoạt động của thao tác 'push' và 'pop'",
+        "description": "Chủ đề này sẽ tập trung vào các thao tác 'push' và 'pop' trong mô hình Stack. Học sinh sẽ được yêu cầu mô tả quy trình thực hiện các thao tác này cùng với cấu trúc dữ liệu liên quan, giúp củng cố hiểu biết về cách thức hoạt động bên trong của Stack.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.8,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Khi triển khai Stack bằng danh sách liên kết, thao tác nào có độ phức tạp thời gian tồi tệ nhất là O(n)?",
+      "answer": "Truy cập phần tử ở giữa danh sách liên kết.",
+      "distractors": [
+        "Truy cập phần tử đầu tiên trong danh sách liên kết.",
+        "Thêm một phần tử vào đầu danh sách liên kết.",
+        "Xóa phần tử cuối cùng trong danh sách liên kết."
+      ],
+      "explanation": "Câu trả lời đúng là \"Truy cập phần tử ở giữa danh sách liên kết\" vì để truy cập một phần tử ở giữa danh sách liên kết, chúng ta cần phải duyệt qua từng nút từ đầu danh sách cho đến vị trí mong muốn. Điều này dẫn đến độ phức tạp thời gian tồi tệ nhất là O(n), trong đó n là số lượng phần tử trong danh sách. Ngược lại, các thao tác khác như truy cập phần tử đầu tiên, thêm phần tử vào đầu, và xóa phần tử cuối cùng đều có thể thực hiện trong thời gian O(1) vì chúng không yêu cầu duyệt qua nhiều nút.\n\nGiải thích cho các yếu tố gây nhiễu:\n- **Truy cập phần tử đầu tiên trong danh sách liên kết**: Đây là thao tác có độ phức tạp O(1) vì chúng ta chỉ cần truy cập trực tiếp vào nút đầu tiên mà không cần duyệt qua danh sách.\n- **Thêm một phần tử vào đầu danh sách liên kết**: Thao tác này cũng có độ phức tạp O(1) vì chúng ta chỉ cần tạo một nút mới và thay đổi con trỏ của nút đầu tiên để trỏ đến nút mới.\n- **Xóa phần tử cuối cùng trong danh sách liên kết**: Để xóa phần tử cuối cùng, chúng ta cần duyệt qua toàn bộ danh sách để tìm nút trước nút cuối cùng, dẫn đến độ phức tạp O(n). Tuy nhiên, trong ngữ cảnh của câu hỏi, thao tác này không phải là tồi tệ nhất so với việc truy cập phần tử ở giữa.\n\nTóm lại, chỉ có thao tác truy cập phần tử ở giữa danh sách liên kết có độ phức tạp thời gian tồi tệ nhất là O(n), trong khi các thao tác khác đều có độ phức tạp thấp hơn.",
+      "topic": {
+        "name": "Triển khai Stack bằng danh sách liên kết và hiệu suất",
+        "description": "Tìm hiểu cách triển khai Stack bằng danh sách liên kết và phân tích hiệu suất của các thao tác trong trường hợp xấu nhất. Nội dung giúp học sinh đánh giá độ hiệu quả và tính khả thi của việc dùng danh sách liên kết cho Stack.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Ứng dụng thực tế nào sau đây sử dụng cấu trúc dữ liệu Stack?",
+      "answer": "Chức năng hoàn tác trong các ứng dụng",
+      "distractors": [
+        "Chức năng tìm kiếm trong các ứng dụng",
+        "Chức năng lưu trữ tạm thời dữ liệu",
+        "Chức năng sắp xếp danh sách trong ứng dụng"
+      ],
+      "explanation": "Câu trả lời đúng là \"Chức năng hoàn tác trong các ứng dụng\" vì cấu trúc dữ liệu Stack hoạt động theo nguyên tắc LIFO (Last In, First Out), cho phép lưu trữ và truy xuất các thao tác theo thứ tự ngược lại. Khi người dùng thực hiện một hành động trong ứng dụng, hành động đó được đẩy vào Stack. Khi người dùng muốn hoàn tác, ứng dụng sẽ lấy hành động cuối cùng ra khỏi Stack, giúp khôi phục trạng thái trước đó một cách hiệu quả.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n\n- **Chức năng tìm kiếm trong các ứng dụng**: Tìm kiếm thường sử dụng các cấu trúc dữ liệu như danh sách liên kết hoặc cây, không phải Stack. Stack không hỗ trợ tìm kiếm nhanh chóng vì nó chỉ cho phép truy cập phần tử ở đỉnh.\n\n- **Chức năng lưu trữ tạm thời dữ liệu**: Mặc dù Stack có thể được sử dụng để lưu trữ tạm thời, nhưng nó không phải là ứng dụng chính của nó. Lưu trữ tạm thời thường liên quan đến các cấu trúc dữ liệu khác như hàng đợi hoặc bộ nhớ tạm.\n\n- **Chức năng sắp xếp danh sách trong ứng dụng**: Sắp xếp danh sách thường sử dụng các thuật toán như Quick Sort hoặc Merge Sort, mà không liên quan đến Stack. Stack không có khả năng sắp xếp trực tiếp mà chỉ hỗ trợ thao tác thêm và xóa phần tử.\n\nTóm lại, chức năng hoàn tác là ứng dụng điển hình của Stack, trong khi các tùy chọn khác không phù hợp với nguyên lý hoạt động của cấu trúc dữ liệu này.",
+      "topic": {
+        "name": "Kết nối giữa Stack và ứng dụng thực tế",
+        "description": "Khảo sát ứng dụng thực tế của Stack trong các lĩnh vực như xác thực cú pháp, chức năng hoàn tác trong ứng dụng, và xử lý biểu thức toán học. Học sinh sẽ được yêu cầu kết nối lý thuyết với thực tiễn thông qua các ví dụ cụ thể.",
+        "difficulty_level": "Dễ",
+        "estimated_right_answer_rate": 0.75,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Quy trình nào diễn ra khi stack sử dụng mảng có thể thay đổi kích thước khi đạt đến công suất tối đa?",
+      "answer": "Mảng sẽ được tạo mới với kích thước lớn hơn và các phần tử sẽ được sao chép vào mảng mới.",
+      "distractors": [
+        "Mảng sẽ được giữ nguyên kích thước và không thay đổi khi đạt công suất tối đa.",
+        "Stack sẽ tự động giảm kích thước mảng khi không còn phần tử nào.",
+        "Mảng sẽ bị xóa và không có phần tử nào được sao chép vào mảng mới."
+      ],
+      "explanation": "Câu trả lời đúng là \"Mảng sẽ được tạo mới với kích thước lớn hơn và các phần tử sẽ được sao chép vào mảng mới\" vì khi stack sử dụng mảng có thể thay đổi kích thước và đạt đến công suất tối đa, hệ thống cần mở rộng không gian lưu trữ để có thể chứa thêm các phần tử mới. Quy trình này thường bao gồm việc tạo ra một mảng mới với kích thước lớn hơn (thường gấp đôi kích thước hiện tại) và sau đó sao chép tất cả các phần tử từ mảng cũ sang mảng mới. Điều này giúp duy trì tính liên tục và hiệu suất của stack.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n- \"Mảng sẽ được giữ nguyên kích thước và không thay đổi khi đạt công suất tối đa\": Điều này sai vì nếu mảng không thay đổi kích thước, stack sẽ không thể thêm phần tử mới khi đã đạt công suất tối đa, dẫn đến lỗi tràn bộ nhớ.\n- \"Stack sẽ tự động giảm kích thước mảng khi không còn phần tử nào\": Đây là một hiểu lầm, vì stack thường không tự động giảm kích thước mảng. Việc giảm kích thước chỉ xảy ra trong một số triển khai cụ thể và không phải là hành vi mặc định của stack.\n- \"Mảng sẽ bị xóa và không có phần tử nào được sao chép vào mảng mới\": Điều này không đúng vì nếu mảng bị xóa, tất cả dữ liệu sẽ bị mất. Quy trình resize yêu cầu sao chép các phần tử để đảm bảo dữ liệu không bị mất trong quá trình mở rộng mảng.\n\nTóm lại, câu trả lời đúng phản ánh quy trình cần thiết để duy trì hoạt động của stack, trong khi các yếu tố gây nhiễu đều sai do không phản ánh đúng cách thức hoạt động của mảng có thể thay đổi kích thước trong stack.",
+      "topic": {
+        "name": "Mảng có thể thay đổi kích thước trong Stack",
+        "description": "Chủ đề này giải thích cách thức hoạt động của Stack sử dụng mảng có thể thay đổi kích thước và cách điều chỉnh kích thước mảng phù hợp. Học sinh sẽ phải hiểu quy trình resize và ảnh hưởng của nó đến hiệu suất của Stack.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.65,
+        "bloom_taxonomy_level": "Hiểu"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Tại sao việc sử dụng autoboxing trong Stack tham số hóa được coi là một cách hiệu quả để giảm thiểu lỗi thời gian chạy?",
+      "answer": "Nó tự động chuyển đổi kiểu dữ liệu nguyên thủy sang đối tượng mà không cần ép kiểu thủ công.",
+      "distractors": [
+        "Nó chỉ chuyển đổi các đối tượng phức tạp thành kiểu dữ liệu nguyên thủy.",
+        "Autoboxing không ảnh hưởng đến hiệu suất của Stack tham số hóa.",
+        "Việc sử dụng autoboxing yêu cầu phải ép kiểu thủ công để hoạt động chính xác."
+      ],
+      "explanation": "Câu trả lời đúng \"Nó tự động chuyển đổi kiểu dữ liệu nguyên thủy sang đối tượng mà không cần ép kiểu thủ công.\" là chính xác vì autoboxing cho phép lập trình viên sử dụng các kiểu dữ liệu nguyên thủy (như int, char) như các đối tượng (như Integer, Character) mà không cần phải thực hiện các thao tác ép kiểu thủ công. Điều này giúp giảm thiểu khả năng xảy ra lỗi thời gian chạy do việc quên ép kiểu hoặc ép kiểu sai, từ đó làm cho mã nguồn an toàn và dễ bảo trì hơn.\n\nCác yếu tố gây nhiễu không chính xác như sau:\n- \"Nó chỉ chuyển đổi các đối tượng phức tạp thành kiểu dữ liệu nguyên thủy.\" là sai vì autoboxing thực hiện việc chuyển đổi từ kiểu dữ liệu nguyên thủy sang đối tượng, không phải ngược lại. Nó không liên quan đến việc chuyển đổi các đối tượng phức tạp.\n- \"Autoboxing không ảnh hưởng đến hiệu suất của Stack tham số hóa.\" cũng không chính xác, vì mặc dù autoboxing giúp giảm thiểu lỗi, nhưng nó có thể ảnh hưởng đến hiệu suất do việc tạo ra các đối tượng mới từ kiểu dữ liệu nguyên thủy, dẫn đến việc tiêu tốn bộ nhớ và thời gian xử lý.\n- \"Việc sử dụng autoboxing yêu cầu phải ép kiểu thủ công để hoạt động chính xác.\" là sai hoàn toàn, vì bản chất của autoboxing là tự động hóa quá trình chuyển đổi này, do đó không cần ép kiểu thủ công. Điều này chính là lý do tại sao nó được coi là một tính năng tiện lợi trong lập trình. \n\nTóm lại, câu trả lời đúng phản ánh chính xác chức năng của autoboxing, trong khi các yếu tố gây nhiễu đều chứa thông tin sai lệch về cách thức hoạt động của nó.",
+      "topic": {
+        "name": "Tác động của tự động ép kiểu trong Stack tham số hóa",
+        "description": "Khám phá khái niệm tự động ép kiểu (autoboxing) trong Stack tham số hóa. Học sinh sẽ cần hiểu cách autoboxing giảm thiểu lỗi thời gian chạy và cách áp dụng nó trong các tình huống cụ thể mà không cần ép kiểu thủ công.",
+        "difficulty_level": "Khó",
+        "estimated_right_answer_rate": 0.55,
+        "bloom_taxonomy_level": "Đánh giá"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    },
+    {
+      "question": "Trong thuật toán hai Stack của Dijkstra để đánh giá biểu thức số học, khi nào ta nên sử dụng stack giá trị và khi nào sử dụng stack toán tử?",
+      "answer": "Sử dụng stack giá trị khi gặp số và stack toán tử khi gặp toán tử.",
+      "distractors": [
+        "Sử dụng stack toán tử khi gặp số và stack giá trị khi gặp toán tử.",
+        "Sử dụng stack giá trị cho cả số và toán tử.",
+        "Sử dụng stack toán tử cho các biểu thức không có toán tử."
+      ],
+      "explanation": "Câu trả lời đúng \"Sử dụng stack giá trị khi gặp số và stack toán tử khi gặp toán tử\" là chính xác vì trong thuật toán hai stack của Dijkstra, stack giá trị được sử dụng để lưu trữ các số (giá trị) trong biểu thức, trong khi stack toán tử được dùng để lưu trữ các toán tử (như +, -, *, /). Khi gặp một số, nó sẽ được đẩy vào stack giá trị để có thể thực hiện các phép toán sau này. Ngược lại, khi gặp một toán tử, nó sẽ được đẩy vào stack toán tử để có thể thực hiện phép toán với các giá trị đã được lưu trữ.\n\nGiải thích về các yếu tố gây nhiễu:\n- **Sử dụng stack toán tử khi gặp số và stack giá trị khi gặp toán tử**: Tùy chọn này sai vì nếu sử dụng stack toán tử cho số, chúng ta sẽ không thể thực hiện các phép toán đúng cách, dẫn đến kết quả sai. Số cần phải được lưu trữ trong stack giá trị để có thể truy cập và sử dụng khi cần.\n  \n- **Sử dụng stack giá trị cho cả số và toán tử**: Tùy chọn này cũng sai vì toán tử cần phải được lưu trữ trong stack toán tử để có thể thực hiện các phép toán đúng thứ tự. Nếu tất cả đều được lưu trong stack giá trị, chúng ta sẽ không thể phân biệt giữa các giá trị và toán tử, gây khó khăn trong việc thực hiện các phép toán.\n\n- **Sử dụng stack toán tử cho các biểu thức không có toán tử**: Tùy chọn này không chính xác vì nếu biểu thức không có toán tử, không cần thiết phải sử dụng stack toán tử. Chúng ta chỉ cần lưu trữ các giá trị trong stack giá trị. Việc sử dụng stack toán tử trong trường hợp này là không cần thiết và không hợp lý. \n\nTóm lại, việc phân biệt rõ ràng giữa stack giá trị và stack toán tử là rất quan trọng trong thuật toán hai stack của Dijkstra để đảm bảo việc đánh giá biểu thức số học diễn ra chính xác.",
+      "topic": {
+        "name": "Thuật toán hai stack của Dijkstra để đánh giá biểu thức số học",
+        "description": "Nắm vững công nghệ đánh giá biểu thức số học qua thuật toán dùng hai Stack. Học sinh sẽ được giới thiệu từng bước trong thuật toán và cần phản ánh hiểu biết của mình qua các tình huống cụ thể liên quan đến toán tử và giá trị.",
+        "difficulty_level": "Trung bình",
+        "estimated_right_answer_rate": 0.6,
+        "bloom_taxonomy_level": "Áp dụng"
+      },
+      "week_number": 1,
+      "course_code": "dsa2025"
+    }
+  ]
+}

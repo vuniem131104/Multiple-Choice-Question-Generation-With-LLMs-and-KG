@@ -1,0 +1,32 @@
+{
+    "week_number": 4,
+    "total_questions": 8,
+    "pipeline_wins": 8,
+    "baseline_wins": 0,
+    "ties": 0,
+    "percentage_pipeline_wins": "100.00%",
+    "percentage_baseline_wins": "0.00%",
+    "percentage_ties": "0.00%",
+    "average_scores": {
+        "relevance": {
+            "pipeline": "0.9750",
+            "baseline": "0.8750"
+        },
+        "clarity": {
+            "pipeline": "0.9375",
+            "baseline": "0.8625"
+        },
+        "distractor_plausibility": {
+            "pipeline": "0.8500",
+            "baseline": "0.6625"
+        },
+        "difficulty": {
+            "pipeline": "0.8875",
+            "baseline": "0.7875"
+        },
+        "bloom_level_appropriateness": {
+            "pipeline": "0.9250",
+            "baseline": "0.8125"
+        }
+    }
+}

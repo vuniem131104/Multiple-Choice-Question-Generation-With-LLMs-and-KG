@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Đường đi ngắn nhất trong đồ thị có trọng số",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant and clear, and appropriately test the 'Nhớ' Bloom level. The Pipeline question's distractors (Bellman-Ford, Prim, Floyd-Warshall) are all valid algorithms related to graph theory, making them more plausible and challenging than the Baseline's distractors, which include 'đường đi không có trọng số' which is less plausible in the context of weighted graphs."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Biến thể của bài toán đường đi ngắn nhất",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is more specific to the topic 'Biến thể của bài toán đường đi ngắn nhất' by asking about algorithms for graphs with positive weights, which is a common variation. The Baseline question is too general, simply asking about 'đồ thị có trọng số' without specifying conditions, making it less aligned with the 'biến thể' aspect of the topic. Pipeline's distractors are also slightly more relevant to the specific condition."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Phương pháp thư giãn cạnh",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.6,
+                "distractor_plausibility": 0.4,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the 'Phương pháp thư giãn cạnh' by asking what action to take when a shorter path is found, which aligns perfectly with the 'Áp dụng' Bloom level. The Baseline question is completely off-topic, asking about a 'biến thể của bài toán đường đi ngắn nhất' with a specific constraint, which has no relation to 'phương pháp thư giãn cạnh'. This makes the Baseline question irrelevant and its Bloom level inappropriate."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Thuật toán Dijkstra trong đồ thị có trọng số",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "winner": "tie",
+            "rationale": "Both questions are excellent, highly relevant, clear, and appropriately test the 'Hiểu' Bloom level for Dijkstra's algorithm. The Pipeline question focuses on the problem Dijkstra solves, while the Baseline focuses on the purpose of edge relaxation within Dijkstra. Both are fundamental aspects of understanding the algorithm. The distractors are plausible for both."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "API đồ thị có trọng số và cách sử dụng",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly aligned with the topic 'API đồ thị có trọng số và cách sử dụng', asking about the primary function of such an API. It is clear, relevant, and tests the 'Nhớ' level appropriately. The Baseline question is completely off-topic, asking about conditions for Bellman-Ford, which has no relation to graph APIs. This makes the Baseline question irrelevant and its Bloom level inappropriate for the given topic."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "So sánh thuật toán Dijkstra và Bellman-Ford",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.9,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "Both questions are highly relevant and clear, and appropriately test the 'Phân tích' Bloom level by comparing Dijkstra and Bellman-Ford. The Pipeline question is slightly better because it explicitly asks for the 'điểm khác biệt chính' regarding negative weights, which is a core distinction. Its distractors are also very well-formulated to test a nuanced understanding. The Baseline question is good but slightly less specific in its comparison aspect."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "Ứng dụng phát hiện chênh lệch giá trong đồ thị",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question is perfectly aligned with the topic 'Ứng dụng phát hiện chênh lệch giá trong đồ thị' by asking which algorithm is used for detecting negative cycles (arbitrage). It is clear, relevant, and tests the 'Áp dụng' level appropriately. The Baseline question is completely off-topic, asking about topological sort, which has no direct relevance to detecting price differences or negative cycles. This makes the Baseline question irrelevant and its Bloom level inappropriate for the given topic."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Kết nối đường đi ngắn nhất và thuật toán sắp xếp tô pô",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.3,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.5,
+                "bloom_level_appropriateness": 0.3
+            },
+            "winner": "pipeline",
+            "rationale": "The Pipeline question directly addresses the connection between topological sort and shortest paths in DAGs, asking about the first step, which is highly relevant and tests the 'Phân tích' level. The Baseline question is completely off-topic, asking about an application of Bellman-Ford in economics, which belongs to a different topic (arbitrage detection) and does not connect to topological sort. This makes the Baseline question irrelevant and its Bloom level inappropriate for the given topic."
+        }
+    ]
+}
