@@ -1,1652 +1,1652 @@
 [
-    {
-        "question": "Đặc điểm nào sau đây là của một thuật toán hiệu quả?",
-        "options": {
-            "A": "Sử dụng thời gian CPU tối thiểu",
-            "B": "Sử dụng bộ nhớ tối thiểu",
-            "C": "Dễ triển khai",
-            "D": "Tất cả các đáp án trên"
-        },
-        "answer": "Tất cả các đáp án trên",
-        "explanation": "Một thuật toán hiệu quả được đặc trưng bởi việc sử dụng tối thiểu tài nguyên, bao gồm thời gian CPU và bộ nhớ, cũng như dễ dàng triển khai."
-    },
-    {
-        "question": "Quá trình chia một bài toán phức tạp thành các phần nhỏ hơn, dễ quản lý hơn gọi là gì?",
-        "options": {
-            "A": "Phân rã (Decomposition)",
-            "B": "Trừu tượng hóa (Abstraction)",
-            "C": "Đóng gói (Encapsulation)",
-            "D": "Kế thừa (Inheritance)"
-        },
-        "answer": "Phân rã (Decomposition)",
-        "explanation": "Phân rã là quá trình chia một bài toán phức tạp thành các phần nhỏ hơn, dễ quản lý hơn, giúp giải quyết vấn đề một cách hiệu quả hơn."
-    },
-    {
-        "question": "Mục đích chính của mã giả (pseudocode) là gì?",
-        "options": {
-            "A": "Ghi chép thuật toán bằng ngôn ngữ tự nhiên",
-            "B": "Biên dịch và thực thi thuật toán",
-            "C": "Gỡ lỗi mã nguồn",
-            "D": "Tối ưu hóa thuật toán"
-        },
-        "answer": "Ghi chép thuật toán bằng ngôn ngữ tự nhiên",
-        "explanation": "Mã giả được dùng để ghi chép thuật toán theo cách dễ hiểu cho con người, thể hiện luồng hoạt động mà không cần quan tâm tới cú pháp của ngôn ngữ lập trình."
-    },
-    {
-        "question": "Trong phân tích thuật toán, độ phức tạp tiệm cận (asymptotic complexity) đề cập đến điều gì?",
-        "options": {
-            "A": "Độ phức tạp trong trường hợp tốt nhất",
-            "B": "Độ phức tạp trong trường hợp xấu nhất",
-            "C": "Độ phức tạp trong trường hợp trung bình",
-            "D": "Hành vi của thuật toán khi kích thước đầu vào tăng"
-        },
-        "answer": "Hành vi của thuật toán khi kích thước đầu vào tăng",
-        "explanation": "Độ phức tạp tiệm cận mô tả hành vi của thuật toán khi kích thước đầu vào tăng, thường được biểu diễn bằng ký hiệu Big O để chỉ giới hạn trên của thời gian chạy trong trường hợp xấu nhất."
-    },
-    {
-        "question": "Mã giả sau sẽ cho kết quả gì khi đầu vào là 5?\nfunction factorial(n): if n == 1 return 1 else return n * factorial(n-1)",
-        "options": {
-            "A": "5",
-            "B": "24",
-            "C": "120",
-            "D": "Không có đáp án nào ở trên"
-        },
-        "answer": "120",
-        "explanation": "Mã giả định nghĩa một hàm đệ quy để tính giai thừa. Với đầu vào 5, hàm tính 5*4*3*2*1 = 120."
-    },
-    {
-        "question": "Xét thuật toán sau để tính số Fibonacci thứ n: function fib(n):\nif n <= 1 return n else return fib(n-1) + fib(n-2). Độ phức tạp thời gian của thuật toán này là gì?",
-        "options": {
-            "A": "O(n)",
-            "B": "O(log n)",
-            "C": "O(n^2)",
-            "D": "O(2^n)"
-        },
-        "answer": "O(2^n)",
-        "explanation": "Thuật toán đệ quy cho Fibonacci ở trên có độ phức tạp theo cấp số mũ O(2^n), vì nó gọi đệ quy hai lần cho mỗi trường hợp không phải cơ sở."
-    },
-    {
-        "question": "Một thuật toán được cho là tính tổng các số từ 1 tới n nhưng trả về giá trị lớn hơn mong đợi. Sai lầm có khả năng nhất là gì?",
-        "options": {
-            "A": "Bắt đầu vòng lặp từ 0",
-            "B": "Không khởi tạo biến tổng",
-            "C": "Cộng n hai lần",
-            "D": "Tất cả các trường hợp trên"
-        },
-        "answer": "Cộng n hai lần",
-        "explanation": "Nếu thuật toán cộng số cuối cùng n hai lần thì tổng sẽ lớn hơn mong đợi. Cần đảm bảo mỗi số chỉ được cộng đúng một lần."
-    },
-    {
-        "question": "Cho một thuật toán luôn trả về phần tử đầu tiên trong một danh sách đã sắp xếp thay vì phần tử nhỏ nhất, vấn đề có thể là gì?",
-        "options": {
-            "A": "Thuật toán giả định sai rằng phần tử đầu tiên là nhỏ nhất",
-            "B": "Danh sách chưa được sắp xếp đúng cách",
-            "C": "Một vòng lặp lặp sai",
-            "D": "Tất cả các trường hợp trên"
-        },
-        "answer": "Thuật toán giả định sai rằng phần tử đầu tiên là nhỏ nhất",
-        "explanation": "Trong một danh sách đã sắp xếp, phần tử nhỏ nhất thường là phần tử đầu tiên; nhưng nếu mục tiêu là tìm phần tử nhỏ nhất trong bất kỳ danh sách nào thì việc mặc định phần tử đầu tiên là nhỏ nhất mà không so sánh hoặc sắp xếp là sai."
-    },
-    {
-        "question": "Ký hiệu Big O nào biểu diễn độ phức tạp thời gian hằng số?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(1)",
-        "explanation": "Độ phức tạp thời gian hằng số O(1) nghĩa là thời gian thực thi không đổi bất kể kích thước đầu vào."
-    },
-    {
-        "question": "Đối với tìm kiếm tuyến tính trong một mảng chưa sắp xếp gồm n phần tử, độ phức tạp trung bình là bao nhiêu?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Độ phức tạp trung bình của tìm kiếm tuyến tính là O(n), vì trung bình có thể phải kiểm tra một nửa các phần tử để tìm mục tiêu."
-    },
-    {
-        "question": "Ký hiệu O(n^2) biểu thị điều gì về tốc độ tăng trưởng của thuật toán?",
-        "options": {
-            "A": "Tăng trưởng tuyến tính",
-            "B": "Tăng trưởng bậc hai (quadratic)",
-            "C": "Tăng trưởng logarithmic",
-            "D": "Tăng trưởng theo cấp số (exponential)"
-        },
-        "answer": "Tăng trưởng bậc hai (quadratic)",
-        "explanation": "O(n^2) nghĩa là thời gian chạy tăng tỷ lệ với bình phương kích thước đầu vào, gọi là tăng trưởng bậc hai."
-    },
-    {
-        "question": "Trong ký hiệu Big O, O(log n) thường biểu diễn điều gì?",
-        "options": {
-            "A": "Độ phức tạp thời gian của tìm kiếm nhị phân",
-            "B": "Độ phức tạp thời gian của tìm kiếm tuyến tính",
-            "C": "Độ phức tạp không gian của các thuật toán sắp xếp",
-            "D": "Độ phức tạp không gian của hashing"
-        },
-        "answer": "Độ phức tạp thời gian của tìm kiếm nhị phân",
-        "explanation": "O(log n) thường biểu diễn độ phức tạp của các thuật toán chia vấn đề làm đôi ở mỗi bước, như tìm kiếm nhị phân."
-    },
-    {
-        "question": "Mô tả nào sau đây đúng nhất về độ phức tạp khi chèn một phần tử vào cây tìm kiếm nhị phân?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(log n)",
-            "C": "O(n)",
-            "D": "O(n log n)"
-        },
-        "answer": "O(log n)",
-        "explanation": "Trong trường hợp trung bình, chèn một phần tử vào cây tìm kiếm nhị phân có độ phức tạp O(log n), giả sử cây được cân bằng."
-    },
-    {
-        "question": "Độ phức tạp thời gian trong trường hợp xấu nhất của quicksort là gì?",
-        "options": {
-            "A": "O(n log n)",
-            "B": "O(n)",
-            "C": "O(n^2)",
-            "D": "O(log n)"
-        },
-        "answer": "O(n^2)",
-        "explanation": "Trường hợp xấu nhất của quicksort là O(n^2), xảy ra khi việc chọn pivot kém (ví dụ luôn chọn phần tử nhỏ nhất hoặc lớn nhất) dẫn đến phân hoạch mất cân bằng."
-    },
-    {
-        "question": "So sánh độ phức tạp không gian giữa giải pháp lặp và giải pháp đệ quy cho cùng một bài toán như thế nào?",
-        "options": {
-            "A": "Giải pháp lặp luôn sử dụng nhiều không gian hơn",
-            "B": "Giải pháp đệ quy luôn sử dụng nhiều không gian hơn",
-            "C": "Phụ thuộc vào bài toán cụ thể",
-            "D": "Chúng sử dụng cùng một lượng không gian"
-        },
-        "answer": "Phụ thuộc vào bài toán cụ thể",
-        "explanation": "So sánh phụ thuộc vào bài toán và cách triển khai: trong một số trường hợp đệ quy dùng nhiều stack hơn, trong khi lặp có thể dùng nhiều bộ nhớ heap hơn."
-    },
-    {
-        "question": "Độ phức tạp thời gian của đoạn mã sau là gì?\nfor i in range(n):\nprint(i)",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Đoạn mã thực hiện in n lần (từ 0 đến n-1), nên độ phức tạp là O(n)."
-    },
-    {
-        "question": "Cho đoạn mã sau: for i in range(n):\nfor j in range(n):\nprint(i, j)\nĐộ phức tạp thời gian là gì?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(n log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n^2)",
-        "explanation": "Vòng lặp lồng nhau tạo ra n*n lần thực thi, do đó độ phức tạp là O(n^2)."
-    },
-    {
-        "question": "Phân tích độ phức tạp của hàm sau: def func(n):\nif n <= 1:\n    return\nelse:\n    func(n/2) + func(n/2)",
-        "options": {
-            "A": "O(n)",
-            "B": "O(log n)",
-            "C": "O(n^2)",
-            "D": "O(n log n)"
-        },
-        "answer": "O(n log n)",
-        "explanation": "Hàm này gọi hai lần chính nó với n/2; theo mô tả gốc, đáp án đưa ra là O(n log n)."
-    },
-    {
-        "question": "Một thuật toán được kỳ vọng chạy ở O(n log n) nhưng chạy chậm hơn nhiều. Nguyên nhân có khả năng là gì?",
-        "options": {
-            "A": "Trường hợp cơ sở (base case) trong đệ quy sai",
-            "B": "Cấp phát bộ nhớ quá nhiều",
-            "C": "Chọn pivot kém trong thuật toán sắp xếp",
-            "D": "Tất cả các trường hợp trên"
-        },
-        "answer": "Chọn pivot kém trong thuật toán sắp xếp",
-        "explanation": "Chọn pivot không tốt (ví dụ trong quicksort) có thể làm giảm hiệu năng xuống O(n^2), chậm hơn nhiều so với O(n log n) kỳ vọng."
-    },
-    {
-        "question": "Một hàm được thiết kế là O(n) nhưng chạy chậm hơn khi n tăng. Điều gì có thể bị bỏ sót?",
-        "options": {
-            "A": "Vòng lặp lồng nhau",
-            "B": "Các hệ số hằng số",
-            "C": "Các phép toán tuyến tính",
-            "D": "Không có điều nào ở trên"
-        },
-        "answer": "Vòng lặp lồng nhau",
-        "explanation": "Vòng lặp lồng nhau có thể vô tình làm tăng độ phức tạp thời gian, khiến hàm từ O(n) thành O(n^2) hoặc hơn."
-    },
-    {
-        "question": "Một thuật toán đệ quy dự kiến có độ phức tạp O(log n) nhưng chạy chậm. Vấn đề có khả năng là gì?",
-        "options": {
-            "A": "Không chia đôi đầu vào ở mỗi lần gọi đệ quy",
-            "B": "Điều kiện kết thúc (termination) sai",
-            "C": "Tràn ngăn xếp (stack overflow)",
-            "D": "Tất cả các trường hợp trên"
-        },
-        "answer": "Không chia đôi đầu vào ở mỗi lần gọi đệ quy",
-        "explanation": "Nếu đệ quy không giảm kích thước đầu vào (ví dụ không chia đôi) thì thuật toán sẽ không đạt được O(log n) và sẽ chậm hơn."
-    },
-    {
-        "question": "Cấu trúc dữ liệu nào nên dùng để lưu một dãy ký tự?",
-        "options": {
-            "A": "Mảng (Array)",
-            "B": "Ngăn xếp (Stack)",
-            "C": "Hàng đợi (Queue)",
-            "D": "Đồ thị (Graph)"
-        },
-        "answer": "Mảng (Array)",
-        "explanation": "Mảng là phù hợp để lưu dãy ký tự vì cho phép truy cập theo chỉ số, thuận tiện và hiệu quả khi cần lấy ký tự ở vị trí cụ thể."
-    },
-    {
-        "question": "Độ phức tạp thời gian khi truy cập phần tử trong mảng theo chỉ số là gì?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(1)",
-        "explanation": "Truy cập phần tử theo chỉ số trong mảng là phép toán O(1) vì vị trí được tính trực tiếp."
-    },
-    {
-        "question": "Trong Java, lý do nào sau đây KHÔNG phải là lí do hợp lệ để dùng StringBuilder thay vì nối chuỗi bằng toán tử +?",
-        "options": {
-            "A": "Nó giảm bộ nhớ sử dụng",
-            "B": "Nó nhanh hơn khi nối nhiều chuỗi",
-            "C": "Nó là immutable (bất biến)",
-            "D": "Nó có thể dùng trong môi trường đa luồng"
-        },
-        "answer": "Nó là immutable (bất biến)",
-        "explanation": "StringBuilder là mutable (có thể thay đổi), nên dùng nó giúp tiết kiệm bộ nhớ và nhanh hơn khi nối nhiều chuỗi so với phép cộng chuỗi tạo mới nhiều đối tượng."
-    },
-    {
-        "question": "Trong một mảng số nguyên chưa sắp xếp, độ phức tạp tốt nhất có thể đạt được khi tìm một giá trị cụ thể là gì?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Trong mảng chưa sắp xếp, phải kiểm tra từng phần tử trong trường hợp tổng quát, nên độ phức tạp là O(n)."
-    },
-    {
-        "question": "Xét một mảng ký tự biểu diễn một chuỗi, độ phức tạp không gian để lưu chuỗi này là bao nhiêu?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Không gian cần để lưu chuỗi tỉ lệ với số ký tự n, nên có độ phức tạp O(n)."
-    },
-    {
-        "question": "Trong mảng động (dynamic array), thao tác nào có độ phức tạp kém hơn khi mảng cần mở rộng kích thước?",
-        "options": {
-            "A": "Truy cập phần tử theo chỉ số",
-            "B": "Thêm phần tử vào cuối",
-            "C": "Chèn phần tử vào đầu mảng",
-            "D": "Tìm kiếm một phần tử"
-        },
-        "answer": "Chèn phần tử vào đầu mảng",
-        "explanation": "Chèn ở đầu mảng động khi phải mở rộng kích thước đòi hỏi dịch chuyển tất cả phần tử, nên tốn kém hơn. Thêm ở cuối thường có thời gian trung bình là hằng số do toán học amortized."
-    },
-    {
-        "question": "Kết quả của đoạn mã Python sau là gì?\narr = ['a', 'b', 'c', 'd'];\nprint(arr[1:3])",
-        "options": {
-            "A": "['a', 'b']",
-            "B": "['b', 'c']",
-            "C": "['c', 'd']",
-            "D": "['b', 'c', 'd']"
-        },
-        "answer": "['b', 'c']",
-        "explanation": "Slicing arr[1:3] trong Python bao gồm chỉ số 1 nhưng loại trừ chỉ số 3, nên kết quả là ['b', 'c']."
-    },
-    {
-        "question": "Trong một mảng số nguyên, thao tác nào sau đây KHÔNG làm thay đổi mảng gốc trong JavaScript?",
-        "options": {
-            "A": "arr.sort()",
-            "B": "arr.push(5)",
-            "C": "[...arr, 5]",
-            "D": "arr.pop()"
-        },
-        "answer": "[...arr, 5]",
-        "explanation": "Phép toán [...arr, 5] tạo một mảng mới và không làm thay đổi mảng gốc; các phương thức sort(), push(), pop() thay đổi mảng ban đầu."
-    },
-    {
-        "question": "Kết quả của việc nối hai mảng trong Python bằng toán tử +, với arr1 = [1, 2, 3] và arr2 = [4, 5, 6], là gì?",
-        "options": {
-            "A": "Một mảng mới [1, 2, 3, 4, 5, 6]",
-            "B": "Các mảng gốc bị thay đổi để bao gồm phần tử của nhau",
-            "C": "Lỗi cú pháp",
-            "D": "Không có đáp án nào ở trên"
-        },
-        "answer": "Một mảng mới [1, 2, 3, 4, 5, 6]",
-        "explanation": "Phép cộng hai mảng bằng + trong Python tạo ra một mảng mới chứa phần tử của cả hai mảng theo thứ tự; các mảng gốc không bị thay đổi."
-    },
-    {
-        "question": "Một lập trình viên mong đợi đoạn mã JavaScript sau sẽ cập nhật mảng nhưng nó không hoạt động:\nconst arr = [1, 2, 3]; arr = [4, 5, 6];.\nSai lầm là gì?",
-        "options": {
-            "A": "Cố gắng gán lại một mảng khai báo bằng const",
-            "B": "Cú pháp cập nhật mảng không chính xác",
-            "C": "Sử dụng kiểu dữ liệu sai",
-            "D": "Không có phương án nào ở trên"
-        },
-        "answer": "Cố gắng gán lại một mảng khai báo bằng const",
-        "explanation": "Sai lầm là cố gắng gán lại một mảng khai báo bằng const. Trong JavaScript, const ngăn việc gán lại cho biến arr. Để cập nhật một mảng khai báo bằng const, cần thay đổi (mutate) các phần tử của mảng thay vì gán lại biến." 
-    },
-    {
-        "question": "Tại sao biểu thức string.split('').reverse().join('') trong JavaScript trả về chuỗi đảo ngược?",
-        "options": {
-            "A": "Phương thức split tách chuỗi không chính xác",
-            "B": "Phương thức reverse không hoạt động trên chuỗi",
-            "C": "Phương thức join ghép chuỗi sai cách",
-            "D": "Không có phương án nào ở trên"
-        },
-        "answer": "Không có phương án nào ở trên",
-        "explanation": "split('') tách chuỗi thành một mảng ký tự, reverse() đảo ngược mảng đó tại chỗ, và join('') ghép các ký tự đã đảo lại thành một chuỗi. Các bước này phối hợp với nhau sẽ đảo ngược chuỗi." 
-    },
-    {
-        "question": "Trong chương trình tìm chuỗi dài nhất trong một mảng các chuỗi, kết quả luôn là chuỗi đầu tiên. Lỗi có thể là gì?",
-        "options": {
-            "A": "Không cập nhật biến lưu chuỗi dài nhất bên trong vòng lặp",
-            "B": "Sử dụng toán tử so sánh sai",
-            "C": "Không khởi tạo biến chuỗi dài nhất đúng cách",
-            "D": "Tất cả các phương án ở trên"
-        },
-        "answer": "Không cập nhật biến lưu chuỗi dài nhất bên trong vòng lặp",
-        "explanation": "Nếu chương trình luôn trả về chuỗi đầu tiên, rất có thể biến dùng để lưu chuỗi dài nhất không được cập nhật đúng trong vòng lặp khi so sánh độ dài các chuỗi." 
-    },
-    {
-        "question": "Điểm khác biệt giữa danh sách liên kết đơn (singly linked list) và danh sách liên kết đôi (doubly linked list) là gì?",
-        "options": {
-            "A": "Mỗi nút có một con trỏ trong danh sách liên kết đơn và hai con trỏ trong danh sách liên kết đôi",
-            "B": "Danh sách liên kết đơn nhanh hơn",
-            "C": "Danh sách liên kết đôi không thể có chu trình",
-            "D": "Tất cả các phương án ở trên"
-        },
-        "answer": "Mỗi nút có một con trỏ trong danh sách liên kết đơn và hai con trỏ trong danh sách liên kết đôi",
-        "explanation": "Trong danh sách liên kết đơn, mỗi nút chỉ trỏ tới nút tiếp theo, còn trong danh sách liên kết đôi, mỗi nút có hai con trỏ: một trỏ tới nút trước và một trỏ tới nút sau, giúp thuận tiện trong việc di chuyển hai chiều." 
-    },
-    {
-        "question": "Phép toán nào thường hiệu quả hơn trên danh sách liên kết so với mảng?",
-        "options": {
-            "A": "Truy cập phần tử theo chỉ số",
-            "B": "Thêm phần tử vào cuối",
-            "C": "Chèn phần tử vào đầu danh sách",
-            "D": "Tìm kiếm một phần tử"
-        },
-        "answer": "Chèn phần tử vào đầu danh sách",
-        "explanation": "Chèn phần tử vào đầu danh sách liên kết thường hiệu quả hơn so với mảng vì không cần dịch chuyển các phần tử; chỉ cần cập nhật con trỏ." 
-    },
-    {
-        "question": "Trong những tình huống nào danh sách liên kết KHÔNG phù hợp?",
-        "options": {
-            "A": "Khi các phần tử cần được truy cập theo thứ tự tuần tự",
-            "B": "Khi cần quan tâm tới việc sử dụng bộ nhớ",
-            "C": "Khi cần truy cập phần tử theo chỉ số nhanh chóng",
-            "D": "Khi cần thêm hoặc xóa phần tử thường xuyên"
-        },
-        "answer": "Khi cần truy cập phần tử theo chỉ số nhanh chóng",
-        "explanation": "Danh sách liên kết không cho phép truy cập trực tiếp theo chỉ số, nên không phù hợp với các tình huống cần truy cập ngẫu nhiên nhanh. Chúng thích hợp khi cần thêm/xóa phần tử thường xuyên." 
-    },
-    {
-        "question": "Trong danh sách liên kết, con trỏ head biểu thị điều gì?",
-        "options": {
-            "A": "Nút ở giữa danh sách",
-            "B": "Nút cuối cùng của danh sách",
-            "C": "Nút đầu tiên của danh sách",
-            "D": "Một nút ngẫu nhiên trong danh sách"
-        },
-        "answer": "Nút đầu tiên của danh sách",
-        "explanation": "Con trỏ head biểu thị nút đầu tiên của danh sách, là điểm nhập để duyệt và truy cập các nút khác." 
-    },
-    {
-        "question": "Làm thế nào để phát hiện chu trình trong danh sách liên kết?",
-        "options": {
-            "A": "Bằng cách kiểm tra nếu con trỏ next của bất kỳ nút nào là null",
-            "B": "Sử dụng bảng băm để lưu các nút đã thăm",
-            "C": "So sánh mỗi nút với mọi nút khác",
-            "D": "Sử dụng hai con trỏ với tốc độ khác nhau"
-        },
-        "answer": "Sử dụng hai con trỏ với tốc độ khác nhau",
-        "explanation": "Kỹ thuật hai con trỏ (slow và fast, với fast di chuyển nhanh gấp đôi slow) có thể phát hiện chu trình. Nếu hai con trỏ gặp nhau thì có chu trình; nếu fast đến cuối danh sách thì không có chu trình." 
-    },
-    {
-        "question": "Độ phức tạp thời gian để tìm phần tử giữa trong danh sách liên kết đơn là bao nhiêu?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Tìm phần tử giữa trong danh sách liên kết đơn thường đòi hỏi duyệt khoảng một nửa danh sách trung bình, nên độ phức tạp là O(n)." 
-    },
-    {
-        "question": "Đoạn mã sau thực hiện gì?\nnode.next = node.next.next;",
-        "options": {
-            "A": "Xóa nút kế tiếp trong danh sách",
-            "B": "Chèn một nút mới sau nút hiện tại",
-            "C": "Hoán đổi hai nút",
-            "D": "Nhân bản nút kế tiếp"
-        },
-        "answer": "Xóa nút kế tiếp trong danh sách",
-        "explanation": "Đoạn mã này xóa nút kế tiếp trong danh sách liên kết đơn bằng cách bỏ qua nó: gán con trỏ next của nút hiện tại trỏ tới node sau node kế tiếp, do đó loại bỏ node kế tiếp khỏi danh sách." 
-    },
-    {
-        "question": "Xét một cài đặt danh sách liên kết.\nMục đích của đoạn mã sau là gì?\nhead = newNode;\nnewNode.next = oldHead;",
-        "options": {
-            "A": "Đảo ngược danh sách liên kết",
-            "B": "Thêm một nút mới vào cuối danh sách",
-            "C": "Thêm một nút mới vào đầu danh sách",
-            "D": "Xóa nút head"
-        },
-        "answer": "Thêm một nút mới vào đầu danh sách",
-        "explanation": "Đoạn mã này thêm một nút mới vào đầu danh sách liên kết: gán newNode thành head mới và liên kết newNode.next tới head cũ, chèn nó vào vị trí đầu." 
-    },
-    {
-        "question": "Trong danh sách liên kết đôi, mỗi nút có value, prev và next.\nLàm thế nào để chèn một nút mới sau một nút cho trước?",
-        "options": {
-            "A": "Cập nhật givenNode.next và newNode.prev",
-            "B": "Cập nhật givenNode.next, newNode.next, newNode.prev, và prev của nút kế tiếp",
-            "C": "Chỉ cập nhật newNode.next",
-            "D": "Chỉ cập nhật newNode.prev"
-        },
-        "answer": "Cập nhật givenNode.next, newNode.next, newNode.prev, và prev của nút kế tiếp",
-        "explanation": "Để chèn một nút mới sau một nút cho trước trong danh sách đôi, cần cập nhật next của nút cho trước, prev và next của nút mới, và prev của nút kế tiếp để duy trì liên kết hai chiều." 
-    },
-    {
-        "question": "Phương thức remove trong danh sách liên kết luôn xóa nút thứ hai, bất kể đầu vào là gì. Lỗi có thể là gì?",
-        "options": {
-            "A": "Cập nhật con trỏ không đúng",
-            "B": "Sử dụng toán tử so sánh sai",
-            "C": "Quên kiểm tra danh sách rỗng",
-            "D": "Tất cả các phương án ở trên"
-        },
-        "answer": "Cập nhật con trỏ không đúng",
-        "explanation": "Nếu phương thức remove luôn xóa nút thứ hai, khả năng cao lỗi nằm ở cách cập nhật con trỏ. Điều này cho thấy phương thức không điều hướng đúng tới nút cần xóa và thay vào đó luôn sửa con trỏ của nút đầu hoặc con trỏ next của nó." 
-    },
-    {
-        "question": "Tại sao hàm find trong danh sách liên kết có thể trả về null cho giá trị tồn tại?",
-        "options": {
-            "A": "Logic so sánh sai",
-            "B": "Bắt đầu từ nút sai",
-            "C": "Bỏ qua các nút trong quá trình duyệt",
-            "D": "Bất kỳ lý do nào ở trên"
-        },
-        "answer": "Bất kỳ lý do nào ở trên",
-        "explanation": "Hàm find có thể trả về null do nhiều lỗi: logic so sánh sai, bắt đầu duyệt từ nút không đúng, hoặc vô tình bỏ qua các nút trong quá trình duyệt." 
-    },
-    {
-        "question": "Trong hàm dùng để chèn một nút vào chỉ số cụ thể trong danh sách liên kết, nút lại được thêm vào cuối bất kể chỉ số là gì.\nLỗi là gì?",
-        "options": {
-            "A": "Không duyệt danh sách đúng cách",
-            "B": "Không kiểm tra xem chỉ số có nằm trong phạm vi hợp lệ không",
-            "C": "Cả A và B",
-            "D": "Không có phương án nào ở trên"
-        },
-        "answer": "Cả A và B",
-        "explanation": "Lỗi có thể do không duyệt tới vị trí chỉ số đúng và không kiểm tra ranh giới chỉ số. Kết quả là nút bị thêm vào cuối theo mặc định vì điều kiện chèn tại vị trí đúng không được thỏa mãn." 
-    },
-    {
-        "question": "Cấu trúc dữ liệu nào sử dụng nguyên tắc FIFO (First In, First Out)?",
-        "options": {
-            "A": "Stack (ngăn xếp)",
-            "B": "Queue (hàng đợi)",
-            "C": "Mảng",
-            "D": "Danh sách liên kết"
-        },
-        "answer": "Queue (hàng đợi)",
-        "explanation": "Queue sử dụng nguyên tắc FIFO: phần tử vào trước được lấy ra trước, thường thêm ở một đầu và loại bỏ ở đầu kia." 
-    },
-    {
-        "question": "Sự khác biệt chính giữa stack và queue là gì?",
-        "options": {
-            "A": "Cách lưu trữ dữ liệu",
-            "B": "Cách truy cập dữ liệu",
-            "C": "Giới hạn kích thước",
-            "D": "Độ phức tạp khi triển khai"
-        },
-        "answer": "Cách truy cập dữ liệu",
-        "explanation": "Khác biệt chính là phương thức truy cập: stack theo LIFO (vào sau ra trước), queue theo FIFO (vào trước ra trước)." 
-    },
-    {
-        "question": "Trong hàng đợi, các phép toán tương ứng để thêm và loại bỏ phần tử là gì?",
-        "options": {
-            "A": "push và pop",
-            "B": "enqueue và dequeue",
-            "C": "insert và delete",
-            "D": "add và remove"
-        },
-        "answer": "enqueue và dequeue",
-        "explanation": "Trong hàng đợi, enqueue dùng để thêm phần tử vào cuối, dequeue để loại bỏ phần tử ở đầu hàng." 
-    },
-    {
-        "question": "Ví dụ trong thực tế nào dưới đây là minh họa cho stack?",
-        "options": {
-            "A": "Dòng người xếp chờ mua vé",
-            "B": "Sắp xếp đĩa trong căng tin",
-            "C": "Danh sách phát nhạc",
-            "D": "Hàng đợi tại trạm xe buýt"
-        },
-        "answer": "Sắp xếp đĩa trong căng tin",
-        "explanation": "Sắp xếp đĩa trong căng tin, nơi đĩa đặt sau cùng sẽ được lấy ra trước, minh họa cho nguyên tắc LIFO của stack." 
-    },
-    {
-        "question": "Stack có thể được triển khai bằng cách nào?",
-        "options": {
-            "A": "Sử dụng mảng hoặc danh sách liên kết",
-            "B": "Sử dụng bảng băm",
-            "C": "Sử dụng cây nhị phân",
-            "D": "Sử dụng truy cập bộ nhớ trực tiếp"
-        },
-        "answer": "Sử dụng mảng hoặc danh sách liên kết",
-        "explanation": "Stack có thể được triển khai hiệu quả bằng mảng hoặc danh sách liên kết: thêm/bớt ở đỉnh mảng hoặc đầu danh sách." 
-    },
-    {
-        "question": "Độ phức tạp thời gian để truy cập phần tử đáy của một stack là bao nhiêu?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n)",
-        "explanation": "Truy cập phần tử đáy của stack có độ phức tạp O(n) vì thường phải lấy (hoặc bỏ) các phần tử phía trên trước, giả sử triển khai stack chỉ cho truy cập trực tiếp tới đỉnh." 
-    },
-    {
-        "question": "Phép toán nào dùng để thêm phần tử vào đỉnh của stack?",
-        "options": {
-            "A": "push",
-            "B": "pop",
-            "C": "enqueue",
-            "D": "dequeue"
-        },
-        "answer": "push",
-        "explanation": "Phép push được dùng để thêm phần tử vào đỉnh của stack, theo nguyên tắc LIFO." 
-    },
-    {
-        "question": "Xét một triển khai stack. Phép toán sau thực hiện gì?\nstack.pop()",
-        "options": {
-            "A": "Thêm một phần tử vào stack",
-            "B": "Loại bỏ phần tử ở đỉnh stack",
-            "C": "Xem phần tử đỉnh mà không loại bỏ",
-            "D": "Kiểm tra xem stack có rỗng không"
-        },
-        "answer": "Loại bỏ phần tử ở đỉnh stack",
-        "explanation": "stack.pop() loại bỏ phần tử ở đỉnh stack, tuân theo nguyên tắc LIFO: phần tử vào sau cùng sẽ được lấy ra trước." 
-    },
-    {
-        "question": "Làm thế nào để triển khai hàng đợi bằng hai stack, stack1 và stack2?",
-        "options": {
-            "A": "Bằng cách luân phiên chuyển phần tử giữa stack1 và stack2",
-            "B": "Đẩy phần tử vào stack1 và pop sang stack2 khi dequeue",
-            "C": "Dùng stack1 cho enqueue và stack2 cho dequeue",
-            "D": "Không có phương án nào ở trên"
-        },
-        "answer": "Đẩy phần tử vào stack1 và pop sang stack2 khi dequeue",
-        "explanation": "Để triển khai hàng đợi bằng hai stack, stack1 dùng để enqueue (push). Khi dequeue, nếu stack2 rỗng thì pop các phần tử từ stack1 sang stack2 để đảm bảo phần tử vào trước sẽ nằm ở đỉnh của stack2 và được dequeue trước, giữ nguyên thứ tự FIFO." 
-    },
-    {
-        "question": "Một triển khai hàng đợi trả về phần tử không đúng khi dequeue.\nVấn đề có thể là gì?",
-        "options": {
-            "A": "Phép enqueue đặt phần tử ở phía trước",
-            "B": "Phép dequeue loại bỏ phần tử từ phía sai",
-            "C": "Cả A và B",
-            "D": "Không có phương án nào ở trên"
-        },
-        "answer": "Phép dequeue loại bỏ phần tử từ phía sai",
-        "explanation": "Nếu hàng đợi trả về phần tử không đúng khi dequeue, có khả năng lớn phép dequeue đang loại bỏ phần tử từ đầu/cực sai, không tuân thủ nguyên tắc FIFO." 
-    },
-    {
-        "question": "Trong stack, phép pop đôi khi trả về phần tử đúng và đôi khi trả về null.\nLỗi có thể là gì?",
-        "options": {
-            "A": "Stack không kiểm tra đúng điều kiện underflow",
-            "B": "Phép push hoạt động không nhất quán",
-            "C": "Stack ghi đè các phần tử",
-            "D": "Tất cả các phương án ở trên"
-        },
-        "answer": "Stack không kiểm tra đúng điều kiện underflow",
-        "explanation": "Nếu pop đôi khi trả về null, rất có thể stack không kiểm tra đúng điều kiện underflow (thử loại bỏ phần tử khi stack rỗng)." 
-    },
-    {
-        "question": "Một stack triển khai bằng mảng ném ngoại lệ index out of bounds.\nNguyên nhân có khả năng nhất là gì?",
-        "options": {
-            "A": "Khởi tạo sai kích thước cho stack",
-            "B": "Vượt quá năng lực của stack mà không thay đổi kích thước",
-            "C": "Tính toán chỉ số cho push/pop sai",
-            "D": "Tất cả các phương án ở trên"
-        },
-        "answer": "Vượt quá năng lực của stack mà không thay đổi kích thước",
-        "explanation": "Stack dùng mảng có thể ném ngoại lệ nếu cố thêm nhiều phần tử hơn dung lượng mà không thay đổi kích thước hoặc quản lý biên đúng cách; cần kiểm tra và thay đổi kích thước khi cần." 
-    },
-    {
-        "question": "Tính năng nào phân biệt cây nhị phân (binary tree) với các loại cây khác?",
-        "options": {
-            "A": "Mỗi nút có nhiều nhất hai con",
-            "B": "Mỗi nút có đúng hai con",
-            "C": "Các nút được tổ chức theo dạng nhị phân",
-            "D": "Các nút chứa dữ liệu nhị phân"
-        },
-        "answer": "Mỗi nút có nhiều nhất hai con",
-        "explanation": "Cây nhị phân đặc trưng bởi mỗi nút có tối đa hai con, khác với các loại cây khác có thể cho phép nhiều con hơn." 
-    },
-    {
-        "question": "Trong cây tìm kiếm nhị phân (BST), phần tử nhỏ nhất nằm ở đâu?",
-        "options": {
-            "A": "Nút lá bên trái nhất",
-            "B": "Nút lá bên phải nhất",
-            "C": "Nút gốc nếu cây cân bằng",
-            "D": "Trực tiếp dưới nút gốc nếu cây đầy đủ"
-        },
-        "answer": "Nút lá bên trái nhất",
-        "explanation": "Phần tử nhỏ nhất trong BST nằm ở nút lá bên trái nhất do tính chất BST: các nút bên trái có giá trị nhỏ hơn nút cha." 
-    },
-    {
-        "question": "Sự khác biệt chính giữa đồ thị (graph) và cây (tree) là gì?",
-        "options": {
-            "A": "Cây có chu trình, trong khi đồ thị thì không",
-            "B": "Đồ thị có thể chứa chu trình, trong khi cây thì không",
-            "C": "Cây chỉ có thể có một gốc, trong khi đồ thị có thể có nhiều gốc",
-            "D": "Đồ thị là cấu trúc phân cấp, còn cây thì không"
-        },
-        "answer": "Đồ thị có thể chứa chu trình, trong khi cây thì không",
-        "explanation": "Khác biệt chính là đồ thị có thể có chu trình (các đỉnh có thể nối lại với nhau), trong khi cây là cấu trúc không chu trình và mang tính phân cấp." 
-    },
-    {
-        "question": "Phương pháp duyệt nào được sử dụng để thăm các nút theo từng cấp, từ trái sang phải trong một cây?",
-        "options": {
-            "A": "Tiền tự (Preorder)",
-            "B": "Trung tự (Inorder)",
-            "C": "Hậu tự (Postorder)",
-            "D": "Duyệt theo cấp (Level-order)"
-        },
-        "answer": "Duyệt theo cấp (Level-order)",
-        "explanation": "Duyệt theo cấp thăm các nút từng cấp một từ trái sang phải, hữu ích để hiểu cấu trúc của cây theo từng lớp."
-    },
-    {
-        "question": "Cấu trúc dữ liệu nào phù hợp nhất để triển khai danh sách kề (adjacency list) của một đồ thị?",
-        "options": {
-            "A": "Mảng (Array)",
-            "B": "Danh sách liên kết (Linked list)",
-            "C": "Bảng băm (Hash table)",
-            "D": "Cây (Tree)"
-        },
-        "answer": "Danh sách liên kết (Linked list)",
-        "explanation": "Danh sách liên kết phù hợp để triển khai danh sách kề của đồ thị vì nó quản lý hiệu quả kích thước động của các danh sách kề, cho phép thêm và xóa cạnh một cách dễ dàng."
-    },
-    {
-        "question": "Trong đồ thị có hướng, một cạnh từ nút A đến nút B biểu thị điều gì?",
-        "options": {
-            "A": "Mối quan hệ hai chiều",
-            "B": "Mối quan hệ một chiều từ A đến B",
-            "C": "Mối quan hệ phân cấp",
-            "D": "Mối quan hệ ngang hàng (peer-to-peer)"
-        },
-        "answer": "Mối quan hệ một chiều từ A đến B",
-        "explanation": "Trong đồ thị có hướng, một cạnh từ A tới B biểu thị mối quan hệ một chiều, có đường đi từ A đến B nhưng không nhất thiết ngược lại."
-    },
-    {
-        "question": "Tính chất của cây tìm kiếm nhị phân (BST) cân bằng là gì?",
-        "options": {
-            "A": "Độ cao của cây con bên trái và bên phải chênh lệch tối đa là một",
-            "B": "Mỗi cây con là một cây đầy (full tree)",
-            "C": "Mỗi cây con là một cây hoàn chỉnh (complete binary tree)",
-            "D": "Tất cả các nút lá cùng mức"
-        },
-        "answer": "Độ cao của cây con bên trái và bên phải chênh lệch tối đa là một",
-        "explanation": "BST cân bằng được định nghĩa là độ cao của hai cây con trái và phải của bất kỳ nút nào chênh lệch tối đa một, đảm bảo các phép toán như chèn, xóa và tìm kiếm vẫn hiệu quả."
-    },
-    {
-        "question": "Kết quả khi thực hiện duyệt trung tự (inorder) trên một BST là gì?",
-        "options": {
-            "A": "Một hoán vị ngẫu nhiên của các phần tử trong cây",
-            "B": "Các phần tử của cây được sắp xếp theo thứ tự giảm dần",
-            "C": "Các phần tử của cây được sắp xếp theo thứ tự tăng dần",
-            "D": "Các phần tử theo thứ tự chúng được chèn"
-        },
-        "answer": "Các phần tử của cây được sắp xếp theo thứ tự tăng dần",
-        "explanation": "Duyệt inorder trên BST sẽ thăm các phần tử theo thứ tự tăng dần do quy tắc thăm trái - gốc - phải."
-    },
-    {
-        "question": "Làm thế nào để tìm chiều cao của một cây nhị phân?",
-        "options": {
-            "A": "Đếm số nút con bên trái",
-            "B": "Đếm số nút con bên phải",
-            "C": "Tính độ sâu lớn nhất từ nút gốc đến bất kỳ nút lá nào",
-            "D": "Tính tổng số nút"
-        },
-        "answer": "Tính độ sâu lớn nhất từ nút gốc đến bất kỳ nút lá nào",
-        "explanation": "Chiều cao của cây nhị phân là độ sâu lớn nhất từ gốc đến một nút lá, thường được tính bằng cách đệ quy lấy chiều cao của các cây con và chọn giá trị lớn hơn, cộng một cho nút gốc."
-    },
-    {
-        "question": "Trong lý thuyết đồ thị, một cạnh có trọng số được biểu diễn trong danh sách kề như thế nào?",
-        "options": {
-            "A": "Như một danh sách các cặp đỉnh",
-            "B": "Như một danh sách các đỉnh kèm theo danh sách các cạnh liên quan",
-            "C": "Như một danh sách các tuple, mỗi tuple chứa một đỉnh và trọng số cạnh",
-            "D": "Như một ma trận hai chiều"
-        },
-        "answer": "Như một danh sách các tuple, mỗi tuple chứa một đỉnh và trọng số cạnh",
-        "explanation": "Trong danh sách kề, cạnh có trọng số thường được biểu diễn dưới dạng các tuple, mỗi tuple chứa đỉnh kề và trọng số của cạnh, cho phép lưu trữ chi phí hoặc độ dài của mỗi kết nối."
-    },
-    {
-        "question": "Thuật toán nào có thể dùng để phát hiện chu trình trong đồ thị có hướng?",
-        "options": {
-            "A": "Duyệt theo chiều sâu (DFS)",
-            "B": "Duyệt theo chiều rộng (BFS)",
-            "C": "Thuật toán Kruskal",
-            "D": "Thuật toán Dijkstra"
-        },
-        "answer": "Duyệt theo chiều sâu (DFS)",
-        "explanation": "DFS có thể dùng để phát hiện chu trình trong đồ thị có hướng bằng cách theo dõi các nút đã thăm và kiểm tra các cạnh quay lại (back edges), khi gặp lại một nút trong cùng đường đi sẽ biểu thị có chu trình."
-    },
-    {
-        "question": "Bạn triển khai một cây nhưng nhận thấy các nút con không được liên kết đúng với cha của chúng.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Cây được khởi tạo sai thành một đồ thị",
-            "B": "Các nút con bị thêm vào cha sai",
-            "C": "Cấu trúc cây không hỗ trợ phân cấp",
-            "D": "Các nút không được liên kết đúng"
-        },
-        "answer": "Các nút con bị thêm vào cha sai",
-        "explanation": "Nếu các nút con không được liên kết đúng với cha, vấn đề có thể là các nút con đang được thêm vào cha sai, cho thấy lỗi trong cách chèn nút vào cây."
-    },
-    {
-        "question": "Ma trận kề của đồ thị không phản ánh đúng các kết nối giữa các nút.\nMột lỗi có thể là gì?",
-        "options": {
-            "A": "Kích thước ma trận sai",
-            "B": "Các cạnh được thêm vào ô sai trong ma trận",
-            "C": "Ma trận không được cập nhật khi thêm hoặc xoá cạnh",
-            "D": "Cả B và C"
-        },
-        "answer": "Các cạnh được thêm vào ô sai trong ma trận",
-        "explanation": "Nếu ma trận kề không phản ánh đúng kết nối, một lỗi có thể là các cạnh bị thêm vào ô sai, cho thấy sự không khớp giữa các đỉnh và chỉ số tương ứng trong ma trận."
-    },
-    {
-        "question": "Trong một cài đặt duyệt theo chiều sâu (DFS) cho đồ thị, bạn thấy thuật toán không thăm hết các nút.\nCó thể sai ở đâu?",
-        "options": {
-            "A": "Thuật toán không xử lý các thành phần rời rạc",
-            "B": "Nút bắt đầu được chọn sai",
-            "C": "Các cờ đánh dấu đã thăm không được đặt lại giữa các lần chạy",
-            "D": "Độ sâu đệ quy bị giới hạn"
-        },
-        "answer": "Thuật toán không xử lý các thành phần rời rạc",
-        "explanation": "Nếu DFS không thăm hết các nút, có thể là vì thuật toán chỉ khám phá một thành phần liên thông mà không chuyển sang các thành phần rời rạc khác."
-    },
-    {
-        "question": "Độ phức tạp thời gian tốt nhất của QuickSort là bao nhiêu?",
-        "options": {
-            "A": "O(n log n)",
-            "B": "O(n)",
-            "C": "O(log n)",
-            "D": "O(n^2)"
-        },
-        "answer": "O(n log n)",
-        "explanation": "Độ phức tạp tốt nhất của QuickSort là O(n log n), đạt được khi chọn pivot tốt giúp phân chia mảng đều."
-    },
-    {
-        "question": "Thuật toán sắp xếp nào có tính ổn định (stable) vốn có?",
-        "options": {
-            "A": "QuickSort",
-            "B": "HeapSort",
-            "C": "MergeSort",
-            "D": "BubbleSort"
-        },
-        "answer": "MergeSort",
-        "explanation": "MergeSort là thuật toán ổn định, giữ nguyên thứ tự tương đối của các phần tử bằng nhau, phù hợp để sắp xếp các bản ghi phức tạp."
-    },
-    {
-        "question": "stability trong các thuật toán sắp xếp ám chỉ điều gì?",
-        "options": {
-            "A": "Hiệu năng khi chịu tải",
-            "B": "Giữ nguyên thứ tự tương đối của các phần tử bằng nhau",
-            "C": "Sử dụng bộ nhớ tối thiểu",
-            "D": "Thời gian sắp xếp nhanh nhất có thể"
-        },
-        "answer": "Giữ nguyên thứ tự tương đối của các phần tử bằng nhau",
-        "explanation": "Stability nghĩa là thuật toán sắp xếp giữ nguyên thứ tự tương đối của các bản ghi có khóa bằng nhau, quan trọng cho sắp xếp nhiều giai đoạn và bảo tồn chuỗi dữ liệu."
-    },
-    {
-        "question": "Độ phức tạp thời gian trường hợp xấu nhất của tìm kiếm nhị phân trên một mảng có thứ tự tăng dài n là bao nhiêu?",
-        "options": {
-            "A": "O(1)",
-            "B": "O(log n)",
-            "C": "O(n)",
-            "D": "O(n log n)"
-        },
-        "answer": "O(log n)",
-        "explanation": "Tìm kiếm nhị phân có độ phức tạp trường hợp xấu nhất là O(log n) do phương pháp chia để trị, giảm một nửa không gian tìm kiếm mỗi bước."
-    },
-    {
-        "question": "Thuật toán sắp xếp nào hiệu quả nhất cho bộ dữ liệu có phạm vi số nguyên đã biết và giới hạn?",
-        "options": {
-            "A": "QuickSort",
-            "B": "BubbleSort",
-            "C": "CountingSort",
-            "D": "InsertionSort"
-        },
-        "answer": "CountingSort",
-        "explanation": "CountingSort phù hợp cho dữ liệu có phạm vi giá trị số nguyên giới hạn, vì nó đếm số lượng xuất hiện thay vì so sánh trực tiếp, dẫn đến sắp xếp hiệu quả."
-    },
-    {
-        "question": "Nguyên tắc mà các thuật toán chia để trị (divide and conquer) sử dụng là gì?",
-        "options": {
-            "A": "Chia dữ liệu thành các phần nhỏ hơn và sắp xếp từng phần độc lập",
-            "B": "Chọn phần tử ngẫu nhiên",
-            "C": "Duyệt tuyến tính",
-            "D": "Đổi chỗ trực tiếp các phần tử"
-        },
-        "answer": "Chia dữ liệu thành các phần nhỏ hơn và sắp xếp từng phần độc lập",
-        "explanation": "Các thuật toán như MergeSort và QuickSort chia dữ liệu thành các phần nhỏ, sắp xếp độc lập các phần đó và sau đó kết hợp chúng để tạo thành kết quả đã sắp xếp."
-    },
-    {
-        "question": "Tại sao QuickSort thường được ưa thích hơn MergeSort khi sắp xếp mảng trong thực tế?",
-        "options": {
-            "A": "Độ phức tạp không gian thấp hơn",
-            "B": "Thời gian trung bình nhanh hơn",
-            "C": "Dễ cài đặt hơn",
-            "D": "Đảm bảo sắp xếp ổn định"
-        },
-        "answer": "Độ phức tạp không gian thấp hơn",
-        "explanation": "QuickSort thường được ưa chuộng vì khả năng sắp xếp tại chỗ (in-place), cung cấp độ phức tạp không gian thấp hơn so với MergeSort, vốn cần bộ nhớ phụ để hợp nhất."
-    },
-    {
-        "question": "Dòng mã nào khởi tạo pivot đúng trong QuickSort cho đoạn mảng từ low đến high?",
-        "options": {
-            "A": "int pivot = arr[high];",
-            "B": "int pivot = arr[(low + high) / 2];",
-            "C": "int pivot = arr[low];",
-            "D": "int pivot = high;"
-        },
-        "answer": "int pivot = arr[(low + high) / 2];",
-        "explanation": "Chọn phần tử giữa làm pivot, int pivot = arr[(low + high) / 2];, giúp tránh trường hợp tồi tệ khi mảng đã sắp xếp hoặc sắp xếp ngược bằng cách hướng tới phân hoạch cân bằng."
-    },
-    {
-        "question": "Kỹ thuật nào cải thiện hiệu năng của QuickSort trên các mảng nhỏ?",
-        "options": {
-            "A": "Kết hợp với Insertion sort",
-            "B": "Chọn pivot ngẫu nhiên",
-            "C": "Giảm độ sâu đệ quy",
-            "D": "Tăng kích thước ngăn xếp"
-        },
-        "answer": "Kết hợp với Insertion sort",
-        "explanation": "Trên mảng nhỏ, QuickSort thường chuyển sang Insertion Sort, một thuật toán đơn giản hơn và hiệu quả hơn cho dữ liệu nhỏ do chi phí cố định thấp hơn."
-    },
-    {
-        "question": "Hàm merge trong MergeSort thực hiện hành động chính gì?",
-        "options": {
-            "A": "Chia mảng",
-            "B": "Sắp xếp các mảng con",
-            "C": "Gộp các mảng con đã sắp xếp",
-            "D": "So sánh từng phần tử"
-        },
-        "answer": "Gộp các mảng con đã sắp xếp",
-        "explanation": "Hàm merge kết hợp hai mảng con đã sắp xếp thành một mảng duy nhất đã được sắp xếp, đây là bước then chốt để đạt được thứ tự tổng thể."
-    },
-    {
-        "question": "Thuật toán tìm kiếm nhị phân được điều chỉnh như thế nào cho mảng đã sắp xếp nhưng bị xoay (rotated)?",
-        "options": {
-            "A": "Điều chỉnh tìm kiếm dựa trên so sánh phần tử giữa",
-            "B": "Nhân đôi phạm vi tìm kiếm mỗi bước",
-            "C": "Chỉ tìm kiếm một nửa mảng",
-            "D": "Sắp xếp lại mảng trước khi tìm kiếm"
-        },
-        "answer": "Điều chỉnh tìm kiếm dựa trên so sánh phần tử giữa",
-        "explanation": "Với mảng xoay, tìm kiếm nhị phân được điều chỉnh bằng cách so sánh phần tử giữa và xác định nửa nào có thứ tự tăng để tiếp tục tìm kiếm."
-    },
-    {
-        "question": "Thuật toán InsertionSort của một lập trình viên không sắp xếp đúng.\nMột lỗi phổ biến cần kiểm tra là gì?",
-        "options": {
-            "A": "Đặt sai phần tử khóa (key)",
-            "B": "Tính chỉ số sai",
-            "C": "Bỏ qua các phần tử",
-            "D": "So sánh phần tử không đúng"
-        },
-        "answer": "So sánh phần tử không đúng",
-        "explanation": "Lỗi phổ biến trong InsertionSort là so sánh phần tử sai, dẫn đến việc chèn phần tử khóa không đúng vào phần đã sắp xếp."
-    },
-    {
-        "question": "Trong một cài đặt tìm kiếm nhị phân có lỗi, thuật toán bỏ lỡ mục tiêu.\nNguyên nhân có khả năng là gì?",
-        "options": {
-            "A": "Tính chỉ số giữa (middle) sai",
-            "B": "Không kiểm tra giới hạn của mảng đã sắp xếp",
-            "C": "Bỏ qua phép so sánh với mục tiêu",
-            "D": "Tất cả các điều kiện đều đúng nhưng vẫn thất bại"
-        },
-        "answer": "Tính chỉ số giữa (middle) sai",
-        "explanation": "Tính sai chỉ số giữa là lỗi phổ biến trong tìm kiếm nhị phân, làm cho thuật toán chia khoảng tìm kiếm không đúng và bỏ lỡ mục tiêu."
-    },
-    {
-        "question": "QuickSort gây lỗi tràn ngăn xếp (stack overflow).\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Đệ quy quá sâu trên dữ liệu lớn",
-            "B": "Chọn pivot sai dẫn đến phân hoạch mất cân bằng",
-            "C": "Các lời gọi đệ quy không kết thúc",
-            "D": "Tất cả các điều kiện đều đúng nhưng vẫn thất bại"
-        },
-        "answer": "Chọn pivot sai dẫn đến phân hoạch mất cân bằng",
-        "explanation": "Chọn pivot không hợp lý có thể dẫn đến phân hoạch mất cân bằng, gây độ sâu đệ quy lớn trên mảng gần như đã sắp xếp hoặc có mẫu đặc biệt, dẫn tới tràn ngăn xếp."
-    },
-    {
-        "question": "Hash table là gì?",
-        "options": {
-            "A": "Một cấu trúc lưu cặp khóa-giá trị trong một mảng tuyến tính",
-            "B": "Một cấu trúc tổ chức dữ liệu để tìm kiếm, chèn và xóa nhanh dựa trên khóa",
-            "C": "Một cấu trúc dữ liệu để lưu trữ dữ liệu phân cấp",
-            "D": "Một cấu trúc lưu dữ liệu trong các nút với một khóa và nhiều giá trị"
-        },
-        "answer": "Một cấu trúc tổ chức dữ liệu để tìm kiếm, chèn và xóa nhanh dựa trên khóa",
-        "explanation": "Hash table là cấu trúc dữ liệu tổ chức dữ liệu hiệu quả để thực hiện các phép toán như tìm kiếm, chèn và xóa bằng cách sử dụng hàm băm để tính chỉ số vào mảng các bucket, từ đó tìm giá trị mong muốn."
-    },
-    {
-        "question": "Trong số các lựa chọn sau, trường hợp sử dụng phổ biến nào cho hash table?",
-        "options": {
-            "A": "Triển khai hệ thống chỉ mục cơ sở dữ liệu",
-            "B": "Lưu sở thích người dùng trong ứng dụng web",
-            "C": "Thực hiện tìm kiếm nhanh trong tập dữ liệu lớn",
-            "D": "Tất cả các phương án trên"
-        },
-        "answer": "Tất cả các phương án trên",
-        "explanation": "Hash table được sử dụng rộng rãi trong nhiều ứng dụng như chỉ mục cơ sở dữ liệu, lưu sở thích người dùng và tìm kiếm nhanh trong tập dữ liệu lớn nhờ khả năng truy xuất dựa trên khóa hiệu quả."
-    },
-    {
-        "question": "Va chạm (collision) trong hash table là gì?",
-        "options": {
-            "A": "Khi hai khóa có cùng giá trị",
-            "B": "Khi hàm băm trả về cùng một chỉ số cho các khóa khác nhau",
-            "C": "Khi hash table vượt quá hệ số tải (load factor)",
-            "D": "Khi một khóa bị mất do bị ghi đè"
-        },
-        "answer": "Khi hàm băm trả về cùng một chỉ số cho các khóa khác nhau",
-        "explanation": "Collision xảy ra khi hàm băm ánh xạ hai hoặc nhiều khóa tới cùng một chỉ số trong mảng. Xử lý collision là cần thiết để duy trì hiệu suất và độ chính xác của hash table."
-    },
-    {
-        "question": "Thách thức chính khi thiết kế hàm băm cho hash table là gì?",
-        "options": {
-            "A": "Đảm bảo hàm có thể đảo ngược",
-            "B": "Giảm thiểu số lần xảy ra collision",
-            "C": "Đảm bảo hàm tạo ra đầu ra duy nhất cho mỗi đầu vào",
-            "D": "Tối đa hóa độ phức tạp tính toán"
-        },
-        "answer": "Giảm thiểu số lần xảy ra collision",
-        "explanation": "Thách thức chính là giảm thiểu collision. Một hàm băm tốt phân phối đều các khóa trên bảng, giảm khả năng collision và giữ thời gian truy cập hiệu quả."
-    },
-    {
-        "question": "Kỹ thuật nào thường dùng để giải quyết collision trong hash table?",
-        "options": {
-            "A": "Linear probing",
-            "B": "Dùng cây tìm kiếm nhị phân",
-            "C": "Nhân đôi kích thước bảng khi đầy",
-            "D": "Lưu tất cả mục trong một danh sách liên kết duy nhất"
-        },
-        "answer": "Linear probing",
-        "explanation": "Linear probing là kỹ thuật giải quyết collision phổ biến, khi gặp collision, thuật toán tìm ô trống tiếp theo theo thứ tự tuần tự trong bảng. Phương pháp này đơn giản và có thể phân phối mục đều khắp bảng."
-    },
-    {
+  {
+    "question": "Đặc điểm nào sau đây là của một thuật toán hiệu quả?",
+    "options": {
+      "A": "Sử dụng thời gian CPU tối thiểu",
+      "B": "Sử dụng bộ nhớ tối thiểu",
+      "C": "Dễ triển khai",
+      "D": "Tất cả các đáp án trên"
+    },
+    "answer": "Tất cả các đáp án trên",
+    "explanation": "Một thuật toán hiệu quả được đặc trưng bởi việc sử dụng tối thiểu tài nguyên, bao gồm thời gian CPU và bộ nhớ, cũng như dễ dàng triển khai."
+  },
+  {
+    "question": "Quá trình chia một bài toán phức tạp thành các phần nhỏ hơn, dễ quản lý hơn gọi là gì?",
+    "options": {
+      "A": "Phân rã (Decomposition)",
+      "B": "Trừu tượng hóa (Abstraction)",
+      "C": "Đóng gói (Encapsulation)",
+      "D": "Kế thừa (Inheritance)"
+    },
+    "answer": "Phân rã (Decomposition)",
+    "explanation": "Phân rã là quá trình chia một bài toán phức tạp thành các phần nhỏ hơn, dễ quản lý hơn, giúp giải quyết vấn đề một cách hiệu quả hơn."
+  },
+  {
+    "question": "Mục đích chính của mã giả (pseudocode) là gì?",
+    "options": {
+      "A": "Ghi chép thuật toán bằng ngôn ngữ tự nhiên",
+      "B": "Biên dịch và thực thi thuật toán",
+      "C": "Gỡ lỗi mã nguồn",
+      "D": "Tối ưu hóa thuật toán"
+    },
+    "answer": "Ghi chép thuật toán bằng ngôn ngữ tự nhiên",
+    "explanation": "Mã giả được dùng để ghi chép thuật toán theo cách dễ hiểu cho con người, thể hiện luồng hoạt động mà không cần quan tâm tới cú pháp của ngôn ngữ lập trình."
+  },
+  {
+    "question": "Trong phân tích thuật toán, độ phức tạp tiệm cận (asymptotic complexity) đề cập đến điều gì?",
+    "options": {
+      "A": "Độ phức tạp trong trường hợp tốt nhất",
+      "B": "Độ phức tạp trong trường hợp xấu nhất",
+      "C": "Độ phức tạp trong trường hợp trung bình",
+      "D": "Hành vi của thuật toán khi kích thước đầu vào tăng"
+    },
+    "answer": "Hành vi của thuật toán khi kích thước đầu vào tăng",
+    "explanation": "Độ phức tạp tiệm cận mô tả hành vi của thuật toán khi kích thước đầu vào tăng, thường được biểu diễn bằng ký hiệu Big O để chỉ giới hạn trên của thời gian chạy trong trường hợp xấu nhất."
+  },
+  {
+    "question": "Mã giả sau sẽ cho kết quả gì khi đầu vào là 5?\nfunction factorial(n): if n == 1 return 1 else return n * factorial(n-1)",
+    "options": {
+      "A": "5",
+      "B": "24",
+      "C": "120",
+      "D": "Không có đáp án nào ở trên"
+    },
+    "answer": "120",
+    "explanation": "Mã giả định nghĩa một hàm đệ quy để tính giai thừa. Với đầu vào 5, hàm tính 5*4*3*2*1 = 120."
+  },
+  {
+    "question": "Xét thuật toán sau để tính số Fibonacci thứ n: function fib(n):\nif n <= 1 return n else return fib(n-1) + fib(n-2). Độ phức tạp thời gian của thuật toán này là gì?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n^2)",
+      "D": "O(2^n)"
+    },
+    "answer": "O(2^n)",
+    "explanation": "Thuật toán đệ quy cho Fibonacci ở trên có độ phức tạp theo cấp số mũ O(2^n), vì nó gọi đệ quy hai lần cho mỗi trường hợp không phải cơ sở."
+  },
+  {
+    "question": "Một thuật toán được cho là tính tổng các số từ 1 tới n nhưng trả về giá trị lớn hơn mong đợi. Sai lầm có khả năng nhất là gì?",
+    "options": {
+      "A": "Bắt đầu vòng lặp từ 0",
+      "B": "Không khởi tạo biến tổng",
+      "C": "Cộng n hai lần",
+      "D": "Tất cả các trường hợp trên"
+    },
+    "answer": "Cộng n hai lần",
+    "explanation": "Nếu thuật toán cộng số cuối cùng n hai lần thì tổng sẽ lớn hơn mong đợi. Cần đảm bảo mỗi số chỉ được cộng đúng một lần."
+  },
+  {
+    "question": "Cho một thuật toán luôn trả về phần tử đầu tiên trong một danh sách đã sắp xếp thay vì phần tử nhỏ nhất, vấn đề có thể là gì?",
+    "options": {
+      "A": "Thuật toán giả định sai rằng phần tử đầu tiên là nhỏ nhất",
+      "B": "Danh sách chưa được sắp xếp đúng cách",
+      "C": "Một vòng lặp lặp sai",
+      "D": "Tất cả các trường hợp trên"
+    },
+    "answer": "Thuật toán giả định sai rằng phần tử đầu tiên là nhỏ nhất",
+    "explanation": "Trong một danh sách đã sắp xếp, phần tử nhỏ nhất thường là phần tử đầu tiên; nhưng nếu mục tiêu là tìm phần tử nhỏ nhất trong bất kỳ danh sách nào thì việc mặc định phần tử đầu tiên là nhỏ nhất mà không so sánh hoặc sắp xếp là sai."
+  },
+  {
+    "question": "Ký hiệu Big O nào biểu diễn độ phức tạp thời gian hằng số?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(1)",
+    "explanation": "Độ phức tạp thời gian hằng số O(1) nghĩa là thời gian thực thi không đổi bất kể kích thước đầu vào."
+  },
+  {
+    "question": "Đối với tìm kiếm tuyến tính trong một mảng chưa sắp xếp gồm n phần tử, độ phức tạp trung bình là bao nhiêu?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Độ phức tạp trung bình của tìm kiếm tuyến tính là O(n), vì trung bình có thể phải kiểm tra một nửa các phần tử để tìm mục tiêu."
+  },
+  {
+    "question": "Ký hiệu O(n^2) biểu thị điều gì về tốc độ tăng trưởng của thuật toán?",
+    "options": {
+      "A": "Tăng trưởng tuyến tính",
+      "B": "Tăng trưởng bậc hai (quadratic)",
+      "C": "Tăng trưởng logarithmic",
+      "D": "Tăng trưởng theo cấp số (exponential)"
+    },
+    "answer": "Tăng trưởng bậc hai (quadratic)",
+    "explanation": "O(n^2) nghĩa là thời gian chạy tăng tỷ lệ với bình phương kích thước đầu vào, gọi là tăng trưởng bậc hai."
+  },
+  {
+    "question": "Trong ký hiệu Big O, O(log n) thường biểu diễn điều gì?",
+    "options": {
+      "A": "Độ phức tạp thời gian của tìm kiếm nhị phân",
+      "B": "Độ phức tạp thời gian của tìm kiếm tuyến tính",
+      "C": "Độ phức tạp không gian của các thuật toán sắp xếp",
+      "D": "Độ phức tạp không gian của hashing"
+    },
+    "answer": "Độ phức tạp thời gian của tìm kiếm nhị phân",
+    "explanation": "O(log n) thường biểu diễn độ phức tạp của các thuật toán chia vấn đề làm đôi ở mỗi bước, như tìm kiếm nhị phân."
+  },
+  {
+    "question": "Mô tả nào sau đây đúng nhất về độ phức tạp khi chèn một phần tử vào cây tìm kiếm nhị phân?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "O(log n)",
+    "explanation": "Trong trường hợp trung bình, chèn một phần tử vào cây tìm kiếm nhị phân có độ phức tạp O(log n), giả sử cây được cân bằng."
+  },
+  {
+    "question": "Độ phức tạp thời gian trong trường hợp xấu nhất của quicksort là gì?",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(n^2)",
+      "D": "O(log n)"
+    },
+    "answer": "O(n^2)",
+    "explanation": "Trường hợp xấu nhất của quicksort là O(n^2), xảy ra khi việc chọn pivot kém (ví dụ luôn chọn phần tử nhỏ nhất hoặc lớn nhất) dẫn đến phân hoạch mất cân bằng."
+  },
+  {
+    "question": "So sánh độ phức tạp không gian giữa giải pháp lặp và giải pháp đệ quy cho cùng một bài toán như thế nào?",
+    "options": {
+      "A": "Giải pháp lặp luôn sử dụng nhiều không gian hơn",
+      "B": "Giải pháp đệ quy luôn sử dụng nhiều không gian hơn",
+      "C": "Phụ thuộc vào bài toán cụ thể",
+      "D": "Chúng sử dụng cùng một lượng không gian"
+    },
+    "answer": "Phụ thuộc vào bài toán cụ thể",
+    "explanation": "So sánh phụ thuộc vào bài toán và cách triển khai: trong một số trường hợp đệ quy dùng nhiều stack hơn, trong khi lặp có thể dùng nhiều bộ nhớ heap hơn."
+  },
+  {
+    "question": "Độ phức tạp thời gian của đoạn mã sau là gì?\nfor i in range(n):\nprint(i)",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Đoạn mã thực hiện in n lần (từ 0 đến n-1), nên độ phức tạp là O(n)."
+  },
+  {
+    "question": "Cho đoạn mã sau: for i in range(n):\nfor j in range(n):\nprint(i, j)\nĐộ phức tạp thời gian là gì?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(n log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n^2)",
+    "explanation": "Vòng lặp lồng nhau tạo ra n*n lần thực thi, do đó độ phức tạp là O(n^2)."
+  },
+  {
+    "question": "Phân tích độ phức tạp của hàm sau: def func(n):\nif n <= 1:\n    return\nelse:\n    func(n/2) + func(n/2)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n^2)",
+      "D": "O(n log n)"
+    },
+    "answer": "O(n log n)",
+    "explanation": "Hàm này gọi hai lần chính nó với n/2; theo mô tả gốc, đáp án đưa ra là O(n log n)."
+  },
+  {
+    "question": "Một thuật toán được kỳ vọng chạy ở O(n log n) nhưng chạy chậm hơn nhiều. Nguyên nhân có khả năng là gì?",
+    "options": {
+      "A": "Trường hợp cơ sở (base case) trong đệ quy sai",
+      "B": "Cấp phát bộ nhớ quá nhiều",
+      "C": "Chọn pivot kém trong thuật toán sắp xếp",
+      "D": "Tất cả các trường hợp trên"
+    },
+    "answer": "Chọn pivot kém trong thuật toán sắp xếp",
+    "explanation": "Chọn pivot không tốt (ví dụ trong quicksort) có thể làm giảm hiệu năng xuống O(n^2), chậm hơn nhiều so với O(n log n) kỳ vọng."
+  },
+  {
+    "question": "Một hàm được thiết kế là O(n) nhưng chạy chậm hơn khi n tăng. Điều gì có thể bị bỏ sót?",
+    "options": {
+      "A": "Vòng lặp lồng nhau",
+      "B": "Các hệ số hằng số",
+      "C": "Các phép toán tuyến tính",
+      "D": "Không có điều nào ở trên"
+    },
+    "answer": "Vòng lặp lồng nhau",
+    "explanation": "Vòng lặp lồng nhau có thể vô tình làm tăng độ phức tạp thời gian, khiến hàm từ O(n) thành O(n^2) hoặc hơn."
+  },
+  {
+    "question": "Một thuật toán đệ quy dự kiến có độ phức tạp O(log n) nhưng chạy chậm. Vấn đề có khả năng là gì?",
+    "options": {
+      "A": "Không chia đôi đầu vào ở mỗi lần gọi đệ quy",
+      "B": "Điều kiện kết thúc (termination) sai",
+      "C": "Tràn ngăn xếp (stack overflow)",
+      "D": "Tất cả các trường hợp trên"
+    },
+    "answer": "Không chia đôi đầu vào ở mỗi lần gọi đệ quy",
+    "explanation": "Nếu đệ quy không giảm kích thước đầu vào (ví dụ không chia đôi) thì thuật toán sẽ không đạt được O(log n) và sẽ chậm hơn."
+  },
+  {
+    "question": "Cấu trúc dữ liệu nào nên dùng để lưu một dãy ký tự?",
+    "options": {
+      "A": "Mảng (Array)",
+      "B": "Ngăn xếp (Stack)",
+      "C": "Hàng đợi (Queue)",
+      "D": "Đồ thị (Graph)"
+    },
+    "answer": "Mảng (Array)",
+    "explanation": "Mảng là phù hợp để lưu dãy ký tự vì cho phép truy cập theo chỉ số, thuận tiện và hiệu quả khi cần lấy ký tự ở vị trí cụ thể."
+  },
+  {
+    "question": "Độ phức tạp thời gian khi truy cập phần tử trong mảng theo chỉ số là gì?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(1)",
+    "explanation": "Truy cập phần tử theo chỉ số trong mảng là phép toán O(1) vì vị trí được tính trực tiếp."
+  },
+  {
+    "question": "Trong Java, lý do nào sau đây KHÔNG phải là lí do hợp lệ để dùng StringBuilder thay vì nối chuỗi bằng toán tử +?",
+    "options": {
+      "A": "Nó giảm bộ nhớ sử dụng",
+      "B": "Nó nhanh hơn khi nối nhiều chuỗi",
+      "C": "Nó là immutable (bất biến)",
+      "D": "Nó có thể dùng trong môi trường đa luồng"
+    },
+    "answer": "Nó là immutable (bất biến)",
+    "explanation": "StringBuilder là mutable (có thể thay đổi), nên dùng nó giúp tiết kiệm bộ nhớ và nhanh hơn khi nối nhiều chuỗi so với phép cộng chuỗi tạo mới nhiều đối tượng."
+  },
+  {
+    "question": "Trong một mảng số nguyên chưa sắp xếp, độ phức tạp tốt nhất có thể đạt được khi tìm một giá trị cụ thể là gì?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Trong mảng chưa sắp xếp, phải kiểm tra từng phần tử trong trường hợp tổng quát, nên độ phức tạp là O(n)."
+  },
+  {
+    "question": "Xét một mảng ký tự biểu diễn một chuỗi, độ phức tạp không gian để lưu chuỗi này là bao nhiêu?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Không gian cần để lưu chuỗi tỉ lệ với số ký tự n, nên có độ phức tạp O(n)."
+  },
+  {
+    "question": "Trong mảng động (dynamic array), thao tác nào có độ phức tạp kém hơn khi mảng cần mở rộng kích thước?",
+    "options": {
+      "A": "Truy cập phần tử theo chỉ số",
+      "B": "Thêm phần tử vào cuối",
+      "C": "Chèn phần tử vào đầu mảng",
+      "D": "Tìm kiếm một phần tử"
+    },
+    "answer": "Chèn phần tử vào đầu mảng",
+    "explanation": "Chèn ở đầu mảng động khi phải mở rộng kích thước đòi hỏi dịch chuyển tất cả phần tử, nên tốn kém hơn. Thêm ở cuối thường có thời gian trung bình là hằng số do toán học amortized."
+  },
+  {
+    "question": "Kết quả của đoạn mã Python sau là gì?\narr = ['a', 'b', 'c', 'd'];\nprint(arr[1:3])",
+    "options": {
+      "A": "['a', 'b']",
+      "B": "['b', 'c']",
+      "C": "['c', 'd']",
+      "D": "['b', 'c', 'd']"
+    },
+    "answer": "['b', 'c']",
+    "explanation": "Slicing arr[1:3] trong Python bao gồm chỉ số 1 nhưng loại trừ chỉ số 3, nên kết quả là ['b', 'c']."
+  },
+  {
+    "question": "Trong một mảng số nguyên, thao tác nào sau đây KHÔNG làm thay đổi mảng gốc trong JavaScript?",
+    "options": {
+      "A": "arr.sort()",
+      "B": "arr.push(5)",
+      "C": "[...arr, 5]",
+      "D": "arr.pop()"
+    },
+    "answer": "[...arr, 5]",
+    "explanation": "Phép toán [...arr, 5] tạo một mảng mới và không làm thay đổi mảng gốc; các phương thức sort(), push(), pop() thay đổi mảng ban đầu."
+  },
+  {
+    "question": "Kết quả của việc nối hai mảng trong Python bằng toán tử +, với arr1 = [1, 2, 3] và arr2 = [4, 5, 6], là gì?",
+    "options": {
+      "A": "Một mảng mới [1, 2, 3, 4, 5, 6]",
+      "B": "Các mảng gốc bị thay đổi để bao gồm phần tử của nhau",
+      "C": "Lỗi cú pháp",
+      "D": "Không có đáp án nào ở trên"
+    },
+    "answer": "Một mảng mới [1, 2, 3, 4, 5, 6]",
+    "explanation": "Phép cộng hai mảng bằng + trong Python tạo ra một mảng mới chứa phần tử của cả hai mảng theo thứ tự; các mảng gốc không bị thay đổi."
+  },
+  {
+    "question": "Một lập trình viên mong đợi đoạn mã JavaScript sau sẽ cập nhật mảng nhưng nó không hoạt động:\nconst arr = [1, 2, 3]; arr = [4, 5, 6];.\nSai lầm là gì?",
+    "options": {
+      "A": "Cố gắng gán lại một mảng khai báo bằng const",
+      "B": "Cú pháp cập nhật mảng không chính xác",
+      "C": "Sử dụng kiểu dữ liệu sai",
+      "D": "Không có phương án nào ở trên"
+    },
+    "answer": "Cố gắng gán lại một mảng khai báo bằng const",
+    "explanation": "Sai lầm là cố gắng gán lại một mảng khai báo bằng const. Trong JavaScript, const ngăn việc gán lại cho biến arr. Để cập nhật một mảng khai báo bằng const, cần thay đổi (mutate) các phần tử của mảng thay vì gán lại biến."
+  },
+  {
+    "question": "Tại sao biểu thức string.split('').reverse().join('') trong JavaScript trả về chuỗi đảo ngược?",
+    "options": {
+      "A": "Phương thức split tách chuỗi không chính xác",
+      "B": "Phương thức reverse không hoạt động trên chuỗi",
+      "C": "Phương thức join ghép chuỗi sai cách",
+      "D": "Không có phương án nào ở trên"
+    },
+    "answer": "Không có phương án nào ở trên",
+    "explanation": "split('') tách chuỗi thành một mảng ký tự, reverse() đảo ngược mảng đó tại chỗ, và join('') ghép các ký tự đã đảo lại thành một chuỗi. Các bước này phối hợp với nhau sẽ đảo ngược chuỗi."
+  },
+  {
+    "question": "Trong chương trình tìm chuỗi dài nhất trong một mảng các chuỗi, kết quả luôn là chuỗi đầu tiên. Lỗi có thể là gì?",
+    "options": {
+      "A": "Không cập nhật biến lưu chuỗi dài nhất bên trong vòng lặp",
+      "B": "Sử dụng toán tử so sánh sai",
+      "C": "Không khởi tạo biến chuỗi dài nhất đúng cách",
+      "D": "Tất cả các phương án ở trên"
+    },
+    "answer": "Không cập nhật biến lưu chuỗi dài nhất bên trong vòng lặp",
+    "explanation": "Nếu chương trình luôn trả về chuỗi đầu tiên, rất có thể biến dùng để lưu chuỗi dài nhất không được cập nhật đúng trong vòng lặp khi so sánh độ dài các chuỗi."
+  },
+  {
+    "question": "Điểm khác biệt giữa danh sách liên kết đơn (singly linked list) và danh sách liên kết đôi (doubly linked list) là gì?",
+    "options": {
+      "A": "Mỗi nút có một con trỏ trong danh sách liên kết đơn và hai con trỏ trong danh sách liên kết đôi",
+      "B": "Danh sách liên kết đơn nhanh hơn",
+      "C": "Danh sách liên kết đôi không thể có chu trình",
+      "D": "Tất cả các phương án ở trên"
+    },
+    "answer": "Mỗi nút có một con trỏ trong danh sách liên kết đơn và hai con trỏ trong danh sách liên kết đôi",
+    "explanation": "Trong danh sách liên kết đơn, mỗi nút chỉ trỏ tới nút tiếp theo, còn trong danh sách liên kết đôi, mỗi nút có hai con trỏ: một trỏ tới nút trước và một trỏ tới nút sau, giúp thuận tiện trong việc di chuyển hai chiều."
+  },
+  {
+    "question": "Phép toán nào thường hiệu quả hơn trên danh sách liên kết so với mảng?",
+    "options": {
+      "A": "Truy cập phần tử theo chỉ số",
+      "B": "Thêm phần tử vào cuối",
+      "C": "Chèn phần tử vào đầu danh sách",
+      "D": "Tìm kiếm một phần tử"
+    },
+    "answer": "Chèn phần tử vào đầu danh sách",
+    "explanation": "Chèn phần tử vào đầu danh sách liên kết thường hiệu quả hơn so với mảng vì không cần dịch chuyển các phần tử; chỉ cần cập nhật con trỏ."
+  },
+  {
+    "question": "Trong những tình huống nào danh sách liên kết KHÔNG phù hợp?",
+    "options": {
+      "A": "Khi các phần tử cần được truy cập theo thứ tự tuần tự",
+      "B": "Khi cần quan tâm tới việc sử dụng bộ nhớ",
+      "C": "Khi cần truy cập phần tử theo chỉ số nhanh chóng",
+      "D": "Khi cần thêm hoặc xóa phần tử thường xuyên"
+    },
+    "answer": "Khi cần truy cập phần tử theo chỉ số nhanh chóng",
+    "explanation": "Danh sách liên kết không cho phép truy cập trực tiếp theo chỉ số, nên không phù hợp với các tình huống cần truy cập ngẫu nhiên nhanh. Chúng thích hợp khi cần thêm/xóa phần tử thường xuyên."
+  },
+  {
+    "question": "Trong danh sách liên kết, con trỏ head biểu thị điều gì?",
+    "options": {
+      "A": "Nút ở giữa danh sách",
+      "B": "Nút cuối cùng của danh sách",
+      "C": "Nút đầu tiên của danh sách",
+      "D": "Một nút ngẫu nhiên trong danh sách"
+    },
+    "answer": "Nút đầu tiên của danh sách",
+    "explanation": "Con trỏ head biểu thị nút đầu tiên của danh sách, là điểm nhập để duyệt và truy cập các nút khác."
+  },
+  {
+    "question": "Làm thế nào để phát hiện chu trình trong danh sách liên kết?",
+    "options": {
+      "A": "Bằng cách kiểm tra nếu con trỏ next của bất kỳ nút nào là null",
+      "B": "Sử dụng bảng băm để lưu các nút đã thăm",
+      "C": "So sánh mỗi nút với mọi nút khác",
+      "D": "Sử dụng hai con trỏ với tốc độ khác nhau"
+    },
+    "answer": "Sử dụng hai con trỏ với tốc độ khác nhau",
+    "explanation": "Kỹ thuật hai con trỏ (slow và fast, với fast di chuyển nhanh gấp đôi slow) có thể phát hiện chu trình. Nếu hai con trỏ gặp nhau thì có chu trình; nếu fast đến cuối danh sách thì không có chu trình."
+  },
+  {
+    "question": "Độ phức tạp thời gian để tìm phần tử giữa trong danh sách liên kết đơn là bao nhiêu?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Tìm phần tử giữa trong danh sách liên kết đơn thường đòi hỏi duyệt khoảng một nửa danh sách trung bình, nên độ phức tạp là O(n)."
+  },
+  {
+    "question": "Đoạn mã sau thực hiện gì?\nnode.next = node.next.next;",
+    "options": {
+      "A": "Xóa nút kế tiếp trong danh sách",
+      "B": "Chèn một nút mới sau nút hiện tại",
+      "C": "Hoán đổi hai nút",
+      "D": "Nhân bản nút kế tiếp"
+    },
+    "answer": "Xóa nút kế tiếp trong danh sách",
+    "explanation": "Đoạn mã này xóa nút kế tiếp trong danh sách liên kết đơn bằng cách bỏ qua nó: gán con trỏ next của nút hiện tại trỏ tới node sau node kế tiếp, do đó loại bỏ node kế tiếp khỏi danh sách."
+  },
+  {
+    "question": "Xét một cài đặt danh sách liên kết.\nMục đích của đoạn mã sau là gì?\nhead = newNode;\nnewNode.next = oldHead;",
+    "options": {
+      "A": "Đảo ngược danh sách liên kết",
+      "B": "Thêm một nút mới vào cuối danh sách",
+      "C": "Thêm một nút mới vào đầu danh sách",
+      "D": "Xóa nút head"
+    },
+    "answer": "Thêm một nút mới vào đầu danh sách",
+    "explanation": "Đoạn mã này thêm một nút mới vào đầu danh sách liên kết: gán newNode thành head mới và liên kết newNode.next tới head cũ, chèn nó vào vị trí đầu."
+  },
+  {
+    "question": "Trong danh sách liên kết đôi, mỗi nút có value, prev và next.\nLàm thế nào để chèn một nút mới sau một nút cho trước?",
+    "options": {
+      "A": "Cập nhật givenNode.next và newNode.prev",
+      "B": "Cập nhật givenNode.next, newNode.next, newNode.prev, và prev của nút kế tiếp",
+      "C": "Chỉ cập nhật newNode.next",
+      "D": "Chỉ cập nhật newNode.prev"
+    },
+    "answer": "Cập nhật givenNode.next, newNode.next, newNode.prev, và prev của nút kế tiếp",
+    "explanation": "Để chèn một nút mới sau một nút cho trước trong danh sách đôi, cần cập nhật next của nút cho trước, prev và next của nút mới, và prev của nút kế tiếp để duy trì liên kết hai chiều."
+  },
+  {
+    "question": "Phương thức remove trong danh sách liên kết luôn xóa nút thứ hai, bất kể đầu vào là gì. Lỗi có thể là gì?",
+    "options": {
+      "A": "Cập nhật con trỏ không đúng",
+      "B": "Sử dụng toán tử so sánh sai",
+      "C": "Quên kiểm tra danh sách rỗng",
+      "D": "Tất cả các phương án ở trên"
+    },
+    "answer": "Cập nhật con trỏ không đúng",
+    "explanation": "Nếu phương thức remove luôn xóa nút thứ hai, khả năng cao lỗi nằm ở cách cập nhật con trỏ. Điều này cho thấy phương thức không điều hướng đúng tới nút cần xóa và thay vào đó luôn sửa con trỏ của nút đầu hoặc con trỏ next của nó."
+  },
+  {
+    "question": "Tại sao hàm find trong danh sách liên kết có thể trả về null cho giá trị tồn tại?",
+    "options": {
+      "A": "Logic so sánh sai",
+      "B": "Bắt đầu từ nút sai",
+      "C": "Bỏ qua các nút trong quá trình duyệt",
+      "D": "Bất kỳ lý do nào ở trên"
+    },
+    "answer": "Bất kỳ lý do nào ở trên",
+    "explanation": "Hàm find có thể trả về null do nhiều lỗi: logic so sánh sai, bắt đầu duyệt từ nút không đúng, hoặc vô tình bỏ qua các nút trong quá trình duyệt."
+  },
+  {
+    "question": "Trong hàm dùng để chèn một nút vào chỉ số cụ thể trong danh sách liên kết, nút lại được thêm vào cuối bất kể chỉ số là gì.\nLỗi là gì?",
+    "options": {
+      "A": "Không duyệt danh sách đúng cách",
+      "B": "Không kiểm tra xem chỉ số có nằm trong phạm vi hợp lệ không",
+      "C": "Cả A và B",
+      "D": "Không có phương án nào ở trên"
+    },
+    "answer": "Cả A và B",
+    "explanation": "Lỗi có thể do không duyệt tới vị trí chỉ số đúng và không kiểm tra ranh giới chỉ số. Kết quả là nút bị thêm vào cuối theo mặc định vì điều kiện chèn tại vị trí đúng không được thỏa mãn."
+  },
+  {
+    "question": "Cấu trúc dữ liệu nào sử dụng nguyên tắc FIFO (First In, First Out)?",
+    "options": {
+      "A": "Stack (ngăn xếp)",
+      "B": "Queue (hàng đợi)",
+      "C": "Mảng",
+      "D": "Danh sách liên kết"
+    },
+    "answer": "Queue (hàng đợi)",
+    "explanation": "Queue sử dụng nguyên tắc FIFO: phần tử vào trước được lấy ra trước, thường thêm ở một đầu và loại bỏ ở đầu kia."
+  },
+  {
+    "question": "Sự khác biệt chính giữa stack và queue là gì?",
+    "options": {
+      "A": "Cách lưu trữ dữ liệu",
+      "B": "Cách truy cập dữ liệu",
+      "C": "Giới hạn kích thước",
+      "D": "Độ phức tạp khi triển khai"
+    },
+    "answer": "Cách truy cập dữ liệu",
+    "explanation": "Khác biệt chính là phương thức truy cập: stack theo LIFO (vào sau ra trước), queue theo FIFO (vào trước ra trước)."
+  },
+  {
+    "question": "Trong hàng đợi, các phép toán tương ứng để thêm và loại bỏ phần tử là gì?",
+    "options": {
+      "A": "push và pop",
+      "B": "enqueue và dequeue",
+      "C": "insert và delete",
+      "D": "add và remove"
+    },
+    "answer": "enqueue và dequeue",
+    "explanation": "Trong hàng đợi, enqueue dùng để thêm phần tử vào cuối, dequeue để loại bỏ phần tử ở đầu hàng."
+  },
+  {
+    "question": "Ví dụ trong thực tế nào dưới đây là minh họa cho stack?",
+    "options": {
+      "A": "Dòng người xếp chờ mua vé",
+      "B": "Sắp xếp đĩa trong căng tin",
+      "C": "Danh sách phát nhạc",
+      "D": "Hàng đợi tại trạm xe buýt"
+    },
+    "answer": "Sắp xếp đĩa trong căng tin",
+    "explanation": "Sắp xếp đĩa trong căng tin, nơi đĩa đặt sau cùng sẽ được lấy ra trước, minh họa cho nguyên tắc LIFO của stack."
+  },
+  {
+    "question": "Stack có thể được triển khai bằng cách nào?",
+    "options": {
+      "A": "Sử dụng mảng hoặc danh sách liên kết",
+      "B": "Sử dụng bảng băm",
+      "C": "Sử dụng cây nhị phân",
+      "D": "Sử dụng truy cập bộ nhớ trực tiếp"
+    },
+    "answer": "Sử dụng mảng hoặc danh sách liên kết",
+    "explanation": "Stack có thể được triển khai hiệu quả bằng mảng hoặc danh sách liên kết: thêm/bớt ở đỉnh mảng hoặc đầu danh sách."
+  },
+  {
+    "question": "Độ phức tạp thời gian để truy cập phần tử đáy của một stack là bao nhiêu?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n)",
+    "explanation": "Truy cập phần tử đáy của stack có độ phức tạp O(n) vì thường phải lấy (hoặc bỏ) các phần tử phía trên trước, giả sử triển khai stack chỉ cho truy cập trực tiếp tới đỉnh."
+  },
+  {
+    "question": "Phép toán nào dùng để thêm phần tử vào đỉnh của stack?",
+    "options": {
+      "A": "push",
+      "B": "pop",
+      "C": "enqueue",
+      "D": "dequeue"
+    },
+    "answer": "push",
+    "explanation": "Phép push được dùng để thêm phần tử vào đỉnh của stack, theo nguyên tắc LIFO."
+  },
+  {
+    "question": "Xét một triển khai stack. Phép toán sau thực hiện gì?\nstack.pop()",
+    "options": {
+      "A": "Thêm một phần tử vào stack",
+      "B": "Loại bỏ phần tử ở đỉnh stack",
+      "C": "Xem phần tử đỉnh mà không loại bỏ",
+      "D": "Kiểm tra xem stack có rỗng không"
+    },
+    "answer": "Loại bỏ phần tử ở đỉnh stack",
+    "explanation": "stack.pop() loại bỏ phần tử ở đỉnh stack, tuân theo nguyên tắc LIFO: phần tử vào sau cùng sẽ được lấy ra trước."
+  },
+  {
+    "question": "Làm thế nào để triển khai hàng đợi bằng hai stack, stack1 và stack2?",
+    "options": {
+      "A": "Bằng cách luân phiên chuyển phần tử giữa stack1 và stack2",
+      "B": "Đẩy phần tử vào stack1 và pop sang stack2 khi dequeue",
+      "C": "Dùng stack1 cho enqueue và stack2 cho dequeue",
+      "D": "Không có phương án nào ở trên"
+    },
+    "answer": "Đẩy phần tử vào stack1 và pop sang stack2 khi dequeue",
+    "explanation": "Để triển khai hàng đợi bằng hai stack, stack1 dùng để enqueue (push). Khi dequeue, nếu stack2 rỗng thì pop các phần tử từ stack1 sang stack2 để đảm bảo phần tử vào trước sẽ nằm ở đỉnh của stack2 và được dequeue trước, giữ nguyên thứ tự FIFO."
+  },
+  {
+    "question": "Một triển khai hàng đợi trả về phần tử không đúng khi dequeue.\nVấn đề có thể là gì?",
+    "options": {
+      "A": "Phép enqueue đặt phần tử ở phía trước",
+      "B": "Phép dequeue loại bỏ phần tử từ phía sai",
+      "C": "Cả A và B",
+      "D": "Không có phương án nào ở trên"
+    },
+    "answer": "Phép dequeue loại bỏ phần tử từ phía sai",
+    "explanation": "Nếu hàng đợi trả về phần tử không đúng khi dequeue, có khả năng lớn phép dequeue đang loại bỏ phần tử từ đầu/cực sai, không tuân thủ nguyên tắc FIFO."
+  },
+  {
+    "question": "Trong stack, phép pop đôi khi trả về phần tử đúng và đôi khi trả về null.\nLỗi có thể là gì?",
+    "options": {
+      "A": "Stack không kiểm tra đúng điều kiện underflow",
+      "B": "Phép push hoạt động không nhất quán",
+      "C": "Stack ghi đè các phần tử",
+      "D": "Tất cả các phương án ở trên"
+    },
+    "answer": "Stack không kiểm tra đúng điều kiện underflow",
+    "explanation": "Nếu pop đôi khi trả về null, rất có thể stack không kiểm tra đúng điều kiện underflow (thử loại bỏ phần tử khi stack rỗng)."
+  },
+  {
+    "question": "Một stack triển khai bằng mảng ném ngoại lệ index out of bounds.\nNguyên nhân có khả năng nhất là gì?",
+    "options": {
+      "A": "Khởi tạo sai kích thước cho stack",
+      "B": "Vượt quá năng lực của stack mà không thay đổi kích thước",
+      "C": "Tính toán chỉ số cho push/pop sai",
+      "D": "Tất cả các phương án ở trên"
+    },
+    "answer": "Vượt quá năng lực của stack mà không thay đổi kích thước",
+    "explanation": "Stack dùng mảng có thể ném ngoại lệ nếu cố thêm nhiều phần tử hơn dung lượng mà không thay đổi kích thước hoặc quản lý biên đúng cách; cần kiểm tra và thay đổi kích thước khi cần."
+  },
+  {
+    "question": "Tính năng nào phân biệt cây nhị phân (binary tree) với các loại cây khác?",
+    "options": {
+      "A": "Mỗi nút có nhiều nhất hai con",
+      "B": "Mỗi nút có đúng hai con",
+      "C": "Các nút được tổ chức theo dạng nhị phân",
+      "D": "Các nút chứa dữ liệu nhị phân"
+    },
+    "answer": "Mỗi nút có nhiều nhất hai con",
+    "explanation": "Cây nhị phân đặc trưng bởi mỗi nút có tối đa hai con, khác với các loại cây khác có thể cho phép nhiều con hơn."
+  },
+  {
+    "question": "Trong cây tìm kiếm nhị phân (BST), phần tử nhỏ nhất nằm ở đâu?",
+    "options": {
+      "A": "Nút lá bên trái nhất",
+      "B": "Nút lá bên phải nhất",
+      "C": "Nút gốc nếu cây cân bằng",
+      "D": "Trực tiếp dưới nút gốc nếu cây đầy đủ"
+    },
+    "answer": "Nút lá bên trái nhất",
+    "explanation": "Phần tử nhỏ nhất trong BST nằm ở nút lá bên trái nhất do tính chất BST: các nút bên trái có giá trị nhỏ hơn nút cha."
+  },
+  {
+    "question": "Sự khác biệt chính giữa đồ thị (graph) và cây (tree) là gì?",
+    "options": {
+      "A": "Cây có chu trình, trong khi đồ thị thì không",
+      "B": "Đồ thị có thể chứa chu trình, trong khi cây thì không",
+      "C": "Cây chỉ có thể có một gốc, trong khi đồ thị có thể có nhiều gốc",
+      "D": "Đồ thị là cấu trúc phân cấp, còn cây thì không"
+    },
+    "answer": "Đồ thị có thể chứa chu trình, trong khi cây thì không",
+    "explanation": "Khác biệt chính là đồ thị có thể có chu trình (các đỉnh có thể nối lại với nhau), trong khi cây là cấu trúc không chu trình và mang tính phân cấp."
+  },
+  {
+    "question": "Phương pháp duyệt nào được sử dụng để thăm các nút theo từng cấp, từ trái sang phải trong một cây?",
+    "options": {
+      "A": "Tiền tự (Preorder)",
+      "B": "Trung tự (Inorder)",
+      "C": "Hậu tự (Postorder)",
+      "D": "Duyệt theo cấp (Level-order)"
+    },
+    "answer": "Duyệt theo cấp (Level-order)",
+    "explanation": "Duyệt theo cấp thăm các nút từng cấp một từ trái sang phải, hữu ích để hiểu cấu trúc của cây theo từng lớp."
+  },
+  {
+    "question": "Cấu trúc dữ liệu nào phù hợp nhất để triển khai danh sách kề (adjacency list) của một đồ thị?",
+    "options": {
+      "A": "Mảng (Array)",
+      "B": "Danh sách liên kết (Linked list)",
+      "C": "Bảng băm (Hash table)",
+      "D": "Cây (Tree)"
+    },
+    "answer": "Danh sách liên kết (Linked list)",
+    "explanation": "Danh sách liên kết phù hợp để triển khai danh sách kề của đồ thị vì nó quản lý hiệu quả kích thước động của các danh sách kề, cho phép thêm và xóa cạnh một cách dễ dàng."
+  },
+  {
+    "question": "Trong đồ thị có hướng, một cạnh từ nút A đến nút B biểu thị điều gì?",
+    "options": {
+      "A": "Mối quan hệ hai chiều",
+      "B": "Mối quan hệ một chiều từ A đến B",
+      "C": "Mối quan hệ phân cấp",
+      "D": "Mối quan hệ ngang hàng (peer-to-peer)"
+    },
+    "answer": "Mối quan hệ một chiều từ A đến B",
+    "explanation": "Trong đồ thị có hướng, một cạnh từ A tới B biểu thị mối quan hệ một chiều, có đường đi từ A đến B nhưng không nhất thiết ngược lại."
+  },
+  {
+    "question": "Tính chất của cây tìm kiếm nhị phân (BST) cân bằng là gì?",
+    "options": {
+      "A": "Độ cao của cây con bên trái và bên phải chênh lệch tối đa là một",
+      "B": "Mỗi cây con là một cây đầy (full tree)",
+      "C": "Mỗi cây con là một cây hoàn chỉnh (complete binary tree)",
+      "D": "Tất cả các nút lá cùng mức"
+    },
+    "answer": "Độ cao của cây con bên trái và bên phải chênh lệch tối đa là một",
+    "explanation": "BST cân bằng được định nghĩa là độ cao của hai cây con trái và phải của bất kỳ nút nào chênh lệch tối đa một, đảm bảo các phép toán như chèn, xóa và tìm kiếm vẫn hiệu quả."
+  },
+  {
+    "question": "Kết quả khi thực hiện duyệt trung tự (inorder) trên một BST là gì?",
+    "options": {
+      "A": "Một hoán vị ngẫu nhiên của các phần tử trong cây",
+      "B": "Các phần tử của cây được sắp xếp theo thứ tự giảm dần",
+      "C": "Các phần tử của cây được sắp xếp theo thứ tự tăng dần",
+      "D": "Các phần tử theo thứ tự chúng được chèn"
+    },
+    "answer": "Các phần tử của cây được sắp xếp theo thứ tự tăng dần",
+    "explanation": "Duyệt inorder trên BST sẽ thăm các phần tử theo thứ tự tăng dần do quy tắc thăm trái - gốc - phải."
+  },
+  {
+    "question": "Làm thế nào để tìm chiều cao của một cây nhị phân?",
+    "options": {
+      "A": "Đếm số nút con bên trái",
+      "B": "Đếm số nút con bên phải",
+      "C": "Tính độ sâu lớn nhất từ nút gốc đến bất kỳ nút lá nào",
+      "D": "Tính tổng số nút"
+    },
+    "answer": "Tính độ sâu lớn nhất từ nút gốc đến bất kỳ nút lá nào",
+    "explanation": "Chiều cao của cây nhị phân là độ sâu lớn nhất từ gốc đến một nút lá, thường được tính bằng cách đệ quy lấy chiều cao của các cây con và chọn giá trị lớn hơn, cộng một cho nút gốc."
+  },
+  {
+    "question": "Trong lý thuyết đồ thị, một cạnh có trọng số được biểu diễn trong danh sách kề như thế nào?",
+    "options": {
+      "A": "Như một danh sách các cặp đỉnh",
+      "B": "Như một danh sách các đỉnh kèm theo danh sách các cạnh liên quan",
+      "C": "Như một danh sách các tuple, mỗi tuple chứa một đỉnh và trọng số cạnh",
+      "D": "Như một ma trận hai chiều"
+    },
+    "answer": "Như một danh sách các tuple, mỗi tuple chứa một đỉnh và trọng số cạnh",
+    "explanation": "Trong danh sách kề, cạnh có trọng số thường được biểu diễn dưới dạng các tuple, mỗi tuple chứa đỉnh kề và trọng số của cạnh, cho phép lưu trữ chi phí hoặc độ dài của mỗi kết nối."
+  },
+  {
+    "question": "Thuật toán nào có thể dùng để phát hiện chu trình trong đồ thị có hướng?",
+    "options": {
+      "A": "Duyệt theo chiều sâu (DFS)",
+      "B": "Duyệt theo chiều rộng (BFS)",
+      "C": "Thuật toán Kruskal",
+      "D": "Thuật toán Dijkstra"
+    },
+    "answer": "Duyệt theo chiều sâu (DFS)",
+    "explanation": "DFS có thể dùng để phát hiện chu trình trong đồ thị có hướng bằng cách theo dõi các nút đã thăm và kiểm tra các cạnh quay lại (back edges), khi gặp lại một nút trong cùng đường đi sẽ biểu thị có chu trình."
+  },
+  {
+    "question": "Bạn triển khai một cây nhưng nhận thấy các nút con không được liên kết đúng với cha của chúng.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Cây được khởi tạo sai thành một đồ thị",
+      "B": "Các nút con bị thêm vào cha sai",
+      "C": "Cấu trúc cây không hỗ trợ phân cấp",
+      "D": "Các nút không được liên kết đúng"
+    },
+    "answer": "Các nút con bị thêm vào cha sai",
+    "explanation": "Nếu các nút con không được liên kết đúng với cha, vấn đề có thể là các nút con đang được thêm vào cha sai, cho thấy lỗi trong cách chèn nút vào cây."
+  },
+  {
+    "question": "Ma trận kề của đồ thị không phản ánh đúng các kết nối giữa các nút.\nMột lỗi có thể là gì?",
+    "options": {
+      "A": "Kích thước ma trận sai",
+      "B": "Các cạnh được thêm vào ô sai trong ma trận",
+      "C": "Ma trận không được cập nhật khi thêm hoặc xoá cạnh",
+      "D": "Cả B và C"
+    },
+    "answer": "Các cạnh được thêm vào ô sai trong ma trận",
+    "explanation": "Nếu ma trận kề không phản ánh đúng kết nối, một lỗi có thể là các cạnh bị thêm vào ô sai, cho thấy sự không khớp giữa các đỉnh và chỉ số tương ứng trong ma trận."
+  },
+  {
+    "question": "Trong một cài đặt duyệt theo chiều sâu (DFS) cho đồ thị, bạn thấy thuật toán không thăm hết các nút.\nCó thể sai ở đâu?",
+    "options": {
+      "A": "Thuật toán không xử lý các thành phần rời rạc",
+      "B": "Nút bắt đầu được chọn sai",
+      "C": "Các cờ đánh dấu đã thăm không được đặt lại giữa các lần chạy",
+      "D": "Độ sâu đệ quy bị giới hạn"
+    },
+    "answer": "Thuật toán không xử lý các thành phần rời rạc",
+    "explanation": "Nếu DFS không thăm hết các nút, có thể là vì thuật toán chỉ khám phá một thành phần liên thông mà không chuyển sang các thành phần rời rạc khác."
+  },
+  {
+    "question": "Độ phức tạp thời gian tốt nhất của QuickSort là bao nhiêu?",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "O(n log n)",
+    "explanation": "Độ phức tạp tốt nhất của QuickSort là O(n log n), đạt được khi chọn pivot tốt giúp phân chia mảng đều."
+  },
+  {
+    "question": "Thuật toán sắp xếp nào có tính ổn định (stable) vốn có?",
+    "options": {
+      "A": "QuickSort",
+      "B": "HeapSort",
+      "C": "MergeSort",
+      "D": "BubbleSort"
+    },
+    "answer": "MergeSort",
+    "explanation": "MergeSort là thuật toán ổn định, giữ nguyên thứ tự tương đối của các phần tử bằng nhau, phù hợp để sắp xếp các bản ghi phức tạp."
+  },
+  {
+    "question": "stability trong các thuật toán sắp xếp ám chỉ điều gì?",
+    "options": {
+      "A": "Hiệu năng khi chịu tải",
+      "B": "Giữ nguyên thứ tự tương đối của các phần tử bằng nhau",
+      "C": "Sử dụng bộ nhớ tối thiểu",
+      "D": "Thời gian sắp xếp nhanh nhất có thể"
+    },
+    "answer": "Giữ nguyên thứ tự tương đối của các phần tử bằng nhau",
+    "explanation": "Stability nghĩa là thuật toán sắp xếp giữ nguyên thứ tự tương đối của các bản ghi có khóa bằng nhau, quan trọng cho sắp xếp nhiều giai đoạn và bảo tồn chuỗi dữ liệu."
+  },
+  {
+    "question": "Độ phức tạp thời gian trường hợp xấu nhất của tìm kiếm nhị phân trên một mảng có thứ tự tăng dài n là bao nhiêu?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "O(log n)",
+    "explanation": "Tìm kiếm nhị phân có độ phức tạp trường hợp xấu nhất là O(log n) do phương pháp chia để trị, giảm một nửa không gian tìm kiếm mỗi bước."
+  },
+  {
+    "question": "Thuật toán sắp xếp nào hiệu quả nhất cho bộ dữ liệu có phạm vi số nguyên đã biết và giới hạn?",
+    "options": {
+      "A": "QuickSort",
+      "B": "BubbleSort",
+      "C": "CountingSort",
+      "D": "InsertionSort"
+    },
+    "answer": "CountingSort",
+    "explanation": "CountingSort phù hợp cho dữ liệu có phạm vi giá trị số nguyên giới hạn, vì nó đếm số lượng xuất hiện thay vì so sánh trực tiếp, dẫn đến sắp xếp hiệu quả."
+  },
+  {
+    "question": "Nguyên tắc mà các thuật toán chia để trị (divide and conquer) sử dụng là gì?",
+    "options": {
+      "A": "Chia dữ liệu thành các phần nhỏ hơn và sắp xếp từng phần độc lập",
+      "B": "Chọn phần tử ngẫu nhiên",
+      "C": "Duyệt tuyến tính",
+      "D": "Đổi chỗ trực tiếp các phần tử"
+    },
+    "answer": "Chia dữ liệu thành các phần nhỏ hơn và sắp xếp từng phần độc lập",
+    "explanation": "Các thuật toán như MergeSort và QuickSort chia dữ liệu thành các phần nhỏ, sắp xếp độc lập các phần đó và sau đó kết hợp chúng để tạo thành kết quả đã sắp xếp."
+  },
+  {
+    "question": "Tại sao QuickSort thường được ưa thích hơn MergeSort khi sắp xếp mảng trong thực tế?",
+    "options": {
+      "A": "Độ phức tạp không gian thấp hơn",
+      "B": "Thời gian trung bình nhanh hơn",
+      "C": "Dễ cài đặt hơn",
+      "D": "Đảm bảo sắp xếp ổn định"
+    },
+    "answer": "Độ phức tạp không gian thấp hơn",
+    "explanation": "QuickSort thường được ưa chuộng vì khả năng sắp xếp tại chỗ (in-place), cung cấp độ phức tạp không gian thấp hơn so với MergeSort, vốn cần bộ nhớ phụ để hợp nhất."
+  },
+  {
+    "question": "Dòng mã nào khởi tạo pivot đúng trong QuickSort cho đoạn mảng từ low đến high?",
+    "options": {
+      "A": "int pivot = arr[high];",
+      "B": "int pivot = arr[(low + high) / 2];",
+      "C": "int pivot = arr[low];",
+      "D": "int pivot = high;"
+    },
+    "answer": "int pivot = arr[(low + high) / 2];",
+    "explanation": "Chọn phần tử giữa làm pivot, int pivot = arr[(low + high) / 2];, giúp tránh trường hợp tồi tệ khi mảng đã sắp xếp hoặc sắp xếp ngược bằng cách hướng tới phân hoạch cân bằng."
+  },
+  {
+    "question": "Kỹ thuật nào cải thiện hiệu năng của QuickSort trên các mảng nhỏ?",
+    "options": {
+      "A": "Kết hợp với Insertion sort",
+      "B": "Chọn pivot ngẫu nhiên",
+      "C": "Giảm độ sâu đệ quy",
+      "D": "Tăng kích thước ngăn xếp"
+    },
+    "answer": "Kết hợp với Insertion sort",
+    "explanation": "Trên mảng nhỏ, QuickSort thường chuyển sang Insertion Sort, một thuật toán đơn giản hơn và hiệu quả hơn cho dữ liệu nhỏ do chi phí cố định thấp hơn."
+  },
+  {
+    "question": "Hàm merge trong MergeSort thực hiện hành động chính gì?",
+    "options": {
+      "A": "Chia mảng",
+      "B": "Sắp xếp các mảng con",
+      "C": "Gộp các mảng con đã sắp xếp",
+      "D": "So sánh từng phần tử"
+    },
+    "answer": "Gộp các mảng con đã sắp xếp",
+    "explanation": "Hàm merge kết hợp hai mảng con đã sắp xếp thành một mảng duy nhất đã được sắp xếp, đây là bước then chốt để đạt được thứ tự tổng thể."
+  },
+  {
+    "question": "Thuật toán tìm kiếm nhị phân được điều chỉnh như thế nào cho mảng đã sắp xếp nhưng bị xoay (rotated)?",
+    "options": {
+      "A": "Điều chỉnh tìm kiếm dựa trên so sánh phần tử giữa",
+      "B": "Nhân đôi phạm vi tìm kiếm mỗi bước",
+      "C": "Chỉ tìm kiếm một nửa mảng",
+      "D": "Sắp xếp lại mảng trước khi tìm kiếm"
+    },
+    "answer": "Điều chỉnh tìm kiếm dựa trên so sánh phần tử giữa",
+    "explanation": "Với mảng xoay, tìm kiếm nhị phân được điều chỉnh bằng cách so sánh phần tử giữa và xác định nửa nào có thứ tự tăng để tiếp tục tìm kiếm."
+  },
+  {
+    "question": "Thuật toán InsertionSort của một lập trình viên không sắp xếp đúng.\nMột lỗi phổ biến cần kiểm tra là gì?",
+    "options": {
+      "A": "Đặt sai phần tử khóa (key)",
+      "B": "Tính chỉ số sai",
+      "C": "Bỏ qua các phần tử",
+      "D": "So sánh phần tử không đúng"
+    },
+    "answer": "So sánh phần tử không đúng",
+    "explanation": "Lỗi phổ biến trong InsertionSort là so sánh phần tử sai, dẫn đến việc chèn phần tử khóa không đúng vào phần đã sắp xếp."
+  },
+  {
+    "question": "Trong một cài đặt tìm kiếm nhị phân có lỗi, thuật toán bỏ lỡ mục tiêu.\nNguyên nhân có khả năng là gì?",
+    "options": {
+      "A": "Tính chỉ số giữa (middle) sai",
+      "B": "Không kiểm tra giới hạn của mảng đã sắp xếp",
+      "C": "Bỏ qua phép so sánh với mục tiêu",
+      "D": "Tất cả các điều kiện đều đúng nhưng vẫn thất bại"
+    },
+    "answer": "Tính chỉ số giữa (middle) sai",
+    "explanation": "Tính sai chỉ số giữa là lỗi phổ biến trong tìm kiếm nhị phân, làm cho thuật toán chia khoảng tìm kiếm không đúng và bỏ lỡ mục tiêu."
+  },
+  {
+    "question": "QuickSort gây lỗi tràn ngăn xếp (stack overflow).\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Đệ quy quá sâu trên dữ liệu lớn",
+      "B": "Chọn pivot sai dẫn đến phân hoạch mất cân bằng",
+      "C": "Các lời gọi đệ quy không kết thúc",
+      "D": "Tất cả các điều kiện đều đúng nhưng vẫn thất bại"
+    },
+    "answer": "Chọn pivot sai dẫn đến phân hoạch mất cân bằng",
+    "explanation": "Chọn pivot không hợp lý có thể dẫn đến phân hoạch mất cân bằng, gây độ sâu đệ quy lớn trên mảng gần như đã sắp xếp hoặc có mẫu đặc biệt, dẫn tới tràn ngăn xếp."
+  },
+  {
+    "question": "Hash table là gì?",
+    "options": {
+      "A": "Một cấu trúc lưu cặp khóa-giá trị trong một mảng tuyến tính",
+      "B": "Một cấu trúc tổ chức dữ liệu để tìm kiếm, chèn và xóa nhanh dựa trên khóa",
+      "C": "Một cấu trúc dữ liệu để lưu trữ dữ liệu phân cấp",
+      "D": "Một cấu trúc lưu dữ liệu trong các nút với một khóa và nhiều giá trị"
+    },
+    "answer": "Một cấu trúc tổ chức dữ liệu để tìm kiếm, chèn và xóa nhanh dựa trên khóa",
+    "explanation": "Hash table là cấu trúc dữ liệu tổ chức dữ liệu hiệu quả để thực hiện các phép toán như tìm kiếm, chèn và xóa bằng cách sử dụng hàm băm để tính chỉ số vào mảng các bucket, từ đó tìm giá trị mong muốn."
+  },
+  {
+    "question": "Trong số các lựa chọn sau, trường hợp sử dụng phổ biến nào cho hash table?",
+    "options": {
+      "A": "Triển khai hệ thống chỉ mục cơ sở dữ liệu",
+      "B": "Lưu sở thích người dùng trong ứng dụng web",
+      "C": "Thực hiện tìm kiếm nhanh trong tập dữ liệu lớn",
+      "D": "Tất cả các phương án trên"
+    },
+    "answer": "Tất cả các phương án trên",
+    "explanation": "Hash table được sử dụng rộng rãi trong nhiều ứng dụng như chỉ mục cơ sở dữ liệu, lưu sở thích người dùng và tìm kiếm nhanh trong tập dữ liệu lớn nhờ khả năng truy xuất dựa trên khóa hiệu quả."
+  },
+  {
+    "question": "Va chạm (collision) trong hash table là gì?",
+    "options": {
+      "A": "Khi hai khóa có cùng giá trị",
+      "B": "Khi hàm băm trả về cùng một chỉ số cho các khóa khác nhau",
+      "C": "Khi hash table vượt quá hệ số tải (load factor)",
+      "D": "Khi một khóa bị mất do bị ghi đè"
+    },
+    "answer": "Khi hàm băm trả về cùng một chỉ số cho các khóa khác nhau",
+    "explanation": "Collision xảy ra khi hàm băm ánh xạ hai hoặc nhiều khóa tới cùng một chỉ số trong mảng. Xử lý collision là cần thiết để duy trì hiệu suất và độ chính xác của hash table."
+  },
+  {
+    "question": "Thách thức chính khi thiết kế hàm băm cho hash table là gì?",
+    "options": {
+      "A": "Đảm bảo hàm có thể đảo ngược",
+      "B": "Giảm thiểu số lần xảy ra collision",
+      "C": "Đảm bảo hàm tạo ra đầu ra duy nhất cho mỗi đầu vào",
+      "D": "Tối đa hóa độ phức tạp tính toán"
+    },
+    "answer": "Giảm thiểu số lần xảy ra collision",
+    "explanation": "Thách thức chính là giảm thiểu collision. Một hàm băm tốt phân phối đều các khóa trên bảng, giảm khả năng collision và giữ thời gian truy cập hiệu quả."
+  },
+  {
+    "question": "Kỹ thuật nào thường dùng để giải quyết collision trong hash table?",
+    "options": {
+      "A": "Linear probing",
+      "B": "Dùng cây tìm kiếm nhị phân",
+      "C": "Nhân đôi kích thước bảng khi đầy",
+      "D": "Lưu tất cả mục trong một danh sách liên kết duy nhất"
+    },
+    "answer": "Linear probing",
+    "explanation": "Linear probing là kỹ thuật giải quyết collision phổ biến, khi gặp collision, thuật toán tìm ô trống tiếp theo theo thứ tự tuần tự trong bảng. Phương pháp này đơn giản và có thể phân phối mục đều khắp bảng."
+  },
+  {
     "question": "Trong ngữ cảnh bảng băm (hash table), \"load factor\" chỉ điều gì?",
-        "options": {
-            "A": "Tỷ lệ giữa số mục được lưu và số bucket trong bảng",
-            "B": "Số lần va chạm tối đa cho phép trước khi thay đổi kích thước",
-            "C": "Phần trăm khóa có giá trị null",
-            "D": "Thời gian tìm kiếm trung bình cho một mục"
-        },
-        "answer": "Tỷ lệ giữa số mục được lưu và số bucket trong bảng",
-        "explanation": "Load factor của một bảng băm là tỷ lệ giữa số mục (hoặc phần tử được lưu) và số bucket hoặc ô. Đây là chỉ số đo mức độ đầy của bảng băm, và ảnh hưởng đến quyết định thay đổi kích thước bảng để duy trì hiệu suất."
+    "options": {
+      "A": "Tỷ lệ giữa số mục được lưu và số bucket trong bảng",
+      "B": "Số lần va chạm tối đa cho phép trước khi thay đổi kích thước",
+      "C": "Phần trăm khóa có giá trị null",
+      "D": "Thời gian tìm kiếm trung bình cho một mục"
     },
-    {
-        "question": "Chiến lược nào có thể giảm đáng kể khả năng xảy ra va chạm trong bảng băm?",
-        "options": {
-            "A": "Sử dụng số nguyên tố cho kích thước của bảng băm",
-            "B": "Tăng kích thước của khóa",
-            "C": "Giảm số lượng mục",
-            "D": "Sử dụng nhiều hàm băm cho cùng một khóa"
-        },
-        "answer": "Sử dụng số nguyên tố cho kích thước của bảng băm",
-        "explanation": "Sử dụng một số nguyên tố cho kích thước bảng băm có thể giảm đáng kể khả năng va chạm. Điều này vì số nguyên tố giúp phân phối khóa đồng đều hơn trên bảng, đặc biệt khi kết hợp với một hàm băm được thiết kế tốt."
+    "answer": "Tỷ lệ giữa số mục được lưu và số bucket trong bảng",
+    "explanation": "Load factor của một bảng băm là tỷ lệ giữa số mục (hoặc phần tử được lưu) và số bucket hoặc ô. Đây là chỉ số đo mức độ đầy của bảng băm, và ảnh hưởng đến quyết định thay đổi kích thước bảng để duy trì hiệu suất."
+  },
+  {
+    "question": "Chiến lược nào có thể giảm đáng kể khả năng xảy ra va chạm trong bảng băm?",
+    "options": {
+      "A": "Sử dụng số nguyên tố cho kích thước của bảng băm",
+      "B": "Tăng kích thước của khóa",
+      "C": "Giảm số lượng mục",
+      "D": "Sử dụng nhiều hàm băm cho cùng một khóa"
     },
-    {
-        "question": "Làm thế nào để truy cập một giá trị được lưu trong bảng băm dựa trên khóa của nó?",
-        "options": {
-            "A": "Bằng cách tính hàm băm của khóa và tìm kiếm tuyến tính",
-            "B": "Bằng cách truy cập trực tiếp mảng bằng khóa",
-            "C": "Bằng cách tính hàm băm của khóa và dùng nó làm chỉ số",
-            "D": "Bằng cách sắp xếp các khóa và thực hiện tìm kiếm nhị phân"
-        },
-        "answer": "Bằng cách tính hàm băm của khóa và dùng nó làm chỉ số",
-        "explanation": "Để truy cập một giá trị trong bảng băm, ta tính hàm băm của khóa, kết quả sẽ cho một chỉ số trong mảng hoặc mảng bucket nơi giá trị được lưu. Thao tác này thường có độ phức tạp O(1), làm cho bảng băm rất hiệu quả cho việc truy xuất dữ liệu."
+    "answer": "Sử dụng số nguyên tố cho kích thước của bảng băm",
+    "explanation": "Sử dụng một số nguyên tố cho kích thước bảng băm có thể giảm đáng kể khả năng va chạm. Điều này vì số nguyên tố giúp phân phối khóa đồng đều hơn trên bảng, đặc biệt khi kết hợp với một hàm băm được thiết kế tốt."
+  },
+  {
+    "question": "Làm thế nào để truy cập một giá trị được lưu trong bảng băm dựa trên khóa của nó?",
+    "options": {
+      "A": "Bằng cách tính hàm băm của khóa và tìm kiếm tuyến tính",
+      "B": "Bằng cách truy cập trực tiếp mảng bằng khóa",
+      "C": "Bằng cách tính hàm băm của khóa và dùng nó làm chỉ số",
+      "D": "Bằng cách sắp xếp các khóa và thực hiện tìm kiếm nhị phân"
     },
-    {
-        "question": "Phương pháp phổ biến nhất để xử lý va chạm trong bảng băm khi lập trình là gì?",
-        "options": {
-            "A": "Địa chỉ mở với dò tuyến tính (open addressing with linear probing)",
-            "B": "Lưu các giá trị trong một danh sách tại mỗi chỉ số",
-            "C": "Gấp đôi kích thước bảng băm khi có va chạm",
-            "D": "Sử dụng một hàm băm phụ"
-        },
-        "answer": "Địa chỉ mở với dò tuyến tính (open addressing with linear probing)",
-        "explanation": "Địa chỉ mở với dò tuyến tính là một phương pháp phổ biến để xử lý va chạm trong bảng băm. Nó tìm ô trống tiếp theo trong mảng bảng bằng cách di chuyển tuần tự từ vị trí va chạm, giải quyết va chạm mà không cần cấu trúc dữ liệu phụ."
+    "answer": "Bằng cách tính hàm băm của khóa và dùng nó làm chỉ số",
+    "explanation": "Để truy cập một giá trị trong bảng băm, ta tính hàm băm của khóa, kết quả sẽ cho một chỉ số trong mảng hoặc mảng bucket nơi giá trị được lưu. Thao tác này thường có độ phức tạp O(1), làm cho bảng băm rất hiệu quả cho việc truy xuất dữ liệu."
+  },
+  {
+    "question": "Phương pháp phổ biến nhất để xử lý va chạm trong bảng băm khi lập trình là gì?",
+    "options": {
+      "A": "Địa chỉ mở với dò tuyến tính (open addressing with linear probing)",
+      "B": "Lưu các giá trị trong một danh sách tại mỗi chỉ số",
+      "C": "Gấp đôi kích thước bảng băm khi có va chạm",
+      "D": "Sử dụng một hàm băm phụ"
     },
-    {
-        "question": "Làm thế nào để đảm bảo bảng băm vẫn hiệu quả khi có nhiều mục được thêm vào?",
-        "options": {
-            "A": "Bằng cách giảm kích thước bảng định kỳ",
-            "B": "Bằng cách rehash tất cả mục vào một bảng lớn hơn khi load factor đạt ngưỡng",
-            "C": "Bằng cách giới hạn số lượng mục",
-            "D": "Bằng cách chuyển bảng thành cây tìm kiếm nhị phân khi tràn"
-        },
-        "answer": "Bằng cách rehash tất cả mục vào một bảng lớn hơn khi load factor đạt ngưỡng",
-        "explanation": "Để đảm bảo hiệu suất khi thêm mục, ta thường rehash (thay đổi kích thước và tính lại vị trí) tất cả các mục vào một bảng lớn hơn khi load factor đạt một ngưỡng nhất định. Quá trình này giúp duy trì load factor thấp, giảm khả năng va chạm và giữ thời gian truy cập ngắn."
+    "answer": "Địa chỉ mở với dò tuyến tính (open addressing with linear probing)",
+    "explanation": "Địa chỉ mở với dò tuyến tính là một phương pháp phổ biến để xử lý va chạm trong bảng băm. Nó tìm ô trống tiếp theo trong mảng bảng bằng cách di chuyển tuần tự từ vị trí va chạm, giải quyết va chạm mà không cần cấu trúc dữ liệu phụ."
+  },
+  {
+    "question": "Làm thế nào để đảm bảo bảng băm vẫn hiệu quả khi có nhiều mục được thêm vào?",
+    "options": {
+      "A": "Bằng cách giảm kích thước bảng định kỳ",
+      "B": "Bằng cách rehash tất cả mục vào một bảng lớn hơn khi load factor đạt ngưỡng",
+      "C": "Bằng cách giới hạn số lượng mục",
+      "D": "Bằng cách chuyển bảng thành cây tìm kiếm nhị phân khi tràn"
     },
-    {
-        "question": "Cách nào là tốt nhất để lưu trữ các giá trị có cùng khóa băm trong một bảng băm?",
-        "options": {
-            "A": "Ghi đè giá trị trước đó",
-            "B": "Liên kết các giá trị mới với các giá trị hiện có bằng một danh sách liên kết",
-            "C": "Bỏ qua các giá trị trùng khóa mới",
-            "D": "Lưu các giá trị vào một bảng kề bên"
-        },
-        "answer": "Liên kết các giá trị mới với các giá trị hiện có bằng một danh sách liên kết",
-        "explanation": "Liên kết các giá trị mới với các giá trị hiện có bằng danh sách liên kết, gọi là chaining, là phương pháp hiệu quả để xử lý va chạm do nhiều khóa có cùng giá trị băm. Phương pháp này cho phép nhiều giá trị cùng tồn tại tại cùng một chỉ số bằng cách mở rộng vùng chứa tại vị trí đó."
+    "answer": "Bằng cách rehash tất cả mục vào một bảng lớn hơn khi load factor đạt ngưỡng",
+    "explanation": "Để đảm bảo hiệu suất khi thêm mục, ta thường rehash (thay đổi kích thước và tính lại vị trí) tất cả các mục vào một bảng lớn hơn khi load factor đạt một ngưỡng nhất định. Quá trình này giúp duy trì load factor thấp, giảm khả năng va chạm và giữ thời gian truy cập ngắn."
+  },
+  {
+    "question": "Cách nào là tốt nhất để lưu trữ các giá trị có cùng khóa băm trong một bảng băm?",
+    "options": {
+      "A": "Ghi đè giá trị trước đó",
+      "B": "Liên kết các giá trị mới với các giá trị hiện có bằng một danh sách liên kết",
+      "C": "Bỏ qua các giá trị trùng khóa mới",
+      "D": "Lưu các giá trị vào một bảng kề bên"
     },
-    {
-        "question": "Một lập trình viên nhận thấy thời gian truy xuất từ bảng băm luôn chậm.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Hàm băm quá phức tạp",
-            "B": "Load factor quá cao, gây ra nhiều va chạm",
-            "C": "Các khóa không được phân phối đều",
-            "D": "Tất cả mục đều được lưu trong một bucket duy nhất"
-        },
-        "answer": "Load factor quá cao, gây ra nhiều va chạm",
-        "explanation": "Thời gian truy xuất chậm thường do load factor cao dẫn đến quá nhiều va chạm. Khi quá nhiều mục được ánh xạ vào cùng các ô, các cơ chế xử lý va chạm như dò tuyến tính hoặc chaining sẽ trở nên kém hiệu quả, làm tăng thời gian truy xuất."
+    "answer": "Liên kết các giá trị mới với các giá trị hiện có bằng một danh sách liên kết",
+    "explanation": "Liên kết các giá trị mới với các giá trị hiện có bằng danh sách liên kết, gọi là chaining, là phương pháp hiệu quả để xử lý va chạm do nhiều khóa có cùng giá trị băm. Phương pháp này cho phép nhiều giá trị cùng tồn tại tại cùng một chỉ số bằng cách mở rộng vùng chứa tại vị trí đó."
+  },
+  {
+    "question": "Một lập trình viên nhận thấy thời gian truy xuất từ bảng băm luôn chậm.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Hàm băm quá phức tạp",
+      "B": "Load factor quá cao, gây ra nhiều va chạm",
+      "C": "Các khóa không được phân phối đều",
+      "D": "Tất cả mục đều được lưu trong một bucket duy nhất"
     },
-    {
-        "question": "Trong quá trình kiểm thử, thao tác thêm vào bảng băm đôi khi không chèn được phần tử mới.\nVấn đề có thể là gì?",
-        "options": {
-            "A": "Hàm băm luôn trả về cùng một giá trị",
-            "B": "Va chạm không được xử lý đúng",
-            "C": "Bảng đã đầy và không thể thay đổi kích thước",
-            "D": "Khóa là null"
-        },
-        "answer": "Va chạm không được xử lý đúng",
-        "explanation": "Nếu thêm phần tử đôi khi thất bại, có thể là do va chạm không được xử lý đúng. Các chiến lược xử lý va chạm hiệu quả như địa chỉ mở hoặc chaining cần được triển khai để đảm bảo tất cả phần tử có thể được chèn ngay cả khi xảy ra va chạm."
+    "answer": "Load factor quá cao, gây ra nhiều va chạm",
+    "explanation": "Thời gian truy xuất chậm thường do load factor cao dẫn đến quá nhiều va chạm. Khi quá nhiều mục được ánh xạ vào cùng các ô, các cơ chế xử lý va chạm như dò tuyến tính hoặc chaining sẽ trở nên kém hiệu quả, làm tăng thời gian truy xuất."
+  },
+  {
+    "question": "Trong quá trình kiểm thử, thao tác thêm vào bảng băm đôi khi không chèn được phần tử mới.\nVấn đề có thể là gì?",
+    "options": {
+      "A": "Hàm băm luôn trả về cùng một giá trị",
+      "B": "Va chạm không được xử lý đúng",
+      "C": "Bảng đã đầy và không thể thay đổi kích thước",
+      "D": "Khóa là null"
     },
-    {
-        "question": "Một cài đặt bảng băm gặp suy giảm hiệu năng gián đoạn.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Hiệu năng hàm băm không ổn định",
-            "B": "Kích thước các mục thay đổi",
-            "C": "Các thao tác thay đổi kích thước bảng theo chu kỳ",
-            "D": "Phân phối khóa không đồng đều"
-        },
-        "answer": "Các thao tác thay đổi kích thước bảng theo chu kỳ",
-        "explanation": "Suy giảm hiệu năng gián đoạn có thể do các thao tác thay đổi kích thước bảng theo chu kỳ. Việc rehash toàn bộ các mục vào bảng lớn hơn có thể tốn nhiều tính toán và tạm thời ảnh hưởng đến hiệu năng, đặc biệt khi được kích hoạt thường xuyên khi thêm nhiều mục."
+    "answer": "Va chạm không được xử lý đúng",
+    "explanation": "Nếu thêm phần tử đôi khi thất bại, có thể là do va chạm không được xử lý đúng. Các chiến lược xử lý va chạm hiệu quả như địa chỉ mở hoặc chaining cần được triển khai để đảm bảo tất cả phần tử có thể được chèn ngay cả khi xảy ra va chạm."
+  },
+  {
+    "question": "Một cài đặt bảng băm gặp suy giảm hiệu năng gián đoạn.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Hiệu năng hàm băm không ổn định",
+      "B": "Kích thước các mục thay đổi",
+      "C": "Các thao tác thay đổi kích thước bảng theo chu kỳ",
+      "D": "Phân phối khóa không đồng đều"
     },
-    {
-        "question": "Nguyên tắc chính của lập trình động (dynamic programming) là gì?",
-        "options": {
-            "A": "Phân nhỏ bài toán thành các bài toán con nhỏ hơn",
-            "B": "Tìm giải nhanh nhất mà không quan tâm đúng/sai",
-            "C": "Chỉ sử dụng đệ quy",
-            "D": "Ghi nhớ kết quả trung gian"
-        },
-        "answer": "Phân nhỏ bài toán thành các bài toán con nhỏ hơn",
-        "explanation": "Lập trình động dựa trên việc phân chia bài toán phức tạp thành các bài toán con nhỏ hơn, giải mỗi bài toán con một lần và lưu trữ kết quả để sử dụng lại (thường gọi là memoization), thay vì tính lại nhiều lần."
+    "answer": "Các thao tác thay đổi kích thước bảng theo chu kỳ",
+    "explanation": "Suy giảm hiệu năng gián đoạn có thể do các thao tác thay đổi kích thước bảng theo chu kỳ. Việc rehash toàn bộ các mục vào bảng lớn hơn có thể tốn nhiều tính toán và tạm thời ảnh hưởng đến hiệu năng, đặc biệt khi được kích hoạt thường xuyên khi thêm nhiều mục."
+  },
+  {
+    "question": "Nguyên tắc chính của lập trình động (dynamic programming) là gì?",
+    "options": {
+      "A": "Phân nhỏ bài toán thành các bài toán con nhỏ hơn",
+      "B": "Tìm giải nhanh nhất mà không quan tâm đúng/sai",
+      "C": "Chỉ sử dụng đệ quy",
+      "D": "Ghi nhớ kết quả trung gian"
     },
-    {
-        "question": "Trong trường hợp nào thuật toán greedy được ưu tiên hơn lập trình động?",
-        "options": {
-            "A": "Khi cần đảm bảo lời giải tối ưu cho mọi trường hợp",
-            "B": "Khi các bài toán con chồng chéo và phụ thuộc",
-            "C": "Khi các bài toán con độc lập và tối ưu cục bộ là chấp nhận được",
-            "D": "Khi kích thước bài toán rất nhỏ"
-        },
-        "answer": "Khi các bài toán con độc lập và tối ưu cục bộ là chấp nhận được",
-        "explanation": "Thuật toán greedy phù hợp khi các bài toán con độc lập và chọn lựa tối ưu cục bộ tại mỗi bước có thể dẫn tới lời giải chấp nhận được. Khác với lập trình động, greedy đưa ra quyết định tối ưu tại chỗ mà không đảm bảo tối ưu toàn cục trong mọi trường hợp."
+    "answer": "Phân nhỏ bài toán thành các bài toán con nhỏ hơn",
+    "explanation": "Lập trình động dựa trên việc phân chia bài toán phức tạp thành các bài toán con nhỏ hơn, giải mỗi bài toán con một lần và lưu trữ kết quả để sử dụng lại (thường gọi là memoization), thay vì tính lại nhiều lần."
+  },
+  {
+    "question": "Trong trường hợp nào thuật toán greedy được ưu tiên hơn lập trình động?",
+    "options": {
+      "A": "Khi cần đảm bảo lời giải tối ưu cho mọi trường hợp",
+      "B": "Khi các bài toán con chồng chéo và phụ thuộc",
+      "C": "Khi các bài toán con độc lập và tối ưu cục bộ là chấp nhận được",
+      "D": "Khi kích thước bài toán rất nhỏ"
     },
-    {
-        "question": "Điểm khác biệt giữa thuật toán greedy và phương pháp lập trình động là gì?",
-        "options": {
-            "A": "Greedy xem xét mọi lời giải trước khi chọn",
-            "B": "Lập trình động sử dụng đệ quy để giải bài toán con",
-            "C": "Greedy đưa ra lựa chọn tối ưu cục bộ ở mỗi bước",
-            "D": "Lập trình động không thể xử lý bài toán con chồng chéo"
-        },
-        "answer": "Greedy đưa ra lựa chọn tối ưu cục bộ ở mỗi bước",
-        "explanation": "Sự khác biệt chính là greedy đưa ra quyết định tối ưu cục bộ tại mỗi bước mà không cân nhắc tối ưu toàn cục, trong khi lập trình động phân rã bài toán thành các bài toán con chồng chéo, giải từng bài toán con một lần và lưu trữ kết quả để ghép lại lời giải."
+    "answer": "Khi các bài toán con độc lập và tối ưu cục bộ là chấp nhận được",
+    "explanation": "Thuật toán greedy phù hợp khi các bài toán con độc lập và chọn lựa tối ưu cục bộ tại mỗi bước có thể dẫn tới lời giải chấp nhận được. Khác với lập trình động, greedy đưa ra quyết định tối ưu tại chỗ mà không đảm bảo tối ưu toàn cục trong mọi trường hợp."
+  },
+  {
+    "question": "Điểm khác biệt giữa thuật toán greedy và phương pháp lập trình động là gì?",
+    "options": {
+      "A": "Greedy xem xét mọi lời giải trước khi chọn",
+      "B": "Lập trình động sử dụng đệ quy để giải bài toán con",
+      "C": "Greedy đưa ra lựa chọn tối ưu cục bộ ở mỗi bước",
+      "D": "Lập trình động không thể xử lý bài toán con chồng chéo"
     },
-    {
-        "question": "Memoization trong lập trình động là gì?",
-        "options": {
-            "A": "Lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã cache khi cùng đầu vào xảy ra lại",
-            "B": "Chọn ngẫu nhiên các bài toán con để giải",
-            "C": "Tối ưu hóa bộ nhớ bằng cách xóa dữ liệu không cần thiết",
-            "D": "Kỹ thuật cải thiện thời gian chạy của thuật toán greedy"
-        },
-        "answer": "Lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã cache khi cùng đầu vào xảy ra lại",
-        "explanation": "Memoization là kỹ thuật trong lập trình động để tăng tốc chương trình bằng cách lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã lưu khi cùng đầu vào xuất hiện, tránh tính toán lặp lại."
+    "answer": "Greedy đưa ra lựa chọn tối ưu cục bộ ở mỗi bước",
+    "explanation": "Sự khác biệt chính là greedy đưa ra quyết định tối ưu cục bộ tại mỗi bước mà không cân nhắc tối ưu toàn cục, trong khi lập trình động phân rã bài toán thành các bài toán con chồng chéo, giải từng bài toán con một lần và lưu trữ kết quả để ghép lại lời giải."
+  },
+  {
+    "question": "Memoization trong lập trình động là gì?",
+    "options": {
+      "A": "Lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã cache khi cùng đầu vào xảy ra lại",
+      "B": "Chọn ngẫu nhiên các bài toán con để giải",
+      "C": "Tối ưu hóa bộ nhớ bằng cách xóa dữ liệu không cần thiết",
+      "D": "Kỹ thuật cải thiện thời gian chạy của thuật toán greedy"
     },
-    {
-        "question": "Bài toán nào là ví dụ kinh điển có thể giải hiệu quả bằng lập trình động?",
-        "options": {
-            "A": "Bài toán người du lịch (Traveling Salesman Problem)",
-            "B": "Các thuật toán sắp xếp",
-            "C": "Bài toán balo (Knapsack Problem)",
-            "D": "Tìm kiếm nhị phân"
-        },
-        "answer": "Bài toán balo (Knapsack Problem)",
-        "explanation": "Bài toán balo là ví dụ kinh điển cho lập trình động. Nó liên quan tới việc chọn tập mục có trọng lượng và giá trị cho trước để tối đa hóa giá trị trong một balo có sức chứa giới hạn, tận dụng tính chất bài toán con chồng chéo và cấu trúc tối ưu."
+    "answer": "Lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã cache khi cùng đầu vào xảy ra lại",
+    "explanation": "Memoization là kỹ thuật trong lập trình động để tăng tốc chương trình bằng cách lưu kết quả của các lời gọi hàm tốn kém và trả lại kết quả đã lưu khi cùng đầu vào xuất hiện, tránh tính toán lặp lại."
+  },
+  {
+    "question": "Bài toán nào là ví dụ kinh điển có thể giải hiệu quả bằng lập trình động?",
+    "options": {
+      "A": "Bài toán người du lịch (Traveling Salesman Problem)",
+      "B": "Các thuật toán sắp xếp",
+      "C": "Bài toán balo (Knapsack Problem)",
+      "D": "Tìm kiếm nhị phân"
     },
-    {
-        "question": "Thuật toán greedy khác với phương pháp thử tất cả (brute force) ở điểm nào?",
-        "options": {
-            "A": "Greedy đánh giá mọi đường đi có thể trước khi chọn đường ngắn nhất",
-            "B": "Greedy thực hiện một loạt quyết định cục bộ để tìm lời giải",
-            "C": "Brute force chỉ sử dụng đệ quy",
-            "D": "Brute force không thể tìm lời giải tối ưu toàn cục"
-        },
-        "answer": "Greedy thực hiện một loạt quyết định cục bộ để tìm lời giải",
-        "explanation": "Greedy khác với brute force ở chỗ nó thực hiện các quyết định tối ưu cục bộ với hy vọng đạt được tối ưu toàn cục mà không khảo sát mọi khả năng. Brute force thì khám phá tất cả lời giải có thể để tìm lời giải tốt nhất, tốn thời gian và kém hiệu quả hơn."
+    "answer": "Bài toán balo (Knapsack Problem)",
+    "explanation": "Bài toán balo là ví dụ kinh điển cho lập trình động. Nó liên quan tới việc chọn tập mục có trọng lượng và giá trị cho trước để tối đa hóa giá trị trong một balo có sức chứa giới hạn, tận dụng tính chất bài toán con chồng chéo và cấu trúc tối ưu."
+  },
+  {
+    "question": "Thuật toán greedy khác với phương pháp thử tất cả (brute force) ở điểm nào?",
+    "options": {
+      "A": "Greedy đánh giá mọi đường đi có thể trước khi chọn đường ngắn nhất",
+      "B": "Greedy thực hiện một loạt quyết định cục bộ để tìm lời giải",
+      "C": "Brute force chỉ sử dụng đệ quy",
+      "D": "Brute force không thể tìm lời giải tối ưu toàn cục"
     },
-    {
+    "answer": "Greedy thực hiện một loạt quyết định cục bộ để tìm lời giải",
+    "explanation": "Greedy khác với brute force ở chỗ nó thực hiện các quyết định tối ưu cục bộ với hy vọng đạt được tối ưu toàn cục mà không khảo sát mọi khả năng. Brute force thì khám phá tất cả lời giải có thể để tìm lời giải tốt nhất, tốn thời gian và kém hiệu quả hơn."
+  },
+  {
     "question": "Trong lập trình động, \"optimal substructure\" có nghĩa là gì?",
-        "options": {
-            "A": "Bài toán có thể chia thành các bài toán con không liên quan",
-            "B": "Bài toán không có lời giải tối ưu xác định",
-            "C": "Lời giải tối ưu có thể xây dựng từ các lời giải tối ưu của các bài toán con",
-            "D": "Bài toán chỉ có thể giải trong thời gian tuyến tính"
-        },
-        "answer": "Lời giải tối ưu có thể xây dựng từ các lời giải tối ưu của các bài toán con",
-        "explanation": "Optimal substructure nghĩa là lời giải tối ưu của bài toán lớn có thể được ghép từ các lời giải tối ưu của các bài toán con. Đây là tính chất quan trọng để áp dụng lập trình động, cho phép xây dựng lời giải từ các phần nhỏ hơn."
+    "options": {
+      "A": "Bài toán có thể chia thành các bài toán con không liên quan",
+      "B": "Bài toán không có lời giải tối ưu xác định",
+      "C": "Lời giải tối ưu có thể xây dựng từ các lời giải tối ưu của các bài toán con",
+      "D": "Bài toán chỉ có thể giải trong thời gian tuyến tính"
     },
-    {
-        "question": "Sequence Fibonacci được tính hiệu quả bằng lập trình động như thế nào?",
-        "options": {
-            "A": "Bằng cách dùng vòng lặp để tính tuần tự từng số",
-            "B": "Bằng cách lưu mỗi số Fibonacci đã tính trong một mảng và dùng cho các phép tính sau",
-            "C": "Bằng đệ quy không có memoization",
-            "D": "Bằng phương pháp đoán và kiểm tra"
-        },
-        "answer": "Bằng cách lưu mỗi số Fibonacci đã tính trong một mảng và dùng cho các phép tính sau",
-        "explanation": "Dãy Fibonacci có thể tính hiệu quả bằng lập trình động bằng cách lưu các giá trị đã tính trong một mảng (hoặc cấu trúc tương tự) và sử dụng lại các giá trị này khi cần, tránh tính toán lặp lại và giảm đáng kể số phép tính."
+    "answer": "Lời giải tối ưu có thể xây dựng từ các lời giải tối ưu của các bài toán con",
+    "explanation": "Optimal substructure nghĩa là lời giải tối ưu của bài toán lớn có thể được ghép từ các lời giải tối ưu của các bài toán con. Đây là tính chất quan trọng để áp dụng lập trình động, cho phép xây dựng lời giải từ các phần nhỏ hơn."
+  },
+  {
+    "question": "Sequence Fibonacci được tính hiệu quả bằng lập trình động như thế nào?",
+    "options": {
+      "A": "Bằng cách dùng vòng lặp để tính tuần tự từng số",
+      "B": "Bằng cách lưu mỗi số Fibonacci đã tính trong một mảng và dùng cho các phép tính sau",
+      "C": "Bằng đệ quy không có memoization",
+      "D": "Bằng phương pháp đoán và kiểm tra"
     },
-    {
-        "question": "Kỹ thuật nào được dùng trong lập trình động để chuyển lời giải đệ quy sang lặp?",
-        "options": {
-            "A": "Memoization",
-            "B": "Tabulation",
-            "C": "Backtracking",
-            "D": "Chia để trị (Divide and conquer)"
-        },
-        "answer": "Tabulation",
-        "explanation": "Tabulation, hay phương pháp bottom-up, được dùng để chuyển lời giải đệ quy sang lặp trong lập trình động. Nó điền một bảng (thường là mảng) theo thứ tự tăng dần của các bài toán con, bắt đầu từ các bài toán con đơn giản nhất."
+    "answer": "Bằng cách lưu mỗi số Fibonacci đã tính trong một mảng và dùng cho các phép tính sau",
+    "explanation": "Dãy Fibonacci có thể tính hiệu quả bằng lập trình động bằng cách lưu các giá trị đã tính trong một mảng (hoặc cấu trúc tương tự) và sử dụng lại các giá trị này khi cần, tránh tính toán lặp lại và giảm đáng kể số phép tính."
+  },
+  {
+    "question": "Kỹ thuật nào được dùng trong lập trình động để chuyển lời giải đệ quy sang lặp?",
+    "options": {
+      "A": "Memoization",
+      "B": "Tabulation",
+      "C": "Backtracking",
+      "D": "Chia để trị (Divide and conquer)"
     },
-    {
-        "question": "Với một bài toán có bài toán con chồng chéo và cấu trúc tối ưu, phương pháp nào phù hợp nhất?",
-        "options": {
-            "A": "Thuật toán greedy",
-            "B": "Lập trình động",
-            "C": "Chia để trị",
-            "D": "Backtracking"
-        },
-        "answer": "Lập trình động",
-        "explanation": "Với bài toán có cả bài toán con chồng chéo và cấu trúc tối ưu, lập trình động là lựa chọn phù hợp nhất. Nó giải mỗi bài toán con một lần và lưu kết quả để tránh tính toán lặp lại, tiết kiệm tài nguyên tính toán."
+    "answer": "Tabulation",
+    "explanation": "Tabulation, hay phương pháp bottom-up, được dùng để chuyển lời giải đệ quy sang lặp trong lập trình động. Nó điền một bảng (thường là mảng) theo thứ tự tăng dần của các bài toán con, bắt đầu từ các bài toán con đơn giản nhất."
+  },
+  {
+    "question": "Với một bài toán có bài toán con chồng chéo và cấu trúc tối ưu, phương pháp nào phù hợp nhất?",
+    "options": {
+      "A": "Thuật toán greedy",
+      "B": "Lập trình động",
+      "C": "Chia để trị",
+      "D": "Backtracking"
     },
-    {
-        "question": "Một lợi thế chính của lập trình động so với đệ quy naif khi tính số Fibonacci thứ n là gì?",
-        "options": {
-            "A": "Giảm độ phức tạp tính toán",
-            "B": "Loại bỏ nhu cầu tính toán",
-            "C": "Sử dụng ít bộ nhớ hơn",
-            "D": "Dựa trên các khái niệm toán học đơn giản hơn"
-        },
-        "answer": "Giảm độ phức tạp tính toán",
-        "explanation": "Sử dụng lập trình động thay cho đệ quy naif khi tính Fibonacci giảm đáng kể độ phức tạp tính toán. Đệ quy naif có thể gây nổ thời gian do tính toán lặp lại, trong khi lập trình động giải mỗi bài toán con một lần, dẫn tới độ phức tạp thấp hơn."
+    "answer": "Lập trình động",
+    "explanation": "Với bài toán có cả bài toán con chồng chéo và cấu trúc tối ưu, lập trình động là lựa chọn phù hợp nhất. Nó giải mỗi bài toán con một lần và lưu kết quả để tránh tính toán lặp lại, tiết kiệm tài nguyên tính toán."
+  },
+  {
+    "question": "Một lợi thế chính của lập trình động so với đệ quy naif khi tính số Fibonacci thứ n là gì?",
+    "options": {
+      "A": "Giảm độ phức tạp tính toán",
+      "B": "Loại bỏ nhu cầu tính toán",
+      "C": "Sử dụng ít bộ nhớ hơn",
+      "D": "Dựa trên các khái niệm toán học đơn giản hơn"
     },
-    {
-        "question": "Tại sao thuật toán greedy có thể thất bại trong việc tìm đường đi có chi phí nhỏ nhất trong đồ thị?",
-        "options": {
-            "A": "Bởi vì nó đưa ra các lựa chọn tối ưu toàn cục ở mỗi bước",
-            "B": "Bởi vì nó đưa ra các lựa chọn tối ưu cục bộ mà không xem xét tương lai",
-            "C": "Bởi vì nó đánh giá mọi đường đi trước khi quyết định",
-            "D": "Bởi vì nó sử dụng kỹ thuật lập trình động"
-        },
-        "answer": "Bởi vì nó đưa ra các lựa chọn tối ưu cục bộ mà không xem xét tương lai",
-        "explanation": "Thuật toán greedy có thể thất bại vì nó chỉ tập trung vào lựa chọn tối ưu cục bộ tại mỗi bước mà không cân nhắc hậu quả về sau, dẫn tới lời giải cục bộ tốt nhưng không tối ưu toàn cục."
+    "answer": "Giảm độ phức tạp tính toán",
+    "explanation": "Sử dụng lập trình động thay cho đệ quy naif khi tính Fibonacci giảm đáng kể độ phức tạp tính toán. Đệ quy naif có thể gây nổ thời gian do tính toán lặp lại, trong khi lập trình động giải mỗi bài toán con một lần, dẫn tới độ phức tạp thấp hơn."
+  },
+  {
+    "question": "Tại sao thuật toán greedy có thể thất bại trong việc tìm đường đi có chi phí nhỏ nhất trong đồ thị?",
+    "options": {
+      "A": "Bởi vì nó đưa ra các lựa chọn tối ưu toàn cục ở mỗi bước",
+      "B": "Bởi vì nó đưa ra các lựa chọn tối ưu cục bộ mà không xem xét tương lai",
+      "C": "Bởi vì nó đánh giá mọi đường đi trước khi quyết định",
+      "D": "Bởi vì nó sử dụng kỹ thuật lập trình động"
     },
-    {
-        "question": "Một giải pháp lập trình động chạy chậm hơn mong đợi.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Bài toán không có bài toán con chồng chéo",
-            "B": "Các bài toán con không được memoize đúng",
-            "C": "Có quá nhiều bài toán con",
-            "D": "Các trường hợp cơ sở được định nghĩa sai"
-        },
-        "answer": "Các bài toán con không được memoize đúng",
-        "explanation": "Nếu giải pháp lập trình động chạy chậm, một lý do phổ biến là các bài toán con không được memoize đúng, dẫn tới việc tính toán lặp lại. Đảm bảo lưu kết quả và truy xuất hiệu quả có thể cải thiện hiệu năng đáng kể."
+    "answer": "Bởi vì nó đưa ra các lựa chọn tối ưu cục bộ mà không xem xét tương lai",
+    "explanation": "Thuật toán greedy có thể thất bại vì nó chỉ tập trung vào lựa chọn tối ưu cục bộ tại mỗi bước mà không cân nhắc hậu quả về sau, dẫn tới lời giải cục bộ tốt nhưng không tối ưu toàn cục."
+  },
+  {
+    "question": "Một giải pháp lập trình động chạy chậm hơn mong đợi.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Bài toán không có bài toán con chồng chéo",
+      "B": "Các bài toán con không được memoize đúng",
+      "C": "Có quá nhiều bài toán con",
+      "D": "Các trường hợp cơ sở được định nghĩa sai"
     },
-    {
-        "question": "Vấn đề nào có thể xảy ra khi triển khai thuật toán greedy cho bài toán tối ưu phức tạp?",
-        "options": {
-            "A": "Bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng",
-            "B": "Giả định sai rằng bài toán có bài toán con chồng chéo",
-            "C": "Sử dụng quá nhiều bộ nhớ",
-            "D": "Không dùng đủ đệ quy"
-        },
-        "answer": "Bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng",
-        "explanation": "Khi sử dụng greedy cho bài toán tối ưu phức tạp, có nguy cơ bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng dựa trên tối ưu cục bộ, dẫn tới kết quả không tối ưu."
+    "answer": "Các bài toán con không được memoize đúng",
+    "explanation": "Nếu giải pháp lập trình động chạy chậm, một lý do phổ biến là các bài toán con không được memoize đúng, dẫn tới việc tính toán lặp lại. Đảm bảo lưu kết quả và truy xuất hiệu quả có thể cải thiện hiệu năng đáng kể."
+  },
+  {
+    "question": "Vấn đề nào có thể xảy ra khi triển khai thuật toán greedy cho bài toán tối ưu phức tạp?",
+    "options": {
+      "A": "Bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng",
+      "B": "Giả định sai rằng bài toán có bài toán con chồng chéo",
+      "C": "Sử dụng quá nhiều bộ nhớ",
+      "D": "Không dùng đủ đệ quy"
     },
-    {
-        "question": "Mục đích chính của thuật toán Dijkstra trong lý thuyết đồ thị là gì?",
-        "options": {
-            "A": "Tìm đường ngắn nhất giữa mọi cặp đỉnh",
-            "B": "Phát hiện chu trình trong đồ thị",
-            "C": "Tìm đường ngắn nhất từ một nguồn tới mọi đỉnh còn lại",
-            "D": "Tạo cây khung nhỏ nhất (MST)"
-        },
-        "answer": "Tìm đường ngắn nhất từ một nguồn tới mọi đỉnh còn lại",
-        "explanation": "Thuật toán Dijkstra dùng để tìm đường ngắn nhất từ một đỉnh nguồn đến mọi đỉnh khác trong đồ thị có trọng số không âm. Nó cập nhật dần khoảng cách ngắn nhất tới mỗi đỉnh bằng cách chọn đỉnh có khoảng cách nhỏ nhất hiện tại."
+    "answer": "Bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng",
+    "explanation": "Khi sử dụng greedy cho bài toán tối ưu phức tạp, có nguy cơ bỏ qua các lời giải tốt hơn do đưa ra quyết định vội vàng dựa trên tối ưu cục bộ, dẫn tới kết quả không tối ưu."
+  },
+  {
+    "question": "Mục đích chính của thuật toán Dijkstra trong lý thuyết đồ thị là gì?",
+    "options": {
+      "A": "Tìm đường ngắn nhất giữa mọi cặp đỉnh",
+      "B": "Phát hiện chu trình trong đồ thị",
+      "C": "Tìm đường ngắn nhất từ một nguồn tới mọi đỉnh còn lại",
+      "D": "Tạo cây khung nhỏ nhất (MST)"
     },
-    {
-        "question": "Điểm khác nhau giữa duyệt theo chiều sâu (DFS) và duyệt theo chiều rộng (BFS) là gì?",
-        "options": {
-            "A": "DFS dùng hàng đợi, trong khi BFS dùng ngăn xếp",
-            "B": "DFS có thể tìm đường ngắn nhất; BFS thì không",
-            "C": "BFS dùng hàng đợi, trong khi DFS dùng ngăn xếp",
-            "D": "DFS là đệ quy, còn BFS không thể đệ quy"
-        },
-        "answer": "BFS dùng hàng đợi, trong khi DFS dùng ngăn xếp",
-        "explanation": "Sự khác biệt chính là cách tiếp cận khám phá đỉnh: DFS khám phá sâu theo một nhánh sử dụng ngăn xếp (hoặc đệ quy), còn BFS khám phá các nút theo từng lớp lân cận sử dụng hàng đợi. Điều này dẫn tới ứng dụng và đặc tính hiệu năng khác nhau."
+    "answer": "Tìm đường ngắn nhất từ một nguồn tới mọi đỉnh còn lại",
+    "explanation": "Thuật toán Dijkstra dùng để tìm đường ngắn nhất từ một đỉnh nguồn đến mọi đỉnh khác trong đồ thị có trọng số không âm. Nó cập nhật dần khoảng cách ngắn nhất tới mỗi đỉnh bằng cách chọn đỉnh có khoảng cách nhỏ nhất hiện tại."
+  },
+  {
+    "question": "Điểm khác nhau giữa duyệt theo chiều sâu (DFS) và duyệt theo chiều rộng (BFS) là gì?",
+    "options": {
+      "A": "DFS dùng hàng đợi, trong khi BFS dùng ngăn xếp",
+      "B": "DFS có thể tìm đường ngắn nhất; BFS thì không",
+      "C": "BFS dùng hàng đợi, trong khi DFS dùng ngăn xếp",
+      "D": "DFS là đệ quy, còn BFS không thể đệ quy"
     },
-    {
-        "question": "Trong lý thuyết đồ thị, strongly connected component là gì?",
-        "options": {
-            "A": "Một tập con các đỉnh mà mọi đỉnh trong tập có thể đi tới nhau",
-            "B": "Một thành phần mà mỗi đỉnh kết nối trực tiếp tới mọi đỉnh khác bằng một cạnh",
-            "C": "Một tập đỉnh không có cạnh vào",
-            "D": "Một tập đỉnh trong đồ thị có hướng mà mỗi đỉnh có cùng bậc"
-        },
-        "answer": "Một tập con các đỉnh mà mọi đỉnh trong tập có thể đi tới nhau",
-        "explanation": "Strongly connected component trong đồ thị có hướng là tập các đỉnh mà mỗi đỉnh có thể tới được mọi đỉnh khác trong cùng tập. Nhận diện các thành phần này giúp hiểu cấu trúc đồ thị và các nhóm đỉnh liên kết chặt."
+    "answer": "BFS dùng hàng đợi, trong khi DFS dùng ngăn xếp",
+    "explanation": "Sự khác biệt chính là cách tiếp cận khám phá đỉnh: DFS khám phá sâu theo một nhánh sử dụng ngăn xếp (hoặc đệ quy), còn BFS khám phá các nút theo từng lớp lân cận sử dụng hàng đợi. Điều này dẫn tới ứng dụng và đặc tính hiệu năng khác nhau."
+  },
+  {
+    "question": "Trong lý thuyết đồ thị, strongly connected component là gì?",
+    "options": {
+      "A": "Một tập con các đỉnh mà mọi đỉnh trong tập có thể đi tới nhau",
+      "B": "Một thành phần mà mỗi đỉnh kết nối trực tiếp tới mọi đỉnh khác bằng một cạnh",
+      "C": "Một tập đỉnh không có cạnh vào",
+      "D": "Một tập đỉnh trong đồ thị có hướng mà mỗi đỉnh có cùng bậc"
     },
-    {
-        "question": "Thuật toán Bellman-Ford thực hiện điều gì?",
-        "options": {
-            "A": "Tìm đường ngắn nhất trong đồ thị có cạnh âm",
-            "B": "Tạo cây khung nhỏ nhất",
-            "C": "Tìm luồng cực đại trong mạng",
-            "D": "Phát hiện và phá chu trình trong đồ thị có hướng"
-        },
-        "answer": "Tìm đường ngắn nhất trong đồ thị có cạnh âm",
-        "explanation": "Bellman-Ford tìm đường ngắn nhất từ một nguồn tới mọi đỉnh trong đồ thị có trọng số, ngay cả khi một số cạnh có trọng số âm. Không giống Dijkstra, Bellman-Ford có thể xử lý cạnh âm và phát hiện chu trình âm."
+    "answer": "Một tập con các đỉnh mà mọi đỉnh trong tập có thể đi tới nhau",
+    "explanation": "Strongly connected component trong đồ thị có hướng là tập các đỉnh mà mỗi đỉnh có thể tới được mọi đỉnh khác trong cùng tập. Nhận diện các thành phần này giúp hiểu cấu trúc đồ thị và các nhóm đỉnh liên kết chặt."
+  },
+  {
+    "question": "Thuật toán Bellman-Ford thực hiện điều gì?",
+    "options": {
+      "A": "Tìm đường ngắn nhất trong đồ thị có cạnh âm",
+      "B": "Tạo cây khung nhỏ nhất",
+      "C": "Tìm luồng cực đại trong mạng",
+      "D": "Phát hiện và phá chu trình trong đồ thị có hướng"
     },
-    {
-        "question": "Khác biệt chính giữa Prim và Kruskal là gì?",
-        "options": {
-            "A": "Prim dùng cho tìm đường ngắn nhất, còn Kruskal dùng cho cây khung nhỏ nhất",
-            "B": "Prim yêu cầu một đỉnh bắt đầu; Kruskal thì không",
-            "C": "Prim là thuật toán greedy; Kruskal thì không",
-            "D": "Prim có thể xử lý cạnh âm; Kruskal thì không"
-        },
-        "answer": "Prim yêu cầu một đỉnh bắt đầu; Kruskal thì không",
-        "explanation": "Cả Prim và Kruskal đều tìm cây khung nhỏ nhất cho đồ thị vô hướng có trọng số. Khác biệt chính là Prim cần một đỉnh bắt đầu và mở rộng cây theo đỉnh, trong khi Kruskal không cần đỉnh bắt đầu và chọn cạnh theo thứ tự trọng số tăng dần, đảm bảo không tạo chu trình."
+    "answer": "Tìm đường ngắn nhất trong đồ thị có cạnh âm",
+    "explanation": "Bellman-Ford tìm đường ngắn nhất từ một nguồn tới mọi đỉnh trong đồ thị có trọng số, ngay cả khi một số cạnh có trọng số âm. Không giống Dijkstra, Bellman-Ford có thể xử lý cạnh âm và phát hiện chu trình âm."
+  },
+  {
+    "question": "Khác biệt chính giữa Prim và Kruskal là gì?",
+    "options": {
+      "A": "Prim dùng cho tìm đường ngắn nhất, còn Kruskal dùng cho cây khung nhỏ nhất",
+      "B": "Prim yêu cầu một đỉnh bắt đầu; Kruskal thì không",
+      "C": "Prim là thuật toán greedy; Kruskal thì không",
+      "D": "Prim có thể xử lý cạnh âm; Kruskal thì không"
     },
-    {
-        "question": "Tại sao sắp thứ tự topo (topological sort) quan trọng trong thuật toán đồ thị?",
-        "options": {
-            "A": "Dùng để phát hiện chu trình trong đồ thị vô hướng",
-            "B": "Cung cấp cách lập lịch các tác vụ có phụ thuộc",
-            "C": "Tìm đường ngắn nhất trong đồ thị có trọng số",
-            "D": "Tính luồng tối đa trong mạng"
-        },
-        "answer": "Cung cấp cách lập lịch các tác vụ có phụ thuộc",
-        "explanation": "Topological sort quan trọng trong các đồ thị có hướng vô chu trình (DAG) vì nó cho một thứ tự tuyến tính sao cho với mọi cạnh uv, u đứng trước v. Điều này hữu ích để lên lịch tác vụ, biên dịch, hoặc bất kỳ trường hợp nào cần giải quyết phụ thuộc."
+    "answer": "Prim yêu cầu một đỉnh bắt đầu; Kruskal thì không",
+    "explanation": "Cả Prim và Kruskal đều tìm cây khung nhỏ nhất cho đồ thị vô hướng có trọng số. Khác biệt chính là Prim cần một đỉnh bắt đầu và mở rộng cây theo đỉnh, trong khi Kruskal không cần đỉnh bắt đầu và chọn cạnh theo thứ tự trọng số tăng dần, đảm bảo không tạo chu trình."
+  },
+  {
+    "question": "Tại sao sắp thứ tự topo (topological sort) quan trọng trong thuật toán đồ thị?",
+    "options": {
+      "A": "Dùng để phát hiện chu trình trong đồ thị vô hướng",
+      "B": "Cung cấp cách lập lịch các tác vụ có phụ thuộc",
+      "C": "Tìm đường ngắn nhất trong đồ thị có trọng số",
+      "D": "Tính luồng tối đa trong mạng"
     },
-    {
-        "question": "Làm cách nào để triển khai duyệt đồ thị kiểm tra đồ thị có phải bipartite không?",
-        "options": {
-            "A": "Bằng cách dùng DFS và gán màu cho mỗi nút",
-            "B": "Bằng cách tìm đường ngắn nhất giữa mọi cặp nút",
-            "C": "Bằng cách tạo cây khung nhỏ nhất",
-            "D": "Bằng cách thực hiện nhân ma trận"
-        },
-        "answer": "Bằng cách dùng DFS và gán màu cho mỗi nút",
-        "explanation": "Để kiểm tra đồ thị bipartite, có thể dùng DFS hoặc BFS để gán hai màu cho các nút, xen kẽ khi duyệt. Nếu có thể gán màu mà không xung đột thì đồ thị là bipartite, nếu có xung đột thì không."
+    "answer": "Cung cấp cách lập lịch các tác vụ có phụ thuộc",
+    "explanation": "Topological sort quan trọng trong các đồ thị có hướng vô chu trình (DAG) vì nó cho một thứ tự tuyến tính sao cho với mọi cạnh uv, u đứng trước v. Điều này hữu ích để lên lịch tác vụ, biên dịch, hoặc bất kỳ trường hợp nào cần giải quyết phụ thuộc."
+  },
+  {
+    "question": "Làm cách nào để triển khai duyệt đồ thị kiểm tra đồ thị có phải bipartite không?",
+    "options": {
+      "A": "Bằng cách dùng DFS và gán màu cho mỗi nút",
+      "B": "Bằng cách tìm đường ngắn nhất giữa mọi cặp nút",
+      "C": "Bằng cách tạo cây khung nhỏ nhất",
+      "D": "Bằng cách thực hiện nhân ma trận"
     },
-    {
-        "question": "Thuật toán nào được sử dụng để tìm các thành phần liên thông mạnh trong đồ thị hướng?",
-        "options": {
-            "A": "Thuật toán Dijkstra",
-            "B": "Thuật toán Bellman-Ford",
-            "C": "Thuật toán Kosaraju",
-            "D": "Thuật toán Floyd-Warshall"
-        },
-        "answer": "Thuật toán Kosaraju",
-        "explanation": "Thuật toán Kosaraju được thiết kế chuyên để tìm các thành phần liên thông mạnh trong đồ thị có hướng. Nó gồm hai lần duyệt sâu (DFS): một lần trên đồ thị ban đầu và một lần trên đồ thị chuyển vị, giúp xác định hiệu quả tất cả các thành phần liên thông mạnh."
+    "answer": "Bằng cách dùng DFS và gán màu cho mỗi nút",
+    "explanation": "Để kiểm tra đồ thị bipartite, có thể dùng DFS hoặc BFS để gán hai màu cho các nút, xen kẽ khi duyệt. Nếu có thể gán màu mà không xung đột thì đồ thị là bipartite, nếu có xung đột thì không."
+  },
+  {
+    "question": "Thuật toán nào được sử dụng để tìm các thành phần liên thông mạnh trong đồ thị hướng?",
+    "options": {
+      "A": "Thuật toán Dijkstra",
+      "B": "Thuật toán Bellman-Ford",
+      "C": "Thuật toán Kosaraju",
+      "D": "Thuật toán Floyd-Warshall"
     },
-    {
-        "question": "Bài toán đường đi ngắn nhất giữa mọi cặp đỉnh được giải như thế nào trên đồ thị không có chu trình âm?",
-        "options": {
-            "A": "Sử dụng thuật toán Dijkstra lặp lại cho mỗi đỉnh",
-            "B": "Sử dụng thuật toán Bellman-Ford lặp lại cho mỗi đỉnh",
-            "C": "Sử dụng thuật toán Floyd-Warshall",
-            "D": "Sử dụng thuật toán Prim"
-        },
-        "answer": "Sử dụng thuật toán Floyd-Warshall",
-        "explanation": "Thuật toán Floyd-Warshall phù hợp để giải bài toán đường đi ngắn nhất giữa mọi cặp đỉnh, kể cả đồ thị có trọng số âm nhưng không có chu trình âm. Nó so sánh hệ thống tất cả các đường đi qua đồ thị để tìm đường đi ngắn nhất giữa mọi cặp đỉnh bằng cách sử dụng phương pháp quy hoạch động."
+    "answer": "Thuật toán Kosaraju",
+    "explanation": "Thuật toán Kosaraju được thiết kế chuyên để tìm các thành phần liên thông mạnh trong đồ thị có hướng. Nó gồm hai lần duyệt sâu (DFS): một lần trên đồ thị ban đầu và một lần trên đồ thị chuyển vị, giúp xác định hiệu quả tất cả các thành phần liên thông mạnh."
+  },
+  {
+    "question": "Bài toán đường đi ngắn nhất giữa mọi cặp đỉnh được giải như thế nào trên đồ thị không có chu trình âm?",
+    "options": {
+      "A": "Sử dụng thuật toán Dijkstra lặp lại cho mỗi đỉnh",
+      "B": "Sử dụng thuật toán Bellman-Ford lặp lại cho mỗi đỉnh",
+      "C": "Sử dụng thuật toán Floyd-Warshall",
+      "D": "Sử dụng thuật toán Prim"
     },
-    {
-        "question": "Trong một đồ thị, làm thế nào để xác định liệu việc thêm một cạnh có tạo ra chu trình hay không?",
-        "options": {
-            "A": "Bằng cách thực hiện sắp xếp topo (topological sort)",
-            "B": "Bằng cách kiểm tra xem cạnh có nối các đỉnh trong cùng một thành phần liên thông mạnh hay không",
-            "C": "Bằng cách sử dụng cấu trúc dữ liệu union-find (tập hợp rời rạc)",
-            "D": "Bằng cách tính đường kính đồ thị"
-        },
-        "answer": "Bằng cách sử dụng cấu trúc dữ liệu union-find",
-        "explanation": "Để xác định việc thêm một cạnh có tạo chu trình hay không, có thể sử dụng cấu trúc dữ liệu union-find (hay disjoint set). Trước khi thêm cạnh, kiểm tra xem hai đỉnh mà cạnh nối có thuộc cùng một tập hay không. Nếu có, việc thêm cạnh sẽ tạo chu trình; nếu không, thì không tạo chu trình."
+    "answer": "Sử dụng thuật toán Floyd-Warshall",
+    "explanation": "Thuật toán Floyd-Warshall phù hợp để giải bài toán đường đi ngắn nhất giữa mọi cặp đỉnh, kể cả đồ thị có trọng số âm nhưng không có chu trình âm. Nó so sánh hệ thống tất cả các đường đi qua đồ thị để tìm đường đi ngắn nhất giữa mọi cặp đỉnh bằng cách sử dụng phương pháp quy hoạch động."
+  },
+  {
+    "question": "Trong một đồ thị, làm thế nào để xác định liệu việc thêm một cạnh có tạo ra chu trình hay không?",
+    "options": {
+      "A": "Bằng cách thực hiện sắp xếp topo (topological sort)",
+      "B": "Bằng cách kiểm tra xem cạnh có nối các đỉnh trong cùng một thành phần liên thông mạnh hay không",
+      "C": "Bằng cách sử dụng cấu trúc dữ liệu union-find (tập hợp rời rạc)",
+      "D": "Bằng cách tính đường kính đồ thị"
     },
-    {
-        "question": "Tại sao duyệt theo chiều rộng (BFS) có thể không tìm thấy đường đi ngắn nhất trong một đồ thị có trọng số?",
-        "options": {
-            "A": "Bởi vì BFS không tính đến trọng số cạnh",
-            "B": "Bởi vì BFS chỉ hoạt động trên đồ thị không trọng số",
-            "C": "Bởi vì đồ thị không được kết nối đúng cách",
-            "D": "Bởi vì nút bắt đầu được chọn sai"
-        },
-        "answer": "Bởi vì BFS không tính đến trọng số cạnh",
-        "explanation": "BFS được thiết kế cho đồ thị không trọng số, nơi mọi cạnh được coi là có trọng số bằng nhau. Trong đồ thị có trọng số, BFS có thể thất bại vì chỉ đếm số cạnh chứ không xem xét tổng trọng số. Với đồ thị có trọng số, các thuật toán như Dijkstra phù hợp hơn để tìm đường đi ngắn nhất."
+    "answer": "Bằng cách sử dụng cấu trúc dữ liệu union-find",
+    "explanation": "Để xác định việc thêm một cạnh có tạo chu trình hay không, có thể sử dụng cấu trúc dữ liệu union-find (hay disjoint set). Trước khi thêm cạnh, kiểm tra xem hai đỉnh mà cạnh nối có thuộc cùng một tập hay không. Nếu có, việc thêm cạnh sẽ tạo chu trình; nếu không, thì không tạo chu trình."
+  },
+  {
+    "question": "Tại sao duyệt theo chiều rộng (BFS) có thể không tìm thấy đường đi ngắn nhất trong một đồ thị có trọng số?",
+    "options": {
+      "A": "Bởi vì BFS không tính đến trọng số cạnh",
+      "B": "Bởi vì BFS chỉ hoạt động trên đồ thị không trọng số",
+      "C": "Bởi vì đồ thị không được kết nối đúng cách",
+      "D": "Bởi vì nút bắt đầu được chọn sai"
     },
-    {
-        "question": "Triển khai thuật toán Dijkstra trên một đồ thị trả về giá trị đường đi ngắn nhất không chính xác.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Đồ thị chứa các cạnh có trọng số âm",
-            "B": "Hàng đợi ưu tiên không được cập nhật đúng",
-            "C": "Thuật toán dừng quá sớm",
-            "D": "Đồ thị không liên thông mạnh"
-        },
-        "answer": "Đồ thị chứa các cạnh có trọng số âm",
-        "explanation": "Thuật toán Dijkstra giả định rằng tất cả trọng số cạnh là không âm. Nếu đồ thị có cạnh có trọng số âm, Dijkstra có thể đưa ra kết quả sai vì không xử lý được khả năng một đường đi trở nên ngắn hơn khi đi qua cạnh âm. Trong trường hợp có trọng số âm, Bellman-Ford hoặc Floyd-Warshall có thể là lựa chọn thay thế."
+    "answer": "Bởi vì BFS không tính đến trọng số cạnh",
+    "explanation": "BFS được thiết kế cho đồ thị không trọng số, nơi mọi cạnh được coi là có trọng số bằng nhau. Trong đồ thị có trọng số, BFS có thể thất bại vì chỉ đếm số cạnh chứ không xem xét tổng trọng số. Với đồ thị có trọng số, các thuật toán như Dijkstra phù hợp hơn để tìm đường đi ngắn nhất."
+  },
+  {
+    "question": "Triển khai thuật toán Dijkstra trên một đồ thị trả về giá trị đường đi ngắn nhất không chính xác.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Đồ thị chứa các cạnh có trọng số âm",
+      "B": "Hàng đợi ưu tiên không được cập nhật đúng",
+      "C": "Thuật toán dừng quá sớm",
+      "D": "Đồ thị không liên thông mạnh"
     },
-    {
-        "question": "Điều gì có thể khiến thuật toán Floyd-Warshall cho kết quả sai về đường đi ngắn nhất?",
-        "options": {
-            "A": "Không khởi tạo ma trận khoảng cách đúng cách",
-            "B": "Không lặp qua tất cả cặp đỉnh",
-            "C": "Xử lý sai chu trình âm",
-            "D": "Tất cả những điều trên"
-        },
-        "answer": "Không khởi tạo ma trận khoảng cách đúng cách",
-        "explanation": "Việc khởi tạo ma trận khoảng cách không đúng trong Floyd-Warshall có thể dẫn đến kết quả sai. Ma trận phải thể hiện chính xác khoảng cách giữa mọi cặp đỉnh ban đầu, bao gồm đặt khoảng cách từ một đỉnh đến chính nó là 0 và xem xét trọng số cạnh trực tiếp giữa các đỉnh. Bất kỳ sai sót nào trong khởi tạo sẽ ảnh hưởng đến toàn bộ phép tính."
+    "answer": "Đồ thị chứa các cạnh có trọng số âm",
+    "explanation": "Thuật toán Dijkstra giả định rằng tất cả trọng số cạnh là không âm. Nếu đồ thị có cạnh có trọng số âm, Dijkstra có thể đưa ra kết quả sai vì không xử lý được khả năng một đường đi trở nên ngắn hơn khi đi qua cạnh âm. Trong trường hợp có trọng số âm, Bellman-Ford hoặc Floyd-Warshall có thể là lựa chọn thay thế."
+  },
+  {
+    "question": "Điều gì có thể khiến thuật toán Floyd-Warshall cho kết quả sai về đường đi ngắn nhất?",
+    "options": {
+      "A": "Không khởi tạo ma trận khoảng cách đúng cách",
+      "B": "Không lặp qua tất cả cặp đỉnh",
+      "C": "Xử lý sai chu trình âm",
+      "D": "Tất cả những điều trên"
     },
-    {
-        "question": "Đặc trưng nào định nghĩa một binary heap (đống nhị phân)?",
-        "options": {
-            "A": "Một cây nhị phân được lấp đầy hoàn toàn, ngoại trừ có thể là tầng đáy, được lấp từ trái sang phải",
-            "B": "Một cây nhị phân mà mỗi nút có giá trị lớn hơn hoặc bằng các con của nó",
-            "C": "Một cây nhị phân mà mỗi nút có giá trị nhỏ hơn hoặc bằng các con của nó",
-            "D": "Cả A và B"
-        },
-        "answer": "Cả A và B",
-        "explanation": "Binary heap là một cây nhị phân hoàn chỉnh, trong đó mỗi nút có giá trị lớn hơn hoặc bằng các con (max-heap) hoặc nhỏ hơn hoặc bằng các con (min-heap). Cấu trúc này cho phép truy xuất và chèn phần tử hiệu quả, với nút gốc luôn là giá trị nhỏ nhất hoặc lớn nhất tùy loại."
+    "answer": "Không khởi tạo ma trận khoảng cách đúng cách",
+    "explanation": "Việc khởi tạo ma trận khoảng cách không đúng trong Floyd-Warshall có thể dẫn đến kết quả sai. Ma trận phải thể hiện chính xác khoảng cách giữa mọi cặp đỉnh ban đầu, bao gồm đặt khoảng cách từ một đỉnh đến chính nó là 0 và xem xét trọng số cạnh trực tiếp giữa các đỉnh. Bất kỳ sai sót nào trong khởi tạo sẽ ảnh hưởng đến toàn bộ phép tính."
+  },
+  {
+    "question": "Đặc trưng nào định nghĩa một binary heap (đống nhị phân)?",
+    "options": {
+      "A": "Một cây nhị phân được lấp đầy hoàn toàn, ngoại trừ có thể là tầng đáy, được lấp từ trái sang phải",
+      "B": "Một cây nhị phân mà mỗi nút có giá trị lớn hơn hoặc bằng các con của nó",
+      "C": "Một cây nhị phân mà mỗi nút có giá trị nhỏ hơn hoặc bằng các con của nó",
+      "D": "Cả A và B"
     },
-    {
-        "question": "Trong cấu trúc trie, một nút đại diện cho gì?",
-        "options": {
-            "A": "Một ký tự trong chuỗi",
-            "B": "Một chuỗi hoàn chỉnh",
-            "C": "Một con trỏ đến một trie khác",
-            "D": "A và C"
-        },
-        "answer": "Một ký tự trong chuỗi",
-        "explanation": "Trong trie, mỗi nút thường đại diện cho một ký tự trong chuỗi. Trie dùng để lưu tập động hoặc bản đồ kết hợp với các khóa là chuỗi. Không giống như cây tìm kiếm nhị phân, nút trong trie không lưu toàn bộ khóa; vị trí của nút xác định khóa tương ứng."
+    "answer": "Cả A và B",
+    "explanation": "Binary heap là một cây nhị phân hoàn chỉnh, trong đó mỗi nút có giá trị lớn hơn hoặc bằng các con (max-heap) hoặc nhỏ hơn hoặc bằng các con (min-heap). Cấu trúc này cho phép truy xuất và chèn phần tử hiệu quả, với nút gốc luôn là giá trị nhỏ nhất hoặc lớn nhất tùy loại."
+  },
+  {
+    "question": "Trong cấu trúc trie, một nút đại diện cho gì?",
+    "options": {
+      "A": "Một ký tự trong chuỗi",
+      "B": "Một chuỗi hoàn chỉnh",
+      "C": "Một con trỏ đến một trie khác",
+      "D": "A và C"
     },
-    {
-        "question": "Ưu điểm chính khi dùng Fibonacci heap so với binary heap là gì?",
-        "options": {
-            "A": "Phép hợp (merge) nhanh hơn",
-            "B": "Độ phức tạp bộ nhớ tốt hơn",
-            "C": "Chèn thời gian cố định",
-            "D": "A và C"
-        },
-        "answer": "Phép hợp (merge) nhanh hơn",
-        "explanation": "Ưu điểm chính của Fibonacci heap so với binary heap là phép hợp (merge) nhanh hơn. Fibonacci heap đặc biệt hữu ích cho các thuật toán như Dijkstra khi có nhiều phép hợp, vì nó có thể hợp hai heap trong thời gian amortized hằng số, trong khi binary heap có thể cần thời gian tuyến tính theo kích thước heap."
+    "answer": "Một ký tự trong chuỗi",
+    "explanation": "Trong trie, mỗi nút thường đại diện cho một ký tự trong chuỗi. Trie dùng để lưu tập động hoặc bản đồ kết hợp với các khóa là chuỗi. Không giống như cây tìm kiếm nhị phân, nút trong trie không lưu toàn bộ khóa; vị trí của nút xác định khóa tương ứng."
+  },
+  {
+    "question": "Ưu điểm chính khi dùng Fibonacci heap so với binary heap là gì?",
+    "options": {
+      "A": "Phép hợp (merge) nhanh hơn",
+      "B": "Độ phức tạp bộ nhớ tốt hơn",
+      "C": "Chèn thời gian cố định",
+      "D": "A và C"
     },
-    {
-        "question": "Cấu trúc dữ liệu nào hiệu quả nhất để triển khai hàng đợi ưu tiên (priority queue)?",
-        "options": {
-            "A": "Cây tìm kiếm nhị phân",
-            "B": "Bảng băm (hash table)",
-            "C": "Binary heap",
-            "D": "Danh sách liên kết"
-        },
-        "answer": "Binary heap",
-        "explanation": "Binary heap là lựa chọn hiệu quả để triển khai hàng đợi ưu tiên vì khả năng chèn nhanh và loại bỏ phần tử có độ ưu tiên cao/ thấp nhanh. Các thao tác này có thể thực hiện trong thời gian logarit, làm cho binary heap phù hợp cho priority queue."
+    "answer": "Phép hợp (merge) nhanh hơn",
+    "explanation": "Ưu điểm chính của Fibonacci heap so với binary heap là phép hợp (merge) nhanh hơn. Fibonacci heap đặc biệt hữu ích cho các thuật toán như Dijkstra khi có nhiều phép hợp, vì nó có thể hợp hai heap trong thời gian amortized hằng số, trong khi binary heap có thể cần thời gian tuyến tính theo kích thước heap."
+  },
+  {
+    "question": "Cấu trúc dữ liệu nào hiệu quả nhất để triển khai hàng đợi ưu tiên (priority queue)?",
+    "options": {
+      "A": "Cây tìm kiếm nhị phân",
+      "B": "Bảng băm (hash table)",
+      "C": "Binary heap",
+      "D": "Danh sách liên kết"
     },
-    {
-        "question": "Trie khác gì so với bảng băm khi lưu chuỗi?",
-        "options": {
-            "A": "Trie không cần hàm băm và có thể cung cấp thứ tự chữ cái",
-            "B": "Bảng băm nhanh hơn cho thao tác chèn và xóa",
-            "C": "Trie chiếm ít không gian hơn",
-            "D": "A và C"
-        },
-        "answer": "Trie không cần hàm băm và có thể cung cấp thứ tự chữ cái",
-        "explanation": "Trie và bảng băm đều có thể lưu chuỗi, nhưng trie không cần hàm băm và tự nhiên hỗ trợ thứ tự chữ cái của các phần tử. Điều này hữu ích cho các tác vụ như gợi ý tự động (autocomplete), nơi thứ tự có ý nghĩa, trong khi bảng băm tập trung vào truy cập nhanh bất kể thứ tự."
+    "answer": "Binary heap",
+    "explanation": "Binary heap là lựa chọn hiệu quả để triển khai hàng đợi ưu tiên vì khả năng chèn nhanh và loại bỏ phần tử có độ ưu tiên cao/ thấp nhanh. Các thao tác này có thể thực hiện trong thời gian logarit, làm cho binary heap phù hợp cho priority queue."
+  },
+  {
+    "question": "Trie khác gì so với bảng băm khi lưu chuỗi?",
+    "options": {
+      "A": "Trie không cần hàm băm và có thể cung cấp thứ tự chữ cái",
+      "B": "Bảng băm nhanh hơn cho thao tác chèn và xóa",
+      "C": "Trie chiếm ít không gian hơn",
+      "D": "A và C"
     },
-    {
-        "question": "Phân tích amortized (amortized analysis) có ý nghĩa gì đối với các cấu trúc dữ liệu nâng cao như splay tree hoặc Fibonacci heap?",
-        "options": {
-            "A": "Nó cho độ phức tạp thời gian trường hợp xấu nhất cho mỗi thao tác",
-            "B": "Nó cho biết độ phức tạp thời gian trung bình trên một dãy các thao tác",
-            "C": "Nó đảm bảo thời gian hằng cho mọi thao tác",
-            "D": "Nó giảm độ phức tạp bộ nhớ của cấu trúc dữ liệu"
-        },
-        "answer": "Nó cho biết độ phức tạp thời gian trung bình trên một dãy các thao tác",
-        "explanation": "Phân tích amortized quan trọng để hiểu hiệu quả của các cấu trúc như splay tree hoặc Fibonacci heap vì nó đưa ra chi phí trung bình của các thao tác trên một dãy thao tác. Một số thao tác có thể đắt, nhưng chi phí trung bình theo chuỗi thao tác vẫn thấp."
+    "answer": "Trie không cần hàm băm và có thể cung cấp thứ tự chữ cái",
+    "explanation": "Trie và bảng băm đều có thể lưu chuỗi, nhưng trie không cần hàm băm và tự nhiên hỗ trợ thứ tự chữ cái của các phần tử. Điều này hữu ích cho các tác vụ như gợi ý tự động (autocomplete), nơi thứ tự có ý nghĩa, trong khi bảng băm tập trung vào truy cập nhanh bất kể thứ tự."
+  },
+  {
+    "question": "Phân tích amortized (amortized analysis) có ý nghĩa gì đối với các cấu trúc dữ liệu nâng cao như splay tree hoặc Fibonacci heap?",
+    "options": {
+      "A": "Nó cho độ phức tạp thời gian trường hợp xấu nhất cho mỗi thao tác",
+      "B": "Nó cho biết độ phức tạp thời gian trung bình trên một dãy các thao tác",
+      "C": "Nó đảm bảo thời gian hằng cho mọi thao tác",
+      "D": "Nó giảm độ phức tạp bộ nhớ của cấu trúc dữ liệu"
     },
-    {
-        "question": "Làm sao để chèn một khóa mới vào trie?",
-        "options": {
-            "A": "Tạo một nút mới cho mỗi ký tự của khóa và liên kết chúng",
-            "B": "Tái sử dụng các nút tồn tại nếu khớp và chỉ tạo nút mới khi cần",
-            "C": "Chèn khóa tại nút gốc",
-            "D": "B và C"
-        },
-        "answer": "Tái sử dụng các nút tồn tại nếu khớp và chỉ tạo nút mới khi cần",
-        "explanation": "Chèn một khóa mới vào trie bắt đầu từ gốc, tái sử dụng các nút đã có nếu các ký tự khớp và chỉ tạo nút mới khi cần thiết. Quá trình tiếp tục cho đến khi tất cả ký tự của khóa được chèn, làm cho trie hiệu quả khi lưu tập chuỗi."
+    "answer": "Nó cho biết độ phức tạp thời gian trung bình trên một dãy các thao tác",
+    "explanation": "Phân tích amortized quan trọng để hiểu hiệu quả của các cấu trúc như splay tree hoặc Fibonacci heap vì nó đưa ra chi phí trung bình của các thao tác trên một dãy thao tác. Một số thao tác có thể đắt, nhưng chi phí trung bình theo chuỗi thao tác vẫn thấp."
+  },
+  {
+    "question": "Làm sao để chèn một khóa mới vào trie?",
+    "options": {
+      "A": "Tạo một nút mới cho mỗi ký tự của khóa và liên kết chúng",
+      "B": "Tái sử dụng các nút tồn tại nếu khớp và chỉ tạo nút mới khi cần",
+      "C": "Chèn khóa tại nút gốc",
+      "D": "B và C"
     },
-    {
-        "question": "Thao tác nào thường phức tạp hơn để triển khai trong cây tìm kiếm nhị phân cân bằng so với binary heap?",
-        "options": {
-            "A": "Tìm giá trị lớn nhất",
-            "B": "Chèn",
-            "C": "Xóa",
-            "D": "Tìm giá trị nhỏ nhất"
-        },
-        "answer": "Xóa",
-        "explanation": "Xóa thường phức tạp hơn trong cây tìm kiếm nhị phân cân bằng so với binary heap. Trong BST cân bằng, xóa cần xử lý cẩn thận để duy trì tính cân bằng của cây, thường yêu cầu xoay hoặc điều chỉnh bổ sung."
+    "answer": "Tái sử dụng các nút tồn tại nếu khớp và chỉ tạo nút mới khi cần",
+    "explanation": "Chèn một khóa mới vào trie bắt đầu từ gốc, tái sử dụng các nút đã có nếu các ký tự khớp và chỉ tạo nút mới khi cần thiết. Quá trình tiếp tục cho đến khi tất cả ký tự của khóa được chèn, làm cho trie hiệu quả khi lưu tập chuỗi."
+  },
+  {
+    "question": "Thao tác nào thường phức tạp hơn để triển khai trong cây tìm kiếm nhị phân cân bằng so với binary heap?",
+    "options": {
+      "A": "Tìm giá trị lớn nhất",
+      "B": "Chèn",
+      "C": "Xóa",
+      "D": "Tìm giá trị nhỏ nhất"
     },
-    {
-        "question": "Trong min heap, làm sao đảm bảo cấu trúc vẫn hợp lệ sau khi chèn phần tử mới?",
-        "options": {
-            "A": "Hoán đổi phần tử mới với nút gốc nếu nó nhỏ hơn",
-            "B": "Đặt phần tử mới vào vị trí trống trái nhất rồi \"heapify\" lên",
-            "C": "Sắp xếp lại toàn bộ heap sau mỗi lần chèn",
-            "D": "Thay thế phần tử lớn nhất nếu phần tử mới nhỏ hơn"
-        },
-        "answer": "Đặt phần tử mới vào vị trí trống trái nhất rồi \"heapify\" lên",
-        "explanation": "Sau khi chèn phần tử vào min heap, đặt nó vào vị trí trống trái nhất để giữ tính chất cây hoàn chỉnh. Sau đó thực hiện \"heapify up\" bằng cách so sánh với nút cha và hoán đổi nếu cần cho tới khi tính chất min-heap được khôi phục."
+    "answer": "Xóa",
+    "explanation": "Xóa thường phức tạp hơn trong cây tìm kiếm nhị phân cân bằng so với binary heap. Trong BST cân bằng, xóa cần xử lý cẩn thận để duy trì tính cân bằng của cây, thường yêu cầu xoay hoặc điều chỉnh bổ sung."
+  },
+  {
+    "question": "Trong min heap, làm sao đảm bảo cấu trúc vẫn hợp lệ sau khi chèn phần tử mới?",
+    "options": {
+      "A": "Hoán đổi phần tử mới với nút gốc nếu nó nhỏ hơn",
+      "B": "Đặt phần tử mới vào vị trí trống trái nhất rồi \"heapify\" lên",
+      "C": "Sắp xếp lại toàn bộ heap sau mỗi lần chèn",
+      "D": "Thay thế phần tử lớn nhất nếu phần tử mới nhỏ hơn"
     },
-    {
-        "question": "Một lập trình viên thấy binary heap của họ không giữ đúng thứ tự sau nhiều lần chèn và xóa.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Quá trình heapify không được triển khai đúng",
-            "B": "Heap không được cân bằng đúng sau các thao tác",
-            "C": "Các khóa không được so sánh đúng khi chèn",
-            "D": "Tất cả các điều trên"
-        },
-        "answer": "Quá trình heapify không được triển khai đúng",
-        "explanation": "Nếu binary heap không giữ đúng thứ tự sau các thao tác, nguyên nhân có thể là quá trình heapify không được triển khai chính xác. Heapify rất quan trọng để điều chỉnh vị trí các phần tử sau chèn và xóa; nếu thất bại, heap sẽ không phản ánh đúng cấu trúc ưu tiên."
+    "answer": "Đặt phần tử mới vào vị trí trống trái nhất rồi \"heapify\" lên",
+    "explanation": "Sau khi chèn phần tử vào min heap, đặt nó vào vị trí trống trái nhất để giữ tính chất cây hoàn chỉnh. Sau đó thực hiện \"heapify up\" bằng cách so sánh với nút cha và hoán đổi nếu cần cho tới khi tính chất min-heap được khôi phục."
+  },
+  {
+    "question": "Một lập trình viên thấy binary heap của họ không giữ đúng thứ tự sau nhiều lần chèn và xóa.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Quá trình heapify không được triển khai đúng",
+      "B": "Heap không được cân bằng đúng sau các thao tác",
+      "C": "Các khóa không được so sánh đúng khi chèn",
+      "D": "Tất cả các điều trên"
     },
-    {
-        "question": "Khi triển khai trie cho từ điển, một số từ không tìm thấy.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Các nút cho một vài ký tự không được liên kết đúng",
-            "B": "Hàm tìm kiếm không xử lý đúng kết thúc từ",
-            "C": "Vấn đề phân biệt chữ hoa thường",
-            "D": "A và B"
-        },
-        "answer": "Các nút cho một vài ký tự không được liên kết đúng",
-        "explanation": "Nếu trie không tìm thấy một vài từ, có thể do các nút cho một số chữ cái không được liên kết đúng, khiến cấu trúc trie không phản ánh chính xác từ điển. Cần đảm bảo mỗi nút đại diện cho ký tự và liên kết chính xác để phản ánh chính tả của từ."
+    "answer": "Quá trình heapify không được triển khai đúng",
+    "explanation": "Nếu binary heap không giữ đúng thứ tự sau các thao tác, nguyên nhân có thể là quá trình heapify không được triển khai chính xác. Heapify rất quan trọng để điều chỉnh vị trí các phần tử sau chèn và xóa; nếu thất bại, heap sẽ không phản ánh đúng cấu trúc ưu tiên."
+  },
+  {
+    "question": "Khi triển khai trie cho từ điển, một số từ không tìm thấy.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Các nút cho một vài ký tự không được liên kết đúng",
+      "B": "Hàm tìm kiếm không xử lý đúng kết thúc từ",
+      "C": "Vấn đề phân biệt chữ hoa thường",
+      "D": "A và B"
     },
-    {
-        "question": "Vấn đề phổ biến nào có thể ảnh hưởng đến hiệu năng của splay tree?",
-        "options": {
-            "A": "Việc splay cùng một nút quá thường xuyên",
-            "B": "Không thực hiện splay ở mỗi thao tác",
-            "C": "Cân bằng cây sai cách",
-            "D": "Sử dụng quá nhiều phép xoay trong thao tác splay"
-        },
-        "answer": "Việc splay cùng một nút quá thường xuyên",
-        "explanation": "Việc splay cùng một nút quá thường xuyên có thể ảnh hưởng hiệu năng của splay tree. Splay tree di chuyển các phần tử được truy cập lên gần gốc để cải thiện thời gian truy cập trung bình, nhưng nếu chỉ một vài nút bị splay liên tục, cây có thể trở nên mất cân bằng và giảm lợi ích hiệu năng."
+    "answer": "Các nút cho một vài ký tự không được liên kết đúng",
+    "explanation": "Nếu trie không tìm thấy một vài từ, có thể do các nút cho một số chữ cái không được liên kết đúng, khiến cấu trúc trie không phản ánh chính xác từ điển. Cần đảm bảo mỗi nút đại diện cho ký tự và liên kết chính xác để phản ánh chính tả của từ."
+  },
+  {
+    "question": "Vấn đề phổ biến nào có thể ảnh hưởng đến hiệu năng của splay tree?",
+    "options": {
+      "A": "Việc splay cùng một nút quá thường xuyên",
+      "B": "Không thực hiện splay ở mỗi thao tác",
+      "C": "Cân bằng cây sai cách",
+      "D": "Sử dụng quá nhiều phép xoay trong thao tác splay"
     },
-    {
-        "question": "Kỹ thuật chia để trị (divide and conquer) chủ yếu được sử dụng để làm gì?",
-        "options": {
-            "A": "Đơn giản hóa vấn đề bằng cách chia nó thành các phần nhỏ hơn, dễ quản lý hơn",
-            "B": "Tăng hiệu quả của các thuật toán sắp xếp",
-            "C": "Tối ưu hàm đệ quy",
-            "D": "Cân bằng cây tìm kiếm nhị phân"
-        },
-        "answer": "Đơn giản hóa vấn đề bằng cách chia nó thành các phần nhỏ hơn, dễ quản lý hơn",
-        "explanation": "Chia để trị là kỹ thuật chia một vấn đề thành các phần nhỏ hơn, giải từng phần độc lập rồi kết hợp kết quả để giải quyết vấn đề ban đầu. Kỹ thuật này được sử dụng rộng rãi trong các thuật toán như MergeSort và QuickSort."
+    "answer": "Việc splay cùng một nút quá thường xuyên",
+    "explanation": "Việc splay cùng một nút quá thường xuyên có thể ảnh hưởng hiệu năng của splay tree. Splay tree di chuyển các phần tử được truy cập lên gần gốc để cải thiện thời gian truy cập trung bình, nhưng nếu chỉ một vài nút bị splay liên tục, cây có thể trở nên mất cân bằng và giảm lợi ích hiệu năng."
+  },
+  {
+    "question": "Kỹ thuật chia để trị (divide and conquer) chủ yếu được sử dụng để làm gì?",
+    "options": {
+      "A": "Đơn giản hóa vấn đề bằng cách chia nó thành các phần nhỏ hơn, dễ quản lý hơn",
+      "B": "Tăng hiệu quả của các thuật toán sắp xếp",
+      "C": "Tối ưu hàm đệ quy",
+      "D": "Cân bằng cây tìm kiếm nhị phân"
     },
-    {
-        "question": "Trong thiết kế thuật toán, backtracking là gì?",
-        "options": {
-            "A": "Kỹ thuật tìm đường đi ngắn nhất trong đồ thị",
-            "B": "Cách tiết kiệm bộ nhớ bằng cách xóa dữ liệu không cần thiết",
-            "C": "Phương pháp đệ quy để giải các bài toán tổ hợp bằng cách xây dựng lời giải từng bước và lùi lại khi gặp ràng buộc",
-            "D": "Phương pháp nén dữ liệu"
-        },
-        "answer": "Phương pháp đệ quy để giải các bài toán tổ hợp bằng cách xây dựng lời giải từng bước và lùi lại khi gặp ràng buộc",
-        "explanation": "Backtracking là phương pháp đệ quy, có hệ thống để xây dựng lời giải từng bước và loại bỏ những lời giải không thỏa mãn ràng buộc khi chúng xuất hiện. Nó thường dùng cho các bài toán đố như giải mê cung hoặc bài toán N-Queens."
+    "answer": "Đơn giản hóa vấn đề bằng cách chia nó thành các phần nhỏ hơn, dễ quản lý hơn",
+    "explanation": "Chia để trị là kỹ thuật chia một vấn đề thành các phần nhỏ hơn, giải từng phần độc lập rồi kết hợp kết quả để giải quyết vấn đề ban đầu. Kỹ thuật này được sử dụng rộng rãi trong các thuật toán như MergeSort và QuickSort."
+  },
+  {
+    "question": "Trong thiết kế thuật toán, backtracking là gì?",
+    "options": {
+      "A": "Kỹ thuật tìm đường đi ngắn nhất trong đồ thị",
+      "B": "Cách tiết kiệm bộ nhớ bằng cách xóa dữ liệu không cần thiết",
+      "C": "Phương pháp đệ quy để giải các bài toán tổ hợp bằng cách xây dựng lời giải từng bước và lùi lại khi gặp ràng buộc",
+      "D": "Phương pháp nén dữ liệu"
     },
-    {
-        "question": "Điểm khác biệt giữa quy hoạch động (dynamic programming) và chia để trị là gì?",
-        "options": {
-            "A": "Quy hoạch động yêu cầu bài toán có các bài toán con chồng chéo, trong khi chia để trị thì không",
-            "B": "Quy hoạch động chỉ sử dụng đệ quy, còn chia để trị thì không",
-            "C": "Quy hoạch động chỉ dùng cho bài toán tối ưu",
-            "D": "Chia để trị không áp dụng cho các bài toán có cấu trúc tối ưu con"
-        },
-        "answer": "Quy hoạch động yêu cầu bài toán có các bài toán con chồng chéo, trong khi chia để trị thì không",
-        "explanation": "Sự khác biệt chính là quy hoạch động áp dụng khi các bài toán con chồng chéo và có thể lưu kết quả để tái sử dụng, còn chia để trị không yêu cầu đặc tính này. Quy hoạch động tránh lặp lại bằng cách lưu kết quả của các bài toán con."
+    "answer": "Phương pháp đệ quy để giải các bài toán tổ hợp bằng cách xây dựng lời giải từng bước và lùi lại khi gặp ràng buộc",
+    "explanation": "Backtracking là phương pháp đệ quy, có hệ thống để xây dựng lời giải từng bước và loại bỏ những lời giải không thỏa mãn ràng buộc khi chúng xuất hiện. Nó thường dùng cho các bài toán đố như giải mê cung hoặc bài toán N-Queens."
+  },
+  {
+    "question": "Điểm khác biệt giữa quy hoạch động (dynamic programming) và chia để trị là gì?",
+    "options": {
+      "A": "Quy hoạch động yêu cầu bài toán có các bài toán con chồng chéo, trong khi chia để trị thì không",
+      "B": "Quy hoạch động chỉ sử dụng đệ quy, còn chia để trị thì không",
+      "C": "Quy hoạch động chỉ dùng cho bài toán tối ưu",
+      "D": "Chia để trị không áp dụng cho các bài toán có cấu trúc tối ưu con"
     },
-    {
-        "question": "Cách tiếp cận greedy khác gì so với quy hoạch động khi giải bài toán?",
-        "options": {
-            "A": "Greedy đưa ra một dãy lựa chọn có thể không dẫn đến lời giải tối ưu, trong khi quy hoạch động đảm bảo tối ưu bằng cách xem xét tất cả các khả năng",
-            "B": "Greedy dễ triển khai hơn so với quy hoạch động",
-            "C": "Greedy có thể giải được nhiều loại bài toán hơn quy hoạch động",
-            "D": "Quy hoạch động chỉ phù hợp cho các bài toán có cấu trúc tuyến tính"
-        },
-        "answer": "Greedy đưa ra một dãy lựa chọn có thể không dẫn đến lời giải tối ưu, trong khi quy hoạch động đảm bảo tối ưu bằng cách xem xét tất cả các khả năng",
-        "explanation": "Greedy đưa ra các lựa chọn cục bộ tối ưu với hi vọng đạt tối ưu toàn cục mà không xem xét tất cả khả năng; trong khi đó quy hoạch động xem xét mọi khả năng bằng cách chia bài toán thành các bài toán con và tối ưu hóa chúng."
+    "answer": "Quy hoạch động yêu cầu bài toán có các bài toán con chồng chéo, trong khi chia để trị thì không",
+    "explanation": "Sự khác biệt chính là quy hoạch động áp dụng khi các bài toán con chồng chéo và có thể lưu kết quả để tái sử dụng, còn chia để trị không yêu cầu đặc tính này. Quy hoạch động tránh lặp lại bằng cách lưu kết quả của các bài toán con."
+  },
+  {
+    "question": "Cách tiếp cận greedy khác gì so với quy hoạch động khi giải bài toán?",
+    "options": {
+      "A": "Greedy đưa ra một dãy lựa chọn có thể không dẫn đến lời giải tối ưu, trong khi quy hoạch động đảm bảo tối ưu bằng cách xem xét tất cả các khả năng",
+      "B": "Greedy dễ triển khai hơn so với quy hoạch động",
+      "C": "Greedy có thể giải được nhiều loại bài toán hơn quy hoạch động",
+      "D": "Quy hoạch động chỉ phù hợp cho các bài toán có cấu trúc tuyến tính"
     },
-    {
-        "question": "Ý tưởng chính của các thuật toán xấp xỉ (approximation algorithms) là gì?",
-        "options": {
-            "A": "Cung cấp lời giải chính xác cho các bài toán NP-hard",
-            "B": "Cung cấp các lời giải gần nhất với lời giải tốt nhất cho các bài toán NP-hard",
-            "C": "Giảm độ phức tạp thời gian của thuật toán xuống thời gian đa thức",
-            "D": "Chuyển các bài toán NP-hard thành bài toán thuộc P"
-        },
-        "answer": "Cung cấp các lời giải gần nhất với lời giải tốt nhất cho các bài toán NP-hard",
-        "explanation": "Thuật toán xấp xỉ được thiết kế để đưa ra các lời giải gần với lời giải tốt nhất cho các bài toán NP-hard, nơi việc tìm lời giải chính xác là không thực tế về mặt thời gian. Chúng hữu ích khi lời giải gần đúng là chấp nhận được."
+    "answer": "Greedy đưa ra một dãy lựa chọn có thể không dẫn đến lời giải tối ưu, trong khi quy hoạch động đảm bảo tối ưu bằng cách xem xét tất cả các khả năng",
+    "explanation": "Greedy đưa ra các lựa chọn cục bộ tối ưu với hi vọng đạt tối ưu toàn cục mà không xem xét tất cả khả năng; trong khi đó quy hoạch động xem xét mọi khả năng bằng cách chia bài toán thành các bài toán con và tối ưu hóa chúng."
+  },
+  {
+    "question": "Ý tưởng chính của các thuật toán xấp xỉ (approximation algorithms) là gì?",
+    "options": {
+      "A": "Cung cấp lời giải chính xác cho các bài toán NP-hard",
+      "B": "Cung cấp các lời giải gần nhất với lời giải tốt nhất cho các bài toán NP-hard",
+      "C": "Giảm độ phức tạp thời gian của thuật toán xuống thời gian đa thức",
+      "D": "Chuyển các bài toán NP-hard thành bài toán thuộc P"
     },
-    {
-        "question": "Tại sao sử dụng thuật toán ngẫu nhiên (randomized algorithms) trong tính toán?",
-        "options": {
-            "A": "Để đảm bảo luôn tìm được lời giải tốt nhất",
-            "B": "Để cung cấp độ phức tạp thời gian xác định cho mọi bài toán",
-            "C": "Để cải thiện hiệu suất trung bình của thuật toán bằng cách sử dụng ngẫu nhiên",
-            "D": "Để đơn giản hóa việc triển khai thuật toán"
-        },
-        "answer": "Để cải thiện hiệu suất trung bình của thuật toán bằng cách sử dụng ngẫu nhiên",
-        "explanation": "Thuật toán ngẫu nhiên sử dụng yếu tố ngẫu nhiên trong logic để cải thiện hiệu suất trung bình, đôi khi tốt hơn so với thuật toán định trước. Chúng hữu ích khi đầu vào có thể là trường hợp xấu nhất cho thuật toán định trước hoặc khi cần hành vi không dễ đoán."
+    "answer": "Cung cấp các lời giải gần nhất với lời giải tốt nhất cho các bài toán NP-hard",
+    "explanation": "Thuật toán xấp xỉ được thiết kế để đưa ra các lời giải gần với lời giải tốt nhất cho các bài toán NP-hard, nơi việc tìm lời giải chính xác là không thực tế về mặt thời gian. Chúng hữu ích khi lời giải gần đúng là chấp nhận được."
+  },
+  {
+    "question": "Tại sao sử dụng thuật toán ngẫu nhiên (randomized algorithms) trong tính toán?",
+    "options": {
+      "A": "Để đảm bảo luôn tìm được lời giải tốt nhất",
+      "B": "Để cung cấp độ phức tạp thời gian xác định cho mọi bài toán",
+      "C": "Để cải thiện hiệu suất trung bình của thuật toán bằng cách sử dụng ngẫu nhiên",
+      "D": "Để đơn giản hóa việc triển khai thuật toán"
     },
-    {
-        "question": "Làm thế nào để triển khai một thuật toán backtracking cơ bản cho bài toán N-Queens?",
-        "options": {
-            "A": "Đặt các quân hậu từng con một ở các hàng khác nhau và kiểm tra xung đột ở mỗi bước",
-            "B": "Đặt các quân hậu ngẫu nhiên lên bảng và sắp xếp lại để giải quyết xung đột",
-            "C": "Sử dụng thuật toán greedy để đặt tất cả quân hậu cùng lúc",
-            "D": "Tính toán vị trí chính xác của tất cả quân hậu trước khi đặt chúng"
-        },
-        "answer": "Đặt các quân hậu từng con một ở các hàng khác nhau và kiểm tra xung đột ở mỗi bước",
-        "explanation": "Triển khai backtracking cho N-Queens gồm đặt từng quân hậu ở các hàng khác nhau và hệ thống kiểm tra xung đột (ví dụ tấn công nhau). Nếu phát hiện xung đột, thuật toán lùi lại và thử vị trí khác cho đến khi tất cả quân hậu được đặt an toàn."
+    "answer": "Để cải thiện hiệu suất trung bình của thuật toán bằng cách sử dụng ngẫu nhiên",
+    "explanation": "Thuật toán ngẫu nhiên sử dụng yếu tố ngẫu nhiên trong logic để cải thiện hiệu suất trung bình, đôi khi tốt hơn so với thuật toán định trước. Chúng hữu ích khi đầu vào có thể là trường hợp xấu nhất cho thuật toán định trước hoặc khi cần hành vi không dễ đoán."
+  },
+  {
+    "question": "Làm thế nào để triển khai một thuật toán backtracking cơ bản cho bài toán N-Queens?",
+    "options": {
+      "A": "Đặt các quân hậu từng con một ở các hàng khác nhau và kiểm tra xung đột ở mỗi bước",
+      "B": "Đặt các quân hậu ngẫu nhiên lên bảng và sắp xếp lại để giải quyết xung đột",
+      "C": "Sử dụng thuật toán greedy để đặt tất cả quân hậu cùng lúc",
+      "D": "Tính toán vị trí chính xác của tất cả quân hậu trước khi đặt chúng"
     },
-    {
-        "question": "Kỹ thuật nào thường dùng trong quy hoạch động để tối ưu hóa các hàm đệ quy?",
-        "options": {
-            "A": "Memoization",
-            "B": "Ngẫu nhiên hóa (Randomization)",
-            "C": "Backtracking",
-            "D": "Tìm kiếm tuyến tính"
-        },
-        "answer": "Memoization",
-        "explanation": "Memoization là kỹ thuật lưu trữ kết quả của các lời gọi hàm tốn kém và tái sử dụng chúng khi gặp cùng đầu vào, giúp tránh tính toán lặp lại và giảm đáng kể độ phức tạp thời gian trong quy hoạch động."
+    "answer": "Đặt các quân hậu từng con một ở các hàng khác nhau và kiểm tra xung đột ở mỗi bước",
+    "explanation": "Triển khai backtracking cho N-Queens gồm đặt từng quân hậu ở các hàng khác nhau và hệ thống kiểm tra xung đột (ví dụ tấn công nhau). Nếu phát hiện xung đột, thuật toán lùi lại và thử vị trí khác cho đến khi tất cả quân hậu được đặt an toàn."
+  },
+  {
+    "question": "Kỹ thuật nào thường dùng trong quy hoạch động để tối ưu hóa các hàm đệ quy?",
+    "options": {
+      "A": "Memoization",
+      "B": "Ngẫu nhiên hóa (Randomization)",
+      "C": "Backtracking",
+      "D": "Tìm kiếm tuyến tính"
     },
-    {
-        "question": "Trong thiết kế thuật toán, cách tiếp cận greedy được áp dụng cho bài toán chọn hoạt động (activity selection) như thế nào?",
-        "options": {
-            "A": "Chọn hoạt động ngẫu nhiên cho tới khi không thể chọn thêm",
-            "B": "Chọn các hoạt động ngắn nhất trước",
-            "C": "Chọn các hoạt động bắt đầu sớm nhất mà không chồng lên nhau",
-            "D": "Chọn các hoạt động để lại nhiều thời gian rảnh nhất sau khi hoàn thành"
-        },
-        "answer": "Chọn các hoạt động bắt đầu sớm nhất mà không chồng lên nhau",
-        "explanation": "Cách greedy cho bài toán activity selection là chọn hoạt động tiếp theo bắt đầu sớm nhất mà không chồng lên các hoạt động đã chọn, giúp tối đa hóa số hoạt động không chồng."
+    "answer": "Memoization",
+    "explanation": "Memoization là kỹ thuật lưu trữ kết quả của các lời gọi hàm tốn kém và tái sử dụng chúng khi gặp cùng đầu vào, giúp tránh tính toán lặp lại và giảm đáng kể độ phức tạp thời gian trong quy hoạch động."
+  },
+  {
+    "question": "Trong thiết kế thuật toán, cách tiếp cận greedy được áp dụng cho bài toán chọn hoạt động (activity selection) như thế nào?",
+    "options": {
+      "A": "Chọn hoạt động ngẫu nhiên cho tới khi không thể chọn thêm",
+      "B": "Chọn các hoạt động ngắn nhất trước",
+      "C": "Chọn các hoạt động bắt đầu sớm nhất mà không chồng lên nhau",
+      "D": "Chọn các hoạt động để lại nhiều thời gian rảnh nhất sau khi hoàn thành"
     },
-    {
-        "question": "Triển khai greedy cho bài toán lập lịch luôn trả về lời giải không tối ưu.\nNguyên nhân có thể là gì?",
-        "options": {
-            "A": "Thuật toán không xem xét tất cả các tập con có thể của công việc",
-            "B": "Thuật toán đưa ra quyết định không thể đảo ngược dựa trên tối ưu cục bộ mà không xem xét toàn bộ bài toán",
-            "C": "Các công việc không được sắp xếp đúng trước khi áp dụng",
-            "D": "Thuật toán tính sai thời gian kết thúc của công việc"
-        },
-        "answer": "Thuật toán đưa ra quyết định không thể đảo ngược dựa trên tối ưu cục bộ mà không xem xét toàn bộ bài toán",
-        "explanation": "Vấn đề phổ biến của greedy là đưa ra quyết định cục bộ tối ưu nhưng có thể không tương thích với tối ưu toàn cục. Nếu các lựa chọn cục bộ không dẫn tới lời giải toàn cục tốt, cần xem xét thay đổi tiêu chí hoặc dùng phương pháp khác như quy hoạch động."
+    "answer": "Chọn các hoạt động bắt đầu sớm nhất mà không chồng lên nhau",
+    "explanation": "Cách greedy cho bài toán activity selection là chọn hoạt động tiếp theo bắt đầu sớm nhất mà không chồng lên các hoạt động đã chọn, giúp tối đa hóa số hoạt động không chồng."
+  },
+  {
+    "question": "Triển khai greedy cho bài toán lập lịch luôn trả về lời giải không tối ưu.\nNguyên nhân có thể là gì?",
+    "options": {
+      "A": "Thuật toán không xem xét tất cả các tập con có thể của công việc",
+      "B": "Thuật toán đưa ra quyết định không thể đảo ngược dựa trên tối ưu cục bộ mà không xem xét toàn bộ bài toán",
+      "C": "Các công việc không được sắp xếp đúng trước khi áp dụng",
+      "D": "Thuật toán tính sai thời gian kết thúc của công việc"
     },
-    {
-        "question": "Tại sao lời giải quy hoạch động có thể hoạt động kém trên bài toán có không gian trạng thái lớn?",
-        "options": {
-            "A": "Các cuộc gọi đệ quy quá sâu",
-            "B": "Bảng memoization tiêu tốn quá nhiều bộ nhớ",
-            "C": "Không có đủ bài toán con",
-            "D": "Bài toán không có đặc tính bài toán con chồng chéo"
-        },
-        "answer": "Bảng memoization tiêu tốn quá nhiều bộ nhớ",
-        "explanation": "Quy hoạch động có thể hoạt động kém khi bảng memoization (lưu kết quả các bài toán con) tiêu tốn quá nhiều bộ nhớ. Giải pháp có thể là tối ưu hóa cách lưu trữ, dùng cấu trúc dữ liệu tiết kiệm hơn hoặc loại bỏ các trạng thái không cần thiết."
+    "answer": "Thuật toán đưa ra quyết định không thể đảo ngược dựa trên tối ưu cục bộ mà không xem xét toàn bộ bài toán",
+    "explanation": "Vấn đề phổ biến của greedy là đưa ra quyết định cục bộ tối ưu nhưng có thể không tương thích với tối ưu toàn cục. Nếu các lựa chọn cục bộ không dẫn tới lời giải toàn cục tốt, cần xem xét thay đổi tiêu chí hoặc dùng phương pháp khác như quy hoạch động."
+  },
+  {
+    "question": "Tại sao lời giải quy hoạch động có thể hoạt động kém trên bài toán có không gian trạng thái lớn?",
+    "options": {
+      "A": "Các cuộc gọi đệ quy quá sâu",
+      "B": "Bảng memoization tiêu tốn quá nhiều bộ nhớ",
+      "C": "Không có đủ bài toán con",
+      "D": "Bài toán không có đặc tính bài toán con chồng chéo"
     },
-    {
-        "question": "Khi tối ưu một thuật toán đệ quy bằng memoization, lập trình viên phát hiện chương trình hết bộ nhớ.\nMột giải pháp khả thi là gì?",
-        "options": {
-            "A": "Tăng bộ nhớ khả dụng",
-            "B": "Chuyển đệ quy sang dạng lặp để dùng ít bộ nhớ hơn",
-            "C": "Giảm kích thước bài toán",
-            "D": "Sử dụng chiến lược memoization hiệu quả hơn"
-        },
-        "answer": "Chuyển đệ quy sang dạng lặp để dùng ít bộ nhớ hơn",
-        "explanation": "Chuyển thuật toán đệ quy sang dạng lặp (bottom-up) có thể giảm tiêu thụ bộ nhớ bằng cách tránh ngăn xếp cuộc gọi đệ quy và thường kết hợp với quy hoạch động dạng bottom-up để sử dụng bộ nhớ hiệu quả hơn."
-    }
+    "answer": "Bảng memoization tiêu tốn quá nhiều bộ nhớ",
+    "explanation": "Quy hoạch động có thể hoạt động kém khi bảng memoization (lưu kết quả các bài toán con) tiêu tốn quá nhiều bộ nhớ. Giải pháp có thể là tối ưu hóa cách lưu trữ, dùng cấu trúc dữ liệu tiết kiệm hơn hoặc loại bỏ các trạng thái không cần thiết."
+  },
+  {
+    "question": "Khi tối ưu một thuật toán đệ quy bằng memoization, lập trình viên phát hiện chương trình hết bộ nhớ.\nMột giải pháp khả thi là gì?",
+    "options": {
+      "A": "Tăng bộ nhớ khả dụng",
+      "B": "Chuyển đệ quy sang dạng lặp để dùng ít bộ nhớ hơn",
+      "C": "Giảm kích thước bài toán",
+      "D": "Sử dụng chiến lược memoization hiệu quả hơn"
+    },
+    "answer": "Chuyển đệ quy sang dạng lặp để dùng ít bộ nhớ hơn",
+    "explanation": "Chuyển thuật toán đệ quy sang dạng lặp (bottom-up) có thể giảm tiêu thụ bộ nhớ bằng cách tránh ngăn xếp cuộc gọi đệ quy và thường kết hợp với quy hoạch động dạng bottom-up để sử dụng bộ nhớ hiệu quả hơn."
+  }
 ]

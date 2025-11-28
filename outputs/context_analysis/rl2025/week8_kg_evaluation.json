@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá sự cân bằng giữa việc khám phá các lựa chọn mới để thu thập thông tin và khai thác các lựa chọn tốt nhất đã biết. Học sinh sẽ được kiểm tra về các định nghĩa cơ bản, ví dụ thực tế, và cách thức quản lý sự bối rối này trong thực tiễn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và chi tiết về 'Exploitation' trong bối cảnh Học tăng cường (Reinforcement Learning), khớp hoàn hảo với câu hỏi và câu trả lời của pipeline. Cụ thể, phần '1.1. Định nghĩa' trong mục 'Exploration and Exploitation' nêu rõ: 'Exploitation: Chọn actions mà agent tin là tốt nhất (maximize immediate reward)'. Điều này trực tiếp hỗ trợ việc tạo ra câu hỏi và câu trả lời chính xác về định nghĩa của exploitation.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào các nguyên tắc nhìn nhận của Khám Phá và Khai Thác, như khởi tạo lạc quan và sự không chắc chắn. Sinh viên sẽ phải hiểu và ứng dụng các nguyên tắc này trong các bài toán ra quyết định.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về 'Exploitation' và 'Exploration', cũng như giới thiệu về 'Exploration-Exploitation Dilemma'. Đặc biệt, ngữ cảnh giải thích chi tiết về 'ε-Greedy' như một chiến lược để cân bằng giữa hai yếu tố này, bao gồm cả cách thức hoạt động và các biến thể. Điều này trực tiếp trả lời câu hỏi của pipeline về chiến lược được sử dụng để cân bằng giữa việc chọn hành động tốt nhất đã biết và thử nghiệm các hành động mới.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề sẽ phân tích thuật toán ε-greedy, cách thức hoạt động và hiệu quả của nó trong việc tối ưu hóa khám phá và khai thác. Học sinh sẽ cần làm rõ khái niệm thống kê và cách nó ảnh hưởng đến quyết định của thuật toán.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về thuật toán ε-greedy, bao gồm định nghĩa, cách thức hoạt động (xác suất ε cho hành động ngẫu nhiên và 1-ε cho hành động tốt nhất), các biến thể và ưu nhược điểm. Cả hai câu hỏi đều tập trung vào khái niệm ε-greedy và vai trò của ε. Ngữ cảnh trực tiếp trả lời câu hỏi của pipeline về xác suất chọn hành động ngẫu nhiên (ε) và cung cấp nền tảng để hiểu câu hỏi của baseline về ý nghĩa của ε (tỷ lệ khám phá). Do đó, ngữ cảnh rất hữu ích để tạo ra các cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khái niệm hối tiếc sẽ được giải thích qua cách tính toán giá trị hành động tối ưu và hiểu được sự khác biệt giữa tổng hối tiếc và giá trị hành động hiện có. Học sinh cần phân tích các công thức liên quan để đánh giá sự hiệu quả.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Chủ đề được cung cấp là về khái niệm hối tiếc, cách tính toán giá trị hành động tối ưu và sự khác biệt giữa tổng hối tiếc và giá trị hành động hiện có, cùng với việc phân tích các công thức liên quan để đánh giá hiệu quả. Tuy nhiên, ngữ cảnh từ biểu đồ tri thức lại tập trung vào các khái niệm trong Học tăng cường (Reinforcement Learning) như Markov Decision Processes, Policy, Value Functions (Hàm giá trị trạng thái và Hàm giá trị hành động), Bellman Equations, Model-Free Prediction, Monte Carlo Methods, Policy Gradient Methods, Actor-Critic Methods, Trust Region Methods và Graph Algorithms (Dijkstra, A*). Ngữ cảnh này không chứa bất kỳ thông tin nào liên quan trực tiếp đến khái niệm 'hối tiếc' (regret) trong bối cảnh Bandit hay cách tính toán tổng hối tiếc. Do đó, ngữ cảnh không hữu ích để tạo ra câu hỏi và câu trả lời phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 0.1,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này liên kết MAB với các quy trình quyết định Markov (MDPs) dưới góc nhìn lập kế hoạch. Học sinh sẽ cần nắm vững nguyên lý cơ bản của MAB và áp dụng nó trong bối cảnh MDPs từ tuần 1 và 4.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về chính sách tối ưu trong MDP, bao gồm công thức Vᵖ*(s) ≥ Vᵖ(s), ∀s ∈ S, ∀π. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline về điều kiện cần thiết để xác định một chính sách tối ưu π* trong MDP. Các phần khác của ngữ cảnh về MDP cũng củng cố kiến thức nền tảng liên quan.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.3,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu kỹ thuật xấp xỉ hàm giá trị trong Học Tăng Cường, bao gồm các ứng dụng thực tiễn. Sinh viên sẽ phải phân tích và đánh giá các phương pháp khác nhau sẽ được lựa chọn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về 'Linear Value Function Approximation' và công thức cụ thể để ước lượng hàm giá trị V(s) bằng cách sử dụng vector đặc trưng φ(s) và tham số w. Cụ thể, phần 'Linear Methods' và 'Value Function Approximation' trong mục 'Linear Value Function Approximation' đã trực tiếp cung cấp công thức V̂(s; w) = w^T φ(s) = Σᵢ wᵢφᵢ(s), giúp trả lời chính xác câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết nối các nguyên tắc Bayesian với Học Tăng Cường và Bandit Contextual. Học sinh cần phải hiểu các khái niệm và ứng dụng thực tiễn của Bayesian Bandits trong việc tối ưu hóa quyết định.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù ngữ cảnh có đề cập đến UCB và Thompson Sampling, nhưng câu hỏi của pipeline lại hỏi về công thức UCB trong bối cảnh Bayesian Bandits. Ngữ cảnh cung cấp công thức UCB nhưng lại đặt nó trong phần 'Upper Confidence Bound (UCB)' chung, không trực tiếp liên kết với 'Bayesian Bandits' một cách rõ ràng trong công thức. Hơn nữa, phần 'Thompson Sampling' mới là phần nói về Bayesian Approach, và trong đó không có công thức UCB. Do đó, ngữ cảnh không đủ để trả lời chính xác câu hỏi về UCB trong bối cảnh Bayesian Bandits.",
+            "with_context_question_relevance": 0.7,
+            "without_context_question_relevance": 0.8,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Khám phá giá trị của thông tin trong quá trình ra quyết định là trọng tâm của chủ đề này. Học sinh cần phân tích tác động của khám phá và khai thác trong các MDP và Bandits, kết nối các khái niệm từ tuần 1 đến tuần 8.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về 'Information-Theoretic Exploration', đặc biệt là khái niệm 'Empowerment' và công thức của nó. Điều này cho phép tạo ra câu trả lời chính xác cho câu hỏi của pipeline về việc tối đa hóa giá trị thông tin trong MDP để kiểm soát tương lai. Cụ thể, phần 'Information-Theoretic Exploration' và 'Empowerment' trong ngữ cảnh đã trực tiếp cung cấp thông tin cần thiết để trả lời câu hỏi.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

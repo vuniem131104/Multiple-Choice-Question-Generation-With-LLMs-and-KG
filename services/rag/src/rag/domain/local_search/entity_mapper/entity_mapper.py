@@ -48,21 +48,14 @@ class EntityMapper(BaseService):
             list[dict] | None: List of context dictionaries for each chunk, or None if mapping fails.
         """
 
-        # chunk_ids = inputs.entities['chunk_id'].tolist()
+        chunk_ids = inputs.entities['chunk_id'].tolist()
         
-        # new_chunk_uids: list = []
-        # for chunk_id in chunk_ids:
-        #     new_chunk_uids.extend(chunk_id.split('_'))
-        
-        # logger.info(
-        #     'HEHE',
-        #     extra={
-        #         'len': len(new_chunk_uids)
-        #     }
-        # )
+        new_chunk_uids: list = []
+        for chunk_id in chunk_ids:
+            new_chunk_uids.extend(chunk_id.split('|'))
 
         chunk_mapper = await self.__map_chunk(
-            chunk_id=inputs.entities['chunk_id'].tolist(),
+            chunk_id=new_chunk_uids,
             embedded_query=inputs.embedded_query,
         )
         

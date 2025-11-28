@@ -16,10 +16,14 @@ from logger import get_logger
 
 logger = get_logger(__name__)
 
+file_name = {
+    "int3405": "Machine Learning",
+    "dsa2025": "Data Structures and Algorithms",
+    "rl2025": "Reinforcement Learning",
+}
+
 class IndexingApplicationInput(BaseModel):
     course_code: str 
-    week_number: int
-    
 
 class IndexingApplicationOutput(BaseModel):
     pass 
@@ -55,20 +59,17 @@ class IndexingApplication(BaseApplication):
                 'Starting Parser Service',
                 extra={
                     'course_code': inputs.course_code,
-                    'week_number': inputs.week_number
                 }
             )
-            parser_output = await self.parser.process(
+            parser_output = self.parser.process(
                 ParserInput(
                     course_code=inputs.course_code,
-                    week_number=inputs.week_number
                 )
             )
             logger.info(
                 'Parser Service completed',
                 extra={
                     'course_code': inputs.course_code,
-                    'week_number': inputs.week_number
                 }
             )
         except Exception as e:
@@ -76,7 +77,6 @@ class IndexingApplication(BaseApplication):
                 'Parser Service failed',
                 extra={
                     'course_code': inputs.course_code,
-                    'week_number': inputs.week_number,
                     'error': str(e)
                 }
             )
@@ -86,13 +86,12 @@ class IndexingApplication(BaseApplication):
                 'Starting Chunker Service',
                 extra={
                     'course_code': inputs.course_code,
-                    'week_number': inputs.week_number
                 }
             )
             chunker_output = self.chunker.process(
                 ChunkerInput(
                     contents=parser_output.contents,
-                    file_name=parser_output.file_name,
+                    course_code=inputs.course_code,
                 )
             )
             logger.info(
@@ -105,7 +104,7 @@ class IndexingApplication(BaseApplication):
             logger.exception(
                 'Chunker Service failed',
                 extra={
-                    'file_name': parser_output.file_name,
+                    'course_code': inputs.course_code,
                     'error': str(e)
                 }
             )
@@ -114,7 +113,7 @@ class IndexingApplication(BaseApplication):
             logger.info(
                 'Starting Builder Service',
                 extra={
-                    'file_name': parser_output.file_name
+                    'course_code': inputs.course_code,
                 }
             )
             builder_output = await self.builder.process(
@@ -126,20 +125,19 @@ class IndexingApplication(BaseApplication):
                         }
                         for text in chunker_output.chunks
                     ],
-                    document_file_name=parser_output.file_name
+                    document_file_name=file_name.get(inputs.course_code, f"Course_{inputs.course_code}"),
                 )
             )
             logger.info(
                 'Builder Service completed',
                 extra={
-                    'file_name': parser_output.file_name,
+                    'course_code': inputs.course_code,
                 }
             )
         except Exception as e:
             logger.exception(
                 'Builder Service failed',
                 extra={
-                    'file_name': parser_output.file_name,
                     'error': str(e)
                 }
             )

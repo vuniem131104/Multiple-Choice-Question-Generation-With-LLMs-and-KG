@@ -10,17 +10,14 @@ router = APIRouter(prefix="/v1")
 
 class IndexingRequest(BaseModel):
     course_code: str
-    week_number: int
 
 @router.post("/indexing")
-async def indexing_sync(request: Request, indexing_request: IndexingRequest):
+async def indexing(request: Request, indexing_request: IndexingRequest):
     indexing_app = IndexingApplication(request=request)
     result = await indexing_app.run(IndexingApplicationInput(
         course_code=indexing_request.course_code,
-        week_number=indexing_request.week_number
     ))
     return JSONResponse(content={
         'status': 'Indexing completed',
         'course_code': indexing_request.course_code,
-        'week_number': indexing_request.week_number
     })

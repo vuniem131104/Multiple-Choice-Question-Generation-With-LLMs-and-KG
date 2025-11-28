@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm lập trình động (Dynamic Programming - DP), nơi bao gồm các thuộc tính cần thiết để áp dụng DP như cấu trúc con tối ưu và bài toán con chồng chéo. Học sinh sẽ được kiểm tra khả năng định nghĩa và đưa ra ví dụ về ứng dụng của DP trong các bài toán thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về Dynamic Programming (DP) và các điều kiện áp dụng của nó, bao gồm 'Optimal Substructure' và 'Overlapping Subproblems'. Điều này trực tiếp hỗ trợ việc trả lời cả hai câu hỏi. Cụ thể, câu hỏi của pipeline hỏi về định nghĩa DP, và câu hỏi của baseline hỏi về hai thuộc tính chính để áp dụng DP. Cả hai thông tin này đều có sẵn và được trình bày rõ ràng trong phần 'Planning by Dynamic Programming - Lập Kế Hoạch Bằng Quy Hoạch Động' của ngữ cảnh.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào quy trình đánh giá một chính sách đã cho thông qua phương pháp đánh giá chính sách lặp (Iterative Policy Evaluation). Học sinh sẽ được yêu cầu hiểu công thức và cách áp dụng sao lưu kỳ vọng Bellman để cập nhật các giá trị trạng thái. Ví dụ minh họa thực tế sẽ giúp kiểm tra khả năng áp dụng.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó trực tiếp cung cấp công thức toán học chính xác được yêu cầu trong câu hỏi của pipeline: V(s) = Σ_a π(a|s)[R(s,a) + γ Σ_{s'} P(s'|s,a)V(s')]. Ngoài ra, ngữ cảnh còn giải thích rõ ràng về 'Policy Evaluation' hay 'Iterative Policy Evaluation' và mục tiêu của nó là tính toán hàm giá trị trạng thái V^π(s) bằng cách lặp lại việc cập nhật dựa trên phương trình Bellman Expectation. Điều này giúp trả lời câu hỏi một cách đầy đủ và chính xác. Ngữ cảnh cũng đề cập đến 'công thức sao lưu kỳ vọng Bellman' mà câu trả lời của baseline đề cập, nhưng cung cấp chi tiết hơn về công thức cụ thể.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào việc lặp lại giữa đánh giá và cải thiện chính sách trong lập trình động. Học sinh sẽ phải chứng minh khả năng mô tả quy trình này, cùng với các công thức liên quan và cách hội tụ đến chính sách tối ưu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về quy trình lặp chính sách (Policy Iteration), bao gồm các bước Policy Evaluation và Policy Improvement, cùng với các công thức liên quan. Cụ thể, công thức để cải thiện chính sách mới π' từ chính sách hiện tại π dựa trên hàm giá trị V^π được trình bày rõ ràng trong phần '3.2. Greedy Policy Improvement' với công thức 'π'(s) = argmax_a [R(s,a) + γ Σ_{s'} P(s'|s,a)V^π(s')]'. Điều này giúp trả lời chính xác câu hỏi của pipeline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá nguyên tắc tối ưu trong MDPs, trong đó mỗi chính sách tối ưu có thể phân tách thành hai thành phần. Học sinh sẽ phải nhận diện và phân tích tính chất này cũng như ứng dụng của nó trong việc đạt được giá trị tối ưu từ một trạng thái nhất định.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời của pipeline. Cụ thể, phần 'Chính sách tối ưu' trong mục 'Markov Decision Processes - Quá Trình Quyết Định Markov' đã cung cấp trực tiếp công thức để xác định chính sách tối ưu π* từ hàm giá trị Q*: 'π*(s) = argmaxₐ Q*(s,a)'. Điều này cho phép trả lời chính xác câu hỏi của pipeline. Ngoài ra, các khái niệm quan trọng cũng định nghĩa rõ ràng π* và mối quan hệ của nó với Q*, củng cố thêm thông tin.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.6,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào vấn đề tìm chính sách tối ưu thông qua phương pháp lặp giá trị (Value Iteration). Học sinh sẽ phải hiểu và áp dụng công thức để tìm giá trị tối ưu, cũng như sự khác biệt giữa lặp giá trị và lặp chính sách. Các ví dụ thực tế sẽ được sử dụng để kiểm tra khả năng giải quyết vấn đề phức tạp.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về Value Iteration, bao gồm công thức cập nhật hàm giá trị V(s) và cách trích xuất chính sách tối ưu. Điều này giúp trả lời chính xác câu hỏi của pipeline về công thức cập nhật hàm giá trị. Ngoài ra, nó cũng giải thích vai trò của giá trị tối ưu trong việc xác định chính sách tối ưu, hỗ trợ cho câu trả lời của baseline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.9,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề liên tuần này tích hợp khái niệm MDPs từ tuần trước với phương pháp lập trình động hiện tại. Học sinh sẽ được yêu cầu so sánh và phân tích mối liên hệ giữa MDP và DP, cách DP có thể được áp dụng cho MDPs và ví dụ cụ thể điển hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp đầy đủ thông tin về cả Markov Decision Processes (MDPs) và Dynamic Programming (DP), bao gồm định nghĩa, các thành phần, thuật toán giải quyết (Value Iteration, Policy Iteration) và các ứng dụng. Đặc biệt, phần 'Mối quan hệ' trong các đoạn văn bản đã trực tiếp đề cập đến sự kết hợp giữa DP và Deep Reinforcement Learning, và các thuật toán DP được sử dụng để giải MDPs. Điều này giúp trả lời chính xác câu hỏi về cách DP có thể được áp dụng cho MDPs và mối quan hệ giữa chúng.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này phân tích định lý ánh xạ co (Contraction Mapping Theorem) và sự hội tụ của các phương pháp đánh giá chính sách. Học sinh sẽ cần hiểu công thức của định lý này và áp dụng nó vào quá trình hội tụ của lặp giá trị và đánh giá chính sách, từ đó đánh giá tác động của nó trong học tăng cường.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời của pipeline. Cụ thể, phần \"3.1. Policy Improvement Theorem\" trong ngữ cảnh cung cấp trực tiếp điều kiện để một chính sách mới π' tốt hơn hoặc bằng chính sách cũ π, khớp hoàn hảo với câu trả lời được tạo ra. Điều này cho thấy ngữ cảnh chứa thông tin chính xác và liên quan trực tiếp đến câu hỏi về điều kiện cải thiện chính sách.",
+            "with_context_question_relevance": 0.7,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra sự khác biệt giữa lập trình động đồng bộ và không đồng bộ, cũng như ứng dụng cho các bài toán thực tế. Học sinh sẽ được yêu cầu đưa ra định nghĩa, phân tích ưu và nhược điểm, và các kịch bản chuyển giao cho mỗi loại.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và sự khác biệt giữa Lập trình động đồng bộ (Synchronous DP) và Lập trình động không đồng bộ (Asynchronous Dynamic Programming). Cụ thể, phần 'Vấn đề của Synchronous DP' và 'Asynchronous Dynamic Programming' trong ngữ cảnh giải thích rằng Synchronous DP cập nhật tất cả trạng thái mỗi iteration và không hiệu quả với không gian trạng thái lớn, trong khi Asynchronous DP chỉ cập nhật một tập hợp con các trạng thái để tiết kiệm tính toán và hội tụ nhanh hơn. Điều này trực tiếp hỗ trợ câu trả lời của cặp QA từ pipeline, làm cho câu trả lời chính xác và có căn cứ.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khái niệm cây tìm kiếm nhị phân (BST) được định nghĩa và cách hoạt động của nó. Học sinh cần hiểu cấu trúc, cách chèn và tìm kiếm trong BST. Câu hỏi có thể kiểm tra định nghĩa của BST và phân tích chi phí của các hoạt động căn bản trong BST.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng và chi tiết về Cây tìm kiếm nhị phân (BST) trong phần \"1.1. Khái niệm\". Cụ thể, nó nêu rõ \"Tất cả các node trong cây con trái có giá trị < node gốc\" và \"Tất cả các node trong cây con phải có giá trị > node gốc\", cùng với ví dụ minh họa. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi \"Cây tìm kiếm nhị phân (BST) là gì?\".",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá cách biểu diễn cấu trúc BST trong Java. Học sinh nên hiểu cách xây dựng Node và BST class, cũng như ý nghĩa của các thành phần trong mã. Câu hỏi có thể kiểm tra kiến thức về các thành phần và định nghĩa trong Java.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về BST, bao gồm các tính chất của node gốc (tất cả các node trong cây con trái có giá trị < node gốc và tất cả các node trong cây con phải có giá trị > node gốc). Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline. Ngoài ra, knowledge graph cũng định nghĩa rõ ràng về TreeNode và lớp BST, giúp trả lời câu hỏi của baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khái niệm về chi phí tìm kiếm và chèn trong BST được đề cập. Câu hỏi có thể giúp kiểm tra khả năng hiểu biết về chi phí của các phép toán căn bản và cách hình dạng của cây ảnh hưởng tới hiệu suất.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, phần 'Phân tích độ phức tạp' trong mục 'Binary Search Tree' cung cấp trực tiếp thông tin về độ phức tạp thời gian của các phép toán Search và Insert trong BST, bao gồm cả trường hợp trung bình (Average case) và trường hợp xấu nhất (Worst case), cũng như mối liên hệ với chiều cao của cây (h). Điều này cho phép tạo ra các câu hỏi về chi phí của các phép toán cơ bản và cách hình dạng cây ảnh hưởng đến hiệu suất, phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khả năng hiểu và thiết kế thuật toán xóa các nút trong BST. Chủ đề này cũng kiểm tra kiến thức của học sinh về các trường hợp khác nhau khi xóa một nút. Câu hỏi có thể liên quan đến các bước và phân tích độ phức tạp của thuật toán xóa.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về thuật toán xóa nút trong Cây tìm kiếm nhị phân (BST), bao gồm cả mã Python minh họa và giải thích ba trường hợp xóa khác nhau. Cụ thể, ngữ cảnh giải thích rõ ràng rằng trường hợp xóa nút có hai con yêu cầu tìm kiếm successor (nút nhỏ nhất trong cây con phải) và thay thế giá trị của nút cần xóa bằng giá trị của successor. Điều này trực tiếp trả lời câu hỏi của cả hai cặp QA, làm cho ngữ cảnh trở nên rất phù hợp và đầy đủ.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khái niệm về phân tích toán học của các hoạt động trong BST, như tìm kiếm và chèn. Học sinh cần biết công thức và cách tính toán dựa trên chiều cao của BST. Câu hỏi có thể kiểm tra khả năng áp dụng công thức vào các ví dụ thực tiễn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp định nghĩa rõ ràng về chiều cao của cây nhị phân tìm kiếm (BST) và công thức tính toán đệ quy của nó: `height(node) = max(height(node.left), height(node.right)) + 1`. Điều này trực tiếp trả lời câu hỏi của pipeline về công thức tính chiều cao. Ngoài ra, đồ thị tri thức cũng đề cập đến độ phức tạp thời gian của các phép toán như tìm kiếm và chèn liên quan đến chiều cao của BST (O(h)), điều này rất hữu ích cho câu hỏi của baseline. Các ví dụ và giải thích về BST cũng giúp củng cố kiến thức nền tảng.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tích hợp kiến thức từ các tuần trước, liên kết khái niệm BST với phân vùng trong thuật toán Quicksort. Học sinh cần so sánh và phân tích cách mà cấu trúc BST ảnh hưởng đến hiệu suất sắp xếp. Câu hỏi có thể kiểm tra khả năng hiểu trừu tượng giữa hai cấu trúc.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh cung cấp thông tin chi tiết về cả thuật toán Quick Sort (bao gồm các biến thể như 3-way Quick Sort, phân tích độ phức tạp thời gian, và các trường hợp sử dụng) và cấu trúc dữ liệu Binary Search Tree (BST) (bao gồm khái niệm, tính chất, độ phức tạp thời gian của các thao tác cơ bản). Đặc biệt, ngữ cảnh có phần so sánh Quick Sort với các thuật toán khác và phần phân tích độ phức tạp thời gian của Quick Sort (Best, Average, Worst Case) cũng như của BST (Average, Worst Case). Điều này rất hữu ích để trả lời câu hỏi so sánh hiệu suất của hai cấu trúc/thuật toán, đặc biệt là khi đề cập đến trường hợp xấu nhất của Quick Sort (O(n²)) và hiệu suất tìm kiếm của BST (O(log n) trung bình).",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khái niệm về các phép toán có thứ tự trong BST như Min/Max, Floor/Ceiling. Học sinh cần hiểu cách thực hiện các phép toán này và tác động của chúng đến việc duyệt cây. Câu hỏi có thể yêu cầu học sinh xác định hoặc thực hiện các phép toán cụ thể trên BST.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó trực tiếp định nghĩa và giải thích cách thực hiện phép toán 'Find Min' trong BST. Cụ thể, phần 'Các khái niệm quan trọng' và đoạn mã `find_min` mô tả rõ ràng rằng để tìm giá trị nhỏ nhất, cần di chuyển xuống node con trái cho đến khi không còn node con trái nào nữa. Điều này cung cấp thông tin chính xác và đầy đủ để trả lời câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra khả năng duyệt cây theo thứ tự trong BST và cách mà việc duyệt này tạo ra thứ tự các khóa. Học sinh nên thể hiện được hiểu biết về cách thức duyệt cây và ứng dụng của nó trong các thuật toán khác. Câu hỏi có thể yêu cầu viết mã hoặc mô tả quy trình duyệt.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời. Cụ thể, phần '1.2. Tính chất quan trọng' và '4.1. Inorder Traversal (Left-Root-Right)' trong mục 'Binary Search Tree' trực tiếp cung cấp thông tin rằng 'Duyệt BST theo Inorder (Left-Root-Right) cho dãy số tăng dần'. Điều này hoàn toàn khớp với câu hỏi và câu trả lời được tạo ra, khẳng định rằng duyệt Inorder sẽ cho ra dãy số theo thứ tự tăng dần trong BST.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

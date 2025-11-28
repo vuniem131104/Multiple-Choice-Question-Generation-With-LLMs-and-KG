@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này tập trung vào mô hình Perceptron, nơi sinh viên sẽ tìm hiểu về cách thức hoạt động của siêu phẳng phân tách dữ liệu và các khái niệm liên quan như biên độ và trọng số. Câu hỏi có thể kiểm tra các định nghĩa, công thức và ứng dụng của Perceptron. Kết nối với tuần 4.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và công thức toán học cho Perceptron, bao gồm công thức tính tổng có trọng số z = w^Tx + b = ∑ᵢwᵢxᵢ + b. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline về công thức tính tổng có trọng số. Ngữ cảnh cũng đề cập đến khả năng phân tách tuyến tính của Perceptron, điều này liên quan đến câu hỏi của baseline về siêu phẳng phân tách.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu về quy trình hoạt động của thuật toán Perceptron, cách cập nhật các trọng số và độ chính xác trong phân loại. Câu hỏi có thể tập trung vào công thức và các bước thực hiện trong thuật toán. Kết nối với tuần 4.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù ngữ cảnh có đề cập đến Perceptron và công thức cập nhật trọng số chung trong các thuật toán tối ưu (w := w - α * (∂L/∂w)), nhưng nó không cung cấp công thức cập nhật trọng số cụ thể cho thuật toán Perceptron khi có dự đoán sai. Công thức được cung cấp trong ngữ cảnh là công thức chung cho Gradient Descent, không phải công thức đặc trưng của Perceptron khi cập nhật trọng số sau mỗi lần dự đoán sai. Do đó, ngữ cảnh không đủ để tạo ra câu trả lời chính xác cho câu hỏi của pipeline.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào giới hạn số lần cập nhật của thuật toán Perceptron, cùng với các công thức liên quan. Sinh viên sẽ được đánh giá về sự hiểu biết của họ về lý thuyết này và tính toán kết quả. Kết nối với tuần 4.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về Perceptron, bao gồm công thức tính toán đầu ra dự đoán ($y = \\sigma(w^Tx + b)$) và các khái niệm liên quan. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline. Cụ thể, phần 'Perceptron - Đơn Vị Cơ Bản' trong ngữ cảnh đã nêu rõ công thức này.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.6,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm về SVM, cách tìm siêu phẳng phân tách và định nghĩa biên độ tối đa. Câu hỏi có thể yêu cầu sinh viên hiểu rõ về thuật toán SVM và sự khác biệt giữa các loại. Kết nối đồng thời với tuần 3 và tuần 4.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về Kernel Trick, bao gồm định nghĩa, cách hoạt động (ánh xạ dữ liệu sang không gian đặc trưng cao hơn để phân tách tuyến tính), và các loại kernel phổ biến. Điều này trực tiếp trả lời câu hỏi của pipeline về hàm kernel được sử dụng để ánh xạ dữ liệu nhằm phân tách tuyến tính các lớp dữ liệu không phân tách tuyến tính trong không gian gốc. Ngoài ra, đồ thị tri thức cũng giải thích rõ ràng về siêu phẳng và cách nó được xác định trong SVM, hỗ trợ cho câu trả lời của baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu về SVM biên độ mềm và cách giải quyết các tình huống không thể phân tách. Kiến thức về các biến slack và tham số C sẽ được kiểm tra. Kết nối liền mạch với tuần 4 về việc nới lỏng các ràng buộc.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Bối cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về Soft Margin SVM, bao gồm định nghĩa, bài toán tối ưu, giới thiệu biến slack và đặc biệt là vai trò của tham số C. Cả hai câu hỏi đều được trả lời trực tiếp và chính xác từ nội dung này. Cụ thể, câu hỏi của pipeline về tham số C được giải thích rõ ràng trong phần 'Tham số C (Regularization Parameter)' và câu hỏi của baseline về biến slack cũng được giải thích trong phần 'Giới thiệu Slack Variables $\\xi_i$'. Do đó, biểu đồ tri thức rất hữu ích cho việc tạo ra các cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này đi sâu vào quy trình tối ưu hóa SVM và các công thức liên quan đến bài toán quy hoạch bậc hai. Sinh viên sẽ được đánh giá về khả năng áp dụng công thức và hiểu biết về các ràng buộc đặt ra trong SVM.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp đầy đủ và chính xác công thức của bài toán đối ngẫu (Dual Problem) trong SVM, bao gồm cả hàm mục tiêu và các ràng buộc. Cụ thể, phần 'Dual Problem' và 'Các khái niệm quan trọng' định nghĩa rõ ràng công thức $\\max_\\alpha \\sum_{i=1}^{m}\\alpha_i - \\frac{1}{2}\\sum_{i=1}^{m}\\sum_{j=1}^{m}\\alpha_i\\alpha_jy_iy_jK(x_i, x_j)$ được sử dụng để xác định các Lagrange multipliers tối ưu. Điều này giúp trả lời trực tiếp và chính xác câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này giới thiệu các hàm kernel và tác dụng của chúng trong việc phân loại dữ liệu phi tuyến tính. Kiến thức về các hàm kernel khác nhau sẽ được kiểm tra. Kết nối với tuần 4 qua việc chuyển đổi không gian đặc trưng.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về các loại kernel phổ biến, bao gồm Linear, Polynomial và RBF. Đặc biệt, nó giải thích rõ ràng khi nào nên sử dụng Polynomial kernel, các đặc điểm của nó (như bậc d), và khuyến nghị về bậc thường dùng (2 hoặc 3) để tránh overfitting. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline về việc sử dụng Polynomial kernel và bậc khuyến nghị.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu về cách mở rộng mô hình SVM cho phân loại đa lớp. Các phương pháp One-vs-Rest và One-vs-One sẽ được thảo luận. Câu hỏi sẽ tập trung vào việc áp dụng các khái niệm này và so sánh các phương pháp liên quan.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về các phương pháp mở rộng SVM cho phân loại đa lớp, đặc biệt là One-vs-Rest (OvR) và One-vs-One (OvO). Cả hai câu hỏi đều tập trung vào việc phân biệt các phương pháp này. Cụ thể, đồ thị tri thức giải thích rõ ràng cách OvR huấn luyện K bộ phân loại nhị phân, mỗi bộ phân loại phân biệt một lớp cụ thể với tất cả các lớp còn lại, điều này trực tiếp trả lời câu hỏi của cả hai hệ thống. Các phần như 'SVM Đa Lớp (Multi-class SVM)' và 'One-vs-Rest (OvR / One-vs-All)' trong ngữ cảnh cung cấp đầy đủ thông tin cần thiết.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

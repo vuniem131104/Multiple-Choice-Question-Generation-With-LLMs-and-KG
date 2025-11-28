@@ -58,7 +58,7 @@ class EntityExtracter(BaseService):
             embedded_query = await self.__embed_query(input.text)
             if not embedded_query:
                 raise Exception('Could not extract entities from input')
-
+            
             similar_entities = await self.__get_similar_entities(embedded_query)
             return EntityExtracterOutput(
                 entities=similar_entities,
@@ -84,11 +84,12 @@ class EntityExtracter(BaseService):
             list | None: The embedding vector, or None if embedding fails.
         """
         try:
-            embedding_result = await self.litellm_service.embedding_llm_async(
+            embedding_result = self.litellm_service.embedding_ollama(
                 inputs=LiteLLMEmbeddingInput(text=query)
             )
 
             return embedding_result.embedding
+
         except Exception as e:
             logger.exception(
                 f'Some error occurred while embedding query: {e}',

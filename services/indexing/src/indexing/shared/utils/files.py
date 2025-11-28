@@ -8,5 +8,5 @@ def filter_files(files: list[str]) -> list[str]:
     Returns:
         list[str]: Filtered list of file names.
     """
-    valid_extensions = {'.pdf', '.pptx', '.docx', '.doc'}
+    valid_extensions = {'.pdf'}
     return [file for file in files if any(file.endswith(ext) for ext in valid_extensions)]

@@ -88,10 +88,6 @@ Tạo đầu ra dưới dạng đối tượng JSON với cấu trúc sau:
 - **Không giải thích hoặc biện minh trong câu trả lời** - chỉ thông tin chính xác
 </constraints>
 
-<examples>
-{examples}
-</examples>
-
 <output>
 Một đối tượng JSON chứa một câu hỏi và câu trả lời đúng tương ứng dựa trên chủ đề được cung cấp.
 </output>

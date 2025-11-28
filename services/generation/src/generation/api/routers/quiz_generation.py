@@ -4,7 +4,6 @@ from fastapi.responses import JSONResponse
 from generation.application.quiz_generation import QuizApplication
 from generation.application.quiz_generation import QuizApplicationInput
 from base import BaseModel
-from generation.application.vector_database.query import VectorDatabaseQueryApplicationInput
 from logger import get_logger
 from generation.shared.models import QuizQuestion
 

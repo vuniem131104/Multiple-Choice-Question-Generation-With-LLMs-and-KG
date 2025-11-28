@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import asyncio
 import re
 import uuid
 from typing import List, Dict
@@ -11,7 +10,7 @@ from base import BaseService
 from logger import get_logger
 from lite_llm import LiteLLMService, LiteLLMInput, CompletionMessage, Role, LiteLLMEmbeddingInput
 from graph_db import Neo4jService
-from indexing.domain.graph_builder.prompts import GRAPH_EXTRACTION_PROMPT
+from indexing.domain.graph_builder.prompts import DSA_GRAPH_EXTRACTION_PROMPT, ML_GRAPH_EXTRACTION_PROMPT, RL_GRAPH_EXTRACTION_PROMPT
 
 logger = get_logger(__name__)
 
@@ -78,7 +77,7 @@ class BuilderService(BaseService):
                 messages=[
                     CompletionMessage(
                         role=Role.USER,
-                        content=GRAPH_EXTRACTION_PROMPT.format(input_text=chunk_text)
+                        content=DSA_GRAPH_EXTRACTION_PROMPT.format(input_text=chunk_text)
                     )
                 ],
             )
@@ -166,8 +165,8 @@ class BuilderService(BaseService):
             chunk_uids[chunk_id] = str(uuid.uuid4())
             
             # Tạo embedding cho chunk text
-            embedding_result = await self.llm_service.embedding_llm_async(
-                inputs=LiteLLMEmbeddingInput(
+            embedding_result = self.llm_service.embedding_ollama(
+                inputs=LiteLLMEmbeddingInput( 
                     text=chunk_text,
                 )
             )
@@ -192,13 +191,11 @@ class BuilderService(BaseService):
                 entity_type = entity['entity_type']
                 chunk_text = chunk_texts.get(chunk_id, "Unknown chunk text").replace("'", "\\'").replace('"', '\\"')
 
-                # Tạo embedding cho entity description
-                desc_embedding_result = await self.llm_service.embedding_llm_async(
+                desc_embedding = self.llm_service.embedding_ollama(
                     inputs=LiteLLMEmbeddingInput(
                         text=entity['entity_description'],
                     )
-                )
-                desc_embedding = desc_embedding_result.embedding
+                ).embedding
 
                 # Tạo theo schema mới với chunk và description có embedding
                 cypher = f"""
@@ -264,13 +261,11 @@ class BuilderService(BaseService):
                 rel_type = rel['relationship']
                 description = rel['relationship_description'].replace("'", "\\'").replace('"', '\\"')
                 
-                # Tạo embedding cho relationship description
-                desc_embedding_result = await self.llm_service.embedding_llm_async(
+                desc_embedding = self.llm_service.embedding_ollama(
                     inputs=LiteLLMEmbeddingInput(
                         text=rel['relationship_description'],
                     )
-                )
-                desc_embedding = desc_embedding_result.embedding
+                ).embedding
                 
                 # Tạo schema: Entity -> RELATED -> Relationship -> RELATED -> Entity và Relationship -> DESCRIBED -> Description
                 cypher = f"""
@@ -314,98 +309,65 @@ class BuilderService(BaseService):
 
 
 # Test function với schema mới
-async def test_service():
-    """Test service với schema Document -> Chunk -> Entity -> Description."""
-    from lite_llm import LiteLLMService, LiteLLMSetting
-    from graph_db import Neo4jSetting, Neo4jService
-    from pydantic import SecretStr, HttpUrl
-    from uuid import uuid4
+# async def test_service():
+#     """Test service với schema Document -> Chunk -> Entity -> Description."""
+#     from lite_llm import LiteLLMService, LiteLLMSetting
+#     from graph_db import Neo4jSetting, Neo4jService
+#     from pydantic import SecretStr, HttpUrl
+#     from uuid import uuid4
     
-    # Tạo LiteLLM service
-    litellm = LiteLLMService(
-        litellm_setting=LiteLLMSetting(
-            url=HttpUrl("http://localhost:9510"),
-            token=SecretStr("abc123"),
-            model="gemini-2.5-flash",
-            frequency_penalty=0.0,
-            n=1,
-            temperature=0.0,
-            top_p=1.0,
-            max_completion_tokens=10000,
-            dimension=1536,
-            embedding_model="gemini-embedding"
-        )
-    )
+#     # Tạo LiteLLM service
+#     litellm = LiteLLMService(
+#         litellm_setting=LiteLLMSetting(
+#             url=HttpUrl("http://localhost:9510"),
+#             token=SecretStr("abc123"),
+#             model="gemini-2.5-flash",
+#             frequency_penalty=0.0,
+#             n=1,
+#             temperature=0.0,
+#             top_p=1.0,
+#             max_completion_tokens=10000,
+#             dimension=768,
+#             embedding_model="embeddinggemma"
+#         )
+#     )
     
-    # Dùng Neo4jService thật
-    neo4j_service = Neo4jService(
-        settings=Neo4jSetting(
-            uri="bolt://localhost:17687",
-            username="neo4j",
-            password="4_Kz1pLYqtmVsxFJED_gxTN8rBcu4oQKAEqw9mm6zUHY"
-        )
-    )
+#     # Dùng Neo4jService thật
+#     neo4j_service = Neo4jService(
+#         settings=Neo4jSetting(
+#             uri="bolt://localhost:17687",
+#             username="neo4j",
+#             password="4_Kz1pLYqtmVsxFJED_gxTN8rBcu4oQKAEqw9mm6zUHY"
+#         )
+#     )
     
-    service = BuilderService(
-        llm_service=litellm,
-        neo4j_service=neo4j_service
-    )
+#     course_code = "dsa2025"
+#     with open(f"chunks_{course_code}.json", "r") as f:
+#         import json
+#         chunks = json.load(f)
+#     print(len(chunks))
     
-    test_input = BuilderInput(
-        document_file_name="Lecture2_General Concepts for ML.pdf",
-        chunks=[
-            {
-                "chunk_id": str(uuid4()),
-                "chunk_text": """**Lecture2_General Concepts for ML.pdf**
-
-# Slide 53: Khung học thống kê
-
-Slide này trình bày định nghĩa chính thức về đầu ra của người học trong Khung học thống kê (Statistical Learning Framework).
-
-**Định nghĩa chính thức về đầu ra của người học:**
-
-*   **Quy tắc dự đoán (A prediction rule) $h$:**
-    $h: \mathcal{X} \to \mathcal{Y} \quad (1)$
-    *   $h$ là một bộ phân loại (classifier), bộ dự đoán (predictor), giả thuyết (hypothesis) hoặc hàm ánh xạ (mapping function).
-    *   Ví dụ: $h$ có thể là hàm tuyến tính với ngưỡng (thresholding) như đã học trong bài trước.
-
-*   **Thuật toán học (Learning algorithm) $A$:**
-    *   Cho một thuật toán $A$, chúng ta ký hiệu $A(S)$ là tập hợp các bộ phân loại/giả thuyết được tạo ra bằng cách áp dụng $A$ trên tập dữ liệu $S$.
-    *   $h$ có thể tổng quát hơn định nghĩa của một hàm.
-    *   Một ví dụ là $h$ là hàm ngẫu nhiên (stochastic function).
-
----
-
-# Slide 54: Khung học thống kê
-
-Slide này mô tả một quy trình tạo dữ liệu đơn giản trong Khung học thống kê (Statistical Learning Framework) và các ghi chú quan trọng.
-
-**Quy trình tạo dữ liệu đơn giản:**
-
-*   **Giả định 1:** Chúng ta có một phân phối xác suất $D$ trên $\mathcal{X}$.
-*   **Giả định 2:** Cho $D$, chúng ta lấy một mẫu $x_i \sim D$.
-*   **Giả định 3:** Chúng ta có một hàm nhãn "đúng" (correct label function) $c$:
-    $c: \mathcal{X} \to \mathcal{Y} \quad (2)$
-    Sao cho $y_i = c(x_i)$, và tập dữ liệu $S = \{(x_1, y_1), ..., (x_m, y_m)\}$.
-
-**Ghi chú:**
-
-1.  $c$ là hàm mà chúng ta muốn khôi phục. Tuy nhiên, chúng ta không biết $D$ và $c$. Thuật toán học $"""
-            }
-        ]
-    )
+#     service = BuilderService(
+#         llm_service=litellm,
+#         neo4j_service=neo4j_service
+#     )
     
-    result = await service.process(test_input)
-    print(f"Kết quả: {result.message}")
-    
-    # Check Neo4j health
-    health = await neo4j_service.health_check()
-    print(f"Neo4j health: {health}")
-    
-    return result
+#     for i in range(32, 44):
+#         test_input = BuilderInput(
+#             document_file_name="Data Structures and Algorithms",
+#             chunks=[
+#                 {
+#                     "chunk_id": str(uuid4()),
+#                     "chunk_text": chunks[i]
+#                 }
+#             ]
+#         )
+        
+#         result = await service.process(test_input)
+#         print(f"Kết quả: {result.message}")
+        
 
-
-if __name__ == "__main__":
+# if __name__ == "__main__":
     
-    # Chạy test với schema mới
-    asyncio.run(test_service())
+#     # Chạy test với schema mới
+#     asyncio.run(test_service())

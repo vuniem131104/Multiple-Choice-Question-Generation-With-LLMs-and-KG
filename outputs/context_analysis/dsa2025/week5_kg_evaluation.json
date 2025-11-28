@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này tập trung vào khái niệm hàng đợi ưu tiên, cách thức hoạt động của nó và ứng dụng của nó trong khoa học máy tính như mô phỏng sự kiện và tối ưu hóa. Học sinh sẽ được đánh giá về hiểu biết của họ về các nguyên lý cơ bản và các ví dụ thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời. Ngữ cảnh cung cấp định nghĩa rõ ràng về Hàng đợi ưu tiên (Priority Queue), nêu bật đặc điểm chính của nó là xử lý phần tử có độ ưu tiên cao nhất trước. Cả hai câu trả lời đều phản ánh chính xác thông tin này từ ngữ cảnh. Cụ thể, phần '1. Giới thiệu Priority Queue' và 'Các khái niệm quan trọng' trong ngữ cảnh đã định nghĩa trực tiếp Hàng đợi ưu tiên, giúp trả lời câu hỏi một cách chính xác.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá các phương thức và công thức của API hàng đợi ưu tiên trong Java, bao gồm cách tạo và sử dụng các hàng đợi ưu tiên. Kiến thức về các phép toán như delMax() và insert() sẽ được kiểm tra.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù chủ đề đề cập đến API hàng đợi ưu tiên trong Java và các phép toán như insert(), nhưng ngữ cảnh được cung cấp không chứa bất kỳ thông tin cụ thể nào về API hàng đợi ưu tiên của Java. Ngữ cảnh chỉ đề cập đến `Java's Arrays.sort()` sử dụng Dual-Pivot Quick Sort cho các kiểu nguyên thủy và Timsort cho các kiểu đối tượng, và sau đó chuyển sang thảo luận về Priority Queue nói chung và cách cài đặt nó trong Python bằng module `heapq`. Không có đoạn nào trong ngữ cảnh giải thích về các phương thức `insert()` hoặc `delMax()` trong API hàng đợi ưu tiên của Java. Do đó, ngữ cảnh không hữu ích để trả lời câu hỏi về API Java.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ yêu cầu học sinh nắm bắt cách thức hoạt động của heap nhị phân, từ cách biểu diễn đến thuộc tính của nó. Học sinh cần phải hiểu được cách xếp hạng các nút trong heap và các thao tác cơ bản liên quan đến nó.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời. Cụ thể, phần \"Các khái niệm quan trọng\" và các đoạn mã cài đặt Min Heap/Max Heap đã trực tiếp đề cập đến thao tác \"heapify up\" và giải thích vai trò của nó trong việc duy trì tính chất heap sau khi thêm một phần tử mới. Điều này cung cấp thông tin chính xác và đầy đủ để trả lời câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này phân tích quy trình chèn và xóa mục tối đa trong heap nhị phân. Học sinh sẽ được yêu cầu mô tả các bước và cách hoạt động của việc 'bơi lên' và 'chìm xuống' để duy trì tính chính xác của heap.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và chi tiết về `heapify_up` (bơi lên) và `heapify_down` (chìm xuống), bao gồm cả cách chúng được sử dụng để duy trì tính chất heap sau khi chèn hoặc xóa phần tử. Cụ thể, phần \"Các khái niệm quan trọng\" và các đoạn mã cài đặt `heapify_up` và `heapify_down` trong cả Min Heap và Max Heap đều trực tiếp giải thích các bước và cơ chế hoạt động của chúng. Điều này giúp trả lời chính xác câu hỏi về thuật toán được sử dụng khi chèn một phần tử vào heap nhị phân.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề phân tích Heapsort, một thuật toán sắp xếp quan trọng, bao gồm cách thức hoạt động và quá trình sắp xếp. Học sinh sẽ cần phải nắm vững các thuật toán và độ phức tạp của chúng liên quan đến số lần so sánh và không gian nhớ.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa thông tin về thuật toán Heapsort. Thay vào đó, nó cung cấp chi tiết về Selection Sort và Insertion Sort. Do đó, ngữ cảnh không hữu ích để trả lời câu hỏi về độ phức tạp thời gian của Heapsort.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Nhằm tạo ra cái nhìn tổng quan về các ứng dụng của hàng đợi ưu tiên trong mô phỏng. Học sinh sẽ được kiểm tra khả năng liên kết các khái niệm của hàng đợi ưu tiên với thực tế mô phỏng theo sự kiện.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó định nghĩa rõ ràng Hàng đợi ưu tiên (Priority Queue), so sánh nó với Hàng đợi thông thường (Queue) và cung cấp các ví dụ thực tế về ứng dụng của Priority Queue, bao gồm hệ thống cấp cứu và lập lịch CPU. Điều này trực tiếp hỗ trợ việc trả lời câu hỏi của pipeline về việc khi nào nên sử dụng hàng đợi ưu tiên thay vì hàng đợi thông thường trong mô phỏng theo sự kiện, bằng cách cung cấp các trường hợp sử dụng dựa trên độ ưu tiên.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết hợp kiến thức từ tuần 3 và tuần 5, nhấn mạnh sự khác biệt và ưu điểm của Mergesort và Heapsort trong việc xử lý dữ liệu. Học sinh cần phân tích hiệu suất và các yếu tố của từng thuật toán để ứng dụng trong tình huống cụ thể.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về Mergesort, bao gồm khái niệm, thuật toán, phân tích độ phức tạp và đặc biệt là các ứng dụng thực tế như External Sorting (sắp xếp file lớn). Điều này trực tiếp hỗ trợ trả lời câu hỏi của pipeline về ưu điểm của Mergesort so với Heapsort trong việc xử lý dữ liệu lớn không vừa trong RAM. Ngữ cảnh giải thích rõ ràng Mergesort thích hợp cho external sorting, trong khi Heapsort không được đề cập là có khả năng tương tự trong ngữ cảnh này, ngụ ý sự khác biệt về ưu điểm.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết hợp kiến thức từ các tuần trước về cấu trúc dữ liệu (đặc biệt là queue và heap) và thuật toán sắp xếp. Học sinh sẽ được yêu cầu so sánh các cấu trúc này và hiểu rõ về ứng dụng của chúng trong việc sắp xếp và quản lý dữ liệu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về thuật toán Quick Sort, bao gồm các trường hợp nên và không nên sử dụng. Cụ thể, phần 'Khi nào dùng Quick Sort?' liệt kê rõ ràng các điều kiện như 'Mảng trong RAM (in-memory sorting)', 'Cần sorting nhanh nhất average case', và 'Không cần stable sort', khớp hoàn toàn với câu trả lời được tạo ra. Do đó, ngữ cảnh rất hữu ích để tạo ra cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

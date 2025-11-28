@@ -1,0 +1,72 @@
+[
+    {
+        "topic_description": "Mergesort là một thuật toán sắp xếp cố điển, hoạt động theo nguyên tắc chia để trị. Chủ đề này kiểm tra hiểu biết của sinh viên về cách hoạt động và quy trình của Mergesort, bao gồm việc chia mảng và quá trình hợp nhất. Câu hỏi có thể liên quan đến định nghĩa và quy trình cụ thể của thuật toán này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó định nghĩa rõ ràng Mergesort là một thuật toán sắp xếp dựa trên kỹ thuật chia để trị. Cụ thể, phần \"Các khái niệm quan trọng\" và \"Mối quan hệ\" đều nhấn mạnh rằng \"Merge Sort (hoặc Mergesort) là một thuật toán sắp xếp hiệu quả dựa trên kỹ thuật chia để trị (Divide and Conquer)\". Điều này trực tiếp cung cấp thông tin cần thiết để trả lời câu hỏi của cả hai hệ thống.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra khả năng áp dụng thuật toán Mergesort thông qua mã nguồn Java. Học sinh sẽ phải hiểu cấu trúc lệnh trong Java để triển khai Mergesort, bao gồm cách gọi đệ quy và sử dụng phương thức merge. Các câu hỏi có thể về cách viết mã và cách mà mã hoạt động.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó định nghĩa rõ ràng thuật toán Mergesort, bao gồm nguyên lý chia để trị và ý tưởng chính. Đặc biệt, nó giải thích chi tiết về phương thức `merge` và vai trò của nó trong việc gộp hai mảng đã sắp xếp thành một mảng duy nhất. Điều này trực tiếp trả lời câu hỏi của cả hai cặp QA, đặc biệt là cặp QA của pipeline, nơi câu trả lời là \"merge\".",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này yêu cầu học sinh so sánh Mergesort với các thuật toán sắp xếp khác như sắp xếp chèn và sắp xếp chọn. Sinh viên sẽ phải phân tích và đánh giá độ phức tạp của Mergesort trong bối cảnh hiệu suất và không gian bộ nhớ so với các thuật toán khác. Câu hỏi sẽ kiểm tra khả năng phân tích của học sinh và nhận thức về các ưu điểm và nhược điểm của từng thuật toán.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp đầy đủ thông tin về độ phức tạp thời gian của Mergesort (best, average, worst case đều là O(n log n)) và so sánh với các thuật toán sắp xếp cơ bản khác như Bubble Sort, Selection Sort, Insertion Sort. Điều này giúp trả lời chính xác câu hỏi về độ phức tạp thời gian của Mergesort trong trường hợp xấu nhất khi so sánh với các thuật toán khác. Cụ thể, phần '3.1. Độ phức tạp thời gian' của Mergesort nêu rõ 'Worst case: O(n log n)' và bảng so sánh '5. So sánh các thuật toán cơ bản' cung cấp độ phức tạp của các thuật toán khác.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào quy trình hợp nhất hai mảng con đã sắp xếp trong thuật toán Mergesort. Học sinh sẽ phải hiểu cách thức hợp nhất và kiểm tra khả năng áp dụng những hiểu biết này vào các tình huống cụ thể. Câu hỏi có thể yêu cầu sinh viên mô tả quá trình hoặc viết đoạn mã thực hiện.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích. Nó cung cấp định nghĩa rõ ràng về 'Gộp (Merge)' trong Mergesort, giải thích cách thức hoạt động của nó và vai trò của nó trong thuật toán. Cả hai câu trả lời đều được tìm thấy trực tiếp hoặc suy luận từ các khái niệm quan trọng và phần cài đặt thuật toán trong ngữ cảnh. Cụ thể, câu trả lời của pipeline \"Gộp (Merge)\" được định nghĩa rõ ràng trong phần \"Các khái niệm quan trọng\". Câu trả lời của baseline \"So sánh các phần tử đầu tiên của hai mảng và thêm phần tử nhỏ hơn vào mảng kết quả\" được mô tả chi tiết trong hàm `merge` trong phần \"Cài đặt cơ bản\".",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này liên quan đến phân tích số lần so sánh cần thiết để thực hiện Mergesort. Học sinh sẽ cần áp dụng định lý đệ quy để tìm ra số lần so sánh và so sánh nó với những thuật toán khác. Các câu hỏi có thể yêu cầu chứng minh hoặc giải thích mối quan hệ giữa số lượng phần tử và số lần so sánh.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về Mergesort, đặc biệt là phần \"3. Phân tích thuật toán\" bao gồm \"3.1. Độ phức tạp thời gian\" và công thức đệ quy T(n) = 2T(n/2) + O(n). Phần này trực tiếp giải thích cách phân tích độ phức tạp thời gian bằng Master Theorem và đưa ra kết quả O(n log n) cho cả best, average và worst case. Điều này hoàn toàn phù hợp để trả lời câu hỏi của pipeline về độ phức tạp thời gian của Mergesort trong trường hợp tồi tệ nhất.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá giới hạn dưới cho các thuật toán sắp xếp dựa trên so sánh, yêu cầu sinh viên tìm hiểu và chứng minh rằng bất kỳ thuật toán sắp xếp nào cũng cần ít nhất lg(N!) lần so sánh trong trường hợp xấu nhất. Câu hỏi sẽ kiểm tra khả năng hiển thị và phân tích lý thuyết của học sinh.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa bất kỳ thông tin nào liên quan đến giới hạn dưới của các thuật toán sắp xếp dựa trên so sánh, đặc biệt là việc cần ít nhất lg(N!) lần so sánh trong trường hợp xấu nhất. Ngữ cảnh chỉ tập trung vào các thuật toán sắp xếp cơ bản như Bubble Sort, Selection Sort, Insertion Sort, phân tích độ phức tạp thời gian, không gian và các đặc điểm của chúng. Do đó, ngữ cảnh không hữu ích để trả lời câu hỏi của cả hai cặp QA.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này yêu cầu sinh viên phân tích tính ổn định của Mergesort và cách mà các thuật toán sắp xếp khác so với nó. Sinh viên sẽ phải hiểu rõ giữa sắp xếp ổn định và không ổn định. Câu hỏi sẽ kiểm tra khả năng so sánh và đánh giá của học sinh giữa các phương pháp sắp xếp khác nhau.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về tính ổn định của thuật toán sắp xếp, liệt kê các thuật toán ổn định (Merge Sort, Bubble Sort, Insertion Sort) và không ổn định (Quicksort, Heap Sort, Selection Sort). Điều này trực tiếp trả lời câu hỏi về việc thuật toán nào không ổn định so với Merge Sort. Cả câu hỏi của pipeline và baseline đều được trả lời chính xác dựa trên thông tin này.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    }
+]

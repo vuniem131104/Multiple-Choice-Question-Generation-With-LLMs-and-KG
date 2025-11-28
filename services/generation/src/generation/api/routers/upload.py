@@ -15,7 +15,7 @@ async def upload_file(
     request: Request,
     file: UploadFile = File(...),
     course_code: str = Form(...),
-    week_number: int = Form(...)
+    week_number: Optional[int] = None
 ):
     """
     Upload a lecture file to MinIO storage.
@@ -32,7 +32,7 @@ async def upload_file(
             logger.info(f"Created bucket: {bucket_name}")
         
         # Create object name with week prefix
-        object_name = f"tuan-{week_number}/{file.filename}"
+        object_name = f"tuan-{week_number}/{file.filename}" if week_number is not None else file.filename
         
         # Save uploaded file temporarily
         with tempfile.NamedTemporaryFile(delete=False) as temp_file:

@@ -283,5 +283,5 @@ class ConceptCardExtractorService(BaseService):
             )
             raise e
         finally:
-            if os.path.exists(folder_path):
-                shutil.rmtree(folder_path)
+            if os.path.exists(inputs.course_code):
+                shutil.rmtree(inputs.course_code)

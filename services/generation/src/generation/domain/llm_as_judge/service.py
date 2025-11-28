@@ -92,6 +92,7 @@ class QuizEvaluatorService(BaseService):
         )
         
         return response.response
+
     
 if __name__ == "__main__":
     from lite_llm import LiteLLMSetting
@@ -109,8 +110,8 @@ if __name__ == "__main__":
         temperature=0.0,
         top_p=1.0,
         max_completion_tokens=10000,
-        dimension=1536,
-        embedding_model="gemini-embedding"
+        dimension=768,
+        embedding_model="embeddinggemma"
     )
     
     litellm_service = LiteLLMService(litellm_setting=litellm_setting)

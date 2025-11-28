@@ -103,6 +103,43 @@ class LiteLLMService(BaseService):
                 embedding=[],
             )
             
+    def embedding_ollama(self, inputs: LiteLLMEmbeddingInput) -> LiteLLMEmbeddingOutput: 
+        try:
+            response = self._client.post(
+                url="http://ollama:11434/api/embed",
+                json={
+                    "model": self.litellm_setting.embedding_model,
+                    "input": inputs.text,
+                },
+            )
+            
+            if response.status_code == 200:
+                return LiteLLMEmbeddingOutput(
+                    embedding=response.json()['embeddings'][0],
+                )
+            else:
+                logger.error(
+                    "Ollama request failed with status code",
+                    extra={
+                        "status_code": response.status_code,
+                        "inputs": inputs.text,
+                    }
+                )
+                return LiteLLMEmbeddingOutput(
+                    embedding=[],
+                )
+        except httpx.RequestError as e:
+            logger.exception(
+                "An error occurred while processing the Ollama request",
+                extra={
+                    "error": str(e),
+                    "inputs": inputs.text,
+                }
+            )
+            return LiteLLMEmbeddingOutput(
+                embedding=[],
+            )
+            
     async def embedding_llm_async(
         self, 
         inputs: LiteLLMEmbeddingInput,

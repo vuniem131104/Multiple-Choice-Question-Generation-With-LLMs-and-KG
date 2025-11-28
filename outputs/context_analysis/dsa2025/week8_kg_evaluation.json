@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm đường đi ngắn nhất trong đồ thị có hướng có trọng số, bao gồm các ứng dụng thực tế như định tuyến bản đồ và lập kế hoạch giao thông. Học sinh sẽ được kiểm tra khả năng xác định các thuật toán phù hợp và ứng dụng của chúng trong thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về các thuật toán tìm đường đi ngắn nhất, bao gồm Dijkstra, Bellman-Ford, Floyd-Warshall và BFS, cùng với các điều kiện áp dụng và độ phức tạp của chúng. Cụ thể, ngữ cảnh nêu rõ \"Dijkstra tìm đường đi ngắn nhất từ nguồn đến tất cả đỉnh trong weighted graph với trọng số không âm\". Điều này trực tiếp trả lời câu hỏi của cả hai cặp QA, đặc biệt là câu hỏi của pipeline \"Thuật toán nào được sử dụng để tìm đường đi ngắn nhất trong đồ thị có trọng số không âm?\" và câu hỏi của baseline \"Thuật toán nào thường được sử dụng để tìm đường đi ngắn nhất trong đồ thị có trọng số?\". Do đó, ngữ cảnh rất hữu ích để tạo ra các cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào các biến thể của bài toán tìm đường đi ngắn nhất, phân tích các loại trọng số cạnh và các điều kiện yêu cầu. Học sinh sẽ được kiểm tra khả năng phân loại và áp dụng các thuật toán tìm đường dựa trên các điều kiện khác nhau.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp đầy đủ thông tin về các thuật toán tìm đường đi ngắn nhất, bao gồm Dijkstra, Bellman-Ford, BFS và Floyd-Warshall, cùng với các điều kiện áp dụng của chúng (đồ thị có trọng số không âm, có trọng số âm, không trọng số). Cụ thể, phần '2. Bài toán Shortest Path (Đường đi ngắn nhất)' và '4. Dijkstra Algorithm' trực tiếp đề cập đến việc Dijkstra được sử dụng cho đồ thị có trọng số không âm để tìm đường đi từ một đỉnh nguồn đến tất cả các đỉnh khác. Điều này giúp trả lời chính xác câu hỏi của cả hai hệ thống.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này giới thiệu phương pháp thư giãn cạnh trong việc xác định đường đi ngắn nhất, bao gồm công thức và ví dụ cụ thể. Học sinh sẽ được kiểm tra khả năng áp dụng công thức này trong các tình huống thực tế để cập nhật đường đi ngắn hơn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về phương pháp thư giãn cạnh trong thuật toán Dijkstra, bao gồm công thức cập nhật khoảng cách (relaxation) và ví dụ minh họa từng bước. Cụ thể, phần \"Relaxation\" trong mục \"Dijkstra Algorithm\" và \"Minh họa từng bước\" đã trực tiếp đề cập đến công thức `distance = current_dist + weight` và cách nó được áp dụng để cập nhật đường đi ngắn nhất. Điều này giúp trả lời chính xác câu hỏi của pipeline về công thức thư giãn cạnh trong Dijkstra.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào thuật toán Dijkstra và cách nó được sử dụng để tìm đường đi ngắn nhất. Học sinh sẽ được kiểm tra khả năng mô tả cơ chế làm việc của thuật toán và cách thức áp dụng nó trong các nhiệm vụ thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng và chi tiết về thuật toán Dijkstra, bao gồm mục đích, cơ chế hoạt động, độ phức tạp và các ứng dụng. Cụ thể, nó nêu rõ \"Dijkstra là một thuật toán tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác trong một đồ thị có trọng số không âm.\" Điều này trực tiếp trả lời câu hỏi của cả hai cặp QA, giúp tạo ra câu trả lời chính xác. Các ví dụ minh họa và cài đặt mã cũng củng cố sự hiểu biết về thuật toán, mặc dù không trực tiếp được sử dụng để trả lời câu hỏi này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này đánh giá hiểu biết của học sinh về API đồ thị có trọng số. Học sinh sẽ được kiểm tra khả năng xác định các phương thức cần thiết và ứng dụng thực tế của API trong việc quản lý đồ thị có trọng số.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị có trọng số là một khái niệm cốt lõi trong chủ đề này, và ngữ cảnh từ biểu đồ tri thức cung cấp một định nghĩa rõ ràng và chi tiết về đồ thị có trọng số. Cụ thể, phần '1.1. Khái niệm cơ bản' và 'Các khái niệm quan trọng' định nghĩa 'Weighted Graph (Đồ thị có trọng số)' là 'một cấu trúc dữ liệu đồ thị trong đó mỗi cạnh được gán một giá trị số, gọi là trọng số'. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline. Ngữ cảnh cũng giải thích thêm về các loại trọng số (dương/âm) và các thuật toán liên quan (Bellman-Ford, Dijkstra) được thiết kế cho loại đồ thị này, làm tăng tính hữu ích của ngữ cảnh.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.6,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này phân tích sự khác biệt giữa hai thuật toán Dijkstra và Bellman-Ford trong việc tìm đường đi ngắn nhất, bao gồm các trường hợp sử dụng cụ thể của chúng. Học sinh sẽ được kiểm tra khả năng so sánh và phân tích ưu nhược điểm của hai thuật toán này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, phần \"Các khái niệm quan trọng\" của cả Dijkstra và Bellman-Ford đều trực tiếp đề cập đến khả năng xử lý chu trình âm. Đối với Bellman-Ford, ngữ cảnh nêu rõ: \"Thuật toán này có khả năng phát hiện chu trình âm (negative cycle), điều mà thuật toán Dijkstra không làm được.\" Điều này cung cấp thông tin chính xác và đầy đủ để trả lời câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra khả năng của học sinh trong việc áp dụng các khái niệm về chu trình âm để phát hiện chênh lệch giá trong đồ thị. Học sinh sẽ được đánh giá về khả năng giải quyết bài toán thông qua việc sử dụng trọng số cạnh và thuật toán Bellman-Ford.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời phù hợp với chủ đề. Cụ thể, phần 'Currency Arbitrage Detection' và 'Bellman-Ford' trong ngữ cảnh giải thích rõ ràng cách sử dụng thuật toán Bellman-Ford để phát hiện chu trình âm, và mối liên hệ giữa chu trình âm với cơ hội chênh lệch giá. Phần '5.3. Phát hiện Negative Cycle' cũng cung cấp thông tin chi tiết về cách thức và thời điểm kiểm tra chu trình âm trong thuật toán Bellman-Ford, trực tiếp trả lời cho câu hỏi của pipeline. Các khái niệm quan trọng cũng nhấn mạnh khả năng của Bellman-Ford trong việc phát hiện chu trình âm.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tích hợp khái niệm từ tuần hiện tại về đường đi ngắn nhất với thuật toán sắp xếp tô pô, kiểm tra khả năng của học sinh trong việc áp dụng kiến thức từ tuần trước vào bài toán hiện tại. Học sinh sẽ phân tích cách sử dụng thuật toán sắp xếp tô pô để tìm đường đi ngắn nhất trong DAG.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Tài liệu kiến thức được cung cấp tập trung vào các thuật toán tìm đường đi ngắn nhất như BFS, Dijkstra, Bellman-Ford và Floyd-Warshall. Mặc dù có đề cập đến khái niệm đồ thị có hướng (DAG) và các thuật toán đồ thị nói chung, nhưng không có phần nào trong tài liệu giải thích cách áp dụng hoặc tích hợp thuật toán sắp xếp tô pô để tìm đường đi ngắn nhất trong DAG. Cả hai câu hỏi đều liên quan trực tiếp đến việc sử dụng sắp xếp tô pô cho bài toán đường đi ngắn nhất trong DAG, một chủ đề không được đề cập hoặc giải thích trong ngữ cảnh đã cho. Do đó, tài liệu không hữu ích để tạo ra các cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

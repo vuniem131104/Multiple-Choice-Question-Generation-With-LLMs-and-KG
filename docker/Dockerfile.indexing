@@ -1,0 +1,28 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    gcc \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+
+COPY pyproject.toml uv.lock ./
+
+COPY libs/ ./libs/
+
+COPY services/indexing/pyproject.toml ./services/indexing/
+COPY services/indexing/README.md ./services/indexing/
+
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --no-install-project --no-dev
+
+COPY services/indexing/src/ ./services/indexing/src/
+
+WORKDIR /app/services/indexing
+
+EXPOSE 3006
+
+CMD ["uv", "run", "indexing"]

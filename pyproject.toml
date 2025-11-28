@@ -18,7 +18,6 @@ members = [
     "libs/graph_db",
     "services/indexing",
     "services/auth",
-    "services/platform_api",
 ]
 
 [dependency-groups]

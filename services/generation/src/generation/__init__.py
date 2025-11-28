@@ -10,7 +10,6 @@ from lite_llm import LiteLLMService
 from storage.minio import MinioService
 from chromadb import HttpClient
 
-from generation.api.routers.vector_database import vector_database_router
 from generation.api.routers.quiz_generation import quiz_router
 from generation.api.routers.upload import upload_router
 from generation.shared.utils import get_settings
@@ -53,7 +52,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(vector_database_router)
 app.include_router(quiz_router)
 app.include_router(upload_router)
 

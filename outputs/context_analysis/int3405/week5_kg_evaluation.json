@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này tập trung vào việc phân biệt và hiểu rõ hai loại lỗi trong mô hình học máy: Lỗi thực tế (True Error) và Lỗi thực nghiệm (Empirical Error). Học sinh sẽ được kiểm tra khả năng áp dụng định nghĩa và công thức của chúng, cũng như ví dụ minh họa rõ ràng để nhận biết sự khác biệt giữa lỗi trên dữ liệu huấn luyện và dữ liệu chưa thấy.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa thông tin trực tiếp về định nghĩa của 'Lỗi thực tế (True Error)' và 'Lỗi thực nghiệm (Empirical Error)' như được đề cập trong câu hỏi và câu trả lời của cả hai cặp. Mặc dù ngữ cảnh có đề cập đến 'Training error' và 'Validation error' cùng với 'Expected Error', 'Bias', 'Variance', nhưng nó không định nghĩa rõ ràng 'True Error' và 'Empirical Error' theo cách mà câu hỏi yêu cầu. Do đó, ngữ cảnh không hữu ích để tạo ra câu trả lời chính xác cho câu hỏi này.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá hai hiện tượng quan trọng trong việc tối ưu hóa mô hình, đó là Quá khớp (Overfitting) và Dưới khớp (Underfitting). Học sinh sẽ học cách nhận diện và phân tích nguyên nhân gây ra hai vấn đề này, từ đó áp dụng các thay đổi cần thiết để cải thiện mô hình. Các ví dụ thực tế sẽ được cung cấp để minh họa rõ hơn về các hiện tượng này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về dấu hiệu của overfitting, bao gồm \"Độ lỗi thấp trên tập huấn luyện nhưng độ lỗi cao trên tập kiểm tra\", giúp trả lời chính xác câu hỏi của pipeline. Ngoài ra, knowledge graph cũng giải thích rõ ràng khái niệm overfitting, các dấu hiệu và giải pháp, rất hữu ích cho việc tạo ra các câu hỏi và câu trả lời liên quan đến chủ đề này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này đi sâu vào khái niệm Đánh đổi Độ lệch - Phương sai (Bias-Variance Trade-off), giúp học sinh hiểu sự cân bằng giữa độ lệch và phương sai trong mô hình học máy. Học sinh sẽ được yêu cầu giải thích định nghĩa, ví dụ minh họa cũng như xúc tiến việc áp dụng phương pháp này trong xây dựng mô hình hiệu quả.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về Bias-Variance Tradeoff, bao gồm công thức tính Expected Error. Cụ thể, phần 'Bias-Variance Tradeoff (Sự Đánh Đổi Bias-Variance)' có mục 'Công thức:' trực tiếp cung cấp thông tin 'Expected Error = Bias² + Variance + Irreducible Error', hoàn toàn khớp với câu trả lời của cặp QA từ pipeline. Ngoài ra, ngữ cảnh cũng giải thích mối quan hệ giữa việc giảm bias và tăng variance, hỗ trợ cho câu trả lời của cặp QA từ baseline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này thảo luận về Lựa chọn đặc trưng (Feature Selection) như một kỹ thuật quan trọng trong tối ưu hóa mô hình. Học sinh sẽ phải nắm vững các phương pháp có giám sát và không giám sát, cùng các ví dụ áp dụng cụ thể từ thực tiễn, tương tự như khái niệm Information Gain và các phương pháp Wrapper, Filter, Embedded.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp đầy đủ thông tin về các phương pháp lựa chọn đặc trưng, bao gồm công thức tính Information Gain (IG(Y|X) = H(Y) - H(Y|X)). Điều này giúp trả lời chính xác câu hỏi của pipeline về công thức độ lợi thông tin. Ngoài ra, ngữ cảnh cũng đề cập đến các phương pháp Wrapper, Filter và Embedded, giúp trả lời câu hỏi của baseline về phương pháp sử dụng thông tin từ mô hình để đánh giá đặc trưng (Embedded Methods).",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu về điều chuẩn (Regularization) như một kỹ thuật giảm thiểu hiện tượng quá khớp. Học sinh sẽ được kiểm tra khả năng hiểu các phương pháp điều chuẩn khác nhau như Lasso và Rigid Regression, công thức liên quan, và ứng dụng thực tế trong việc cải thiện mô hình học máy.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho cả hai cặp câu hỏi-trả lời. Đối với cặp câu hỏi-trả lời của pipeline, ngữ cảnh cung cấp định nghĩa rõ ràng về Lasso Regression và đặc điểm của nó, bao gồm việc thêm penalty là tổng giá trị tuyệt đối của các hệ số và khả năng thực hiện feature selection tự động. Điều này trực tiếp trả lời câu hỏi về thành phần phạt được thêm vào hàm chi phí trong Lasso Regression. Đối với cặp câu hỏi-trả lời của baseline, ngữ cảnh cũng định nghĩa Lasso Regression là phương pháp sử dụng L1 Regularization, giúp trả lời chính xác câu hỏi về phương pháp điều chuẩn sử dụng hình phạt L1.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này giới thiệu về Bagging (Bootstrap Aggregating) như một kỹ thuật tập hợp mạnh mẽ trong học máy. Học sinh sẽ phải làm quen với khái niệm, công thức và ứng dụng của Bagging trong xây dựng các mô hình phân loại, cũng như hiểu vai trò của việc lấy mẫu bootstrap trong kỹ thuật này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề. Ngữ cảnh cung cấp định nghĩa rõ ràng về Bagging, nguyên lý hoạt động, ưu điểm (giảm variance) và cách thức kết hợp các mô hình trên các bootstrap samples. Cụ thể, phần \"1. Bagging (Bootstrap Aggregating)\" và \"Ưu điểm: - Reduce variance\" trực tiếp hỗ trợ cho câu trả lời của cặp pipeline. Điều này cho phép tạo ra một câu trả lời chính xác và trực tiếp giải quyết mục đích của Bagging.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào Boosting như một kỹ thuật cải tiến mô hình, đặc biệt là qua thuật toán AdaBoost. Học sinh sẽ học cách hoạt động của AdaBoost, sự khác biệt với Bagging và ứng dụng thực tiễn trong cải thiện tính chính xác của mô hình phân loại. Học sinh sẽ áp dụng kiến thức này vào các bài toán thực tiễn để nâng cao hiểu biết về các phương pháp học máy.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin trực tiếp và chính xác về cách AdaBoost điều chỉnh trọng số của các mẫu. Cụ thể, phần '3. AdaBoost (Adaptive Boosting): Nguyên lý: - Tăng trọng số cho mẫu bị misclassified' đã trả lời trực tiếp cho câu hỏi của pipeline. Điều này cho thấy biểu đồ tri thức rất hữu ích trong việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá kỹ thuật Stacking trong việc tập hợp các mô hình phân loại. Học sinh sẽ tìm hiểu sự khác biệt giữa Stacking và các phương pháp tập hợp khác, cùng với ví dụ minh họa cách thức hoạt động của nó trong học máy. Việc nắm vững kỹ thuật này giúp học sinh có cái nhìn toàn diện về các phương pháp tối ưu hóa mô hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết và đầy đủ về kỹ thuật Stacking, bao gồm nguyên lý, kiến trúc, thuật toán, các loại mô hình cơ sở và meta-model, cũng như ưu nhược điểm. Cụ thể, ngữ cảnh định nghĩa rõ ràng \"Meta-model là một mô hình học máy được huấn luyện để kết hợp các dự đoán từ các 'base models' khác trong kỹ thuật Stacking.\" Điều này trực tiếp trả lời câu hỏi của pipeline về việc mô hình nào được sử dụng để kết hợp các dự đoán từ các mô hình cơ sở trong Stacking. Do đó, ngữ cảnh rất hữu ích để tạo ra cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

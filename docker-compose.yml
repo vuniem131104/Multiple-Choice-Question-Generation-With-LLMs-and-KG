@@ -42,6 +42,14 @@ services:
       - AWS_CLAUDE__ACCESS_KEY=${AWS_CLAUDE__ACCESS_KEY}
       - AWS_CLAUDE__SECRET_ACCESS_KEY=${AWS_CLAUDE__SECRET_ACCESS_KEY}
 
+  ollama:
+      image: ollama/ollama:latest
+      ports:
+        - "11434:11434"
+      networks:
+        - educational-chatbot
+      volumes:
+        - ollama:/root/.ollama
   minio:
     image: minio/minio:latest
     ports:
@@ -56,17 +64,7 @@ services:
       - minio_data:/data
     command: server /data --console-address ":9001"
 
-  vectordb:
-    image: chromadb/chroma
-    volumes:
-      - ./chroma_database:/data
-    ports:
-      - "8000:8000"
-    networks:
-      - educational-chatbot 
-
   generation:
-    container_name: quiz_generation
     build:
       context: . 
       dockerfile: ./docker/Dockerfile.generation 
@@ -81,7 +79,6 @@ services:
     depends_on:
       - litellm_service
       - minio
-      - vectordb
     environment:
       - MINIO__ENDPOINT=${MINIO__ENDPOINT}
       - MINIO__ACCESS_KEY=${MINIO__ACCESS_KEY}
@@ -89,11 +86,8 @@ services:
       - MINIO__SECURE=${MINIO__SECURE}
       - LITELLM__URL=${LITELLM__URL}
       - LITELLM__TOKEN=${LITELLM__TOKEN}
-      - VECTOR_DATABASE__HOST=${VECTOR_DATABASE__HOST}
-      - VECTOR_DATABASE__PORT=${VECTOR_DATABASE__PORT}
 
   auth:
-    container_name: auth_service
     build:
       context: .
       dockerfile: ./docker/Dockerfile.auth
@@ -108,43 +102,41 @@ services:
     depends_on:
       - postgres
     environment:
-      - POSTGRES__HOST=postgres
-      - POSTGRES__PORT=5432
+      - POSTGRES__HOST=${POSTGRES__HOST}
+      - POSTGRES__PORT=${POSTGRES__PORT}
       - POSTGRES__USER=${POSTGRES__USER}
       - POSTGRES__PASSWORD=${POSTGRES__PASSWORD}
       - POSTGRES__DB=${POSTGRES__DB}
 
-
-
-  # neo4j:
-  #   image: neo4j:5.22.0-bullseye
-  #   ports:
-  #     - 17474:7474
-  #     - 17687:7687
-  #   volumes:
-  #     - ./data/neo4j:/data
-  #     - ./logs/neo4j:/logs
-  #     - ./conf/neo4j:/conf
-  #     - ./plugins/neo4j:/plugins
-  #   environment:
-  #     - NEO4J_AUTH=${NEO4J__USERNAME}/${NEO4J__PASSWORD}
-  #     - NEO4J_PLUGINS=["graph-data-science", "apoc"]
-  #     - NEO4J_dbms_memory_heap_initial__size=3g
-  #     - NEO4J_dbms_memory_heap_max__size=3g
-  #     - NEO4J_dbms_memory_pagecache_size=1g
-  #     - NEO4J_dbms_memory_transaction_total_max=1g
-  #     - NEO4J_db_transaction_timeout=60s
-  #     - NEO4J_db_transaction_concurrent_maximum=20
-  #     - NEO4J_db_transaction_bookmark__ready__timeout=10s
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         memory: 6G
-  #       reservations:
-  #         memory: 2G
-  #   restart: always
-  #   networks:
-  #     - educational-chatbot
+  neo4j:
+    image: neo4j:5.22.0-bullseye
+    ports:
+      - 17474:7474
+      - 17687:7687
+    volumes:
+      - ./data/neo4j:/data
+      - ./logs/neo4j:/logs
+      - ./conf/neo4j:/conf
+      - ./plugins/neo4j:/plugins
+    environment:
+      - NEO4J_AUTH=${NEO4J__USERNAME}/${NEO4J__PASSWORD}
+      - NEO4J_PLUGINS=["graph-data-science", "apoc"]
+      - NEO4J_dbms_memory_heap_initial__size=3g
+      - NEO4J_dbms_memory_heap_max__size=3g
+      - NEO4J_dbms_memory_pagecache_size=1g
+      - NEO4J_dbms_memory_transaction_total_max=1g
+      - NEO4J_db_transaction_timeout=60s
+      - NEO4J_db_transaction_concurrent_maximum=20
+      - NEO4J_db_transaction_bookmark__ready__timeout=10s
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+        reservations:
+          memory: 2G
+    restart: always
+    networks:
+      - educational-chatbot
 
   postgres:
     image: postgres:17.0-alpine
@@ -160,7 +152,73 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./database/init:/docker-entrypoint-initdb.d
+    
+  rag:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.rag
+    ports:
+      - "3011:3011"
+    networks:
+      - educational-chatbot
+    volumes:
+      - type: bind
+        source: ./services/rag
+        target: /app/services/rag
+    depends_on:
+      - litellm_service
+      - neo4j
+    environment:
+      - LITELLM__URL=${LITELLM__URL}
+      - LITELLM__TOKEN=${LITELLM__TOKEN}
+      - NEO4J__URI=${NEO4J__URI}
+      - NEO4J__USERNAME=${NEO4J__USERNAME}
+      - NEO4J__PASSWORD=${NEO4J__PASSWORD}
+
+  indexing:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.indexing
+    ports:
+      - "3006:3006"
+    networks:
+      - educational-chatbot
+    volumes:
+      - type: bind
+        source: ./services/indexing
+        target: /app/services/indexing
+    depends_on:
+      - litellm_service
+      - neo4j
+    environment:
+      - LITELLM__URL=${LITELLM__URL}
+      - LITELLM__TOKEN=${LITELLM__TOKEN}
+      - NEO4J__URI=${NEO4J__URI}
+      - NEO4J__USERNAME=${NEO4J__USERNAME}
+      - NEO4J__PASSWORD=${NEO4J__PASSWORD}
+      - MINIO__ENDPOINT=${MINIO__ENDPOINT}
+      - MINIO__ACCESS_KEY=${MINIO__ACCESS_KEY}
+      - MINIO__SECRET_KEY=${MINIO__SECRET_KEY}
+      - MINIO__SECURE=${MINIO__SECURE}
+      
+  frontend:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.frontend
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /app/frontend
+    ports:
+      - "3000:80"
+    networks:
+      - educational-chatbot
+    depends_on:
+      - auth
+      - generation
+    restart: always
       
 volumes:
   minio_data:
   postgres_data:
+  ollama:

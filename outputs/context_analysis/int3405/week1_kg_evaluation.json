@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này nêu rõ khái niệm học có giám sát, một phương pháp học máy trong đó dữ liệu đã được gán nhãn được sử dụng để huấn luyện mô hình dự đoán. Học sinh nên hiểu các thành phần như dữ liệu huấn luyện và hàm mục tiêu có thể được kiểm tra qua các câu hỏi MCQ.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù câu hỏi và câu trả lời của cả hai hệ thống đều chính xác và phù hợp với chủ đề về học có giám sát, nhưng ngữ cảnh được cung cấp từ biểu đồ tri thức lại hoàn toàn không liên quan đến học có giám sát. Ngữ cảnh chỉ tập trung vào các khái niệm của học không giám sát (Unsupervised Learning), bao gồm các thuật toán như GMM, K-Means, Mean Shift, Spectral Clustering, các kỹ thuật phát hiện bất thường và học luật kết hợp. Do đó, biểu đồ tri thức không cung cấp thông tin hữu ích để tạo ra câu trả lời cho câu hỏi về học có giám sát.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này giải thích về hồi quy tuyến tính với một biến, nơi học sinh cần nắm vững cách thức mô hình này dự đoán một giá trị đầu ra dựa trên giá trị đầu vào duy nhất. Câu hỏi có thể bao gồm mô hình biểu diễn và ứng dụng thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề. Cụ thể, đồ thị tri thức cung cấp định nghĩa rõ ràng về hồi quy tuyến tính đơn giản, bao gồm phương trình biểu diễn mối quan hệ giữa biến phụ thuộc và biến độc lập (y = β₀ + β₁x + ε), các khái niệm quan trọng như biến phụ thuộc y, biến độc lập x, hệ số chặn β₀, hệ số góc β₁, và sai số ngẫu nhiên ε. Điều này cho phép tạo ra câu hỏi và câu trả lời chính xác như trong cặp câu hỏi-trả lời của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào hàm chi phí trong học máy, bao gồm cách tính toán và ý nghĩa của cấu trúc sai lệch trong dự đoán. Đây là một khái niệm cốt lõi trong việc đánh giá hiệu quả của mô hình và có thể được kiểm tra thông qua các câu hỏi về công thức và ứng dụng.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, ngữ cảnh cung cấp định nghĩa rõ ràng về hàm chi phí trong Ridge Regression, bao gồm công thức và mô tả chi tiết về phần penalty. Câu hỏi của pipeline hỏi trực tiếp về cách tính phần penalty trong hàm chi phí của Ridge Regression, và câu trả lời được cung cấp (\"Tổng bình phương các hệ số nhân với tham số \\( \\lambda \\)\") hoàn toàn khớp với thông tin trong ngữ cảnh. Điều này cho thấy ngữ cảnh đã cung cấp đủ thông tin để trả lời câu hỏi một cách chính xác và trực tiếp.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này cho thấy cách Gradient Descent được sử dụng để tối ưu hóa các tham số trong hồi quy tuyến tính. Học sinh nên giải thích quy trình và vai trò của tốc độ học, đồng thời áp dụng hiểu biết vào các bài tập thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp đầy đủ thông tin về thuật toán Gradient Descent, bao gồm công thức cập nhật tham số và vai trò của tốc độ học (learning rate) trong hồi quy tuyến tính. Cụ thể, phần \"Tối Ưu Hóa Bằng Gradient Descent\" trong mục \"Hồi Quy Tuyến Tính\" trực tiếp đưa ra công thức cập nhật tham số $\\beta_j := \\beta_j - \\alpha\\frac{\\partial J(\\beta)}{\\partial \\beta_j}$ và định nghĩa $\\alpha$ là tốc độ học. Điều này giúp trả lời chính xác cả hai câu hỏi từ pipeline và baseline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này mở rộng khái niệm hồi quy tuyến tính bằng cách sử dụng nhiều biến đầu vào. Học sinh sẽ cần nắm rõ công thức mô hình và ứng dụng thực tế liên quan đến nhiều đặc trưng đầu vào.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về hồi quy tuyến tính, bao gồm cả hồi quy tuyến tính đơn giản và hồi quy tuyến tính bội. Cụ thể, ngữ cảnh có đề cập đến công thức của hồi quy tuyến tính bội: \"Đối với Hồi quy tuyến tính bội, phương trình mở rộng thành y = β₀ + β₁x₁ + β₂x₂ + ... + βnxn + ε, mô tả mối quan hệ tuyến tính giữa biến mục tiêu y và nhiều biến độc lập x₁, x₂, ..., xn, với βᵢ là các hệ số tương ứng và ε là sai số ngẫu nhiên.\" Thông tin này trực tiếp trả lời câu hỏi của cả hai cặp QA, giúp tạo ra câu trả lời chính xác về dạng phương trình mô hình trong hồi quy tuyến tính đa biến.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá phương trình chuẩn và cách giải quyết nó để tìm các tham số của mô hình hồi quy tuyến tính. Học sinh sẽ học cách áp dụng phương pháp này và so sánh với Gradient Descent, kiểm tra sự hiểu biết qua các câu hỏi ứng dụng.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, ngữ cảnh cung cấp trực tiếp công thức nghiệm dạng đóng cho hồi quy tuyến tính bội: \"Nghiệm Dạng Đóng (Closed-form Solution): $ oldsymbol{ eta} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}$\". Điều này cho phép tạo ra câu hỏi và câu trả lời chính xác về phương trình nghiệm dạng đóng. Ngoài ra, ngữ cảnh cũng đề cập đến ưu và nhược điểm của nghiệm dạng đóng, cung cấp thêm thông tin liên quan.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này phân tích sự khác biệt giữa Gradient Descent và Phương trình chuẩn, cung cấp cơ hội cho học sinh để đánh giá hiệu quả của từng phương pháp trong các tình huống khác nhau. Câu hỏi sẽ yêu cầu học sinh áp dụng kiến thức đã học từ các tuần trước và tuần này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về Gradient Descent, bao gồm định nghĩa, công thức, các loại (Batch, Stochastic, Mini-batch Gradient Descent) và ưu nhược điểm của từng loại. Đặc biệt, ngữ cảnh nêu rõ rằng Gradient Descent \"đặc biệt hữu ích với dữ liệu lớn\" và \"chậm với dữ liệu lớn\" là nhược điểm của Batch Gradient Descent nhưng lại là ưu điểm của SGD và Mini-batch GD khi xử lý dữ liệu lớn. Điều này trực tiếp trả lời câu hỏi của pipeline về việc khi nào Gradient Descent được ưa chuộng hơn phương trình chuẩn (khi làm việc với dữ liệu lớn). Ngữ cảnh cũng gián tiếp hỗ trợ câu hỏi của baseline bằng cách mô tả khả năng xử lý dữ liệu lớn của Gradient Descent, ngụ ý về hiệu quả với nhiều biến số.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tích hợp các khái niệm từ tuần này về hồi quy với các đề tài học tập trước đó. Học sinh sẽ cần hiểu các mối liên hệ giữa hồi quy tuyến tính và các khái niệm khác như học máy có giám sát và hàm chi phí, kiểm tra khả năng tổng hợp kiến thức của họ.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp đầy đủ thông tin về hồi quy tuyến tính bội, bao gồm phương trình tổng quát và ví dụ cụ thể về dự đoán giá nhà dựa trên nhiều yếu tố. Điều này giúp tạo ra câu trả lời chính xác cho câu hỏi về phương trình hồi quy tuyến tính bội để dự đoán giá nhà.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

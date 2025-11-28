@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm sắp xếp như một quy trình tổ chức mảng theo thứ tự tăng dần. Học sinh cần hiểu các ví dụ thực tế về sắp xếp như sắp xếp hồ sơ sinh viên và dữ liệu trong thư mục. Các câu hỏi có thể kiểm tra định nghĩa và ứng dụng của sắp xếp trong lập trình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và chi tiết về \"Sắp xếp (Sorting)\" trong khoa học máy tính, bao gồm cả mục đích và các loại sắp xếp. Cụ thể, phần \"1.1. Khái niệm\" trực tiếp định nghĩa sắp xếp là \"quá trình sắp đặt các phần tử trong một tập hợp theo một thứ tự nhất định (tăng dần hoặc giảm dần)\", điều này hoàn toàn khớp với câu trả lời của cặp QA từ pipeline. Ngoài ra, đồ thị còn mở rộng thêm về tầm quan trọng và các tiêu chí đánh giá, giúp người học có cái nhìn toàn diện hơn về chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào hiểu biết về thứ tự toàn phần, bao gồm các thuộc tính như phản đối xứng, bắc cầu và toàn bộ. Học sinh sẽ cần xác định các ví dụ cụ thể và áp dụng các thuộc tính này trong bối cảnh khác nhau. Các câu hỏi sẽ kiểm tra khả năng nhận diện và ví dụ của thứ tự toàn phần.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa bất kỳ thông tin nào liên quan đến 'thứ tự toàn phần' hoặc các thuộc tính của nó như 'phản đối xứng', 'bắc cầu' và 'toàn bộ'. Ngữ cảnh tập trung vào các thuật toán sắp xếp và hồi quy tuyến tính, hoàn toàn không liên quan đến chủ đề đã cho. Do đó, ngữ cảnh không hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tìm hiểu về hàm gọi lại (callbacks) và cách chúng được sử dụng trong việc sắp xếp các loại dữ liệu khác nhau mà không cần thông tin cụ thể. Học sinh sẽ cần hiểu nguyên lý hoạt động của hàm sort() và các giao diện tương ứng. Câu hỏi có thể kiểm tra sự hiểu biết về cách thức các hàm này hoạt động trong Java và các ngôn ngữ khác.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Chủ đề yêu cầu tìm hiểu về hàm gọi lại (callbacks) và cách chúng được sử dụng trong việc sắp xếp các loại dữ liệu khác nhau mà không cần thông tin cụ thể, đặc biệt là nguyên lý hoạt động của hàm sort() và các giao diện tương ứng trong Java và các ngôn ngữ khác. Tuy nhiên, ngữ cảnh từ biểu đồ tri thức chỉ tập trung vào các thuật toán sắp xếp cơ bản (Bubble Sort, Selection Sort, Insertion Sort) và các khái niệm liên quan đến sắp xếp nói chung. Ngữ cảnh không hề đề cập đến khái niệm 'hàm gọi lại' (callback), cách thức hàm sort() trong Java hoạt động với callback, hay các giao diện liên quan. Do đó, ngữ cảnh không cung cấp thông tin cần thiết để trả lời câu hỏi về hàm gọi lại trong hàm sort() của Java.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.8,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này xem xét kỹ thuật sắp xếp chọn (Selection Sort), quy trình hoạt động và ứng dụng của nó. Học sinh sẽ phân tích số lượng so sánh và hoán đổi trong quá trình sắp xếp. Các câu hỏi sẽ kiểm tra cách tính toán số lần so sánh và cách sắp xếp hoạt động trong bài thực hành.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó trực tiếp cung cấp thông tin về thuật toán Selection Sort, bao gồm cả độ phức tạp thời gian và đặc biệt là số lần so sánh cố định: n(n-1)/2. Cả hai câu hỏi đều hỏi về số lần so sánh tối đa trong Selection Sort, và ngữ cảnh đã cung cấp câu trả lời chính xác và rõ ràng. Cụ thể, phần 'Độ phức tạp thời gian' và 'Các khái niệm quan trọng' đều nêu rõ 'Số lần so sánh luôn cố định: n(n-1)/2'.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này trình bày về sắp xếp chèn (Insertion Sort), quy trình và các trường hợp hoạt động (tốt nhất, xấu nhất, trung bình). Học sinh sẽ cần tính toán số lần so sánh và hoán đổi trong các trường hợp khác nhau. Câu hỏi sẽ kiểm tra khả năng phân tích và so sánh hiệu suất của các loại sắp xếp khác nhau.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về thuật toán Insertion Sort, bao gồm ý tưởng, thuật toán, minh họa từng bước, phân tích độ phức tạp thời gian (best case, average case, worst case), độ phức tạp không gian, đặc điểm, ưu nhược điểm, và so sánh với các thuật toán khác. Cả hai câu hỏi đều tập trung vào hiệu suất và độ phức tạp thời gian của Insertion Sort, đặc biệt là trong các trường hợp tốt nhất và xấu nhất, hoặc khi dữ liệu đã được sắp xếp trước. Ngữ cảnh chứa đầy đủ thông tin để trả lời chính xác cả hai câu hỏi, cụ thể là phần 'Độ phức tạp thời gian' trong mục '4.4. Phân tích' của Insertion Sort, nơi nêu rõ 'Best case: O(n) - Mảng đã sắp xếp' và 'Worst case: O(n²) - Mảng sắp xếp ngược'.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tích hợp kiến thức từ tuần trước về Stack và Queue với các phương pháp sắp xếp. Học sinh sẽ cần liên kết cách Stack có thể được áp dụng trong các thuật toán sắp xếp và phân tích hiệu suất. Câu hỏi sẽ kiểm tra kỹ năng áp dụng và phân tích giữa hai khái niệm.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù câu hỏi của pipeline và baseline đều đề cập đến việc sử dụng Stack trong thuật toán sắp xếp, nhưng ngữ cảnh từ biểu đồ tri thức không cung cấp thông tin cụ thể về việc Stack được sử dụng trong thuật toán sắp xếp nào để lưu trữ các phần tử tạm thời. Ngữ cảnh chỉ đề cập đến Stack trong Mergesort đệ quy để lưu trữ các lời gọi hàm, không phải phần tử tạm thời trong quá trình sắp xếp. Do đó, biểu đồ tri thức không hữu ích để trả lời câu hỏi này.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.8,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này so sánh thuật toán Shellsort với các phương pháp sắp xếp khác, đồng thời giới thiệu cách thực hiện sắp xếp ngẫu nhiên trong lập trình. Học sinh sẽ phân tích hiệu suất trong các trường hợp khác nhau. Các câu hỏi sẽ tập trung vào việc so sánh hiệu suất và ứng dụng giữa Shellsort và các cách sắp xếp khác.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh được cung cấp không chứa bất kỳ thông tin nào về thuật toán Shellsort. Do đó, không thể sử dụng ngữ cảnh này để trả lời câu hỏi về ưu điểm của Shellsort so với các thuật toán sắp xếp khác. Cả hai câu trả lời đều đề cập đến Shellsort nhưng ngữ cảnh chỉ nói về Bubble Sort, Selection Sort và Insertion Sort.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.8,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này trình bày về các thực hành tốt nhất trong việc xáo trộn dữ liệu, bao gồm việc sử dụng bộ tạo số ngẫu nhiên an toàn. Học sinh cần nhận diện các nguy cơ và chiến lược để cải thiện hiệu suất xáo trộn. Câu hỏi sẽ kiểm tra khả năng đánh giá và tạo ra các phương pháp tốt nhất cho việc randomization.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về 'Random Pivot' và 'Randomized Quick Sort', giải thích cách kỹ thuật này giúp tránh trường hợp xấu nhất O(n²) trong Quicksort bằng cách chọn pivot ngẫu nhiên. Điều này trực tiếp trả lời câu hỏi của pipeline về kỹ thuật được sử dụng để tránh trường hợp xấu nhất trong Quicksort. Ngoài ra, đồ thị tri thức cũng đề cập đến 'Random seeds' trong phần 'Reproducibility' của Học Máy, liên quan đến việc đảm bảo tính ngẫu nhiên và an toàn, hỗ trợ cho câu hỏi của baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

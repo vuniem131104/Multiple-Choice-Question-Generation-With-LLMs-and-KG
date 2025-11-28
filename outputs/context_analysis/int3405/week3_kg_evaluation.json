@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khảo sát về cây quyết định như một mô hình phân loại. Học sinh cần hiểu cấu trúc của cây quyết định, bao gồm các nút quyết định, nút gốc và nút lá. Các câu hỏi sẽ tập trung vào việc xác định các thành phần của cây quyết định và đưa ra ví dụ thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng và chi tiết về cấu trúc của cây quyết định, bao gồm Nút Gốc, Nút Nội Bộ, Nhánh và Nút Lá. Phần 'Cấu Trúc Cây' trong ngữ cảnh trực tiếp liệt kê và giải thích từng thành phần này. Câu hỏi của pipeline hỏi về các thành phần của cây quyết định và câu trả lời cung cấp chính xác các thành phần được liệt kê trong ngữ cảnh. Điều này cho thấy ngữ cảnh rất hữu ích trong việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề và chính xác.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Giới thiệu về thuật toán Hunt dùng để xây dựng cây quyết định. Học sinh sẽ được kiểm tra hiểu biết về quy trình và từng bước trong thuật toán này. Các câu hỏi có thể yêu cầu thực hành về việc áp dụng thuật toán trong các tình huống thực tế.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Tài liệu không đề cập đến thuật toán Hunt. Các thuật toán được đề cập là CART, Random Forest, Gradient Boosting và AdaBoost. Do đó, tài liệu không hữu ích để trả lời câu hỏi về thuật toán Hunt.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.8,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Tìm hiểu về các phương pháp đo độ không thuần khiết của nút trong cây quyết định bằng các chỉ số như Gini và Entropy. Câu hỏi sẽ yêu cầu so sánh hai phương pháp và tính toán chỉ số cho các ví dụ cụ thể.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về Gini Impurity và Entropy, bao gồm công thức tính toán, định nghĩa, ví dụ và so sánh giữa hai chỉ số. Điều này giúp trả lời chính xác cả hai câu hỏi. Cụ thể, câu hỏi của pipeline về công thức Gini Impurity được trả lời trực tiếp từ mục \"1. Gini Impurity (Chỉ Số Gini)\" và \"Các khái niệm quan trọng\". Câu hỏi của baseline về việc so sánh Gini và Entropy và chỉ số nào đơn giản hơn được trả lời rõ ràng trong bảng so sánh \"So sánh Gini vs Entropy\" với tiêu chí \"Tính toán\".",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khám phá Gain Ratio và cách nó điều chỉnh Information Gain. Học sinh sẽ kiểm tra hiểu biết về lý thuyết và cách áp dụng Gain Ratio trong thuật toán C4.5.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về Gain Ratio, Information Gain và mối quan hệ giữa chúng, đặc biệt là việc Gain Ratio được sử dụng để khắc phục nhược điểm của Information Gain. Cụ thể, phần 'Nhược Điểm' của Cây Quyết Định nêu rõ 'Thiên Vị Về Đặc Trưng Có Nhiều Mức' và giải pháp là 'Gain Ratio (C4.5)'. Phần 'Các khái niệm quan trọng' cũng giải thích rõ ràng rằng 'Gain Ratio là một thước đo được sử dụng trong thuật toán Cây Quyết định (ví dụ: C4.5) để khắc phục sự thiên vị của Information Gain đối với các đặc trưng có nhiều mức'. Điều này trực tiếp hỗ trợ việc tạo ra câu hỏi và câu trả lời chính xác cho cả hai cặp QA.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Tìm hiểu về sai số phân loại tại một nút trong cây quyết định. Câu hỏi sẽ yêu cầu học sinh tính toán sai số phân loại dựa trên tần suất của các lớp trong nút.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời của pipeline. Ngữ cảnh cung cấp định nghĩa, công thức và ví dụ cụ thể về Gini Impurity, bao gồm cả một ví dụ với 100 mẫu, 80 lớp A và 20 lớp B, cùng với cách tính Gini Impurity là 0.32. Điều này trực tiếp hỗ trợ việc tạo câu hỏi và xác minh câu trả lời cho câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khảo sát các ứng dụng thực tế của cây quyết định trong việc phân loại, như phân loại khách hàng vỡ nợ. Các câu hỏi sẽ yêu cầu phân tích tình huống và đưa ra nhận xét về hiệu suất của mô hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, phần 'Xây Dựng Cây Quyết Định' và 'Tiêu Chí Phân Chia (Splitting Criteria)' đã trực tiếp cung cấp thông tin về 'Gini Impurity' là một tiêu chí phân chia để tối ưu hóa độ thuần khiết của các tập con. Ngoài ra, phần 'Ứng Dụng Thực Tế' cũng đề cập đến 'Đánh Giá Rủi Ro Tín Dụng' như một ứng dụng của cây quyết định, giúp liên kết câu hỏi với ngữ cảnh.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khảo sát sự khác biệt và tương đồng giữa hồi quy logistic và cây quyết định trong phân loại. Câu hỏi sẽ tập trung vào hiểu biết về ưu và nhược điểm của cả hai phương pháp đã học từ tuần trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về ưu điểm của Cây Quyết Định, bao gồm cả khía cạnh 'dễ hiểu và diễn giải' và 'bắt được mối quan hệ phi tuyến'. Điều này giúp tạo ra cả câu hỏi của pipeline và baseline một cách chính xác. Cụ thể, phần 'Ưu Điểm Của Cây Quyết Định' liệt kê rõ ràng 'Dễ hiểu và diễn giải' và 'Bắt được mối quan hệ phi tuyến', là cơ sở cho cả hai câu hỏi.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Kết nối các khái niệm tối ưu hóa từ hồi quy tuyến tính đến cây quyết định. Học sinh sẽ kiểm tra hiểu biết về cách tối ưu hóa hàm mục tiêu trong cả hai mô hình, tập trung vào Gradient Descent và độ không thuần khiết trong cây quyết định.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề. Đối với câu hỏi từ pipeline, ngữ cảnh cung cấp định nghĩa rõ ràng về Gini Impurity và cách nó được sử dụng để đo lường 'độ thuần khiết' (purity) hoặc 'độ không thuần khiết' (impurity) của các tập con trong quá trình phân chia của cây quyết định. Cụ thể, phần 'Tiêu Chí Phân Chia (Splitting Criteria)' và công thức Gini Impurity đã trực tiếp hỗ trợ trả lời câu hỏi. Đối với câu hỏi từ baseline, ngữ cảnh giải thích chi tiết về Gradient Descent, bao gồm thuật toán, các loại và vai trò của nó trong việc tối ưu hóa hàm chi phí để tìm hệ số tối ưu trong hồi quy tuyến tính. Các phần 'Tối Ưu Hóa Bằng Gradient Descent' và 'Các khái niệm quan trọng' đã cung cấp thông tin cần thiết để trả lời câu hỏi này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

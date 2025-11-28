@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này tập trung vào khái niệm Học tăng cường không mô hình và cách nó được sử dụng để ước tính hàm giá trị hoặc tối ưu hóa hàm giá trị trong một MDP mà không cần biết trước về các chuyển đổi hoặc phần thưởng. Học sinh sẽ được kiểm tra về định nghĩa và ứng dụng của phương pháp này trong các tình huống thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về 'Học tăng cường không mô hình' và phân biệt nó thành 'Model-Free Prediction' và 'Model-Free Control'. Cụ thể, phần 'Các khái niệm quan trọng' giải thích rằng 'Model-Free Methods (Các phương pháp không mô hình) là một loại thuật toán trong Reinforcement Learning (Học tăng cường) mà agent học trực tiếp từ kinh nghiệm tương tác với môi trường, không yêu cầu biết trước mô hình động học của môi trường (tức là không cần biết xác suất chuyển trạng thái P và hàm phần thưởng R)'. Điều này trực tiếp trả lời câu hỏi về việc ước tính hàm giá trị mà không cần biết trước về các chuyển đổi hoặc phần thưởng. Do đó, thông tin trong knowledge graph rất hữu ích để tạo ra câu trả lời chính xác cho câu hỏi đã cho.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá các phương pháp Monte-Carlo trong học tăng cường, sử dụng các ví dụ thực tế như Blackjack để minh họa cách ước tính hàm giá trị của các trạng thái khác nhau dựa trên kết quả. Học sinh sẽ cần hiểu và áp dụng các công thức liên quan đến phương pháp này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp trực tiếp công thức cập nhật giá trị V(S_t) cho phương pháp Monte-Carlo khi S_t xuất hiện lần đầu tiên trong một episode, cụ thể là \"V(S_t) = average(Returns(S_t))\". Điều này hoàn toàn khớp với câu trả lời của cặp QA từ pipeline. Ngữ cảnh cũng giải thích rõ ràng về các phương pháp Monte-Carlo, bao gồm First-Visit Monte Carlo và Every-Visit Monte Carlo, cùng với các đặc điểm và công thức cập nhật, giúp xác minh tính chính xác của câu trả lời.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Đánh giá chính sách Monte-Carlo là một kỹ thuật quan trọng trong Học tăng cường. Chủ đề này cung cấp thông tin về hai phương pháp: Đánh giá lần đầu tiên và đánh giá mọi lần, bao gồm các công thức tính toán cụ thể. Học sinh sẽ được đánh giá khả năng phân biệt giữa hai cách tiếp cận này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Ngữ cảnh cung cấp định nghĩa rõ ràng và so sánh giữa 'First-Visit Monte Carlo' và 'Every-Visit Monte Carlo' trong phần '2.4. Every-Visit Monte Carlo' và '2.3. First-Visit Monte Carlo'. Cụ thể, nó nêu rõ 'Every-visit có variance thấp hơn' và 'Khác biệt: Cập nhật cho mọi lần xuất hiện của trạng thái trong episode' cho Every-Visit Monte Carlo, và 'Chỉ cập nhật cho lần xuất hiện đầu tiên của trạng thái' cho First-Visit Monte Carlo. Điều này trực tiếp hỗ trợ việc trả lời câu hỏi của pipeline về phương pháp cập nhật giá trị của một trạng thái mỗi khi nó xuất hiện trong một episode.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào cơ chế cập nhật giá trị V(s) thông qua các phương pháp Monte-Carlo tăng dần. Học sinh sẽ cần hiểu và áp dụng các công thức liên quan đến quá trình cập nhật trong các vấn đề không dừng.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù ngữ cảnh có đề cập đến Monte Carlo và công thức cập nhật V(S), nhưng công thức được cung cấp trong câu trả lời của pipeline (V(S) ← V(S) + α[R + γV(S') - V(S)]) thực chất là công thức cập nhật của TD(0), không phải Monte Carlo. Ngữ cảnh rõ ràng phân biệt giữa Monte Carlo (cập nhật cuối episode, target G_t) và TD(0) (cập nhật sau mỗi bước, target R + γV(S')). Do đó, ngữ cảnh không hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi về Monte Carlo.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.8,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này yêu cầu học sinh so sánh hai phương pháp Học tăng cường: Monte-Carlo và Temporal-Difference. Điều này bao gồm việc hiểu rõ những ưu điểm và nhược điểm của từng phương pháp trong việc học từ các chuỗi khác nhau và ứng dụng của chúng trong các môi trường khác nhau.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp một bảng so sánh chi tiết giữa Monte Carlo và TD(0), bao gồm các tiêu chí như 'Cập nhật', 'Hội tụ', và 'Môi trường'. Cụ thể, phần '3.5. Ưu điểm của TD' liệt kê rõ ràng các ưu điểm như 'Học online: Cập nhật sau mỗi bước, không cần chờ episode kết thúc' và 'Học nhanh hơn: Thường hội tụ nhanh hơn MC trong thực tế'. Những thông tin này trực tiếp trả lời câu hỏi của pipeline về ưu điểm chính của Temporal-Difference so với Monte Carlo.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ yêu cầu học sinh áp dụng các khái niệm lập trình động từ tuần trước vào các tình huống thực tế trong MDPs, cho thấy sự tương tác giữa lập trình động và Học tăng cường không mô hình. Điều này giúp kiểm tra khả năng liên kết kiến thức từ các bài giảng trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về Policy Evaluation và phương trình Bellman cho hàm giá trị trạng thái V^π(s), giúp trả lời chính xác câu hỏi của pipeline. Cụ thể, phần \"Planning by Dynamic Programming - Lập Kế Hoạch Bằng Quy Hoạch Động\" và mục \"2.2. Phương trình Bellman cho Policy Evaluation\" chứa trực tiếp thông tin cần thiết.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khai thác phương pháp dự đoán n-Bước và lợi nhuận lambda trong Học tăng cường, cho phép học sinh hiểu sâu về cách thức tính toán lợi nhuận và ứng dụng trong thực tế. Học sinh sẽ cần áp dụng các công thức và lý thuyết liên quan.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp trực tiếp công thức tính toán λ-Return, cụ thể là \"G_t^λ = (1-λ) Σ_{n=1}^∞ λ^{n-1} G_t^(n)\". Điều này cho phép tạo ra câu trả lời chính xác và trực tiếp cho câu hỏi của pipeline. Ngoài ra, ngữ cảnh còn giải thích ý nghĩa và các đặc điểm của λ-Return, giúp củng cố sự hiểu biết về chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá sự tương đương giữa TD(λ) và Monte-Carlo/TD(0), yêu cầu học sinh nắm vững các khái niệm sâu hơn về Học tăng cường. Điều này sẽ cung cấp cái nhìn tổng quan và phân tích sâu hơn về các thuật toán này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề. Cụ thể, phần 'Unified View: TD(λ)' và 'TD(λ) - Eligibility Traces' giải thích rõ ràng về n-Step TD và λ-Return, trong đó nêu bật rằng TD(λ) cung cấp một phổ liên tục giữa TD(0) (khi n=1 hoặc λ=0) và Monte Carlo (khi n=∞ hoặc λ=1). Điều này trực tiếp hỗ trợ cho câu trả lời của hệ thống pipeline, giải thích sự tương đương dựa trên việc TD(λ) kết hợp các bước cập nhật khác nhau. Các phần 'So sánh tổng hợp' và 'Các khái niệm quan trọng' cũng củng cố thông tin này, mô tả TD(λ) là sự cân bằng giữa bias và variance, và là một phổ liên tục giữa MC và TD(0).",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

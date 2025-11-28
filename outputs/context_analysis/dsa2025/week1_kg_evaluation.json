@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Tìm hiểu về hai kiểu dữ liệu cơ bản: Stack và Queue. Chủ đề này bao gồm nguyên tắc LIFO và FIFO, cũng như các thao tác chủ yếu như push, pop, enqueue và dequeue. Học sinh sẽ có thể so sánh và phân biệt giữa hai loại cấu trúc dữ liệu này thông qua câu hỏi trắc nghiệm.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Cả hai câu hỏi đều được trả lời trực tiếp và chính xác từ ngữ cảnh. Cụ thể, ngữ cảnh định nghĩa rõ ràng Stack hoạt động theo nguyên tắc LIFO (Last In First Out) và Queue hoạt động theo nguyên tắc FIFO (First In First Out), cùng với các thao tác cơ bản và ứng dụng của chúng. Điều này cho phép tạo ra các câu hỏi về nguyên tắc hoạt động của Stack và Queue, cũng như các thao tác liên quan.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khám phá những khác biệt và điểm mạnh của hai cách triển khai Stack: danh sách liên kết và mảng cố định. Chủ đề này giúp học sinh hiểu thời gian thao tác và bộ nhớ sử dụng cho mỗi phương pháp, qua đó cải thiện khả năng phân tích lựa chọn triển khai.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về cả hai cách triển khai Stack (sử dụng mảng và danh sách liên kết), bao gồm khái niệm, các thao tác cơ bản và mã cài đặt. Đặc biệt, phần 'Các khái niệm quan trọng' và 'Mối quan hệ' trực tiếp đề cập đến việc cài đặt Stack bằng Linked List giúp tránh vấn đề Stack Overflow do giới hạn dung lượng cố định của mảng. Điều này hoàn toàn phù hợp để trả lời câu hỏi của pipeline system. Đối với câu hỏi của baseline system, đồ thị tri thức cũng cung cấp thông tin về Linked List, mặc dù không trực tiếp nói về 'thời gian truy cập bộ nhớ không liên tiếp' nhưng nó mô tả bản chất của Linked List là các phần tử không được lưu trữ liên tiếp trong bộ nhớ, điều này gián tiếp liên quan đến thời gian thao tác.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ tập trung vào các thao tác 'push' và 'pop' trong mô hình Stack. Học sinh sẽ được yêu cầu mô tả quy trình thực hiện các thao tác này cùng với cấu trúc dữ liệu liên quan, giúp củng cố hiểu biết về cách thức hoạt động bên trong của Stack.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về thao tác 'Push' trong Stack, bao gồm cả mô tả về cách thức hoạt động (thêm phần tử vào đỉnh, tăng con trỏ top) và độ phức tạp thời gian. Cụ thể, phần '1.2. Các thao tác cơ bản' và 'Các khái niệm quan trọng' đã trực tiếp giải thích về 'Push' và 'Pop', giúp trả lời chính xác cả hai câu hỏi.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Tìm hiểu cách triển khai Stack bằng danh sách liên kết và phân tích hiệu suất của các thao tác trong trường hợp xấu nhất. Nội dung giúp học sinh đánh giá độ hiệu quả và tính khả thi của việc dùng danh sách liên kết cho Stack.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về Stack, các thao tác cơ bản của Stack (bao gồm Push, Pop, Peek, isEmpty, Size) và đặc biệt là cách cài đặt Stack bằng Linked List. Ngữ cảnh cũng nêu rõ độ phức tạp thời gian O(1) cho thao tác Push, điều này trực tiếp trả lời câu hỏi của pipeline. Ngoài ra, ngữ cảnh còn đề cập đến các khái niệm quan trọng về Linked List và mối quan hệ giữa Stack và Linked List, giúp củng cố kiến thức nền tảng cho câu hỏi.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khảo sát ứng dụng thực tế của Stack trong các lĩnh vực như xác thực cú pháp, chức năng hoàn tác trong ứng dụng, và xử lý biểu thức toán học. Học sinh sẽ được yêu cầu kết nối lý thuyết với thực tiễn thông qua các ví dụ cụ thể.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời. Cụ thể, phần '1.2. Các thao tác cơ bản' trong tài liệu giải thích rõ ràng về thao tác 'Push (Đẩy)' là thêm một phần tử vào đỉnh stack, khớp hoàn toàn với câu hỏi và câu trả lời của pipeline. Ngoài ra, phần 'Mối quan hệ' và '1.4. Ứng dụng của Stack' cũng đề cập đến việc sử dụng Stack trong xử lý biểu thức toán học, hỗ trợ cho câu hỏi của baseline.",
+            "with_context_question_relevance": 0.7,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này giải thích cách thức hoạt động của Stack sử dụng mảng có thể thay đổi kích thước và cách điều chỉnh kích thước mảng phù hợp. Học sinh sẽ phải hiểu quy trình resize và ảnh hưởng của nó đến hiệu suất của Stack.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về cách cài đặt Stack bằng mảng, bao gồm cả khái niệm 'Stack Overflow' khi mảng đầy. Điều này trực tiếp trả lời câu hỏi của pipeline về việc điều gì xảy ra khi số lượng phần tử vượt quá dung lượng đã định của mảng. Tuy nhiên, ngữ cảnh không đề cập cụ thể đến 'mảng có thể thay đổi kích thước' hay 'quy trình resize và ảnh hưởng của nó đến hiệu suất của Stack' như chủ đề đã nêu, mà chỉ tập trung vào cài đặt mảng tĩnh và khái niệm Stack Overflow. Do đó, nó hữu ích cho câu hỏi của pipeline nhưng không đầy đủ cho câu hỏi của baseline liên quan đến việc điều chỉnh kích thước mảng.",
+            "with_context_question_relevance": 0.7,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Khám phá khái niệm tự động ép kiểu (autoboxing) trong Stack tham số hóa. Học sinh sẽ cần hiểu cách autoboxing giảm thiểu lỗi thời gian chạy và cách áp dụng nó trong các tình huống cụ thể mà không cần ép kiểu thủ công.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Chủ đề yêu cầu khám phá khái niệm tự động ép kiểu (autoboxing) trong Stack tham số hóa và cách nó giảm thiểu lỗi thời gian chạy. Tuy nhiên, ngữ cảnh từ biểu đồ tri thức không chứa bất kỳ thông tin nào liên quan đến 'autoboxing', 'Stack tham số hóa', hay các khái niệm lập trình liên quan đến ép kiểu dữ liệu. Ngữ cảnh chỉ tập trung vào các khái niệm trong Học máy (Machine Learning) như Data Augmentation, Batch Normalization, Layer Normalization, Autoencoders, GANs, AutoML và các kỹ thuật liên quan. Do đó, ngữ cảnh hoàn toàn không hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 0.0,
+            "without_context_question_relevance": 0.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Nắm vững công nghệ đánh giá biểu thức số học qua thuật toán dùng hai Stack. Học sinh sẽ được giới thiệu từng bước trong thuật toán và cần phản ánh hiểu biết của mình qua các tình huống cụ thể liên quan đến toán tử và giá trị.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về cấu trúc dữ liệu Stack, các thao tác cơ bản của Stack, và đặc biệt là ứng dụng của Stack trong việc đánh giá biểu thức số học, bao gồm cả thuật toán `evaluate_postfix`. Phần 'Các khái niệm quan trọng' và 'Mối quan hệ' trực tiếp đề cập đến việc Stack được sử dụng để giải quyết bài toán đánh giá biểu thức và thuật toán `evaluate_postfix` sử dụng Stack để lưu trữ toán hạng và kết quả trung gian. Đoạn mã Python cho `evaluate_postfix` cũng minh họa rõ ràng cách thức lấy hai toán hạng, thực hiện phép toán và đẩy kết quả trở lại Stack khi gặp toán tử. Điều này hoàn toàn phù hợp và hữu ích để trả lời câu hỏi của pipeline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

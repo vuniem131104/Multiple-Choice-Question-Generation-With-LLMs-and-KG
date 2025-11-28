@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khái niệm tối ưu hóa hàm giá trị của một MDP mà không cần mô hình rõ ràng. Học sinh cần hiểu về các kỹ thuật lấy mẫu từ kinh nghiệm và ứng dụng cho các bài toán như quản lý danh mục đầu tư và cờ vây. Nội dung này thuộc nền tảng tuần 4 qua khái niệm Kiểm soát không mô hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về phương pháp Monte Carlo, bao gồm định nghĩa, nguyên lý và cách ước lượng giá trị trạng thái V^π(s) bằng cách lấy trung bình các return thực tế từ nhiều episode. Điều này trực tiếp trả lời câu hỏi của pipeline system và phù hợp với chủ đề về tối ưu hóa hàm giá trị của MDP mà không cần mô hình rõ ràng, đặc biệt là các kỹ thuật lấy mẫu từ kinh nghiệm (như Monte Carlo).",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 1.0,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Học sinh cần nhận diện và mô tả các khái niệm Học theo chính sách, bao gồm việc học hỏi từ chính các trải nghiệm của chính sách đang học. Nội dung liên quan đến các thuật ngữ và phương pháp được triển khai ở tuần 4 và ứng dụng của nó từ tuần 2.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về 'On-Policy Learning' và 'Off-Policy Learning', bao gồm cả việc so sánh và các ví dụ cụ thể. Cụ thể, phần 'On-Policy Learning' định nghĩa 'Học về chính sách π từ experience generated bởi π' và 'Evaluate và improve cùng một chính sách', điều này trực tiếp trả lời câu hỏi của pipeline về việc học từ chính trải nghiệm của chính sách đó. Ngoài ra, đồ thị cũng cung cấp các khái niệm liên quan như 'Policy Iteration' và 'π*' giúp làm rõ hơn bối cảnh của việc học theo chính sách.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khái niệm về thăm dò ε-Greedy cho phép học sinh phân tích cách thức chọn lựa hành động tham lam và việc thăm dò hành động ngẫu nhiên. Học sinh sẽ áp dụng công thức để tính toán xác suất của các hành động trong không gian hành động. Nội dung kết nối từ tuần 4 và phương pháp Lập trình động ở tuần 2.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp định nghĩa rõ ràng về chính sách ε-greedy, bao gồm cách thức chọn hành động ngẫu nhiên với xác suất ε và hành động tham lam với xác suất 1-ε. Cả hai câu hỏi đều liên quan trực tiếp đến khái niệm này và đồ thị tri thức chứa thông tin cần thiết để trả lời chúng một cách chính xác. Cụ thể, phần 'Các khái niệm quan trọng' trong mục SARSA và Code Examples của EpsilonGreedy đều giải thích rõ ràng về xác suất ε và 1-ε.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khái niệm học Q là một phương pháp kiểm soát ngoài chính sách. Học sinh cần hiểu về cách thức cập nhật hàm giá trị Q(S, A) và ứng dụng của nó thông qua các ví dụ thực tế như Cliff Walking. Chủ đề này liên quan đến tuần 4 và cần áp dụng kiến thức từ tuần 3 về các phương pháp kiểm soát.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Không có ngữ cảnh nào được cung cấp từ biểu đồ tri thức, do đó không thể đánh giá tính hữu ích của nó trong việc tạo ra cặp câu hỏi-trả lời. Cả hai câu trả lời đều không được hỗ trợ bởi ngữ cảnh.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khái niệm về sự khác biệt giữa hai phương pháp học là Monte-Carlo và Temporal-Difference (TD). Học sinh sẽ so sánh các ưu nhược điểm của từng phương pháp trong dự đoán không mô hình. Qua đó, kết nối các khái niệm từ tuần 3 đến tuần 4.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết và đầy đủ về cả hai phương pháp Monte-Carlo và Temporal-Difference (TD), bao gồm định nghĩa, đặc điểm, công thức cập nhật, ưu nhược điểm, và bảng so sánh trực tiếp giữa chúng. Cụ thể, ngữ cảnh có một phần so sánh rõ ràng về tốc độ hội tụ, nêu bật rằng TD(0) hội tụ nhanh hơn Monte Carlo trong thực tế. Điều này trực tiếp trả lời cho câu hỏi của cặp QA từ pipeline, giúp tạo ra câu trả lời chính xác và có căn cứ. Ngữ cảnh cũng giải thích các ưu điểm khác của TD như học online, hoạt động với continuing tasks, variance thấp hơn, điều này cũng hỗ trợ cho câu hỏi của cặp QA từ baseline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Học sinh sẽ mô tả thuật toán Sarsa và cách nó cập nhật giá trị Q dựa trên các hành động. Liên kết giữa các khái niệm được học ở tuần 3 và ứng dụng trong tuần 4 để giải quyết các bài toán không đầy đủ thông tin.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa chi tiết về thuật toán SARSA, bao gồm công thức cập nhật Q-value và giải thích các thành phần của nó (S, A, R, S', A'). Cả hai câu hỏi đều tập trung vào cách SARSA cập nhật giá trị Q và hành động được sử dụng để cập nhật, thông tin này được trình bày rõ ràng trong phần 'Các khái niệm quan trọng' và 'SARSA Update' của ngữ cảnh. Do đó, ngữ cảnh rất hữu ích để trả lời cả hai câu hỏi.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Học sinh sẽ hiểu quá trình lặp lại giữa đánh giá chính sách và cải thiện chính sách trong môi trường không mô hình. Chủ đề này nền tảng cho các khái niệm học tập hiệu quả trong tuần 4 và liên quan đến kiến thức từ tuần 2 về lập trình động.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng và công thức chính xác cho Policy Evaluation, bao gồm cả phương trình Bellman cho Policy Evaluation. Cụ thể, câu trả lời của pipeline là công thức V^π(s) = Σ_a π(a|s)[R(s,a) + γ Σ_{s'} P(s'|s,a)V^π(s')], được trích dẫn trực tiếp từ phần '2.2. Phương trình Bellman cho Policy Evaluation' trong ngữ cảnh. Điều này cho thấy đồ thị tri thức chứa thông tin cần thiết và chính xác để trả lời câu hỏi của pipeline.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.7,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Học sinh cần mô tả sự kết hợp giữa Dấu vết đủ điều kiện và các lợi nhuận trong học n-bước, hiểu rằng chúng phù hợp từ cả góc nhìn tiến về phía trước và lùi về phía sau. Chủ đề này trải rộng kiến thức từ tuần 4 tới những phương pháp học khác nhau trong tuần 3.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin trực tiếp về 'n-Step SARSA' và công thức cập nhật hàm giá trị Q, cụ thể là 'Q(S_t, A_t) ← Q(S_t, A_t) + α[G_t^(n) - Q(S_t, A_t)]'. Điều này hoàn toàn phù hợp với câu hỏi của pipeline về mối quan hệ giữa dấu vết đủ điều kiện và học n-bước trong thuật toán n-Step SARSA và cách cập nhật hàm giá trị Q. Mặc dù ngữ cảnh không trực tiếp đề cập đến 'Dấu vết đủ điều kiện' một cách rõ ràng trong phần 'n-Step SARSA', nhưng nó nằm trong cùng một phần lớn 'n-Step Methods và Eligibility Traces', cho thấy sự liên quan. Câu trả lời được cung cấp bởi pipeline là chính xác dựa trên ngữ cảnh.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

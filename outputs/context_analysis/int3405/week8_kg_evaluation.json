@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này tập trung vào việc hiểu Mạng Nơ-ron Tích chập (CNN), bao gồm cấu trúc, chức năng của các lớp trong CNN và các ứng dụng thực tế như phân loại hình ảnh. Học sinh sẽ được đánh giá về khả năng xác định các thành phần của CNN và ứng dụng của chúng trong các bài toán phân loại.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về Mạng Nơ-ron Tích chập (CNN) và nêu bật đặc điểm chính của nó là chuyên biệt cho xử lý dữ liệu dạng lưới, đặc biệt là ảnh. Cụ thể, đoạn \"CNN là kiến trúc mạng nơ-ron chuyên biệt cho xử lý dữ liệu dạng lưới (grid-like), đặc biệt là ảnh.\" trực tiếp trả lời câu hỏi của pipeline về loại dữ liệu mà CNN chủ yếu xử lý. Do đó, ngữ cảnh rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá các lớp gộp (Pooling Layers) trong Mạng Nơ-ron Tích chập (CNN). Học sinh sẽ học về sự khác biệt giữa gộp tối đa (Max pooling) và gộp trung bình (Average pooling), cách chúng ảnh hưởng đến kích thước đầu ra và khả năng học của mô hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng và ví dụ cụ thể về Max Pooling và Average Pooling, bao gồm cả công thức và minh họa. Điều này trực tiếp hỗ trợ việc trả lời câu hỏi về sự khác biệt giữa hai loại gộp này. Cụ thể, phần 'Lớp Pooling' giải thích chi tiết về Max Pooling ('Lấy giá trị maximum trong mỗi region') và Average Pooling ('Lấy trung bình trong mỗi region'), khớp hoàn toàn với câu trả lời được cung cấp.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này bàn về các vấn đề liên quan đến gradient trong việc huấn luyện mạng nơ-ron, bao gồm gradient biến mất và gradient bùng nổ. Học sinh sẽ cần hiểu được nguyên nhân của những vấn đề này và cách chúng ảnh hưởng đến khả năng học tập của mô hình, cũng như cách khắc phục chúng.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về vấn đề gradient biến mất, nguyên nhân và các giải pháp khắc phục. Cụ thể, nó giải thích rằng vấn đề này xảy ra khi gradient của hàm loss trở nên cực kỳ nhỏ trong quá trình lan truyền ngược qua nhiều lớp, điều này khớp hoàn hảo với câu trả lời của cặp QA từ pipeline. Ngoài ra, ngữ cảnh cũng đề cập đến các nguyên nhân như hàm kích hoạt có đạo hàm nhỏ, điều này liên quan đến câu hỏi của cặp QA từ baseline.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ thảo luận về Bộ nhớ dài-ngắn hạn (LSTM) như một giải pháp cho vấn đề gradient biến mất trong RNN. Học sinh sẽ được đánh giá về cách thức hoạt động của LSTM và cách nó tối ưu hóa quy trình huấn luyện qua các cổng kiểm soát.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa chi tiết về LSTM, bao gồm cấu trúc cổng của nó (Input Gate, Forget Gate, Output Gate) và vai trò của chúng trong việc kiểm soát luồng thông tin. Cụ thể, ngữ cảnh giải thích rằng các cổng này kiểm soát thông tin vào, ra và qua 'trạng thái ô'. Điều này trực tiếp hỗ trợ việc trả lời cả hai câu hỏi về chức năng của các cổng trong LSTM. Câu hỏi của pipeline hỏi về cổng kiểm soát thông tin được ghi nhớ và quên, và ngữ cảnh đề cập đến 'Forget Gate' như một phần của cơ chế cổng kiểm soát luồng thông tin. Câu hỏi của baseline hỏi về cổng quyết định thông tin nào sẽ được lưu trữ, và ngữ cảnh cũng đề cập đến 'Input Gate' trong cấu trúc cổng. Do đó, ngữ cảnh rất hữu ích cho việc tạo ra các cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào việc tìm hiểu về Mạng Nơ-ron Hồi quy (RNN) và cách chúng xử lý dữ liệu tuần tự. Học sinh sẽ được yêu cầu mô tả chức năng của RNN và đưa ra ví dụ về ứng dụng thực tế của chúng như phân tích cảm xúc.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin trực tiếp và chi tiết về Mạng Nơ-ron Hồi quy (RNN), bao gồm định nghĩa, đặc điểm và loại dữ liệu mà chúng được thiết kế để xử lý (dữ liệu tuần tự như văn bản, chuỗi thời gian, âm thanh, video). Điều này hoàn toàn phù hợp để trả lời câu hỏi của cả hai hệ thống, đặc biệt là câu trả lời của hệ thống pipeline cung cấp đầy đủ các ví dụ về loại dữ liệu tuần tự.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ tích hợp kiến thức từ tuần 8 về CNN và kiến thức từ tuần 7 về RNN, đánh giá khả năng của học sinh trong việc xác định cách mà CNN và RNN có thể được sử dụng cùng nhau trong các ứng dụng như chú thích hình ảnh. Học sinh sẽ khám phá được ưu điểm của sự kết hợp này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về các dạng RNN, đặc biệt là One-to-Many RNN và ứng dụng của nó trong Image Captioning (chú thích hình ảnh). Nó cũng đề cập đến cách CNN được sử dụng trong các kiến trúc như Discriminator và DQN để xử lý hình ảnh, ngụ ý khả năng trích xuất đặc trưng hình ảnh. Mặc dù không có phần cụ thể nào mô tả trực tiếp sự kết hợp CNN-RNN cho chú thích hình ảnh, nhưng thông tin về One-to-Many RNN và ứng dụng của nó, cùng với vai trò của CNN trong xử lý hình ảnh, cho phép suy luận và tạo ra câu trả lời chính xác về cách CNN trích xuất đặc trưng và RNN xử lý chuỗi văn bản.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ cung cấp tổng quan về các phương pháp giảm thiểu overfitting, như Dropout và Batch Normalization. Học sinh sẽ cần hiểu các kỹ thuật này và ứng dụng của chúng trong việc cải thiện hiệu suất của mô hình học sâu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa chi tiết về Dropout, bao gồm cơ chế hoạt động (ngẫu nhiên tắt nơ-ron), lý do hiệu quả (ngăn co-adaptation, hiệu ứng ensemble, thêm nhiễu), và cách sử dụng. Điều này trực tiếp trả lời câu hỏi về kỹ thuật ngăn chặn overfitting bằng cách ngẫu nhiên tắt nơ-ron. Ngoài ra, ngữ cảnh cũng giải thích về Overfitting và các giải pháp giảm thiểu, giúp củng cố sự hiểu biết về vấn đề mà Dropout giải quyết.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tích hợp các khái niệm từ tuần 5 và tuần 8 để cùng xem xét các kỹ thuật bảo vệ nhân mẫu như Early Stopping và Cross-Validation. Học sinh sẽ được đánh giá về khả năng áp dụng các kỹ thuật này để tối ưu hóa mô hình và tránh overfitting trong học sâu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng và chi tiết về Early Stopping, bao gồm nguyên lý hoạt động, cách triển khai, và mục đích chính là ngăn chặn overfitting. Cụ thể, đoạn văn bản nêu rõ: 'Early Stopping là một kỹ thuật regularization và tối ưu hóa hiệu quả, được sử dụng rộng rãi trong các thuật toán lặp (như gradient descent, boosting) để ngăn chặn overfitting. Kỹ thuật này hoạt động bằng cách theo dõi hiệu suất của mô hình trên tập dữ liệu kiểm định (validation set) sau mỗi epoch. Quá trình huấn luyện sẽ dừng lại khi hiệu suất trên tập validation bắt đầu giảm hoặc không cải thiện trong một số epoch nhất định'. Thông tin này trực tiếp trả lời câu hỏi của pipeline về kỹ thuật ngăn chặn overfitting bằng cách dừng huấn luyện khi hiệu suất trên tập kiểm định giảm. Do đó, ngữ cảnh rất hữu ích để tạo ra cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

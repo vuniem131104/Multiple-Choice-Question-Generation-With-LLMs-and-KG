@@ -181,3 +181,29 @@ LLM_AS_JUDGE_QUESTION_PAIR_TEMPLATE = """
 
 ---
 """
+
+LLM_JUDGE_KG = """
+You are an expert knowledge graph evaluator. Your task is to assess the quality and accuracy of knowledge graphs based on predefined criteria.
+You will be provided two question-answer pairs along with the context from knowledge graph and the topic that they belong to.
+The question-answer from the pipeline system that has been generated based on the knowledge graph and the question-answer from the baseline system as below:
+The topic is: {topic_name}
+The context from knowledge graph is:
+{context}
+The pipeline question-answer pair is:
+Question: {pipeline_question}
+Answer: {pipeline_answer}
+The baseline question-answer pair is:
+Question: {baseline_question}
+Answer: {baseline_answer}
+Your task is to vote as the following question bellow:
+1. Whether the knowledge graph is useful for generating the question-answer pair from the pipeline system?
+Answer with "Yes" or "No" and provide a detailed rationale for your decision.
+2. Vote which question-answer pair is better overall (pipeline/baseline/tie) and provide a detailed rationale for your decision.
+The output should be in the following JSON format:
+{
+  "knowledge_graph_usefulness": "Yes" or "No",
+  "usefulness_rationale": "Detailed explanation of why the knowledge graph is useful or not, referencing specific aspects of the context and question-answer pair.",
+  "overall_winner": "pipeline" or "baseline" or "tie",
+  "overall_rationale": "Detailed explanation of why this question-answer pair won or tied, referencing specific aspects of the question-answer pairs."
+}
+"""

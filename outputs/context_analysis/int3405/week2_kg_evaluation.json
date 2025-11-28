@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khám phá các vấn đề chính trong học máy là rất quan trọng để đánh giá hiệu suất của các thuật toán. Học sinh sẽ được kiểm tra hiểu biết về không gian giả thuyết, tối ưu hóa độ chính xác, và đánh giá độ tin cậy của kết quả. Cụ thể là các khái niệm về overfitting và yêu cầu dữ liệu huấn luyện.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp một định nghĩa rõ ràng và chi tiết về overfitting, bao gồm các dấu hiệu, nguyên nhân và giải pháp. Điều này giúp tạo ra câu trả lời chính xác và đầy đủ cho câu hỏi về định nghĩa overfitting. Cả câu trả lời của pipeline và baseline đều phản ánh đúng thông tin này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ kiểm tra hiểu biết của học sinh về Định lý Bayes, mà xác định cách xác suất hậu nghiệm liên quan đến xác suất khả dĩ và tiên nghiệm. Học sinh sẽ được yêu cầu áp dụng công thức của Định lý Bayes trong các ví dụ cụ thể hoặc câu hỏi tính toán.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp trực tiếp công thức của Định lý Bayes và định nghĩa rõ ràng các thành phần của nó, bao gồm xác suất hậu nghiệm (posterior probability). Cụ thể, phần 'Định Lý Bayes' trong ngữ cảnh trình bày công thức $P(C_k|x) = \\frac{P(x|C_k)P(C_k)}{P(x)}$, khớp hoàn toàn với câu trả lời được cung cấp trong cặp câu hỏi-trả lời của pipeline. Điều này cho phép tạo ra câu trả lời chính xác và trực tiếp cho câu hỏi về công thức tính xác suất hậu nghiệm.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này liên quan đến khái niệm Học tập Hậu nghiệm tối đa, giúp học sinh hiểu cách tìm giả thuyết tối ưu dựa trên dữ liệu. Bằng cách phân tích công thức và ứng dụng thực tế, học sinh sẽ được kiểm tra về khả năng áp dụng MAP trong các tình huống học máy.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa bất kỳ thông tin nào về 'Học tập Hậu nghiệm tối đa (MAP)' hoặc công thức liên quan đến nó. Các phần trong ngữ cảnh tập trung vào 'Học Máy', 'Học Không Giám Sát', 'Học Sâu', 'Cây Quyết Định' và 'Hồi Quy Tuyến Tính', không có nội dung nào đề cập trực tiếp đến MAP. Do đó, biểu đồ tri thức không hữu ích để tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Kiểm tra sự hiểu biết về ước lượng khả dĩ tối đa (MLE) và các giả định liên quan đến nó. Học sinh sẽ hiểu cách tối đa hóa khả dĩ của dữ liệu huấn luyện để tìm ra mô hình dự đoán chính xác.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức không chứa thông tin trực tiếp về Ước lượng khả dĩ tối đa (MLE) hoặc các giả định liên quan đến nó. Các phần được cung cấp tập trung vào Naive Bayes, k-NN, Cây Quyết Định, Hồi Quy Tuyến Tính và K-Means Clustering. Do đó, ngữ cảnh không hữu ích để trả lời câu hỏi về MLE.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Nội dung chủ yếu tập trung vào mô hình sinh xác suất và cách phân loại các thể hiện vào các lớp khác nhau. Học sinh sẽ được kiểm tra khả năng xác định các tham số cần thiết và hiểu rõ về mô hình này trong một số ứng dụng thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về Softmax Regression, bao gồm công thức tính xác suất của lớp k cho một đầu vào x, điều này trực tiếp trả lời câu hỏi của pipeline. Ngoài ra, nó cũng đề cập đến các mô hình sinh xác suất khác như Naive Bayes Classifier và các biến thể của nó, phù hợp với chủ đề về mô hình sinh xác suất và phân loại.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Kiểm tra khả năng hiểu và phân tích vấn đề 'lời nguyền của chiều', một thách thức trong việc học với dữ liệu có chiều cao. Học sinh sẽ được hỏi về ảnh hưởng của số chiều đối với mẫu dữ liệu và cách giải quyết vấn đề này.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa trực tiếp và chi tiết về 'lời nguyền của chiều' (Curse of dimensionality), nêu rõ các vấn đề phát sinh như dữ liệu trở nên thưa thớt và các khái niệm về khoảng cách trở nên kém ý nghĩa. Điều này hoàn toàn phù hợp với câu trả lời của cặp QA từ pipeline, giải thích chính xác hậu quả của lời nguyền của chiều. Ngữ cảnh cũng đề cập đến ảnh hưởng của nó đối với các thuật toán dựa trên khoảng cách như DBSCAN và k-NN, củng cố thêm thông tin liên quan đến vấn đề này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Học sinh sẽ phân tích Bộ phân loại Naïve Bayes, tìm hiểu cách mà giả định độc lập có điều kiện ảnh hưởng đến khả năng ước tính xác suất. Cũng như cách xử lý vấn đề khả dĩ bằng 0 trong điều kiện thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về Bộ phân loại Naive Bayes, bao gồm Định lý Bayes và đặc biệt là công thức thể hiện giả định độc lập điều kiện. Công thức này được trình bày trực tiếp trong phần 'Giả Định Naive (Độc Lập Điều Kiện)', giúp trả lời chính xác câu hỏi của pipeline. Ngoài ra, ngữ cảnh cũng đề cập đến các biến thể và ưu nhược điểm của Naive Bayes, bao gồm cả vấn đề 'Zero frequency problem' và cách xử lý bằng Laplace Smoothing, rất phù hợp với chủ đề được cung cấp.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.9,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề cuối cùng kết hợp kiến thức từ tuần 1 và tuần 2. Học sinh sẽ được yêu cầu so sánh các mô hình phân biệt và sinh về ưu nhược điểm của chúng trong các tình huống khác nhau, đồng thời làm quen với cách những mô hình này ảnh hưởng đến việc lựa chọn thuật toán học máy thích hợp.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Chủ đề yêu cầu so sánh mô hình phân biệt và mô hình sinh về ưu nhược điểm của chúng trong các tình huống khác nhau. Tuy nhiên, ngữ cảnh từ biểu đồ tri thức không cung cấp bất kỳ thông tin nào về mô hình phân biệt hoặc mô hình sinh. Do đó, ngữ cảnh không hữu ích để trả lời câu hỏi được đưa ra.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

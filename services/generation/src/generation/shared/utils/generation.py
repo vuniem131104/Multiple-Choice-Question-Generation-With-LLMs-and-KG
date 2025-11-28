@@ -36,7 +36,7 @@ def get_lecture_objectives( week_number: int, course_code: str) -> list[str]:
             list[str]: The learning outcomes for the lecture.
         """
         try:
-            llo_path = f"/home/lehoangvu/KLTN/services/generation/src/generation/shared/static_files/{course_code}/learning_outcomes.json"
+            llo_path = f"/app/services/generation/src/generation/shared/static_files/{course_code}/learning_outcomes.json"
             with open(llo_path, 'r') as f:
                 learning_outcomes = json.load(f)
             week_llo = learning_outcomes.get(f"week_{week_number}", [])

@@ -82,7 +82,7 @@ class Neo4jService(BaseModel):
                     counters.properties_set
                 )
                 
-                logger.info(f"Query executed successfully. Rows affected: {rows_affected}")
+                # logger.info(f"Query executed successfully. Rows affected: {rows_affected}")
                 return Neo4jResult(
                     success=True, 
                     data=data, 

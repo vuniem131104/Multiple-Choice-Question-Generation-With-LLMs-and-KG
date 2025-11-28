@@ -7,4 +7,4 @@ class ExtractEntitySetting(BaseModel):
     index_name: str
     top_k: int
     query_nodes: int
-    dimensions: int = 1536
+    dimensions: int = 768

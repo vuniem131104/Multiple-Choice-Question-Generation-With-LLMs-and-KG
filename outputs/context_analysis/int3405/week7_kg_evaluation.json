@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm học sâu, nằm trong lĩnh vực học máy, với sự tập trung vào cách mà các thuật toán học sâu học các biểu diễn dữ liệu. Học sinh sẽ được yêu cầu định nghĩa học sâu, nhận diện ứng dụng cụ thể như AlphaGo và ChatGPT, cũng như mô tả cách mà học sâu khác biệt so với học máy truyền thống.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó định nghĩa rõ ràng Học sâu (Deep Learning) là một nhánh con của học máy sử dụng mạng nơ-ron nhân tạo với nhiều lớp ẩn để học các biểu diễn phân cấp của dữ liệu. Điều này trực tiếp trả lời câu hỏi của pipeline về việc học sâu sử dụng gì để học các biểu diễn dữ liệu, cũng như câu hỏi của baseline về định nghĩa học sâu trong lĩnh vực học máy.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào các khía cạnh cơ bản của mạng nơ-ron nhân tạo (ANN), bao gồm cấu trúc của nó với các lớp đầu vào, lớp ẩn, và lớp đầu ra. Học sinh sẽ cần nhớ công thức tính toán trọng số và ứng dụng của mạng trong các bài toán phân loại. Thảo luận về ví dụ thực tế sẽ làm rõ ứng dụng của ANN trong các lĩnh vực khác nhau.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph rất hữu ích vì nó cung cấp đầy đủ thông tin về cấu trúc của mạng nơ-ron nhân tạo (ANN), bao gồm các lớp đầu vào, lớp ẩn và lớp đầu ra, cũng như công thức tính toán đầu ra của perceptron. Cụ thể, phần 'Mạng Nơ-ron Nhân Tạo (Artificial Neural Networks - ANN)' và 'Perceptron - Đơn Vị Cơ Bản' trực tiếp chứa công thức $y = \\sigma(w^Tx + b)$ và giải thích các thành phần của nó. Phần 'Perceptron Đa Lớp (Multi-Layer Perceptron - MLP)' mô tả chi tiết kiến trúc với 'Lớp đầu vào', 'Lớp ẩn' và 'Lớp đầu ra'. Điều này giúp trả lời chính xác cả hai câu hỏi được đưa ra.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào việc khám phá các phương pháp phân loại trong học máy, bao gồm Hồi quy Logistic và Bộ phân loại Naïve Bayes được đề cập trong các bài giảng trước. Học sinh sẽ được yêu cầu so sánh những mô hình này và thảo luận về ưu và nhược điểm của từng mô hình trong việc giải quyết các bài toán phân loại thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Biểu đồ tri thức cung cấp thông tin chi tiết về cả Hồi quy Logistic (đặc biệt là Softmax Regression cho đa lớp) và Bộ phân loại Naïve Bayes, bao gồm công thức, đặc điểm và ưu nhược điểm của từng mô hình. Cụ thể, phần về Softmax Regression giải thích rõ ràng rằng nó là \"Mở rộng trực tiếp của logistic regression cho đa lớp\" và \"Output là phân phối xác suất trên tất cả lớp\", điều này trực tiếp trả lời cho câu hỏi của pipeline. Phần về Naïve Bayes cũng nêu rõ giả định \"độc lập điều kiện\" của nó, giúp so sánh với Hồi quy Logistic trong các trường hợp dữ liệu không độc lập. Do đó, biểu đồ tri thức rất hữu ích trong việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề và cung cấp thông tin chính xác để trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.9,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra sự hiểu biết của sinh viên về Gradient Descent, một thuật toán tối ưu hóa thiết yếu trong học máy. Học sinh sẽ được yêu cầu giải thích cách mà thuật toán hoạt động, động lực phía sau tối ưu hóa hàm lỗi, và ưu nhược điểm của nó so với Phương trình chuẩn được nêu tại tuần 1.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Cụ thể, phần '1. Gradient Descent (Hạ Gradient)' trong ngữ cảnh cung cấp trực tiếp công thức cập nhật trọng số: '$$w := w - \\alpha\\frac{\\partial L}{\\partial w}$$'. Điều này cho phép tạo ra câu hỏi và câu trả lời chính xác về công thức cập nhật trọng số trong Gradient Descent. Ngoài ra, ngữ cảnh cũng giải thích rõ ràng về 'learning rate' (tốc độ học) là một hyperparameter quan trọng, giúp trả lời câu hỏi của hệ thống baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ mở rộng vào các khái niệm SVM từ bài giảng trước, yêu cầu học sinh thảo luận về cách thức hoạt động của Hard Margin và Soft Margin SVM. Học sinh sẽ cần nhận diện ứng dụng của SVM trong các bài toán không tuyến tính và ưu điểm của nó so với các mô hình phân loại khác mà đã học trước đó.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Bối cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về cả Hard Margin SVM và Soft Margin SVM, bao gồm các hạn chế của Hard Margin SVM khi có outliers và cách Soft Margin SVM giải quyết vấn đề này bằng cách giới thiệu các biến slack. Điều này trực tiếp hỗ trợ việc trả lời câu hỏi của pipeline về ảnh hưởng của outliers đến Hard Margin SVM và câu hỏi của baseline về yếu tố quyết định sử dụng Soft Margin thay vì Hard Margin trong các bài toán phân loại không tuyến tính.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 1.0,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này hướng tới việc phân tích các loại hàm kích hoạt khác nhau trong mạng nơ-ron, như Sigmoid, Tanh và ReLU. Học sinh sẽ cần phân biệt giữa các hàm này và thảo luận về cách mà chúng ảnh hưởng đến khả năng học của mạng nơ-ron, kết nối với các phương pháp tối ưu hóa đã thảo luận trong các tuần trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về các hàm kích hoạt (Sigmoid, Tanh, ReLU), bao gồm đặc điểm, ưu nhược điểm của từng hàm. Đặc biệt, nó nêu rõ nhược điểm của Sigmoid và Tanh là 'Vanishing gradient' và ưu điểm của ReLU là 'Không bị vanishing gradient' khi z > 0, cũng như việc ReLU là 'hàm kích hoạt phổ biến nhất cho lớp ẩn'. Điều này trực tiếp trả lời câu hỏi của pipeline về hàm kích hoạt khắc phục vanishing gradient và thường dùng trong lớp ẩn. Đối với câu hỏi của baseline, đồ thị tri thức cũng cung cấp đủ thông tin để so sánh các hàm và nhận ra ReLU có khả năng học tốt hơn trong tình huống gradient thấp (do không bị vanishing gradient như Sigmoid/Tanh).",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra kiến thức của học sinh về phân cụm trong học máy, các thuật toán như K-Means và DBSCAN được trình bày trong tuần 6. Học sinh sẽ được yêu cầu thảo luận về các ứng dụng của phân cụm và cách mà các yếu tố như tính chất dữ liệu ảnh hưởng đến quá trình này, liên kết đến các ứng dụng thực tế mà học sinh đã học.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh cung cấp thông tin chi tiết về thuật toán DBSCAN, bao gồm các tham số của nó như ε (epsilon) và MinPts. Cụ thể, ngữ cảnh định nghĩa rõ ràng ε là \"Maximum distance giữa 2 điểm để được coi là neighbors\", điều này trực tiếp trả lời câu hỏi của pipeline về tham số xác định khoảng cách tối đa giữa hai điểm để chúng được coi là hàng xóm. Do đó, ngữ cảnh rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào quy trình lan truyền ngược trong mạng nơ-ron, yêu cầu học sinh mô tả quy trình và ứng dụng của nó trong việc huấn luyện mạng. Qua đó, sinh viên sẽ cần nắm rõ lý thuyết đằng sau việc cập nhật trọng số và vai trò của gradient trong hệ thống học máy, có liên hệ với các kỹ thuật tối ưu hóa đã học trước đây.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Cụ thể, phần 'Lan Truyền Ngược (Backpropagation)' và 'Các bước chi tiết' đã cung cấp trực tiếp công thức cần thiết để trả lời câu hỏi của pipeline: \"Tính $$\\frac{\\partial L}{\\partial W^{[l]}} = \\frac{\\partial L}{\\partial z^{[l]}} \\cdot (a^{[l-1]})^T$$\". Điều này cho thấy ngữ cảnh chứa thông tin chính xác và đầy đủ để trả lời câu hỏi về công thức tính gradient của hàm loss theo trọng số trong quá trình lan truyền ngược.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    }
+]

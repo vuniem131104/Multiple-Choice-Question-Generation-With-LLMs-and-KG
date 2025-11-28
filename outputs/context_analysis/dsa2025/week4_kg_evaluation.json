@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khái niệm tổng quan về Quicksort, một trong những thuật toán sắp xếp cổ điển, bao gồm cách hoạt động của nó qua ba bước chính. Học sinh nên biết cách thuật toán thực hiện xáo trộn, phân vùng và sắp xếp đệ quy. Nội dung có thể được kiểm tra thông qua định nghĩa và mô tả các bước của thuật toán.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về Quicksort, bao gồm khái niệm, ý tưởng chính và các bước hoạt động của nó. Cụ thể, phần \"1.2. Ý tưởng chính\" của Quicksort mô tả rõ ràng ba bước: \"1. Chọn Pivot\", \"2. Partition\", và \"3. Đệ quy\". Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời cho câu hỏi của hệ thống baseline về ba bước chính của thuật toán Quicksort. Ngoài ra, ngữ cảnh cũng đề cập đến \"Chia để trị (Divide and Conquer)\" là kỹ thuật mà Quicksort sử dụng, giúp trả lời câu hỏi của hệ thống pipeline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 1.0,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Thảo luận về quy trình phân vùng trong thuật toán Quicksort, bao gồm cách sử dụng các con trỏ để quét mảng và hoán đổi các phần tử. Học sinh cần hiểu rõ các bước thực hiện phân vùng và tối ưu hóa sử dụng trong mã Java để thực hiện điều này. Nội dung có thể được kiểm tra thông qua phân tích và mô tả quy trình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về thuật toán Quicksort, bao gồm khái niệm, ý tưởng chính, các cài đặt phân vùng (Lomuto và Hoare), phân tích độ phức tạp và các tối ưu hóa. Cụ thể, nó giải thích rõ ràng về vai trò của 'pivot' trong quá trình phân vùng, điều này trực tiếp trả lời câu hỏi của pipeline. Ngoài ra, ngữ cảnh cũng mô tả cách các con trỏ được sử dụng trong Hoare Partition để quét mảng và hoán đổi các phần tử, hỗ trợ cho câu hỏi của baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Đánh giá hiệu suất của Quicksort bằng cách phân tích các trường hợp tốt nhất, xấu nhất và trung bình. Học sinh sẽ cần biết công thức và cách tính toán số lần so sánh trong từng trường hợp. Nội dung này bổ sung kiến thức về Mergesort từ tuần trước để so sánh hiệu suất và ứng dụng thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về độ phức tạp thời gian của Quicksort trong các trường hợp tốt nhất, xấu nhất và trung bình, bao gồm cả khi pivot được chọn ngẫu nhiên. Cụ thể, phần '3.1. Độ phức tạp thời gian' và '4.1. Random Pivot (Tránh worst case)' trực tiếp trả lời câu hỏi của pipeline về độ phức tạp thời gian trung bình khi pivot được chọn ngẫu nhiên là O(n log n). Nó cũng cung cấp thông tin về số lần so sánh trong trường hợp tốt nhất (O(n log n)) để trả lời câu hỏi của baseline. Các phần này đều nằm trong ngữ cảnh được cung cấp, giúp xác nhận tính chính xác của cả hai câu trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khám phá các thuộc tính quan trọng của Quicksort, bao gồm độ sâu đệ quy, không gian phụ và tính không ổn định của thuật toán. Học sinh nên hiểu các ảnh hưởng của các thuộc tính này đến hiệu suất và ứng dụng thực tế của Quicksort. Nội dung này có thể kiểm tra bằng cách so sánh các thuộc tính với Mergesort từ tuần 3.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về Quicksort, bao gồm các đặc điểm như tính không ổn định (unstable), độ phức tạp không gian (space complexity) và độ sâu đệ quy (recursion depth). Cụ thể, phần \"Đặc điểm\" của Quicksort nêu rõ \"Unstable (không giữ thứ tự tương đối)\", trực tiếp trả lời cho câu hỏi của pipeline về tính không ổn định. Đối với câu hỏi của baseline, ngữ cảnh cũng cung cấp thông tin về \"Độ phức tạp không gian\" với \"Best/Average case: O(log n) - Chiều cao cây đệ quy\" và \"Worst case: O(n) - Cây đệ quy thoái hóa\", hoàn toàn phù hợp để trả lời câu hỏi về độ sâu đệ quy và không gian phụ. Do đó, ngữ cảnh rất hữu ích cho cả hai cặp câu hỏi-trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Đi sâu vào những cải tiến thực tiễn cho Quicksort, chẳng hạn như sắp xếp chèn cho các mảng con nhỏ và việc sử dụng median. Học sinh cần hiểu rõ về các chiến lược này và ảnh hưởng của chúng đến hiệu suất. Nội dung có thể được kiểm tra thông qua áp dụng các cải tiến vào tình huống cụ thể, liên kết với kiến thức từ tuần 2.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về các kỹ thuật tối ưu hóa Quicksort, bao gồm \"Median-of-Three\" và \"Random Pivot\", cũng như \"Three-Way Partitioning\". Cụ thể, phần \"4.2. Median-of-Three (Tối ưu)\" trực tiếp giải thích kỹ thuật này và cách nó giúp chọn pivot tốt hơn. Điều này hoàn toàn phù hợp với câu hỏi của pipeline về việc chọn pivot tốt hơn bằng cách sử dụng giá trị trung vị của ba phần tử. Ngoài ra, kiến thức về \"Insertion Sort\" cho mảng con nhỏ cũng được đề cập trong phần \"6.3. Hybrid approach\", mặc dù không trực tiếp liên quan đến câu hỏi của pipeline nhưng lại liên quan đến câu hỏi của baseline và chủ đề chung.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Giới thiệu về vấn đề cờ Hà Lan trong sắp xếp ba màu và cách thực hiện phân vùng 3 chiều để tối ưu hóa Quicksort. Học sinh cần biết cách xử lý tình huống đặc biệt này và cách áp dụng nó vào thuật toán. Nội dung liên quan đến các khái niệm từ tuần 1 và 2 về tối ưu hóa thuật toán, kiểm tra sự hiểu biết sâu hơn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về \"Three-Way Partitioning (Dutch National Flag)\" trong phần \"Tối ưu hóa Quick Sort\". Cụ thể, nó giải thích rằng kỹ thuật này \"Xử lý tốt khi có nhiều phần tử trùng lặp\" và cung cấp cả mã nguồn Python cùng với giải thích về các khái niệm quan trọng và mối quan hệ. Điều này trực tiếp trả lời câu hỏi của pipeline về việc phương pháp phân hoạch ba chiều được sử dụng để xử lý tình huống nào một cách hiệu quả nhất, và câu trả lời \"Khi có nhiều phần tử trùng lặp trong mảng\" hoàn toàn khớp với nội dung trong đồ thị tri thức.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khám phá các biến thể của Quicksort sử dụng hai và ba phần tử chốt để cải thiện hiệu suất. Học sinh cần hiểu cách mà những biến thể này thực hiện phân vùng và áp dụng chúng trong các trường hợp thực tế. Nội dung này có thể kiểm tra sự hiểu biết về các phương pháp tối ưu trong sắp xếp, liên kết với Mergesort từ tuần 3.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Cụ thể, phần 'Three-Way Partitioning (Dutch National Flag)' và 'quick_sort_3way' trong ngữ cảnh giải thích chi tiết về kỹ thuật phân vùng ba chiều, bao gồm cách nó chia mảng thành ba phần (nhỏ hơn pivot, bằng pivot, lớn hơn pivot) và mục đích của nó (xử lý tốt khi có nhiều phần tử trùng lặp). Điều này trực tiếp cung cấp thông tin cần thiết để trả lời câu hỏi về phương pháp phân chia mảng trong Quicksort ba chốt.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Tìm hiểu cách thức hoạt động của phương thức Arrays.sort() trong Java 7 và sự khác biệt giữa việc sử dụng quicksort hai chốt và Timsort. Học sinh nên biết khi nào sử dụng các phương thức nào để đạt hiệu suất tối ưu trong thực tiễn. Nội dung liên quan đến việc hiểu rõ các ứng dụng từ kiến thức học được ở tuần 2 và tuần 3.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về cách thức hoạt động của Arrays.sort() trong Java 7, bao gồm việc sử dụng Dual-Pivot Quick Sort cho các kiểu nguyên thủy và Timsort cho các kiểu đối tượng. Điều này trực tiếp trả lời câu hỏi về phương thức được sử dụng và sự khác biệt giữa quicksort hai chốt và Timsort, giúp tạo ra câu trả lời chính xác và đầy đủ.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.9,
+            "winner": "pipeline"
+        }
+    }
+]

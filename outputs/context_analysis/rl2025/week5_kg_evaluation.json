@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này kiểm tra hiểu biết về các khái niệm cơ bản liên quan đến Quy trình Quyết định Markov (MDP), bao gồm Định nghĩa Tính chất Markov, Ma trận Chuyển đổi Trạng thái và Phương trình Bellman. Học sinh sẽ cần phải hiểu và định nghĩa các thuật ngữ này để trả lời các câu hỏi trắc nghiệm.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Đối với cặp câu hỏi-trả lời của pipeline, đồ thị tri thức cung cấp định nghĩa rõ ràng về các thành phần cơ bản của MDP, bao gồm \"Tập trạng thái (State Space - S)\", \"Tập hành động (Action Space - A)\", \"Hàm chuyển trạng thái (State Transition Function - P)\", \"Hàm phần thưởng (Reward Function - R)\" và \"Hệ số chiết khấu (Discount Factor - γ)\", và nêu rõ rằng một MDP được định nghĩa bởi bộ năm phần tử này. Đối với cặp câu hỏi-trả lời của baseline, đồ thị tri thức cũng định nghĩa rõ ràng \"Tính chất Markov\" và ý nghĩa của nó, giúp trả lời câu hỏi một cách chính xác.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào Lập trình động (DP) như một phương pháp mạnh mẽ cho việc tối ưu hóa trong MDP. Học sinh sẽ được thử nghiệm kiến thức về các thuật toán DP như Đánh giá chính sách lặp và Lặp giá trị, cùng với các công thức toán học liên quan và ứng dụng thực tiễn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về Lập trình động (DP), bao gồm định nghĩa, điều kiện áp dụng, vai trò trong Reinforcement Learning, và đặc biệt là công thức phương trình Bellman cho Policy Evaluation. Điều này giúp tạo ra câu hỏi và câu trả lời chính xác cho cặp QA của pipeline về công thức Bellman. Đối với cặp QA của baseline, knowledge graph cũng chứa thông tin về các thuật toán DP như Policy Iteration (Đánh giá chính sách lặp) và Value Iteration, giúp trả lời câu hỏi về thuật toán tối ưu hóa chính sách.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khai thác các khái niệm liên quan đến Học khác biệt thời gian, bao gồm sự khác biệt giữa MC và TD cũng như các ứng dụng thực tiễn của TD. Học sinh cần phân biệt TD và các phương pháp học khác, cung cấp câu trả lời cho các câu hỏi cụ thể từ nội dung đã học.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp trực tiếp công thức cập nhật hàm giá trị V(S_t) trong thuật toán TD(0) như được yêu cầu trong câu hỏi của pipeline. Cụ thể, phần \"Nội dung từ tài liệu\" dưới mục \"3. Temporal-Difference Learning (TD)\" và \"3.2. TD(0) - Temporal Difference cơ bản\" đã nêu rõ công thức: \"V(S_t) = V(S_t) + α[R_{t+1} + γV(S_{t+1}) - V(S_t)]\". Điều này cho phép tạo ra câu trả lời chính xác và trực tiếp từ ngữ cảnh.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.2,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra khả năng tối ưu hóa hàm giá trị của một MDP, tập trung vào Lặp lại chính sách và Q-learning. Học sinh sẽ cần sử dụng các công thức liên quan cho các khái niệm kiểm soát không mô hình.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp trực tiếp công thức cập nhật Q-value cho thuật toán Q-Learning, bao gồm cả ký hiệu và giải thích chi tiết. Cả hai câu hỏi đều hỏi về công thức này và ngữ cảnh cung cấp chính xác thông tin cần thiết để trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sinh ra từ các khái niệm liên quan đến việc xấp xỉ hàm giá trị cho các MDP lớn. Học sinh sẽ được yêu cầu hiểu các phương pháp khác nhau của xấp xỉ hàm, bao gồm xấp xỉ tuyến tính và phi tuyến tính, cũng như cách chúng áp dụng trong học tăng cường.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về xấp xỉ hàm giá trị, bao gồm mục tiêu tối thiểu hóa độ sai lệch J(w) = ||V^π - V̂_w||²_d, điều này trực tiếp trả lời câu hỏi của pipeline. Ngoài ra, nó cũng đề cập đến các phương pháp xấp xỉ tuyến tính và phi tuyến tính, mặc dù không trực tiếp trả lời câu hỏi của pipeline nhưng lại liên quan đến câu hỏi của baseline. Các phần về Stochastic Gradient Descent, Monte Carlo với Function Approximation, TD(0) và TD(λ) với Function Approximation đều là các phương pháp xấp xỉ hàm giá trị, cung cấp ngữ cảnh phong phú cho chủ đề.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này yêu cầu học sinh so sánh ưu và nhược điểm của Học Monte-Carlo và Học khác biệt thời gian (TD). Các câu hỏi sẽ kiểm tra khả năng phân tích và đánh giá giữa hai phương pháp này trong bối cảnh học tăng cường.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời của pipeline. Ngữ cảnh cung cấp thông tin chi tiết về so sánh giữa Monte Carlo và TD Learning, đặc biệt là về độ thiên lệch (bias) và độ biến thiên (variance). Cụ thể, phần 'Bias-Variance Tradeoff' và 'Bảng so sánh đầy đủ' trực tiếp nêu rõ rằng Monte Carlo có bias thấp và variance cao, trong khi TD(0) có bias cao và variance thấp. Điều này cho phép trả lời chính xác câu hỏi của pipeline về việc phương pháp nào có độ thiên lệch thấp hơn và độ biến thiên cao hơn. Ngữ cảnh cũng cung cấp các đặc điểm khác của cả hai phương pháp, giúp củng cố sự hiểu biết về chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kiểm tra khả năng ứng dụng xấp xỉ hàm giá trị hành động trong việc tối ưu hóa chính sách học. Học sinh sẽ gặp các câu hỏi trắc nghiệm yêu cầu giải thích mối liên hệ giữa các giá trị xấp xỉ và thực trong học tăng cường.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời của pipeline. Cụ thể, ngữ cảnh cung cấp định nghĩa rõ ràng về \"Action-Value Function Approximation\" và công thức \"Q̂(s, a; w) = w^T φ(s, a)\", đây chính xác là câu trả lời cho câu hỏi của pipeline. Ngữ cảnh cũng giải thích mục đích của việc xấp xỉ hàm giá trị hành động trong \"Control với Function Approximation\", điều này giúp hiểu rõ hơn về ứng dụng của nó, liên quan đến câu hỏi của baseline. Do đó, ngữ cảnh chứa đầy đủ thông tin cần thiết để trả lời cả hai câu hỏi.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết nối các khái niệm từ MDP và kiểm soát không mô hình từ tuần 4 với các ứng dụng thực tiễn. Học sinh cần hiểu rõ mối quan hệ giữa các khái niệm đã học trong các tuần trước và tuần hiện tại.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp đầy đủ thông tin để trả lời câu hỏi của pipeline. Cụ thể, phần 'Chính sách tối ưu' trong mục 'Markov Decision Processes - Quá Trình Quyết Định Markov' đã định nghĩa rõ ràng công thức để tìm chính sách tối ưu π*(s) từ Q*(s,a) là 'π*(s) = argmaxₐ Q*(s,a)'. Điều này khớp hoàn toàn với câu trả lời được đưa ra.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.7,
+            "winner": "pipeline"
+        }
+    }
+]

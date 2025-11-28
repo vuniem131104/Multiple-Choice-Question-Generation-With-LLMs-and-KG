@@ -1,552 +1,552 @@
 [
-    {
-        "question": "Học tăng cường là gì?",
-        "options": {
-            "A": "Kỹ thuật học dựa trên dự đoán",
-            "B": "Kỹ thuật học dựa trên phản hồi",
-            "C": "Kỹ thuật học dựa trên kết quả lịch sử"
-        },
-        "answer": "Kỹ thuật học dựa trên phản hồi",
-        "explanation": "Học tăng cường là một kỹ thuật học dựa trên phản hồi."
+  {
+    "question": "Học tăng cường là gì?",
+    "options": {
+      "A": "Kỹ thuật học dựa trên dự đoán",
+      "B": "Kỹ thuật học dựa trên phản hồi",
+      "C": "Kỹ thuật học dựa trên kết quả lịch sử"
     },
-    {
-        "question": "Học tăng cường cung cấp bao nhiêu loại phản hồi?",
-        "options": {
-            "A": "1",
-            "B": "2",
-            "C": "3",
-            "D": "4"
-        },
-        "answer": "2",
-        "explanation": "Học tăng cường cung cấp hai loại phản hồi: tích cực và tiêu cực."
+    "answer": "Kỹ thuật học dựa trên phản hồi",
+    "explanation": "Học tăng cường là một kỹ thuật học dựa trên phản hồi."
+  },
+  {
+    "question": "Học tăng cường cung cấp bao nhiêu loại phản hồi?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
     },
-    {
-        "question": "Học tăng cường sử dụng loại dữ liệu nào?",
-        "options": {
-            "A": "Dữ liệu có nhãn",
-            "B": "Dữ liệu không có nhãn",
-            "C": "Không sử dụng",
-            "D": "Cả hai"
-        },
-        "answer": "Không sử dụng",
-        "explanation": "Học tăng cường không sử dụng bất kỳ loại dữ liệu cố định nào như trong học có giám sát hay không giám sát."
+    "answer": "2",
+    "explanation": "Học tăng cường cung cấp hai loại phản hồi: tích cực và tiêu cực."
+  },
+  {
+    "question": "Học tăng cường sử dụng loại dữ liệu nào?",
+    "options": {
+      "A": "Dữ liệu có nhãn",
+      "B": "Dữ liệu không có nhãn",
+      "C": "Không sử dụng",
+      "D": "Cả hai"
     },
-    {
-        "question": "Học tăng cường được học thông qua đâu?",
-        "options": {
-            "A": "Kinh nghiệm",
-            "B": "Dự đoán",
-            "C": "Phân tích dữ liệu"
-        },
-        "answer": "Kinh nghiệm",
-        "explanation": "Học tăng cường học thông qua kinh nghiệm."
+    "answer": "Không sử dụng",
+    "explanation": "Học tăng cường không sử dụng bất kỳ loại dữ liệu cố định nào như trong học có giám sát hay không giám sát."
+  },
+  {
+    "question": "Học tăng cường được học thông qua đâu?",
+    "options": {
+      "A": "Kinh nghiệm",
+      "B": "Dự đoán",
+      "C": "Phân tích dữ liệu"
     },
-    {
-        "question": "Có bao nhiêu loại học máy?",
-        "options": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "5"
-        },
-        "answer": "4",
-        "explanation": "Có bốn loại học máy chính: Học có giám sát, học không giám sát, học bán giám sát và học tăng cường."
+    "answer": "Kinh nghiệm",
+    "explanation": "Học tăng cường học thông qua kinh nghiệm."
+  },
+  {
+    "question": "Có bao nhiêu loại học máy?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
     },
-    {
-        "question": "Ví dụ thực tế nào dưới đây là ứng dụng của học tăng cường?",
-        "options": {
-            "A": "Dự đoán giá nhà",
-            "B": "Phân tích giỏ hàng (market basket analysis)",
-            "C": "Phân loại văn bản",
-            "D": "Xe tự lái"
-        },
-        "answer": "Xe tự lái",
-        "explanation": "Xe tự lái là một sản phẩm ứng dụng các khái niệm học tăng cường."
+    "answer": "4",
+    "explanation": "Có bốn loại học máy chính: Học có giám sát, học không giám sát, học bán giám sát và học tăng cường."
+  },
+  {
+    "question": "Ví dụ thực tế nào dưới đây là ứng dụng của học tăng cường?",
+    "options": {
+      "A": "Dự đoán giá nhà",
+      "B": "Phân tích giỏ hàng (market basket analysis)",
+      "C": "Phân loại văn bản",
+      "D": "Xe tự lái"
     },
-    {
-        "question": "Agent trong học tăng cường là gì?",
-        "options": {
-            "A": "Agent là tình huống mà trong đó phần thưởng được trao đổi",
-            "B": "Agent là một giá trị đơn giản trong học tăng cường.",
-            "C": "Agent là một thực thể khám phá môi trường."
-        },
-        "answer": "Agent là một thực thể khám phá môi trường.",
-        "explanation": "Agent là một thực thể thực hiện hành động và khám phá môi trường."
+    "answer": "Xe tự lái",
+    "explanation": "Xe tự lái là một sản phẩm ứng dụng các khái niệm học tăng cường."
+  },
+  {
+    "question": "Agent trong học tăng cường là gì?",
+    "options": {
+      "A": "Agent là tình huống mà trong đó phần thưởng được trao đổi",
+      "B": "Agent là một giá trị đơn giản trong học tăng cường.",
+      "C": "Agent là một thực thể khám phá môi trường."
     },
-    {
-        "question": "Môi trường (environment) trong học tăng cường là gì?",
-        "options": {
-            "A": "Môi trường là một tình huống dựa trên trạng thái hiện tại",
-            "B": "Môi trường là tình huống mà agent tồn tại trong đó.",
-            "C": "Môi trường giống như phản hồi",
-            "D": "Môi trường là kết quả mà agent trả về"
-        },
-        "answer": "Môi trường là tình huống mà agent tồn tại trong đó.",
-        "explanation": "Môi trường là tình huống hoặc hệ thống mà agent tồn tại và tương tác."
+    "answer": "Agent là một thực thể khám phá môi trường.",
+    "explanation": "Agent là một thực thể thực hiện hành động và khám phá môi trường."
+  },
+  {
+    "question": "Môi trường (environment) trong học tăng cường là gì?",
+    "options": {
+      "A": "Môi trường là một tình huống dựa trên trạng thái hiện tại",
+      "B": "Môi trường là tình huống mà agent tồn tại trong đó.",
+      "C": "Môi trường giống như phản hồi",
+      "D": "Môi trường là kết quả mà agent trả về"
     },
-    {
-        "question": "Hành động (actions) trong học tăng cường là gì?",
-        "options": {
-            "A": "Hành động là các bước mà agent thực hiện trong môi trường.",
-            "B": "Hành động là các hàm mà môi trường thực hiện.",
-            "C": "Hành động là phản hồi mà agent cung cấp."
-        },
-        "answer": "Hành động là các bước mà agent thực hiện trong môi trường.",
-        "explanation": "Hành động là các bước hoặc quyết định mà agent thực hiện trong môi trường."
+    "answer": "Môi trường là tình huống mà agent tồn tại trong đó.",
+    "explanation": "Môi trường là tình huống hoặc hệ thống mà agent tồn tại và tương tác."
+  },
+  {
+    "question": "Hành động (actions) trong học tăng cường là gì?",
+    "options": {
+      "A": "Hành động là các bước mà agent thực hiện trong môi trường.",
+      "B": "Hành động là các hàm mà môi trường thực hiện.",
+      "C": "Hành động là phản hồi mà agent cung cấp."
     },
-    {
-        "question": "Trạng thái (state) trong học tăng cường là gì?",
-        "options": {
-            "A": "Trạng thái là một tình huống mà agent tồn tại trong đó.",
-            "B": "Trạng thái là một giá trị đơn giản trong học tăng cường.",
-            "C": "Trạng thái là kết quả mà môi trường trả về sau khi agent thực hiện một hành động."
-        },
-        "answer": "Trạng thái là kết quả mà môi trường trả về sau khi agent thực hiện một hành động.",
-        "explanation": "Trạng thái là thông tin mà môi trường trả về mô tả tình hình sau khi agent thực hiện hành động."
+    "answer": "Hành động là các bước mà agent thực hiện trong môi trường.",
+    "explanation": "Hành động là các bước hoặc quyết định mà agent thực hiện trong môi trường."
+  },
+  {
+    "question": "Trạng thái (state) trong học tăng cường là gì?",
+    "options": {
+      "A": "Trạng thái là một tình huống mà agent tồn tại trong đó.",
+      "B": "Trạng thái là một giá trị đơn giản trong học tăng cường.",
+      "C": "Trạng thái là kết quả mà môi trường trả về sau khi agent thực hiện một hành động."
     },
-    {
-        "question": "Phần thưởng (Rewards) trong học tăng cường là gì?",
-        "options": {
-            "A": "Hành động của agent được đánh giá dựa trên phản hồi trả về từ môi trường.",
-            "B": "Môi trường trả về một giá trị gọi là phần thưởng.",
-            "C": "Phần thưởng là kết quả mà môi trường trả về sau khi agent thực hiện hành động."
-        },
-        "answer": "Hành động của agent được đánh giá dựa trên phản hồi trả về từ môi trường.",
-        "explanation": "Phần thưởng là cách đánh giá hành động của agent dựa trên phản hồi từ môi trường."
+    "answer": "Trạng thái là kết quả mà môi trường trả về sau khi agent thực hiện một hành động.",
+    "explanation": "Trạng thái là thông tin mà môi trường trả về mô tả tình hình sau khi agent thực hiện hành động."
+  },
+  {
+    "question": "Phần thưởng (Rewards) trong học tăng cường là gì?",
+    "options": {
+      "A": "Hành động của agent được đánh giá dựa trên phản hồi trả về từ môi trường.",
+      "B": "Môi trường trả về một giá trị gọi là phần thưởng.",
+      "C": "Phần thưởng là kết quả mà môi trường trả về sau khi agent thực hiện hành động."
     },
-    {
-        "question": "Chính sách (Policy) trong học tăng cường là gì?",
-        "options": {
-            "A": "Chính sách của agent quyết định mô hình môi trường nào nên được chọn",
-            "B": "Chính sách của agent quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại.",
-            "C": "Chính sách của agent quyết định phần thưởng của trạng thái."
-        },
-        "answer": "Chính sách của agent quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại.",
-        "explanation": "Chính sách xác định hành vi của agent: hành động nào phải thực hiện khi ở một trạng thái nhất định."
+    "answer": "Hành động của agent được đánh giá dựa trên phản hồi trả về từ môi trường.",
+    "explanation": "Phần thưởng là cách đánh giá hành động của agent dựa trên phản hồi từ môi trường."
+  },
+  {
+    "question": "Chính sách (Policy) trong học tăng cường là gì?",
+    "options": {
+      "A": "Chính sách của agent quyết định mô hình môi trường nào nên được chọn",
+      "B": "Chính sách của agent quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại.",
+      "C": "Chính sách của agent quyết định phần thưởng của trạng thái."
     },
-    {
-        "question": "Học tăng cường có tuân theo khái niệm thử và sai (hit and try) không?",
-        "options": {
-            "A": "Có",
-            "B": "Không"
-        },
-        "answer": "Có",
-        "explanation": "Có, học tăng cường tuân theo khái niệm thử và sai (thử nghiệm để học)."
+    "answer": "Chính sách của agent quyết định hành động nào nên thực hiện dựa trên trạng thái hiện tại.",
+    "explanation": "Chính sách xác định hành vi của agent: hành động nào phải thực hiện khi ở một trạng thái nhất định."
+  },
+  {
+    "question": "Học tăng cường có tuân theo khái niệm thử và sai (hit and try) không?",
+    "options": {
+      "A": "Có",
+      "B": "Không"
     },
-    {
-        "question": "Có bao nhiêu cách để triển khai học tăng cường?",
-        "options": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "5"
-        },
-        "answer": "3",
-        "explanation": "Có ba cách triển khai chính: dựa trên giá trị (value-based), dựa trên chính sách (policy-based) và dựa trên mô hình (model-based)."
+    "answer": "Có",
+    "explanation": "Có, học tăng cường tuân theo khái niệm thử và sai (thử nghiệm để học)."
+  },
+  {
+    "question": "Có bao nhiêu cách để triển khai học tăng cường?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
     },
-    {
-        "question": "Trong phương pháp nào của học tăng cường ta tìm hàm giá trị tối ưu?",
-        "options": {
-            "A": "Dựa trên giá trị (Value-based)",
-            "B": "Dựa trên chính sách (Policy-based)",
-            "C": "Dựa trên mô hình (Model-based)"
-        },
-        "answer": "Dựa trên giá trị (Value-based)",
-        "explanation": "Trong phương pháp dựa trên giá trị, ta tìm hàm giá trị tối ưu."
+    "answer": "3",
+    "explanation": "Có ba cách triển khai chính: dựa trên giá trị (value-based), dựa trên chính sách (policy-based) và dựa trên mô hình (model-based)."
+  },
+  {
+    "question": "Trong phương pháp nào của học tăng cường ta tìm hàm giá trị tối ưu?",
+    "options": {
+      "A": "Dựa trên giá trị (Value-based)",
+      "B": "Dựa trên chính sách (Policy-based)",
+      "C": "Dựa trên mô hình (Model-based)"
     },
-    {
-        "question": "Có bao nhiêu loại phương pháp dựa trên chính sách trong học tăng cường?",
-        "options": {
-            "A": "1",
-            "B": "2",
-            "C": "3",
-            "D": "4"
-        },
-        "answer": "2",
-        "explanation": "Có hai loại: quyết định (deterministic) và ngẫu nhiên (stochastic)."
+    "answer": "Dựa trên giá trị (Value-based)",
+    "explanation": "Trong phương pháp dựa trên giá trị, ta tìm hàm giá trị tối ưu."
+  },
+  {
+    "question": "Có bao nhiêu loại phương pháp dựa trên chính sách trong học tăng cường?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
     },
-    {
-        "question": "Trong phương pháp nào của học tăng cường ta tạo một mô hình ảo cho môi trường?",
-        "options": {
-            "A": "Dựa trên giá trị",
-            "B": "Dựa trên chính sách",
-            "C": "Dựa trên mô hình"
-        },
-        "answer": "Dựa trên mô hình",
-        "explanation": "Trong phương pháp dựa trên mô hình, ta xây dựng một mô phỏng (mô hình) của môi trường."
+    "answer": "2",
+    "explanation": "Có hai loại: quyết định (deterministic) và ngẫu nhiên (stochastic)."
+  },
+  {
+    "question": "Trong phương pháp nào của học tăng cường ta tạo một mô hình ảo cho môi trường?",
+    "options": {
+      "A": "Dựa trên giá trị",
+      "B": "Dựa trên chính sách",
+      "C": "Dựa trên mô hình"
     },
-    {
-        "question": "Từ nào là đồng nghĩa với ngẫu nhiên và xác suất?",
-        "options": {
-            "A": "Deterministic",
-            "B": "Stochastic"
-        },
-        "answer": "Stochastic",
-        "explanation": "Stochastic là từ đồng nghĩa với ngẫu nhiên và mang tính xác suất."
+    "answer": "Dựa trên mô hình",
+    "explanation": "Trong phương pháp dựa trên mô hình, ta xây dựng một mô phỏng (mô hình) của môi trường."
+  },
+  {
+    "question": "Từ nào là đồng nghĩa với ngẫu nhiên và xác suất?",
+    "options": {
+      "A": "Deterministic",
+      "B": "Stochastic"
     },
-    {
-        "question": "Học tăng cường bao gồm bao nhiêu thành phần chính?",
-        "options": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "5"
-        },
-        "answer": "4",
-        "explanation": "Chủ yếu có bốn thành phần: Chính sách (Policy), Tín hiệu phần thưởng (Reward Signal), Hàm giá trị (Value Function) và Mô hình môi trường (Model)."
+    "answer": "Stochastic",
+    "explanation": "Stochastic là từ đồng nghĩa với ngẫu nhiên và mang tính xác suất."
+  },
+  {
+    "question": "Học tăng cường bao gồm bao nhiêu thành phần chính?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
     },
-    {
-        "question": "Mục tiêu chính của agent là gì đối với tổng số phần thưởng cho các hành động tốt?",
-        "options": {
-            "A": "Tối thiểu hóa",
-            "B": "Tối đa hóa",
-            "C": "Không"
-        },
-        "answer": "Tối đa hóa",
-        "explanation": "Mục tiêu chính của agent là tối đa hóa tổng phần thưởng nhận được cho các hành động tốt."
+    "answer": "4",
+    "explanation": "Chủ yếu có bốn thành phần: Chính sách (Policy), Tín hiệu phần thưởng (Reward Signal), Hàm giá trị (Value Function) và Mô hình môi trường (Model)."
+  },
+  {
+    "question": "Mục tiêu chính của agent là gì đối với tổng số phần thưởng cho các hành động tốt?",
+    "options": {
+      "A": "Tối thiểu hóa",
+      "B": "Tối đa hóa",
+      "C": "Không"
     },
-    {
-        "question": "Học tăng cường được xác định bởi thành phần nào?",
-        "options": {
-            "A": "Chính sách",
-            "B": "Tín hiệu phần thưởng",
-            "C": "Hàm giá trị",
-            "D": "Mô hình môi trường"
-        },
-        "answer": "Tín hiệu phần thưởng",
-        "explanation": "Học tăng cường được đặc trưng bởi tín hiệu phần thưởng."
+    "answer": "Tối đa hóa",
+    "explanation": "Mục tiêu chính của agent là tối đa hóa tổng phần thưởng nhận được cho các hành động tốt."
+  },
+  {
+    "question": "Học tăng cường được xác định bởi thành phần nào?",
+    "options": {
+      "A": "Chính sách",
+      "B": "Tín hiệu phần thưởng",
+      "C": "Hàm giá trị",
+      "D": "Mô hình môi trường"
     },
-    {
-        "question": "Thành phần nào trong học tăng cường xác định hành vi của agent?",
-        "options": {
-            "A": "Chính sách",
-            "B": "Tín hiệu phần thưởng",
-            "C": "Hàm giá trị",
-            "D": "Mô hình môi trường"
-        },
-        "answer": "Chính sách",
-        "explanation": "Chính sách (Policy) xác định hành vi của agent."
+    "answer": "Tín hiệu phần thưởng",
+    "explanation": "Học tăng cường được đặc trưng bởi tín hiệu phần thưởng."
+  },
+  {
+    "question": "Thành phần nào trong học tăng cường xác định hành vi của agent?",
+    "options": {
+      "A": "Chính sách",
+      "B": "Tín hiệu phần thưởng",
+      "C": "Hàm giá trị",
+      "D": "Mô hình môi trường"
     },
-    {
-        "question": "Tín hiệu phần thưởng có thể thay đổi chính sách không?",
-        "options": {
-            "A": "Có",
-            "B": "Không"
-        },
-        "answer": "Có",
-        "explanation": "Tín hiệu phần thưởng có thể ảnh hưởng và thay đổi chính sách."
+    "answer": "Chính sách",
+    "explanation": "Chính sách (Policy) xác định hành vi của agent."
+  },
+  {
+    "question": "Tín hiệu phần thưởng có thể thay đổi chính sách không?",
+    "options": {
+      "A": "Có",
+      "B": "Không"
     },
-    {
-        "question": "Phần thưởng mà agent có thể mong đợi phụ thuộc vào thành phần nào?",
-        "options": {
-            "A": "Chính sách",
-            "B": "Tín hiệu phần thưởng",
-            "C": "Hàm giá trị",
-            "D": "Mô hình môi trường"
-        },
-        "answer": "Hàm giá trị",
-        "explanation": "Hàm giá trị (Value Function) cho biết phần thưởng kỳ vọng mà agent có thể nhận được."
+    "answer": "Có",
+    "explanation": "Tín hiệu phần thưởng có thể ảnh hưởng và thay đổi chính sách."
+  },
+  {
+    "question": "Phần thưởng mà agent có thể mong đợi phụ thuộc vào thành phần nào?",
+    "options": {
+      "A": "Chính sách",
+      "B": "Tín hiệu phần thưởng",
+      "C": "Hàm giá trị",
+      "D": "Mô hình môi trường"
     },
-    {
-        "question": "Thành phần nào trong học tăng cường mô phỏng hành vi của môi trường?",
-        "options": {
-            "A": "Chính sách",
-            "B": "Tín hiệu phần thưởng",
-            "C": "Hàm giá trị",
-            "D": "Mô hình môi trường"
-        },
-        "answer": "Mô hình môi trường",
-        "explanation": "Mô hình (Model) mô phỏng hành vi của môi trường."
+    "answer": "Hàm giá trị",
+    "explanation": "Hàm giá trị (Value Function) cho biết phần thưởng kỳ vọng mà agent có thể nhận được."
+  },
+  {
+    "question": "Thành phần nào trong học tăng cường mô phỏng hành vi của môi trường?",
+    "options": {
+      "A": "Chính sách",
+      "B": "Tín hiệu phần thưởng",
+      "C": "Hàm giá trị",
+      "D": "Mô hình môi trường"
     },
-    {
-        "question": "Phương pháp giải quyết bài toán học tăng cường với sự trợ giúp của mô hình được gọi là gì?",
-        "options": {
-            "A": "Phương pháp dựa trên mô hình",
-            "B": "Phương pháp không dựa trên mô hình",
-            "C": "Phương pháp mô hình đã biết"
-        },
-        "answer": "Phương pháp dựa trên mô hình",
-        "explanation": "Phương pháp sử dụng mô hình để giải quyết bài toán được gọi là phương pháp dựa trên mô hình."
+    "answer": "Mô hình môi trường",
+    "explanation": "Mô hình (Model) mô phỏng hành vi của môi trường."
+  },
+  {
+    "question": "Phương pháp giải quyết bài toán học tăng cường với sự trợ giúp của mô hình được gọi là gì?",
+    "options": {
+      "A": "Phương pháp dựa trên mô hình",
+      "B": "Phương pháp không dựa trên mô hình",
+      "C": "Phương pháp mô hình đã biết"
     },
-    {
-        "question": "Ai đã giới thiệu phương trình Bellman?",
-        "options": {
-            "A": "Richard Ernest Bellman",
-            "B": "Alfonso Shimbel",
-            "C": "Edsger W. Dijkstra"
-        },
-        "answer": "Richard Ernest Bellman",
-        "explanation": "Richard Ernest Bellman là người giới thiệu phương trình Bellman."
+    "answer": "Phương pháp dựa trên mô hình",
+    "explanation": "Phương pháp sử dụng mô hình để giải quyết bài toán được gọi là phương pháp dựa trên mô hình."
+  },
+  {
+    "question": "Ai đã giới thiệu phương trình Bellman?",
+    "options": {
+      "A": "Richard Ernest Bellman",
+      "B": "Alfonso Shimbel",
+      "C": "Edsger W. Dijkstra"
     },
-    {
-        "question": "Gamma (γ) trong phương trình Bellman được gọi là gì?",
-        "options": {
-            "A": "Hệ số giá trị",
-            "B": "Hệ số chiết khấu",
-            "C": "Hệ số môi trường"
-        },
-        "answer": "Hệ số chiết khấu",
-        "explanation": "Gamma (γ) là hệ số chiết khấu (discount factor)."
+    "answer": "Richard Ernest Bellman",
+    "explanation": "Richard Ernest Bellman là người giới thiệu phương trình Bellman."
+  },
+  {
+    "question": "Gamma (γ) trong phương trình Bellman được gọi là gì?",
+    "options": {
+      "A": "Hệ số giá trị",
+      "B": "Hệ số chiết khấu",
+      "C": "Hệ số môi trường"
     },
-    {
-        "question": "Có bao nhiêu loại học tăng cường?",
-        "options": {
-            "A": "3",
-            "B": "4",
-            "C": "2",
-            "D": "5"
-        },
-        "answer": "2",
-        "explanation": "Có hai loại chính: Củng cố dương (Positive Reinforcement) và Củng cố âm (Negative Reinforcement)."
+    "answer": "Hệ số chiết khấu",
+    "explanation": "Gamma (γ) là hệ số chiết khấu (discount factor)."
+  },
+  {
+    "question": "Có bao nhiêu loại học tăng cường?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "2",
+      "D": "5"
     },
-    {
-        "question": "Trong loại củng cố nào ta thêm thứ gì đó làm tăng khả năng lặp lại hành vi mong muốn?",
-        "options": {
-            "A": "Củng cố dương (Positive Reinforcement)",
-            "B": "Củng cố âm (Negative Reinforcement)"
-        },
-        "answer": "Củng cố dương (Positive Reinforcement)",
-        "explanation": "Trong củng cố dương, ta thêm phần thưởng hoặc điều kiện khiến hành vi được lặp lại nhiều hơn."
+    "answer": "2",
+    "explanation": "Có hai loại chính: Củng cố dương (Positive Reinforcement) và Củng cố âm (Negative Reinforcement)."
+  },
+  {
+    "question": "Trong loại củng cố nào ta thêm thứ gì đó làm tăng khả năng lặp lại hành vi mong muốn?",
+    "options": {
+      "A": "Củng cố dương (Positive Reinforcement)",
+      "B": "Củng cố âm (Negative Reinforcement)"
     },
-    {
-        "question": "Bạn biểu diễn trạng thái của agent trong học tăng cường bằng gì?",
-        "options": {
-            "A": "Trạng thái chiết khấu",
-            "B": "Hệ số chiết khấu",
-            "C": "Trạng thái Markov"
-        },
-        "answer": "Trạng thái Markov",
-        "explanation": "Trạng thái của agent thường được biểu diễn bằng trạng thái Markov."
+    "answer": "Củng cố dương (Positive Reinforcement)",
+    "explanation": "Trong củng cố dương, ta thêm phần thưởng hoặc điều kiện khiến hành vi được lặp lại nhiều hơn."
+  },
+  {
+    "question": "Bạn biểu diễn trạng thái của agent trong học tăng cường bằng gì?",
+    "options": {
+      "A": "Trạng thái chiết khấu",
+      "B": "Hệ số chiết khấu",
+      "C": "Trạng thái Markov"
     },
-    {
-        "question": "P[St+1 | St ] = P[St +1 | S1,......, St], trong điều kiện này St có ý nghĩa gì?",
-        "options": {
-            "A": "Yếu tố trạng thái",
-            "B": "Hệ số chiết khấu",
-            "C": "Trạng thái Markov"
-        },
-        "answer": "Trạng thái Markov",
-        "explanation": "Trong điều kiện này, St đại diện cho trạng thái Markov."
+    "answer": "Trạng thái Markov",
+    "explanation": "Trạng thái của agent thường được biểu diễn bằng trạng thái Markov."
+  },
+  {
+    "question": "P[St+1 | St ] = P[St +1 | S1,......, St], trong điều kiện này St có ý nghĩa gì?",
+    "options": {
+      "A": "Yếu tố trạng thái",
+      "B": "Hệ số chiết khấu",
+      "C": "Trạng thái Markov"
     },
-    {
-        "question": "MDP trong học tăng cường có nghĩa là gì?",
-        "options": {
-            "A": "Quy trình chiết khấu Markov",
-            "B": "Quy trình giảm giá Markov",
-            "C": "Quy trình quyết định Markov (sai)",
-            "D": "Quy trình quyết định Markov"
-        },
-        "answer": "Quy trình quyết định Markov",
-        "explanation": "MDP là viết tắt của Markov Decision Process (Quy trình quyết định Markov)."
+    "answer": "Trạng thái Markov",
+    "explanation": "Trong điều kiện này, St đại diện cho trạng thái Markov."
+  },
+  {
+    "question": "MDP trong học tăng cường có nghĩa là gì?",
+    "options": {
+      "A": "Quy trình chiết khấu Markov",
+      "B": "Quy trình giảm giá Markov",
+      "C": "Quy trình quyết định Markov (sai)",
+      "D": "Quy trình quyết định Markov"
     },
-    {
-        "question": "Tại sao chúng ta sử dụng MDP trong học tăng cường?",
-        "options": {
-            "A": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường.",
-            "B": "Chúng ta sử dụng MDP để dự đoán các bài toán học tăng cường.",
-            "C": "Chúng ta sử dụng MDP để phân tích các bài toán học tăng cường."
-        },
-        "answer": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường.",
-        "explanation": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường."
+    "answer": "Quy trình quyết định Markov",
+    "explanation": "MDP là viết tắt của Markov Decision Process (Quy trình quyết định Markov)."
+  },
+  {
+    "question": "Tại sao chúng ta sử dụng MDP trong học tăng cường?",
+    "options": {
+      "A": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường.",
+      "B": "Chúng ta sử dụng MDP để dự đoán các bài toán học tăng cường.",
+      "C": "Chúng ta sử dụng MDP để phân tích các bài toán học tăng cường."
     },
-    {
-        "question": "MDP bao gồm bao nhiêu bộ (tuples)?",
-        "options": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "5"
-        },
-        "answer": "4",
-        "explanation": "MDP bao gồm 4 thành phần: Tập trạng thái S, Tập hành động A, Phần thưởng R và Xác suất chuyển tiếp P."
+    "answer": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường.",
+    "explanation": "Chúng ta sử dụng MDP để hình thức hóa các bài toán học tăng cường."
+  },
+  {
+    "question": "MDP bao gồm bao nhiêu bộ (tuples)?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
     },
-    {
-        "question": "Thuật toán nào dưới đây sẽ tìm hành động tốt nhất dựa trên trạng thái hiện tại của agent, không sử dụng mô hình và là off-policy?",
-        "options": {
-            "A": "Q-learning",
-            "B": "Tính chất Markov",
-            "C": "State action reward state action",
-            "D": "Deep Q neural network"
-        },
-        "answer": "Q-learning",
-        "explanation": "Q-learning tìm chính sách tốt nhất dựa trên trạng thái hiện tại mà không cần mô hình và là một thuật toán off-policy."
+    "answer": "4",
+    "explanation": "MDP bao gồm 4 thành phần: Tập trạng thái S, Tập hành động A, Phần thưởng R và Xác suất chuyển tiếp P."
+  },
+  {
+    "question": "Thuật toán nào dưới đây sẽ tìm hành động tốt nhất dựa trên trạng thái hiện tại của agent, không sử dụng mô hình và là off-policy?",
+    "options": {
+      "A": "Q-learning",
+      "B": "Tính chất Markov",
+      "C": "State action reward state action",
+      "D": "Deep Q neural network"
     },
-    {
-        "question": "SARSA trong học tăng cường là viết tắt của gì?",
-        "options": {
-            "A": "State action reward state action",
-            "B": "State achievement rewards state action",
-            "C": "State act reward achievement",
-            "D": "State act reward act"
-        },
-        "answer": "State action reward state action",
-        "explanation": "SARSA là viết tắt của State Action Reward State Action."
+    "answer": "Q-learning",
+    "explanation": "Q-learning tìm chính sách tốt nhất dựa trên trạng thái hiện tại mà không cần mô hình và là một thuật toán off-policy."
+  },
+  {
+    "question": "SARSA trong học tăng cường là viết tắt của gì?",
+    "options": {
+      "A": "State action reward state action",
+      "B": "State achievement rewards state action",
+      "C": "State act reward achievement",
+      "D": "State act reward act"
     },
-    {
-        "question": "Loại chính sách nào là chính sách mà agent đang cố gắng học?",
-        "options": {
-            "A": "behavior policy",
-            "B": "Target policy",
-            "C": "On-policy",
-            "D": "Off-policy"
-        },
-        "answer": "Target policy",
-        "explanation": "Target policy (chính sách mục tiêu) là chính sách mà agent đang cố gắng học."
+    "answer": "State action reward state action",
+    "explanation": "SARSA là viết tắt của State Action Reward State Action."
+  },
+  {
+    "question": "Loại chính sách nào là chính sách mà agent đang cố gắng học?",
+    "options": {
+      "A": "behavior policy",
+      "B": "Target policy",
+      "C": "On-policy",
+      "D": "Off-policy"
     },
-    {
-        "question": "Loại chính sách nào được agent sử dụng để chọn hành động?",
-        "options": {
-            "A": "behavior policy",
-            "B": "Target policy",
-            "C": "On-policy",
-            "D": "Off-policy"
-        },
-        "answer": "behavior policy",
-        "explanation": "Behavior policy là chính sách agent sử dụng để chọn hành động."
+    "answer": "Target policy",
+    "explanation": "Target policy (chính sách mục tiêu) là chính sách mà agent đang cố gắng học."
+  },
+  {
+    "question": "Loại chính sách nào được agent sử dụng để chọn hành động?",
+    "options": {
+      "A": "behavior policy",
+      "B": "Target policy",
+      "C": "On-policy",
+      "D": "Off-policy"
     },
-    {
-        "question": "Loại chính sách nào dưới đây là thuật toán học mà cùng một chính sách vừa được cải thiện vừa được đánh giá?",
-        "options": {
-            "A": "behavior policy",
-            "B": "Target policy",
-            "C": "On-policy",
-            "D": "Off-policy"
-        },
-        "answer": "On-policy",
-        "explanation": "On-policy là loại thuật toán trong đó chính sách được cải thiện và đánh giá cùng một lúc."
+    "answer": "behavior policy",
+    "explanation": "Behavior policy là chính sách agent sử dụng để chọn hành động."
+  },
+  {
+    "question": "Loại chính sách nào dưới đây là thuật toán học mà cùng một chính sách vừa được cải thiện vừa được đánh giá?",
+    "options": {
+      "A": "behavior policy",
+      "B": "Target policy",
+      "C": "On-policy",
+      "D": "Off-policy"
     },
-    {
-        "question": "Loại chính sách nào đánh giá và cải thiện một chính sách khác với chính sách được sử dụng để chọn hành động?",
-        "options": {
-            "A": "behavior policy",
-            "B": "Target policy",
-            "C": "On-policy",
-            "D": "Off-policy"
-        },
-        "answer": "Off-policy",
-        "explanation": "Off-policy là thuật toán đánh giá và cải thiện một chính sách khác với chính sách hành vi."
+    "answer": "On-policy",
+    "explanation": "On-policy là loại thuật toán trong đó chính sách được cải thiện và đánh giá cùng một lúc."
+  },
+  {
+    "question": "Loại chính sách nào đánh giá và cải thiện một chính sách khác với chính sách được sử dụng để chọn hành động?",
+    "options": {
+      "A": "behavior policy",
+      "B": "Target policy",
+      "C": "On-policy",
+      "D": "Off-policy"
     },
-    {
-        "question": "Trong On-policy và Off-policy, chính sách mục tiêu nào không bằng với chính sách hành vi?",
-        "options": {
-            "A": "On-policy",
-            "B": "Off-policy"
-        },
-        "answer": "Off-policy",
-        "explanation": "Trong off-policy, chính sách mục tiêu không bằng với chính sách hành vi."
+    "answer": "Off-policy",
+    "explanation": "Off-policy là thuật toán đánh giá và cải thiện một chính sách khác với chính sách hành vi."
+  },
+  {
+    "question": "Trong On-policy và Off-policy, chính sách mục tiêu nào không bằng với chính sách hành vi?",
+    "options": {
+      "A": "On-policy",
+      "B": "Off-policy"
     },
-    {
-        "question": "Trong On-policy và Off-policy, chính sách mục tiêu nào bằng với chính sách hành vi?",
-        "options": {
-            "A": "On-policy",
-            "B": "Off-policy"
-        },
-        "answer": "On-policy",
-        "explanation": "Trong on-policy, chính sách mục tiêu bằng với chính sách hành vi."
+    "answer": "Off-policy",
+    "explanation": "Trong off-policy, chính sách mục tiêu không bằng với chính sách hành vi."
+  },
+  {
+    "question": "Trong On-policy và Off-policy, chính sách mục tiêu nào bằng với chính sách hành vi?",
+    "options": {
+      "A": "On-policy",
+      "B": "Off-policy"
     },
-    {
-        "question": "Q-learning là thuật toán on-policy hay off-policy?",
-        "options": {
-            "A": "On-policy",
-            "B": "Off-policy"
-        },
-        "answer": "Off-policy",
-        "explanation": "Q-learning dựa trên thuật toán off-policy."
+    "answer": "On-policy",
+    "explanation": "Trong on-policy, chính sách mục tiêu bằng với chính sách hành vi."
+  },
+  {
+    "question": "Q-learning là thuật toán on-policy hay off-policy?",
+    "options": {
+      "A": "On-policy",
+      "B": "Off-policy"
     },
-    {
-        "question": "SARSA là thuật toán on-policy hay off-policy?",
-        "options": {
-            "A": "On-policy",
-            "B": "Off-policy"
-        },
-        "answer": "On-policy",
-        "explanation": "SARSA là thuật toán on-policy."
+    "answer": "Off-policy",
+    "explanation": "Q-learning dựa trên thuật toán off-policy."
+  },
+  {
+    "question": "SARSA là thuật toán on-policy hay off-policy?",
+    "options": {
+      "A": "On-policy",
+      "B": "Off-policy"
     },
-    {
-        "question": "DQN trong học tăng cường là gì?",
-        "options": {
-            "A": "Dynamic Q-learning network",
-            "B": "Dynamic Q-neural network",
-            "C": "Deep Q-neural network"
-        },
-        "answer": "Deep Q-neural network",
-        "explanation": "DQN là viết tắt của Deep Q-neural network."
+    "answer": "On-policy",
+    "explanation": "SARSA là thuật toán on-policy."
+  },
+  {
+    "question": "DQN trong học tăng cường là gì?",
+    "options": {
+      "A": "Dynamic Q-learning network",
+      "B": "Dynamic Q-neural network",
+      "C": "Deep Q-neural network"
     },
-    {
-        "question": "Sự khác biệt nào sau đây mô tả đúng giữa Q-learning và SARSA?",
-        "options": {
-            "A": "So với SARSA, QL học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu.",
-            "B": "So với QL, SARSA học trực tiếp chính sách tối ưu, trong khi QL học một chính sách gần tối ưu."
-        },
-        "answer": "So với SARSA, QL học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu.",
-        "explanation": "So với SARSA, Q-learning học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu."
+    "answer": "Deep Q-neural network",
+    "explanation": "DQN là viết tắt của Deep Q-neural network."
+  },
+  {
+    "question": "Sự khác biệt nào sau đây mô tả đúng giữa Q-learning và SARSA?",
+    "options": {
+      "A": "So với SARSA, QL học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu.",
+      "B": "So với QL, SARSA học trực tiếp chính sách tối ưu, trong khi QL học một chính sách gần tối ưu."
     },
-    {
-        "question": "Thuật toán nào cho hiệu năng cuối cùng tốt hơn?",
-        "options": {
-            "A": "QL",
-            "B": "SARSA"
-        },
-        "answer": "QL",
-        "explanation": "Q-learning thường cho hiệu năng cuối cùng tốt hơn."
+    "answer": "So với SARSA, QL học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu.",
+    "explanation": "So với SARSA, Q-learning học trực tiếp chính sách tối ưu, trong khi SARSA học một chính sách gần tối ưu."
+  },
+  {
+    "question": "Thuật toán nào cho hiệu năng cuối cùng tốt hơn?",
+    "options": {
+      "A": "QL",
+      "B": "SARSA"
     },
-    {
-        "question": "Thuật toán nào nhanh hơn?",
-        "options": {
-            "A": "QL",
-            "B": "SARSA"
-        },
-        "answer": "SARSA",
-        "explanation": "SARSA thường hội tụ nhanh hơn."
+    "answer": "QL",
+    "explanation": "Q-learning thường cho hiệu năng cuối cùng tốt hơn."
+  },
+  {
+    "question": "Thuật toán nào nhanh hơn?",
+    "options": {
+      "A": "QL",
+      "B": "SARSA"
     },
-    {
-        "question": "Q-learning là thuật toán model-free hay model-based?",
-        "options": {
-            "A": "Model-free",
-            "B": "Model-based"
-        },
-        "answer": "Model-free",
-        "explanation": "Q-learning là một thuật toán không dựa trên mô hình (model-free)."
+    "answer": "SARSA",
+    "explanation": "SARSA thường hội tụ nhanh hơn."
+  },
+  {
+    "question": "Q-learning là thuật toán model-free hay model-based?",
+    "options": {
+      "A": "Model-free",
+      "B": "Model-based"
     },
-    {
-        "question": "Chữ Q trong Q-learning là viết tắt của gì?",
-        "options": {
-            "A": "Quality",
-            "B": "Query",
-            "C": "Quantify",
-            "D": "Quick"
-        },
-        "answer": "Quality",
-        "explanation": "Trong Q-learning, 'Q' thường được hiểu là 'Quality' (chất lượng)."
+    "answer": "Model-free",
+    "explanation": "Q-learning là một thuật toán không dựa trên mô hình (model-free)."
+  },
+  {
+    "question": "Chữ Q trong Q-learning là viết tắt của gì?",
+    "options": {
+      "A": "Quality",
+      "B": "Query",
+      "C": "Quantify",
+      "D": "Quick"
     },
-    {
-        "question": "Ma trận tạo ra trong thuật toán Q-learning thường được gọi là gì?",
-        "options": {
-            "A": "Query-table",
-            "B": "Q-table",
-            "C": "Quick-matrix",
-            "D": "Table"
-        },
-        "answer": "Q-table",
-        "explanation": "Ma trận tạo ra trong Q-learning thường gọi là Q-table."
+    "answer": "Quality",
+    "explanation": "Trong Q-learning, 'Q' thường được hiểu là 'Quality' (chất lượng)."
+  },
+  {
+    "question": "Ma trận tạo ra trong thuật toán Q-learning thường được gọi là gì?",
+    "options": {
+      "A": "Query-table",
+      "B": "Q-table",
+      "C": "Quick-matrix",
+      "D": "Table"
     },
-    {
-        "question": "Học tăng cường có yêu cầu đào tạo trước không?",
-        "options": {
-            "A": "Có",
-            "B": "Không"
-        },
-        "answer": "Không",
-        "explanation": "Không, học tăng cường không yêu cầu đào tạo trước theo nghĩa của học có giám sát."
+    "answer": "Q-table",
+    "explanation": "Ma trận tạo ra trong Q-learning thường gọi là Q-table."
+  },
+  {
+    "question": "Học tăng cường có yêu cầu đào tạo trước không?",
+    "options": {
+      "A": "Có",
+      "B": "Không"
     },
-    {
-        "question": "Q-learning hoạt động dựa trên phương trình nào?",
-        "options": {
-            "A": "Phương trình Naïve Bayes",
-            "B": "Phương trình KNN",
-            "C": "Phương trình Bellman"
-        },
-        "answer": "Phương trình Bellman",
-        "explanation": "Q-learning hoạt động dựa trên phương trình Bellman."
-    }
+    "answer": "Không",
+    "explanation": "Không, học tăng cường không yêu cầu đào tạo trước theo nghĩa của học có giám sát."
+  },
+  {
+    "question": "Q-learning hoạt động dựa trên phương trình nào?",
+    "options": {
+      "A": "Phương trình Naïve Bayes",
+      "B": "Phương trình KNN",
+      "C": "Phương trình Bellman"
+    },
+    "answer": "Phương trình Bellman",
+    "explanation": "Q-learning hoạt động dựa trên phương trình Bellman."
+  }
 ]

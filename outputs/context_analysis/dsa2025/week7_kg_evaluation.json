@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này khám phá khái niệm hàm băm (Hash Function) và cách tính toán chỉ mục mảng từ khóa. Học sinh sẽ nắm vững định nghĩa, ví dụ, cùng với vấn đề phát sinh và xung đột trong hàm băm. Đây là kiến thức cơ bản cần thiết để hiểu cách hoạt động của bảng băm.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp định nghĩa rõ ràng về hàm băm (hash function) và mục đích của nó trong bảng băm, bao gồm các yêu cầu như phân bố đều và giảm thiểu va chạm. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline. Các khái niệm quan trọng như 'hash_function' và 'Minimize collisions' được định nghĩa rõ ràng, giúp củng cố thông tin trong câu trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này tập trung vào quy ước mã băm của Java, giúp sinh viên hiểu cách phương thức hashCode() hoạt động. Họ sẽ được kiểm tra về các điều kiện cần và mong muốn đối với giá trị trả về của mã băm và cách thực hiện điều này cho các lớp người dùng định nghĩa.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức tập trung vào cấu trúc dữ liệu Hash Table và các phương pháp băm trong Python, bao gồm các khái niệm như hàm băm, xử lý va chạm (chaining, open addressing), và ứng dụng. Tuy nhiên, chủ đề được cung cấp là về quy ước mã băm của Java và phương thức `hashCode()` trong Java. Ngữ cảnh không hề đề cập đến Java, phương thức `hashCode()` của Java, hay các quy ước cụ thể của Java liên quan đến mã băm. Do đó, ngữ cảnh không hữu ích để tạo ra câu hỏi và câu trả lời phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.9,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này phân tích xung đột xảy ra khi hai khóa khác nhau băm vào cùng một chỉ mục trong một bảng băm. Sinh viên sẽ hiểu nguyên nhân, đặc điểm của xung đột cùng với cách xử lý. Điều này có thể được kiểm tra qua các câu hỏi về ví dụ và đồ thị.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp định nghĩa rõ ràng về 'Collision (Xung đột)' trong Hash Table, giải thích nguyên nhân và các phương pháp xử lý chính là 'Chaining (Open Hashing)' và 'Open Addressing'. Các phần '2. Chaining (Separate Chaining)' và '3. Open Addressing' đi sâu vào chi tiết từng phương pháp, bao gồm ý tưởng và cài đặt. Điều này trực tiếp trả lời câu hỏi về các phương pháp xử lý xung đột, làm cho đồ thị tri thức rất hữu ích.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này hướng dẫn về bảng băm chuỗi riêng biệt (Separate-Chaining Symbol Table), sự triển khai và cách mà bảng này xử lý việc xung đột, cùng với hiệu suất của nó. Học sinh sẽ cần ứng dụng kiến thức trong các câu hỏi liên quan từ tuần trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về 'Chaining (Separate Chaining)' và cách nó xử lý va chạm. Cụ thể, phần '2. Chaining (Separate Chaining)' và '2.1. Ý tưởng' giải thích rằng mỗi slot trong bảng băm chứa một danh sách liên kết các phần tử có cùng giá trị băm. Điều này trực tiếp trả lời câu hỏi của pipeline về cách lưu trữ các khóa khác nhau có cùng giá trị băm. Ngoài ra, phần 'Các khái niệm quan trọng' cũng củng cố ý tưởng này, nêu rõ 'Chaining giải quyết vấn đề Collision bằng cách sử dụng linked list tại mỗi vị trí trong bảng băm để lưu trữ các phần tử có cùng giá trị băm.'",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này củng cố việc thu thập dữ liệu về phân tích chuỗi riêng biệt của bảng băm. Học sinh sẽ phân tích cách N và M trong bảng băm ảnh hưởng đến hiệu suất. Các câu hỏi sẽ yêu cầu phân tích dữ liệu khi có nhiều biến.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Đoạn trích từ biểu đồ tri thức không chứa bất kỳ thông tin nào về \"phân tích chuỗi riêng biệt của bảng băm\" hoặc cách N và M trong bảng băm ảnh hưởng đến hiệu suất. Thay vào đó, nó tập trung vào các chủ đề như Học máy, Học không giám sát (bao gồm K-Means Clustering, Phát hiện bất thường, Học luật kết hợp) và Học sâu. Do đó, biểu đồ tri thức không hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 0.1,
+            "without_context_question_relevance": 1.0,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này nhằm giúp học sinh hiểu rõ về cách thiết kế mã băm cho các kiểu người dùng định nghĩa. Họ sẽ học cách biến đổi mã băm cho các trường khác nhau và lý do cho sự lựa chọn đó. Kiến thức này kết nối với phần trước có liên quan đến mã băm trong Java.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời của pipeline. Cụ thể, phần '3.4. Double Hashing' trong ngữ cảnh cung cấp trực tiếp công thức 'h(k, i) = (h1(k) + i*h2(k)) mod m' được sử dụng để tính toán vị trí của một khóa khi xảy ra va chạm, đây chính xác là câu trả lời cho câu hỏi của pipeline. Điều này cho thấy ngữ cảnh chứa thông tin cần thiết và chính xác để trả lời câu hỏi.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.7,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này xem xét khái niệm hàm băm một chiều, với các ứng dụng thực tiễn như lưu trữ mật khẩu. Học sinh sẽ nhận diện các hàm băm một chiều khác nhau và hiểu cách thức hoạt động của chúng trong bảo mật.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù câu hỏi của pipeline có đề cập đến \"hàm băm một chiều\" và \"yêu cầu của một hàm băm tốt\", nhưng ngữ cảnh từ biểu đồ tri thức lại tập trung vào \"Hash Table\" và các phương pháp xử lý va chạm, cũng như các ứng dụng của Hash Table. Ngữ cảnh không cung cấp thông tin trực tiếp về \"hàm băm một chiều\" theo nghĩa mật mã học (cryptographic hash function) như chủ đề đã nêu (lưu trữ mật khẩu). Do đó, ngữ cảnh không thực sự hữu ích để trả lời câu hỏi về đặc điểm của hàm băm một chiều trong bối cảnh bảo mật như chủ đề mong muốn. Câu trả lời \"Phân bố đều các key\" là một đặc điểm của hàm băm nói chung trong cấu trúc dữ liệu, nhưng không phải là đặc điểm riêng biệt của hàm băm một chiều trong bảo mật.",
+            "with_context_question_relevance": 0.4,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này liên kết các khái niệm từ tuần 6 về cây tìm kiếm nhị phân và bảng băm, phân tích điểm mạnh và điểm yếu của mỗi phương pháp. Học sinh sẽ được kiểm tra khả năng so sánh hiệu suất giữa các cấu trúc dữ liệu và đối bức ảnh hưởng đến hiệu suất bảo mật.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích để tạo ra cặp câu hỏi-trả lời. Ngữ cảnh cung cấp thông tin chi tiết về độ phức tạp thời gian của các phép toán tìm kiếm trong cả Bảng băm (Hash Table) và Cây tìm kiếm nhị phân (BST), bao gồm cả trường hợp trung bình và trường hợp xấu nhất. Cụ thể, bảng so sánh độ phức tạp giữa các cấu trúc dữ liệu đã nêu rõ 'Hash Table' có độ phức tạp O(1) cho Search (trung bình) và 'BST' có O(log n) cho Search (trung bình). Điều này trực tiếp hỗ trợ việc trả lời câu hỏi về việc so sánh hiệu suất tìm kiếm và khi nào bảng băm có ưu thế hơn.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

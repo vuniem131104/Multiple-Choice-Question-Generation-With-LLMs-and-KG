@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Chủ đề này giải thích các khái niệm cơ bản về học tăng cường dựa trên chính sách, bao gồm cách thức mà chính sách được tham số hóa và áp dụng trong các tình huống khác nhau. Học sinh sẽ kiểm tra sự hiểu biết về công thức và ứng dụng cụ thể, chẳng hạn như trong trò chơi Rock-Paper-Scissors.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Cụ thể, định nghĩa về chính sách tối ưu π* được cung cấp rõ ràng trong phần 'Chính sách tối ưu' của tài liệu, với công thức Vᵖ*(s) ≥ Vᵖ(s), ∀s ∈ S, ∀π. Điều này cho phép trả lời chính xác câu hỏi về định nghĩa của π*.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.6,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Ngày nay, chủ đề này trình bày những lợi thế và bất lợi của học tăng cường dựa trên chính sách. Học sinh cần so sánh và đánh giá sự ưu việt và tác động của chúng đến hiệu suất của các chính sách ngẫu nhiên.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về các phương pháp học tăng cường, đặc biệt là Policy Iteration và Policy Gradient Methods, bao gồm cả ưu và nhược điểm của chúng. Cụ thể, phần 'Policy Iteration - Lặp Chính Sách' nêu rõ 'Ưu điểm: Luôn hội tụ đến chính sách tối ưu π*', điều này trực tiếp trả lời câu hỏi của pipeline về ưu điểm của học tăng cường trong việc cải thiện chính sách. Ngoài ra, phần 'Policy Gradient Methods - Phương Pháp Gradient Chính Sách' cũng liệt kê các ưu điểm như 'Better convergence' và 'Learn policies directly'. Những thông tin này rất hữu ích để tạo ra câu trả lời chính xác và phù hợp với câu hỏi của pipeline.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.7,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này nghiên cứu đạo hàm của chính sách và cách tối ưu hóa nó bằng các thuật toán đạo hàm chính sách. Học sinh sẽ được kiểm tra hiểu biết về công thức và cách thức áp dụng trong các tình huống thực tiễn.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp trực tiếp công thức cập nhật tham số chính sách θ trong thuật toán REINFORCE, như được trình bày rõ ràng trong phần '3.3. REINFORCE Algorithm' của tài liệu. Câu trả lời của pipeline được trích xuất chính xác từ ngữ cảnh này.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết nối các kiến thức từ tuần 5 và 6 về xấp xỉ hàm giá trị và tính đạo hàm. Học sinh sẽ khám phá cách xấp xỉ hàm giá trị tương thích liên quan đến đạo hàm chính sách và ảnh hưởng của nó đến sự chính xác và hiệu suất.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp thông tin chi tiết về 'Value Function Approximation' (Xấp xỉ hàm giá trị), bao gồm các phương pháp như Stochastic Gradient Descent (SGD) và công thức cập nhật trọng số w. Cụ thể, công thức `w_{t+1} = w_t + α[V^π(S_t) - V̂(S_t; w_t)]∇_w V̂(S_t; w_t)` được tìm thấy trực tiếp trong phần 'Stochastic Gradient Descent' dưới mục 'Value Function Approximation'. Điều này giúp trả lời chính xác câu hỏi của pipeline về phương trình cập nhật trọng số để tối thiểu hóa độ sai lệch giữa hàm giá trị thực và hàm giá trị xấp xỉ.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.6,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này yêu cầu học sinh tìm hiểu và áp dụng nguyên lý Quy trình Quyền lợi tối ưu Bellman từ tuần 1 và 2. Học sinh sẽ kiểm tra khả năng vận dụng phương trình vào các MDP thực tế để tìm ra chính sách tốt nhất.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp định nghĩa rõ ràng về chính sách tối ưu (optimal policy) và cách nó được xác định thông qua Q*(s,a), cụ thể là π*(s) = argmaxₐ Q*(s,a). Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline về cách xác định chính sách tối ưu π* trong Quy trình Quyền lợi tối ưu Bellman. Ngữ cảnh cũng đề cập đến các phương trình Bellman và mối quan hệ của chúng với việc tìm chính sách tối ưu, làm tăng tính hữu ích.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.7,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá cách đánh giá chất lượng của một chính sách thông qua các hàm mục tiêu và giá trị khởi điểm trong các MDP. Học sinh sẽ được kiểm tra khả năng tính toán và hiểu mối quan hệ giữa giá trị và chính sách.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp trực tiếp phương trình Bellman cho Policy Evaluation, là câu trả lời chính xác cho câu hỏi của pipeline. Cụ thể, phần '2.2. Phương trình Bellman cho Policy Evaluation' trong mục 'Planning by Dynamic Programming - Lập Kế Hoạch Bằng Quy Hoạch Động' chứa công thức: V^π(s) = Σ_a π(a|s)[R(s,a) + γ Σ_{s'} P(s'|s,a)V^π(s')]. Điều này cho phép tạo ra câu trả lời chính xác và đầy đủ cho câu hỏi về biểu diễn phương trình Bellman.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này trình bày về thuật toán REINFORCE và ứng dụng của nó trong việc cập nhật tham số thông qua đạo hàm chính sách Monte-Carlo. Học sinh sẽ đánh giá khả năng áp dụng trong các bài toán thực tế.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Bối cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp trực tiếp công thức cập nhật tham số chính sách trong thuật toán REINFORCE, cụ thể là \"θ ← θ + α γ^t G_t ∇_θ log π(A_t|S_t;θ)\". Điều này cho phép trả lời chính xác câu hỏi của pipeline về công thức cập nhật tham số dựa trên tổng reward chiết khấu. Ngoài ra, bối cảnh cũng giải thích rõ ràng về thuật toán REINFORCE, các thành phần và vấn đề của nó (phương sai cao), cũng như các giải pháp (baseline), giúp củng cố sự hiểu biết về chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này kết nối và làm rõ khái niệm về đạo hàm chính sách tự nhiên và lý thuyết phía sau nó. Học sinh sẽ kiểm tra khả năng phân tích mối quan hệ giữa quá trình học và kết quả đạt được từ các quyết định trong môi trường phức tạp.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó chứa định nghĩa và công thức của Policy Improvement Theorem, cụ thể là điều kiện Q^π(s, π'(s)) ≥ V^π(s) để chính sách mới π' tốt hơn hoặc bằng chính sách cũ π. Điều này trực tiếp trả lời câu hỏi của pipeline về điều kiện cải thiện chính sách.",
+            "with_context_question_relevance": 0.2,
+            "without_context_question_relevance": 1.0,
+            "winner": "baseline"
+        }
+    }
+]

@@ -12,10 +12,10 @@ class Settings(BaseSettings):
     )
     
     # Database
-    postgres_host: str = Field(default="localhost", alias="POSTGRES__HOST")
+    postgres_host: str = Field(default="postgres", alias="POSTGRES__HOST")
     postgres_port: int = Field(default=5432, alias="POSTGRES__PORT")
     postgres_user: str = Field(default="postgres", alias="POSTGRES__USER")
-    postgres_password: str = Field(default="postgres", alias="POSTGRES__PASSWORD")
+    postgres_password: str = Field(default="postgres123", alias="POSTGRES__PASSWORD")
     postgres_db: str = Field(default="educational_platform", alias="POSTGRES__DB")
 
     @property

@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Kiểm tra sự hiểu biết của sinh viên về định nghĩa và mục đích của phân tích cụm trong máy học. Nội dung này sẽ yêu cầu sinh viên mô tả quá trình gộp nhóm các đối tượng và các ứng dụng thực tiễn của nó như phân đoạn khách hàng hay phát hiện bất thường.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo cặp câu hỏi-trả lời. Ngữ cảnh cung cấp định nghĩa rõ ràng về \"Clustering (Phân cụm)\" là \"Nhóm các điểm dữ liệu tương tự lại với nhau\" và nêu rõ \"Mục tiêu: High intra-cluster similarity (trong cùng cluster), Low inter-cluster similarity (giữa các clusters)\". Điều này trực tiếp hỗ trợ trả lời câu hỏi về mục đích chính của phân tích cụm. Ngoài ra, ngữ cảnh còn đề cập đến các ứng dụng như \"Customer segmentation\" và \"Anomaly detection\", phù hợp với yêu cầu của chủ đề về các ứng dụng thực tiễn.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Đánh giá khả năng của sinh viên trong việc phân tích các yếu tố có thể ảnh hưởng đến kết quả của phân tích cụm. Sinh viên sẽ cần hiểu các thuộc tính của dữ liệu, hình dạng cụm và vai trò của thuật toán trong phân cụm.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về thuật toán Mean Shift, đặc biệt là ưu điểm của nó là 'Không cần specify K' và 'Automatic K'. Điều này trực tiếp trả lời câu hỏi của pipeline về yếu tố không cần chỉ định trước khi thực hiện Mean Shift. Ngoài ra, đồ thị tri thức cũng so sánh các thuật toán phân cụm khác, cung cấp cái nhìn tổng quan về các yếu tố ảnh hưởng đến phân tích cụm, hỗ trợ cho câu hỏi của baseline.",
+            "with_context_question_relevance": 0.8,
+            "without_context_question_relevance": 0.9,
+            "winner": "baseline"
+        }
+    },
+    {
+        "topic_description": "Học sinh sẽ được yêu cầu nhận diện các phương pháp khác nhau để đo lường độ tương tự giữa các điểm dữ liệu như khoảng cách Euclidean, Manhattan và Cosine. Chủ đề này giúp củng cố kiến thức về các công thức và cách sử dụng chúng trong phân tích dữ liệu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp đầy đủ thông tin về các phương pháp đo lường độ tương tự, bao gồm công thức khoảng cách Euclidean, Manhattan và Cosine, cùng với các giải thích chi tiết về từng phương pháp. Điều này giúp tạo ra câu hỏi và câu trả lời chính xác về công thức khoảng cách Euclidean, phù hợp với chủ đề đã cho.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Kiểm tra khả năng của sinh viên trong việc áp dụng thuật toán K-Means vào phân tích dữ liệu. Học sinh sẽ giải thích cách lựa chọn K, cách thuật toán này hoạt động và các chỉ số đánh giá như WCSS.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về các phương pháp chọn K tối ưu trong thuật toán K-Means, bao gồm Elbow Method, Silhouette Score, Gap Statistic và Domain Knowledge. Cụ thể, nó giải thích rõ ràng về Elbow Method, cách nó hoạt động và ví dụ minh họa, điều này trực tiếp trả lời câu hỏi của pipeline. Ngoài ra, đồ thị cũng đề cập đến WCSS và mục tiêu tối thiểu hóa nó, giúp trả lời câu hỏi của baseline. Do đó, đồ thị tri thức rất hữu ích cho cả hai cặp câu hỏi-trả lời.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Giúp sinh viên phân tích và đánh giá ưu điểm và nhược điểm của thuật toán K-Means trong các tình huống phân cụm khác nhau. Học sinh sẽ cần áp dụng kiến thức từ tuần hiện tại và tuần trước để đưa ra các lập luận.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó cung cấp thông tin chi tiết về thuật toán K-Means, bao gồm các ưu điểm và nhược điểm của nó. Cụ thể, phần 'Nhược Điểm' của K-Means nêu rõ 'Phải chỉ định K trước' và 'Không biết K optimal', điều này trực tiếp trả lời câu hỏi của pipeline về nhược điểm chính khi xác định số lượng cụm K. Ngoài ra, ngữ cảnh cũng liệt kê các ưu điểm như 'Đơn giản, dễ implement' và 'Nhanh, scalable', hỗ trợ cho câu trả lời của baseline về ưu điểm của K-Means.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Sinh viên sẽ được yêu cầu sử dụng và giải thích các chỉ số đánh giá như Davies-Bouldin, Dunn và hệ số Silhouette. Chủ đề này kiểm tra khả năng tổng hợp và phân tích hiệu suất của phân cụm trong các điều kiện khác nhau, kết nối với kiến thức từ những tuần trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức cung cấp thông tin chi tiết về các chỉ số đánh giá phân cụm, đặc biệt là Silhouette Coefficient, Davies-Bouldin Index và Calinski-Harabasz Index, cùng với công thức, phạm vi giá trị và ý nghĩa của chúng. Điều này trực tiếp hỗ trợ việc trả lời câu hỏi của cả hai hệ thống, đặc biệt là câu hỏi của pipeline về chỉ số có giá trị từ -1 đến 1 (Silhouette Coefficient) và câu hỏi của baseline về chỉ số đo lường độ tương đồng giữa các cụm và độ phân tán trong cùng một cụm (Hệ số Silhouette).",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Học sinh cần mô tả và giải thích thuật toán phân cụm phân cấp, cách hoạt động của nó và các biến thể của nó. Chủ đề này kết hợp kiến thức từ tuần hiện tại và trước đó về hình dạng và cấu trúc của dữ liệu.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời. Cụ thể, ngữ cảnh cung cấp định nghĩa rõ ràng về \"Hierarchical Clustering\" (Phân cụm phân cấp), nêu bật các đặc điểm chính như \"không yêu cầu chỉ định số lượng cụm K trước\" và \"có thể xử lý các cụm có hình dạng bất kỳ\". Những thông tin này trực tiếp trả lời câu hỏi của pipeline, cho thấy ngữ cảnh chứa đầy đủ thông tin cần thiết để tạo ra câu trả lời chính xác và phù hợp.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Khám phá ý tưởng chính của thuật toán phân cụm DBSCAN, bao gồm cách phát hiện các cụm dựa trên mật độ. Học sinh sẽ cần áp dụng kiến thức đã học về phân tách dữ liệu và kết hợp các khái niệm từ các tuần trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp thông tin chi tiết về thuật toán DBSCAN, bao gồm các tham số chính như ε (epsilon) và MinPts, cũng như các loại điểm (Core Point, Border Point, Noise Point) và cách thuật toán hoạt động. Cụ thể, phần 'Tham Số' giải thích rõ ràng 'ε (epsilon): Maximum distance giữa 2 điểm để được coi là neighbors'. Điều này trực tiếp trả lời câu hỏi của pipeline về tham số xác định khoảng cách tối đa giữa hai điểm để chúng được coi là hàng xóm. Ngoài ra, đồ thị cũng đề cập đến cách DBSCAN phát hiện các cụm dựa trên mật độ thông qua các khái niệm về Core Point và MinPts, hỗ trợ cho câu hỏi của baseline.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "topic_description": "Khái niệm về Quy trình Quyết định Markov (MDPs) sẽ được kiểm tra, bao gồm định nghĩa và các thành phần của MDPs như trạng thái, hành động và hàm phần thưởng. Học sinh cần hiểu cách mà các MDPs mô tả môi trường trong học tăng cường và khả năng chuyển đổi giữa các trạng thái.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph rất hữu ích vì nó cung cấp định nghĩa rõ ràng về Quá trình Quyết định Markov (MDP) và liệt kê chính xác năm thành phần cơ bản của nó là (S, A, P, R, γ). Điều này giúp trả lời trực tiếp và chính xác câu hỏi của pipeline về các thành phần định nghĩa MDP. Ngoài ra, knowledge graph còn giải thích chi tiết từng thành phần (Tập trạng thái, Tập hành động, Hàm chuyển trạng thái, Hàm phần thưởng, Hệ số chiết khấu), cung cấp thêm thông tin hỗ trợ cho việc hiểu sâu hơn về MDP, phù hợp với yêu cầu của chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Học sinh sẽ được đánh giá khả năng hiểu và áp dụng tính chất Markov vào các quy trình ngẫu nhiên. Cần nắm được cách mà tương lai phụ thuộc vào hiện tại và không bị ảnh hưởng bởi lịch sử, từ đó có thể áp dụng vào các bài toán cụ thể.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph cung cấp định nghĩa rõ ràng về tính chất Markov, bao gồm công thức và ý nghĩa của nó. Cụ thể, phần '3.2. Ý nghĩa' nêu rõ 'Trạng thái hiện tại chứa đầy đủ thông tin để dự đoán tương lai' và 'Không cần phải nhớ toàn bộ lịch sử', điều này trực tiếp trả lời câu hỏi của cả hai hệ thống. Do đó, knowledge graph rất hữu ích trong việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ kiểm tra sự hiểu biết về Ma trận Chuyển đổi Trạng thái, bao gồm cách xác định xác suất chuyển đổi giữa các trạng thái và ý nghĩa của các hàng ma trận này. Học sinh cần phân tích các ứng dụng của ma trận chuyển đổi trong việc mô phỏng các quy trình MDP.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Ngữ cảnh từ biểu đồ tri thức rất hữu ích vì nó định nghĩa rõ ràng 'Hàm chuyển trạng thái (State Transition Function - P)' và cung cấp công thức ký hiệu chính xác 'P(s'|s,a) = P[Sₜ₊₁ = s' | Sₜ = s, Aₜ = a]'. Điều này trực tiếp trả lời câu hỏi của pipeline về ký hiệu xác suất chuyển đổi trạng thái trong MDP. Ngữ cảnh cũng giải thích tính chất Markov, củng cố sự hiểu biết về cách các trạng thái tương lai phụ thuộc vào trạng thái hiện tại, điều này rất quan trọng để hiểu ma trận chuyển đổi trạng thái.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này sẽ tập trung vào Phương trình Bellman và cách chúng được áp dụng trong Quy trình Phần thưởng Markov. Học sinh sẽ cần phân tích cách hàm giá trị có thể được tính toán qua các phần thưởng tức thì và giá trị tương lai, sử dụng các ví dụ thực tế được cung cấp.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph rất hữu ích cho việc tạo ra cặp câu hỏi-trả lời phù hợp với chủ đề. Cụ thể, phần 'Phương trình Bellman' trong tài liệu cung cấp trực tiếp công thức và giải thích về phương trình Bellman cho hàm giá trị trạng thái V^π, bao gồm các thành phần như phần thưởng tức thời R(s,a) và giá trị chiết khấu của trạng thái tiếp theo γ Σₛ' P(s'|s,a)V^π(s'). Điều này cho phép tạo ra câu hỏi và câu trả lời chính xác về các thành phần của phương trình Bellman, đúng như yêu cầu của chủ đề về việc phân tích cách hàm giá trị được tính toán qua các phần thưởng tức thì và giá trị tương lai.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Khả năng tính toán và hiểu Hàm Giá trị Trạng thái v(s) sẽ được đánh giá. Học sinh cần ứng dụng kiến thức về phần thưởng và yếu tố chiết khấu để giải thích giá trị dài hạn của các trạng thái trong MRP, dựa trên các hướng dẫn và số liệu từ các bài học trước.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức cung cấp định nghĩa rõ ràng về Hàm giá trị trạng thái (State-Value Function) Vᵖ(s) trong phần '5.1. Hàm giá trị trạng thái (State-Value Function)', bao gồm cả công thức và giải thích. Điều này trực tiếp hỗ trợ việc tạo ra câu trả lời chính xác cho câu hỏi của pipeline. Ngoài ra, đồ thị cũng đề cập đến Phương trình Bellman cho Vᵖ(s) và các khái niệm liên quan như phần thưởng và yếu tố chiết khấu, rất hữu ích cho việc đánh giá khả năng tính toán và hiểu Hàm Giá trị Trạng thái v(s) như được nêu trong chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 1.0,
+            "winner": "tie"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này liên kết các khái niệm về MDP và Chính sách Tối ưu, yêu cầu học sinh phân tích cách mỗi chính sách ảnh hưởng đến hàm giá trị tối ưu. Họ sẽ cần so sánh các chính sách khác nhau dựa trên tra cứu giá trị và hành động tối ưu trong MDP.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Đồ thị tri thức rất hữu ích vì nó cung cấp định nghĩa rõ ràng về chính sách tối ưu (Optimal Policy) và công thức Vᵖ*(s) ≥ Vᵖ(s), ∀s ∈ S, ∀π, là câu trả lời trực tiếp cho câu hỏi của pipeline. Ngoài ra, nó còn giải thích các tính chất của chính sách tối ưu và cách tìm nó từ Q*, cung cấp thông tin nền tảng vững chắc cho chủ đề.",
+            "with_context_question_relevance": 1.0,
+            "without_context_question_relevance": 0.9,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề kiểm tra khả năng của học sinh trong việc xác định các yếu tố ảnh hưởng trực tiếp đến Hàm Giá trị Tối ưu và Thiết kế Chính sách cho MDPs. Học sinh cần giải thích các ví dụ từ bài giảng trước để xem cách tạo ra chính sách tối ưu từ các yếu tố môi trường được biết đến.",
+        "evaluation": {
+            "is_useful": "Yes",
+            "usefulness_rationale": "Knowledge graph rất hữu ích vì nó cung cấp trực tiếp công thức để xác định chính sách tối ưu π*(s) từ hàm giá trị Q*(s,a) trong phần 'Chính sách tối ưu' và 'Các khái niệm quan trọng'. Cụ thể, công thức 'π*(s) = argmaxₐ Q*(s,a)' được nêu rõ, giúp trả lời chính xác câu hỏi của pipeline. Ngoài ra, các ví dụ và giải thích về MDP, Policy Iteration cũng hỗ trợ hiểu rõ hơn về cách các yếu tố môi trường ảnh hưởng đến việc thiết kế chính sách tối ưu, mặc dù câu hỏi của baseline không được trả lời trực tiếp bằng một đoạn văn cụ thể.",
+            "with_context_question_relevance": 0.9,
+            "without_context_question_relevance": 0.8,
+            "winner": "pipeline"
+        }
+    },
+    {
+        "topic_description": "Chủ đề này khám phá các đặc điểm của MDP Ergodic và tính chất lặp lại trong các quy trình quyết định. Học sinh cần phân tích các khía cạnh cấu trúc của quy trình ergodic và cách chúng mô hình hóa các hiện tượng trong thực tế, từ đó thực hành tự tạo mô hình cho các quy trình tương tự trong môi trường học tập.",
+        "evaluation": {
+            "is_useful": "No",
+            "usefulness_rationale": "Mặc dù ngữ cảnh có đề cập đến các loại MDP đặc biệt và cách tìm chính sách tối ưu từ Q*, nhưng nó không chứa thông tin cụ thể về \"MDP Ergodic\" hay các tính chất liên quan đến việc đảm bảo mọi trạng thái được truy cập vô hạn lần. Do đó, ngữ cảnh không đủ để trả lời câu hỏi của cả hai hệ thống một cách trực tiếp và chính xác về khía cạnh ergodic.",
+            "with_context_question_relevance": 0.4,
+            "without_context_question_relevance": 0.6,
+            "winner": "baseline"
+        }
+    }
+]
