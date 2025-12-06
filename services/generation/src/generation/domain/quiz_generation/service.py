@@ -54,7 +54,6 @@ class QuizGenerationService(BaseService):
     settings: QuizGenerationSetting
     litellm_service: LiteLLMService
     minio_service: MinioService
-    chromadb_client: ClientAPI
     
     @property
     def concept_card_extractor_service(self) -> ConceptCardExtractorService:
@@ -76,7 +75,6 @@ class QuizGenerationService(BaseService):
         return QuestionAnswerGeneratorService(
             litellm_service=self.litellm_service,
             settings=self.settings.question_answer_generator,
-            chromadb_client=self.chromadb_client
         )
 
     @property

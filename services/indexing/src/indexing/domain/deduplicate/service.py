@@ -384,12 +384,17 @@ async def main():
         neo4j_service=neo4j_service,
         litellm_service=litellm_service,
         settings=DeduplicateSetting(
-            threshold=0.85,
+            threshold=0.90,
         ),
     )
+    
+    types = await neo4j_service.execute_query(
+        cypher=GET_ALL_ENTITY_TYPES_QUERY,
+    )
+    
     _ = await deduplicate_service.process(
         DeDuplicateInput(
-            types=["equation", "formula", "framework", "function", "loss_function", "method", "metric", "model", "operation", "optimizer", "parameter", "policy", "problem", "process", "property", "research_area", "technique", "tool", "type"],
+            types=types.data[0]['types'],
         ),
     )
     

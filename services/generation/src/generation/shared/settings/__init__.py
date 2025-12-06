@@ -11,4 +11,3 @@ from .psychometric import PsychometricSetting
 from .quiz_validator import QuizValidatorSetting
 from .quiz_correction import QuizCorrectionSetting
 from .llm_as_judge import JudgeSetting
-from .vector_database import VectorDatabaseSetting

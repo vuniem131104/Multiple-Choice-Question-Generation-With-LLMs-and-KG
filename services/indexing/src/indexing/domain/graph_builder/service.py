@@ -327,8 +327,8 @@ class BuilderService(BaseService):
 #             temperature=0.0,
 #             top_p=1.0,
 #             max_completion_tokens=10000,
-#             dimension=768,
-#             embedding_model="embeddinggemma"
+#             dimension=1024,
+#             embedding_model="qwen3-embedding:0.6b"
 #         )
 #     )
     

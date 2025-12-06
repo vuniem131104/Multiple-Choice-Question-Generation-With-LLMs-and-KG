@@ -104,26 +104,34 @@ if __name__ == "__main__":
     litellm_setting = LiteLLMSetting(
         url=HttpUrl("http://localhost:9510"),
         token=SecretStr("abc123"),
-        model="gemini-2.5-flash",
+        model="gpt-4o",
         frequency_penalty=0.0,
         n=1,
         temperature=0.0,
         top_p=1.0,
         max_completion_tokens=10000,
-        dimension=768,
-        embedding_model="embeddinggemma"
+        dimension=1024,
+        embedding_model="qwen3-embedding:0.6b"
     )
     
     litellm_service = LiteLLMService(litellm_setting=litellm_setting)
     
     llm_as_judge_service = QuizEvaluatorService(
-        litellm_service=litellm_service
+        litellm_service=litellm_service,
+        settings=JudgeSetting(
+            model="gpt-4o",
+            temperature=0.0,
+            max_completion_tokens=10000,
+            top_p=1.0,
+            frequency_penalty=0.0,
+            n=1,
+        )
     )
     
     week_number = 3
     course_code = "int3405"
 
-    with open(f"/home/lehoangvu/KLTN/MCQs_4o_mini/{course_code}/week{week_number}_pipeline.json", "r", encoding='utf-8') as f:
+    with open(f"/home/lehoangvu/KLTN/outputs/gpt-4o-mini/{course_code}/week{week_number}_pipeline.json", "r", encoding='utf-8') as f:
         pipeline_output = json.load(f)
         
     topics = [item['topic'] for item in pipeline_output['questions']]
@@ -136,7 +144,7 @@ if __name__ == "__main__":
         for item in pipeline_output['questions']
     ]
 
-    with open(f"/home/lehoangvu/KLTN/MCQs_4o_mini/{course_code}/week{week_number}_baseline.json", "r", encoding='utf-8') as f:
+    with open(f"/home/lehoangvu/KLTN/outputs/gpt-4o-mini/{course_code}/week{week_number}_baseline.json", "r", encoding='utf-8') as f:
         baseline_questions = json.load(f)
         
     baseline_questions = baseline_questions['questions']
@@ -149,7 +157,7 @@ if __name__ == "__main__":
                 baseline_questions=baseline_questions
             )
         )
-        with open(f"MCQs_4o_mini/{course_code}/week{week_number}_evaluation.json", "w", encoding='utf-8') as f:
+        with open(f"/home/lehoangvu/KLTN/outputs/gpt-4o-mini/{course_code}/week9_evaluation.json", "w", encoding='utf-8') as f:
             json.dump(output.model_dump(), f, ensure_ascii=False, indent=4)
     asyncio.run(test())
     

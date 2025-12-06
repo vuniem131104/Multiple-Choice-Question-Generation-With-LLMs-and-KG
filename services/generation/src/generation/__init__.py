@@ -8,7 +8,6 @@ from logger import get_logger
 from logger import setup_logging
 from lite_llm import LiteLLMService
 from storage.minio import MinioService
-from chromadb import HttpClient
 
 from generation.api.routers.quiz_generation import quiz_router
 from generation.api.routers.upload import upload_router
@@ -27,10 +26,6 @@ async def lifespan(app: FastAPI):
     )
     app.state.minio_service = MinioService(
         settings=app.state.settings.minio
-    )
-    app.state.chroma_db = HttpClient(
-        host=app.state.settings.vector_database.host,
-        port=app.state.settings.vector_database.port
     )
     
     yield 

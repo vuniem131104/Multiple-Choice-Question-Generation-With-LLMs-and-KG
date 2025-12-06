@@ -1,10 +1,13 @@
 from __future__ import annotations
 import json 
-
-
+from indexing.domain.parser.prompts import PDF_EXTRACTION_PROMPT
+import base64
 from storage.minio import MinioService
 from storage.minio import MinioInput
 from lite_llm import LiteLLMService
+from lite_llm import LiteLLMInput
+from lite_llm import Role 
+from lite_llm import CompletionMessage
 from base import BaseModel
 from base import BaseService
 import os 
@@ -29,26 +32,49 @@ class ParserService(BaseService):
     settings: ParserSetting
     
 
-    def process(self, inputs: ParserInput) -> ParserOutput:
+    async def process(self, inputs: ParserInput) -> ParserOutput:
         if not os.path.exists(self.settings.upload_folder_path):
             os.makedirs(self.settings.upload_folder_path)
 
-        file_path = f"{self.settings.upload_folder_path}/book.md"
+        file_path = f"{self.settings.upload_folder_path}/book.pdf"
 
         try:
             _ = self.minio_service.download_file(
                 MinioInput(
                     bucket_name=inputs.course_code, 
-                    object_name="book.md",
+                    object_name="book.pdf",
                     file_path=file_path
                 )
             )
             
-            with open(file_path, "r") as f:
-                contents = f.read()
+            with open(file_path, "rb") as f:
+                pdf_bytes = f.read()
+                
+            # demo_prompt = "Extract the content in this file. The output is in markdown format."
+                
+            output = await self.litellm_service.process_async(
+                inputs=LiteLLMInput(
+                    messages=[
+                        CompletionMessage(
+                            role=Role.USER,
+                            content=PDF_EXTRACTION_PROMPT
+                        ),
+                        CompletionMessage(
+                            role=Role.USER,
+                            file_url=f"data:application/pdf;base64,{base64.b64encode(pdf_bytes).decode('utf-8')}"
+                        )
+                    ],
+                    model="gemini-2.5-flash",
+                    temperature=0.0,
+                    top_p=1.0,
+                    n=1,
+                    frequency_penalty=0.0,
+                    max_completion_tokens=20000,
+                )
+            )
 
             return ParserOutput(
-                contents=contents,
+                contents=output.response,
                 course_code=inputs.course_code,
             )
             
@@ -92,8 +118,8 @@ class ParserService(BaseService):
 #         temperature=0.0,
 #         top_p=1.0,
 #         max_completion_tokens=10000,
-#         dimension=768,
-#         embedding_model="embeddinggemma"
+#         dimension=1024,
+#         embedding_model="qwen3-embedding:0.6b"
 #     )
 
 #     litellm_service = LiteLLMService(litellm_setting=litellm_setting)
@@ -111,7 +137,7 @@ class ParserService(BaseService):
 #     output = asyncio.run(
 #         parser_service.process(
 #             inputs=ParserInput(
-#                 course_code="dsa2025"
+#                 course_code="int3405"
 #             )
 #         )
 #     )

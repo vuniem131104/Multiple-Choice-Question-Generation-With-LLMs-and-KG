@@ -1,0 +1,164 @@
+{
+    "comparisons": [
+        {
+            "question_number": 1,
+            "topic_name": "Cây Quyết Định: Định Nghĩa và Ứng Dụng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it directly addresses the components of a decision tree, aligning perfectly with the topic and Bloom's level of 'Remember.' The baseline question is less specific and does not focus on the structural components of a decision tree. The pipeline question is also clearer and has more plausible distractors, making it the better choice overall."
+        },
+        {
+            "question_number": 2,
+            "topic_name": "Thuật Toán Hunt: Quy Trình và Ứng Dụng",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it directly tests the purpose of the Hunt algorithm, aligning with the topic and Bloom's level of 'Understand.' The baseline question, while related, focuses on a general concept of decision trees rather than the Hunt algorithm specifically. The pipeline question also has clearer wording and more plausible distractors, making it the better option."
+        },
+        {
+            "question_number": 3,
+            "topic_name": "Đo Lường Độ Không Thuần Khiết: Chỉ Số Gini và Entropy",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.6,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.6,
+                "bloom_level_appropriateness": 0.6
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it focuses on the specific conditions for using Gini versus Entropy, aligning well with the topic and Bloom's level of 'Apply.' The baseline question is off-topic as it discusses the Hunt algorithm instead. The pipeline question also has better clarity and more plausible distractors, making it the superior choice."
+        },
+        {
+            "question_number": 4,
+            "topic_name": "Gain Ratio: Khắc Phục Nhược Điểm của Information Gain",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it directly addresses the role of Gain Ratio in the C4.5 algorithm, aligning perfectly with the topic and Bloom's level of 'Analyze.' The baseline question is less specific and does not delve into the comparative role of Gain Ratio. The pipeline question also has clearer wording and more plausible distractors, making it the better option."
+        },
+        {
+            "question_number": 5,
+            "topic_name": "Sai Số Phân Loại: Định Nghĩa và Tính Toán",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it directly tests the formula for classification error, aligning perfectly with the topic and Bloom's level of 'Apply.' The baseline question, while related, focuses on Gini index instead of classification error. The pipeline question also has clearer wording and more plausible distractors, making it the better choice."
+        },
+        {
+            "question_number": 6,
+            "topic_name": "Ứng Dụng Cây Quyết Định Trong Phân Loại",
+            "pipeline_scores": {
+                "relevance": 0.9,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 0.9
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.7,
+                "distractor_plausibility": 0.6,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it focuses on factors affecting the accuracy of decision tree models in real-world applications, aligning well with the topic and Bloom's level of 'Evaluate.' The baseline question is less specific and does not address real-world applications. The pipeline question also has better clarity and more plausible distractors, making it the superior choice."
+        },
+        {
+            "question_number": 7,
+            "topic_name": "So Sánh Mô Hình Hồi Quy Logistic và Cây Quyết Định",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.8,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.7,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.7
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it directly compares logistic regression and decision trees, aligning perfectly with the topic and Bloom's level of 'Evaluate.' The baseline question, while related, focuses on a specific application of decision trees rather than a comparison. The pipeline question also has clearer wording and more plausible distractors, making it the better option."
+        },
+        {
+            "question_number": 8,
+            "topic_name": "Tối ưu Hóa: Ứng Dụng từ Hồi Quy Đến Cây Quyết Định",
+            "pipeline_scores": {
+                "relevance": 1.0,
+                "clarity": 0.9,
+                "distractor_plausibility": 0.8,
+                "difficulty": 0.9,
+                "bloom_level_appropriateness": 1.0
+            },
+            "baseline_scores": {
+                "relevance": 0.8,
+                "clarity": 0.8,
+                "distractor_plausibility": 0.7,
+                "difficulty": 0.7,
+                "bloom_level_appropriateness": 0.8
+            },
+            "winner": "pipeline",
+            "rationale": "The pipeline question is more relevant as it focuses on optimization techniques in linear regression, aligning perfectly with the topic and Bloom's level of 'Analyze.' The baseline question, while related, does not address optimization techniques. The pipeline question also has clearer wording and more plausible distractors, making it the better choice."
+        }
+    ]
+}

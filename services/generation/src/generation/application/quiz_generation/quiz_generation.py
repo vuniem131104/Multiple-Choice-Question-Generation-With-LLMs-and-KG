@@ -30,7 +30,6 @@ class QuizApplication(BaseApplication):
             settings=self.request.app.state.settings.quiz,
             litellm_service=self.request.app.state.litellm_service,
             minio_service=self.request.app.state.minio_service,
-            chromadb_client=self.request.app.state.chroma_db
         )
 
         outputs = await quiz_generation_service.process(

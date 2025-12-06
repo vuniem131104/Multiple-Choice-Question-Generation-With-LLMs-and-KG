@@ -130,18 +130,18 @@ class ChunkerService(BaseService):
         
 
 
-if __name__ == "__main__":
-    # Example usage
-    import json 
-    service = ChunkerService(chunker_setting=ChunkerSetting(
-        max_token_per_chunk=1000,
-        min_token_per_chunk=500,
-    ))
-    with open("/home/lehoangvu/KLTN/services/generation/src/generation/shared/static_files/dsa2025/book.md", "r") as f:
-        content = f.read()
-    input_data = ChunkerInput(contents=content, course_code="dsa2025")
+# if __name__ == "__main__":
+#     # Example usage
+#     import json 
+#     service = ChunkerService(chunker_setting=ChunkerSetting(
+#         max_token_per_chunk=1000,
+#         min_token_per_chunk=500,
+#     ))
+#     with open("/home/lehoangvu/KLTN/services/generation/src/generation/shared/static_files/dsa2025/book.md", "r") as f:
+#         content = f.read()
+#     input_data = ChunkerInput(contents=content, course_code="dsa2025")
 
-    output_data = service.process(input_data)
-    chunks = output_data.chunks
-    with open(f"/home/lehoangvu/KLTN/chunks_{input_data.course_code}.json", "w", encoding='utf-8') as f:
-        json.dump(chunks, f, indent=4, ensure_ascii=False)
+#     output_data = service.process(input_data)
+#     chunks = output_data.chunks
+#     with open(f"/home/lehoangvu/KLTN/chunks_{input_data.course_code}.json", "w", encoding='utf-8') as f:
+#         json.dump(chunks, f, indent=4, ensure_ascii=False)

@@ -44,7 +44,7 @@ class QuestionAnswerGeneratorService(BaseService):
         Gọi RAG API để lấy context liên quan đến query
         """
         try:
-            rag_url = "http://localhost:3011/v1/local_search"
+            rag_url = "http://rag:3011/v1/local_search"
             
             async with httpx.AsyncClient(timeout=30.0) as client:
                 response = await client.post(
@@ -170,84 +170,84 @@ class QuestionAnswerGeneratorService(BaseService):
             )
             raise e
 
-from lite_llm import LiteLLMSetting
-from pydantic import HttpUrl, SecretStr
-from chromadb import HttpClient
-import os 
+# from lite_llm import LiteLLMSetting
+# from pydantic import HttpUrl, SecretStr
+# from chromadb import HttpClient
+# import os 
 
-async def main():
-    litellm_setting = LiteLLMSetting(
-        url=HttpUrl("http://localhost:9510"),
-        token=SecretStr("abc123"),
-        model="gpt-4o-mini",
-        frequency_penalty=0.0,
-        n=1,
-        temperature=0.0,
-        top_p=1.0,
-        max_completion_tokens=10000,
-        dimension=768,
-        embedding_model="embeddinggemma"
-    )
+# async def main():
+#     litellm_setting = LiteLLMSetting(
+#         url=HttpUrl("http://localhost:9510"),
+#         token=SecretStr("abc123"),
+#         model="gpt-4o-mini",
+#         frequency_penalty=0.0,
+#         n=1,
+#         temperature=0.0,
+#         top_p=1.0,
+#         max_completion_tokens=10000,
+#         dimension=1024,
+#         embedding_model="qwen3-embedding:0.6b"
+#     )
 
-    litellm_service = LiteLLMService(litellm_setting=litellm_setting)
+#     litellm_service = LiteLLMService(litellm_setting=litellm_setting)
     
-    qa_service = QuestionAnswerGeneratorService(
-        litellm_service=litellm_service,
-        settings=QuestionAnswerGeneratorSetting(
-            model="gpt-4o-mini",
-            temperature=0.2,
-            top_p=1.0,
-            n=1,
-            frequency_penalty=0.0,
-            max_completion_tokens=2000,
-            # reasoning_effort="medium"
-        )
-    )
-    course_code = "rl2025"
-    for week_number in range(1, 9):
-        with open(f'/home/lehoangvu/KLTN/outputs/gpt-4o-mini/{course_code}/week{week_number}_pipeline.json', 'r') as f:
-            data = json.load(f)
+#     qa_service = QuestionAnswerGeneratorService(
+#         litellm_service=litellm_service,
+#         settings=QuestionAnswerGeneratorSetting(
+#             model="gpt-4o-mini",
+#             temperature=0.5,
+#             top_p=1.0,
+#             n=1,
+#             frequency_penalty=0.0,
+#             max_completion_tokens=2000,
+#             # reasoning_effort="medium"
+#         )
+#     )
+#     course_code = "rl2025"
+#     for week_number in range(1, 9):
+#         with open(f'/home/lehoangvu/KLTN/outputs/gpt-4o-mini/{course_code}/week{week_number}_pipeline.json', 'r') as f:
+#             data = json.load(f)
             
-        topics = [Topic(**question['topic']) for question in data['questions']]
+#         topics = [Topic(**question['topic']) for question in data['questions']]
         
-        analysis_results = []
-        for topic in topics:
-            output_with_context = await qa_service.process(
-                inputs=QuestionAnswerGeneratorInput(
-                    topic=topic,
-                    week_number=week_number,
-                    course_code=course_code
-                ),
-                get_rag_context=True
-            )
+#         analysis_results = []
+#         for topic in topics:
+#             output_with_context = await qa_service.process(
+#                 inputs=QuestionAnswerGeneratorInput(
+#                     topic=topic,
+#                     week_number=week_number,
+#                     course_code=course_code
+#                 ),
+#                 get_rag_context=True
+#             )
         
-            output_without_context = await qa_service.process(
-                inputs=QuestionAnswerGeneratorInput(
-                    topic=topic,
-                    week_number=week_number,
-                    course_code=course_code
-                ),
-                get_rag_context=False
-            )
-            analysis_results.append({
-                "topic_description": topic.description,
-                "output_with_context": {
-                    "question": output_with_context.question_answer.question,
-                    "answer": output_with_context.question_answer.answer,
-                    "rag_context": output_with_context.rag_context
-                },
-                "output_without_context": {
-                    "question": output_without_context.question_answer.question,
-                    "answer": output_without_context.question_answer.answer
-                }
-            })
+#             output_without_context = await qa_service.process(
+#                 inputs=QuestionAnswerGeneratorInput(
+#                     topic=topic,
+#                     week_number=week_number,
+#                     course_code=course_code
+#                 ),
+#                 get_rag_context=False
+#             )
+#             analysis_results.append({
+#                 "topic_description": topic.description,
+#                 "output_with_context": {
+#                     "question": output_with_context.question_answer.question,
+#                     "answer": output_with_context.question_answer.answer,
+#                     "rag_context": output_with_context.rag_context
+#                 },
+#                 "output_without_context": {
+#                     "question": output_without_context.question_answer.question,
+#                     "answer": output_without_context.question_answer.answer
+#                 }
+#             })
 
-        if not os.path.exists(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}'):
-            os.makedirs(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}')
+#         if not os.path.exists(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}'):
+#             os.makedirs(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}')
 
-        with open(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}/week{week_number}_analysis.json', 'w', encoding='utf-8') as f:
-            json.dump(analysis_results, f, ensure_ascii=False, indent=4)
+#         with open(f'/home/lehoangvu/KLTN/outputs/context_analysis/{course_code}/week{week_number}_analysis.json', 'w', encoding='utf-8') as f:
+#             json.dump(analysis_results, f, ensure_ascii=False, indent=4)
 
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+# if __name__ == "__main__":
+#     import asyncio
+#     asyncio.run(main())

@@ -113,13 +113,13 @@ class AnalysisService(BaseService):
             
         return AnalysisOutput(results=results)
     
-# if __name__ == "__main__":
-#     analysis_service = AnalysisService()
+if __name__ == "__main__":
+    analysis_service = AnalysisService()
     
-#     analysis_output = analysis_service.process(
-#         inputs=AnalysisInput(
-#             start_week=1, end_week=8, course_code="int3405", mcqs_folder="/home/lehoangvu/KLTN/outputs/gemini-2.5-flash"
-#         )
-#     )
+    analysis_output = analysis_service.process(
+        inputs=AnalysisInput(
+            start_week=1, end_week=8, course_code="int3405", mcqs_folder="/home/lehoangvu/KLTN/outputs/gemini-2.5-flash"
+        )
+    )
           
-#     print(analysis_output)      
+    print(analysis_output)      

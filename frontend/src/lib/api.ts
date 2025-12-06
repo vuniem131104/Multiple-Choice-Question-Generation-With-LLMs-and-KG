@@ -21,10 +21,17 @@ export const generationApi = {
     course_code: string
   }) => axios.post('http://localhost:3005/index_mcqs', data),
 
-  uploadFile: async (file: File, courseCode: string) => {
+  uploadBook: async (file: File, courseCode: string) => {
     const formData = new FormData()
     formData.append('file', file)
     formData.append('course_code', courseCode)
     return axios.post('http://localhost:3005/upload', formData)
+  },
+
+  uploadFile: async (file: File, courseCode: string, weekNumber: number) => {
+    const formData = new FormData()
+    formData.append('file', file)
+    formData.append('course_code', courseCode)
+    return axios.post(`http://localhost:3005/upload?week_number=${weekNumber}`, formData)
   },
 }

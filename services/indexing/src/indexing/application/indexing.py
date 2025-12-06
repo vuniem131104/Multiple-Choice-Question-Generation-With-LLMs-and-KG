@@ -54,6 +54,7 @@ class IndexingApplication(BaseApplication):
         )
         
     async def run(self, inputs: IndexingApplicationInput) -> IndexingApplicationOutput:
+        
         try:
             logger.info(
                 'Starting Parser Service',
@@ -61,7 +62,7 @@ class IndexingApplication(BaseApplication):
                     'course_code': inputs.course_code,
                 }
             )
-            parser_output = self.parser.process(
+            parser_output = await self.parser.process(
                 ParserInput(
                     course_code=inputs.course_code,
                 )

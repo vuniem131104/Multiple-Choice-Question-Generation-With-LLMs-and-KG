@@ -3,7 +3,7 @@ import { useMutation, useQuery } from '@tanstack/react-query'
 import { generationApi } from '@/lib/api'
 import { useAuthStore } from '@/stores/authStore'
 import toast from 'react-hot-toast'
-import { BookOpen, Upload, Loader2, Plus, CheckCircle2, XCircle, Trash2, Sparkles, FileText, Eye, Database } from 'lucide-react'
+import { BookOpen, Upload, Loader2, Plus, CheckCircle2, XCircle, Sparkles, FileText, Eye, Database } from 'lucide-react'
 
 interface MCQQuestion {
   question: string
@@ -38,7 +38,6 @@ export default function Dashboard() {
   const [showUpload, setShowUpload] = useState(false)
   const [uploadFile, setUploadFile] = useState<File | null>(null)
   const [generatedMCQs, setGeneratedMCQs] = useState<MCQQuestion[]>([])
-  const [weeks, setWeeks] = useState<number[]>([1])
   const [showTopicSelector, setShowTopicSelector] = useState(false)
   const [numberOfTopics, setNumberOfTopics] = useState(5)
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null)
@@ -49,6 +48,8 @@ export default function Dashboard() {
   const [showBookUpload, setShowBookUpload] = useState(false)
   const [bookFile, setBookFile] = useState<File | null>(null)
   const [showGraphIndexModal, setShowGraphIndexModal] = useState(false)
+  const [showNewWeekUpload, setShowNewWeekUpload] = useState(false)
+  const [newWeekNumber, setNewWeekNumber] = useState<number>(1)
 
 
   // Fetch lectures when course code is selected
@@ -73,26 +74,14 @@ export default function Dashboard() {
 
   const uploadMutation = useMutation({
     mutationFn: async (data: { file: File; course_code: string; week_number: number }) => {
-      const formData = new FormData()
-      formData.append('file', data.file)
-      formData.append('course_code', data.course_code)
-      formData.append('week_number', data.week_number.toString())
-
-      const response = await fetch('http://localhost:3005/upload', {
-        method: 'POST',
-        body: formData,
-      })
-
-      if (!response.ok) {
-        throw new Error('Failed to upload file')
-      }
-
-      return response.json()
+      const response = await generationApi.uploadFile(data.file, data.course_code, data.week_number)
+      return response.data
     },
     onSuccess: () => {
       toast.success('Lecture uploaded successfully!')
       setUploadFile(null)
       setShowUpload(false)
+      setShowNewWeekUpload(false)
       refetchLectures() // Refresh lectures list
     },
     onError: (error: any) => {
@@ -155,27 +144,26 @@ export default function Dashboard() {
     uploadMutation.mutate({ file: uploadFile, course_code: courseCode, week_number: selectedWeek })
   }
 
+  const handleNewWeekFileUpload = () => {
+    if (!uploadFile || !courseCode) {
+      toast.error('Please select a file and ensure course code is set')
+      return
+    }
+    uploadMutation.mutate({ file: uploadFile, course_code: courseCode, week_number: newWeekNumber })
+  }
+
   const addWeek = () => {
+    if (!courseCode) {
+      toast.error('Please select a course code first')
+      return
+    }
     const existingWeeks = lecturesData?.courses
       ?.find((course: CourseData) => course.course_code.toLowerCase() === courseCode.toLowerCase())
       ?.weeks.map((w: WeekData) => w.week_number) || []
     
-    const allCurrentWeeks = Array.from(new Set([...existingWeeks, ...weeks]))
-    const nextWeek = allCurrentWeeks.length > 0 ? Math.max(...allCurrentWeeks) + 1 : 1
-    setWeeks(prev => [...prev, nextWeek])
-  }
-
-  const removeWeek = (weekNumber: number) => {
-    if (weeks.length <= 1) {
-      toast.error('You must have at least one week')
-      return
-    }
-    setWeeks(weeks.filter(w => w !== weekNumber))
-    if (selectedWeek === weekNumber) {
-      setSelectedWeek(null)
-      setShowUpload(false)
-      setGeneratedMCQs([])
-    }
+    const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 1
+    setNewWeekNumber(nextWeek)
+    setShowNewWeekUpload(true)
   }
 
   const getDifficultyColor = (difficulty?: string) => {
@@ -265,7 +253,7 @@ export default function Dashboard() {
   const graphIndexMutation = useMutation({
     mutationFn: async (data: { file: File; course_code: string }) => {
       // Upload file to MinIO (without week_number)
-      const uploadResult = await generationApi.uploadFile(data.file, data.course_code)
+      const uploadResult = await generationApi.uploadBook(data.file, data.course_code)
 
       // Index to graph database
       const indexResponse = await fetch('http://localhost:3006/v1/indexing', {
@@ -399,12 +387,12 @@ export default function Dashboard() {
                   ?.find((course: CourseData) => course.course_code.toLowerCase() === courseCode.toLowerCase())
                   ?.weeks.map((w: WeekData) => w.week_number) || []
                 
-                // Combine existing weeks with manually added weeks
-                const allWeeks = Array.from(new Set([...existingWeeks, ...weeks])).sort((a, b) => a - b)
+                // Only show weeks that have lectures
+                const allWeeks = existingWeeks.sort((a: number, b: number) => a - b)
                 
                 return allWeeks.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {allWeeks.map((week) => {
+                    {allWeeks.map((week: number) => {
                       // Find lectures for this week
                       const weekLectures = lecturesData?.courses
                         ?.find((course: CourseData) => course.course_code.toLowerCase() === courseCode.toLowerCase())
@@ -417,16 +405,7 @@ export default function Dashboard() {
                           key={week}
                           className="relative border-2 border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:border-indigo-300 transition-all duration-200 bg-gradient-to-br from-white to-gray-50 group"
                         >
-                          {/* Delete Week Button - only for manually added weeks without lectures */}
-                          {!hasLectures && weeks.includes(week) && weeks.length > 1 && (
-                            <button
-                              onClick={() => removeWeek(week)}
-                              className="absolute top-3 right-3 p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all opacity-0 group-hover:opacity-100"
-                              title="Remove week"
-                            >
-                              <Trash2 className="w-4 h-4" />
-                            </button>
-                          )}
+                          {/* Delete Week Button - removed since weeks are managed by lectures */}
 
                           <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl font-bold text-gray-900">Week {week}</h3>
@@ -1024,6 +1003,84 @@ export default function Dashboard() {
                     )}
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* New Week Upload Modal */}
+        {showNewWeekUpload && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
+              <div className="flex items-center justify-between p-6 border-b border-gray-200">
+                <div className="flex items-center gap-3">
+                  <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-xl">
+                    <Upload className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Upload Lecture - Week {newWeekNumber}</h3>
+                </div>
+                <button
+                  onClick={() => {
+                    setShowNewWeekUpload(false)
+                    setUploadFile(null)
+                  }}
+                  className="p-2 hover:bg-gray-100 rounded-lg transition-all"
+                >
+                  <XCircle className="w-6 h-6 text-gray-600" />
+                </button>
+              </div>
+              
+              <div className="p-6 space-y-6">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">
+                    Select Lecture File
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="file"
+                      accept=".pdf,.doc,.docx,.txt,.ppt,.pptx"
+                      className="w-full px-5 py-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-green-400 transition-all cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100"
+                      onChange={(e) => setUploadFile(e.target.files?.[0] || null)}
+                    />
+                  </div>
+                  {uploadFile && (
+                    <div className="mt-3 flex items-center gap-2 p-4 bg-green-50 border border-green-200 rounded-lg">
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                      <div className="flex-1">
+                        <p className="text-sm text-gray-700 font-medium">
+                          {uploadFile.name}
+                        </p>
+                        <p className="text-xs text-gray-600">
+                          {(uploadFile.size / 1024 / 1024).toFixed(2)} MB
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg">
+                  <p className="text-sm text-blue-800">
+                    <span className="font-semibold">ℹ️ Note:</span> This will create Week {newWeekNumber} with your uploaded lecture file.
+                  </p>
+                </div>
+
+                <button
+                  onClick={handleNewWeekFileUpload}
+                  disabled={!uploadFile || uploadMutation.isPending}
+                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                >
+                  {uploadMutation.isPending ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Uploading...
+                    </>
+                  ) : (
+                    <>
+                      <Upload className="w-5 h-5" />
+                      Upload & Create Week {newWeekNumber}
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           </div>

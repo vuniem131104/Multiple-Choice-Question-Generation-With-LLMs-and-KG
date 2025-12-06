@@ -5,8 +5,8 @@ litellm:
   n: 1
   frequency_penalty: 0.0
   max_completion_tokens: 10000
-  dimension: 768
-  embedding_model: "embeddinggemma"
+  dimension: 1024
+  embedding_model: "qwen3-embedding:0.6b"
 
 quiz: 
   concept_card_extractor:
@@ -19,7 +19,7 @@ quiz:
 
   topic_generator:
     model: "gemini-2.5-flash"
-    temperature: 0.0
+    temperature: 0.5
     top_p: 1.0
     n: 1
     frequency_penalty: 0.0
@@ -28,19 +28,21 @@ quiz:
 
   question_answer_generator:
     model: "gemini-2.5-flash"
-    temperature: 0.0
+    temperature: 0.5
     top_p: 1.0
     n: 1
     frequency_penalty: 0.0
     max_completion_tokens: 10000
+    reasoning_effort: "medium"
 
   distractors_generator:
     model: "gemini-2.5-flash"
-    temperature: 0.0
+    temperature: 0.5
     top_p: 1.0
     n: 1
     frequency_penalty: 0.0
     max_completion_tokens: 10000
+    reasoning_effort: "medium"
 
   explanation_generator:
     model: "gemini-2.5-flash"
@@ -84,6 +86,6 @@ quiz:
 
   max_feedback_attempts: 3
 
-  acceptance_score_threshold: 70
+  acceptance_score_threshold: 80
 
   max_concurrent_tasks: 8
