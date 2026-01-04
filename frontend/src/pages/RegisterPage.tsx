@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuthStore } from '@/stores/authStore'
 import toast from 'react-hot-toast'
-import { UserPlus, User, Mail, Lock, Sparkles, BookOpen, UserCircle } from 'lucide-react'
+import { UserPlus, User, Mail, Lock, BookOpen, UserCircle } from 'lucide-react'
 
 export default function RegisterPage() {
   const navigate = useNavigate()
@@ -38,27 +38,19 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      {/* Background Decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 right-1/3 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
-      </div>
-
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 relative z-10">
         {/* Logo/Header Section */}
         <div className="text-center">
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 p-4 rounded-2xl shadow-xl">
+            <div className="bg-blue-600 p-4 rounded-xl shadow-lg">
               <BookOpen className="w-12 h-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
+          <h2 className="text-4xl font-bold text-gray-900 mb-2">
             Join Us Today
           </h2>
-          <p className="text-gray-600 text-lg flex items-center justify-center gap-2">
-            <Sparkles className="w-5 h-5 text-pink-500" />
+          <p className="text-gray-600 text-lg">
             Create your account and start learning
           </p>
         </div>
@@ -162,7 +154,7 @@ export default function RegisterPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                className="group relative w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transition-all duration-200"
               >
                 {loading ? (
                   <>
@@ -184,7 +176,7 @@ export default function RegisterPage() {
                 Already have an account?{' '}
                 <Link 
                   to="/login" 
-                  className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all"
+                  className="font-semibold text-blue-600 hover:text-blue-700 transition-all"
                 >
                   Login here
                 </Link>

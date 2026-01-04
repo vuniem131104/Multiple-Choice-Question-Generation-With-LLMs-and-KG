@@ -3,7 +3,7 @@ import { useMutation, useQuery } from '@tanstack/react-query'
 import { generationApi } from '@/lib/api'
 import { useAuthStore } from '@/stores/authStore'
 import toast from 'react-hot-toast'
-import { BookOpen, Upload, Loader2, Plus, CheckCircle2, XCircle, Sparkles, FileText, Eye, Database } from 'lucide-react'
+import { BookOpen, Upload, Loader2, Plus, CheckCircle2, XCircle, FileText, Eye, Database } from 'lucide-react'
 
 interface MCQQuestion {
   question: string
@@ -169,11 +169,11 @@ export default function Dashboard() {
   const getDifficultyColor = (difficulty?: string) => {
     switch (difficulty?.toLowerCase()) {
       case 'easy':
-        return 'bg-green-100 text-green-800 border-green-200'
+        return 'bg-gray-100 text-gray-800 border-gray-300'
       case 'medium':
-        return 'bg-yellow-100 text-yellow-800 border-yellow-200'
+        return 'bg-gray-200 text-gray-800 border-gray-300'
       case 'hard':
-        return 'bg-red-100 text-red-800 border-red-200'
+        return 'bg-gray-300 text-gray-900 border-gray-400'
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200'
     }
@@ -300,12 +300,11 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-6">
+    <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 text-center">
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Sparkles className="w-8 h-8 text-indigo-600" />
             <h1 className="text-4xl font-bold text-gray-900">
               Teacher Dashboard
             </h1>
@@ -314,7 +313,7 @@ export default function Dashboard() {
         </div>
 
         {/* Course Selector */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-indigo-100">
+        <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-gray-200">
           <label className="block text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">
             Select Course
           </label>
@@ -324,9 +323,9 @@ export default function Dashboard() {
                 <button
                   key={course}
                   onClick={() => setCourseCode(course)}
-                  className={`px-6 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-[1.02] ${
+                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
                     courseCode === course
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-lg'
+                      ? 'bg-blue-600 text-white shadow-md'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -349,30 +348,23 @@ export default function Dashboard() {
 
         {/* My Lectures Section */}
         {courseCode && (
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-indigo-100">
+          <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-gray-200">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
-                <FileText className="w-7 h-7 text-indigo-600" />
+                <FileText className="w-7 h-7 text-gray-700" />
                 My Lectures - {courseCode.toUpperCase()}
               </h2>
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setShowBookUpload(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold rounded-xl hover:from-cyan-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                  className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 shadow-md transition-all duration-200"
                 >
                   <BookOpen className="w-5 h-5" />
                   Add Book
                 </button>
-                {/* <button
-                  onClick={() => setShowMCQUpload(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-pink-700 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
-                >
-                  <Database className="w-5 h-5" />
-                  Add Collected MCQs
-                </button> */}
                 <button
                   onClick={addWeek}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                  className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 shadow-md transition-all duration-200"
                 >
                   <Plus className="w-5 h-5" />
                   Add New Week
@@ -403,14 +395,14 @@ export default function Dashboard() {
                       return (
                         <div
                           key={week}
-                          className="relative border-2 border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:border-indigo-300 transition-all duration-200 bg-gradient-to-br from-white to-gray-50 group"
+                          className="relative border border-gray-200 rounded-lg p-6 hover:shadow-md hover:border-gray-300 transition-all duration-200 bg-white"
                         >
                           {/* Delete Week Button - removed since weeks are managed by lectures */}
 
                           <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl font-bold text-gray-900">Week {week}</h3>
-                            <div className={`p-2 rounded-lg ${hasLectures ? 'bg-green-100' : 'bg-indigo-100'}`}>
-                              <BookOpen className={`w-6 h-6 ${hasLectures ? 'text-green-600' : 'text-indigo-600'}`} />
+                            <div className={`p-2 rounded-lg ${hasLectures ? 'bg-gray-100' : 'bg-gray-100'}`}>
+                              <BookOpen className={`w-6 h-6 ${hasLectures ? 'text-gray-700' : 'text-gray-500'}`} />
                             </div>
                           </div>
 
@@ -427,13 +419,13 @@ export default function Dashboard() {
                                     const url = generationApi.getLectureDownloadUrl(file.bucket, file.file_path)
                                     setSelectedPdf(url)
                                   }}
-                                  className="w-full flex items-center gap-2 p-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg transition-all text-left group/file"
+                                  className="w-full flex items-center gap-2 p-3 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition-all text-left group/file"
                                 >
-                                  <FileText className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                  <FileText className="w-4 h-4 text-gray-600 flex-shrink-0" />
                                   <span className="flex-1 text-sm text-gray-800 font-medium truncate">
                                     {file.file_name}
                                   </span>
-                                  <Eye className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                  <Eye className="w-4 h-4 text-gray-600 flex-shrink-0" />
                                 </button>
                               ))}
                             </div>
@@ -446,7 +438,7 @@ export default function Dashboard() {
                               <button
                                 onClick={() => handleUpload(week)}
                                 disabled={!courseCode || uploadMutation.isPending}
-                                className="w-full py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-[1.02] flex items-center justify-center gap-2"
+                                className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
                               >
                                 <Upload className="w-4 h-4" />
                                 Upload Lecture
@@ -458,7 +450,7 @@ export default function Dashboard() {
                               <button
                                 onClick={() => handleGenerate(week)}
                                 disabled={!courseCode || generateMutation.isPending}
-                                className="w-full py-3 px-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-[1.02] flex items-center justify-center gap-2"
+                                className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
                               >
                                 {generateMutation.isPending && selectedWeek === week ? (
                                   <>
@@ -467,7 +459,6 @@ export default function Dashboard() {
                                   </>
                                 ) : (
                                   <>
-                                    <Sparkles className="w-4 h-4" />
                                     Create MCQs
                                   </>
                                 )}
@@ -516,12 +507,9 @@ export default function Dashboard() {
 
         {/* Topic Selector Section */}
         {showTopicSelector && selectedWeek && (
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2 border-purple-200 animate-in slide-in-from-top duration-300">
+          <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-gray-200 animate-in slide-in-from-top duration-300">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-xl">
-                  <Sparkles className="w-6 h-6 text-white" />
-                </div>
                 <h2 className="text-2xl font-bold text-gray-900">
                   Generate MCQs - Week {selectedWeek}
                 </h2>
@@ -549,17 +537,16 @@ export default function Dashboard() {
                     max="10"
                     value={numberOfTopics}
                     onChange={(e) => setNumberOfTopics(parseInt(e.target.value))}
-                    className="flex-1 h-3 bg-gradient-to-r from-purple-200 to-pink-200 rounded-lg appearance-none cursor-pointer
+                    className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer
                       [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 
-                      [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r 
-                      [&::-webkit-slider-thumb]:from-purple-600 [&::-webkit-slider-thumb]:to-pink-600 
-                      [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg
+                      [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-600 
+                      [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md
                       [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:rounded-full 
-                      [&::-moz-range-thumb]:bg-gradient-to-r [&::-moz-range-thumb]:from-purple-600 
-                      [&::-moz-range-thumb]:to-pink-600 [&::-moz-range-thumb]:cursor-pointer 
-                      [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:shadow-lg"
+                      [&::-moz-range-thumb]:bg-blue-600 
+                      [&::-moz-range-thumb]:cursor-pointer 
+                      [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:shadow-md"
                   />
-                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-2xl font-bold rounded-xl shadow-lg">
+                  <div className="flex items-center justify-center w-16 h-16 bg-blue-600 text-white text-2xl font-bold rounded-lg shadow-md">
                     {numberOfTopics}
                   </div>
                 </div>
@@ -572,7 +559,7 @@ export default function Dashboard() {
               <button
                 onClick={handleConfirmGenerate}
                 disabled={generateMutation.isPending}
-                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200"
               >
                 {generateMutation.isPending ? (
                   <>
@@ -581,7 +568,6 @@ export default function Dashboard() {
                   </>
                 ) : (
                   <>
-                    <Sparkles className="w-5 h-5" />
                     Generate {numberOfTopics} {numberOfTopics === 1 ? 'Topic' : 'Topics'}
                   </>
                 )}
@@ -592,12 +578,9 @@ export default function Dashboard() {
 
         {/* Upload Section */}
         {showUpload && selectedWeek && (
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2 border-indigo-200 animate-in slide-in-from-top duration-300">
+          <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-gray-200 animate-in slide-in-from-top duration-300">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-xl">
-                  <Upload className="w-6 h-6 text-white" />
-                </div>
                 <h2 className="text-2xl font-bold text-gray-900">
                   Upload Lecture - Week {selectedWeek}
                 </h2>
@@ -622,13 +605,13 @@ export default function Dashboard() {
                   <input
                     type="file"
                     accept=".pdf,.doc,.docx,.txt,.ppt,.pptx"
-                    className="w-full px-5 py-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-indigo-400 transition-all cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"
+                    className="w-full px-5 py-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition-all cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-100 file:text-gray-700 hover:file:bg-gray-200"
                     onChange={(e) => setUploadFile(e.target.files?.[0] || null)}
                   />
                 </div>
                 {uploadFile && (
-                  <div className="mt-3 flex items-center gap-2 p-3 bg-indigo-50 border border-indigo-200 rounded-lg">
-                    <CheckCircle2 className="w-5 h-5 text-indigo-600" />
+                  <div className="mt-3 flex items-center gap-2 p-3 bg-gray-50 border border-gray-200 rounded-lg">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700" />
                     <p className="text-sm text-gray-700 font-medium">
                       {uploadFile.name} <span className="text-gray-500">({(uploadFile.size / 1024 / 1024).toFixed(2)} MB)</span>
                     </p>
@@ -639,7 +622,7 @@ export default function Dashboard() {
               <button
                 onClick={handleFileUpload}
                 disabled={!uploadFile || uploadMutation.isPending}
-                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200"
               >
                 {uploadMutation.isPending ? (
                   <>
@@ -659,15 +642,12 @@ export default function Dashboard() {
 
         {/* Generated MCQs Section */}
         {generatedMCQs.length > 0 && (
-          <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2 border-purple-200">
+          <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-gray-200">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-xl">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
               <h2 className="text-2xl font-bold text-gray-900">
                 Generated MCQs - Week {selectedWeek}
               </h2>
-              <span className="ml-auto bg-purple-100 text-purple-700 px-4 py-2 rounded-full font-semibold text-sm">
+              <span className="ml-auto bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-semibold text-sm">
                 {generatedMCQs.length} Questions
               </span>
             </div>
@@ -676,17 +656,17 @@ export default function Dashboard() {
               {generatedMCQs.map((mcq, index) => (
                 <div 
                   key={index} 
-                  className="bg-gradient-to-r from-white to-indigo-50 border-l-4 border-indigo-500 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-200"
+                  className="bg-gray-50 border-l-4 border-gray-700 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-200"
                 >
                   {/* Question Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="flex items-center justify-center w-8 h-8 bg-indigo-600 text-white font-bold rounded-full text-sm">
+                        <span className="flex items-center justify-center w-8 h-8 bg-blue-600 text-white font-bold rounded-full text-sm">
                           {index + 1}
                         </span>
                         {mcq.topic_name && (
-                          <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
+                          <span className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-semibold">
                             {mcq.topic_name}
                           </span>
                         )}
@@ -705,14 +685,14 @@ export default function Dashboard() {
                   {/* Answer Options */}
                   <div className="space-y-3 ml-2">
                     {/* Correct Answer */}
-                    <div className="flex items-start gap-3 p-4 bg-green-50 border-2 border-green-200 rounded-lg">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-3 p-4 bg-white border border-gray-300 rounded-lg">
+                      <CheckCircle2 className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" />
                       <p className="text-gray-900 font-medium">{mcq.answer}</p>
                     </div>
                     
                     {/* Distractors */}
                     {mcq.distractors.map((distractor, idx) => (
-                      <div key={idx} className="flex items-start gap-3 p-4 bg-gray-50 border-2 border-gray-200 rounded-lg">
+                      <div key={idx} className="flex items-start gap-3 p-4 bg-white border border-gray-200 rounded-lg">
                         <XCircle className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
                         <p className="text-gray-700">{distractor}</p>
                       </div>
@@ -721,9 +701,9 @@ export default function Dashboard() {
 
                   {/* Explanation */}
                   {mcq.explanation && (
-                    <div className="mt-4 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-lg">
+                    <div className="mt-4 p-4 bg-gray-100 border-l-4 border-gray-400 rounded-lg">
                       <p className="text-sm text-gray-700">
-                        <span className="font-semibold text-amber-700">💡 Explanation: </span>
+                        <span className="font-semibold text-gray-900">💡 Explanation: </span>
                         {mcq.explanation}
                       </p>
                     </div>
@@ -739,12 +719,7 @@ export default function Dashboard() {
           <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-xl">
-                    <Database className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Add Collected MCQs</h3>
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Add Collected MCQs</h3>
                 <button
                   onClick={() => {
                     setShowMCQUpload(false)
@@ -766,13 +741,13 @@ export default function Dashboard() {
                     <input
                       type="file"
                       accept=".json"
-                      className="w-full px-5 py-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-purple-400 transition-all cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100"
+                      className="w-full px-5 py-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition-all cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-100 file:text-gray-700 hover:file:bg-gray-200"
                       onChange={handleMCQFileChange}
                     />
                   </div>
                   {mcqFile && uploadedMCQs.length > 0 && (
-                    <div className="mt-3 flex items-center gap-2 p-4 bg-purple-50 border border-purple-200 rounded-lg">
-                      <CheckCircle2 className="w-5 h-5 text-purple-600" />
+                    <div className="mt-3 flex items-center gap-2 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                      <CheckCircle2 className="w-5 h-5 text-gray-700" />
                       <div className="flex-1">
                         <p className="text-sm text-gray-700 font-medium">
                           {mcqFile.name}
@@ -785,11 +760,11 @@ export default function Dashboard() {
                   )}
                 </div>
 
-                <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-lg">
-                  <p className="text-sm text-amber-800">
+                <div className="bg-gray-100 border-l-4 border-gray-400 p-4 rounded-lg">
+                  <p className="text-sm text-gray-800">
                     <span className="font-semibold">ℹ️ Note:</span> Upload a JSON file containing MCQs in the format:
                   </p>
-                  <pre className="mt-2 text-xs text-gray-800 bg-white p-3 rounded border border-amber-200 overflow-x-auto">
+                  <pre className="mt-2 text-xs text-gray-800 bg-white p-3 rounded border border-gray-300 overflow-x-auto">
 {`[
   {
     "question": "Question text?",
@@ -807,7 +782,7 @@ export default function Dashboard() {
                 <button
                   onClick={handleMCQUpload}
                   disabled={!mcqFile || uploadedMCQs.length === 0}
-                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200"
                 >
                   <Upload className="w-5 h-5" />
                   Upload MCQs
@@ -820,24 +795,19 @@ export default function Dashboard() {
         {/* Index Confirmation Modal */}
         {showIndexModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 z-[60] flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-in zoom-in-95 duration-200">
+            <div className="bg-white rounded-xl shadow-xl w-full max-w-lg animate-in zoom-in-95 duration-200">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-3 rounded-xl">
-                    <Database className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Confirm Indexing</h3>
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Confirm Indexing</h3>
               </div>
               
               <div className="p-6 space-y-4">
-                <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg">
-                  <p className="text-sm text-blue-800">
+                <div className="bg-gray-50 border-l-4 border-gray-700 p-4 rounded-lg">
+                  <p className="text-sm text-gray-800">
                     You are about to index <span className="font-bold">{uploadedMCQs.length} MCQs</span> to the vector database for:
                   </p>
                   <div className="mt-3">
-                    <p className="text-sm font-semibold text-blue-900">
-                      📚 Course: <span className="text-blue-700">{courseCode.toUpperCase()}</span>
+                    <p className="text-sm font-semibold text-gray-900">
+                      📚 Course: <span className="text-gray-700">{courseCode.toUpperCase()}</span>
                     </p>
                   </div>
                 </div>
@@ -851,14 +821,14 @@ export default function Dashboard() {
                   <button
                     onClick={() => setShowIndexModal(false)}
                     disabled={indexMutation.isPending}
-                    className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 font-semibold rounded-xl hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={handleConfirmIndex}
                     disabled={indexMutation.isPending}
-                    className="flex-1 py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+                    className="flex-1 py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200 flex items-center justify-center gap-2"
                   >
                     {indexMutation.isPending ? (
                       <>
@@ -881,14 +851,9 @@ export default function Dashboard() {
         {/* Book Upload Modal */}
         {showBookUpload && (
           <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
+            <div className="bg-white rounded-xl shadow-xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-3 rounded-xl">
-                    <BookOpen className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Add Book to Graph Database</h3>
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Add Book to Graph Database</h3>
                 <button
                   onClick={() => {
                     setShowBookUpload(false)
@@ -914,8 +879,8 @@ export default function Dashboard() {
                     />
                   </div>
                   {bookFile && (
-                    <div className="mt-3 flex items-center gap-2 p-4 bg-cyan-50 border border-cyan-200 rounded-lg">
-                      <CheckCircle2 className="w-5 h-5 text-cyan-600" />
+                    <div className="mt-3 flex items-center gap-2 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                      <CheckCircle2 className="w-5 h-5 text-gray-700" />
                       <div className="flex-1">
                         <p className="text-sm text-gray-700 font-medium">
                           {bookFile.name}
@@ -928,8 +893,8 @@ export default function Dashboard() {
                   )}
                 </div>
 
-                <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-lg">
-                  <p className="text-sm text-amber-800">
+                <div className="bg-gray-100 border-l-4 border-gray-400 p-4 rounded-lg">
+                  <p className="text-sm text-gray-800">
                     <span className="font-semibold">ℹ️ Note:</span> Upload a book file (PDF, TXT, DOC, DOCX) to be indexed into the knowledge graph database. This will enable semantic search and relationship mapping.
                   </p>
                 </div>
@@ -937,7 +902,7 @@ export default function Dashboard() {
                 <button
                   onClick={handleBookUpload}
                   disabled={!bookFile}
-                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold rounded-xl hover:from-cyan-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200"
                 >
                   <Upload className="w-5 h-5" />
                   Index Book
@@ -950,24 +915,19 @@ export default function Dashboard() {
         {/* Graph Index Confirmation Modal */}
         {showGraphIndexModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 z-[60] flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-lg animate-in zoom-in-95 duration-200">
+            <div className="bg-white rounded-xl shadow-xl w-full max-w-lg animate-in zoom-in-95 duration-200">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-3 rounded-xl">
-                    <BookOpen className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Confirm Graph Indexing</h3>
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Confirm Graph Indexing</h3>
               </div>
               
               <div className="p-6 space-y-4">
-                <div className="bg-cyan-50 border-l-4 border-cyan-400 p-4 rounded-lg">
-                  <p className="text-sm text-cyan-800">
+                <div className="bg-gray-50 border-l-4 border-gray-700 p-4 rounded-lg">
+                  <p className="text-sm text-gray-800">
                     You are about to index <span className="font-bold">{bookFile?.name}</span> to the knowledge graph database for:
                   </p>
                   <div className="mt-3">
-                    <p className="text-sm font-semibold text-cyan-900">
-                      📚 Course: <span className="text-cyan-700">{courseCode.toUpperCase()}</span>
+                    <p className="text-sm font-semibold text-gray-900">
+                      📚 Course: <span className="text-gray-700">{courseCode.toUpperCase()}</span>
                     </p>
                   </div>
                 </div>
@@ -981,14 +941,14 @@ export default function Dashboard() {
                   <button
                     onClick={() => setShowGraphIndexModal(false)}
                     disabled={graphIndexMutation.isPending}
-                    className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 font-semibold rounded-xl hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={handleConfirmGraphIndex}
                     disabled={graphIndexMutation.isPending}
-                    className="flex-1 py-3 px-4 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold rounded-xl hover:from-cyan-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+                    className="flex-1 py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200 flex items-center justify-center gap-2"
                   >
                     {graphIndexMutation.isPending ? (
                       <>
@@ -1011,14 +971,9 @@ export default function Dashboard() {
         {/* New Week Upload Modal */}
         {showNewWeekUpload && (
           <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
+            <div className="bg-white rounded-xl shadow-xl w-full max-w-2xl animate-in zoom-in-95 duration-200">
               <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-xl">
-                    <Upload className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Upload Lecture - Week {newWeekNumber}</h3>
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Upload Lecture - Week {newWeekNumber}</h3>
                 <button
                   onClick={() => {
                     setShowNewWeekUpload(false)
@@ -1058,8 +1013,8 @@ export default function Dashboard() {
                   )}
                 </div>
 
-                <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg">
-                  <p className="text-sm text-blue-800">
+                <div className="bg-gray-100 border-l-4 border-gray-400 p-4 rounded-lg">
+                  <p className="text-sm text-gray-800">
                     <span className="font-semibold">ℹ️ Note:</span> This will create Week {newWeekNumber} with your uploaded lecture file.
                   </p>
                 </div>
@@ -1067,7 +1022,7 @@ export default function Dashboard() {
                 <button
                   onClick={handleNewWeekFileUpload}
                   disabled={!uploadFile || uploadMutation.isPending}
-                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02]"
+                  className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed shadow-md transition-all duration-200"
                 >
                   {uploadMutation.isPending ? (
                     <>
